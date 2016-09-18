@@ -1,0 +1,29 @@
+<div id="generalInformation"></div>
+<div class="row h4">
+	<div class="col-xs-12">
+		<strong class="control-label"> {{t
+			"Gloria.i18n.procurement.changeDetails.detail.relatedPart"}} </strong>
+	</div>
+</div>
+<div id="relatedPartGrid"></div>
+<br>
+<div class="row" id="message" hidden="true">
+	<div class="col-xs-12">
+		<label class="control-label"> {{t
+			"Gloria.i18n.procurement.changeDetails.detail.cancelModMessage"}} </label>
+	</div>
+</div>
+<div id="buttonPane" align="center" class="button-bar floatFooter">
+	{{#hasPermission "accept" 0="ProcurementChange"}}
+	<button type="button" class="btn btn-default hidden" id="accept">{{t
+		"Gloria.i18n.procurement.changeDetails.button.accept"}}</button>
+	{{/hasPermission}}{{#hasPermission "reject" 0="ProcurementChange"}}
+	<button type="button" class="btn btn-default hidden" id="reject">{{t
+		"Gloria.i18n.procurement.changeDetails.button.reject"}}</button>
+	{{/hasPermission}}
+	<button type="button" class="btn btn-default hidden" id="cancel">{{t
+		"Gloria.i18n.procurement.changeDetails.button.cancel"}}</button>
+	<button type="button" class="btn btn-default hidden" id="close">{{t
+		"Gloria.i18n.procurement.changeDetails.button.close"}}</button>
+</div>
+<br />

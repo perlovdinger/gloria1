@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CurrencyRates>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="EUR" rate="9.35" displaySeq="1" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="GBP" rate="12.15" displaySeq="2" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="DKK" rate="1.25" displaySeq="3" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="HUF" rate="0.03" displaySeq="4" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="USD" rate="8.20" displaySeq="5" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="BRL" rate="2.09" displaySeq="6" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="CAD" rate="5.93" displaySeq="7" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="JPY" rate="0.08" displaySeq="8" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="INR" rate="0.12" displaySeq="9" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="THB" rate="0.23" displaySeq="10" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="CNY" rate="1.30" displaySeq="11" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="MXN" rate="0.46" displaySeq="12" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="KRW" rate="0.007" displaySeq="12" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+  <CurrencyRate baseCurrencyCode="SEK" currencyCode="PLN" rate="2.16" displaySeq="12" startDate="2014-01-01" endDate="2099-12-31"></CurrencyRate>
+
+</CurrencyRates>

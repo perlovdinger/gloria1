@@ -1,0 +1,31 @@
+<ul class="nav pull-right">
+	<li class="dropdown">
+		<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<span class="glyphicon glyphicon-align-justify"></span>
+		</button>
+		<ul id="settings" class="dropdown-menu right">
+			{{#hasPermission "view" 0="WarehouseSettings"}} {{#if items.length}}
+			<li><label class="boxAppearance"> {{t
+					"Gloria.i18n.startpage.pages.warehouse.warehouseSetup"}} </label></li>
+			<ul class="dropdown-menu scroll-menu" style="border-top: 0px;">
+				{{#each items}}
+				<li><a href="#warehouse/setup/{{this.id}}">{{this.siteName}}
+						({{this.siteId}})</a></li> {{/each}}
+			</ul>
+			{{/if}} {{/hasPermission}} {{#hasPermission "view"
+			0="MaterialRequestTemplate"}}
+			<li><label class="boxAppearance"> {{t
+					"Gloria.i18n.startpage.pages.materialrequest.template"}} </label></li>
+			<ul class="dropdown-menu scroll-menu" style="border-top: 0px;">
+				<li><a
+					href="app/resources/templates/single_and_for_stock_template.xlsx">{{t
+						"Gloria.i18n.startpage.pages.materialrequest.singleAndForStock"}}</a></li>
+				<li><a href="app/resources/templates/multiple_template.xlsx">{{t
+						"Gloria.i18n.startpage.pages.materialrequest.multiple"}}</a></li>
+			</ul>
+			{{/hasPermission}} {{#hasPermission "view" 0="TeamAdministration"}}
+			<li><a href="#admin/mc">{{t "Gloria.i18n.admin.adminTeam"}}</a></li>
+			{{/hasPermission}}
+		</ul>
+	</li>
+</ul>

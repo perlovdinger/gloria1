@@ -1,0 +1,5 @@
+{
+  	"testingutility" : {"url" : "testingutility", "i18nkey" : "Gloria.i18n.testingutility.testingutility"},
+  	"message" : {"url" : "testingutility/message", "i18nkey" : "Gloria.i18n.testingutility.message"},
+  	"migration" : {"url" : "testingutility/migration", "i18nkey" : "Gloria.i18n.testingutility.migration"}
+}

@@ -1,0 +1,62 @@
+<br>
+{{#unless module}}
+<div class="row">
+	<div class="col-sm-12">
+		<label> {{t "Gloria.i18n.reports.text.selectReportType"}}: </label>
+	</div>
+</div>
+{{/unless}}
+<div class="row">
+	<div class="col-sm-2">
+		<div class="form-group">
+			<label class="control-label" for="reportType"> {{t
+				"Gloria.i18n.reports.text.reportType"}}: </label>
+			<div class="controls">
+				<select id="reportType" name="reportType" class="form-control">
+					<option value="">{{t "Gloria.i18n.selectBoxDefaultValue"}}</option>
+					{{{renderDropDown reportTypes module true}}}
+				</select>
+			</div>
+		</div>
+	</div>
+	{{#if showFavFilters}}
+	<div class="col-sm-2">
+		<div class="form-group">
+			<label class="control-label" for="filterType"> {{t
+				"Gloria.i18n.reports.text.favFilter"}}: </label>
+			<div class="controls">
+				<select id="filterType" name="filterType" class="form-control">
+					<option value="">{{t "Gloria.i18n.selectBoxDefaultValue"}}</option>
+					{{{renderDropDown favFilters currentFavFilter false}}}
+				</select>
+			</div>
+		</div>
+	</div>
+	{{/if}} {{#if showDatesFilters}}
+	<div class="col-sm-2">
+		<div class="form-group">
+			<label class="control-label" for="fromDate"> {{t
+				"Gloria.i18n.reports.text.fromDate" (obj context=module) }}: </label>
+			<div class="input-group date">
+				<input type="text" id="fromDate" name="basicInfo[fromDate]"
+					value="{{fromDate}}" class="fromDate js-date form-control">
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-calendar"></span></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div class="form-group">
+			<label class="control-label" for="toDate"> {{t
+				"Gloria.i18n.reports.text.toDate" (obj context=module) }}: </label>
+			<div class="input-group date">
+				<input type="text" id="toDate" name="basicInfo[toDate]"
+					value="{{toDate}}" class="toDate js-date form-control"> <span
+					class="input-group-addon"><span
+					class="glyphicon glyphicon-calendar"></span></span>
+			</div>
+		</div>
+	</div>
+	{{/if}}
+</div>
+<br />

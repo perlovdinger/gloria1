@@ -1,0 +1,15 @@
+<div class="noprint">
+	<a id="open-button" class="btn btn-default" {{#unless
+		permittedActions.open}}disabled="true"{{/unless}}> {{t
+		"Gloria.i18n.materialrequest.button.open"}} </a> {{#hasPermission
+	"copyAndCreateNew" 0="MaterialRequest"}} <a id="copy-button"
+		class="btn btn-default" {{#unless
+		permittedActions.copy}}disabled="true"{{/unless}}> {{t
+		"Gloria.i18n.materialrequest.button.copyAndCreateNew"}} </a>
+	{{/hasPermission}} {{#hasPermission "createNew" 0="MaterialRequest"}} <span
+		class="noprint divider-vertical"></span> <a id="create-button"
+		class="btn btn-default"> {{t
+		"Gloria.i18n.materialrequest.button.create"}} </a> {{/hasPermission}} <a
+		id="clear-filter" class="clear-filter">{{t
+		"Gloria.i18n.gridpanel.clearFilter"}}</a>
+</div>

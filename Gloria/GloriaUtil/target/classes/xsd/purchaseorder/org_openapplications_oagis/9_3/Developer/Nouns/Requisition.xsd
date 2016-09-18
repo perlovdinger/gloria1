@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+
+
+   Schema agency: 	Open Applications Group 
+
+
+   OAGIS® Revision:    9.3  
+   Date:               11 August 2008 
+   Copyright 1997-2008, All Rights Reserved 
+
+  	
+   Copyright (C) Open Applications Group (1997-2008). All Rights Reserved.
+  
+  
+   This is an OAGIS® BOD XML Schema (XSD) Definition.
+
+   License information for this file is provided in the file **OAGi License Agreement.txt** that is provided with this download package.
+
+   For support, more information, or to report implementation bugs, please contact the Open Applications Group at oagis@openapplications.org.
+    
+   XML Schema 
+     
+    Name: /OAGi-BPI-Platform/org_openapplications_oagis/9_3/Developer/Nouns/Requisition.xsd
+-->
+		
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.openapplications.org/oagis/9" targetNamespace="http://www.openapplications.org/oagis/9" elementFormDefault="qualified" attributeFormDefault="unqualified">
+        <xsd:include schemaLocation="../../../../org_openapplications_platform/1_0/Common/OAGi/Components/OrderManagementComponents.xsd"/>
+        <xsd:include schemaLocation="../../../../org_openapplications_platform/1_0/Common/OAGi/Components/ManufacturingComponents.xsd"/>
+        <xsd:element name="Requisition" type="RequisitionType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Is a request for the purchase of goods or services.  Typically, a requisition leads to the creation of a purchase order to a specific supplier.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="RequisitionHeader" type="RequisitionHeaderType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Information that applies to the Requisition.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="RequisitionLine" type="RequisitionLineType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Information that describes the requested item and its attributes.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="RequisitionSubLine" type="RequisitionSubLineType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Used if the item on the REQLINE needs to be divided into smaller units such as sub-components or subassemblies.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:complexType name="RequisitionType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Is a request for the purchase of goods or services.  Typically, a requisition leads to the creation of a purchase order to a specific supplier.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:sequence>
+                        <xsd:element ref="RequisitionHeader" minOccurs="0"/>
+                        <xsd:element ref="RequisitionLine" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+        </xsd:complexType>
+        <xsd:complexType name="RequisitionHeaderType">
+                <xsd:complexContent>
+                        <xsd:extension base="RequestHeaderType">
+                                <xsd:sequence>
+                                        <xsd:element ref="PurchaseOrderReference" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="BuyerParty" minOccurs="0"/>
+                                        <xsd:element ref="RequesterParty" minOccurs="0"/>
+                                        <xsd:element ref="RequiredDeliveryDateTime" minOccurs="0"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="RequisitionLineType">
+                <xsd:complexContent>
+                        <xsd:extension base="RequestLineType">
+                                <xsd:sequence>
+                                        <xsd:element ref="RequesterParty" minOccurs="0"/>
+                                        <xsd:element ref="RequisitionSubLine" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="RequisitionSubLineType">
+                <xsd:complexContent>
+                        <xsd:extension base="RequestSubLineType">
+                                <xsd:sequence>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:element name="PlanningSchedule" type="PlanningScheduleType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Indicates a demand forecast sent from a customer to a supplier, or a supply schedule sent from a supplier to a customer.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PlanningScheduleHeader" type="PlanningScheduleHeaderType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Header level information for the schedule.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PlanningScheduleLine" type="PlanningScheduleLineType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Line level information for the schedule.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PlanningScheduleDetail" type="PlanningScheduleDetailType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">Additional detail for each line item.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="Bucket" type="FlexibleBucketType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">All time bucket definitions used within the schedule.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:complexType name="PlanningScheduleType">
+                <xsd:sequence>
+                        <xsd:element ref="PlanningScheduleHeader" minOccurs="0"/>
+                        <xsd:element ref="PlanningScheduleLine" minOccurs="0" maxOccurs="unbounded"/>
+                        <xsd:element ref="Bucket" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+        </xsd:complexType>
+        <xsd:complexType name="PlanningScheduleHeaderType">
+                <xsd:complexContent>
+                        <xsd:extension base="ScheduleHeaderType">
+                                <xsd:sequence>
+                                        <xsd:element ref="Bucket" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="PlanningScheduleLineType">
+                <xsd:complexContent>
+                        <xsd:extension base="ScheduleLineType">
+                                <xsd:sequence>
+                                        <xsd:element ref="MaximumQuantity" minOccurs="0"/>
+                                        <xsd:element ref="MinimumQuantity" minOccurs="0"/>
+                                        <xsd:element ref="Property" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="PlanningScheduleDetail" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="ScheduleException" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="PlanningScheduleDetailType">
+                <xsd:complexContent>
+                        <xsd:extension base="LineType">
+                                <xsd:sequence>
+                                        <xsd:element ref="PriorityCode" minOccurs="0"/>
+                                        <xsd:element ref="BucketType" minOccurs="0"/>
+                                        <xsd:element ref="AuthorizationID" minOccurs="0"/>
+                                        <xsd:element ref="EffectiveTimePeriod" minOccurs="0"/>
+                                        <xsd:element ref="ItemQuantity" minOccurs="0"/>
+                                        <xsd:element ref="MaximumQuantity" minOccurs="0"/>
+                                        <xsd:element ref="MinimumQuantity" minOccurs="0"/>
+                                        <xsd:element ref="LabourDuration" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="LastShipmentDateTime" minOccurs="0"/>
+                                        <xsd:element ref="LastShipmentReceivedQuantity" minOccurs="0"/>
+                                        <xsd:element ref="RespondingScheduleReference" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="ScheduleException" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="FlexibleBucketType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">This Data Type is used to communicate a flexible bucket definition. The value of Identifier can be taken from predefined values such as Day, Week, etc. or it can hold a user defined identifier with a specific time period. In any case the actual time period and Identifier must be used.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:sequence>
+                        <xsd:element ref="ID" minOccurs="0"/>
+                        <xsd:element ref="BucketType" minOccurs="0"/>
+                        <xsd:element ref="Name" minOccurs="0"/>
+                        <xsd:element ref="TimePeriod" minOccurs="0"/>
+                        <xsd:element ref="UserArea" minOccurs="0"/>
+                </xsd:sequence>
+        </xsd:complexType>
+</xsd:schema>

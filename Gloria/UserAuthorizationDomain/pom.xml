@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>Gloria</artifactId>
+    <groupId>com.volvo.gloria</groupId>
+    <version>1.4.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.volvo.gloria.authorization</groupId>
+  <artifactId>UserAuthorizationDomain</artifactId>
+  <name>UserAuthorizationDomain</name>
+  <packaging>jar</packaging>
+  <description>UserAuthorizationDomain</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.volvo.gloria.util</groupId>
+      <artifactId>GloriaUtil</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.volvo.gloria.user</groupId>
+      <artifactId>CommonDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>openjpa-maven-plugin</artifactId>
+        <configuration>
+          <includes>**/d/entities/*.class</includes>
+          <persistenceXmlFile>${project.build.outputDirectory}/META-INF/persistenceUserAuthorizationDomain.xml</persistenceXmlFile>
+        </configuration>
+        <executions>
+          <execution>
+            <id>openjpa-enhance</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>enhance</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

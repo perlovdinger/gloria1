@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Warehouses>
+    <Warehouse qiSupported="false" setUp="AISLE" siteCode="MAC" siteId="4285" siteName="Macungie">
+        <StorageRoom code="1" description="1" name="1">
+            <Zon code="Storage" description="" name="Storage" type="STORAGE">
+                <AisleRackRow baySides="LEFT" code="1" numberOfBay="1" setUp="AISLE">
+                    <BaySetting bayCode="1" numberOfLevels="1" numberOfPositions="1"/>
+                </AisleRackRow>
+                <BinLocation allocation="FIXED" bayCode="1" code="1-1-01-01" level="1" position="1"/>
+            </Zon>
+            <Zon code="To Store" description="" name="To Store" type="TO_STORE">
+                <BinLocation allocation="FIXED" bayCode="01" code="TS-01-01-01" level="1" position="1"/>
+            </Zon>
+            <Zon code="QI" description="" name="QI" type="QI">
+                <BinLocation allocation="FIXED" bayCode="01" code="QI-01-01-01" level="1" position="1"/>
+            </Zon>
+            <Zon code="Shipping" description="" name="Shipping" type="SHIPPING">
+                <BinLocation allocation="FIXED" bayCode="01" code="SH-01-01-01" level="1" position="1"/>
+            </Zon>
+            <Zon code="Quarantine" description="" name="Quarantine" type="QUARANTINE">
+                <BinLocation allocation="FIXED" bayCode="01" code="BL-01-01-01" level="1" position="1"/>
+            </Zon>
+        </StorageRoom>
+    </Warehouse>
+</Warehouses>

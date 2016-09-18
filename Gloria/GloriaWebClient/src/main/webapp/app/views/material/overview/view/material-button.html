@@ -1,0 +1,50 @@
+<div data-role="content" id="module-info">
+   <div class="row">
+      <div class="col-sm-9">
+         <div class="form-inline">
+            <div class="form-group fullWidth">
+               <span class="noprint"> <a class="btn btn-default"
+                  id="open-button" disabled="true"> {{t
+               "Gloria.i18n.buttons.open"}} </a></span> 
+               {{#hasPermission "creatRequestList" 0="MaterialOverview"}} <span
+                  class="noprint"> <a class="btn btn-default"
+                  id="create-button" disabled="true"> {{t
+               "Gloria.i18n.material.overview.button.createRL"}} </a>
+               </span> {{/hasPermission}} 
+               {{#hasPermission "creatRequestList" 0="MaterialOverview"}} <span
+                  class="noprint"> <a class="btn btn-default"
+                  id="addtoRL-button" disabled="true"> {{t
+               "Gloria.i18n.material.overview.button.addtoRL"}} </a>
+               </span> {{/hasPermission}} 
+               {{#hasPermission "borrowPart"
+               0="MaterialOverview"}} <span class="noprint"> <a
+                  class="btn btn-default" id="borrow-part-button" disabled="true">
+               {{t "Gloria.i18n.material.overview.button.borrowPart"}} </a>
+               </span> {{/hasPermission}} {{#hasPermission "edit" 0="MaterialOverview"}}
+               <span class="noprint"> <a class="btn btn-default"
+                  id="release-part-button" disabled="true"> {{t
+               "Gloria.i18n.material.overview.button.releasePart"}} </a>
+               </span> {{/hasPermission}} 
+               <!-- scrap button removed
+                  {{#hasPermission "scrapPart"
+                  0="MaterialOverview"}} <span class="noprint"> <a
+                  	class="btn btn-default" id="scrap-part-button" disabled="true">
+                  		{{t "Gloria.i18n.material.overview.button.scrapPart"}} </a>
+                  </span> 
+                  {{/hasPermission}} 
+                   -->
+               {{#hasPermission "pullPart"
+               0="MaterialOverview"}} <span class="noprint"> <a
+                  class="btn btn-default" id="pull-part-button" disabled="true">
+               {{t "Gloria.i18n.material.overview.button.pullPart"}} </a>
+               </span> {{/hasPermission}} <a id="clear-filter" class="clear-filter">{{t
+               "Gloria.i18n.gridpanel.clearFilter"}}</a>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-3">
+         {{#hasPermission "filter" 0="MaterialOverview"}} <span
+            class="noprint" id="filter"></span> {{/hasPermission}}
+      </div>
+   </div>
+</div>

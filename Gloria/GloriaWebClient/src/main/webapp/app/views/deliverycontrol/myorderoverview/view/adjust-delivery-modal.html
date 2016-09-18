@@ -1,0 +1,124 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.adjust.header"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div style="padding-left: 15px; padding-right: 15px;">
+				<div id="appModalMessage">
+					<span class="help-inline"></span>
+				</div>
+				<div id="deviationMessage" class='row' style="display: none;">
+					<div class="col-sm-12">
+						<div class="alert alert-warning">
+							<h5>
+								<i class="fa fa-warning"></i> <b>&nbsp;&nbsp;{{t
+									"Gloria.i18n.deliverycontrol.orderOverview.adjust.deviationHeader"}}</b>
+							</h5>
+							<p>{{t
+								"Gloria.i18n.deliverycontrol.orderOverview.adjust.deviationMessage"}}
+							<button type="button" class="btn" id="ignore">
+				             {{t "Gloria.i18n.deliverycontrol.button.ignore"}}</button>
+				             </p>
+						</div>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<h4>{{t
+							"Gloria.i18n.deliverycontrol.orderOverview.adjust.adjustText"}}</h4>
+					</div>
+				</div>
+				<div id="warningMessage" class='row' style="display: none;">
+					<div class="col-sm-12">
+						<div class="alert alert-warning">
+							<h5>
+								<i class="fa fa-warning"></i> <b>&nbsp;&nbsp;{{t
+									"Gloria.i18n.deliverycontrol.orderOverview.adjust.warningHeader"}}</b>
+							</h5>
+							<p>{{t
+								"Gloria.i18n.deliverycontrol.orderOverview.adjust.warningMessage"}}</p>
+						</div>
+					</div>
+				</div>				
+				<form id="adjust-form" name="adjust-form">
+					<fieldset>
+						<input type="hidden" name='orderLine[id]' value='{{id}}'>
+						<div class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label" for="expectedQuantity{{data.id}}">
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.header.expectedQuantity"}}:
+									</label>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label" for="expectedDate{{data.id}}">
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.header.expectedDate"}}:
+									</label>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label" for="adjust{{data.id}}">
+										{{t "Gloria.i18n.deliverycontrol.orderOverview.adjust.split"}}
+									</label>
+								</div>
+							</div>
+						</div>
+						<div id="adjustDelivery"></div>
+						<div id="sumOfQuantities" class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<strong class="control-label">{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.adjust.sum"}}:</strong> <span
+										id="quantitySum" class="control-label"></span>
+								</div>
+							</div>
+						</div>
+						<div id="receivedQty" class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<strong class="control-label">{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.adjust.receivedQuantity"}}:</strong>
+									<span id="receivedQuantity" class="control-label">{{data.receivedQuantity}}</span>
+								</div>
+							</div>
+						</div>
+						<div id="orderQty" class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<strong class="control-label">{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.adjust.orderQty"}}:</strong>
+									<span id="quantity"
+										class="control-label{{#if markChanged}} text-danger{{/if}}">{{data.quantity}}</span>
+								</div>
+							</div>
+						</div>
+						<div id="possibleToReceiveQty" class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<strong class="control-label">{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.adjust.possibleToReceiveQty"}}:</strong>
+									<span id="allowedQuantity" class="control-label">{{data.allowedQuantity}}</span>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="save"
+				disabled="disabled">{{t "Gloria.i18n.buttons.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

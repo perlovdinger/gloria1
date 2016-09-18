@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by ﻿VOLVO INFORMATION TECH AB (VOLVO INFORMATION TECH AB) -->
+<xsd:schema xmlns="http://finance.group.volvo.com/costcenter/1_0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmn="http://finance.group.volvo.com/common/1_0" xmlns:ns1="http://finance.group.volvo.com/costcenter/1_0" targetNamespace="http://finance.group.volvo.com/costcenter/1_0" version="1.0.0">
+	<xsd:import namespace="http://finance.group.volvo.com/common/1_0" schemaLocation="../Common_1_0/Common_1_0.xsd"/>
+	<xsd:element name="SyncCostCenter">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Sync" type="cmn:SyncType"/>
+				<xsd:element name="CostCenter" type="CostCenterType" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="CostCenterType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="EN">Cost Center</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="BusinessObjectData" type="cmn:NounHeaderType"/>
+			<xsd:element name="CostCenterItem">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="CostCenter" type="cmn:CostCenterType"/>
+						<xsd:element name="ControllingArea" type="cmn:ControllingAreaType"/>
+						<xsd:element name="BusinessAreaShort" type="cmn:BusinessAreaType"/>
+						<xsd:element name="CostCenterDescription" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="ShortText" minOccurs="0">
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="20"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:element>
+									<xsd:element name="LongText" minOccurs="0">
+										<xsd:simpleType>
+											<xsd:restriction base="xsd:string">
+												<xsd:maxLength value="40"/>
+											</xsd:restriction>
+										</xsd:simpleType>
+									</xsd:element>
+								</xsd:sequence>
+								<xsd:attribute name="language" use="required">
+									<xsd:annotation>
+										<xsd:documentation>ISO language code, e.g. en, sv, fr</xsd:documentation>
+									</xsd:annotation>
+								</xsd:attribute>
+								<xsd:attribute name="defaultIndicator" type="xsd:boolean">
+									<xsd:annotation>
+										<xsd:documentation>Indicates if this is the default language for this profit center. If omitted it shall be treated as the same as false.</xsd:documentation>
+									</xsd:annotation>
+								</xsd:attribute>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="EffectiveDatePeriod" type="cmn:EffectiveDatePeriodType"/>
+						<xsd:element name="CompanyCode" type="cmn:CompanyCodeType"/>
+						<xsd:element name="BusinessArea" type="cmn:BusinessAreaType" minOccurs="0"/>
+						<xsd:element name="CostCenterCategory" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="1"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="LogicalSystem" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="10"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="FunctionalArea" type="cmn:FunctionalAreaType" minOccurs="0"/>
+						<xsd:element name="Department" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="12"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="CurrencyCode" type="cmn:CurrencyCodeType" minOccurs="0"/>
+						<xsd:element name="ProfitCenter" type="cmn:ProfitCenterType" minOccurs="0"/>
+						<xsd:element name="StandardHierarchyNode" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="12"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="Segment" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="10"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="LockIndicators" minOccurs="0">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="PrimaryPostings" type="xsd:boolean"/>
+									<xsd:element name="Planning" type="xsd:boolean"/>
+									<xsd:element name="ActualSecondaryCosts" type="xsd:boolean"/>
+									<xsd:element name="ActualRevenuePostings" type="xsd:boolean"/>
+									<xsd:element name="CommitmentUpdate" type="xsd:boolean"/>
+									<xsd:element name="PlanSecondaryCosts" type="xsd:boolean"/>
+									<xsd:element name="PlanningRevenues" type="xsd:boolean"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="PersonResponsibleName" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="20"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="PersonResponsibleUserId" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="xsd:string">
+									<xsd:maxLength value="12"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="Place" minOccurs="0">
+							<xsd:simpleType>
+								<xsd:restriction base="cmn:PlaceType"/>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="Market" type="cmn:MarketType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

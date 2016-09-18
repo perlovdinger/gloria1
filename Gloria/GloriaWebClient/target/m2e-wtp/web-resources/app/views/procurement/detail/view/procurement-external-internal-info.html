@@ -1,0 +1,78 @@
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="externalUnitPrice"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.estimatedPrice"}}: </label>
+				<div class="controls">
+					<input id="externalUnitPrice" name='procureLine[externalUnitPrice]'
+						type='number' min='0' step='0.01'
+						value="{{data.externalUnitPrice}}" class="form-control" {{#if
+						isDisabled}} disabled="true"{{/if}}>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="externalMaxPrice"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.maxPrice"}}: </label>
+				<div class="controls">
+					<input id="externalMaxPrice" name='procureLine[externalMaxPrice]'
+						type='number' min='0' step='0.01'
+						value="{{data.externalMaxPrice}}" class="form-control" {{#if
+						isDisabled}} disabled="true"{{/if}}>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="externalCurrency"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.currency"}}: </label>
+				<div class="controls">{{currencySelector id=data.id
+					idPrefix='externalCurrency_' modelName='procureLine'
+					namePrefix='externalCurrency' selected=data.externalCurrency
+					isDisabled=isDisabled}}</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="internalUnitPrice"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.unitPriceInternal"}}:
+				</label>
+				<div class="controls">
+					<input id="internalUnitPrice" name='procureLine[internalUnitPrice]'
+						type='number' min='0' step='0.01'
+						value="{{data.internalUnitPrice}}" class="form-control" {{#if
+						isDisabled}} disabled="true"{{/if}}>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="totalPriceInternal"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.totalPriceInternal"}}:
+				</label>
+				<div class="controls">
+					<input id="totalPriceInternal"
+						name='procureLine[totalPriceInternal]' type='number' min='0'
+						step='0.01' value="{{data.totalPriceInternal}}"
+						class="form-control" {{#if isDisabled}} disabled="true"{{/if}}>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="internalCurrency"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.currency"}}: </label>
+				<div class="controls">{{currencySelector id=data.id
+					idPrefix='internalCurrency_' modelName='procureLine'
+					namePrefix='internalCurrency' selected=data.internalCurrency
+					isDisabled=isDisabled}}</div>
+			</div>
+		</div>
+	</div>
+</div>

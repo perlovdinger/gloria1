@@ -1,0 +1,239 @@
+<div id="generalInfo{{data.id}}-module" class="panel panel-default">
+	<div>
+		<h4></h4>
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="checkbox-inline"><input type="checkbox"
+						id="testObject{{data.id}}" class="js-testObject" />
+						<a
+						class="accordion-toggle {{#unless data.isRead}}color-orange{{/unless}}" data-toggle="collapse"
+						data-parent="#testObjectContainer" href="#generalInfo{{data.id}}">
+							{{#if data.procureComment}}<span class="envelope-icon"></span>{{/if}}
+							<strong>{{t requestTypeKey}} {{data.referenceId}}</strong>
+						</a>
+					</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label"> {{t
+						"Gloria.i18n.procurement.procureDetail.header.quantity"}}: </label>
+					<div class="controls">
+						<span>{{data.quantity}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label"> {{t
+						"Gloria.i18n.procurement.procureDetail.header.requiredStaDate"}}:
+					</label>
+					<div class="controls">
+						<span>{{date data.requiredStaDate
+							"Gloria.i18n.dateformat"}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label"> {{t
+						"Gloria.i18n.procurement.procureDetail.header.mailFormId"}}: </label>
+					<div class="controls">
+						<span>{{data.mailFormId}}</span>
+					</div>
+				</div>
+			</div>
+			{{#if showWarehouse}}
+			<div class="col-sm-2" id="warehouseDiv_{{data.id}}">
+				<div class="form-group">
+					<label
+						class="control-label {{#unless isDisabled}} required {{/unless}}">
+						{{t "Gloria.i18n.procurement.procureDetail.header.warehouseId"}}:
+					</label>
+					{{#if isDisabled}}
+					<div class="controls">
+						<span>{{warehouseSiteNames}}</span>
+					</div>
+					{{else}}
+					<div class="controls" id="warehouseDropdown{{data.id}}">{{warehouseSelector
+						selected=data.finalWhSiteId id=data.id idPrefix="warehouseId_"
+						namePrefix="finalWhSiteId" modelName="procureRequest"
+						isReadOnly=false}}</div>
+					{{/if}}
+				</div>
+			</div>
+			{{/if}}
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label">{{t
+						"Gloria.i18n.procurement.procureDetail.header.receiver"}}: </label> {{#if
+					isDisabled}} <span>{{data.receiver}}</span>{{else}} <input
+						id="receiver_{{data.id}}"
+						name="procureRequest[{{data.id}}][receiver]" class="form-control"
+						type="text" maxlength="60" value="{{data.receiver}}">
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="generalInfo{{data.id}}" class="panel-collapse collapse">
+		<div class="panel-body">
+			<input class="form-control" name="procureRequest[{{data.id}}][id]"
+				type="hidden" required="required" value="{{data.id}}">
+			<div class="well well-small">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label"> {{t
+								"Gloria.i18n.procurement.procureDetail.header.groupNameBuildSeries"}}:
+							</label>
+							<div class="controls">{{data.referenceGroup}}</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="buildId_{{data.id}}">
+								{{t "Gloria.i18n.procurement.procureDetail.header.phase"}}: </label>
+							<div class="controls">
+								<span id="buildId_{{data.id}}">{{data.buildName}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="mtrlRequestVersion_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.changeRequestId"}}:
+							</label>
+							<div class="controls">
+								<span id="mtrlRequestVersion_{{data.id}}">{{data.mtrlRequestVersion}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="mtrlRequestType_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.changeRequestType"}}:
+							</label>
+							<div class="controls">
+								<span id="mtrlRequestType_{{data.id}}">{{t
+									mtrlRequestType}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="unitOfMeasure_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.unitOfMeasure"}}:
+							</label>
+							<div class="controls">
+								<span id="unitOfMeasure_{{data.id}}">{{data.unitOfMeasure}}</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="functionGroup_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.functionGroup"}}:
+							</label>
+							<div class="controls">
+								<span id="functionGroup_{{data.id}}">{{data.functionGroup}}</span>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label"
+								for="buildORTestStartDate_{{data.id}}"> {{t
+								"Gloria.i18n.procurement.procureDetail.header.buildSeriesStartDate"}}:
+							</label>
+							<div class="controls">
+								<span id="buildORTestStartDate_{{data.id}}">{{date
+									data.outboundStartDate "Gloria.i18n.dateformat"}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="buildLocationId_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.buildLocation"}}:
+							</label>
+							<div class="controls">
+								<span id="buildLocationId_{{data.id}}">{{data.outboundLocationId}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="contactPersonId_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.contactPersonID"}}:
+							</label>
+							<div class="controls">
+								<span id="contactPersonId_{{data.id}}">{{data.contactPersonId}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="contactPersonName_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.contactPersonName"}}:
+							</label>
+							<div class="controls">
+								<span id="contactPersonName_{{data.id}}">{{data.contactPersonName}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="requesterId_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.requesterUserId"}}:
+							</label>
+							<div class="controls">
+								<span id="requesterId_{{data.id}}">{{data.requesterUserId}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<label class="control-label" for="requesterName_{{data.id}}">
+								{{t
+								"Gloria.i18n.procurement.procureDetail.header.requesterName"}}:
+							</label>
+							<div class="controls">
+								<span id="requesterName_{{data.id}}">{{data.requesterName}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{#if data.procureComment}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="control-label"
+								for="procureComment_{{data.id}}"> {{t
+								"Gloria.i18n.procurement.procureDetail.header.procureComment"}}:
+							</label>
+							<div class="controls">
+								<span id="procureComment_{{data.id}}">{{data.procureComment}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</div>

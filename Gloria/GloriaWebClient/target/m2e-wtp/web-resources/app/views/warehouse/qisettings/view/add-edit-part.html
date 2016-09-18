@@ -1,0 +1,87 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			{{#if data.id}}
+			<h3>{{t "Gloria.i18n.warehouse.qisettings.tabs.part.editPart"}}
+				| {{t "Gloria.i18n.gloriaHeader"}}</h3>
+			{{else}}
+			<h3>{{t "Gloria.i18n.warehouse.qisettings.tabs.part.addPart"}} |
+				{{t "Gloria.i18n.gloriaHeader"}}</h3>
+			{{/if}}
+		</div>
+		<div class="modal-body">
+			<div>
+				<div id="appModalMessage"></div>
+				<form id="addEditPartForm" name="addEditPartForm" role="form">
+					<fieldset>
+						<input name='part[id]' type="hidden" value='{{data.id}}'>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label has-info" for="partNumber"
+										data-toggle="tooltip" rel="tooltip" data-placement="top"
+										title='{{t "Gloria.i18n.warehouse.qisettings.validation.partNoOrName"}}'>
+										{{t "Gloria.i18n.warehouse.qisettings.header.partNumber"}}: </label>
+									<div class="controls">
+										<input id="partNumber" name="part[partNumber]"
+											class="form-control" value="{{data.partNumber}}"
+											maxlength="20">
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label has-info" for="partName"
+										data-toggle="tooltip" rel="tooltip" data-placement="top"
+										title='{{t "Gloria.i18n.warehouse.qisettings.validation.partNoOrName"}}'>
+										{{t "Gloria.i18n.warehouse.qisettings.header.partName"}}: </label>
+									<div class="controls">
+										<input id="partName" name="part[partName]"
+											class="form-control" value="{{data.partName}}"
+											maxlength="254">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label" for="mandatory">{{t
+										"Gloria.i18n.warehouse.qisettings.header.mandatory"}}: </label>
+									<div class="controls">
+										<select id="mandatory" name="part[mandatory]"
+											class="form-control"> {{{renderDropDown
+											inspectionOptions mandatory true}}}
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				<br />
+				<div class='row'>
+					<div class='col-sm-12'>
+						<div class="form-group">
+							<label class="control-label has-info" style="display: inline;"></label>
+							<span><b>{{t
+									"Gloria.i18n.deliverycontrol.assignOrReassign.text.conditionallyReq"}}</b></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			{{#if data.id}}{{else}} <label class="control-label" for="addAnother">
+				<input id="addAnother" type='checkbox' /> {{t
+				"Gloria.i18n.warehouse.qisettings.addAnother"}}
+			</label> {{/if}}
+			<button type="button" class="btn btn-default" id="save">{{t
+				"Gloria.i18n.buttons.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">{{t
+				"Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

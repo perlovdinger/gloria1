@@ -1,0 +1,48 @@
+<br />
+{{#if showModules}}
+<div class="tabbable">
+	<div class="row">
+		{{#hasPermission "view" 0="MobileReceive"}}
+		<div class="col-xs-6">
+			<a class="thumbnail" href="#warehouse/receive/regular"><img
+				src="app/img/startpage/warehouse/Receive_SVG.png"
+				class="img-rounded btn-block btn-square"></a>
+			<h2 class="text-center">{{t
+				"Gloria.i18n.warehouse.receive.receive"}}</h2>
+		</div>
+		{{/hasPermission}} {{#hasPermission "view" 0="MobileStore"}}
+		<div class="col-xs-6">
+			<a class="thumbnail" href="#warehouse/store"><img
+				src="app/img/startpage/warehouse/Store_SVG.png"
+				class="img-rounded btn-block btn-square"></a>
+			<h2 class="text-center">{{t
+				"Gloria.i18n.warehouse.store.store"}}</h2>
+		</div>
+		{{/hasPermission}}
+		<div class="clearfix visible-xs"></div>
+		{{#hasPermission "view" 0="MobileMove"}}
+		<div class="col-xs-6">
+			<a class="thumbnail" href="#warehouse/move"><img
+				src="app/img/startpage/warehouse/Inventory_SVG.png"
+				class="img-rounded btn-block btn-square"></a>
+			<h2 class="text-center">{{t
+				"Gloria.i18n.warehouse.inventory.toMove.move"}}</h2>
+		</div>
+		{{/hasPermission}} {{#hasPermission "view" 0="MobilePick"}}
+		<div class="col-xs-6">
+			<a class="thumbnail" href="#warehouse/pick"><img
+				src="app/img/startpage/warehouse/Pick_SVG.png"
+				class="img-rounded btn-block btn-square"></a>
+			<h2 class="text-center">{{t "Gloria.i18n.warehouse.pick.pick"}}</h2>
+		</div>
+		<div class="clearfix visible-xs"></div>
+		{{/hasPermission}}
+	</div>
+</div>
+{{else}}
+<div class="row">
+	<div class="col-xs-12">
+		<h2 class="text-center">{{t "Gloria.i18n.unauthorizedUser"}}</h2>
+	</div>
+</div>
+{{/if}}

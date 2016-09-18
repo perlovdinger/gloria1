@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <changeSet id="idx_Companycode_Baseline" author="TIN2177">
+    <comment> Indexes on Company_Code</comment>
+    <createIndex tableName="COMPANY_CODE" indexName="i_companycode_code">
+      <column name="CODE" />
+    </createIndex>
+    <createIndex tableName="COMPANY_CODE" indexName="i_companycode_name">
+      <column name="NAME" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="COMPANY_CODE" indexName="i_companycode_code" />
+      <dropIndex tableName="COMPANY_CODE" indexName="i_companycode_name" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Costcenter_Baseline" author="TIN2177">
+    <comment> Indexes on Cost_Center</comment>
+    <createIndex tableName="COST_CENTER" indexName="i_costcenter_costcenter">
+      <column name="COSTCENTER" />
+    </createIndex>
+    <createIndex tableName="COST_CENTER" indexName="i_costcenter_effectivestartdate">
+      <column name="EFFECTIVESTARTDATE" />
+    </createIndex>
+    <createIndex tableName="COST_CENTER" indexName="i_costcenter_effectiveenddate">
+      <column name="EFFECTIVEENDDATE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="COST_CENTER" indexName="i_costcenter_costcenter" />
+      <dropIndex tableName="COST_CENTER" indexName="i_costcenter_effectivestartdate" />
+      <dropIndex tableName="COST_CENTER" indexName="i_costcenter_effectiveenddate" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Glaccount_Baseline" author="TIN2177">
+    <comment> Indexes on GLAccount</comment>
+    <createIndex tableName="GLACCOUNT" indexName="i_glaccount_accountnumber">
+      <column name="ACCOUNTNUMBER" />
+    </createIndex>
+    <createIndex tableName="GLACCOUNT" indexName="i_glaccount_accountname">
+      <column name="ACCOUNTNAME" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="GLACCOUNT" indexName="i_glaccount_accountnumber" />
+      <dropIndex tableName="GLACCOUNT" indexName="i_glaccount_accountname" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Wbselement_Baseline" author="TIN2177">
+    <comment> Indexes on WBS_Element</comment>
+    <createIndex tableName="WBS_ELEMENT" indexName="i_wbselement_wbs">
+      <column name="WBS" />
+    </createIndex>
+    <createIndex tableName="WBS_ELEMENT" indexName="i_wbselement_projectid">
+      <column name="PROJECTID" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="WBS_ELEMENT" indexName="i_wbselement_wbs" />
+      <dropIndex tableName="WBS_ELEMENT" indexName="i_wbselement_projectid" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Carryover_Baseline" author="TIN2177">
+    <comment> Indexes on Carry_Over</comment>
+    <createIndex tableName="CARRY_OVER" indexName="i_carryover_customerid">
+      <column name="CUSTOMERID" />
+    </createIndex>
+    <createIndex tableName="CARRY_OVER" indexName="i_carryover_partnumber">
+      <column name="PARTNUMBER" />
+    </createIndex>
+    <createIndex tableName="CARRY_OVER" indexName="i_carryover_partversion">
+      <column name="PARTVERSION" />
+    </createIndex>
+    <createIndex tableName="CARRY_OVER" indexName="i_carryover_partaffiliation">
+      <column name="PARTAFFILIATION" />
+    </createIndex>
+    <createIndex tableName="CARRY_OVER" indexName="i_carryover_supplierid">
+      <column name="SUPPLIERID" />
+    </createIndex>
+    <createIndex tableName="CARRY_OVER" indexName="i_carryover_startdate">
+      <column name="STARTDATE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="CARRY_OVER" indexName="i_carryover_customerid" />
+      <dropIndex tableName="CARRY_OVER" indexName="i_carryover_partnumber" />
+      <dropIndex tableName="CARRY_OVER" indexName="i_carryover_partversion" />
+      <dropIndex tableName="CARRY_OVER" indexName="i_carryover_partaffiliation" />
+      <dropIndex tableName="CARRY_OVER" indexName="i_carryover_supplierid" />
+      <dropIndex tableName="CARRY_OVER" indexName="i_carryover_startdate" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Site_Baseline" author="TIN2177">
+    <comment> Indexes on Site</comment>
+    <createIndex tableName="SITE" indexName="i_site_siteid">
+      <column name="SITEID" />
+    </createIndex>
+    <createIndex tableName="SITE" indexName="i_site_sitename">
+      <column name="SITENAME" />
+    </createIndex>
+    <createIndex tableName="SITE" indexName="i_site_sitecode">
+      <column name="SITECODE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="SITE" indexName="i_site_siteid" />
+      <dropIndex tableName="SITE" indexName="i_site_sitename" />
+      <dropIndex tableName="SITE" indexName="i_site_sitecode" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Currency_Baseline" author="TIN2177">
+    <comment> Indexes on Currency</comment>
+    <createIndex tableName="CURRENCY" indexName="i_currency_code">
+      <column name="CODE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="CURRENCY" indexName="i_currency_code" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Deliveryfollowupteamfilter_Baseline" author="TIN2177">
+    <comment> Indexes on Delivery_Follow_Up_Team_Filter</comment>
+    <createIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_supplierid">
+      <column name="SUPPLIERID" />
+    </createIndex>
+    <createIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_projectid">
+      <column name="PROJECTID" />
+    </createIndex>
+    <createIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_suffix">
+      <column name="SUFFIX" />
+    </createIndex>
+    <createIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_dcuserid">
+      <column name="DELIVERYCONTROLLERUSERID" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_supplierid" />
+      <dropIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_projectid" />
+      <dropIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_suffix" />
+      <dropIndex tableName="DELIVERY_FOLLOW_UP_TEAM_FILTER" indexName="i_deliveryfollowupteamfilter_dcuserid" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Deliveryfollowupteam_Baseline" author="TIN2177">
+    <comment> Indexes on Delivery_Follow_Up_Team</comment>
+    <createIndex tableName="DELIVERY_FOLLOW_UP_TEAM" indexName="i_deliveryfollowupteam_code">
+      <column name="CODE" />
+    </createIndex>
+    <createIndex tableName="DELIVERY_FOLLOW_UP_TEAM" indexName="i_deliveryfollowupteam_name">
+      <column name="NAME" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="DELIVERY_FOLLOW_UP_TEAM" indexName="i_deliveryfollowupteam_code" />
+      <dropIndex tableName="DELIVERY_FOLLOW_UP_TEAM" indexName="i_deliveryfollowupteam_name" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Partaliasmapping_Baseline" author="TIN2177">
+    <comment> Indexes on Part_Alias_Mapping</comment>
+    <createIndex tableName="PART_ALIAS_MAPPING" indexName="i_partaliasmapping_koladomain">
+      <column name="KOLADOMAIN" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="PART_ALIAS_MAPPING" indexName="i_partaliasmapping_koladomain" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Suppliercounterpart_Baseline" author="TIN2177">
+    <comment> Indexes on Supplier_Counter_Part</comment>
+    <createIndex tableName="SUPPLIER_COUNTER_PART" indexName="i_suppliercounterpart_ppsuffix">
+      <column name="PPSUFFIX" />
+    </createIndex>
+    <createIndex tableName="SUPPLIER_COUNTER_PART" indexName="i_suppliercounterpart_materialuserid">
+      <column name="MATERIALUSERID" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="SUPPLIER_COUNTER_PART" indexName="i_suppliercounterpart_ppsuffix" />
+      <dropIndex tableName="SUPPLIER_COUNTER_PART" indexName="i_suppliercounterpart_materialuserid" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Unitofmeasure_Baseline" author="TIN2177">
+    <comment> Indexes on Unit_of_Measure</comment>
+    <createIndex tableName="UNIT_OF_MEASURE" indexName="i_unitofmeasure_code">
+      <column name="CODE" />
+    </createIndex>
+    <createIndex tableName="UNIT_OF_MEASURE" indexName="i_unitofmeasure_gloriacode">
+      <column name="GLORIACODE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="UNIT_OF_MEASURE" indexName="i_unitofmeasure_code" />
+      <dropIndex tableName="UNIT_OF_MEASURE" indexName="i_unitofmeasure_gloriacode" />
+    </rollback>
+  </changeSet>
+
+</databaseChangeLog>

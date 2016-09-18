@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Currencys>
+  <Currency code="EUR" name="Euro" suppressDecimal="false" displaySeq="1">
+  </Currency>
+  <Currency code="SEK" name="Sweden Krona" suppressDecimal="false" displaySeq="2">
+  </Currency>
+  <Currency code="GBP" name="Great Britain Pound" suppressDecimal="false" displaySeq="3">
+  </Currency>
+  <Currency code="DKK" name="Denmark Krona" suppressDecimal="false" displaySeq="4">
+  </Currency>
+  <Currency code="HUF" name="Hungarian Forint" suppressDecimal="true" displaySeq="5">
+  </Currency>
+  <Currency code="USD" name="United States Dollar" suppressDecimal="false" displaySeq="6">
+  </Currency>
+  <Currency code="BRL" name="Brazil Real" suppressDecimal="false" displaySeq="7">
+  </Currency>
+  <Currency code="CAD" name="Canada Dollars" suppressDecimal="false" displaySeq="8">
+  </Currency>
+  <Currency code="JPY" name="Japan Yen" suppressDecimal="true" displaySeq="9">
+  </Currency>
+  <Currency code="INR" name="India Rupee" suppressDecimal="false" displaySeq="10">
+  </Currency>
+  <Currency code="THB" name="Thailand Bath" suppressDecimal="false" displaySeq="11">
+  </Currency>
+  <Currency code="CNY" name="China Yuan" suppressDecimal="false" displaySeq="12">
+  </Currency>
+  <Currency code="MXN" name="Mexiko Peso" suppressDecimal="false" displaySeq="13">
+  </Currency>
+
+</Currencys>

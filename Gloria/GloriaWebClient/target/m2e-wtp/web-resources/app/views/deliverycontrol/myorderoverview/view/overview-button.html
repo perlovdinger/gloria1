@@ -1,0 +1,33 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="noprint">
+				<a id="open-button" class="btn btn-default" {{#unless
+					permittedActions.open}}disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.deliverycontrol.button.open"}} </a> {{#if_eq module
+				"internal"}} {{#hasPermission "edit" 0="DeliveryControlPartDetail"}}
+				<a id="adjust-button" class="btn btn-default" {{#unless
+					permittedActions.adjust}}disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.deliverycontrol.button.adjust"}} </a> <a id="edit-button"
+					class="btn btn-default" {{#unless
+					permittedActions.edit}}disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.deliverycontrol.button.multipleUpdate"}} </a>
+				{{/hasPermission}} <a id="exportExcel-button"
+					class="btn btn-default"> {{t
+					"Gloria.i18n.deliverycontrol.button.exportExcel"}} </a> {{/if_eq}}
+				{{#if_eq module "external"}} {{#hasPermission "edit"
+				0="DeliveryControlPartDetail"}} <a id="adjust-button"
+					class="btn btn-default" {{#unless
+					permittedActions.adjust}}disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.deliverycontrol.button.adjust"}} </a> <a id="edit-button"
+					class="btn btn-default" {{#unless
+					permittedActions.edit}}disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.deliverycontrol.button.multipleUpdate"}} </a>{{/hasPermission}}
+				<a id="exportExcel-button" class="btn btn-default"> {{t
+					"Gloria.i18n.deliverycontrol.button.exportExcel"}} </a> {{/if_eq}}<a
+					id="clear-filter" class="clear-filter">{{t
+					"Gloria.i18n.gridpanel.clearFilter"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

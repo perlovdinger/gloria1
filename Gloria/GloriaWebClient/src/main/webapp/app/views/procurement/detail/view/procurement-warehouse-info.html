@@ -1,0 +1,42 @@
+<input class="form-control" name='procureLine[id]' type="hidden"
+	required="required" value='{{procureLineModel.id}}'>
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label {{#unless readOnly}}required{{/unless}}"
+					for='dangerousGoods'> {{t
+					"Gloria.i18n.procurement.procureDetail.header.DangerousGoods"}}: </label>
+				<div class="controls">{{dangerousGoodsSelector
+					selected=procureLineModel.dangerousGoods idPrefix='dangerousGoods'
+					namePrefix='dangerousGoods' modelName='procureLine' multiple=false
+					isReadOnly=readOnly}}</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-8'>
+			<div class='form-group'>
+				<label class="control-label" for='warehouseComment'> {{t
+					"Gloria.i18n.procurement.procureDetail.header.warehouseComment"}}:
+					{{#if readOnly}} {{else}} <br /> <span class="js-externalFields">&#9733;
+						{{t
+						"Gloria.i18n.procurement.procureDetail.header.warehouseComment2"}}</span>
+					{{/if}}
+				</label>
+				<div class="controls">
+					{{#if readOnly}}
+					<div id='warehouseComment' class="comment-area">{{{procureLineModel.warehouseComment}}}</div>
+					<textarea class="form-control hidden" id='warehouseComment'
+						name='procureLine[warehouseComment]' rows="3" cols="100"
+						maxlength="120">{{procureLineModel.warehouseComment}}</textarea>
+					{{else}}
+					<textarea class="form-control" id='warehouseComment'
+						name='procureLine[warehouseComment]' rows="3" cols="100"
+						maxlength="120">{{procureLineModel.warehouseComment}}</textarea>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

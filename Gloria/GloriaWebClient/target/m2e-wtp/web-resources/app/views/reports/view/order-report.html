@@ -1,0 +1,698 @@
+<div class="row">
+	<div class="col-sm-12">
+		<label> {{t "Gloria.i18n.reports.text.possibelInfo"}}: </label>
+	</div>
+</div>
+<div class="well well-small">
+	<div style="float: left; width: 95%;">
+		<div class="row row-medium-height">
+			<div class="col-sm-4 col-xs-12">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="companyCode"> {{t
+								"Gloria.i18n.reports.text.companyCode"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="companyCodeSelectorContainer" class="form-group">
+							<input id="companyCode" class="form-control js-list"
+								name="dropdown[companyCode]" value="{{data.companyCode}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="suffix"> {{t
+								"Gloria.i18n.reports.text.suffix"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="suffixSelectorContainer" class="form-group">
+							<input id="suffix" class="form-control js-list"
+								name="dropdown[suffix]" value="{{data.suffix}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="project"> {{t
+								"Gloria.i18n.reports.text.project"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="projectSelectorContainer" class="form-group">
+							<input id="project" class="form-control js-list"
+								name="dropdown[project]" value="{{data.project}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="buildSeries"> {{t
+								"Gloria.i18n.reports.text.buildSeries"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="buildSeriesSelectorContainer" class="form-group">
+							<input id="buildSeries" class="form-control js-list"
+								name="dropdown[buildSeries]" value="{{data.buildSeries}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="testObject"> {{t
+								"Gloria.i18n.reports.text.testObject"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="testObjectSelectorContainer" class="form-group">
+							<input id="testObject" class="form-control js-list"
+								name="dropdown[testObject]" value="{{data.testObject}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="supplierParmaId"> {{t
+								"Gloria.i18n.reports.text.supplierParmaId"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="supplierParmaIdSelectorContainer" class="form-group">
+							<input id="supplierParmaId" class="form-control js-list"
+								name="dropdown[supplierParmaId]"
+								value="{{data.supplierParmaId}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="supplierParmaName"> {{t
+								"Gloria.i18n.reports.text.supplierParmaName"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="supplierNameSelectorContainer" class="form-group">
+							<input id="supplierParmaName" class="form-control js-list"
+								name="dropdown[supplierParmaName]"
+								value="{{data.supplierParmaName}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="reference"> {{t
+								"Gloria.i18n.reports.text.reference"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="referenceSelectorContainer" class="form-group">
+							<input id="reference" class="form-control js-list"
+								name="dropdown[reference]" value="{{data.reference}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="mtrId"> {{t
+								"Gloria.i18n.reports.text.mtrId"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="mtrIdSelectorContainer" class="form-group">
+							<input id="mtrId" class="form-control js-list"
+								name="dropdown[mtrId]" value="{{data.mtrId}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="deliveryControllerId">
+								{{t "Gloria.i18n.reports.text.deliveryControllerId"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="deliveryControllerIdSelectorContainer" class="form-group">
+							<input id="deliveryControllerId" class="form-control js-list"
+								name="dropdown[deliveryControllerId]"
+								value="{{data.deliveryControllerId}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="deliveryControllerName">
+								{{t "Gloria.i18n.reports.text.deliveryControllerName"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="deliveryControllerNameSelectorContainer"
+							class="form-group">
+							<input id="deliveryControllerName" class="form-control js-list"
+								name="dropdown[deliveryControllerName]"
+								value="{{data.deliveryControllerName}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label class="control-label" for="orderStatus"> {{t
+								"Gloria.i18n.reports.text.orderStatus"}}: </label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div id="orderStatusSelectorContainer" class="form-group">
+							<input id="orderStatus" class="form-control js-list"
+								name="dropdown[orderStatus]">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-12">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								checked="checked" disabled="disabled"> {{t
+								"Gloria.i18n.reports.text.partNo"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								checked="checked" disabled="disabled"> {{t
+								"Gloria.i18n.reports.text.partVersion"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								checked="checked" disabled="disabled"> {{t
+								"Gloria.i18n.reports.text.partName"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								checked="checked" disabled="disabled"> {{t
+								"Gloria.i18n.reports.text.partModification"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="mailFormId" name="checkbox[mailFormId]" {{#if
+								data.mailFormId}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.mailFormId"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="requisitionId" name="checkbox[requisitionId]" {{#if
+								data.requisitionId}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.requisitionId"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="requisitionDate" name="checkbox[requisitionDate]" {{#if
+								data.requisitionDate}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.requisitionDate"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="procureTeam" name="checkbox[procureTeam]" {{#if
+								data.procureTeam}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.procureTeam"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="orderType" name="checkbox[orderType]" {{#if
+								data.orderType}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.orderType"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="orderNo" name="checkbox[orderNo]" {{#if
+								data.orderNo}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.orderNo"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="purchasingOrg" name="checkbox[purchasingOrg]" {{#if
+								data.purchasingOrg}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.purchasingOrg"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="buyerId" name="checkbox[buyerId]" {{#if
+								data.buyerId}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.buyerId"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="buyerId" name="checkbox[buyerName]" {{#if
+								data.buyerName}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.buyerName"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="deliveryNoteDate" name="checkbox[deliveryNoteDate]" {{#if
+								data.deliveryNoteDate}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.deliveryNoteDate"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="col-sm-2 col-xs-12">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="internalProcurerId" name="checkbox[internalProcurerId]"
+								{{#if data.internalProcurerId}} checked="checked"{{/if}}>
+								{{t "Gloria.i18n.reports.text.internalProcurerId"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="orderDate" name="checkbox[orderDate]" {{#if
+								data.orderDate}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.orderDate"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="orderQty" name="checkbox[orderQty]" {{#if
+								data.orderQty}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.orderQty"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="possibleToReceiveQty" name="checkbox[possibleToReceiveQty]"
+								{{#if data.possibleToReceiveQty}} checked="checked"{{/if}}>
+								{{t "Gloria.i18n.reports.text.possibleToReceiveQty"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="unitOfMeasure" name="checkbox[unitOfMeasure]" {{#if
+								data.unitOfMeasure}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.unitOfMeasure"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="orderSta" name="checkbox[orderSta]" {{#if
+								data.orderSta}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.orderSta"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="agreedSta" name="checkbox[agreedSta]" {{#if
+								data.agreedSta}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.agreedSta"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="staAgreedLastUpdated" name="checkbox[staAgreedLastUpdated]"
+								{{#if data.staAgreedLastUpdated}} checked="checked"{{/if}}>
+								{{t "Gloria.i18n.reports.text.staAgreedLastUpdated"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="receivedQty" name="checkbox[receivedQty]" {{#if
+								data.receivedQty}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.receivedQty"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="receivedDateTime" name="checkbox[receivedDateTime]" {{#if
+								data.receivedDateTime}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.receivedDateTime"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="expectedQty" name="checkbox[expectedQty]" {{#if
+								data.expectedQty}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.expectedQty"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="expectedArrival" name="checkbox[expectedArrival]" {{#if
+								data.expectedArrival}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.expectedArrival"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="lastModifiedDate" name="checkbox[lastModifiedDate]" {{#if
+								data.lastModifiedDate}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.lastModifiedDate"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="blockedQty" name="checkbox[blockedQty]" {{#if
+								data.blockedQty}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.blockedQty"}}
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-12">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="plannedDispatchDate" name="checkbox[plannedDispatchDate]"
+								{{#if data.plannedDispatchDate}} checked="checked"{{/if}}>
+								{{t "Gloria.i18n.reports.text.plannedDispatchDate"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="orderLog" name="checkbox[orderLog]" {{#if
+								data.orderLog}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.orderLog"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="orderLineLog" name="checkbox[orderLineLog]" {{#if
+								data.orderLineLog}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.orderLineLog"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="procureInfo" name="checkbox[procureInfo]" {{#if
+								data.procureInfo}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.procureInfo"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="price" name="checkbox[price]" {{#if
+								data.price}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.totalPricePossToRec"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="unitPrice" name="checkbox[unitPrice]" {{#if
+								data.unitPrice}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.unitPrice"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="unitOfPrice" name="checkbox[unitOfPrice]" {{#if
+								data.unitOfPrice}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.unitOfPrice"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="currency" name="checkbox[currency]" {{#if
+								data.currency}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.currency"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="qtyTestObject" name="checkbox[qtyTestObject]" {{#if
+								data.qtyTestObject}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.qtyTestObject"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="additionalQty" name="checkbox[additionalQty]" {{#if
+								data.additionalQty}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.additionalQty"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="wbs" name="checkbox[wbs]" {{#if data.wbs}} checked="checked"{{/if}}>
+								{{t "Gloria.i18n.reports.text.wbs"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="costCenter" name="checkbox[costCenter]" {{#if
+								data.costCenter}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.costCenter"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="glAccount" name="checkbox[glAccount]" {{#if
+								data.glAccount}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.glAccount"}}
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-xs-12">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="contactPersonId" name="checkbox[contactPersonId]" {{#if
+								data.contactPersonId}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.contactPersonId"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="contactPersonName" name="checkbox[contactPersonName]" {{#if
+								data.contactPersonName}} checked="checked"{{/if}}> {{t
+								"Gloria.i18n.reports.text.contactPersonName"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="materialControllerId" name="checkbox[materialControllerId]"
+								{{#if data.materialControllerId}} checked="checked"{{/if}}>
+								{{t "Gloria.i18n.reports.text.materialControllerId"}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="checkbox-inline"> <input type="checkbox"
+								id="materialControllerName"
+								name="checkbox[materialControllerName]" {{#if
+								data.materialControllerName}} checked="checked"{{/if}}>
+								{{t "Gloria.i18n.reports.text.materialControllerName"}}
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{#hasPermission "edit" 0="Reports"}}
+	<div style="float: right; width: 5%">
+		<div style="float: right">
+			<i id="fav"
+				class="fa fa-star fa-2x {{#if isFav}} favorite-yellow {{else}} favorite-white {{/if}}"></i>
+		</div>
+	</div>
+	{{/hasPermission}}
+	<div class="row"></div>
+</div>

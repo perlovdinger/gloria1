@@ -1,0 +1,226 @@
+<link rel="stylesheet" href="app/libs/bootstrap/css/bootstrap.min.css"
+	media="all">
+<link rel="stylesheet" href="app/styles/gloriaGeneral.css" media="all">
+<link rel="stylesheet" href="app/styles/gloriaDesktop.css" media="all">
+<link href="app/styles/print.css" rel="stylesheet" media="print">
+<div id="printInfoContent">
+	<br> <br>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<strong> {{t
+					"Gloria.i18n.warehouse.ship.header.shipFrom"}}: </strong>
+				<div class="controls">
+					<div>{{requestListModel.whSiteAddress}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<strong>{{t
+					"Gloria.i18n.warehouse.ship.header.deliveryAddress"}}:</strong>
+				<div class="controls">
+					<div>{{#if
+						requestListModel.deliveryAddress}}{{requestListModel.deliveryAddress}}{{else}}{{requestListModel.deliveryAddressName}}
+						{{/if}}</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<br>
+	<div class="row">
+		<strong>&nbsp;{{t "Gloria.i18n.warehouse.ship.dispatchNote"}}</strong>
+	</div>
+	<br>
+	<div class="row ">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<strong> {{t
+					"Gloria.i18n.warehouse.ship.header.dispatchNoteNo"}}: </strong> <span
+					class="control-label"> {{dispatchNoteModel.dispatchNoteNo}}
+				</span>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<strong> {{t
+					"Gloria.i18n.warehouse.ship.header.transportMode"}}: </strong> <span
+					class="control-label"> {{dispatchNoteModel.transportMode}} </span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6 ">
+			<div class="form-group">
+				<strong> {{t "Gloria.i18n.warehouse.ship.header.date"}}: </strong> <span
+					class="control-label"> {{date
+					dispatchNoteModel.dispatchNoteDate "Gloria.i18n.dateformat"}} </span>
+			</div>
+		</div>
+		<div class="col-xs-6 ">
+			<div class="form-group">
+				<strong> {{t "Gloria.i18n.warehouse.ship.header.weight"}}:
+				</strong> <span class="control-label"> {{dispatchNoteModel.weight}} </span>
+			</div>
+		</div>
+	</div>
+
+	<div class="row ">
+		<div class="col-xs-6 ">
+			<div class="form-group">
+				<strong> {{t
+					"Gloria.i18n.warehouse.ship.header.requiredDeliveryDate"}}: </strong> <span
+					class="control-label"> {{date
+					requestListModel.requiredDeliveryDate "Gloria.i18n.dateformat"}} </span>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<strong> {{t "Gloria.i18n.warehouse.ship.header.height"}}:
+				</strong> <span class="control-label"> {{dispatchNoteModel.height}} </span>
+			</div>
+		</div>
+	</div>
+	<div class="row ">
+		<div class="col-xs-6 ">
+			<div class="form-group">
+				<strong> {{t
+					"Gloria.i18n.warehouse.ship.header.actualDelivery"}}: </strong> <span
+					class="control-label"> {{date dispatchNoteModel.deliveryDate
+					"Gloria.i18n.dateformat"}} </span>
+			</div>
+		</div>
+		<div class="col-xs-6 ">
+			<div class="form-group"></div>
+		</div>
+	</div>
+	<div class="row ">
+		<div class="col-xs-6 ">
+			<div class="form-group">
+				<strong> {{t "Gloria.i18n.warehouse.ship.header.shipVia"}}:
+				</strong>
+				<div class="controls">
+					<div>{{dispatchNoteModel.shipVia}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group"></div>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<strong> {{t "Gloria.i18n.warehouse.ship.header.note"}}: </strong>
+				<div class="controls">
+					<div>{{dispatchNoteModel.note}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group"></div>
+		</div>
+	</div>
+	<br /> <br />
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<strong> {{t "Gloria.i18n.warehouse.ship.header.partInfo"}}
+				</strong>
+			</div>
+		</div>
+		<div class="col-xs-6 ">
+			<div class="form-group"></div>
+		</div>
+	</div>
+	<div id="requestGroupMaterialLineDetails">
+		{{#if data}} {{#each data}} <br />
+		<div class="row ">
+			<div class="col-xs-6 ">
+				<div class="form-group">
+					<strong> {{t
+						"Gloria.i18n.warehouse.ship.header.projectId"}}: </strong> <span
+						class="control-label"> {{this.projectId}} </span>
+				</div>
+			</div>
+			<div class="col-xs-6 ">
+				<div class="form-group">
+					<strong> {{t
+						"Gloria.i18n.warehouse.ship.header.changeRequestIds"}}: </strong> <span
+						class="control-label"> {{this.changeRequestIds}} </span>
+				</div>
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-xs-6 ">
+				<div class="form-group">
+					<strong> {{t
+						"Gloria.i18n.warehouse.ship.header.referenceGroup"}}: </strong> <span
+						class="control-label"> {{this.referenceGroup}} </span>
+				</div>
+			</div>
+			<div class="col-xs-6 ">
+				<div class="form-group">
+					<strong> {{t
+						"Gloria.i18n.warehouse.ship.header.referenceId"}}: </strong> <span
+						class="control-label"> {{this.referenceId}} </span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="form-group">
+					<table
+						class="table table-bordered table-hover smallerTextPrintGrid">
+						<thead>
+							<tr>
+								<th style="width: 5%">#</th>
+								<th style="width: 15%">{{t
+									"Gloria.i18n.warehouse.ship.header.partNo"}}</th>
+								<th style="width: 10%">{{t
+									"Gloria.i18n.warehouse.ship.header.version"}}</th>
+								<th style="width: 20%">{{t
+									"Gloria.i18n.warehouse.ship.header.partName"}}</th>
+								<th style="width: 10%">{{t
+									"Gloria.i18n.warehouse.ship.header.partModification"}}</th>
+								<th style="width: 10%">{{t
+									"Gloria.i18n.warehouse.ship.header.UoM"}}</th>
+								<th style="width: 10%">{{t
+									"Gloria.i18n.warehouse.ship.header.pullQty"}}</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#if this.materialLineCollection}} {{#each
+							this.materialLineCollection}}
+							<tr>
+								<td>{{math @index "+" 1}}</td>
+								<td>{{this.pPartNumber}}</td>
+								<td>{{this.pPartVersion}}</td>
+								<td>{{this.pPartName}}</td>
+								<td>{{this.pPartModification}}</td>
+								<td>{{this.unitOfMeasure}}</td>
+								<td>{{this.quantity}}</td>
+							</tr>
+							{{/each}} {{else}}
+							<tr>
+								<td></td>
+								<td colspan="6" style="text-align: center">{{t
+									"Gloria.i18n.general.noRow"}}</td>
+							</tr>
+							{{/if}}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		{{/each}} {{else}}
+		<div>
+			<span>{{t "Gloria.i18n.general.noRow"}}</span>
+		</div>
+		{{/if}}
+	</div>
+
+</div>

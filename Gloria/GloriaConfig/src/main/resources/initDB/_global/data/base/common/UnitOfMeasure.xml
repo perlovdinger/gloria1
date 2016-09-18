@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnitOfMeasures>
+  <UnitOfMeasure code="PCE" name="Piece" gloriaCode="true" displaySeq="1">
+  </UnitOfMeasure>
+   <UnitOfMeasure code="DMQ" name="Litre/Cube Decimetre" gloriaCode="true" displaySeq="2">
+  </UnitOfMeasure>
+  <UnitOfMeasure code="MTR" name="Meter" gloriaCode="true" displaySeq="3">
+  </UnitOfMeasure>
+  <UnitOfMeasure code="FOT" name="Foot" gloriaCode="true" displaySeq="4">
+  </UnitOfMeasure>  
+  <UnitOfMeasure code="INH" name="Inch" gloriaCode="true" displaySeq="5">
+  </UnitOfMeasure>  
+  <UnitOfMeasure code="KGM" name="Kilogram" gloriaCode="true" displaySeq="6">
+  </UnitOfMeasure> 
+   <UnitOfMeasure code="GRM" name="Gram" gloriaCode="true" displaySeq="7">
+  </UnitOfMeasure>
+  <UnitOfMeasure code="MTK" name="Square Meter" gloriaCode="true" displaySeq="8">
+  </UnitOfMeasure>
+  <UnitOfMeasure code="MTQ" name="Cubic Metre" gloriaCode="true" displaySeq="9">
+  </UnitOfMeasure>  
+  <UnitOfMeasure code="MMT" name="Milimeter" gloriaCode="false" displaySeq="10">
+  </UnitOfMeasure> 
+  <UnitOfMeasure code="CM2" name="Square centimeter" gloriaCode="false" displaySeq="11">
+  </UnitOfMeasure>
+  <UnitOfMeasure code="ML" name="Mililiter" gloriaCode="false" displaySeq="12">
+  </UnitOfMeasure> 
+ 
+</UnitOfMeasures>

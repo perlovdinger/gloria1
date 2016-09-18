@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:SyncCostCenter xmlns:n1="http://finance.group.volvo.com/costcenter/1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://finance.group.volvo.com/costcenter/1_0 ../CostCenter_1_0.xsd">
+  <Sync ReasonCode="Load">
+    <MessageHeader>
+      <MsgVersion>1.0.0</MsgVersion>
+      <Sender>
+        <LogicalId>VGMF</LogicalId>
+        <ComponentId>FIMCLNT100</ComponentId>
+      </Sender>
+      <CreationDateTime>2012-12-11T05:16:56Z</CreationDateTime>
+    </MessageHeader>
+  </Sync>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>88888888</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Roadcrew General</ShortText>
+        <LongText>Roadcrew General &amp; Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010006</ProfitCenter>
+      <StandardHierarchyNode>BC37435</StandardHierarchyNode>
+      <PersonResponsibleName>Trevor Smith</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>99999999</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Customer Solutions</ShortText>
+        <LongText>Customer Solutions</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>7010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010051</ProfitCenter>
+      <StandardHierarchyNode>BC24160</StandardHierarchyNode>
+      <PersonResponsibleName>Paul Martin</PersonResponsibleName>
+      <Place>GBRUG01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230001110</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Legal</ShortText>
+        <LongText>Legal</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010050</ProfitCenter>
+      <StandardHierarchyNode>BC14400</StandardHierarchyNode>
+      <PersonResponsibleName>Villanueva, Simon</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+</n1:SyncCostCenter>

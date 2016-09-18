@@ -1,0 +1,83 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t "Gloria.i18n.warehouse.store.adjust.header"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div style="padding-left: 15px; padding-right: 15px;">
+				<div id="appModalMessage"></div>
+				<form id="adjust-form" name="adjust-form">
+					<fieldset>
+						<input type="hidden" name='materialLine[id]' value='{{id}}'>
+						<div class='row'>
+							<div class='col-sm-2'>
+								<div class='form-group'>
+									<label class="control-label" for="storedQuantity{{data.id}}">
+										{{t "Gloria.i18n.warehouse.store.header.storedQuantity"}}: </label>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label"
+										for="suggestedBinLocation{{data.id}}"> {{t
+										"Gloria.i18n.warehouse.store.header.suggestedBinLocation"}}: </label>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label" for="binlocation{{data.id}}">
+										{{t "Gloria.i18n.warehouse.store.header.binlocation"}}: </label>
+								</div>
+							</div>
+							<div class='col-sm-2'>
+								<div class='form-group'>
+									<label class="control-label" for="adjust{{data.id}}">
+										{{t "Gloria.i18n.warehouse.store.adjust.split"}} </label>
+								</div>
+							</div>
+						</div>
+						<div id="adjustStore"></div>
+						<div id="sumOfQuantities" class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<strong class="control-label">{{t
+										"Gloria.i18n.warehouse.store.adjust.sum"}}:</strong> <span
+										id="quantitySum" class="control-label"></span>
+								</div>
+							</div>
+						</div>
+						
+						<div id="storedQty" class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<strong class="control-label">{{t
+										"Gloria.i18n.warehouse.store.adjust.storedQty"}}:</strong> <span
+										id="allowedStoredQty" class="control-label">{{data.storedQuantity}}</span>
+								</div>
+							</div>
+						</div>
+
+						<div id="toStoreQty" class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<strong class="control-label">{{t
+										"Gloria.i18n.warehouse.store.adjust.toStoreQty"}}:</strong> <span
+										id="allowedStoreQuantity" class="control-label">{{data.quantity}}</span>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="splitStore"
+				disabled="disabled">{{t
+				"Gloria.i18n.warehouse.store.button.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

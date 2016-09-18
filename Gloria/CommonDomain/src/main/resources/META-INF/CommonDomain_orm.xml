@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+
+  <named-query name="getSiteBySiteIds">
+    <query>SELECT sit FROM Site sit where sit.siteId in(:siteIds)</query>
+  </named-query>
+
+  <named-query name="getSupplierCounterPartsByDeliveryFollowUpTeamId">
+    <query>SELECT scp FROM SupplierCounterPart scp where (:deliveryFollowUpTeamId = 0 or scp.deliveryFollowUpTeam.deliveryFollowUpTeamOid =:deliveryFollowUpTeamId) order by scp.shipToId asc,scp.ppSuffix asc</query>
+  </named-query>
+  
+ <named-query name="findAllDeliveryFollowUpTeamFilter">
+    <query>select dff from DeliveryFollowUpTeamFilter dff</query>
+  </named-query>
+
+  <named-query name="getDeliveryFollowupTeamFilterByDeliveryFollowUpTeamOid">
+    <query>select dfutf from DeliveryFollowUpTeamFilter dfutf where dfutf.deliveryFollowUpTeam.deliveryFollowUpTeamOid =:deliveryFollowUpTeamOid order by dfutf.supplierId asc,dfutf.suffix asc</query>
+  </named-query> 
+  
+   <named-query name="getSiteBySiteId">
+    <query>SELECT sit FROM Site sit where sit.siteId = :siteId</query>
+  </named-query>
+  
+  <named-query name="findSupplierCounterPartByPPSuffix">
+    <query>SELECT scp FROM SupplierCounterPart scp where scp.ppSuffix = :ppSuffix and scp.disabledProcure = false</query>
+  </named-query>
+  
+  <named-query name="findSupplierCounterPartByMaterialUserId">
+    <query>SELECT scp FROM SupplierCounterPart scp where scp.materialUserId = :materialUserId and scp.disabledProcure = false</query>
+  </named-query>
+
+  <named-query name="findAllBuildSites">
+    <query>SELECT bs FROM BuildSite bs</query>
+  </named-query>  
+  
+   <named-query name="findSupplierDeliveryFollowupTeamFilter">
+    <query>select dfutf from DeliveryFollowUpTeamFilter dfutf where  dfutf.supplierId = :supplierId  and dfutf.suffix =:suffix </query>
+  </named-query> 
+  
+  <named-query name="findProjectDeliveryFollowupTeamFilter">
+    <query>select dfutf from DeliveryFollowUpTeamFilter dfutf where  dfutf.projectId = :projectId</query>
+  </named-query> 
+  
+  <named-query name="findAllDangerousGoods">
+    <query>select dg from DangerousGoods dg order by dg.displaySeq asc</query>
+  </named-query>
+
+  <named-query name="getAllPartAffiliations">
+    <query>select pa from PartAffiliation pa where  pa.requestable = :requestable </query>
+  </named-query>
+  
+  <named-query name="getProjectFilterDetailsById">
+    <query>select dfutf from DeliveryFollowUpTeamFilter dfutf where  dfutf.deliveryFollowUpTeamFilterOid = :deliveryFollowUpTeamFilterOid</query>
+  </named-query> 
+  
+  <named-query name="getProjectsByCompanyCode">
+    <query>SELECT DISTINCT wbs.projectId FROM WbsElement wbs where LOWER(wbs.projectId) LIKE :projectId and wbs.companyCode.code in (:companyCodes) order by wbs.projectId asc</query>
+  </named-query>
+  
+  <named-query name="getProjects">
+    <query>SELECT DISTINCT wbs.projectId FROM WbsElement wbs where LOWER(wbs.projectId) LIKE :projectId order by wbs.projectId asc</query>
+  </named-query>
+  
+  <named-query name="deleteCostCentersByCompanyCode">
+    <query>DELETE FROM CostCenter cc WHERE cc.companyCode.code = :companyCode</query>
+  </named-query>
+  
+  <named-query name="deleteAllCarryOver">
+    <query>DELETE FROM CarryOver</query>
+  </named-query>
+  
+  <named-query name="filterInvalidGlAccounts">
+    <query>select DISTINCT gla.accountNumber FROM GlAccount gla where gla.accountNumber IN (:accountNos) and gla.companyCode.code = :companyCode</query>
+  </named-query>
+  
+  <named-query name="filterInvalidWbs">
+    <query>select DISTINCT w.wbs FROM WbsElement w where w.wbs IN (:wbs) and w.companyCode.code = :companyCode</query>
+  </named-query>
+  
+  <named-query name="filterInvalidCostCenter">
+    <query>select DISTINCT cc.costCenter FROM CostCenter cc where cc.costCenter IN (:costCenter) and cc.companyCode.code = :companyCode</query>
+  </named-query>
+  
+</entity-mappings>

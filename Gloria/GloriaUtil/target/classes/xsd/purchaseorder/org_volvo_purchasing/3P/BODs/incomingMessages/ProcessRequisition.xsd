@@ -1,0 +1,23 @@
+<xsd:schema xmlns="http://www.volvo.com/3P/Purchasing/2008/10" xmlns:oa="http://www.openapplications.org/oagis/9" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.volvo.com/3P/Purchasing/2008/10" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xsd:include schemaLocation="../../Nouns/Requisition.xsd"/>
+	<xsd:import namespace="http://www.openapplications.org/oagis/9" schemaLocation="../../../../org_openapplications_platform/1_0/Common/OAGi/Components/Meta.xsd"/>
+	<xsd:element name="ProcessRequisition" type="ProcessRequisitionType"/>		
+		<xsd:element name="DataArea" type="ProcessRequisitionDataAreaType"/>		
+		<xsd:element name="SendingApplication" type="xsd:string"/>
+	<xsd:complexType name="ProcessRequisitionType">
+		<xsd:complexContent>
+			<xsd:extension base="oa:BusinessObjectDocumentType">
+				<xsd:sequence>						
+					<xsd:element name="SendingApplication" minOccurs="1" />
+					<xsd:element name="DataArea" type="ProcessRequisitionDataAreaType"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProcessRequisitionDataAreaType">
+		<xsd:sequence>
+			<xsd:element ref="oa:Process"/>
+			<xsd:element ref="Requisition" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	</xsd:schema>

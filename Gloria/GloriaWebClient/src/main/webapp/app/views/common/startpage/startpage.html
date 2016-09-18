@@ -1,0 +1,167 @@
+<div class="vertical-space"></div>
+<div class="row">
+	{{#hasPermission 'view' 0='Procurement'}}
+		{{#hasPermission 'view' 0='MaterialRequest'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#materialrequest/overview" id="navigateMaterialRequestId">
+					<img src="app/img/startpage/materialrequest/Material_Request_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.materialrequest.materialrequest"}}
+				</h4>
+			</div>
+		{{/hasPermission}}
+		{{#hasPermission 'view' 0='Procurement'}}
+			<div class="col-xs-3 col-md-2">
+			{{#if isIP}}
+				<a class="thumbnail" href="#procurement/overview/internalProcurement"	id="navigateProcurementId">
+					<img src="app/img/startpage/procurement/Procurement_Overview_SVG.svg" class="img-responsive">
+				</a>			
+			{{else}}			
+				<a class="thumbnail" href="#procurement/overview/inbox"	id="navigateProcurementId">
+					<img src="app/img/startpage/procurement/Procurement_Overview_SVG.svg" class="img-responsive">
+				</a>
+			{{/if}}				
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.procurement.procurement"}}
+				</h4>
+			</div>
+		{{/hasPermission}}		
+	{{/hasPermission}}
+	
+	{{#hasPermission 'view'	0='AssignDeliveryController' 1='DeliveryControlPartDetail'}}
+		{{#hasPermission 'view' 0='DeliveryControlPartDetail'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#deliverycontrol/myOrderOverview" id="navigateDeliveryCtrlId">
+					<img src="app/img/startpage/deliverycontrol/Delivery_Overview_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.deliveryControl.overview"}}
+				</h4>				
+			</div>
+		{{/hasPermission}}
+		{{#hasPermission 'view'	0='AssignDeliveryController'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#deliverycontrol/assigndc" id="navigateAssignDeliveryCtrlId">
+					<img src="app/img/startpage/deliverycontrol/Delivery_Controller_Assign_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t  "Gloria.i18n.startpage.pages.deliveryControl.assign"}}
+				</h4>
+			</div>
+		{{/hasPermission}}
+	{{/hasPermission}}
+	
+	{{#hasPermission 'view' 0='WareHouse'}} 
+		{{#hasPermission 'view' 0='GoodsReception'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#warehouse/receive/toReceive" id="navigateWarehouseId"> 
+					<img src="app/img/startpage/warehouse/Receive_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.warehouse.receive"}}
+				</h4>
+			</div>
+		{{/hasPermission}} 
+		{{#hasPermission 'view' 0='StorePart'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#warehouse/store" id="navigateStoreId">
+					<img src="app/img/startpage/warehouse/Store_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+					{{t "Gloria.i18n.startpage.pages.warehouse.store"}}
+				</h4>
+			</div>
+		{{/hasPermission}} 
+		{{#hasPermission 'view' 0='Pick'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#warehouse/pick" id="navigatePickId">
+					<img src="app/img/startpage/warehouse/Pick_SVG.svg" class="img-responsive">				
+				</a>
+				<h4 class="text-center">
+					{{t "Gloria.i18n.startpage.pages.warehouse.pick"}}
+				</h4>
+			</div>
+		{{/hasPermission}} 
+		{{#hasPermission 'view' 0='Ship'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#warehouse/ship" id="navigateShipId">
+					<img src="app/img/startpage/warehouse/Ship_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.warehouse.ship"}}
+				</h4>
+			</div>
+		{{/hasPermission}}		
+		{{#hasPermission 'homepage' 0='QualityInspection'}}			
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#warehouse/qualityinspection" id="navigateQualityInspectionId">
+					<img src="app/img/startpage/warehouse/Quality_Inspection_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.warehouse.qualityInspection"}}
+				</h4>
+			</div>						
+		{{/hasPermission}}		 
+		{{#hasPermission 'view' 0='QISettings'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#warehouse/qisettings" id="navigateQISettingsId">
+					<img src="app/img/startpage/warehouse/Quality_Inspection_Settings_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.warehouse.qiSettings"}}
+				</h4>				
+			</div>
+		{{/hasPermission}}
+		{{#hasPermission 'view' 0='InventoryOverview'}}
+			<div class="col-xs-3 col-md-2">
+				<a class="thumbnail" href="#warehouse/inventory" id="navigateInventoryId">
+					<img src="app/img/startpage/warehouse/Inventory_SVG.svg" class="img-responsive">
+				</a>
+				<h4 class="text-center">
+				{{t "Gloria.i18n.startpage.pages.warehouse.inventory"}}
+				</h4>
+			</div>
+		{{/hasPermission}}
+	{{/hasPermission}}
+		
+	{{#hasPermission 'view'	0='MaterialOverview'}}
+		<div class="col-xs-3 col-md-2">
+			<a class="thumbnail" href="#material/linesoverview" id="navigateMaterialId">
+				<img src="app/img/startpage/material/Material_Overview_SVG.svg" class="img-responsive">
+			</a>
+			<h4 class="text-center">
+			{{t "Gloria.i18n.startpage.pages.material.overview"}}
+			</h4>
+		</div>
+	{{/hasPermission}} 	
+	
+	{{#hasPermission 'view'	0='TestingUtility'}}
+		<div class="col-xs-3 col-md-2">
+			<a class="thumbnail" href="#testingutility/message" id="message">
+				<img src="app/img/utility.png" class="img-responsive">
+			</a>
+			<h4 class="text-center">
+			{{t "Gloria.i18n.startpage.pages.testutility.message"}}
+			</h4>
+		</div>
+		<div class="col-xs-3 col-md-2">
+			<a class="thumbnail" href="#testingutility/migration" id="migration">
+				<img src="app/img/data-migration.png" class="img-responsive">
+			</a>
+			<h4 class="text-center">
+			{{t "Gloria.i18n.startpage.pages.testutility.migration"}}
+			</h4>
+		</div>
+	{{/hasPermission}}
+	{{#hasPermission 'view'	0='Reports'}}
+	<div class="col-xs-3 col-md-2">
+		<a class="thumbnail" href="#reports/report" id="reports">
+			<img src="app/img/report.png" class="img-responsive">
+		</a>
+		<h4 class="text-center">
+		{{t "Gloria.i18n.startpage.pages.reports"}}
+		</h4>
+	</div>
+	{{/hasPermission}}
+</div>

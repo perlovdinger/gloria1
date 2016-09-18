@@ -1,0 +1,193 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.editDialogTitle"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div id="appModalMessage">
+				<span class="help-inline"></span>
+			</div>
+			<form id="myOrderOverviewEditForm" name="myOrderOverviewEditForm"
+				role="form">
+				<fieldset>
+					<div class="boxAppearance">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<span>{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.editInput"}}</span>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							{{#if_eq module "external"}}
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label for="staAcceptedDate" class="control-label"> {{t
+										"Gloria.i18n.deliverycontrol.orderOverview.header.staAcceptedDate"}}:
+									</label>
+									<div class="input-group date">
+										<input type="text" id="staAcceptedDate" name="staAcceptedDate"
+											class="staAcceptedDate js-date form-control"><span
+											class="input-group-addon"><span
+											class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label for="staAgreedDate" class="control-label"> {{t
+										"Gloria.i18n.deliverycontrol.orderOverview.header.staAgreedDate"}}:
+									</label>
+									<div class="input-group date">
+										<input type="text" id="staAgreedDate" name="staAgreedDate"
+											class="staAgreedDate js-date form-control"><span
+											class="input-group-addon"><span
+											class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+							{{/if_eq}}
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label for="expectedDate" class="control-label"> {{t
+										"Gloria.i18n.deliverycontrol.orderOverview.header.expectedDate"}}:
+									</label>
+									<div class="input-group date">
+										<input type="text" id="expectedDate" name="expectedDate"
+											class="expectedDate js-date form-control"><span
+											class="input-group-addon"><span
+											class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label for="plannedDispatchDate" class="control-label">
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.header.plannedDispatchDate"}}:
+									</label>
+									<div class="input-group date">
+										<input type="text" id="plannedDispatchDate"
+											name="plannedDispatchDate"
+											class="plannedDispatchDate js-date form-control"><span
+											class="input-group-addon"><span
+											class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group deliveryStatusFlag">
+									<label for="deliveryStatusFlag" class="control-label">
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.header.statusFlag"}}:
+									</label>
+									<div class="dropdown" style="z-index: 1061;">
+										<a class="dropdown-toggle" id="drop"
+											style="text-decoration: none" role="button"
+											data-toggle="dropdown" href="#" onclick="return false"><i
+											id="flagSelect"><span>{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</span></i><span
+											id="flagSelectText"></span><b class="caret"></b></a>
+										<ul class="dropdown-menu" id="flag" role="menu"
+											aria-labelledby="drop" style="min-width: 0px; align: left;">
+											<li role="presentation" id="TODAY" class="flagClass"><a
+												role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-flag color-red font-border"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.TODAY"}}</a>
+											</li>
+											
+											<li role="presentation" id="TOMORROW" class="flagClass">
+												<a role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-flag color-orange font-border"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.TOMORROW"}}</a>
+											</li>
+											
+											<li role="presentation" id="THIS_WEEK" class="flagClass">
+												<a role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-flag color-yellow font-border"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.THIS_WEEK"}}</a>
+											</li>
+											
+											<li role="presentation" id="NEXT_WEEK" class="flagClass">
+											<a  role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+												class="fa fa-flag color-black font-border"></i> {{t
+												"Gloria.i18n.deliverycontrol.orderOverview.flags.NEXT_WEEK"}}</a>
+											</li>		
+											
+											<li role="presentation" id="ON_TRACK" class="flagClass">
+												<a role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-check font-border color-blue"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.ON_TRACK"}}</a>
+											</li>
+											
+											<li role="presentation" id="CRITICAL" class="flagClass">
+												<a role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-exclamation-triangle font-border color-red"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.CRITICAL"}}</a>
+											</li>
+											
+											<li role="presentation" id="WAITING" class="flagClass">
+												<a role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-clock-o font-border color-yellow"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.WAITING"}}</a>
+											</li>
+											
+											<li role="presentation" id="ANSWERED" class="flagClass">
+												<a role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-phone font-border color-green"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.ANSWERED"}}</a>
+											</li>
+											
+											<li role="presentation" id="NOT_ANSWERED" class="flagClass"><a
+												role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+												class="fa fa-phone color-red font-border"></i> {{t
+												"Gloria.i18n.deliverycontrol.orderOverview.flags.NOT_ANSWERED"}}</a>
+											</li>	
+											
+											
+											<li role="presentation" id="CONFIRMED" class="flagClass">
+												<a role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+													class="fa fa-check font-border color-green"></i>&nbsp;{{t
+													"Gloria.i18n.deliverycontrol.orderOverview.flags.CONFIRMED"}}</a>
+											</li>
+											
+											<li role="presentation" id="IN_TRANSIT" class="flagClass"><a
+												role="menuitem" href="#" onclick="return false"
+												style="text-align: left;"><i
+												class="fa fa-truck color-blue font-border"></i> {{t
+												"Gloria.i18n.deliverycontrol.orderOverview.flags.IN_TRANSIT"}}</a>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" id="save">{{t
+				"Gloria.i18n.deliverycontrol.button.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.deliverycontrol.button.cancel"}}</button>
+		</div>
+	</div>
+</div>
+

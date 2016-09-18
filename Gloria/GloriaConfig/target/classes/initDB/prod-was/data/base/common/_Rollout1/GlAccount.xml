@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlAccounts xsi:noNamespaceSchemaLocation="GlAccount.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <GlAccount accountNumber="546004" companyCode="BR03" accountName="Prototype Material" acountDescription=" ">
+  </GlAccount>  
+  <GlAccount accountNumber="564301" companyCode="BR03" accountName="Test Vehicle repairs and maintenance" acountDescription=" ">
+  </GlAccount>  
+  <GlAccount accountNumber="541001" companyCode="BR03" accountName="Small tools and devices for consumption" acountDescription=" ">
+  </GlAccount>  
+  <GlAccount accountNumber="609801" companyCode="BR03" accountName="Other sales costs" acountDescription=" ">
+  </GlAccount>  
+  <GlAccount accountNumber="659261" companyCode="BR03" accountName="SIPD" acountDescription=" ">
+  </GlAccount>  
+
+  <GlAccount accountNumber="564951" companyCode="IN01" accountName="Research Material" acountDescription=" ">
+  </GlAccount>
+  <GlAccount accountNumber="564950" companyCode="IN01" accountName="Local taxes on Research Material " acountDescription=" ">
+  </GlAccount>
+  <GlAccount accountNumber="659261" companyCode="IN01" accountName="SIPD" acountDescription=" ">
+  </GlAccount>
+  <GlAccount accountNumber="659201" companyCode="IN01" accountName="Other Hired Services" acountDescription=" ">
+  </GlAccount>
+  
+</GlAccounts>

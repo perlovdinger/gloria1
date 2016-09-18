@@ -1,0 +1,76 @@
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h3>{{t "Gloria.i18n.warehouse.store.text.assignToTitle"}}</h3>
+            </div>
+            <div class="modal-body">
+                <div style="padding-left:15px; padding-right:15px;">
+                    <form id="assignToForm" name="assignToForm">
+                        <fieldset>
+                            <div class='row'>
+                                <div class='col-sm-10'>
+                                    <div class='form-group'>
+                                        <h4>{{t "Gloria.i18n.warehouse.printLabel.printLabel"}}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-sm-10'>
+                                    <div class='form-group'>
+                                        <h5>{{t "Gloria.i18n.warehouse.printLabel.partInformation"}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-sm-4'>
+                                    <div class='form-group'>
+                                        <label class="control-label">
+                                            {{t "Gloria.i18n.warehouse.printLabel.partNo"}}:
+                                        </label>
+                                        <div class="controls">
+                                            {{partNo}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='col-sm-4'>
+                                    <div class='form-group'>
+                                        <label class="control-label">
+                                            {{t "Gloria.i18n.warehouse.printLabel.version"}}:
+                                        </label>
+                                        <div class="controls">
+                                            {{partVersion}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='col-sm-10'>
+                                    <div class='form-group'>
+                                        <label class="control-label">
+                                            {{t "Gloria.i18n.warehouse.printLabel.numberOfLabels"}}:
+                                        </label>
+                                        <div class="controls">
+                                            <input class="form-control" id="printLabelNo" type="text" value="1" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="print">
+                    {{t "Gloria.i18n.warehouse.buttons.print"}}
+                </button>
+                <button type="button" class="btn" id="cancel">
+                    {{t "Gloria.i18n.warehouse.buttons.cancel"}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

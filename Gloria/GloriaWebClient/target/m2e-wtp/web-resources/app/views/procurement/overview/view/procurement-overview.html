@@ -1,0 +1,76 @@
+<div id="moduleInfo"></div>
+<div id="userInfo" class="pull-right col-xs-3"></div>
+<div class="tabbable">
+	<ul class="nav nav-tabs" id="procureTab">
+		{{#hasPermission "view" 0="ProcurementInbox"}} {{#unless isIP}}
+		<li><a href="#inbox" data-toggle="tab">{{t
+				"Gloria.i18n.procurement.overviewModule.tab.inbox"}}</a>{{/unless}}</li>
+		{{/hasPermission}} {{#hasPermission "view" 0="InternalProcurement"}}
+		{{#if isIP}}
+		<li><a href="#internalProcurement" data-toggle="tab">{{t
+				"Gloria.i18n.procurement.overviewModule.tab.inbox"}}</a></li> {{/if}}
+		{{/hasPermission}} {{#hasPermission "view" 0="ProcurementToProcure"}}
+		<li><a href="#toProcure" data-toggle="tab">{{t
+				"Gloria.i18n.procurement.overviewModule.tab.toProcure"}}</a></li>
+		{{/hasPermission}} {{#hasPermission "view"
+		0="ProcurementModification"}}
+		<li><a href="#modification" data-toggle="tab">{{t
+				"Gloria.i18n.procurement.overviewModule.tab.modification"}}</a></li>
+		{{/hasPermission}} {{#hasPermission "view" 0="ProcurementBuildSite"}}
+		{{#unless isIP}}
+		<li><a href="#onBuildSite" data-toggle="tab">{{t
+				"Gloria.i18n.procurement.overviewModule.tab.onBuildSite"}}</a></li>{{/unless}}
+		{{/hasPermission}} {{#hasPermission "view" 0="ProcuredOverview"}}
+		<li><a href="#procured" data-toggle="tab">{{t
+				"Gloria.i18n.procurement.overviewModule.tab.procured"}}</a></li>
+		{{/hasPermission}} {{#hasPermission "view" 0="ProcurementChange"}}
+		{{#unless isIP}}
+		<li><a href="#change" data-toggle="tab">{{t
+				"Gloria.i18n.procurement.overviewModule.tab.change"}}</a></li>{{/unless}}
+		{{/hasPermission}}
+	</ul>
+	<div class="tab-content">
+		{{#hasPermission "view" 0="ProcurementToProcure"
+		1="ProcurementOverviewProcureInternal"}}
+		<div class="tab-pane col-xs-12" id="toProcure">
+			<div id="toProcureButton" class="button-bar col-xs-8"></div>
+			<div id="toProcureGrid"></div>
+		</div>
+		{{/hasPermission}} {{#hasPermission "view"
+		0="ProcurementModification"}}
+		<div class="tab-pane col-xs-12" id="modification">
+			<div id="modificationButton" class="button-bar col-xs-8"></div>
+			<div id="modificationGrid"></div>
+		</div>
+		{{/hasPermission}} {{#hasPermission "view" 0="ProcurementBuildSite"}}
+		{{#unless isIP}}
+		<div class="tab-pane col-xs-12" id="onBuildSite">
+			<div id="onBuildSiteButton" class="button-bar col-xs-8"></div>
+			<div id="onBuildSiteGrid"></div>
+		</div>
+		{{/unless}} {{/hasPermission}} {{#hasPermission "view"
+		0="ProcuredOverview"}}
+		<div class="tab-pane col-xs-12" id="procured">
+			<div id="procuredButton" class="button-bar col-xs-8"></div>
+			<div id="procuredGrid"></div>
+		</div>
+		{{/hasPermission}} {{#hasPermission "view" 0="ProcurementChange"}}
+		<div class="tab-pane col-xs-12" id="change">
+			<div id="changeButton" class="button-bar col-xs-8"></div>
+			<div id="changeGrid"></div>
+		</div>
+		{{/hasPermission}} {{#hasPermission "view" 0="ProcurementInbox"}}
+		{{#unless isIP}}
+		<div class="tab-pane col-xs-12" id="inbox">
+			<div id="inboxButton" class="button-bar col-xs-8"></div>
+			<div id="inboxGrid"></div>
+		</div>
+		{{/unless}} {{/hasPermission}} {{#hasPermission "view"
+		0="InternalProcurement"}} {{#if isIP}}
+		<div class="tab-pane col-xs-12" id="internalProcurement">
+			<div id="internalProcurementButton" class="button-bar col-xs-8"></div>
+			<div id="internalProcurementGrid"></div>
+		</div>
+		{{/if}} {{/hasPermission}}
+	</div>
+</div>

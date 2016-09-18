@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DangerousGoods>
+  <DangerousGood  name="No" flag="false" displaySeq="1">
+  </DangerousGood>
+  <DangerousGood name="Flammable" flag="true" displaySeq="3">
+  </DangerousGood>
+  <DangerousGood  name="Toxic" flag="true" displaySeq="4">
+  </DangerousGood>
+   <DangerousGood  name="Air-bags" flag="true" displaySeq="2">
+  </DangerousGood>
+</DangerousGoods>

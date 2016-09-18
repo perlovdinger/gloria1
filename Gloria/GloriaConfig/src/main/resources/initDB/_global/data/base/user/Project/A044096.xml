@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-08-21T10:18:19.817+0200</SendTime>
+    </GmfHeader>
+    <CIAction>U</CIAction>
+    <UserID>A044096</UserID>
+    <UserFirstName>Priyadarshini</UserFirstName>
+    <UserLastName>Janakiraman</UserLastName>
+    <OrganisationID>BD052890</OrganisationID>
+    <OrganisationName>E.C.M. Services Ltd</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>14</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>Bangalore India</Street1>
+      <PostCode>560017</PostCode>
+      <City>Bangalore</City>
+      <CountryCode>IN</CountryCode>
+      <PhoneNo>123</PhoneNo>
+      <Email>priyadarshini.janakiraman@consultant.volvo.com</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>N</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>BD052890</OrganisationID>
+      <CompName>RTC</CompName>
+      <DistrictNo>6</DistrictNo>
+      <CustID>52890</CustID>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>40382 - LY Gare C8</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>36012 - BL Gare X2</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>34347 - LYO VE Renault Trucks</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>34331 - LY Gare 55</ApplicationSettingValue>
+      </ApplicationSetting>
+      <UserCategory>
+        <UserCategoryID>Warehouse_personell</UserCategoryID>
+        <UserCategoryDescription>Warehouse personell</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-08-21T10:18:19.817+0200</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

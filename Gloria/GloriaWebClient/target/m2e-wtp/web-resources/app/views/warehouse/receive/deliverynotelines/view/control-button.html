@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="col-sm-6">
+		<div class="noprint">
+			{{#hasPermission "edit" 0="GoodsReception"}} <a
+				class="btn btn-default" {{#unless
+				permittedActions.add}}disabled="true"
+				{{/unless}}" id="addInformation-button"> {{t
+				"Gloria.i18n.warehouse.buttons.addInformation"}} </a> <a
+				class="btn btn-default" {{#unless
+				permittedActions.edit}}disabled="true" {{/unless}} id="edit-button">
+				{{t "Gloria.i18n.warehouse.buttons.multipleUpdate"}} </a> <span
+				class="noprint divider-vertical"></span> <a class="btn btn-default"
+				id="createTranLabel-button">{{t
+				"Gloria.i18n.warehouse.buttons.createTranLabel"}}</a> {{/hasPermission}}
+			<div class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle"
+					data-toggle="dropdown" id="print-button">
+					{{t "Gloria.i18n.warehouse.buttons.print"}} <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" id="print-menu">
+					<li {{#unless permittedActions.printPL}}class="disabled"{{/unless}}><a
+						href="#" id="printPL">{{t
+							"Gloria.i18n.warehouse.buttons.printPL"}}</a></li>
+					<li class="divider"></li>
+					<!-- <li>
+                    <a href="#" id="printRL">{{t "Gloria.i18n.warehouse.buttons.printRL"}}</a>
+                    </li>
+                    <li class="divider"></li>-->
+					<li><a href="#" id="printTL">{{t
+							"Gloria.i18n.warehouse.buttons.printTL"}}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,52 @@
+{{#unless close}}
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group" style="max-width: 105px;">
+			<label class="control-label" for="exportExcel"> <input
+				type="checkbox" id="exportExcel" name="exportExcel" disabled="true">
+				{{t "Gloria.i18n.materialrequest.button.exportExcel"}}
+			</label>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+{{/unless}}
+<div id="buttonPane" align="center" class="button-bar floatFooter">
+	{{#if save}} {{#hasPermission "save" 0="MaterialRequest"}}
+	<button type="button" class="btn btn-default" id="save">{{t
+		"Gloria.i18n.materialrequest.button.save"}}</button>
+	{{/hasPermission}} {{/if}} {{#if send}} {{#hasPermission "send"
+	0="MaterialRequest"}}
+	<button type="button" class="btn btn-default" id="send" disabled="true">{{t
+		"Gloria.i18n.materialrequest.button.send"}}</button>
+	{{/hasPermission}} {{/if}} {{#if revert}} {{#hasPermission "revert"
+	0="MaterialRequest"}}
+	<button type="button" class="btn btn-default" id="revert">{{t
+		"Gloria.i18n.materialrequest.button.revert"}}</button>
+	{{/hasPermission}} {{/if}} {{#if copyAndCreateNew}} {{#hasPermission
+	"copyAndCreateNew" 0="MaterialRequest"}}
+	<button type="button" class="btn btn-default" id="copyAndCreateNew">{{t
+		"Gloria.i18n.materialrequest.button.copyAndCreateNew"}}</button>
+	{{/hasPermission}} {{/if}} {{#if cancelMaterialRequest}}
+	{{#hasPermission "cancelMaterialRequest" 0="MaterialRequest"}}
+	<button type="button" class="btn btn-default"
+		id="cancelMaterialRequest">{{t
+		"Gloria.i18n.materialrequest.button.cancelMaterialRequest"}}</button>
+	{{/hasPermission}} {{/if}} {{#if newVersion}} {{#hasPermission
+	"newVersion" 0="MaterialRequest"}}
+	<button type="button" class="btn btn-default" id="newVersion">{{t
+		"Gloria.i18n.materialrequest.button.newVersion"}}</button>
+	{{/hasPermission}} {{/if}} {{#if delete}} {{#hasPermission "delete"
+	0="MaterialRequest"}}
+	<button type="button" class="btn btn-default" id="delete">{{t
+		"Gloria.i18n.materialrequest.button.deleteMaterialRequest"}}</button>
+	{{/hasPermission}} {{/if}} {{#if cancel}}
+	<button type="button" class="btn btn-default" id="cancel">{{t
+		"Gloria.i18n.materialrequest.button.cancel"}}</button>
+	{{/if}} {{#if close}}
+	<button type="button" class="btn btn-default" id="cancel">{{t
+		"Gloria.i18n.materialrequest.button.close"}}</button>
+	{{/if}}
+</div>

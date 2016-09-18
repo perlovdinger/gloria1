@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeliveryControllers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DeliveryController userId="all" firstName="John" lastName="Meyer" deliveryControllerSite="Goteborg">
+    <ProjectSupplierFilter projectId="100" projectName="TOB222" fromDate="2013-04-15" toDate="2013-04-20" supplierId="100" supplierName="supp124"
+      supplierContactInformation="xyz">
+    </ProjectSupplierFilter>
+    <ProjectSupplierFilter projectId="101" projectName="TOB224" fromDate="2013-04-15" toDate="2013-04-20" supplierId="101" supplierName="supp128"
+      supplierContactInformation="xyzzzz">
+    </ProjectSupplierFilter>
+  </DeliveryController>
+  <DeliveryController userId="dc1" firstName="Paul" lastName="John" deliveryControllerSite="Goteborg">
+    <SupplierFilter fromDate="2013-04-15" toDate="2013-04-20" supplierId="102" supplierName="supp128" supplierContactInformation="xyzzzz">
+    </SupplierFilter>
+    <SupplierFilter fromDate="2013-04-15" toDate="2013-04-20" supplierId="103" supplierName="supp129" supplierContactInformation="xyzzzz">
+    </SupplierFilter>
+  </DeliveryController>
+</DeliveryControllers>

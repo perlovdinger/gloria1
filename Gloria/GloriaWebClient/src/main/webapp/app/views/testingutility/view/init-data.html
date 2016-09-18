@@ -1,0 +1,47 @@
+<form id="initDataForm">
+	<fieldset>
+		<div style="padding: 15px;">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<span> <b>Note:</b> This tool is used to initiate data in
+							system.
+						</span>
+					</div>
+				</div>
+			</div>
+			<br> <br>
+
+			<div class='row'>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label"> Select a type to initiate
+							data: </label>
+					</div>
+				</div>
+				<div class='col-sm-3'>
+					<div class='form-group'>
+						<div class="controls">
+							<select id="dataType" name="dataType"
+								class="input-block-level form-control">
+								{{{renderDropDown dataTypeOtions type false}}}
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-6">
+				<div align="center" class="button-bar">
+					<button type="button" class="btn btn-default" id="initiate"
+						disabled="disabled">{{t
+						"Gloria.i18n.testingutility.initiate"}}</button>
+					<button type="button" class="btn btn-default" id="cancel">
+						{{t "Gloria.i18n.buttons.cancel"}}</button>
+				</div>
+			</div>
+		</div>
+	</fieldset>
+</form>

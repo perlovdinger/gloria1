@@ -1,0 +1,31 @@
+{
+	"dialog": {
+		"defaults": {
+			"title": "Please Confirm | Gloria",
+			"ok": "OK",
+			"cancel": "Cancel"
+		}
+	},
+	"dateFilter": {
+		"defaults": {
+			"title": "Please filter the Expected Arrival with one of the following option:",
+			"date": "Date",
+			"from": "From",
+			"to": "To",
+			"allDate": "All Expired",
+			"filter": "Filter",
+			"resetFilter": "Reset Filter",
+			"cancel": "Cancel",
+			"close": "Close",
+			"titleExpiredDate": "Please filter the Expiration Date with one of the following option:"
+		}
+	},
+	"columnChooser": {
+		"text": "...",
+		"title": "Column Chooser",
+		"selectedColumns": "Selected columns",
+		"addColumns": "Add columns",
+		"save": "Save",
+		"cancel": "Cancel"
+	}
+}

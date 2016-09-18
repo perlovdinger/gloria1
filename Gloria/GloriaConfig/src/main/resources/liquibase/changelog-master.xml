@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-baseline.xml" />
+  <changeSet id="Release_Baseline" author="Mr Y">
+    <tagDatabase tag="Baseline" />
+  </changeSet>
+
+  <!-- indexes -->
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-index-baseline-ProcureMaterial.xml" />
+  <changeSet id="Release_Baseline_Index_ProcureMaterial" author="TIN2177">
+    <tagDatabase tag="Baseline_Index_ProcureMaterial" />
+  </changeSet>
+
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-index-baseline-MaterialRequest.xml" />
+  <changeSet id="Release_Baseline_Index_MaterialRequest" author="TIN2177">
+    <tagDatabase tag="Baseline_Index_MaterialRequest" />
+  </changeSet>
+
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-index-baseline-Warehouse.xml" />
+  <changeSet id="Release_Baseline_Index_Warehouse" author="TIN2177">
+    <tagDatabase tag="Baseline_Index_Warehouse" />
+  </changeSet>
+
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-index-baseline-Common.xml" />
+  <changeSet id="Release_Baseline_Index_Common" author="TIN2177">
+    <tagDatabase tag="Baseline_Index_Common" />
+  </changeSet>
+  <!-- end -->
+
+
+  <!-- 1.0 release start -->
+  <!-- <include file="../GloriaConfig/src/main/resources/liquibase/changelog-ProcureMaterial-1.0.1.xml" /> -->
+  <!-- <changeSet id="Release_1.0.1" author="Mr X"> -->
+  <!-- <tagDatabase tag="1.0.1" /> -->
+  <!-- </changeSet> -->
+  <!-- 1.0 release end -->
+
+  <!-- 1.1 release start -->
+  <!-- <include file="../GloriaConfig/src/main/resources/liquibase/changelog-ProcureMaterial-1.0.2.xml" /> -->
+  <!-- <changeSet id="Release_1.0.2" author="Mr Z"> -->
+  <!-- <tagDatabase tag="1.0.2" /> -->
+  <!-- </changeSet> -->
+  <!-- 1.1 release end -->
+
+  <!-- 1.2.0 release start -->
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-ProcureMaterial-1.2.0.xml" />
+  <changeSet id="Release_1.2.0" author="a035515">
+    <tagDatabase tag="1.2.0" />
+  </changeSet>
+  <!-- 1.2.0 release end -->
+
+  <!-- 1.2.1 release start -->
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-Common-1.2.1.xml" />
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-UserAuthorization-1.2.1.xml" />
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-ProcureMaterial-1.2.1.xml" />
+  <changeSet id="Release_1.2.1" author="tin2177">
+    <tagDatabase tag="1.2.1" />
+  </changeSet>
+  <!-- 1.2.1 release end -->
+
+  <!-- 1.3.0 release start -->
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-ProcureMaterial-1.3.0.xml" />
+  <include file="../GloriaConfig/src/main/resources/liquibase/changelog-UserAuthorization-1.3.0.xml" />
+  <changeSet id="Release_1.3.0" author="a028515">
+    <tagDatabase tag="1.3.0" />
+  </changeSet>
+  <!-- 1.3.0 release end -->
+
+</databaseChangeLog> 

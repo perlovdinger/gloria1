@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeliveryFollowUpTeams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+   <DeliveryFollowUpTeam name="BLR" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="7901" shipToId="42102" transitAddressId="42102" domesticInvoiceId="7901" internationalInvoiceId="7901"
+      companyCode="IN01" ppSuffix="514" comment="Bangalore CV" />
+  </DeliveryFollowUpTeam>
+  
+  
+ <DeliveryFollowUpTeam name="CUR" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="2801" shipToId="47670" transitAddressId="47670" domesticInvoiceId="2800" internationalInvoiceId="2800"
+      companyCode="BR03" ppSuffix="519" comment="Curitiba Bus" displayName="Curitiba Bus 519" />
+    <SupplierCounterPart materialUserId="2800" shipToId="47670" transitAddressId="47670" domesticInvoiceId="2800" internationalInvoiceId="2800"
+      companyCode="BR03" ppSuffix="544" comment="Curitiba Truck" displayName="Curitiba Truck 544" />
+  </DeliveryFollowUpTeam>
+ 
+ 
+</DeliveryFollowUpTeams>

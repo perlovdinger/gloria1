@@ -1,0 +1,67 @@
+<div class="well well-small">
+    <div class='row'>
+        <div class='col-sm-4'>
+            <div class='form-group'>
+                <label class="control-label">
+                    {{t "Gloria.i18n.warehouse.receive.details.text.problemInfo.probAreas"}}:
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-3'>
+            <div class='form-group'>
+                <label class="control-label">
+                    <input type="checkbox" id="hasDamagedParts" name="deliveryNoteLine[hasDamagedParts]" {{#if data.hasDamagedParts}} checked="checked" {{/if}} value="true"> {{t "Gloria.i18n.warehouse.receive.details.text.problemInfo.hasDamagedParts"}}
+                </label>
+            </div>
+        </div>
+        <div class='col-sm-3'>
+            <div class='form-group'>
+                <label class="control-label">
+                    <input type="checkbox" id="hasMissingInfo" name="deliveryNoteLine[hasMissingInfo]" {{#if data.hasMissingInfo}} checked="checked" {{/if}} value="true"> {{t "Gloria.i18n.warehouse.receive.details.text.problemInfo.hasMissingInfo"}}
+                </label>
+            </div>
+        </div>
+        <div class='col-sm-3'>
+            <div class='form-group'>
+                <label class="control-label">
+                    <input type="checkbox" id="hasOverDelivery" name="deliveryNoteLine[hasOverDelivery]" {{#if data.hasOverDelivery}} checked="checked" {{/if}} value="true"> {{t "Gloria.i18n.warehouse.receive.details.text.problemInfo.hasOverDelivery"}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-8'>
+            <div class='form-group'>
+                <label class="control-label" for='problemDescription'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.problemInfo.problemDescription"}}: 
+                </label>
+                <div class="controls">
+                    <textarea id="problemDescription" name='deliveryNoteLine[problemDescription]' class="form-control" rows="3" cols="75" maxlength="500">{{data.problemDescription}}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-8'>
+            <div class='form-group'>
+                <label class="control-label">
+                    {{t "Gloria.i18n.warehouse.receive.details.text.problemInfo.fileContent"}}:
+                </label>
+            </div>
+        </div>
+        <div class='col-sm-8'>
+            <input id="problemdocupload" type="file" name="docFile">
+            <br/>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-8'>
+            <div class='form-group'>
+                <div id="problemDocInfo">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

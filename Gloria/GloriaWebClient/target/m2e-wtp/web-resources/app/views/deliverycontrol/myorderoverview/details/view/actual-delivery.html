@@ -1,0 +1,55 @@
+<div class="panel-heading">
+    <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" js-id="{{data.id}}" href="#poActualDelivery{{data.id}}">{{t "Gloria.i18n.deliverycontrol.orderOverview.header.receivedQty"}}: {{data.receivedQuantity}} &nbsp;&nbsp; 
+            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.damagedQuantity"}}: {{data.damagedQuantity}} &nbsp;&nbsp; 
+            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.deliveryNoteDate"}}: {{date data.deliveryNoteDate "Gloria.i18n.dateformat"}} </a></h4>
+</div>
+<div id="poActualDelivery{{data.id}}" class="panel-collapse collapse" js-id="{{data.id}}">
+    <div id="panel{{data.id}}" class="panel-body">
+        <h4>
+            <strong>{{t "Gloria.i18n.deliverycontrol.orderOverview.text.delNoteInfo"}}</strong>
+        </h4>
+        <div class="well well-small">
+            <input type='hidden' name='actualDelivery[{{data.id}}][id]' value='{{data.id}}'>
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label" for="receivedQuantity">
+                            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.receivedQuantity"}}:
+                        </label>
+                        <div class="controls">
+                            {{data.receivedQuantity}}
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label" for="carrier">
+                            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.carrier"}}:
+                        </label>
+                        <div class="controls">
+                            {{data.carrier}}
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label" for="transportationNo">
+                            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.transportationNo"}}:
+                        </label>
+                        <div class="controls">
+                            {{data.transportationNo}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4>
+            <strong>{{t "Gloria.i18n.deliverycontrol.orderOverview.text.documents"}}</strong>
+        </h4>
+        <div id="document{{data.id}}"></div>
+        <h4>
+            <strong>{{t "Gloria.i18n.deliverycontrol.orderOverview.text.problemDesc"}}</strong>
+        </h4>
+        <div id="probDesc{{data.id}}"></div>
+    </div>
+</div>

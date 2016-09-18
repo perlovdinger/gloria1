@@ -1,0 +1,299 @@
+<div class="row h4">
+	<div class="col-xs-8">
+		<strong class="control-label"> {{t
+			"Gloria.i18n.materialrequest.details.generalInformation.header"}} </strong> <input
+			name='materialRequest[id]' type="hidden" value='{{data.id}}'>
+	</div>
+	<div class="col-xs-2">
+		{{#if data.mtrlRequestVersion}}
+		<div class="pull-right">
+			<strong> {{t
+				"Gloria.i18n.materialrequest.details.generalInformation.mtrID"}}: </strong> <span
+				class="control-label" id="materialRequestMTRID">
+				{{data.mtrlRequestVersion}} </span>
+		</div>
+		{{/if}}
+	</div>
+	<div class="col-xs-2">
+		{{#if data.materialRequestVersionStatus}}
+		<div class="pull-right">
+			<strong> {{t
+				"Gloria.i18n.materialrequest.details.generalInformation.status"}}: </strong>
+			<span class="control-label" id="materialRequestStatus"> {{t
+				status}} </span>
+		</div>
+		{{/if}}
+	</div>
+</div>
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label {{#if editable}}required{{/if}}">
+					{{t
+					"Gloria.i18n.materialrequest.details.generalInformation.type"}}: </label>
+				<div class="controls">
+					{{#if isNew}} <select id="type" id="type"
+						name="materialRequest[type]"
+						class="input-block-level form-control">
+						<option value="">{{t
+							"Gloria.i18n.selectBoxDefaultValue"}}</option> {{{renderDropDown
+						typeOptions data.type true}}}
+					</select> {{else}}<span id="type">{{t type}}</span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="clearfix visible-sm"></div>
+		<div class='col-sm-4 col-md-3 col-lg-2' id="testObjectDiv"
+			style="display: none;">
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.testObject"}}:
+				</label>
+				<div class="controls">
+					{{#if isEditableOrUpdated}}<input id="name" class='form-control'
+						name="materialRequest[name]" type='text' value='{{data.name}}'
+						maxlength="20" /> {{else}} <span id="materialRequest">{{data.name}}
+					</span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="clearfix visible-md"></div>
+		
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.title"}}: </label>
+				<div class="controls">
+					{{#if isEditableOrUpdated}}<input id="title" class='form-control'
+						name="materialRequest[title]" type='text' value='{{data.title}}'
+						maxlength="20" /> {{else}} <span id="materialRequest">{{data.title}}
+					</span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.materialControllerID"}}:
+				</label>
+				<div class="controls" id="materialControllerUserIdViewContainer">
+					<span id="materialControllerUserId">{{showNAIfNoValue
+						data.materialControllerUserId}}</span>
+				</div>
+			</div>
+		</div>
+
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.materialControllerName"}}:
+				</label>
+				<div class="controls">
+					{{#if editable}} <input id="materialControllerName"
+						type='text' name="materialRequest[materialControllerName]"
+						class='form-control label-look' value="{{data.materialControllerName}}"
+						readonly="readonly" tabindex="-1" /> {{else}} <span
+						id="materialControllerName">{{showNAIfNoValue
+						data.materialControllerName}}</span> {{/if}}
+						
+						<input id="isNew" class='form-control'
+						type="hidden" name="materialRequest[isNew]" value='{{editable}}'>
+						
+				</div>
+			</div>
+		</div>
+		
+		<div class="clearfix visible-sm visible-lg"></div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label {{#if editable}}required{{/if}}">
+					{{t
+					"Gloria.i18n.materialrequest.details.generalInformation.companyCode"}}:
+				</label>
+				<div class="controls" id="companyCodeSelectorContainer">
+					<input id="companyCode" class='form-control'
+						name="materialRequest[companyCode]" value='{{data.companyCode}}'>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label {{#if editable}}required-con{{/if}}">
+					{{t
+					"Gloria.i18n.materialrequest.details.generalInformation.project"}}:
+				</label>
+				<div class="controls" id="projectSelectorContainer">
+					{{#if editable}} <input id="projectId" class='form-control'
+						name="materialRequest[projectId]" value='{{data.projectId}}'
+						maxlength="20" /> {{else}} <span id="projectId">{{data.projectId}}
+					</span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label {{#if editable}}required-con{{/if}}">
+					{{t
+					"Gloria.i18n.materialrequest.details.generalInformation.GLAccount"}}:
+				</label>
+				<div class="controls" id="glAccountSelectorContainer">
+					<input id="glAccount" class='form-control'
+						name="materialRequest[glAccount]" value='{{data.glAccount}}'>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix visible-md"></div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label {{#if editable}}required-con{{/if}}">
+					{{t "Gloria.i18n.materialrequest.details.generalInformation.WBS"}}:
+				</label>
+				<div class="controls" id="wbsCodeSelectorContainer">
+					{{#if editable}}<input id="wbsCode" class='form-control'
+						name="materialRequest[wbsCode]" value='{{data.wbsCode}}'>
+					{{else}} <span id="wbsCode">{{data.wbsCode}} </span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="clearfix visible-sm"></div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label {{#if editable}}required-con{{/if}}">
+					{{t
+					"Gloria.i18n.materialrequest.details.generalInformation.costCenter"}}:
+				</label>
+				<div class="controls" id="costCenterSelectorContainer">
+					{{#if editable}}<input id="costCenter" class='form-control'
+						name="materialRequest[costCenter]" value='{{data.costCenter}}'>
+					{{else}} <span id="costCenter">{{data.costCenter}} </span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.internalOrderNumberSAP"}}:
+				</label>
+				<div class="controls" id="internalOrderNoSAPSelectorContainer">
+					{{#if editable}}<input id="internalOrderNoSAP" class='form-control'
+						name="materialRequest[internalOrderNoSAP]"
+						value='{{data.internalOrderNoSAP}}'> {{else}} <span
+						id="internalOrderNoSAP">{{data.internalOrderNoSAP}} </span>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="clearfix visible-sm visible-md visible-lg"></div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#if isEditableOrUpdated}}required-con{{/if}}">
+					{{t
+					"Gloria.i18n.materialrequest.details.generalInformation.requiredSTADate"}}:
+				</label> {{#if isEditableOrUpdated}}
+				<div class='input-group date requiredStaDateDiv'>
+					<input type="text" id='requiredStaDate'
+						class="requiredSTADate js-date form-control"
+						name='materialRequest[requiredStaDate]'
+						value='{{date data.requiredStaDate "Gloria.i18n.dateformat"}}'>
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-calendar"></span></span>
+				</div>
+				{{else}}
+				<div class="controls">
+					<span id="requiredStaDate">{{date data.requiredStaDate
+						"Gloria.i18n.dateformat"}}</span>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.buildOrTestStart"}}:
+				</label> {{#if isEditableOrUpdated}}
+				<div class='input-group date'>
+					<input type="text" id='outboundStartDate'
+						class="outboundStartDate js-date form-control"
+						name='materialRequest[outboundStartDate]'
+						value='{{date data.outboundStartDate "Gloria.i18n.dateformat"}}'>
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-calendar"></span></span>
+				</div>
+				{{else}}
+				<div class="controls">
+					<span id="outboundStartDate">{{date data.outboundStartDate
+						"Gloria.i18n.dateformat"}}</span>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.buildOrTestLocation"}}:
+				</label>
+				<div class="controls" id="outboundLocationIdSelectorContainer">
+					<input id="outboundLocationId" class='form-control'
+						name="materialRequest[outboundLocationId]"
+						value='{{data.outboundLocationId}}'>
+				</div>
+			</div>
+		</div>
+
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.contactPersonID"}}:
+				</label>
+				<div class="controls" id="contactPersonUserIdViewContainer">
+					<span id="contactPersonUserId">{{showNAIfNoValue
+						data.contactPersonUserId}}</span>
+				</div>
+			</div>
+		</div>
+
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.contactPersonName"}}:
+				</label>
+				<div class="controls">
+					{{#if isEditableOrUpdated}} <input id="contactPersonName"
+						type='text' name="materialRequest[contactPersonName]"
+						class='form-control label-look' value="{{data.contactPersonName}}"
+						readonly="readonly" tabindex="-1" /> {{else}} <span
+						id="contactPersonName">{{showNAIfNoValue
+						data.contactPersonName}}</span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="clearfix visible-sm"></div>
+		<div class='col-sm-4 col-md-3 col-lg-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.materialrequest.details.generalInformation.mailFormID"}}:
+				</label>
+				<div class="controls">
+					{{#if editable}}<input id="mailFormId" class='form-control'
+						name="materialRequest[mailFormId]" type='text'
+						value='{{data.mailFormId}}' maxlength="12" /> {{else}} <span
+						id="mailFormId">{{showNAIfNoValue data.mailFormId}} </span>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="clearfix visible-sm visible-lg"></div>
+	</div>
+</div>
+{{#if isEditableOrUpdated}}
+<div id="infoBar" class="text-right">
+	<h4>
+		<span class="required-con"></span> <span class="control-label">
+			{{t
+			"Gloria.i18n.materialrequest.details.generalInformation.mandatoryWhenSend"}}
+		</span>
+	</h4>
+</div>
+{{/if}}

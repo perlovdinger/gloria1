@@ -1,0 +1,6 @@
+{{#if isSortable}}
+<a href='#' tabIndex="-1">{{label}}<b class='sort-caret'></b></a>
+{{else}}
+<span>{{label}}</span>
+{{/if}}
+<input style='width: 100%' type='number' id='{{id}}' step='1' class='form-control'>

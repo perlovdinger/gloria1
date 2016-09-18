@@ -1,0 +1,33 @@
+{
+    "Gloria": {
+        "i18n": {
+            "dateformat": "YYYY年M月D日",
+            "datetimeformat": "YYYY年M月D日；h时m分s秒；",
+            "datepickerformat": "yyyy年m月d日",
+            "procurement": {              
+                "unassignedRequests": "采购申请-未分配",
+                "unassignedRequest": {
+                    "header": {
+                        "buildSeriesName": "制造系列/参考",
+                        "reference": "参考",
+                        "projectId": "项目编号",
+                        "testObjectId": "测试对象/需求对象",
+                        "phase": "阶段",
+                        "phaseType": "阶段类型",
+                        "changeRequestId": "变更编号",
+                        "buildSiteId": "制造地点",
+                        "procureRequestId": "采购申请人编号",
+                        "requesterName": "采购申请人名称",
+                        "receivedDateTime": "接到申请时间",
+                        "buildSeriesStartDate": "制造开始时间",
+                        "assignedMaterialController": "物料管理人"
+                    },
+                    "text": {
+                        "assignToTitle": "分配？ | GLORIA",
+                        "assignTo": "把选定的采购申请分配给物料管理人:"
+                    }
+                }
+            }
+        }
+    }
+}

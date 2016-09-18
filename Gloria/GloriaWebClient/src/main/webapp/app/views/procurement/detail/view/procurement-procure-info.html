@@ -1,0 +1,596 @@
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="companyCode"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.companyCode"}}: </label>
+				<div class="controls" id="companyCodeSelectorContainer">
+					<input id="companyCode" class="form-control"
+						value="{{procureLineData.companyCode}}">
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="projectId"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.projectId"}}: </label>
+				<div class="controls">
+					<span id="projectId">{{procureLineData.projectId}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.glAccount"}}: </label>
+				<div class="controls" id="glAccountSelectorContainer">
+					<input id="glAccount" class='form-control'
+						name="procureLine[glAccount]"
+						value='{{procureLineData.glAccount}}'>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.wbs"}}: </label>
+				<div class="controls" id="wbsCodeSelectorContainer">
+					<input id="wbsCode" class='form-control'
+						name="procureLine[wbsCode]" value='{{procureLineData.wbsCode}}'>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.costCenter"}}: </label>
+				<div class="controls" id="costCenterSelectorContainer">
+					<input id="costCenter" class='form-control'
+						name="procureLine[costCenter]"
+						value='{{procureLineData.costCenter}}'>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.internalOrderNoSAP"}}:
+				</label>
+				<div class="controls" id="internalOrderNoSAPSelectorContainer">
+					<input id="internalOrderNoSAP" class='form-control'
+						name="procureLine[internalOrderNoSAP]"
+						value='{{procureLineData.internalOrderNoSAP}}'>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isSourceDisabled}}required{{/unless}}"
+					for="procureType"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.source"}}: </label>
+				<div class="controls">
+					{{#if isSourceDisabled}} <span id="procureTypeSpan">{{t
+						procureType}}<input type="hidden" id="procureType"
+						name="procureLine[procureType]"
+						value="{{procureLineData.procureType}}">
+					</span> {{else}} <select id="procureType"
+						class="input-block-level form-control"
+						name="procureLine[procureType]">
+						<option value="">{{t
+							"Gloria.i18n.selectBoxDefaultValue"}}</option> {{{renderDropDown
+						sourceOptions procureLineData.procureType true}}}
+					</select> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-externalFields js-fromStockNotFields'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isDisabled}}required{{/unless}}"
+					for='purchaseOrganisationCode'> {{t
+					"Gloria.i18n.procurement.procureDetail.header.purchaseOrganisation"}}:
+				</label>
+				<div class="controls" id="purchaseOrganisationCodeContainer">
+					<input id="purchaseOrganisationCode" class="form-control"
+						name="procureLine[purchaseOrganisationCode]"
+						value="{{procureLineData.purchaseOrganisationCode}}">
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-externalFields js-fromStockNotFields'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isDisabled}}required{{/unless}}"
+					for='buyerCode'> {{t
+					"Gloria.i18n.procurement.procureDetail.header.buyerCode"}}: </label>
+				<div class="controls" id="buyerCodeContainer">
+					<input id="buyerCode" class="form-control"
+						name="procureLine[buyerCode]"
+						value="{{procureLineData.buyerCode}}">
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-fromStockNotFields'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isDisabled}}required{{/unless}}"
+					for="supplierCounterPartId"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.supplierCounterPartId"}}:
+				</label>
+				<div class="controls">
+					{{#if isDisabled}} <span id="supplierCounterPartID"></span>
+					{{else}} {{supplierCounterPartSelector
+					selected=procureLineData.supplierCounterPartID
+					idPrefix='supplierCounterPartId' namePrefix='supplierCounterPartID'
+					modelName='procureLine' companyCode=procureLineData.companyCode}}
+					{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-fromStockNotFields'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isDisabled}}required{{/unless}}"
+					for="requiredStaDate"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.requiredStaDate"}}: </label>
+				<div class='input-group date requiredStaDateDiv'>
+					{{#if isDisabled}} <span id="requiredStaDate">{{date
+						procureLineData.requiredStaDate "Gloria.i18n.dateformat"}}</span>
+					{{else}} <input type="text"
+						class="requiredStaDate js-date form-control" id='requiredStaDate'
+						name='procureLine[requiredStaDate]'
+						value='{{date procureLineData.requiredStaDate "Gloria.i18n.dateformat"}}'>
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-calendar"></span></span> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-internalFields js-fromStockNotFields'
+			id="consignorIdDiv">
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isDisabled}}required{{/unless}}"
+					for="consignorId"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.consignor"}}: </label>
+				<div class="controls" id="consignorIdContainer">
+					{{#if isDisabled}} <span id="consignorId">{{procureLineData.supplierName}}</span>
+					{{else}} <input id="consignorId" class="form-control" type="number"
+						name="procureLine[supplierId]"
+						value="{{procureLineData.supplierId}}"> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-internalFields js-fromStockNotFields'
+			id="orderNoDiv">
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isDisabled}}required{{/unless}}"
+					for="orderNo"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.orderNo"}}: </label>
+				<div class="controls">
+					{{#if isDisabled}} <span id="orderNo">{{procureLineData.orderNo}}</span>
+					{{else}} <input id="orderNo" class="form-control" maxlength="14"
+						type="text" name="internalInfo[orderNo]"
+						value="{{procureLineData.orderNo}}"> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-internalFields js-fromStockNotFields'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless isDisabled}}required{{/unless}}"
+					for="orderStaDate"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.orderStaDate"}}: </label>
+				<div class='input-group date orderStaDateDiv'>
+					{{#if isDisabled}} <span id="orderStaDate">{{date
+						procureLineData.orderStaDate "Gloria.i18n.dateformat"}}</span> {{else}} <input
+						type="text" class="orderStaDate js-date form-control"
+						id='orderStaDate' name='procureLine[orderStaDate]'
+						value='{{date procureLineData.orderStaDate "Gloria.i18n.dateformat"}}'>
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-calendar"></span></span> {{/if}}
+				</div>
+			</div>
+		</div>
+		{{#unless isDisabled}}
+			{{#if_eq procureLineData.procureType "FROM_STOCK"}}
+			{{else}}
+				<div class="clearfix visible-sm visible-lg"></div>
+			{{/if_eq}}
+		{{/unless}}		
+		<div class='col-sm-2' id="referenceGpsDiv">
+			<div class='form-group'>
+				<label class="control-label" for="referenceGps"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.referenceGps"}}: </label>
+				<div class="controls">
+					{{#if isDisabled}} <span id="referenceGps">{{procureLineData.referenceGps}}</span>
+					{{else}} <input id="referenceGps" class="form-control"
+						maxlength="20" type="text" name="procureLine[referenceGps]"
+						value="{{procureLineData.referenceGps}}"> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-internalFields js-fromStockNotFields'>
+			<div class='form-group'>
+				<label class="control-label" for="unitPrice"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.estimatedPrice"}}: </label>
+				<div class="controls">
+					{{#if isDisabled}} <span id="unitPrice">{{procureLineData.unitPrice}}</span>
+					{{else}} <input id="unitPrice" name='procureLine[unitPrice]'
+						type='number' min='0' step='0.01'
+						value="{{procureLineData.unitPrice}}"
+						class="form-control js-price"> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-internalFields js-fromStockNotFields'>
+			<div class='form-group'>
+				<label class="control-label" for="unitOfPrice"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.unitOfPrice"}}: </label>
+				<div class="controls">
+					{{#if isDisabled}} 
+					<span id="unitOfPrice">
+					{{#if procureLineData.unitOfPrice}}
+						{{t "Gloria.i18n.unitOfPrice.per" (obj amount=procureLineData.unitOfPrice) }}
+					{{/if}}						
+					</span>
+					{{else}} {{unitOfPriceSelector id=procureLineData.id
+					idPrefix='unitOfPrice_' modelName='procureLine' namePrefix='unitOfPrice'
+					selected=procureLineData.unitOfPrice}} {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-externalFields js-fromStockNotFields'
+			id="qualityDocumentDiv">
+			<div class='form-group'>
+				<label class="control-label" for="qualityDocument"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.qualityDocument"}}: </label>
+				<div class="controls">{{qualityDocumentSelector
+					selected=procureLineData.qualityDocumentId
+					idPrefix='qualityDocument_' namePrefix='qualityDocumentId'
+					modelName='procureLine' isReadOnly=isDisabled}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-externalFields js-fromStockNotFields'
+			id="maxPriceDiv">
+			<div class='form-group'>
+				<label class="control-label" for="maxPrice"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.maxPrice"}}: </label>
+				<div class="controls">
+					{{#if isDisabled}} <span id="maxPrice">{{procureLineData.maxPrice}}</span>
+					{{else}} <input id="maxPrice" name='externalInfo[maxPrice]'
+						type='number' min='0' max='999999999.999' step='0.001'
+						value="{{procureLineData.maxPrice}}" class="form-control js-price">
+					{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-fromStockNotFields'>
+			<div class='form-group'>
+				<label class="control-label" for="currency"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.currency"}}: </label>
+				<div class="controls">
+					{{#if isDisabled}} <span id="currency">{{procureLineData.currency}}</span>
+					{{else}} {{currencySelector id=procureLineData.id
+					idPrefix='currency_' modelName='procureLine' namePrefix='currency'
+					selected=procureLineData.currency}} {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2 js-internalFields js-fromStockNotFields'>
+			<div class='form-group'>
+				<label class="control-label" for="alias"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.partAlias"}}: </label>
+				<div class="controls" id="aliasContainer">
+					{{#if isDisabled}} <span id="alias">{{procureLineData.partAlias}}</span>
+					{{else}} <input id="alias" class="form-control"
+						name="procureLine[partAlias]" type="hidden"
+						value="{{procureLineData.partAlias}}"> {{/if}}
+				</div>
+			</div>
+		</div>
+		{{#unless procureLineData.forStock}}
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="additionalQuantity"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.additionalQuantity"}}:
+				</label>
+				<div class="controls">
+					{{#if isDisabled}} <span id="additionalQuantity">{{procureLineData.additionalQuantity}}</span>
+					{{else}} <input id="additionalQuantity" class="form-control"
+						type="number" min="0" step="1" max="99999"
+						name='procureLine[additionalQuantity]'
+						value="{{procureLineData.additionalQuantity}}"> {{/if}}
+				</div>
+			</div>
+		</div>
+		{{/unless}}
+		{{#unless isDisabled}}
+			{{#if_eq procureLineData.procureType "FROM_STOCK"}}
+			{{else}}
+				<div class="clearfix visible-sm visible-lg"></div>
+			{{/if_eq}}
+		{{/unless}}
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.usageQty"}}: </label>
+				<div class='controls'>{{procureLineData.usageQty}}</div>
+			</div>
+		</div>				
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.fromStockAdditionalReleaseQty"}}: </label>
+				<div class='controls' id="fromStockQty">{{procureLineData.fromStockQty}}</div>
+			</div>
+		</div>	
+		
+		
+		
+		
+		<div class='col-sm-2'>
+					<div class='form-group statusFlag'>
+						<input class="form-control"
+							name='procureLine[statusFlag]' type="hidden"
+							required="required" value='{{procureLineData.statusFlag}}'> <label
+							class="control-group" for="statusFlag{{procureLineData.id}}"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.statusFlag"}}:
+						</label>
+						<div class="dropdown {{#unless isDisabled}} form-control {{/unless}}" id='statusFlag{{procureLineData.id}}'>
+							
+							<a class="dropdown-toggle" id="drop" style="text-decoration: none" role="button" {{#unless
+								isDisabled}} data-toggle="dropdown" {{/unless}} href="#" onclick="return false">
+								
+								{{#if_eq procureLineData.statusFlag null}}<i
+								id="flagSelect"></i><span id="flagSelectText">{{t
+									"Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</span>
+								{{/if_eq}} 
+				
+				
+				{{#if hasRolePI}} 
+					{{#if isIPflag}}
+					    {{#if_eq procureLineData.statusFlag "PENDING_AGREEMENT"}}
+						<i id="flagSelect" class="fa fa-hourglass-start color-blue font-border"></i><span
+						id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.PENDING_AGREEMENT"}}</span>
+						{{/if_eq}} 
+														
+						{{#if_eq procureLineData.statusFlag "REVIEW_LATER"}}
+						<i id="flagSelect" class="fa fa-phone color-orange font-border"></i><span
+						id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.REVIEW_LATER"}}</span>
+						{{/if_eq}} 
+					{{else}}
+					<!-- <i	id="flagSelect"></i><span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</span> -->
+				{{/if}}
+					
+				{{else}}	
+					{{#if isMCflag}}
+						{{#if_eq procureLineData.statusFlag "IN_WORK"}}<i id="flagSelect"
+						class="fa fa-pause color-orange font-border"></i><span
+						id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.IN_WORK"}}</span>
+						{{/if_eq}} 
+						
+						{{#if_eq procureLineData.statusFlag "TO_BE_MODIFIED"}}<i
+						id="flagSelect" class="fa fa-pencil color-orange font-border"></i><span
+						id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.TO_BE_MODIFIED"}}</span>
+						{{/if_eq}} 
+						
+						{{#if_eq procureLineData.statusFlag "SLA"}}
+						<i
+						id="flagSelect" class="fa fa-sla color-orange "></i>
+						<span
+						id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.SLA"}}</span>
+						{{/if_eq}} 
+						
+						{{#if_eq procureLineData.statusFlag "DIRECT_SEND"}}
+						<i
+						id="flagSelect" class="fa fa-paper-plane-o color-grey"></i>
+						<span
+						id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.DIRECT_SEND"}}</span>
+						{{/if_eq}} 
+						
+						
+						{{#if_eq procureLineData.statusFlag "TOOLING"}}
+						<i
+						id="flagSelect" class="fa fa-tooling color-grey "
+						></i><span id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.TOOLING"}}</span>
+						{{/if_eq}} 
+						
+						{{#if_eq procureLineData.statusFlag "MACHINING"}}<i
+						id="flagSelect" class="fa fa-machining color-grey"></i><span
+						id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.MACHINING"}}</span>
+						{{/if_eq}} 
+						
+						{{#if_eq procureLineData.statusFlag "SIPD"}}<i
+						id="flagSelect" class="fa fa-sipd color-grey"></i><span
+						id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.SIPD"}}</span>
+						{{/if_eq}} 
+						
+						{{#if_eq procureLineData.statusFlag "PRIORITY"}}<i
+						id="flagSelect" class="fa fa-flag color-red font-border"
+						></i><span id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.PRIORITY"}}</span>
+						{{/if_eq}} 
+						
+						{{#if_eq procureLineData.statusFlag "STOPPED_IN_KOLA"}}<i
+						id="flagSelect" class="fa fa-ban color-red font-border"
+						></i><span id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.STOPPED_IN_KOLA"}}</span>
+						{{/if_eq}}
+						
+						{{#if_eq procureLineData.statusFlag "TO_BE_REMOVED"}}<i
+						id="flagSelect" class="fa fa-times color-red font-border">
+						</i><span id="flagSelectText"> {{t
+							"Gloria.i18n.procurement.overviewModule.flags.TO_BE_REMOVED"}}</span>
+						{{/if_eq}}
+					{{else}}
+					<!-- <i	id="flagSelect"></i><span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</span> -->		
+					{{/if}}		
+				{{/if}}			
+								
+								{{#unless isDisabled}}<b class="caret"></b>{{/unless}}
+							</a>
+							
+					<ul class="dropdown-menu" id="statusFlag" role="menu" aria-labelledby="drop">
+							
+								
+								<li role="presentation" id="DEFAULT" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i class="fa font-border"></i>
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</a>
+								</li>
+								{{#if hasRolePI}} 
+								
+								<li role="presentation" id="PENDING_AGREEMENT" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-hourglass-start color-blue font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.PENDING_AGREEMENT"}}</a></li>
+										
+								<li role="presentation" id="REVIEW_LATER" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-phone color-orange font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.REVIEW_LATER"}}</a></li>
+								
+								{{else}}
+								
+								<li role="presentation" id="IN_WORK" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-pause color-orange font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.IN_WORK"}}</a></li>
+										
+								<li role="presentation" id="TO_BE_MODIFIED" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-pencil color-orange font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.TO_BE_MODIFIED"}}</a></li>
+										
+								<li role="presentation" id="SLA" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-sla color-orange "></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.SLA"}}</a></li>
+										
+								<li role="presentation" id="DIRECT_SEND" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-paper-plane-o color-grey"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.DIRECT_SEND"}}</a></li>		
+										
+										
+								<li role="presentation" id="TOOLING" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-tooling color-grey"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.TOOLING"}}</a></li>
+										
+										
+								<li role="presentation" id="MACHINING" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-machining color-grey"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.MACHINING"}}</a></li>
+										
+										
+								<li role="presentation" id="SIPD" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-sipd color-grey"></i>
+										{{t	"Gloria.i18n.procurement.overviewModule.flags.SIPD"}}</a></li>
+										
+								<li role="presentation" id="PRIORITY" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-flag color-red font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.PRIORITY"}}</a></li>
+										
+								<li role="presentation" id="STOPPED_IN_KOLA" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-ban color-red font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.STOPPED_IN_KOLA"}}</a></li>		
+										
+								<li role="presentation" id="TO_BE_REMOVED" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-times color-red font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.TO_BE_REMOVED"}}</a></li>
+										{{/if}}
+										
+							</ul>
+						</div>
+					</div>
+				</div>
+		
+		
+		
+			<!-- <div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.procurement.procureDetail.header.fromStockUsageQty"}}: </label>
+				<div class='controls' id="fromStockProjectQty">{{procureLineData.fromStockProjectQty}}</div>
+			</div>
+		</div> -->
+			
+	</div>
+	{{#unless isDisabled}}
+	<div class='row'>
+		<div class='form-group'>
+			<label class="control-label" for=""> {{t
+				"Gloria.i18n.procurement.procureDetail.text.fromStock"}}: </label>
+			<div class="controls">
+			<div id="fromStockMessage" class="hidden"> <label class="control-label"> 
+					&#9733; {{t "Gloria.i18n.procurement.procureDetail.text.fromStockMessage"}}</label><br></div>
+				<div id="fromStock">{{t "Gloria.i18n.notAvailable"}}</div>
+			</div>
+		</div>
+	</div>
+	{{/unless}} {{#if hasRolePI}} {{#if hasRoleDELIVERY}} {{#if hasDeliveryTeam}} {{#if_eq
+	procureLineData.status "WAIT_TO_PROCURE"}}
+	<div class='row'>
+		<div class='col-sm-10'>
+			<div class='form-group'>
+				<label class="control-label"> <input type="checkbox"
+					id="ipDeclaration" name="procureLine[forwardedForDC]" {{#if
+					procureLineData.forwardedForDC}} checked="checked"
+					{{/if}}  value="true"> {{t
+					"Gloria.i18n.procurement.procureDetail.text.ipDeclaration"}}
+				</label>
+			</div>
+		</div>
+	</div>
+	{{/if_eq}} {{/if}} {{/if}} {{/if}}
+	<div class='row'>
+		<div class='col-sm-8 js-externalFields js-fromStockNotFields'
+			id="InfoToPurchaseDiv">
+			<div class='form-group'>
+				<label class="control-label" for='procureInfo'> {{t
+					"Gloria.i18n.procurement.procureDetail.header.informationToPurchase"}}:
+					{{#if isDisabled}} {{else}} <br /> &#9733; {{t
+					"Gloria.i18n.procurement.procureDetail.header.informationToPurchase2"}}
+					{{/if}}
+				</label>
+				<div class="controls">
+					{{#if isDisabled}}
+					<div id="procureInfo" class="comment-area">{{procureLineData.procureInfo}}</div>
+					{{else}}
+					<textarea id="procureInfo" class="form-control"
+						name='externalInfo[procureInfo]' rows="3" cols="75"
+						maxlength="120">{{procureLineData.procureInfo}}</textarea>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

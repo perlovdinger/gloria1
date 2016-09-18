@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 3 sp1 (http://www.altova.com) by VOLVO INFORMATION TECH AB (VOLVO INFORMATION TECH AB) -->
+<xsd:schema xmlns="http://finance.group.volvo.com/WBSElement/1_0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cmn="http://finance.group.volvo.com/common/1_0" targetNamespace="http://finance.group.volvo.com/WBSElement/1_0" version="1.0.0">
+	<xsd:import namespace="http://finance.group.volvo.com/common/1_0" schemaLocation="../Common_1_0/Common_1_0.xsd"/>
+	<xsd:element name="SyncWBSElementShort">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Sync" type="cmn:SyncType"/>
+				<xsd:element name="WBSRec" type="WBSLoadType" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="WBSLoadType">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="EN">WBS Element</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Action" minOccurs="0"/>
+			<xsd:element name="WBS" type="cmn:WBSElementType">
+				<xsd:annotation>
+					<xsd:documentation>WBS element</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CC" type="cmn:CompanyCodeType">
+				<xsd:annotation>
+					<xsd:documentation>Company Code</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Desc" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Description</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ShortID" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Short ID</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

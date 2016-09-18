@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Warehouses>
+    <Warehouse qiSupported="false" setUp="ROW" siteCode="MAL" siteId="2919" siteName="Malmö">
+        <StorageRoom code="1" description="" name="1">
+            <Zon code="To Store" description="" name="To Store" type="TO_STORE">
+                <BinLocation allocation="FIXED" bayCode="01" code="TS-01-01-01" level="1" position="1"/>
+            </Zon>
+            <Zon code="Shipping" description="" name="Shipping" type="SHIPPING">
+                <BinLocation allocation="FIXED" bayCode="01" code="SH-01-01-01" level="1" position="1"/>
+            </Zon>
+            <Zon code="QI" description="" name="QI" type="QI">
+                <BinLocation allocation="FIXED" bayCode="01" code="QI-01-01-01" level="1" position="1"/>
+            </Zon>
+            <Zon code="S" description="" name="S" type="STORAGE">
+                <AisleRackRow code="F" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="J" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="I" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="C" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="D" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="G" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="E" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="H" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="B" numberOfBay="5" setUp="ROW">
+                    <BaySetting bayCode="E" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="D" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="B" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="A" numberOfLevels="5" numberOfPositions="3"/>
+                    <BaySetting bayCode="C" numberOfLevels="5" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="A" numberOfBay="10" setUp="ROW">
+                    <BaySetting bayCode="A" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="B" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="C" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="D" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="E" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="F" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="G" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="H" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="I" numberOfLevels="10" numberOfPositions="1"/>
+                    <BaySetting bayCode="J" numberOfLevels="10" numberOfPositions="1"/>
+                </AisleRackRow>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="J" code="A-J-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="I" code="A-I-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="H" code="A-H-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="G" code="A-G-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="F" code="A-F-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="A-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="A-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="B-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="B-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="B-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="B-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="B-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="H-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="H-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="H-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="H-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="H-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="E-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="E-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="G-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="G-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="G-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="D-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="D-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="D-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="D-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="A-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-09-01" level="9" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-08-01" level="8" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-07-01" level="7" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-06-01" level="6" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="A-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="A-C-10-01" level="10" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="D-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="C-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="C-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="C-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="C-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="C-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="J-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="J-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="J-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="J-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="F-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="F-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="F-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="E-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="E-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="E-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="G-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="G-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="F-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="F-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="B" code="I-B-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="D" code="I-D-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="C" code="I-C-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="E" code="I-E-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-04-03" level="4" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-04-02" level="4" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-04-01" level="4" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-03-03" level="3" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-03-02" level="3" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-03-01" level="3" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-02-03" level="2" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-02-02" level="2" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-02-01" level="2" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-01-03" level="1" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-01-02" level="1" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="I-A-01-01" level="1" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-05-03" level="5" position="3"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-05-02" level="5" position="2"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-05-01" level="5" position="1"/>
+                <BinLocation allocation="FIXED" bayCode="A" code="J-A-04-03" level="4" position="3"/>
+            </Zon>
+            <Zon code="Quarantine" description="" name="Quarantine" type="QUARANTINE">
+                <BinLocation allocation="FIXED" bayCode="01" code="BL-01-01-01" level="1" position="1"/>
+            </Zon>
+        </StorageRoom>
+    </Warehouse>
+</Warehouses>

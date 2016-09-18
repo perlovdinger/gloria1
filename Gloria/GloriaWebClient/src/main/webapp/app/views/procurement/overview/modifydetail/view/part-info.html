@@ -1,0 +1,100 @@
+<div id="generalInfo{{data.id}}-module" class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" data-parent="#partContainer" href="#generalInfo{{data.id}}">
+        	<strong>{{t "Gloria.i18n.procurement.modifyDetail.label.partNumber"}}: </strong>{{data.partNumber}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<strong>{{t "Gloria.i18n.procurement.modifyDetail.label.quantity"}}: </strong>{{data.quantity}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<strong>{{t "Gloria.i18n.procurement.modifyDetail.label.partVersion"}}: </strong>{{data.partVersion}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<strong>{{t "Gloria.i18n.procurement.modifyDetail.label.partName"}}: </strong>{{data.partName}}</a></h4>
+    </div>
+    <div id="generalInfo{{data.id}}" class="panel-collapse collapse">
+        <div class="panel-body">
+            <input class="form-control" name='{{data.id}}' type="hidden" required="required" value='{{data.id}}'>
+            <div class="well well-small">
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="partAffiliation_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.partAffiliation"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="partAffiliation_{{data.id}}">{{data.partAffiliation}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="partNumber_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.partNumber"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="partNumber_{{data.id}}">{{data.partNumber}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="quantity_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.quantity"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="quantity_{{data.id}}">{{data.quantity}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="partVersion_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.partVersion"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="partVersion_{{data.id}}">{{data.partVersion}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="partName_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.partName"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="partName_{{data.id}}">{{data.partName}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="partModification_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.partModification"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="partModification_{{data.id}}">{{data.partModification}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="functionGroup_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.functionGroup"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="functionGroup_{{data.id}}">{{data.functionGroup}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-sm-2'>
+                        <div class='form-group'>
+                            <label class="control-label" for="dfuObjectNumber_{{data.id}}">
+                                {{t "Gloria.i18n.procurement.modifyDetail.label.dfuObjectNumber"}}:
+                            </label>
+                            <div class="controls">
+                                <span id="dfuObjectNumber_{{data.id}}">{{data.dfuObjectNumber}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

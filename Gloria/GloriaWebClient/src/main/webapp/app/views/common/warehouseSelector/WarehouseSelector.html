@@ -1,0 +1,21 @@
+{{#if items.length}}
+	<div class="form-group">
+		<span>{{t "Gloria.i18n.startpage.pages.warehouse.warehouse"}}: </span>
+	</div>
+	{{#if_eq items.length 1}}	
+	<div class="form-group">
+		<label class="form-control">{{items.0.siteName}}</label>
+	</div>
+	{{else}}	
+	<div class="form-group">
+		<select id="warehouseSelector_{{cid}}" class="form-control">
+		{{#each items}}
+			<option value="{{this.siteId}}" {{#if_eq this.siteId ../defaultItem}}selected{{/if_eq}}>{{this.siteName}}</option>
+		{{/each}}
+		</select>
+	{{/if_eq}}
+{{else}}
+	<div class="form-group">
+		<label class="form-control">{{t "Gloria.i18n.startpage.pages.warehouse.noWarehouse"}}</label>
+	</div>
+{{/if}}

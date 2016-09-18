@@ -1,0 +1,6 @@
+--<ScriptOptions statementTerminator=";"/>
+
+ALTER TABLE ADDRESS DROP CONSTRAINT SQL140327223215990;
+
+DROP TABLE ADDRESS;
+

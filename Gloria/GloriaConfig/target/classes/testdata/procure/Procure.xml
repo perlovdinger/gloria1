@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procure>
+  <ProcureDetail>
+    <assignedMaterialController>all</assignedMaterialController>
+    <shipToId>1622</shipToId>
+    <finalWarehouseId>1622</finalWarehouseId>
+    <requiredStaDate>2014-01-10</requiredStaDate>
+    <unitPrice>2.0</unitPrice>
+    <currency>EUR</currency>
+    <additionalQuantity>2</additionalQuantity>
+  </ProcureDetail>
+  <ProcureOrder>
+    <supplierId>82</supplierId>
+    <buyerCode>2049</buyerCode>
+    <maxPrice>40.0</maxPrice>
+    <materialUserCategory>Organization</materialUserCategory>
+    <materialUserName>VTC Tuve</materialUserName>
+    <unitOfMeasure>PCE</unitOfMeasure>
+  </ProcureOrder>
+</Procure>

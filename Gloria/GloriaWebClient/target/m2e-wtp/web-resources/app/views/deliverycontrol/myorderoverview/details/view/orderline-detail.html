@@ -1,0 +1,99 @@
+<form novalidate="novalidate">
+				<div id="deviationMessage" class='row' style="display: none;">
+					<div class="col-sm-12">
+						<div class="alert alert-warning">
+							<h5>
+								<i class="fa fa-warning"></i> <b>&nbsp;&nbsp;{{t
+									"Gloria.i18n.deliverycontrol.orderOverview.adjust.deviationHeader"}}</b>
+							</h5>
+							<p>{{t
+								"Gloria.i18n.deliverycontrol.orderOverview.adjust.deviationMessage"}}
+							{{#unless isDisabled}}
+							<button type="button" class="btn" id="ignore">
+				             {{t "Gloria.i18n.deliverycontrol.button.ignore"}}</button>
+				             {{/unless}}
+				             </p>
+						</div>
+					</div>
+				</div>
+	<div class="panel-group accordion" >
+		<div id="partInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullOrderPartInfo" href="#partGeneralInformation"><strong>{{t
+							"Gloria.i18n.deliverycontrol.orderOverview.text.poInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="partGeneralInformation" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<div id="partGeneralInfoContent"></div>
+					<div id="poInfoLog"></div>
+				</div>
+			</div>
+		</div>
+		<div id="poDelInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullOrderPartInfo" href="#deliveryLinesInformation"><strong>{{t
+							"Gloria.i18n.deliverycontrol.orderOverview.text.poDelInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="deliveryLinesInformation" class="panel-collapse collapse">
+				<div id="poDelInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="poAmdInfo" class="panel panel-default" style="display: none;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullOrderPartInfo" href="#amendmentInformation"><strong>{{t
+							"Gloria.i18n.deliverycontrol.orderOverview.text.amendmentInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="amendmentInformation" class="panel-collapse collapse">
+				<div id="poAmdInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="procInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullOrderPartInfo" href="#procurementInformation"><strong>{{t
+							"Gloria.i18n.deliverycontrol.orderOverview.text.procInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="procurementInformation" class="panel-collapse collapse">
+				<div id="procInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="historyInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullOrderPartInfo" href="#historyInformation"><strong>{{t
+							"Gloria.i18n.deliverycontrol.orderOverview.text.history"}}</strong></a>
+				</h4>
+			</div>
+			<div id="historyInformation" class="panel-collapse collapse">
+				<div id="historyInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div align="center" class="button-bar floatFooter">
+		{{#if isDisabled}}
+		<button type="button" class="btn btn-default" id="cancel">
+			{{t "Gloria.i18n.buttons.close"}}</button>
+		{{else}}
+		{{#hasPermission "edit" 0="DeliveryControlPartDetail"}}
+		<button type="button" class="btn btn-default" id="save">{{t
+			"Gloria.i18n.deliverycontrol.button.save"}}</button>
+		{{/hasPermission}}
+		<button type="button" class="btn btn-default" id="cancel">
+			{{t "Gloria.i18n.deliverycontrol.button.cancel"}}</button>
+		{{/if}}
+
+	</div>
+</form>

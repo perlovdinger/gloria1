@@ -1,0 +1,133 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t "Gloria.i18n.deliverycontrol.text.exportToExcel"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div>
+				<div id="appModalMessage">
+					<span class="help-inline"></span>
+				</div>
+				<div class="row" style="padding-bottom: 10px;">
+					<div class="col-sm-12">
+						<span>{{t "Gloria.i18n.deliverycontrol.text.howManyRows"}}:</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="radio-inline control-label"> <input
+								type="radio" id="exportOption1" name="exportOption" value="1">
+								<span>{{t
+									"Gloria.i18n.deliverycontrol.text.howManyRowsOption1"}}</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="radio-inline control-label"> <input
+								type="radio" id="exportOption2" name="exportOption" value="2">
+								<span>{{t
+									"Gloria.i18n.deliverycontrol.text.howManyRowsOption2"}}</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="padding-top: 10px;">
+					<div class="col-sm-12">
+						<span>{{t
+							"Gloria.i18n.deliverycontrol.text.exportToExcelText"}}:</span>
+					</div>
+				</div>
+				<form id="exportForm" name="exportForm" role="form"
+					style="padding: 15px;">
+					<fieldset>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<span> <input type="checkbox"
+										id="includeDeliveryController"
+										name="options[includeDeliveryController]" value="true">
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.deliveryController"}}
+									</span>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<span> <input type="checkbox" id="includeOrderLogs"
+										name="options[includeOrderLogs]" value="true"> {{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.orderLog"}}
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<span> <input type="checkbox" id="includeOrderLineLogs"
+										name="options[includeOrderLineLogs]" value="true"> {{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.orderLineLog"}}
+									</span>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<span> <input type="checkbox" id="includeProject"
+										name="options[includeProject]" value="true"> {{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.project"}}
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<span><input type="checkbox"
+										id="includePlannedDispatchDate"
+										name="options[includePlannedDispatchDate]" value="true">
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.dispatchDate"}}
+									</span>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<span><input type="checkbox"
+										id="includePlannedStatusFlag"
+										name="options[includePlannedStatusFlag]" value="true">
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.statusFlag"}}
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<span> <input type="checkbox" id="excludeAgreedSTA"
+										name="options[excludeAgreedSTA]" value="true"> <i><b>{{t
+												"Gloria.i18n.deliverycontrol.orderOverview.text.exclude"}}</b></i>
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.AgreedSTA"}}
+									</span>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" id="export">{{t
+				"Gloria.i18n.buttons.export"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

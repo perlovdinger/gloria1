@@ -1,0 +1,38 @@
+<div class="row">
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">
+				<select id="levelStorageRoom" class="form-control">
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">
+				<select id="levelZone" class="form-control">
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">
+				<select id="levelAisle" class="form-control">
+				</select>
+			</div>
+		</div>
+	</div>
+	{{#hasPermission "edit" 0="WarehouseSetup"}}
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">
+				<a class="btn btn-default" id="levelAddNew" disabled="true">{{t
+					"Gloria.i18n.buttons.addNew"}}</a> <a class="btn btn-default"
+					id="levelDelete" disabled="true">{{t
+					"Gloria.i18n.buttons.delete"}}</a>
+			</div>
+		</div>
+	</div>
+	{{/hasPermission}}
+</div>

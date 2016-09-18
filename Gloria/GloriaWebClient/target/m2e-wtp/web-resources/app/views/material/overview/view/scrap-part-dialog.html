@@ -1,0 +1,120 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3 class="modal-title">{{t
+				"Gloria.i18n.material.overview.header.scrapPart"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div id="appModalMessage"></div>
+			<form id="scrapForm" name="scrapForm">
+				{{#if isOne}}
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label lengthyText" for="pPartNumber">
+								{{t "Gloria.i18n.material.overview.header.pPartNumber"}}: </label>
+							<div class="controls">
+								<span>{{data.pPartNumber}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label lengthyText" for="pPartVersion">
+								{{t "Gloria.i18n.material.overview.header.pPartVersion"}}: </label>
+							<div class="controls">
+								<span>{{data.pPartVersion}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label lengthyText" for="pPartName">
+								{{t "Gloria.i18n.material.overview.header.pPartName"}}: </label>
+							<div class="controls">
+								<span>{{data.pPartName}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label lengthyText" for="binLocationCode">
+								{{t "Gloria.i18n.material.overview.header.outBoundLocationId"}}:
+							</label>
+							<div class="controls">
+								<span>{{data.binLocationCode}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label lengthyText" for="expirationDate">
+								{{t "Gloria.i18n.material.overview.header.expirationDate"}}: </label>
+							<div class="controls">
+								<span>{{date data.statusDate 'Gloria.i18n.dateformat'}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label lengthyText" for="possibleToScrapQty">
+								{{t "Gloria.i18n.material.overview.header.possibleToScrapQty"}}:
+							</label>
+							<div class="controls">
+								<span>{{data.quantity}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label lengthyText required" for="scrapQty">
+								{{t "Gloria.i18n.material.overview.header.scrapQty"}}: </label>
+							<div class="controls">
+								<input type="number" id="scrapQty" name="scrapQty"
+									class="form-control" min="0" max="{{data.quantity}}">
+							</div>
+						</div>
+					</div>
+				</div>
+				{{else}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="alert alert-success">
+							<h5>
+								<i class="fa fa-info-circle"></i><b>&nbsp;&nbsp;{{t
+									"Gloria.i18n.material.overview.text.scrapHeaderMessage"}}</b>
+							</h5>
+							<p>{{t "Gloria.i18n.material.overview.text.scrapMessage"}}</p>
+						</div>
+					</div>
+				</div>
+				{{/if}}
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="control-label lengthyText required" for="comments">
+								{{t "Gloria.i18n.material.overview.header.comments"}}: </label>
+							<div class="controls">
+								<textarea id="comments" name="comments" class="form-control"
+									rows="4" required></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<div class="row">
+				<a class="btn btn-primary" id="scrap-button">{{t
+					"Gloria.i18n.material.overview.button.scrap"}}</a> <a
+					class="btn btn-default" id="cancel-button">{{t
+					"Gloria.i18n.buttons.cancel"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="GloriaUIServices" version="2.5">
+  <display-name>GloriaUIServices</display-name>
+  <listener>
+    <listener-class>com.volvo.jvs.runtime.springutils.ContextLoaderListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+      <param-value>com.volvo.gloria.web.uiservices.filter.CharacterEncodingResponseFilter, com.sun.jersey.api.container.filter.GZIPContentEncodingFilter</param-value>
+    </init-param>
+    <init-param>
+      <!-- Replace PUT and DELETE using the X-HTTP-Method-Override header -->
+      <param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name>
+      <param-value>com.sun.jersey.api.container.filter.PostReplaceFilter,com.volvo.gloria.web.uiservices.filter.QueryParameterFilter</param-value>
+    </init-param>
+    <init-param>
+      <param-name>com.sun.jersey.config.property.packages</param-name>
+      <param-value>com.volvo.gloria.web.uiservices,com.volvo.gloria.web.uiservices.filter</param-value>
+    </init-param>
+    <init-param>
+      <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+      <param-value>true</param-value>
+    </init-param> 
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>Environment</servlet-name>
+    <servlet-class>com.volvo.gloria.web.w.Environment</servlet-class>
+  </servlet> 
+  <servlet-mapping>
+    <servlet-name>Environment</servlet-name>
+    <url-pattern>/Environment</url-pattern>
+  </servlet-mapping> 
+  <servlet-mapping>
+    <servlet-name>Jersey REST Service</servlet-name>
+    <url-pattern>/api/*</url-pattern>
+  </servlet-mapping>
+ 
+
+
+  <resource-ref>
+    <res-ref-name>jdbc/Gloria_Db</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+    <res-sharing-scope>Shareable</res-sharing-scope>
+  </resource-ref>
+  <resource-ref>
+    <res-ref-name>jdbc/Gloria_Db_NoTx</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+    <res-sharing-scope>Shareable</res-sharing-scope>
+  </resource-ref>
+
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.volvo.gloria.web.login.LoginFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/api/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>springSecurityFilterChain</filter-name>
+    <url-pattern>/api/*</url-pattern>    
+  </filter-mapping>
+  
+  
+
+  <!-- default session timeout set to 60 min for all sessions -->
+  <session-config>
+    <session-timeout>60</session-timeout>
+  </session-config>
+</web-app>

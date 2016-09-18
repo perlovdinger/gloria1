@@ -1,0 +1,111 @@
+<form novalidate="novalidate">
+	<div class="panel-group accordion">
+		<div id="materialLineInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#materialLineInfo" href="#materialLineInformation"><strong>{{t
+							"Gloria.i18n.material.details.tabs.materialLineInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="materialLineInformation" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<div id="materialLineInfoContent">
+						<span>{{t "Gloria.i18n.noInfoAvailable"}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="materialInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#materialLineInfo" href="#materialInformation"><strong>{{t
+							"Gloria.i18n.material.details.tabs.materialInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="materialInformation" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<div id="materialInfoContent">
+						<span>{{t "Gloria.i18n.noInfoAvailable"}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="orderInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#materialLineInfo" href="#orderInformation"><strong>{{t
+							"Gloria.i18n.material.details.tabs.orderInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="orderInformation" class="panel-collapse collapse">
+				<div id="orderInfoContent" class="panel-body">
+					<span>{{t "Gloria.i18n.noInfoAvailable"}}</span>
+				</div>
+			</div>
+		</div>
+		<div id="contactInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#materialLineInfo" href="#contactInformation"><strong>{{t
+							"Gloria.i18n.material.details.tabs.contactInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="contactInformation" class="panel-collapse collapse">
+				<div id="contactInfoContent" class="panel-body">
+					<span>{{t "Gloria.i18n.noInfoAvailable"}}</span>
+				</div>
+			</div>
+		</div>
+		<div id="attachmentInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#attachmentInfo" href="#attachmentInformation"><strong>{{t
+							"Gloria.i18n.material.details.tabs.attachmentInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="attachmentInformation" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div id="attachmentInfoContent">
+						<span>{{t "Gloria.i18n.noInfoAvailable"}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="historyInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#materialLineInfo" href="#historyInformation"><strong>{{t
+							"Gloria.i18n.material.details.tabs.history"}}</strong></a>
+				</h4>
+			</div>
+			<div id="historyInformation" class="panel-collapse collapse">
+				<div id="historyInfoContent" class="panel-body">
+					<span>{{t "Gloria.i18n.noInfoAvailable"}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div align="center" class="button-bar floatFooter">
+		{{#hasPermission "pullPart" 0="MaterialOverview"}}
+		<button type="button" class="btn btn-default hidden" id="pull">{{t
+			"Gloria.i18n.material.overview.button.pullPart"}}</button>
+		{{/hasPermission}} 
+		{{#hasPermission "edit" 0="MaterialDetails"}}
+		<button type="button" class="btn btn-default hidden" id="updateTO">{{t "Gloria.i18n.buttons.updateMigratedFields"}}</button>
+		<button type="button" class="btn btn-default" id="edit">{{t "Gloria.i18n.buttons.edit"}}</button>
+		{{/hasPermission}}
+		<button type="button" class="btn btn-default hidden" id="save">{{t
+			"Gloria.i18n.buttons.save"}}</button>
+		<button type="button" class="btn btn-default hidden" id="cancel">{{t
+			"Gloria.i18n.buttons.cancel"}}</button>
+		<button type="button" class="btn btn-default" id="close">{{t
+			"Gloria.i18n.buttons.close"}}</button>
+	</div>
+</form>

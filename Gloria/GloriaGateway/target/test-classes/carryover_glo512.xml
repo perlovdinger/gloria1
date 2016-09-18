@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SyncPurchaseOrder releaseID="9.3" versionID="1.01" xmlns:oa="http://www.openapplications.org/oagis/9" xmlns="http://www.volvo.com/3P/Purchasing/2008/10">
+<oa:ApplicationArea>
+  <oa:CreationDateTime>2013-06-25T11:18:04.081906</oa:CreationDateTime>
+</oa:ApplicationArea>
+<DataArea>
+  <oa:Sync>
+   <oa:ActionCriteria>
+    <oa:ActionExpression actionCode="Change" expressionLanguage="token"/>
+   </oa:ActionCriteria>
+  </oa:Sync>
+  <PurchaseOrder>
+   <PurchaseOrderHeader>
+    <oa:DocumentID>
+     <oa:ID>273-937916-020</oa:ID>
+    </oa:DocumentID>
+    <oa:AlternateDocumentID>
+     <oa:ID>M456871</oa:ID>
+     <oa:RevisionID>318</oa:RevisionID>
+    </oa:AlternateDocumentID>
+    <oa:CustomerParty>
+     <oa:PartyIDs>
+      <oa:ID>1001</oa:ID>
+     </oa:PartyIDs>
+     <oa:Name>VTC  /TUVE</oa:Name>
+    </oa:CustomerParty>
+    <oa:SupplierParty>
+     <oa:PartyIDs>
+      <oa:ID>37916</oa:ID>
+     </oa:PartyIDs>
+     <oa:Name>FACIL and CIE G.C.V</oa:Name>
+     <oa:Location>
+      <oa:Address>
+       <oa:AddressLine sequence="1">HAMNEVIKSVÄGEN 20, ART-N</oa:AddressLine>
+       <oa:CityName>SE-418 79 GÖTEBORG</oa:CityName>
+       <oa:CountryCode>SE</oa:CountryCode>
+      </oa:Address>
+     </oa:Location>
+     <oa:Contact>
+      <oa:Name>LAURENT MARMENOUT</oa:Name>
+      <oa:Communication>
+       <oa:URI>@</oa:URI>
+      </oa:Communication>
+     </oa:Contact>
+    </oa:SupplierParty>
+    <oa:RequestedShipDateTime>1995-02-27</oa:RequestedShipDateTime>
+    <oa:OrderDateTime>2013-06-25</oa:OrderDateTime>
+    <OrderMode>Blanket</OrderMode>
+   </PurchaseOrderHeader>
+   <PurchaseOrderLine>
+    <oa:Item>
+     <ItemID>
+      <ID qualifier="V">190788</ID>
+      <oa:RevisionID>P01</oa:RevisionID>
+     </ItemID>
+     <oa:Description>WASHER,7*28*2</oa:Description>
+     <oa:CountryOfOriginCode>SE</oa:CountryOfOriginCode>
+    </oa:Item>
+    <oa:Quantity unitCode="PCE">100</oa:Quantity>
+    <oa:UnitPrice>
+     <oa:Amount currencyID="EUR">3.664</oa:Amount>
+     <oa:PerQuantity unitCode="PCE">100</oa:PerQuantity>
+     <oa:TimePeriod>
+      <oa:StartDateTime>2013-01-01</oa:StartDateTime>
+     </oa:TimePeriod>
+    </oa:UnitPrice>
+    <oa:ShipToParty>
+     <oa:PartyIDs>
+      <oa:ID>1001</oa:ID>
+     </oa:PartyIDs>
+     <oa:Name>VOLVO TRUCK CORPORATION</oa:Name>
+     <oa:Location>
+      <oa:Address>
+       <oa:AddressLine sequence="1">CENTRAL WAREHOUSE, TUVE</oa:AddressLine>
+       <oa:CityName>SE-405 08 GÖTEBORG</oa:CityName>
+       <oa:CountryCode>SE</oa:CountryCode>
+      </oa:Address>
+     </oa:Location>
+    </oa:ShipToParty>
+    <oa:TransportationTerm>
+     <oa:FreightTermCode>DAP</oa:FreightTermCode>
+    </oa:TransportationTerm>
+    <oa:PaymentTerm type="E090"/>
+    <oa:BuyerParty>
+     <oa:PartyIDs>
+      <oa:ID>GTT</oa:ID>
+     </oa:PartyIDs>
+     <BuyerContact>
+      <oa:ID>272</oa:ID>
+      <oa:Name>Ahlem Elkar</oa:Name>
+      <oa:DepartmentName>86430</oa:DepartmentName>
+      <oa:Communication>
+       <oa:DialNumber>+33 47 296 50 21</oa:DialNumber>
+      </oa:Communication>
+      <oa:Communication>
+       <oa:URI>@</oa:URI>
+      </oa:Communication>
+      <SecurityId>TIN3072</SecurityId>
+     </BuyerContact>
+    </oa:BuyerParty>
+    <oa:PurchaseOrderSubLine>
+     <oa:DrawingReference>
+      <oa:DocumentID>
+       <oa:ID>01052723</oa:ID>
+       <oa:RevisionID>05</oa:RevisionID>
+      </oa:DocumentID>
+     </oa:DrawingReference>
+    </oa:PurchaseOrderSubLine>
+    <OrderCoverageTime>
+     <oa:Duration>P140D</oa:Duration>
+    </OrderCoverageTime>
+   </PurchaseOrderLine>
+  </PurchaseOrder>
+</DataArea>
+</SyncPurchaseOrder>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <!-- Define conflicting data types as properties -->
+  <property name="AUTOGENTYPE" dbms="postgresql" value="BIGSERIAL" />
+  <property dbms="h2" name="AutoGenTYPE" value="BIGINT" />
+
+  <property name="INTTYPE" dbms="postgresql" value="int4" />
+  <property dbms="h2" name="INTTYPE" value="int" />
+
+  <property name="VERSIONCOLNAME" dbms="postgresql" value="version" />
+  <property dbms="h2" name="VERSIONCOLNAME" value="VERSION" />
+
+  <changeSet id="Common_1.2.1" author="tin2177">
+    <createTable tableName="company_code_currency">
+      <column name="company_code_oid" type="BIGINT" />
+      <column name="currency_oid" type="BIGINT" />
+    </createTable>
+    <comment>Added companycode - currency relation</comment>
+  </changeSet>
+
+  <changeSet id="idx_Company_Code_Currency" author="tin2177">
+    <comment> Indexes on Company_Code_Currency</comment>
+    <createIndex tableName="company_code_currency" indexName="i_company_code_currency_company_code_oid">
+      <column name="company_code_oid" />
+    </createIndex>
+    <createIndex tableName="company_code_currency" indexName="i_company_code_currency_currency_oid">
+      <column name="currency_oid" />
+    </createIndex>
+  </changeSet>
+</databaseChangeLog>

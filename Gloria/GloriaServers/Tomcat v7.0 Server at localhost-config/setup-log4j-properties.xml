@@ -1,0 +1,8 @@
+<project name="setup-catalina-properties.xml" default="all" basedir=".">
+	<target name="all">
+		<copy file="${basedir}/Tomcat v7.0 Server at localhost-config/log4j.properties.template"
+			tofile="${basedir}/Tomcat v7.0 Server at localhost-config/log4j.properties" overwrite="true" />
+		<replace file="${basedir}/Tomcat v7.0 Server at localhost-config/log4j.properties" token="@@basedir@@" value="${basedir}" />
+		<replace file="${basedir}/Tomcat v7.0 Server at localhost-config/log4j.properties" token="\" value="/" />
+	</target>
+</project>

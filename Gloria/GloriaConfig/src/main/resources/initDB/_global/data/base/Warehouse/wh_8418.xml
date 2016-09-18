@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Warehouses>
+    <Warehouse setUp="ROW" siteCode="VECV" siteId="8418" siteName="Pithampur (VECV)" qiSupported="false" >
+        <StorageRoom code="room1c" description="" name="room1">
+            <Zon code="zqac" description="" name="zqa" type="QUARANTINE">
+                <BinLocation allocation="FIXED" bayCode="01" code="BL-01-01-01" level="1" position="0"/>
+            </Zon>
+            <Zon code="zstoc" description="" name="zsto" type="STORAGE">
+                <AisleRackRow code="RC2" numberOfBay="3" setUp="ROW">
+                    <BaySetting bayCode="bc11" numberOfLevels="3" numberOfPositions="3"/>
+                    <BaySetting bayCode="bc10" numberOfLevels="3" numberOfPositions="3"/>
+                    <BaySetting bayCode="bc12" numberOfLevels="3" numberOfPositions="3"/>
+                </AisleRackRow>
+                <AisleRackRow code="RC1" numberOfBay="3" setUp="ROW">
+                    <BaySetting bayCode="bc2" numberOfLevels="3" numberOfPositions="3"/>
+                    <BaySetting bayCode="bc1" numberOfLevels="3" numberOfPositions="3"/>
+                    <BaySetting bayCode="bc3" numberOfLevels="3" numberOfPositions="3"/>
+                </AisleRackRow>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-01-03" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-02-01" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-03-01" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-01-03" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-02-01" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-02-02" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-03-02" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-03-03" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-02-01" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-02-03" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-02-03" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-03-01" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-03-02" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-01-02" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-03-03" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-03-03" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-03-01" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-01-02" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-02-01" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-01-01" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-01-02" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-01-01" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-01-02" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-02-02" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-02-02" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-02-03" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-02-01" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-03-01" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-03-01" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-01-01" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-02-02" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-01-03" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-01-01" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-03-03" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc1" code="RC1-bc1-03-03" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-01-03" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-01-01" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-02-03" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc2" code="RC1-bc2-03-02" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-02-03" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-02-02" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-03-02" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-03-02" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-02-01" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-03-03" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc10" code="RC2-bc10-03-01" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-02-02" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-01-03" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-01-01" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-02-03" level="2" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc3" code="RC1-bc3-01-02" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc11" code="RC2-bc11-03-02" level="3" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-01-03" level="1" position="0"/>
+                <BinLocation allocation="FIXED" bayCode="bc12" code="RC2-bc12-01-02" level="1" position="0"/>
+            </Zon>
+            <Zon code="ztsc" description="" name="zts" type="TO_STORE">
+                <BinLocation allocation="FIXED" bayCode="01" code="TS-01-01-01" level="1" position="0"/>
+            </Zon>
+            <Zon code="zqic" description="" name="zqi" type="QI">
+                <BinLocation allocation="FIXED" bayCode="01" code="QI-01-01-01" level="1" position="0"/>
+            </Zon>
+            <Zon code="zshc" description="" name="zsh" type="SHIPPING">
+                <BinLocation allocation="FIXED" bayCode="01" code="SH-01-01-01" level="1" position="0"/>
+            </Zon>
+        </StorageRoom>
+    </Warehouse>
+</Warehouses>

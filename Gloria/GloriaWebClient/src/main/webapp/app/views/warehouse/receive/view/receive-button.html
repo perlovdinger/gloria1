@@ -1,0 +1,16 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="noprint">
+				{{#if_eq module "received"}} {{#hasPermission "edit"
+				0="GoodsReception"}} <a id="cancel-receive" class="btn btn-default"
+					{{#unless permittedActions.cancelGoodReceipt}}disabled="true"{{/unless}}>
+					{{t "Gloria.i18n.warehouse.receive.cancelGoodReceipt"}} </a>{{/hasPermission}}
+				{{/if_eq}} <a id="clear-filter" class="clear-filter">{{t
+					"Gloria.i18n.gridpanel.clearFilter"}}</a> <a id="dummy-button"
+					class="btn btn-default" style="visibility: hidden;">Hidden
+					Button</a>
+			</div>
+		</div>
+	</div>
+</div>

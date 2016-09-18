@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Teams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Team name="BLR" type="DELIVERY_CONTROL" companyCodeGroup="IN" />
+  <Team name="BLR" type="MATERIAL_CONTROL" companyCodeGroup="IN" />
+  <Team name="CUR" type="DELIVERY_CONTROL" companyCodeGroup="BR" />
+  <Team name="CUR" type="MATERIAL_CONTROL" companyCodeGroup="BR" />
+ 
+
+</Teams>

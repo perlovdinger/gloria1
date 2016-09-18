@@ -1,0 +1,68 @@
+<div class="date-filter left-popover">
+	<h3 class="popover-title hide">{{t
+		"components:dateFilter.defaults.title"}}</h3>
+	<button type="button" class="btn" id="close">X</button>
+	<div class="popover-content hide">
+		<form id="dateFilterForm">
+			{{#if dateFilterBindings.on }}
+			<div class="row">
+				<div class="col-sm-2">
+					<label class="control-label" for="exactDate"> <input
+						type="radio" name="filterType" id="exactDate" value="exactDate" />
+						{{t "components:dateFilter.defaults.date"}}:
+					</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" class="js-date form-control" name="on" id="on"
+						disabled="disabled" />
+				</div>
+			</div>			
+			<br>
+			{{/if}}
+			{{#if dateFilterBindings.from }}
+			<div class="row">
+				<div class="col-sm-2">
+					<label class="control-label " for="rangeDate"> <input
+						type="radio" name="filterType" id="rangeDate" value="rangeDate" />
+						{{t "components:dateFilter.defaults.from"}}:
+					</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" class="js-date form-control" name="from"
+						id="from" disabled="disabled" />
+				</div>
+				<div class="col-sm-2">
+					<label class="control-label"> {{t
+						"components:dateFilter.defaults.to"}}: </label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" class="js-date form-control" name="to" id="to"
+						disabled="disabled" />
+				</div>
+			</div>
+			{{/if}}
+			{{#if dateFilterBindings.all }}
+			<div class="row">
+				<div class="col-sm-2">
+					<label class="control-label " for="allDate"> <input
+						type="radio" name="filterType" id="allDate" value="allDate" />
+						{{t "components:dateFilter.defaults.allDate"}}
+					</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="hidden" name="all" id="all" value="true" />
+				</div>
+			</div>
+			{{/if}}
+			<hr class="hr">
+			<div align="right">
+				<button type="button" class="btn btn-primary" id="filter">
+					{{t "components:dateFilter.defaults.filter"}}</button>
+				<button type="button" class="btn btn-default" id="resetFilter">
+					{{t "components:dateFilter.defaults.resetFilter"}}</button>
+				<button type="button" class="btn btn-default" id="close">
+					{{t "components:dateFilter.defaults.close"}}</button>
+			</div>
+		</form>
+	</div>
+</div>

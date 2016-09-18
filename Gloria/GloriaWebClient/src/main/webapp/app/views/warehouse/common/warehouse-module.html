@@ -1,0 +1,44 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="noprint">
+				{{#if_eq control "store"}} <a id="toStore-button"
+					class="btn btn-default" disabled="true">{{t
+					"Gloria.i18n.warehouse.store.button.toStore"}}</a> <a id="clear-filter"
+					class="clear-filter">{{t "Gloria.i18n.gridpanel.clearFilter"}}</a>{{/if_eq}}
+				{{#if_eq control "toStore"}} <a id="print-store-list-button"
+					class="btn btn-default">{{t
+					"Gloria.i18n.warehouse.store.button.printStoreList"}}</a>{{#hasPermission
+				"edit" 0="StorePart"}} <a id="split-button" class="btn btn-default"
+					disabled="true">{{t
+					"Gloria.i18n.warehouse.store.button.adjust"}}</a> <a id="store-button"
+					class="btn btn-default">{{t
+					"Gloria.i18n.warehouse.store.button.store"}}</a> {{/hasPermission}} <a
+					id="cancel-button" class="btn btn-default">{{t
+					"Gloria.i18n.buttons.cancel"}}</a> {{/if_eq}} {{#if_eq control
+				"inventory"}} {{#hasPermission "edit" 0="InventoryOverview"}} <a
+					id="adjustQty-button" class="btn btn-default" disabled="true">{{t
+					"Gloria.i18n.warehouse.inventory.button.adjustQty"}}</a> <a
+					id="move-button" class="btn btn-default" disabled="true">{{t
+					"Gloria.i18n.warehouse.inventory.button.movePart"}}</a>{{/hasPermission}}
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle"
+						data-toggle="dropdown" id="print-button">
+						{{t "Gloria.i18n.warehouse.buttons.print"}} <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" id="print-menu">
+						<li class="disabled"><a href="#" id="printPL">{{t
+								"Gloria.i18n.warehouse.buttons.printPL"}}</a></li>
+						<li class="divider"></li>
+						<li><a href="#" id="printBL">{{t
+								"Gloria.i18n.warehouse.buttons.printBL"}}</a></li>
+					</ul>
+				</div>
+				<a id="exportInventory-button" class="btn btn-default">{{t
+					"Gloria.i18n.warehouse.inventory.button.exportInventory"}}</a><a
+					id="clear-filter" class="clear-filter">{{t
+					"Gloria.i18n.gridpanel.clearFilter"}}</a> {{/if_eq}}
+			</div>
+		</div>
+	</div>
+</div>

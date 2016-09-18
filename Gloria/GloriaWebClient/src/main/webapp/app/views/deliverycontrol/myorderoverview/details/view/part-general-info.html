@@ -1,0 +1,274 @@
+<input class="form-control" name='orderLine[id]' type="hidden"
+	required="required" value='{{data.id}}'>
+<h4>
+	<strong>{{t
+		"Gloria.i18n.deliverycontrol.orderOverview.text.generalInfo"}}</strong>
+</h4>
+<div class="well well-small">
+	<div id='{{data.id}}' class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="orderNo"> {{#if
+					isInternalOrder}}{{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.internalOrderOverviewOrderNo"}}:{{else}}
+					{{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.orderNo"}}:{{/if}}
+				</label>
+				<div class="controls">{{data.orderNo}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="orderDateTime"> {{#if
+					isInternalOrder}}{{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.internalOrderOverviewOrderDate"}}:{{else}}
+					{{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.orderDateTime"}}:{{/if}}
+				</label>
+				<div class="controls">{{date data.orderDateTime
+					"Gloria.i18n.dateformat"}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="buyerId"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.buyerId"}}:
+				</label>
+				<div class="controls">{{data.buyerId}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="materialUserName"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.materialUserName"}}:
+				</label>
+				<div class="controls">{{data.buyerName}}</div>
+			</div>
+		</div>
+		{{#if isInternalOrder}}
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="consignerId"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.consignorId"}}: </label>
+				<div class="controls">{{data.consignorId}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="consignorName"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.consignorName"}}:
+				</label>
+				<div class="controls">{{data.consignorName}}</div>
+			</div>
+		</div>
+		{{else}}
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="supplierId"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.supplierId"}}: </label>
+				<div class="controls">{{data.supplierId}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="supplierName"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.supplierName"}}:
+				</label>
+				<div class="controls">{{data.supplierName}}</div>
+			</div>
+		</div>
+		{{/if}}
+	</div>
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="projectId"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.projectId"}}: </label>
+				<div class="controls">{{data.projectNumber}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="partNumber"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.partNumber"}}: </label>
+				<div class="controls">{{data.partNumber}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="partVersion"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.partVersion"}}: </label>
+				<div class="controls">{{data.partVersion}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="partName"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.partName"}}: </label>
+				<div class="controls">{{data.partName}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="quantity"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.quantity"}}: </label>
+				<div class="controls" id="quantity">{{data.quantity}}</div>
+				<input type="hidden" id="receivedQuantityHidden"
+					value="{{data.receivedQuantity}}" />
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="allowedQuantity"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.allowedQuantity"}}:
+				</label>
+				<div class="controls">
+					<input type="number" min="0" step="1" id="allowedQuantity" max="99999"
+						name="orderLine[allowedQuantity]" class="form-control"
+						value="{{data.allowedQuantity}}" {{#if
+						isDisabled}} disabled="true"{{/if}}>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="orderStaDate"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.orderStaDate"}}:
+				</label>
+				<div class="controls">{{date data.orderStaDate
+					"Gloria.i18n.dateformat"}}</div>
+			</div>
+		</div>
+		<input type="hidden" name='orderStaDate'
+			value='{{date data.orderStaDate "Gloria.i18n.dateformat"}}' />
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="staAcceptedDate"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.staAcceptedDate"}}:
+				</label>
+				{{#if isDisabled}}
+				<div class="controls">
+					<span id="staAcceptedDate" name='orderLine[staAcceptedDate]'>{{date data.staAcceptedDate "Gloria.i18n.dateformat"}}</span>
+			    </div>
+				{{else}}
+				<div class="input-group date staAcceptedDateDiv">
+				{{#if data.staAcceptedDate}}
+				<input class="staAcceptedDate js-date form-control" id='staAcceptedDate'
+						name='orderLine[staAcceptedDate]' type="text"
+						value='{{date data.staAcceptedDate "Gloria.i18n.dateformat"}}'><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						
+				{{else}}
+				<input class="staAcceptedDate js-date form-control" id='staAcceptedDate'
+						name='orderLine[staAcceptedDate]' type="text" ><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+				{{/if}}
+				</div>
+				{{/if}}
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="staAgreedDate"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.staAgreedDate"}}:
+				</label>
+				{{#if isDisabled}}
+				<div class="controls">
+					<span id="staAgreedDate" name='orderLine[staAgreedDate]'>{{date data.staAgreedDate "Gloria.i18n.dateformat"}}</span>
+			    </div>
+				{{else}}
+				<div class="input-group date staAgreedDateDiv">
+					{{#if data.staAgreedDate}}<input
+						class="staAgreedDate js-date form-control" id='staAgreedDate'
+						name='orderLine[staAgreedDate]' type="text"
+						value='{{date data.staAgreedDate "Gloria.i18n.dateformat"}}'><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+					{{else}}<input
+						class="staAgreedDate js-date form-control" id='staAgreedDate'
+						name='orderLine[staAgreedDate]' type="text"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+					{{/if}}
+				</div>
+				{{/if}}
+			</div>
+		</div>
+		
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="requiredStaDate"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.requiredSta"}}:
+				</label>
+				<div class="controls">
+					<span id="requiredStaDate" name='orderLine[requiredStaDate]'>{{date data.requiredStaDate "Gloria.i18n.dateformat"}}</span>
+			    </div>
+			</div>
+		</div>
+		
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="buildStartDate"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.buildStartDate"}}:
+				</label>
+				<div class="controls">{{date data.buildStartDate
+					"Gloria.i18n.dateformat"}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="freightTermCode"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.freightTermCode"}}:
+				</label>
+				<div class="controls">{{data.freightTermCode}}</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="dfuObjectNumber"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.dfuObjectNumber"}}:
+				</label>
+				<div class="controls">{{data.dfuObjectNumber}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="unitOfMeasure"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.unitOfMeasure"}}:
+				</label>
+				<div class="controls">{{data.unitOfMeasure}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="amount"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.amount"}}: </label>
+				<div class="controls">{{data.amount}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="unitOfPrice"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.unitOfPrice"}}: </label>
+				<div class="controls">
+				{{#if data.unitOfPrice}}
+					{{t "Gloria.i18n.unitOfPrice.per" (obj amount=data.unitOfPrice) }}
+				{{/if}}
+				</div>
+			</div>
+		</div>		
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="currency"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.currency"}}: </label>
+				<div class="controls">{{data.currency}}</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label"> {{t
+					"Gloria.i18n.deliverycontrol.orderOverview.header.reference"}}:
+				</label>
+				<div class="controls">{{data.reference}}</div>
+			</div>
+		</div>
+	</div>
+</div>

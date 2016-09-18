@@ -1,0 +1,126 @@
+{{#if empty}}
+<div class="row">
+	<div class="col-xs-12">
+		<label class="control-label largerText"> {{t
+			"Gloria.i18n.warehouse.pick.empty"}}</label>
+	</div>
+</div>
+{{else}}
+<div class="row">
+	<div class="col-xs-4">
+		<div class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.location"}}: </label>
+			<div class="controls">
+				<span id="location"></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<div class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.partNumber"}}: </label>
+			<div class="controls">
+				<span id="partNumber"></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<div class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.version"}}: </label>
+			<div class="controls">
+				<span id="version"></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.partName"}}: </label>
+			<div class="controls">
+				<span id="partName"></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.partModification"}}: </label>
+			<div class="controls">
+				<span id="partModification"></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<div class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.pullQuantity"}}: </label>
+			<div class="controls">
+				<span id="pullQuantity"></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<div class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.unitOfMeasure"}}: </label>
+			<div class="controls">
+				<span id="unitOfMeasure"></span>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-4">
+		<div id="pickedQuantityContianer" class="form-group">
+			<label class="control-label largerText"> {{t
+				"Gloria.i18n.warehouse.pick.actualPickedQuantity"}}: </label>
+			<div class="controls">
+				<input class="form-control" type="number" id="pickedQuantity"
+					min="0" step="1" max="99999" />
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="row">
+			<div class="col-xs-5">
+				<div class="form-group">
+					<label class="control-label largerText"> {{t
+						"Gloria.i18n.warehouse.pick.requestListId"}}: </label>
+				</div>
+			</div>
+			<div class="col-xs-5">
+				<div class="controls">
+					<span id="requestListId"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="row">
+			<div class="col-xs-5">
+				<div class="form-group">
+					<label class="control-label largerText"> {{t
+						"Gloria.i18n.warehouse.pick.binlocationBalance"}}: </label>
+				</div>
+			</div>
+			<div class="col-xs-5">
+				<div class="controls">
+					<span id="binlocationBalance"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="row">
+			<div class="col-xs-6">
+				<label class="control-label largerText"> <br /> {{t
+					"Gloria.i18n.warehouse.pick.balanceExceeded"}}:
+				</label>
+			</div>
+			<div class="col-xs-2">
+				<input type="checkbox" class="form-control" id="balanceExceeded">
+			</div>
+		</div>
+	</div>
+</div>
+{{/if}}

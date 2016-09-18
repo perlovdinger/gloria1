@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PartAliasMappings>
+	<PartAliasMapping name="Renault part numbers" kolaDomain="RVI" gpsQualifier="I">
+  </PartAliasMapping>
+	<PartAliasMapping name="Mack part numbers" kolaDomain="MAC" gpsQualifier="K">
+  </PartAliasMapping>
+	<PartAliasMapping name="Nissan Diesel part numbers" kolaDomain="NDM" gpsQualifier="4">
+  </PartAliasMapping>
+</PartAliasMappings>

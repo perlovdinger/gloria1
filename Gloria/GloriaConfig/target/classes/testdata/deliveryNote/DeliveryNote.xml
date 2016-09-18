@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeliveryNotes>
+  <DeliveryNote deliveryNoteNo="DN222" deliveryNoteDate="2014-01-30" supplierId="80" supplierName="Smörgåsbord Aångström Test1" transportationNo="TN222"
+    carrier="DHL" orderNo="2049-900019-519" />
+  <DeliveryNote deliveryNoteNo="DN224" deliveryNoteDate="2014-02-28" supplierId="82" supplierName="Smörgåsbord Aångström Test3" transportationNo="TN224"
+    carrier="DHL" orderNo="2049-900019-567" />
+  <DeliveryNote deliveryNoteNo="DN288" deliveryNoteDate="2013-10-30" supplierId="79" supplierName="Smörgåsbord Aångström Test4" transportationNo="TN288"
+    carrier="DHL" orderNo="2049-900019-544" />
+</DeliveryNotes>

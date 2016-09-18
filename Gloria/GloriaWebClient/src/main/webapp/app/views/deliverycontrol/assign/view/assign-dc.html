@@ -1,0 +1,30 @@
+<div class="tabbable" id="assignOrReassignTab">
+	<ul class="nav nav-tabs">
+		{{#if_eq followUpType "SUPPLIER"}}
+		<li class="active"><a href="#supplier" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.tab.supplier"}}</a></li>
+		{{/if_eq}} {{#if_eq followUpType "PROJECT"}}
+		<li class="active"><a href="#project" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.tab.project"}}</a></li>
+		{{/if_eq}}
+		<li><a href="#order" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.tab.order"}}</a></li>
+	</ul>
+	<div class="tab-content">
+		{{#if_eq followUpType "SUPPLIER"}}
+		<div class="tab-pane col-xs-12 active" id="supplier">
+			<div id="supplierButton" class="button-bar"></div>
+			<div id="supplierGrid"></div>
+		</div>
+		{{/if_eq}} {{#if_eq followUpType "PROJECT"}}
+		<div class="tab-pane col-xs-12 active" id="project">
+			<div id="projectButton" class="button-bar"></div>
+			<div id="projectGrid"></div>
+		</div>
+		{{/if_eq}}
+		<div class="tab-pane col-xs-12" id="order">
+			<div id="orderButton" class="button-bar"></div>
+			<div id="orderGrid"></div>
+		</div>
+	</div>
+</div>

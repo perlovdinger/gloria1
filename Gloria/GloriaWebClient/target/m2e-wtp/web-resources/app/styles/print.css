@@ -1,0 +1,25 @@
+//
+DEPRECATED !!! // Use Bootstrap 's style classes "visible-print " and "hidden-print
+	" instead /*Reset Style*/ 
+body {
+	padding: 10px;
+	line-height: 1.4em;
+	word-spacing: 1px;
+	letter-spacing: 0.2px;
+	font: 10px;
+	color: black;
+}
+
+div .print-header {
+	display: block;
+}
+
+/*Remove Element*/
+#pageHeader,#breadCrumb,#moduleInfo,#header-user-name,#header-date,.page-header,.noprint,.dontshow,.navbar,tr th:first-child,tr td:first-child
+	{
+	display: none; !important
+}
+
+thead {
+	display: table-header-group;
+}

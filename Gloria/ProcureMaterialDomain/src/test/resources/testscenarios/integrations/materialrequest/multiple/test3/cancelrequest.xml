@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProcessMaterialProcureRequest xmlns:volvo="http://www.volvo.com/group/common/1_0" xmlns="http://www.volvo.com/MaterialProcureRequest/1_0">
+  <volvo:ApplicationArea>
+    <volvo:Sender>
+      <volvo:LogicalID>GLORIA</volvo:LogicalID>
+      <volvo:ComponentID>SubSystem</volvo:ComponentID>
+      <volvo:UserID xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">V075345</volvo:UserID>
+    </volvo:Sender>
+    <volvo:Receiver>
+      <volvo:LogicalID>GLORIA</volvo:LogicalID>
+      <volvo:ComponentID xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SubSystem</volvo:ComponentID>
+    </volvo:Receiver>
+    <volvo:CreationDateTime>2015-04-07T10:11:57.057+02:00</volvo:CreationDateTime>
+    <volvo:BODID>5598378046675177579</volvo:BODID>
+  </volvo:ApplicationArea>
+  <DataArea>
+    <Process>
+      <volvo:ActionCriteria>ProcessRequest</volvo:ActionCriteria>
+    </Process>
+    <MaterialRequestChange>
+      <RequestType>MULTIPLE</RequestType>
+      <MaterialRequestChangeRemove>
+        <ChangeTechId>2289850740560027954</ChangeTechId>
+        <MtrlRequestVersion>M1V3</MtrlRequestVersion>
+      </MaterialRequestChangeRemove>
+    </MaterialRequestChange>
+    <MaterialRequestChange>
+      <RequestType>MULTIPLE</RequestType>
+      <MaterialRequestChangeRemove>
+        <ChangeTechId>6287362200940841922</ChangeTechId>
+        <MtrlRequestVersion>M1V3</MtrlRequestVersion>
+      </MaterialRequestChangeRemove>
+    </MaterialRequestChange>
+  </DataArea>
+</ProcessMaterialProcureRequest>

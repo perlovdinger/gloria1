@@ -1,0 +1,144 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="noprint">
+				{{#if_eq module "inbox"}} {{#hasPermission "assign"
+				0="ProcurementInbox"}} <a class="btn btn-default" id="assign-button"
+					{{#unless permittedActions.assign}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.procurement.button.assign"}}</a>{{/hasPermission}}
+				{{#hasPermission "unAssign" 0="ProcurementInbox"}}<a
+					class="btn btn-default" id="unassign-button" {{#unless
+					permittedActions.unAssign}} disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.procurement.button.unassign"}} </a> {{/hasPermission}}
+				{{/if_eq}} {{#if_eq module "internalProcurement"}} {{#hasPermission
+				"mark" 0="InternalProcurement"}} <a class="btn btn-default hidden"
+					id="markAsMine-button" {{#unless
+					permittedActions.markAsMine}}disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.procurement.button.markAsMine"}} </a> <a
+					class="btn btn-default" id="assign-button" {{#unless
+					permittedActions.assign}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.procurement.button.assign"}}</a> <a
+					class="btn btn-default" id="unassign-button" {{#unless
+					permittedActions.unAssign}} disabled="true"{{/unless}}> {{t
+					"Gloria.i18n.procurement.button.unassign"}} </a> {{/hasPermission}}
+				{{/if_eq}} 
+				
+		{{#if_eq module "toProcure"}} 
+				 <div class="row">
+				 		<div class="col-xs-10 col-sm-8">
+					{{#hasPermission "open" 0="ProcurementToProcure"}} 
+						<a class="btn btn-default" id="open-button" 
+							{{#unless permittedActions.openProcureDetails}}
+								disabled="true"
+							{{/unless}}>
+						{{t "Gloria.i18n.procurement.button.open"}}</a> 
+					{{/hasPermission}}
+					
+					{{#hasPermission "multipleUpdate" 0="ProcurementToProcure"}}
+					 <a class="btn btn-default" id="multipleUpdate-button" 
+							 {{#unless permittedActions.multipleUpdate}}
+							 	disabled="true"
+							 {{/unless}}>
+						{{t "Gloria.i18n.procurement.button.multipleUpdate"}}</a>
+					{{/hasPermission}} 
+				
+				{{#hasPermission "forwardProcurement" 0="ProcurementToProcure"}} 
+					{{#if isIP}} 
+						<a class="btn btn-default" id="returnProcurement-button" 
+							{{#unless permittedActions.returnProcurement}}
+								disabled="true"
+							{{/unless}}>
+						{{t "Gloria.i18n.procurement.button.returnProcurement"}}</a> 
+					{{else}} 
+						<a class="btn btn-default" id="forwardProcurement-button" 
+							{{#unless permittedActions.forwardProcurement}}
+								disabled="true"
+							{{/unless}}>
+						{{t "Gloria.i18n.procurement.button.forwardProcurement"}}</a> 
+					{{/if}}
+				{{/hasPermission}} 
+				
+				{{#hasPermission "toModify" 0="ProcurementToProcure"}} 
+					<a class="btn btn-default" id="tomodify-button" 
+						{{#unless permittedActions.tomodify}}
+							disabled="true"
+						{{/unless}}> 
+					{{t "Gloria.i18n.procurement.button.tomodify"}}</a> 
+				{{/hasPermission}}
+				
+				{{#hasPermission "onBuildSite" 0="ProcurementToProcure"}}
+				 	<a class="btn btn-default" id="onbuildsite-button" 
+				 		{{#unless permittedActions.onbuildsite}}
+				 			disabled="true"
+				 		{{/unless}}> 
+				 	{{t "Gloria.i18n.procurement.button.onbuildsite"}}</a> 
+				 {{/hasPermission}}
+				 
+				{{#hasPermission "procure" 0="ProcurementToProcure"}}
+					 <a class="btn btn-default" id="procure-button" 
+					 	{{#unless permittedActions.procure}}
+					 		disabled="true"
+					 	{{/unless}}> 
+					 {{t "Gloria.i18n.procurement.button.procure"}}</a> 
+				{{/hasPermission}}
+				
+				 {{#if isIP}} 
+ 				    <a class="btn btn-default" id="exportExcel-button">
+					  {{t "Gloria.i18n.procurement.button.exportExcel"}}</a> 
+				 {{/if}}
+				 </div>
+		
+		 	{{#if_eq isIPRole "no"}} 
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle"
+						data-toggle="dropdown" id="materialLineCategory-button">
+						{{t
+						"Gloria.i18n.procurement.materialLineCategory.SHOW"}}
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" id="materialLineCategory-menu">
+						{{{renderDropDownMenuButton materialLineCategory "" true}}}
+					</ul>
+				</div>
+			{{/if_eq}}
+	 
+		{{/if_eq}} 
+				
+				
+				{{#if_eq module "modification"}} {{#hasPermission "edit"
+				0="ProcurementModification"}} <a class="btn btn-default"
+					id="modify-button" {{#unless
+					permittedActions.import}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.procurement.button.tomodify"}}</a> {{/hasPermission}}
+				{{/if_eq}} {{#if_eq module "onBuildSite"}} {{#hasPermission
+				"toProcure" 0="ProcurementBuildSite"}} <a class="btn btn-default"
+					id="buildSiteAssignToProcure-button" {{#unless
+					permittedActions.buildSiteAssignToProcure}}disabled="true"{{/unless}}>
+					{{t "Gloria.i18n.procurement.button.moveToProcure"}} </a>
+				{{/hasPermission}} {{#hasPermission "delegateToBuildSite"
+				0="ProcurementBuildSite"}} <a class="btn btn-default"
+					id="delegateOnBuildSite-button" {{#unless
+					permittedActions.delegateOnBuildSite}}disabled="true"
+					{{/unless}} download> {{t
+					"Gloria.i18n.procurement.button.toBuildSite"}} </a> {{/hasPermission}}
+				{{/if_eq}} {{#if_eq module "procured"}} {{#hasPermission "open"
+				0="ProcuredOverview"}} <a class="btn btn-default" id="open-button"
+					{{#unless permittedActions.openProcureDetails}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.procurement.button.open"}}</a>
+				{{/hasPermission}}{{#hasPermission "toProcure"
+				0="ProcuredOverview"}}<a class="btn btn-default"
+					id="assignToProcure-button" {{#unless
+					permittedActions.assignToProcure}}disabled="true"{{/unless}}>
+					{{t "Gloria.i18n.procurement.button.cancelProcurement"}} </a>
+				{{/hasPermission}} {{/if_eq}} {{#if_eq module "change"}}
+				{{#hasPermission "details" 0="ProcurementChange"}} <a
+					class="btn btn-default" id="change-open-button" {{#unless
+					permittedActions.openChangeDetails}} disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.procurement.button.open"}}</a> {{/hasPermission}}
+
+				{{/if_eq}} <a id="clear-filter" class="clear-filter">{{t
+					"Gloria.i18n.gridpanel.clearFilter"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

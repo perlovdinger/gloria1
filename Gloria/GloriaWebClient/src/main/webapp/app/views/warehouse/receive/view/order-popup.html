@@ -1,0 +1,52 @@
+<div class="modal-dialog modal-lg">
+	<div class="modal-content">
+		<div class="modal-header shortHeaderFooter">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t "Gloria.i18n.warehouse.receive.orderLookupheader"}}</h3>
+		</div>
+		<div class="modal-body modal-tall shortBody">
+			<div>
+				<div id="appModalMessage">
+					<span class="help-inline"></span>
+				</div>
+				<div class='row'>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<div class="controls">
+								<h4>{{t "Gloria.i18n.warehouse.receive.searchOrderNumber"}}</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='row'>
+					<form>
+						<div class='col-sm-7'>
+							<div class='form-group'>
+								<div class="controls input-group">
+									<input name='orderline[partNumber]' id='partNumber'
+										class='form-control' type='text' required="required"
+										maxlength="20" placeholder="{{t "Gloria.i18n.warehouse.receive.text.partNoORAlias"}}"/>
+									<div class="input-group-btn">
+										<button class="btn btn-primary" type="submit" id="orderSearch">
+											<span class="glyphicon glyphicon-search"></span>{{t "Gloria.i18n.warehouse.buttons.search"}}
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class='row'>
+					<div id='gridPane'></div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer shortHeaderFooter">
+			<button type="button" class="btn btn-primary" id="ok" disabled="true">
+				{{t "Gloria.i18n.warehouse.buttons.ok"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.warehouse.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

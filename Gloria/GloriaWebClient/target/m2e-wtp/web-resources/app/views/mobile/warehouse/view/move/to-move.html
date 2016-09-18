@@ -1,0 +1,104 @@
+<form id="toMoveForm" name="toMoveForm">
+	<div class="row text-center">
+		<div class="col-xs-12">
+			<div class="form-group">
+				<label class="control-label"></label>
+			</div>
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.inventory.toMove.scanOrEnter"}}: </label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel-group accordion">
+				<div id="generalInfo-module" class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse"
+								data-parent="#fullPartInfo" href="#generalInfo">
+								<i class="glyphicon glyphicon-chevron-right"></i>
+								<strong>{{t
+									"Gloria.i18n.warehouse.inventory.toMove.enterBinLocationAndPartNumber"}}</strong></a>
+						</h4>
+					</div>
+					<div id="generalInfo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group binLocation">
+										<label class="control-label" for="binLocation"> {{t
+											"Gloria.i18n.warehouse.inventory.toMove.binLocation"}}: </label>
+										<div class="controls">
+											<input id="binLocation" class="form-control"
+												name="binLocation" type="text" required="required" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group partAffiliation">
+										<label class="control-label" for="partAffiliation"> {{t
+											"Gloria.i18n.warehouse.inventory.toMove.partAffiliation"}}: </label>
+										<div class="controls">
+											<input id="partAffiliation" class="form-control"
+												name="partAffiliation" type="text" required="required" />
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="form-group partNumber">
+										<label class="control-label" for="partNumber"> {{t
+											"Gloria.i18n.warehouse.inventory.toMove.partNo"}}: </label>
+										<div class="controls">
+											<input id="partNumber" class="form-control" name="partNumber"
+												type="text" required="required" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group partVersion">
+										<label class="control-label" for="partVersion"> {{t
+											"Gloria.i18n.warehouse.inventory.toMove.partVersion"}}: </label>
+										<div class="controls">
+											<input id="partVersion" class="form-control"
+												name="partVersion" type="text" required="required" />
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="form-group partName">
+										<label class="control-label" for="partName"> {{t
+											"Gloria.i18n.warehouse.inventory.toMove.partName"}}: </label>
+										<div class="controls">
+											<input id="partName" class="form-control" name="partName"
+												type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group partModification">
+										<label class="control-label" for="partModification">
+											{{t
+											"Gloria.i18n.warehouse.inventory.toMove.partModification"}}:
+										</label>
+										<div class="controls">
+											<input id="partModification" class="form-control"
+												name="partModification" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</form>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlAccounts xsi:noNamespaceSchemaLocation="GlAccount.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<GlAccount accountNumber="549001" companyCode="US10" accountName="Prototype Material" acountDescription="">
+	</GlAccount>
+	<GlAccount accountNumber="659261" companyCode="US10" accountName="SIPD" acountDescription="">
+	</GlAccount>
+	<GlAccount accountNumber="659210" companyCode="US10" accountName="Bought services non-professional" acountDescription="(rework material, sort, etc.)">
+	</GlAccount>
+	<GlAccount accountNumber="699107" companyCode="US10" accountName="Scrap material" acountDescription="(production parts scrapped before S-P Start)">
+	</GlAccount>
+	<GlAccount accountNumber="541002" companyCode="US10" accountName="Prototype Tooling " acountDescription="(perishable tools other)">
+	</GlAccount>
+	<GlAccount accountNumber="541004" companyCode="US10" accountName="Scrap Production tooling" acountDescription="IF new part stopped before S-P Start">
+	</GlAccount>
+    <GlAccount accountNumber="549001" companyCode="US10" accountName="Prototype Material" acountDescription="">
+    </GlAccount>
+    <GlAccount accountNumber="659261" companyCode="US10" accountName="SIPD" acountDescription="">
+    </GlAccount>
+    <GlAccount accountNumber="659210" companyCode="US10" accountName="Bought services non-professional" acountDescription="(rework material, sort, etc.)">
+    </GlAccount>
+    <GlAccount accountNumber="699107" companyCode="US10" accountName="Scrap material" acountDescription="(production parts scrapped before S-P Start)">
+    </GlAccount>
+    <GlAccount accountNumber="541002" companyCode="US10" accountName="Prototype Tooling " acountDescription="(perishable tools other)">
+    </GlAccount>
+    <GlAccount accountNumber="541004" companyCode="US10" accountName="Scrap Production tooling" acountDescription="IF new part stopped before S-P Start">
+    </GlAccount>
+    <GlAccount accountNumber="461010" companyCode="FR46" accountName="Prototype Material" acountDescription=" ">
+    </GlAccount>
+    <GlAccount accountNumber="461003" companyCode="FR46" accountName="Prototype Tooling" acountDescription=" ">
+    </GlAccount>
+    <GlAccount accountNumber="551203" companyCode="FR46" accountName="Prototype Tooling modification " acountDescription="(today we use this one for scrapping as no account is named “Tooling scrap”)">
+    </GlAccount>
+    <GlAccount accountNumber="659261" companyCode="FR46" accountName="SIPD" acountDescription=" ">
+    </GlAccount>
+    <GlAccount accountNumber="564951" companyCode="IN01" accountName="Research Material" acountDescription=" ">
+    </GlAccount>
+    <GlAccount accountNumber="564950" companyCode="IN01" accountName="Local taxes on Research Material " acountDescription=" ">
+    </GlAccount>
+    <GlAccount accountNumber="659261" companyCode="IN01" accountName="SIPD" acountDescription=" ">
+    </GlAccount>    
+    <GlAccount accountNumber="401301" companyCode="SE26 " accountName="Prototype Material" acountDescription=" ">
+    </GlAccount> 
+    <GlAccount accountNumber="549001" companyCode="SE26 " accountName="Scrap Production tooling" acountDescription=" ">
+    </GlAccount>
+    <GlAccount accountNumber="659201" companyCode="SE26 " accountName="SIPD" acountDescription=" ">
+    </GlAccount>
+    <GlAccount accountNumber="659261" companyCode="SE26 " accountName="SIPD" acountDescription=" ">
+    </GlAccount>
+</GlAccounts>

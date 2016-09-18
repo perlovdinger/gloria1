@@ -1,0 +1,104 @@
+<div id="warning" class="row hidden">
+	<div class="col-xs-12">
+		<div class="alert alert-warning">
+			<h5>
+				<i class="fa fa-warning"></i>
+				<b>{{t "Gloria.i18n.procurement.procureDetail.text.newMaterialTitle"}}</b>
+			</h5>
+			<p>{{t "Gloria.i18n.procurement.procureDetail.text.newMaterialMessage"}}</p>
+		</div>
+	</div>
+</div>
+
+<div id="information" class="row hidden">
+	<div class="col-xs-12">
+		<div class="alert alert-info">
+			<h5>
+				<i class="glyphicon glyphicon-info-sign"></i> 
+				<b>{{t "Gloria.i18n.procurement.procureDetail.text.materialContainsCommentHeader"}}</b>
+			</h5>
+			<p>{{t "Gloria.i18n.procurement.procureDetail.text.materialContainsCommentMessage"}}</p>
+		</div>
+	</div>
+</div>
+
+<form novalidate="novalidate">
+	<div class="panel-group accordion">
+		<div id="generalInfo-module" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullPartInfo" href="#generalInfo"><strong>{{t
+							"Gloria.i18n.procurement.procureDetail.text.generalInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="generalInfo" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div id="procureGeneralPartInfo"></div>
+				</div>
+			</div>
+		</div>
+		<div id="procureInfo-module" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullPartInfo" href="#procureInfo"><strong>
+							{{t
+							"Gloria.i18n.procurement.procureDetail.text.procurementInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="procureInfo" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<div id="procureProcureInfo"></div>
+					<h4>
+						<strong>{{t
+							"Gloria.i18n.procurement.procureDetail.text.warehouseInfo"}}</strong>
+					</h4>
+					<div id="procureWarehouseInfo"></div>
+				</div>
+			</div>
+		</div>
+		<div id="procureReqInfo-module"
+			class="panel panel-default panel-visible">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullPartInfo" href="#procureReqInfo"><strong>{{t
+							"Gloria.i18n.procurement.procureDetail.text.procureRequestInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="procureReqInfo" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div id="procureRequestInfo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div align="center" id="procureDiv" style="display: none"
+		class="button-bar floatFooter">
+		{{#hasPermission "edit" 0="ProcureDetails"}}
+		<button type="button" class="btn btn-default" id="procure">
+			{{t "Gloria.i18n.procurement.button.procure"}}</button>
+		<button type="button" class="btn btn-default" id="save">{{t
+			"Gloria.i18n.deliverycontrol.button.save"}}</button>
+		{{/hasPermission}}
+		<button type="button" class="btn btn-default" id="cancel">
+			{{t "Gloria.i18n.deliverycontrol.button.cancel"}}</button>
+	</div>
+	<div align="center" style="display: none" id="procuredDiv"
+		class="button-bar floatFooter">
+		{{#hasPermission "edit" 0="ProcureDetails"}}
+		<button type="button" class="btn btn-default hidden" id="saveEditMode">
+			{{t "Gloria.i18n.deliverycontrol.button.save"}}</button>
+		<button type="button" class="btn btn-default" id="edit">{{t
+			"Gloria.i18n.buttons.edit"}}</button>
+		{{/hasPermission}}
+		<button type="button" class="btn btn-default" id="close">{{t
+			"Gloria.i18n.buttons.close"}}</button>
+		<button type="button" class="btn btn-default" id="cancel"
+			style="display: none">{{t
+			"Gloria.i18n.deliverycontrol.button.cancel"}}</button>
+	</div>
+	<br />
+</form>

@@ -1,0 +1,76 @@
+<div class="well well-small">
+    <div class='row'>
+    	<div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for='procureType'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.orderInfo.procureType"}}: 
+                </label>
+                <div class="controls">
+                    <span id="procureType">{{data.procureType}}</span>
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for='supplierId'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.orderInfo.supplierId"}}: 
+                </label>
+                <div class="controls">
+                    <span id="supplierId">{{data.supplierId}}</span>
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for='supplierName'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.orderInfo.supplierName"}}: 
+                </label>
+                <div class="controls">
+                    <span id="supplierName">{{data.supplierName}}</span>
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for='orderNo'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.orderInfo.orderNo"}}: 
+                </label>
+                <div class="controls">
+                    <span id="orderNo">{{data.orderNo}}</span>
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for='orderLineQuantity'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.orderInfo.orderLineQuantity"}}: 
+                </label>
+                <div class="controls">
+                    <span id="orderLineQuantity">{{data.orderLineQuantity}}</span>
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for='unitOfMeasure'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.orderInfo.unitOfMeasure"}}: 
+                </label>
+                <div class="controls">
+                    <span id="unitOfMeasure">{{data.unitOfMeasure}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-8'>
+            <div class='form-group'>
+                <label class="control-label" for='freeText'>
+                    {{t "Gloria.i18n.warehouse.receive.details.text.orderInfo.informationToPurchase"}}: 
+                </label>
+                <div class="controls">
+                    <textarea id="freeText" class="form-control" rows="3" cols="75" maxlength="500" disabled="true">{{data.freeText}}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

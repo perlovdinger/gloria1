@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!-- LogBack configuration file -->
+<!-- =================================================================== -->
+<configuration>
+  <property name="LOG_ROOT" value="gloria_logs" />
+  <!-- Append messages to the console -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%-5p %c{1} - %m%n</Pattern>
+    </encoder>
+  </appender>
+
+ 
+  <appender name="GLORIA" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_ROOT}/gloria.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_ROOT}/gloria.%d.log</fileNamePattern>
+      <!-- keep 20 days' worth of history -->
+      <maxHistory>20</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd' 'HH:mm:ss.SSS} [%t] %-2p [%logger{20}] - %m %xThrowable{full} %n</pattern>
+    </encoder>
+  </appender>
+    
+  
+   <appender name="XML_GATEWAY" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_ROOT}/gloria_gateway_xml.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_ROOT}/gloria_gateway_xml.%d.log</fileNamePattern>
+      <!-- keep 20 days' worth of history -->
+      <maxHistory>20</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd' 'HH:mm:ss.SSS} [%t] %-2p [%logger{20}] - %m %xThrowable{full} %n</pattern>
+    </encoder>
+  </appender>  
+ 
+ 
+  
+  <appender name="INTEGRATIONS_ORDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_ROOT}/gloria_order_xml.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_ROOT}/gloria_order_xml.%d.log</fileNamePattern>
+    <!-- keep 20 days' worth of history -->
+      <maxHistory>20</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd' 'HH:mm:ss.SSS} [%t] %-2p [%logger{20}] - %m %xThrowable{full} %n</pattern>
+    </encoder>
+  </appender>  
+  
+  <appender name="MIGRATION_PROCESS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_ROOT}/gloria_migration.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_ROOT}/gloria_migration.%d.log</fileNamePattern>
+    <!-- keep 20 days' worth of history -->
+      <maxHistory>20</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd' 'HH:mm:ss.SSS} [%t] %-2p [%logger{20}] - %m %xThrowable{full} %n</pattern>
+    </encoder>
+  </appender>  
+
+  <appender name="OPENJPA" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_ROOT}/gloria_openjpa.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_ROOT}/gloria_openjpa.%d.log</fileNamePattern>
+   <!-- keep 20 days' worth of history -->
+      <maxHistory>20</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd' 'HH:mm:ss.SSS} [%t] %-2p [%logger{20}] - %m %xThrowable{full} %n</pattern>
+    </encoder>
+  </appender>  
+  
+   <logger name="com.volvo.gloria" level="info">
+    <appender-ref ref="GLORIA" />
+  </logger>
+  
+    
+<!--   <logger name="com.volvo.gloria" level="info"> -->
+<!--     <appender-ref ref="STDOUT" /> -->
+<!--   </logger> -->
+  
+  
+  
+  <logger name="com.volvo.gloria.gateway" level="info">
+    <appender-ref ref="XML_GATEWAY" />
+  </logger>
+  
+
+  <logger name="com.volvo.gloria.financeProxy.b.beans" level="info">
+    <appender-ref ref="INTEGRATIONS_ORDER" />
+  </logger>
+  
+   <logger name="com.volvo.gloria.purchaseProxy.b.beans" level="info">
+    <appender-ref ref="INTEGRATIONS_ORDER" />
+  </logger>
+  <logger name="com.volvo.gloria.gateway.b.beans.PurchaseOrderGatewayBean" level="info">
+    <appender-ref ref="INTEGRATIONS_ORDER" />
+  </logger> 
+  <logger name="com.volvo.gloria.procurematerial.util.migration" level="info">
+    <appender-ref ref="MIGRATION_PROCESS" />
+  </logger>
+   
+  <!-- Setup logging level for OpenJPA -->
+  <logger name="org.apache.openjpa" level="info">
+    <appender-ref ref="OPENJPA" />
+  </logger>
+  
+   <logger name="openjpa" level="info">
+    <appender-ref ref="OPENJPA" />
+  </logger>
+  
+  <logger name="openjpa.jdbc.SQL" level="info">
+    <appender-ref ref="OPENJPA" />
+  </logger>
+  
+    <logger name="o.MetaData" level="info">
+    <appender-ref ref="GLORIA" />
+    </logger>
+  
+  <logger name="org.springframework.transaction.jta" level="info"/>
+   <logger name="com.volvo.jvs.runtime" level="warn"/>
+  
+  <!-- Set default log-level -->
+  <root level="info">
+    <appender-ref ref="STDOUT"/>
+  </root>
+  
+</configuration>

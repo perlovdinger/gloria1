@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-02-09T17:20:06.709+0100</SendTime>
+    </GmfHeader>
+    <CIAction>U</CIAction>
+    <UserID>BPL4596</UserID>
+    <UserFirstName>Grzegorz</UserFirstName>
+    <UserLastName>Palmer_</UserLastName>
+    <OrganisationID>XT280004</OrganisationID>
+    <OrganisationName>GTT Internal Users</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>8</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>Mydlana 2 51-502 Wroclaw Poland</Street1>
+      <PostCode>51-502</PostCode>
+      <City>Wroclaw</City>
+      <CountryCode>PL</CountryCode>
+      <PhoneNo>111111</PhoneNo>
+      <Email>grzegorz.palmer@volvo.com</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>pl</LangCode>
+      <CountryCode>PL</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <UserLanguage>
+      <LangCode>pl</LangCode>
+      <CountryCode>PL</CountryCode>
+      <IsPreferredLanguageFlag>N</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>VTC</CompName>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>42102 - Volvo BLR, CV workshop</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>2919 - MAL - Malmö</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>8374 - AGE - Ageo (Powertrain)</ApplicationSettingValue>
+      </ApplicationSetting>
+      <UserCategory>
+        <UserCategoryID>Warehouse_manager</UserCategoryID>
+        <UserCategoryDescription>Warehouse manager</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Warehouse_personell</UserCategoryID>
+        <UserCategoryDescription>Warehouse personell</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-02-09T17:20:06.709+0100</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

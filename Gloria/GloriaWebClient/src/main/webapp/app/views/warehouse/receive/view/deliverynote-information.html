@@ -1,0 +1,146 @@
+<h4>
+	<strong class="control-label"> {{t
+		"Gloria.i18n.warehouse.receive.deliveryNoteInformation"}} </strong>
+</h4>
+<form>
+	<div class="well well-small">
+		<div class="row">
+			<div class="col-sm-4 col-md-3 col-lg-2">
+				<div class="form-group">
+					<label class="control-label" for="receiveType"> {{t
+						"Gloria.i18n.warehouse.receive.text.receiveType"}}: </label>
+					<div class="controls">
+						{{#if editable}} <select id="receiveType"
+							name="deliveryNote[receiveType]"
+							class="input-block-level form-control">
+							{{{renderDropDown receiveTypeOptions "" true}}}
+						</select> {{else}} <span id="receiveType"> {{placeholder}} </span> {{/if}}
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-2 deliveryNoteTransferReturn"
+				style="display: none;">
+				<div class="form-group">
+					<label class="control-label {{#if editable}}required{{/if}}"
+						for="deliveryNoteNo"> {{t
+						"Gloria.i18n.warehouse.receive.text.delivNoteNo"}}: </label>
+					<div class="controls input-group">
+						{{#if editable}}<input id="deliveryNoteNoTransferReturn"
+							class="form-control" name="deliveryNote[deliveryNoteNo]"
+							type="text" required="required" maxlength="16" />
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="button"
+								id="deliveryNoteTransferReturnLookup">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</div>
+						{{else}} <span id="deliveryNoteNo">{{placeholder}}</span> {{/if}}
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-2 deliveryNoteRegular">
+				<div class="form-group">
+					<label class="control-label {{#if editable}}required{{/if}}"
+						for="deliveryNoteNo"> {{t
+						"Gloria.i18n.warehouse.receive.text.delivNoteNo"}}: </label>
+					<div class="controls">
+						{{#if editable}}<input id="deliveryNoteNo" class="form-control"
+							name="deliveryNote[deliveryNoteNo]" type="text"
+							required="required" maxlength="16" autofocus="autofocus" />
+						{{else}} <span id="deliveryNoteNo"> {{placeholder}} </span>
+						{{/if}}
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-2">
+				<div class="form-group">
+					<label class="control-label {{#if editable}}required{{/if}}"
+						for="deliveryNoteDate"> {{t
+						"Gloria.i18n.warehouse.receive.delivNoteDate"}}: </label> {{#if editable}}
+					<div class="input-group date deliveryNoteDateDiv">
+						<input type="text" id="deliveryNoteDate" class="deliveryNoteDate js-date form-control"
+							name="deliveryNote[deliveryNoteDate]"  required="required"
+							maxlength="10">
+							 <span class="input-group-addon"><span
+							class="glyphicon glyphicon-calendar"></span></span>
+					</div>
+					{{else}}
+					<div class="controls">
+						<span id="deliveryNoteDate">{{placeholder}}</span>
+					</div>
+					{{/if}}
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-2 orderNo">
+				<div class="form-group">
+					<label class="control-label {{#if editable}}required{{/if}}"
+						for="orderNo"> {{t
+						"Gloria.i18n.warehouse.receive.text.orderNo"}}: </label>
+					<div class="controls input-group">
+						{{#if editable}}<input id="orderNo" class="form-control"
+							name="deliveryNote[orderNo]" type="text" required="required"
+							maxlength="20" />
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="button" id="orderLookup">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</div>
+						{{else}} <span id="orderNo">{{placeholder}}</span> {{/if}}
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-2">
+				<div class="form-group">
+					<label class="control-label" for="supplierParmaID"> {{t
+						"Gloria.i18n.warehouse.receive.text.supplierParmaID"}}: </label>
+					<div class="controls">
+						<span id="supplierParmaID">{{placeholder}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-2">
+				<div class="form-group">
+					<label class="control-label" for="supplierName"> {{t
+						"Gloria.i18n.warehouse.receive.text.supplierName"}}: </label>
+					<div class="controls">
+						<span id="supplierName">{{placeholder}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix visible-sm visible-lg"></div>
+			<div class="col-sm-4 col-md-3 col-lg-2">
+				<div class="form-group">
+					<label class="control-label"> {{t
+						"Gloria.i18n.warehouse.receive.text.transportNo"}}: </label>
+					<div class="controls">
+						{{#if editable}}<input id="transportationNo" class="form-control "
+							name="deliveryNote[transportationNo]" type="text" maxlength="20" />{{else}}
+						<span id="transportationNo">{{placeholder}}</span> {{/if}}
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-lg-2">
+				<div class="form-group">
+					<label class="control-label"> {{t
+						"Gloria.i18n.warehouse.receive.carrier"}}: </label>
+					<div class="controls">
+						{{#if editable}}<input id="carrier" class="form-control "
+							name="deliveryNote[carrier]" type="text" />{{else}}
+						<span id="carrier">{{placeholder}}</span> {{/if}}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{#if editable}}
+		<div id="buttonPane" class="text-center button-bar">
+			{{#hasPermission "edit" 0="GoodsReception"}}
+			<button type="button" class="btn btn-default" id="save"
+				disabled="disabled">{{t
+				"Gloria.i18n.warehouse.buttons.save"}}</button>
+			{{/hasPermission}}
+			<button type="reset" class="btn btn-default" id="cancel">{{t
+				"Gloria.i18n.warehouse.buttons.cancel"}}</button>
+		</div>
+		{{/if}}
+	</div>
+</form>

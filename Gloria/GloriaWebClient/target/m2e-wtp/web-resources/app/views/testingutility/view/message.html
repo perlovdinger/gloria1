@@ -1,0 +1,123 @@
+<form id="messageForm" novalidate="novalidate">
+    <fieldset>
+        <div style="padding-left:15px; padding-right:15px;">
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            Message Type:
+                        </label>
+                    </div>
+                </div>
+                <div class='col-sm-3'>
+                    <div class='form-group'>
+                        <div class="controls">
+                            <select id="messageType" name="messageType" class="input-block-level form-control">
+                            	 {{{renderDropDown messageTypeOtions type false}}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            Message Format:
+                        </label>
+                    </div>
+                </div>
+                <div class='col-sm-3'>
+                    <div class='form-group'>
+                        <div class="controls">
+                            <select id="messageFormat" name="messageFormat" class="input-block-level form-control">
+                            	 <option value="xml" {{#if_eq format 'xml'}}selected{{/if_eq}}>XML</option>
+                            	 <option value="csv" {{#if_eq format 'csv'}}selected{{/if_eq}}>CSV</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{#if_eq format 'xml'}} 
+			{{#if isCompatible}}
+			<div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            Upload Message XML:
+                        </label>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <div class="controls">
+                            <input type="file" id="files" name="files" accept="text/xml"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			{{/if}}
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            Message in XML Format:
+                        </label>
+                    </div>
+                </div>
+                <div class='col-sm-7'>
+                    <div class='form-group'>
+                        <div class="controls">
+                            <textarea class="form-control" id="message" name="message" rows="15"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            {{/if_eq}}
+            {{#if_eq format 'csv'}} 
+            {{#if isCompatible}}
+			<div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            Upload Message CSV:
+                        </label>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <div class="controls">
+                            <input type="file" id="files" name="files" accept="text/csv"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			{{/if}}
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            Message in CSV Format:
+                        </label>
+                    </div>
+                </div>
+                <div class='col-sm-7'>
+                    <div class='form-group'>
+                        <div class="controls">
+                            <textarea class="form-control" id="message" name="message" rows="15"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/if_eq}}
+        </div>        
+        <div align="center" class="button-bar floatFooter">
+            <button type="button" class="btn btn-default" id="post">
+                {{t "Gloria.i18n.buttons.post"}}
+            </button>
+            <button type="button" class="btn btn-default" id="cancel">
+                {{t "Gloria.i18n.buttons.cancel"}}
+            </button>
+        </div>
+    </fieldset>
+</form>

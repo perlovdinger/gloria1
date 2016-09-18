@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+
+  <User userId="blr_mc_dc">
+    <Team name="BLR" type="MATERIAL_CONTROL" />
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="cur_mc_dc">
+    <Team name="CUR" type="MATERIAL_CONTROL" />
+    <Team name="CUR" type="DELIVERY_CONTROL" />
+  </User>
+
+
+  <User userId="got_pe_mc">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+  </User>
+
+  <User userId="got_ve_dc1">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+
+  <User userId="got_ve_ip1">
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="got_ve_ip2">
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="got_ve_mc">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+
+  <User userId="hag_dc1">
+    <Team name="HAG" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="hag_dc2">
+    <Team name="HAG" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="hag_mc1">
+    <Team name="HAG" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="hag_mc2">
+    <Team name="HAG" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="hag_viewer">
+    <Team name="HAG" type="MATERIAL_CONTROL" />
+  </User>
+
+  <User userId="lys_mc_dc1">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="lys_mc_dc2">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="lys_mc_dc3">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="lys_mc_dc4">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="lys_ip">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+  </User>
+  <User userId="lys_borrow">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+
+</Users>
+  

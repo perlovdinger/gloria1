@@ -1,0 +1,15 @@
+<div class="alert alert-{{type}} alert-dismissable"
+	style="overflow: hidden">
+	<button type="button" class="close" data-dismiss="alert"
+		aria-hidden="true">&times;</button>
+	{{#if title}} <span
+		class="glyphicon{{#if_eq type 'danger'}} glyphicon-warning-sign{{/if_eq}}{{#if_eq type 'info'}} glyphicon-info-sign{{/if_eq}}{{#if_eq type 'success'}} glyphicon-ok-sign{{/if_eq}}{{#if_eq type 'warning'}} glyphicon-exclamation-sign{{/if_eq}}"
+		style="display: inline;"></span> &nbsp;&nbsp; <span
+		style="font-weight: bold;">{{title}}</span> {{/if}}
+	<div>{{{text}}}</div>
+	<div class="pull-right">
+		{{#each buttons}}
+		<button type="button" class="btn" id="{{id}}">{{label}}</button>
+		{{/each}}
+	</div>
+</div>

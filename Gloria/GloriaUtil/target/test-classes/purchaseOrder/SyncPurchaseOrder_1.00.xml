@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Release ID is used to identify the release of OAGIS that the BOD belongs to. 
+		For the BODs from OAGIS 9.3 the value of this attribute will be “9.3”. -->
+<!-- Version ID is used to identify the version of the Business Object Document.   
+		Each BOD has its own revision number to specifically identify the level of that BOD, not just the release ID of OAGIS. -->
+<SyncPurchaseOrder releaseID="9.3" versionID="1.00" xmlns="http://www.volvo.com/3P/Purchasing/2008/10" xmlns:oa="http://www.openapplications.org/oagis/9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.volvo.com/3P/Purchasing/2008/10 SyncPurchaseOrder.xsd">
+	<oa:ApplicationArea>
+		<oa:CreationDateTime>2011-05-23T01:37:57.474648</oa:CreationDateTime>
+	</oa:ApplicationArea>
+	<DataArea>
+		<oa:Sync>
+			<oa:ActionCriteria>
+				<oa:ActionExpression actionCode="Add"/>
+			</oa:ActionCriteria>
+		</oa:Sync>
+		<PurchaseOrder>
+			<PurchaseOrderHeader>
+				<!-- External order reference -->
+				<oa:DocumentID>
+					<oa:ID>2049-900019-070</oa:ID>
+				</oa:DocumentID>
+				<!-- GPS Order Id -->
+				<oa:AlternateDocumentID>
+					<oa:ID>M123456</oa:ID>
+					<oa:RevisionID>002</oa:RevisionID>
+				</oa:AlternateDocumentID>
+				<oa:CustomerParty>
+					<oa:PartyIDs>
+						<oa:ID>1001</oa:ID>
+					</oa:PartyIDs>
+					<oa:Name>VTC Tuve</oa:Name>
+				</oa:CustomerParty>
+				<oa:SupplierParty>
+					<oa:PartyIDs>
+						<oa:ID>79</oa:ID>
+					</oa:PartyIDs>
+					<oa:Name>Componenta Främmestad AB</oa:Name>
+					<oa:Location>
+						<oa:Address>
+							<oa:AddressLine sequence="1">Änghagen</oa:AddressLine>
+							<oa:AddressLine sequence="2">Främmestadsväge 29</oa:AddressLine>
+							<oa:CityName>Nossebro</oa:CityName>
+							<oa:CountryCode>SE</oa:CountryCode>
+							<oa:PostalCode>465 97</oa:PostalCode>
+						</oa:Address>
+					</oa:Location>
+					<oa:Contact>
+						<oa:Name>Ole Andersen</oa:Name>
+						<oa:Communication>
+							<oa:URI>XXXXX@COMPONENTA.SE</oa:URI>
+							<oa:HTMLPreferredIndicator>false</oa:HTMLPreferredIndicator>
+						</oa:Communication>
+						<oa:Communication>
+							<oa:DialNumber>+463198765</oa:DialNumber>
+						</oa:Communication>
+					</oa:Contact>
+				</oa:SupplierParty>
+				<oa:RequestedShipDateTime>2008-05-01</oa:RequestedShipDateTime>
+				<oa:OrderDateTime>2008-03-31</oa:OrderDateTime>
+				<OrderMode>Contract</OrderMode>
+			</PurchaseOrderHeader>
+			<PurchaseOrderLine>
+				<oa:Item>
+					<ItemID>
+						<ID qualifier="V">1590744</ID>
+						<oa:RevisionID>P12</oa:RevisionID>
+					</ItemID>
+					<oa:SupplierItemID>
+						<ID>Volvo 1590744</ID>
+						<oa:RevisionID>P12</oa:RevisionID>
+					</oa:SupplierItemID>
+					<oa:Description>Front Spring Anchorage</oa:Description>
+					<Packaging>
+						<oa:ID>A</oa:ID>
+						<oa:Description>Single-use packaging in a durable, specific or standard</oa:Description>
+						<CommercialPackaging>
+							<oa:ID>B</oa:ID>
+							<oa:Description>Protection + Packaging</oa:Description>
+						</CommercialPackaging>
+					</Packaging>
+				</oa:Item>
+				<oa:Quantity unitCode="PCE">1</oa:Quantity>
+				<oa:UnitPrice>
+					<oa:Amount currencyID="SEK">25.00</oa:Amount>
+					<oa:PerQuantity unitCode="PCE">1</oa:PerQuantity>
+					<oa:TimePeriod>
+						<oa:StartDateTime>2008-04-02</oa:StartDateTime>
+					</oa:TimePeriod>
+				</oa:UnitPrice>
+				<oa:ShipToParty>
+					<oa:PartyIDs>
+						<oa:ID>14577</oa:ID>
+					</oa:PartyIDs>
+					<oa:Name>Volvo Logistics Europe</oa:Name>
+					<oa:Location>
+						<oa:Address>
+							<oa:AddressLine sequence="1">Smalleheerweg 31</oa:AddressLine>
+							<oa:CityName>Gent</oa:CityName>
+							<oa:CountryCode>BE</oa:CountryCode>
+							<oa:PostalCode>9041</oa:PostalCode>
+						</oa:Address>
+					</oa:Location>
+				</oa:ShipToParty>
+				<!-- In GPS this is called TradeTerms -->
+				<oa:TransportationTerm>
+					<oa:FreightTermCode>FOB</oa:FreightTermCode>
+				</oa:TransportationTerm>
+				<oa:PaymentTerm type="Net20"/>
+				<oa:RequisitionReference>
+					<oa:DocumentID>
+						<oa:ID>123456789</oa:ID>
+					</oa:DocumentID>
+				</oa:RequisitionReference>
+				<oa:BuyerParty>
+					<oa:PartyIDs>
+						<oa:ID>VTC</oa:ID>
+					</oa:PartyIDs>
+					<BuyerContact>
+						<oa:ID>2049</oa:ID>
+						<oa:Name>Lina Pettersson</oa:Name>
+						<oa:DepartmentName>9122</oa:DepartmentName>
+						<oa:Communication>
+							<oa:CountryDialing>46</oa:CountryDialing>
+							<oa:AreaDialing>31</oa:AreaDialing>
+							<oa:DialNumber>123456</oa:DialNumber>
+						</oa:Communication>
+						<oa:Communication>
+							<oa:URI>lina.lp.pettersson@consultant.volvo.com</oa:URI>
+							<oa:HTMLPreferredIndicator>true</oa:HTMLPreferredIndicator>
+						</oa:Communication>
+						<SecurityId>v012345</SecurityId>
+					</BuyerContact>
+					<oa:ReceivingContact>
+						<oa:Name>Kalle Svensson</oa:Name>
+					</oa:ReceivingContact>
+				</oa:BuyerParty>
+				<oa:PurchaseOrderSubLine>
+					<oa:DrawingReference>
+						<oa:DocumentID>
+							<oa:ID>01590744</oa:ID>
+							<oa:RevisionID>12</oa:RevisionID>
+						</oa:DocumentID>
+					</oa:DrawingReference>
+				</oa:PurchaseOrderSubLine>
+				<OrderCoverageTime>
+					<oa:Duration>P140D</oa:Duration>
+				</OrderCoverageTime>
+			</PurchaseOrderLine>
+		</PurchaseOrder>
+	</DataArea>
+</SyncPurchaseOrder>

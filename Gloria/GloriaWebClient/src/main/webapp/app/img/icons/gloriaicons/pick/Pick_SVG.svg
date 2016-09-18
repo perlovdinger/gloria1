@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="32"
+   height="32"
+   id="svg6109">
+  <defs
+     id="defs6111">
+    <linearGradient
+       id="linearGradient10828">
+      <stop
+         id="stop10830"
+         style="stop-color:#f6f6f6;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop10832"
+         style="stop-color:#d4d4d4;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="16"
+       y1="8.5"
+       x2="16"
+       y2="23.5"
+       id="linearGradient6711"
+       xlink:href="#linearGradient10828"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.46666668,0,0,0.46666668,8.533334,24.533331)" />
+  </defs>
+  <metadata
+     id="metadata6114">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-16)"
+     id="layer1">
+    <g
+       id="g5809">
+      <rect
+         width="14"
+         height="14"
+         rx="1"
+         ry="3.5000002"
+         x="9"
+         y="25"
+         transform="matrix(1.2857143,0,0,0.28571427,-4.5714286,33.857143)"
+         id="rect4300"
+         style="fill:url(#linearGradient6711);fill-opacity:1;fill-rule:nonzero;stroke:#808080;stroke-width:3.29983163;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         d="m 63,132 -9,9 6,0 0,8 6,0 0,-8 6,0 z"
+         transform="translate(-47,-112)"
+         id="path6703"
+         style="fill:#44b137;fill-opacity:1;fill-rule:nonzero;stroke:#32692e;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+    </g>
+  </g>
+</svg>

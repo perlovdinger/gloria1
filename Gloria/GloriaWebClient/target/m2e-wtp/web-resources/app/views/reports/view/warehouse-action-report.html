@@ -1,0 +1,69 @@
+<div class="row">
+	<div class="col-sm-12">
+		<label> {{t "Gloria.i18n.reports.text.possibelInfo"}}: </label>
+	</div>
+</div>
+<div class="well well-small">
+	<div style="float: left; width: 95%;">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label" for="warehouse"> {{t
+						"Gloria.i18n.reports.text.warehouse"}}: </label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div id="warehouseSelectorContainer" class="form-group">
+					<input id="warehouse" class="form-control js-list"
+						name="dropdown[warehouse]" value="{{data.warehouse}}">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="checkbox-inline"><input type="checkbox"
+						checked="checked" disabled="disabled">{{t
+						"Gloria.i18n.reports.text.numberOfReceivals"}}</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="checkbox-inline"><input type="checkbox"
+						checked="checked" disabled="disabled">{{t
+						"Gloria.i18n.reports.text.numberOfPulls"}}</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label" for="project"> {{t
+						"Gloria.i18n.reports.text.project"}}: </label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div id="projectSelectorContainer" class="form-group">
+					<input id="project" class="form-control js-list"
+						name="dropdown[project]" value="{{data.project}}">
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="checkbox-inline"><input type="checkbox"
+						checked="checked" disabled="disabled">{{t
+						"Gloria.i18n.reports.text.numberOfReturns"}}</label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="checkbox-inline"><input type="checkbox"
+						checked="checked" disabled="disabled">{{t
+						"Gloria.i18n.reports.text.numberOfShipments"}}</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="float: right; width: 5%">
+		<div style="float: right"></div>
+	</div>
+	<div class="row"></div>
+</div>

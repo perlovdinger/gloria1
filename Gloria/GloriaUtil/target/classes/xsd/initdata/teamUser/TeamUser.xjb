@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings xmlns:jxb="http://java.sun.com/xml/ns/jaxb" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  schemaLocation="TeamUser.xsd" 
+  node="/xsd:schema"
+  version="1.0">
+  <jxb:schemaBindings>
+    <jxb:package  name="com.volvo.group.init.teamUser._1_0"/>
+  </jxb:schemaBindings>
+</jxb:bindings>

@@ -1,0 +1,67 @@
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='supplierParmaID'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.transferInfo.supplierId"}}:
+				</label>
+				<div class="controls">
+					<span id="procureType">{{data.supplierId}}</span>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='supplierName'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.transferInfo.supplierName"}}:
+				</label>
+				<div class="controls">
+					<span id="procureType">{{data.supplierName}}</span>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='orderNo'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.transferInfo.orderNo"}}:
+				</label>
+				<div class="controls">
+					<span id="procureType">{{data.orderNo}}</span>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='possibleToReceiveQuantity'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.transferInfo.transferQty"}}:
+				</label>
+				<div class="controls">
+					<span id="procureType">{{data.possibleToReceiveQuantity}}</span>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='unitOfMeasure'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.transferInfo.unitOfMeasure"}}:
+				</label>
+				<div class="controls">
+					<span id="procureType">{{data.unitOfMeasure}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-8'>
+			<div class='form-group'>
+				<label class="control-label" for='freeText'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.transferInfo.freeText"}}:
+				</label>
+				<div class="controls">
+					<textarea id="freeText" class="form-control" rows="3" cols="75"
+						maxlength="500" disabled="true">{{data.freeText}}</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

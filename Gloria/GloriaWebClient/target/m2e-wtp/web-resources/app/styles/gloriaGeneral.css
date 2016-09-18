@@ -1,0 +1,367 @@
+@CHARSET "UTF-8";
+
+/**
+ * This file is included in appcache. See cache.manifest for info on how to force refresh
+ *
+ * This is the general CSS for mobile solution.
+ * Here goes all styling that is applicable for both mobile and desktop client.
+ * 
+ * The aim shall always be to minimize the amount of styling needed here.
+ */
+
+/* Mobile app */
+@media ( max-width : 480px) {
+	body {
+		font-size: 18px;
+		line-height: 1;
+		-webkit-touch-callout: none;
+    	-webkit-user-select: none;
+    	-khtml-user-select: none;
+    	-moz-user-select: none;
+    	-ms-user-select: none;
+    	user-select: none;
+	}
+	label {
+		font-size: 12px !important;
+	}
+	.form-control {
+		font-size: 18px;
+		padding: 1px 5px;
+	}
+	.form-group {
+		margin-bottom: 0px;
+	}
+	.btn {
+		font-size: 18px;
+		padding: 5px 12px;
+	}
+	[disabled].form-control,[readonly].form-control,fieldset[disabled] .js-date
+		{
+		cursor: default;
+		background-color: inherit;
+	}
+	.form-control:focus {
+		border-color: #66afe9;
+		outline: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.thumbnail {
+		margin-bottom: 2px;
+	}
+	.gloria-paginator {
+		margin: 0;
+		padding: 0;
+		caption-side: bottom;
+	}
+	.pagination {
+		width: 100%;
+		margin-top: 2px;
+		padding: 0px;
+	}
+	.pagination a {
+		width: 45px;
+		height: 40px;
+		font-size: 30px;
+	}
+	.pagination input {
+		height: 38px;
+		/* 		width: initial; */
+	}
+	.pagination a:first-child {
+		border-radius: 0;
+	}
+	.pagination a:last-child {
+		border-radius: 0;
+	}
+	.mobile-container .nav>li>a {
+		width: 75px;
+		text-align: center;
+	}
+	.mobile-container .btn {
+		font-size: 14px;
+	}
+}
+
+/* Show an asterisk for mandatory fields */
+label.required:after {
+	content: ' *';
+	color: red;
+}
+
+label.wordwrap {
+	word-wrap: break-word;
+}
+
+.content {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.overlay {
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 10000;
+	display: none;
+	cursor: wait;
+}
+
+.overlay .spinner {
+	opacity: 0.5;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+.loadBar {
+	right: 0px;
+	top: 0px;
+	width: 15%;
+	position: fixed;
+}
+
+.mobile-header {
+	min-height: 50px;
+	height: 50px;
+	max-height: 50px;
+}
+
+.mobile-footer {
+	min-height: 45px;
+	height: 45px;
+	max-height: 45px;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.table-row .table-cell {
+	height: 100%;
+}
+
+.rightAlign {
+	float: right !important;
+	text-align: right;
+}
+
+.leftAlign {
+	float: left !important;
+	text-align: left;
+}
+
+.centerAlign {
+	text-align: center;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.underlineText {
+	text-decoration: underline;
+}
+
+.mobile-footer .mobileBtn {
+	min-width: 45px;
+	line-height: 2.5;
+}
+
+.btn-square {
+	height: auto;
+	width: auto;
+	min-width: 100%;
+	min-height: 125px;
+	max-width: 100%;
+	max-height: 75px;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.unresizable {
+	resize: none;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.divider-vertical {
+	height: auto;
+	margin: 0 4px;
+	border-left: 1px dashed #AFAFAF;
+	border-right: 1px dashed #EBEBEB;
+}
+
+/* Backgrid styling */
+.backgrid td.editable,.backgrid td.editor {
+	color: #555555;
+	background-color: #ffffff;
+	border: 1px solid #cccccc !important;
+	border-radius: 4px !important;
+	cursor: text !important;
+}
+
+.backgrid td.editable.antiquewhite,.backgrid td.antiquewhite.editor {
+	background-color: antiquewhite !important;
+}
+
+.backgrid th.renderable {
+	border: solid 1px #cccccc !important;
+}
+
+.backgrid td.renderable {
+	border: solid 1px #e7e7e7;
+}
+
+.panel-visible {
+	overflow: visible !important;
+}
+
+/* Pickadate */
+.picker__input {
+	background-color: #fff !important;
+	cursor: text !important;
+}
+
+.picker--opened .picker__frame {
+	bottom: 200px;
+}
+
+.controls {
+	word-wrap: break-word;
+}
+
+/* Use this to create a div which conserves line breaks */
+.comment-area {
+	word-break: normal;
+	word-wrap: normal;
+	white-space: pre;
+	overflow: auto;
+}
+
+/* Used to add a thin black border to a font */
+.font-border {
+	text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px
+		black
+}
+
+.mobile-container label {
+	font-size: 16px !important;
+}
+
+/* temporary fix for bootstrap modal background bug */
+.modal-backdrop {
+	position: fixed;
+	bottom: 0;
+}
+
+.alert {
+	padding: 8px;
+	margin-bottom: 8px;
+}
+
+ul,ol {
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+.antiquewhite {
+	background-color: antiquewhite !important;
+}
+
+.alert-dismissable .close,.alert-dismissible .close {
+	right: -1px;
+}
+
+/*****Override Pikaday*****/
+.pika-lendar {
+	width: 300px !important;
+}
+
+.pika-label {
+	font-size: 16px !important;
+}
+
+.pika-table th {
+	font-size: 16px !important;
+	line-height: 30px !important;
+}
+
+.pika-button {
+	font-size: 16px !important;
+	line-height: 20px !important;
+}
+
+/*****End Override Pikaday*****/
+
+/* So we wont impact the original bootstrap menu
+or it's pseudo call-out arrow the menu is wrapped
+in a sub dropdown-menu with a chained scroll-menu */
+ul.scroll-menu {
+	position: relative;
+	display: inherit !important;
+	overflow-x: auto;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling: touch;
+	-ms-overflow-scrolling: touch;
+	-o-overflow-scrolling: touch;
+	overflow-scrolling: touch;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	margin: 0;
+	border-left: none;
+	border-right: none;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-ms-border-radius: 0 !important;
+	-o-border-radius: 0 !important;
+	border-radius: 0 !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+ul.dropdown-menu.right {
+	left: auto;
+	right: 0;
+}
+
+#button-bar {
+	width: 80%;
+}
+
+.fixedMargin {
+	margin-top: 10px;
+}
+
+.favorite-yellow {
+	color: #E7E742;
+	cursor: pointer;
+}
+
+.required-con:after {
+	content: ' (*)';
+	color: red;
+	cursor: pointer;
+}
+
+.favorite-white {
+	color: lightgray;
+	cursor: pointer;
+}

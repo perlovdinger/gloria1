@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConversionUnits> 
+  <ConversionUnit applFrom="Gloria" codeFrom="PCE" applTo="GPS" codeTo="PCE" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="MMT" applTo="GPS" codeTo="MTR" dividedBy="1000" />
+  <ConversionUnit applFrom="Gloria" codeFrom="GRM" applTo="GPS" codeTo="GRM" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="CM2" applTo="GPS" codeTo="MTK" dividedBy="10000" />
+  <ConversionUnit applFrom="Gloria" codeFrom="ML"   applTo="GPS"  codeTo="ML" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="MTR" applTo="GPS" codeTo="MTR" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="KGM" applTo="GPS" codeTo="KGM" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="MTK" applTo="GPS" codeTo="MTK" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="MTQ" applTo="GPS" codeTo="MTQ" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="DMQ" applTo="GPS" codeTo="DMQ" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="FOT" applTo="GPS" codeTo="FOT" dividedBy="1" />
+  <ConversionUnit applFrom="Gloria" codeFrom="INH" applTo="GPS" codeTo="INH" dividedBy="1" />
+</ConversionUnits>

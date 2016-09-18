@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PartAffiliations>
+	<PartAffiliation code="V" name="Volvo part numbers" displaySeq="1" requestable="true">
+	</PartAffiliation>
+	<PartAffiliation code="X" name="Number series for miscellaneous parts" displaySeq="2" requestable="true">
+	</PartAffiliation>	
+</PartAffiliations>

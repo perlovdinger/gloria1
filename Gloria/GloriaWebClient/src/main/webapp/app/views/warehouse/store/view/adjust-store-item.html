@@ -1,0 +1,44 @@
+<div class='row'>
+	<div class='col-sm-2'>
+		<div class='form-group'>
+			<div class="controls">
+				<input type="number" min="0" step="1" max="99999"
+					id="storedQuantity{{cid}}" name="storedQuantity{{cid}}"
+					class="form-control" value="{{data.storedQuantity}}" />
+			</div>
+		</div>
+	</div>
+	<div class='col-sm-4'>
+		<div class='form-group'>
+			<div class="controls" id="suggestedBinLocation{{cid}}"
+				name="suggestedBinLocation{{cid}}">{{data.suggestedBinLocation}}</div>
+		</div>
+	</div>
+	<div class='col-sm-4'>
+		<div class='form-group'>
+			<div class="controls" id="binLocationSelectorContainer{{cid}}">
+				<input id="binLocationContainer{{cid}}" class='form-control'
+					name="binlocation{{cid}}" type='hidden' />
+			</div>
+		</div>
+	</div>
+	<div class='col-sm-2'>
+		<div class='form-group'>
+			<div class="controls">
+				{{#if first}} <a class="btn btn-default" id="adjust{{cid}}"><i
+					class="fa fa-code-fork fa-rotate-90"></i></a> {{else}} <a
+					class="btn btn-default" id="remove{{cid}}"><i
+					class="glyphicon glyphicon-remove"></i></a> {{/if}}
+			</div>
+		</div>
+	</div>
+</div>
+<div id="subQty{{cid}}" class='row' style="display: none;">
+	<div class='col-sm-4'>
+		<div class='form-group'>
+			<label class="control-label"> {{t
+				"Gloria.i18n.deliverycontrol.orderOverview.adjust.subQty"}}:
+				{{data.storedQuantity}} </label>
+		</div>
+	</div>
+</div>

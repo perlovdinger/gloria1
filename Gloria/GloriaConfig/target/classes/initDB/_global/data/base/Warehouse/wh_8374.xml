@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Warehouses>
+    <Warehouse siteName="Ageo" siteId="8374" siteCode="AGE" setUp="ROW" qiSupported="false"  >
+        <StorageRoom name="B4" description="" code="B4">
+            <Zon type="SHIPPING" name="Shipping" description="" code="Shipping">
+                <BinLocation position="1" level="1" code="SH-01-01-01" bayCode="01" allocation="FIXED"/>
+            </Zon>
+            <Zon type="QUARANTINE" name="Quarantine" description="" code="Quarantine">
+                <BinLocation position="1" level="1" code="BL-01-01-01" bayCode="01" allocation="FIXED"/>
+            </Zon>
+            <Zon type="STORAGE" name="P" description="Pallet" code="P">
+                <AisleRackRow setUp="ROW" numberOfBay="1" code="1">
+                    <BaySetting numberOfPositions="1" numberOfLevels="1" bayCode="1"/>
+                </AisleRackRow>
+                <BinLocation position="1" level="1" code="1-1-01-01" bayCode="1" allocation="FIXED"/>
+            </Zon>
+            <Zon type="QI" name="QI" description="" code="QI">
+                <BinLocation position="1" level="1" code="QI-01-01-01" bayCode="01" allocation="FIXED"/>
+            </Zon>
+            <Zon type="TO_STORE" name="To Store" description="" code="To Store">
+                <BinLocation position="1" level="1" code="TS-01-01-01" bayCode="01" allocation="FIXED"/>
+            </Zon>
+            <Zon type="STORAGE" name="Q" description="Small Rack" code="Q">
+                <AisleRackRow setUp="ROW" numberOfBay="1" code="1">
+                    <BaySetting numberOfPositions="1" numberOfLevels="1" bayCode="1"/>
+                </AisleRackRow>
+                <BinLocation position="1" level="1" code="1-1-01-01" bayCode="1" allocation="FIXED"/>
+            </Zon>
+        </StorageRoom>
+    </Warehouse>
+</Warehouses>

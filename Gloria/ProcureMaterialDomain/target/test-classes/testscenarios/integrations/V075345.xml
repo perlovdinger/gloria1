@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-03-06T12:07:24.778+0100</SendTime>
+    </GmfHeader>
+    <CIAction>U</CIAction>
+    <UserID>V075345</UserID>
+    <UserFirstName>Zhe</UserFirstName>
+    <UserLastName>Wang_</UserLastName>
+    <OrganisationID>XT280004</OrganisationID>
+    <OrganisationName>GTT Internal Users</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>14</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>Gothenburg</Street1>
+      <PostCode>1234</PostCode>
+      <City>Gothenburg</City>
+      <CountryCode>SE</CountryCode>
+      <PhoneNo>99998</PhoneNo>
+      <Email>zhe.wang@testbox.volvo.se</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>N</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>VTC</CompName>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>VECV</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>US_VE</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>US_PE</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>SE_VE</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>SE_PE</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>JP</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>IN</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>FR</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>CCGRP</ApplicationSettingID>
+        <ApplicationSettingValue>BR</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>664 - X-Hallen</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>45907 - HAG PP - Hagerstown</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>4042 - GSO - Greensboro</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>1722 - UV, Lundby</ApplicationSettingValue>
+      </ApplicationSetting>
+      <UserCategory>
+        <UserCategoryID>IT_support</UserCategoryID>
+        <UserCategoryDescription>IT support</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>PSQA</UserCategoryID>
+        <UserCategoryDescription>PSQA</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Warehouse_manager</UserCategoryID>
+        <UserCategoryDescription>Warehouse manager</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Warehouse_personell</UserCategoryID>
+        <UserCategoryDescription>Warehouse personell</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Delivery_Controller</UserCategoryID>
+        <UserCategoryDescription>Delivery Controller</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Key_user</UserCategoryID>
+        <UserCategoryDescription>Key user</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Material_Controller</UserCategoryID>
+        <UserCategoryDescription>Material Controller</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-03-06T12:07:24.778+0100</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

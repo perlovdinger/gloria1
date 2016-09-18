@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProcessMaterialProcureRequest xmlns:volvo="http://www.volvo.com/group/common/1_0" xmlns="http://www.volvo.com/MaterialProcureRequest/1_0">
+  <volvo:ApplicationArea>
+    <volvo:Sender>
+      <volvo:LogicalID>PROTOM</volvo:LogicalID>
+    </volvo:Sender>
+    <volvo:CreationDateTime>2015-05-21T10:26:14.117+02:00</volvo:CreationDateTime>
+    <volvo:BODID>2b3daee8-3a61-4689-8bba-b541027da855</volvo:BODID>
+  </volvo:ApplicationArea>
+	<DataArea>
+		<Process>
+			<volvo:ActionCriteria>ProcessRequest</volvo:ActionCriteria>
+		</Process>
+		<MaterialRequestChange>
+			<RequestType>TESTOBJECT</RequestType>
+			<MaterialRequestChangeRemove>
+				<ChangeTechId>2002</ChangeTechId>
+			</MaterialRequestChangeRemove>
+		</MaterialRequestChange>		
+	</DataArea>
+</ProcessMaterialProcureRequest>

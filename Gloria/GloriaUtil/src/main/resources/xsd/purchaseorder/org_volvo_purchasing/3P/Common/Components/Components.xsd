@@ -1,0 +1,196 @@
+<xsd:schema xmlns="http://www.volvo.com/3P/Purchasing/2008/10" xmlns:oa="http://www.openapplications.org/oagis/9" xmlns:qdt="http://www.openapplications.org/oagis/9/qualifieddatatypes/1.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:volvo="http://www.volvo.com/3P/Purchasing/2008/10" targetNamespace="http://www.volvo.com/3P/Purchasing/2008/10" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:import namespace="http://www.openapplications.org/oagis/9" schemaLocation="../../../../org_openapplications_platform/1_0/Common/OAGi/Components/Components.xsd"/>
+	<xsd:import namespace="http://www.openapplications.org/oagis/9/qualifieddatatypes/1.1" schemaLocation="../../../../org_openapplications_platform/1_0/Common/UNCEFACT/ATG/CoreComponents/QualifiedDataTypes.xsd"/>
+	<xsd:element name="SupplierParty" type="volvo:SupplierPartyType" substitutionGroup="oa:SupplierParty"/>
+	<xsd:element name="SupplierRole" type="volvo:SupplierRoleType"/>
+	<xsd:element name="PartyIDs" type="volvo:PartyIDsType" substitutionGroup="oa:PartyIDs"/>
+	<xsd:element name="ItemID" type="volvo:ItemIDType" substitutionGroup="oa:ItemID"/>
+	<xsd:element name="ID" type="volvo:IdentifierType" substitutionGroup="oa:ID"/>
+	<xsd:element name="CommercialPackaging" type="oa:PackagingType"/>
+	<xsd:element name="Packaging" type="volvo:PackagingType" substitutionGroup="oa:Packaging"/>
+	<xsd:element name="PreviousBuyerParty" type="oa:CustomerPartyType"/>
+	<xsd:element name="SecurityId" type="oa:IdentifierType"/>
+	<xsd:element name="Project" type="volvo:ProjectType"/>
+	<xsd:element name="BuyerContact" type="volvo:SemanticContactType" substitutionGroup="oa:BuyerContact"/>
+	<xsd:element name="Contact" type="volvo:ContactType" substitutionGroup="oa:Contact"/>
+	<xsd:element name="Quantities" type="volvo:ProductionQuantitiesType"/>
+	<xsd:element name="PlantBuyer" type="volvo:YesNoBlankType"/>
+	<xsd:element name="QualityCertRequisition" type="xsd:string"/>
+	<xsd:element name="FunctionGroup" type="xsd:integer"/>
+	<xsd:element name="InspectionPart" type="volvo:YesNoType"/>
+	<xsd:element name="SafetyPart" type="volvo:YesNoType"/>
+	<xsd:element name="CheckPoint" type="xsd:integer"/>
+	<xsd:element name="ApproveToPurchase" type="volvo:YesNoBlankType"/>
+	<xsd:element name="Internal" type="volvo:YesNoType"/>
+	<xsd:element name="WeightMeasure" type="volvo:WeightMeasureType" substitutionGroup="oa:WeightMeasure">
+		<xsd:annotation>
+			<xsd:documentation source="http://www.openapplications.org/oagis/9">Weight specification. For example for a part. Also possibility to specify how this measure has been achived. By weighing calcualtion, estimation or prototype weighing</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>		
+	<xsd:simpleType name="WeightPrecisionType">
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:enumeration value="SeveralPartsWeighed"/>
+			<xsd:enumeration value="PartWeighed"/>
+			<xsd:enumeration value="SamplePartWeighed"/>
+			<xsd:enumeration value="Calculated"/>
+			<xsd:enumeration value="Estimated"/>
+			<xsd:enumeration value="RoughlyEstimated"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="WeightMeasureType" mixed="false">
+		<xsd:simpleContent>
+			<xsd:extension base="oa:MeasureType">
+				<xsd:attribute name="precision" type="volvo:WeightPrecisionType"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProjectType" mixed="false">
+		<xsd:sequence>
+			<xsd:element ref="oa:ID" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ProductionQuantitiesType" mixed="false">
+		<xsd:sequence>
+			<xsd:element ref="oa:Quantity" minOccurs="0"/>
+			<xsd:element ref="oa:TimePeriod" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="SupplierRoleType">
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:enumeration value="DealerParent"/>
+			<xsd:enumeration value="Dealer"/>
+			<xsd:enumeration value="SubDealer"/>
+			<xsd:enumeration value="Branch"/>
+			<xsd:enumeration value="Factory"/>
+			<xsd:enumeration value="Fleet"/>
+			<xsd:enumeration value="SalesCompany"/>
+			<xsd:enumeration value="ParentCompany"/>
+			<xsd:enumeration value="SalesOffice"/>
+			<xsd:enumeration value="ManufacturingSite"/>
+			<xsd:enumeration value="ShipFromAddress"/>
+			<xsd:enumeration value="EngineeringPartner"/>
+			<xsd:enumeration value="Consignee"/>
+			<xsd:enumeration value="AccountsPayable"/>
+			<xsd:enumeration value="Agency"/>
+			<xsd:enumeration value="AccountsReceivable"/>
+			<xsd:enumeration value="RemitToAddress"/>
+			<xsd:enumeration value="UnCategorized"/>
+			<xsd:enumeration value="DirectCustomer"/>
+			<xsd:enumeration value="ServicePartner"/>
+			<xsd:enumeration value="Warehouse"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="SupplierPartyRoleType" mixed="false">
+		<xsd:sequence>
+			<xsd:element ref="volvo:SupplierParty" minOccurs="0"/>
+			<xsd:element ref="volvo:SupplierRole" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SupplierPartyType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:SupplierPartyType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PartyBaseType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:PartyBaseType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProductionQuantityType" mixed="false">
+		<xsd:sequence>
+			<xsd:element ref="oa:CustomerParty" minOccurs="0"/>
+			<xsd:element ref="volvo:SupplierParty" minOccurs="0"/>
+			<xsd:element ref="oa:Item" minOccurs="0"/>
+			<xsd:element ref="volvo:Quantities" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PartyIDsType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:PartyIDsType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="IdentifierType" mixed="false">
+		<xsd:simpleContent>
+			<xsd:extension base="oa:IdentifierType">
+				<xsd:attribute name="qualifier" type="qdt:NormalizedStringType"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="ItemIDType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:ItemIDType">
+				<xsd:sequence>
+					<xsd:element ref="volvo:ID" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DocumentIDType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:DocumentIDType">
+				<xsd:sequence>
+					<xsd:element ref="volvo:ID" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PackagingType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:PackagingType">
+				<xsd:sequence>
+					<xsd:element ref="volvo:CommercialPackaging" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SemanticContactType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:SemanticContactType">
+				<xsd:sequence>
+					<xsd:element ref="volvo:SecurityId" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="volvo:PlantBuyer" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ContactType" mixed="false">
+		<xsd:complexContent>
+			<xsd:extension base="oa:ContactType">
+				<xsd:sequence>
+					<xsd:element ref="volvo:SecurityId" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:simpleType name="YesNoBlankType">
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:enumeration value=" "/>
+			<xsd:enumeration value="Yes"/>
+			<xsd:enumeration value="No"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="YesNoType">
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:enumeration value="Yes"/>
+			<xsd:enumeration value="No"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+		<xsd:complexType name="UnitPriceType">
+		<xsd:complexContent>
+			<xsd:extension base="oa:PriceABIEType">
+				<xsd:attribute name="PriceStatus" type="PriceStatusType" />
+			</xsd:extension>
+		</xsd:complexContent>		
+	</xsd:complexType>
+	<xsd:simpleType name="PriceStatusType">
+		<xsd:restriction base="xsd:normalizedString">
+			<xsd:enumeration value="Negotiated" />
+			<xsd:enumeration value="Estimated" />
+			<xsd:enumeration value="S-Negotiated" />
+			<xsd:enumeration value="S-Estimated" />
+			<xsd:enumeration value="Pre-Production" />
+			<xsd:enumeration value="Future-Estimated" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

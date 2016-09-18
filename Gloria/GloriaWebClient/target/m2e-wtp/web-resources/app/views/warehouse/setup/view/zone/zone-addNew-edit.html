@@ -1,0 +1,95 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+            {{#if addAnother}}<h3>{{t	"Gloria.i18n.warehouse.setup.header.zoneAddNewEditViewForm.addheader"}}</h3>
+            {{else}}<h3>{{t	"Gloria.i18n.warehouse.setup.header.zoneAddNewEditViewForm.editheader"}}</h3>
+            {{/if}}
+        </div>
+        <div class="modal-body">
+            <div>
+			<div id="appModalMessage"><span class="help-inline"></span></div>
+                <div class='row'>
+                    <div class='col-sm-5'>
+                        <div class='form-group'>
+                            <div class="controls">
+                                {{#if addAnother}}<h4>{{t "Gloria.i18n.warehouse.setup.header.zoneAddNewEditViewForm.addNew"}}</h4>
+                                {{else}}<h4>{{t	"Gloria.i18n.warehouse.setup.header.zoneAddNewEditViewForm.edit"}}</h4>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="zoneForm" name="zoneForm">
+                    <fieldset>
+                    	<input name='[id]' type="hidden" value='{{data.id}}'>
+                        <div class='row'>
+                            <div class='col-sm-5'>
+                                <div class='form-group'>
+                                    <label class="control-label">
+                                        {{t
+                                        "Gloria.i18n.warehouse.setup.header.zone.name"}}:
+                                    </label>
+                                    <div class="controls">
+                                     	<input id="name" class='form-control' name="[name]" type='text'  value='{{data.name}}'/>
+                                   		<span class="help-inline"></span>
+									</div>
+                                </div>
+                            </div>
+                            <div class='col-sm-5'>
+                                <div class='form-group'>
+                                    <label class="control-label">
+                                        {{t
+                                        "Gloria.i18n.warehouse.setup.header.zone.code"}}:
+                                    </label>
+                                    <div class="controls">
+                                        <input id="code" class='form-control' name="[code]" type='text' value='{{data.code}}' />
+                                   		<span class="help-inline"></span>
+								    </div>
+                                </div>
+                            </div>
+                              <div class='col-sm-5'>
+                                <div class='form-group'>
+                                    <label class="control-label">
+                                        {{t
+                                        "Gloria.i18n.warehouse.setup.header.zone.type"}}:
+                                    </label>
+                                     <div class="controls">                                        
+                                        <select id="type" name="[type]"  class="input-block-level form-control" {{#if data.id}} disabled="true" {{/if}} >
+                                          <option value="">{{t "Gloria.i18n.selectZoneTypeDefaultValue"}}</option>
+	                           				 {{{renderDropDown zoneTypeOptions data.type true}}}
+	                        			</select>
+									</div>
+                                </div>
+                            </div>
+                            <div class='col-sm-5'>
+                                <div class='form-group'>
+                                    <label class="control-label">
+                                        {{t
+                                        "Gloria.i18n.warehouse.setup.header.zone.description"}}:
+                                    </label>
+                                    <div class="controls">
+                                        <input id="description" class='form-control' name="[description]" type='text'  value='{{data.description}}' />
+                                    	<span class="help-inline"></span>
+									</div>
+                                </div>
+                            </div>                             
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            {{#if addAnother}}
+            <label class="control-label" for="addAnother">
+            	<input id="addAnother" type='checkbox' />
+                {{t "Gloria.i18n.warehouse.setup.header.zoneAddNewEditViewForm.addAnother"}}
+            </label>
+            {{/if}}<a class="btn btn-primary" id="save-button">{{t "Gloria.i18n.warehouse.setup.header.zoneAddNewEditViewForm.save"}}</a>
+            <a class="btn btn-default" id="cancel-button">{{t "Gloria.i18n.warehouse.setup.header.zoneAddNewEditViewForm.cancel"}}</a>
+        </div>
+    </div>
+</div>
+

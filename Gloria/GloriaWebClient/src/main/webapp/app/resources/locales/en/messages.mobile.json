@@ -1,0 +1,248 @@
+{
+	"Gloria" : {
+		"i18n" : {
+			"gloria" : "Gloria",
+			"home" : "Home",
+			"about" : "About",
+			"logout": "Logout",
+			"dateformat": "MM/DD/YYYY",
+	        "datetimeformat": "MM/DD/YYYY h:mm:ss a",
+	        "weekStart" : "1",
+	        "selectBoxDefaultValue": "Please Select",
+	        "validationTitle":"Below error needs to be corrected to proceed",
+	        "validInput":"Please provide valid input for highlighted field(s)",
+	        "processFailed":"There is an error in processing the request",
+	        "unauthorizedUser":"You are not authorized to access this page!",
+	        "datepicker" : {
+			    "previousMonth" : "Previous Month",
+			    "nextMonth" : "Next Month",
+			    "months" : ["January","February","March","April","May","June","July","August","September","October","November","December"],
+			    "weekdays" : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+			    "weekdaysShort" : ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+			},
+			"general": {
+                "loading": "Loading...",
+                "itemsPerPage": "Items per page",
+                "noRow": "No data",
+                "pleaseWait":"Please wait..."
+            },
+            "zoneType" : {
+	 			 "TO_STORE" : "To Store",
+	           	 "QI" : "Quality Inspection",
+	           	 "SHIPPING" : "Shipping",
+	           	 "QUARANTINE" : "Quarantine",
+           	 	 "STORAGE" : "Storage"           
+	 		},   
+            "buttons" : {
+            	"printList": "Print List",
+            	"toReceive": "To Receive",
+            	"receive": "Receive",
+            	"done": "Done",
+            	"previous" : "Previous",
+            	"ok": "OK",
+            	"next" : "Next",
+            	"search" : "Search",
+            	"store" : "Store",
+            	"storeSameBinLocation" : "Store all in the same location",
+            	"toMove" : "To Move",
+            	"move": "Move",
+            	"printAllLabel": "Print PL",
+            	"print": "Print",
+            	"cancel": "Cancel",
+            	"createTL" : "Print TL",
+            	"receiveLater" : "Receive Later"
+            },
+			"warehouse" : {
+				"warehouse": "Warehouse",
+				"storageRoomType":{  
+               		"QI":"QI",
+               		"BLOCKED":"Blocked",
+               		"STORE":"Store",
+               		"SHIP":"Ship"
+            	},	
+				"receive": {
+                    "receive": "Receive",
+                    "rcvInfo": "Receive Information",
+                    "rcvInfoNA": "Receive Information Not Available.",                    
+                    "partNo": "Part No.",
+                    "partAlias": "Alias",
+                    "version": "Version",
+                    "scanOrSelect": "Please Scan or Select below",
+                    "scanOrEnter": "Please Scan or enter below",
+                    "orderSearch" : "Please enter Part No. or Alias or Parma ID below to search the order no:",
+                    "transferreturnSearch" : "Please enter Part No. or Alias or Parma ID or Delivery Address below to search the Delivery Note No:",                    
+                    "orderNo": "Order No.",
+                    "deliveryNoteNo": "Delivery Note No.",
+                    "deliveryNoteDate": "Delivery Note Date",
+                    "supplierParmaID": "Parma ID",
+                    "supplierName": "Name",
+                    "projectId": "Project",
+                 	"transportationNo": "Transportation No.",
+                  	"carrier": "Carrier",
+                  	"orderQty" : "Order", 
+                  	"allowedQuantity" : "Possible To Receive",                 	
+                  	"receivedQty" : "Received", 
+              	 	"transferQuantity":"Transfer",
+              		"shippedQty":"Shipped",               		
+                    "referenceId":"Test Object",                	
+                   	"toReceive": "To Receive",
+                   	"toStore": "To Store",
+           	       	"toReturn": "To Return",
+           	       	"directSend" : "Direct Send",
+           	       	"toShip": "To Ship",
+                   	"damagedQty" : "Damaged",
+                   	"nextLocation" : "Next Location",
+                   	"transportLabel": "Transport Label",   
+                   	"numberOfTransportLabel" : "Please enter the number of Transport Label you want to create:",
+	                "createTransportLabel": "Create Transport Label",
+	                "createAndPrint": "Create & Print",
+	                "setBinLocation":"Set Bin Location",
+                   	"print":{
+                   		"pl":"Print Part Label",
+                  		"plText":"How many label do you want to print?",
+                  		"plOption":"Same as the part quantity"
+                   	},                	      
+                   	"validation": {
+                   		"title": "Error",                       
+                        "rQLessThanEqualToEQ": "Quantity should be less than or equal to expected quantity",    
+                        "dQLessThanEqualToRQ": "Enter a damaged quantity less than or equal to received quantity", 
+                        "receivedQtyRequired": "Enter a valid received quantity",
+                        "damagedQtyRequired": "Enter a valid damaged quantity",
+                        "toShipQuantityRequired" : "Enter a valid toShip quantity",
+                        "LessThanEqualToDSTQ": "Enter a value less than or equal to directSend quantity",
+                        "searchStringRequired": "Enter a search text"
+                    },
+                 	"tab":{  
+		                  "regular":"REG",
+		                  "transfer":"TRS",
+		                  "return":"RTN R",
+		                  "returntransfer":"RTN T"
+              		}
+                },
+                "store" : {
+                 	"store" : "Store",   
+                 	"partInformation" : "Part Information",                              
+                    "partNo": "Part No.",
+                    "partAffiliation": "Part Affiliation",
+             		"partVersion": "Version",
+             		"partName": "Part Name",
+             		"partModification": "Part Modification",
+                    "ver": "Version", 
+                    "version": "Version", 
+                    "partName" : "Part Name", 
+                    "totalQty" : "Total Qty", 
+                    "suggestedBinLocation" : "Suggested Bin Location",   
+                    "binLocation" : "Bin Location",
+                    "storedQuantity" : "Store Qty",              
+                    "stockBalance" : "Stock Balance",
+                    "scanOrEnter": "Please scan the Part No. or Transport Label. You can also enter the Part Information or Transport Label Number below.",   
+                	"scanOrSelect": "Scan the part barcode or Transport Label",
+            	 	"binLocationHeader": "Please scan the barcode for the Bin Location",                          
+                 	"transportLabel": "Transport Label", 
+                 	"enterPartInfo": "Enter Part Information",  
+                 	"enterTransportLabel": "Enter Transport Label No.",              
+                   	"validation": {                       
+                       "invalidBinLocation" : "Enter a valid BinLocation"
+                    }
+                 },
+                 "inventory": {
+                 	"toMove": {
+                 		"move": "Move",
+                 		"scanOrEnter": "Please scan the Bin Location Label and the Part Label. You can also enter the Bin Location No. and Part Information below.",
+                 		"binLocation": "Bin Location",
+                 		"partNo": "Part No.",
+                 		"partAffiliation": "Part Affiliation",
+                 		"partVersion": "Version",
+                 		"partName": "Part Name",
+                 		"partModification": "Part Modification",
+                 		"enterBinLocationAndPartNumber": "Enter Bin Location No. and Part Information"                 		
+                 	},
+                 	"move": {
+                 		"move": "Move",
+                 		"scanOrEnter": "Please scan the barcode for the bin location or enter below",
+                 		"newBinLocation": "New Bin Location",
+                 		"moveQuantity": "Move Qty",
+                 		"currentBinLocation": "Current Bin Location",
+                 		"balance": "Bin Location Balance",
+                 		"partInformation": "Part Information",
+                 		"partNumber": "Part No.",
+                 		"partVersion": "Version",
+                 		"partModification": "Part Modification",
+                 		"partName": "Part Name"
+                 	},
+                 	
+                 	"validation": {
+                 		"moveQtyIsMoreThanStockBalance": "Move quantity should be less than or equal to binlocation balance."
+                 	}                	
+                 },
+				"pick" : {
+					"pick" : "Pick",
+					"header": {                    		
+                    		"zone": "Zone",
+                    		"items": "Items",
+                    		"totalQty": "Total Qty",
+                    		"code" : "Pick List"
+            		},
+            		"empty": "There is no item to pick.",
+            		"item": "Item",
+            		"location": "Location",
+            		"partNumber": "Part No.",
+            		"version": "Version",
+            		"partName": "Part Name",
+            		"partModification": "Part Modification",
+            		"pullQuantity": "Pull Qty",
+            		"unitOfMeasure": "UoM",
+            		"actualPickedQuantity": "Actual Picked Qty",
+            		"stockBalance": "Stock Balance",
+            		"requestListId": "Request List Id",
+            		"binlocationBalance": "Bin Location Balance",
+            		"balanceExceeded": "Bin location balance exceed",
+            		"printPullLabel_list": "Print Pull Label List",
+            		"printPullLabel_part": "Print Pull Label Part",
+            		"sameAsPullQty" : "Same as Pull Quantity",
+            		"buttons": {
+            			"pick":"Pick",
+            			"pickLater":"Pick Later",
+            			"done":"Done",
+            			"doneAndMarkAsShipped":"Done-Shipped",
+            			"printPullLabelList":"Pull Label List",
+            			"printPullLabelPart":"Pull Label Part",
+            			"print" : "Print",
+            			"cancel" : "Cancel"
+            		}
+				},
+				"ship" : {
+					"ship" : "Ship"
+				}
+			},
+			"login": {
+                "login": "Gloria Login",
+                "username": "Username",
+                "password": "Password",
+                "signIn": "Sign In",
+                "wrongCredentials": "Wrong username and/or password"
+            },
+            "exception": {
+                "exception":"Exception",
+		        "header":"Gloria System Exception",
+		        "ok":"OK",
+		        "errorHeader":"The application has encountered an internal server error. Please try again later.",
+		        "errorMessage":"Server message: ",
+		        "noErrorMessage":"No error message",
+		        "errorOccured":"Error occured at: "
+            },            
+            "errors": {
+            	"GLO_ERR_2":"The binlocation doesnt exist",
+                "GLO_ERR_18":"This operation cannot be performed since the information seen in the page has already been updated.",
+            	"GLO_ERR_30":"You have already received all the parts from the selected order.",
+            	"GLO_ERR_58":"User does not exist in GLORIA",            	
+            	"GLO_ERR_64":"Date should be present or Future.",
+            	"GLO_ERR_69":"There is an error in printing the labels / barcodes. This could be because of printer configuration issue.",            	
+				"GLO_ERR_73":"Invalid Pick Quantity",
+				"GLO_ERR_82":"Atleast one of the line selected is already locked by another user",
+				"GLO_ERR_105":"Parts with deviation cannot be moved.",
+				"GLO_ERR_106":"This operation cannot be performed as move quantity is more than stock balance."
+            }
+		}
+	}
+}

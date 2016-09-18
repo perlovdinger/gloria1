@@ -1,0 +1,130 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3 class="modal-title">{{t
+				"Gloria.i18n.material.overview.text.pullPart"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div id="appModalMessage"></div>
+			<form id="scrapForm" name="scrapForm">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label" for="binLocationCode"> {{t
+								"Gloria.i18n.material.overview.header.binlocationCode"}}: </label>
+							<div class="controls">
+								<span>{{data.binLocationCode}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label" for="quantity"> {{t
+								"Gloria.i18n.material.overview.header.quantity"}}: </label>
+							<div class="controls">
+								<span>{{data.quantity}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label required" for="pullQty"> {{t
+								"Gloria.i18n.material.overview.text.pullQty"}}: </label>
+							<div class="controls">
+								<input id="pullQty" name="request[quantity]"
+									class="form-control" type="number" required="required" min="1"
+									max="{{data.quantity}}">
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label required" for="requestDeliveryDate">
+								{{t "Gloria.i18n.material.overview.text.requestDeliveryDate"}}:
+							</label>
+							<div class="input-group date requestDeliveryDateDiv">
+								<input type="text" id="requestDeliveryDate"
+									name="request[requestDeliveryDate]"
+									class="requestDeliveryDate js-date form-control"
+									required="required" maxlength="10"> <span
+									class="input-group-addon"><span
+									class="glyphicon glyphicon-calendar"></span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="form-group">
+							<label class="control-label" for="outBoundLocationId">
+								{{t "Gloria.i18n.material.overview.header.outBoundLocationId"}}:
+							</label>
+							<div class="controls">
+								<span id="outBoundLocationId">{{data.outBoundLocationId}} - {{data.outBoundLocationName}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<input type="hidden" id="deliveryAddressType"
+					name="request[deliveryAddressType]">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="form-group">
+							<div class="checkbox-inline control-label">
+								<input type="checkbox" id="transferToWarehouse"
+									name="deliveryAddressType" value="WH_SITE"> <label
+									class="control-label" for="transferToWarehouse">{{t
+									"Gloria.i18n.material.requests.header.transferToWarehouse"}}</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="form-group">
+							<div class="controls" id="warehouseId" style="display: none;">
+								<input type="text" id="tranferToWarehouseDropDown"
+									name="request[deliveryAddressId]"
+									placeholder="{{t 'Gloria.i18n.material.requests.header.selectWarehouseId'}}">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<div class="checkbox-inline control-label">
+								<input type="checkbox" id="newDeliveryAddress"
+									name="deliveryAddressType" value="NEW_DELIVERY_ADDRESS">
+								<label class="control-label" for="newDeliveryAddress">{{t
+									"Gloria.i18n.material.requests.header.newDeliveryAddress"}}</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<div class="controls">
+								<textarea name="request[deliveryAddressName]"
+									class="form-control" rows="2" cols="100"
+									id="deliveryAddressTextArea" maxlength="255"
+									style="display: none;"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<div class="row">
+				<button type="button" class="btn btn-default" id="save" {{#unless
+					data.binLocationCode}} disabled="disabled"{{/unless}}>{{t
+					"Gloria.i18n.buttons.save"}}</button>
+				<button type="button" class="btn btn-default" id="cancel">{{t
+					"Gloria.i18n.buttons.cancel"}}</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<form id="basicInfoForm" novalidate="novalidate">
+	<fieldset>
+		<div id="basicInfo"></div>
+		<div id="partInfo"></div>
+	</fieldset>
+</form>
+<div id="buttonPane" align="center" class="button-bar floatFooter">
+	{{#if readOnly}} {{#unless hasReferer}} {{#hasPermission
+	"edit" 0="ProcurementModification"}}
+	<button type="button" class="btn btn-default" id="cancelModification">{{t
+		"Gloria.i18n.procurement.button.cancelModification"}}</button>
+	{{/hasPermission}} {{/unless}}
+	<button type="button" class="btn btn-default" id="close">{{t
+		"Gloria.i18n.buttons.close"}}</button>
+	{{else}} {{#hasPermission "edit" 0="ProcurementModification"}}
+	<button type="button" class="btn btn-default" id="save">{{t
+		"Gloria.i18n.buttons.save"}}</button>
+	{{/hasPermission}}
+	<button type="button" class="btn btn-default" id="cancel">{{t
+		"Gloria.i18n.buttons.cancel"}}</button>
+	{{/if}}
+</div>

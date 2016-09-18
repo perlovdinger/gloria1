@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SyncStandAloneOrder releaseID="9.3" versionID="1.01" xmlns:oa="http://www.openapplications.org/oagis/9" xmlns="http://www.volvo.com/3P/Purchasing/2008/10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<oa:ApplicationArea>
+		<oa:CreationDateTime>2015-12-02T13:32:04.339427</oa:CreationDateTime>
+	</oa:ApplicationArea>
+	<DataArea>
+		<oa:Sync>
+			<oa:ActionCriteria>
+				<oa:ActionExpression actionCode="Add"/>
+			</oa:ActionCriteria>
+		</oa:Sync>
+		<StandAloneOrder>
+			<StandAloneOrderHeader>
+				<oa:DocumentID>
+					<oa:ID>675-A21090-576</oa:ID>
+				</oa:DocumentID>
+				<oa:AlternateDocumentID>
+					<oa:ID>MA21090</oa:ID>
+					<oa:RevisionID>000</oa:RevisionID>
+				</oa:AlternateDocumentID>
+				<oa:CustomerParty>
+					<oa:PartyIDs>
+						<oa:ID>8412</oa:ID>
+					</oa:PartyIDs>
+					<oa:Name>3P LYON</oa:Name>
+				</oa:CustomerParty>
+				<oa:SupplierParty>
+					<oa:PartyIDs>
+						<oa:ID>79</oa:ID>
+					</oa:PartyIDs>
+					<oa:Name>COMPONENTA FRÄMMESTAD AB</oa:Name>
+				</oa:SupplierParty>
+				<oa:OrderDateTime>2015-12-02</oa:OrderDateTime>
+				<OrderMode>Prototype</OrderMode>
+			</StandAloneOrderHeader>
+			<StandAloneOrderLine>
+				<oa:Item>
+					<ItemID>
+						<ID qualifier="V">45456</ID>
+						<oa:RevisionID>B02</oa:RevisionID>
+					</ItemID>
+					<oa:SupplierItemID>
+						<ID/>
+					</oa:SupplierItemID>
+					<oa:Description>NAME1</oa:Description>
+					<oa:Specification>
+						<oa:Property>
+							<oa:NameValue name="SurfaceTreatment">00</oa:NameValue>
+						</oa:Property>
+					</oa:Specification>
+					<oa:CountryOfOriginCode>SE</oa:CountryOfOriginCode>
+				</oa:Item>
+				<oa:UnitPrice>
+					<oa:Amount currencyID="SEK">100.000</oa:Amount>
+					<oa:PerQuantity unitCode="PCE">100</oa:PerQuantity>
+					<oa:TimePeriod>
+						<oa:StartDateTime>2015-12-02</oa:StartDateTime>
+					</oa:TimePeriod>
+				</oa:UnitPrice>
+				<oa:ShipToParty>
+					<PartyIDs>
+						<ID>34347</ID>
+					</PartyIDs>
+					<oa:Name>RENAULT TRUCKS GARE 54</oa:Name>
+				</oa:ShipToParty>
+				<oa:TransportationTerm>
+					<oa:FreightTermCode>EXW</oa:FreightTermCode>
+				</oa:TransportationTerm>
+				<oa:PaymentTerm type="E090"/>
+				<oa:RequisitionReference>
+					<oa:DocumentID>
+						<oa:ID>1</oa:ID>
+					</oa:DocumentID>
+				</oa:RequisitionReference>
+				<oa:BuyerParty>
+					<oa:PartyIDs>
+						<oa:ID>GTT</oa:ID>
+					</oa:PartyIDs>
+					<BuyerContact>
+						<ID>675</ID>
+						<oa:Name>GTT Purchasing Europe</oa:Name>
+						<oa:Communication>
+							<oa:URI>@</oa:URI>
+						</oa:Communication>
+						<SecurityId>A042911A</SecurityId>
+					</BuyerContact>
+				</oa:BuyerParty>
+				<StandAloneOrderSchedule>
+					<oa:Quantity>70</oa:Quantity>
+					<oa:RequiredDeliveryDateTime>2016-01-04</oa:RequiredDeliveryDateTime>
+				</StandAloneOrderSchedule>
+				<UOMCode>PCE</UOMCode>
+				<FinancialInformation>
+					<ObjectID>01-05428</ObjectID>
+					<FinancialAccount>461003</FinancialAccount>
+					<CostCenter>VEHRD</CostCenter>
+				</FinancialInformation>
+				<PriceStatus>Negotiated</PriceStatus>
+			</StandAloneOrderLine>
+		</StandAloneOrder>
+	</DataArea>
+</SyncStandAloneOrder>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+
+  <named-query name="WarehouseListQuery">
+    <query>SELECT w FROM Warehouse w</query>
+  </named-query>
+
+  <named-query name="getPlacementByMaterialLine">
+    <query>SELECT p FROM Placement p where p.materialLineOID = :materialLine</query>
+  </named-query>
+
+  <named-query name="UpdateBinLocationPlacementQuery">
+    <query>Update Placement pl set pl.binLocation.binLocationOid = :binId where pl.materialLineOID = :materialLine</query>
+  </named-query>
+
+  <named-query name="getStorageRoomsList">
+    <query>select s from StorageRoom s</query>
+  </named-query>
+
+  <named-query name="getStorageRoomsCountByWarehouseID">
+    <query>select count(s) from StorageRoom s where s.warehouse.warehouseOid = :warehouseOid</query>
+  </named-query>
+
+  <named-query name="getStorageRoomsLisrByWarehouseID">
+    <query>select s from StorageRoom s where s.warehouse.warehouseOid = :warehouseOid</query>
+  </named-query>
+
+  <named-query name="getAisleRackRowByZoneId">
+    <query>select a from AisleRackRow a where a.zone.zoneOid = :zoneOid</query>
+  </named-query>
+
+  <named-query name="findZoneWithAilesById">
+    <query>select DISTINCT zone from Zone zone LEFT JOIN FETCH zone.aisleRackRows where zone.zoneOid = :zoneOid</query>
+  </named-query>
+
+  <named-query name="getWarehouseBySiteId">
+    <query>select wh from Warehouse wh left join fetch wh.storageRooms,StorageRoom s left join fetch s.zones where wh.siteId = :siteId</query>
+  </named-query>
+
+  <named-query name="findPlacementBinLocations">
+    <query>select bl from BinLocation bl, Placement pl  where pl.binLocation.binLocationOid = bl.binLocationOid and pl.materialLineOID = :materialLineOID order by bl.bayCode desc, bl.level desc, bl.position desc</query>
+  </named-query>
+
+  <named-query name="findBinLocationByCode">
+    <query>select bl from BinLocation bl where  bl.code = :code and (:whSiteId is null or bl.zone.storageRoom.warehouse.siteId = :whSiteId)</query>
+  </named-query>
+  
+  <named-query name="findBinLocationByCodeAndWhSiteId">
+    <query>select bl from BinLocation bl where (bl.zone.storageRoom.warehouse.siteId = :siteId) and bl.code IN (:codes)</query>
+  </named-query>
+
+  <named-query name="getZonesByZoneTypeAndWhSiteId">
+    <query>select z from Zone z where (z.storageRoom.warehouse.siteId = :siteId) and (z.type = :type)</query>
+  </named-query>
+
+  <named-query name="getBaySettingsForAisleRackRowId">
+    <query>select bs from BaySetting bs where (bs.aisleRackRow.aisleRackRowOid = :aisleRackRowOid)</query>
+  </named-query>
+  
+  <named-query name="getZonesByWarehouseIdAndType">
+    <query>select z from Zone z where (z.storageRoom.warehouse.warehouseOid = :warehouseId) and (z.type = :type) </query>
+  </named-query>
+  <named-query name="findWarehousesByWhsiteIds">
+    <query>SELECT w FROM Warehouse w where w.siteId IN :whsiteIds</query>
+  </named-query>
+
+</entity-mappings>

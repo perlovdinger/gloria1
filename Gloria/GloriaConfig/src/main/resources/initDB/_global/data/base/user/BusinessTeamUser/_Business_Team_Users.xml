@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+  <User userId="A045709">
+    <Team name="BLR" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="A148637">
+    <Team name="GSO" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="ND02354">
+    <Team name="AGEO_PE" type="MATERIAL_CONTROL" />
+    <Team name="AGEO_PE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="R083641">
+    <Team name="AGEO_VE" type="MATERIAL_CONTROL" />
+    <Team name="AGEO_VE" type="DELIVERY_CONTROL" />
+    <Team name="AGEO_PE" type="MATERIAL_CONTROL" />
+    <Team name="AGEO_PE" type="DELIVERY_CONTROL" />
+    <Team name="BLR" type="MATERIAL_CONTROL" />
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+    <Team name="CUR" type="MATERIAL_CONTROL" />
+    <Team name="CUR" type="DELIVERY_CONTROL" />
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+    <Team name="GSO" type="MATERIAL_CONTROL" />
+    <Team name="GSO" type="DELIVERY_CONTROL" />
+    <Team name="HAG" type="MATERIAL_CONTROL" />
+    <Team name="HAG" type="DELIVERY_CONTROL" />
+    <Team name="CUR" type="MATERIAL_CONTROL" />
+    <Team name="CUR" type="DELIVERY_CONTROL" />
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+    <Team name="MAL_PE" type="MATERIAL_CONTROL" />
+    <Team name="MAL_PE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="R079838">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="R391220">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="RE42070">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="R390782">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="R395537">
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+  </User>
+  <User userId="RE45145">
+    <Team name="HAG" type="MATERIAL_CONTROL" />
+    <Team name="HAG" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T008462">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+  </User>
+   <User userId="T074744">
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_PE" type="INTERNAL_PROCURE" />
+  </User>
+  <User userId="T055307">
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_PE" type="INTERNAL_PROCURE" />
+  </User>
+   <User userId="T069337">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+  </User>
+  <User userId="T015407">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+  </User>
+  <User userId="A048704">
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+  </User>
+    <User userId="T0C0352">
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T013856">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+  </User>
+  <User userId="T043502">
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T043518">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="T043569">
+    <Team name="GOT_PE" type="INTERNAL_PROCURE" />
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T051189">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="T057222">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T058711">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="T058879">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+  </User>
+   <User userId="T061812">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+  </User>
+  <User userId="T066202">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+   <User userId="T035121">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+   <User userId="A183402">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+   <User userId="T071688">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+   <User userId="T050125">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="B056991">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="T048720">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="A027180">
+    <Team name="GOT_VE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="T075022">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="T086653">
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+  </User>
+   <User userId="T041681">
+    <Team name="GOT_PE" type="INTERNAL_PROCURE" />
+    <Team name="GOT_PE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T0C0448">
+    <Team name="VECV" type="MATERIAL_CONTROL" />
+    <Team name="VECV" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T0C1535">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="TB88986">
+    <Team name="CUR" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="TBC7151">
+    <Team name="CUR" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="TIN2011">
+    <Team name="BLR" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="UD05712">
+    <Team name="GSO" type="DELIVERY_CONTROL" />
+    <Team name="GSO" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="UT02674">
+    <Team name="GSO" type="MATERIAL_CONTROL" />
+    <Team name="GSO" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="UT1298V">
+    <Team name="GSO" type="MATERIAL_CONTROL" />
+    <Team name="GSO" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="UT7974H">
+    <Team name="HAG" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="UT8206O">
+    <Team name="HAG" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="UT9012H">
+    <Team name="HAG" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="T0C0986">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="YI68520">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="T078231">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="T0C0815">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="B089681">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+   <User userId="T0C9484">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="R082234">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R080518">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R082220">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="RE80679">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="RE3I372">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="A220748">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R387146">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R078562">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R084232">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R387182">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R395126">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R080442">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R069055">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R387511">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R079005">
+    <Team name="LYS" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="R393954">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+   <User userId="R083052">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+    <User userId="R395536">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+    <User userId="R394679">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+    <User userId="R081197">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+      <User userId="R070544">
+    <Team name="LYS" type="INTERNAL_PROCURE" />
+    <Team name="LYS" type="DELIVERY_CONTROL" />
+  </User>
+    <User userId="T054333">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="RP71531">
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+   <User userId="T0C1820">
+    <Team name="GOT_VE" type="INTERNAL_PROCURE" />
+    <Team name="GOT_VE" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="A183324">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="A029876">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+	<Team name="BLR" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="A027303">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="TIN1724">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+	<Team name="BLR" type="MATERIAL_CONTROL" />
+  </User>
+  <User userId="TINZ034">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="A206423">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="A222301">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="A050394">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="A055165">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+  </User>
+  <User userId="A188643">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+	<Team name="BLR" type="MATERIAL_CONTROL" />
+  </User>
+   <User userId="A026986">
+    <Team name="BLR" type="DELIVERY_CONTROL" />
+	<Team name="BLR" type="MATERIAL_CONTROL" />
+  </User>
+    <User userId="A233988">
+    <Team name="GOT_PE" type="MATERIAL_CONTROL" />
+  </User>
+  
+</Users>

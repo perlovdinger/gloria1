@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://userandorganisation.parts.volvo.com/1_0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://userandorganisation.parts.volvo.com/1_0" elementFormDefault="qualified" version="1.0.1-final">
+	<!--External Schema references - XSD imports-->
+	<!--The Service / GMF List-->
+	<xsd:element name="UserAndOrganisation">
+		<xsd:annotation>
+			<xsd:appinfo source="WMQI_APPINFO">
+				<MRMessage xmlns="" messageDefinition="/0/UserAndOrganisation;XSDElementDeclaration$MRObject"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:sequence maxOccurs="unbounded">
+					<xsd:annotation>
+						<xsd:appinfo source="WMQI_APPINFO">
+							<MRLocalGroup xmlns="" composition="unorderedSet"/>
+						</xsd:appinfo>
+					</xsd:annotation>
+					<xsd:element name="GMFVerb" type="GMFVerbType" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element name="UserOrganisation" type="UserOrganisationType" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element name="UserRoleDef" type="UserRoleDefType" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element name="OrganisationInfo" type="OrganisationInfoType" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<!--One element for each GMF type (used for Web Services WSDL definitions)-->
+	<xsd:element name="GMFVerb" type="GMFVerbType"/>
+	<xsd:element name="UserOrganisation" type="UserOrganisationType"/>
+	<xsd:element name="UserRoleDef" type="UserRoleDefType"/>
+	<xsd:element name="OrganisationInfo" type="OrganisationInfoType"/>
+	<xsd:complexType name="GMFVerbType">
+		<xsd:sequence>
+			<xsd:element name="GmfHeader" minOccurs="1" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="MsgVersion" minOccurs="1" maxOccurs="1">
+							<xsd:simpleType>
+								<xsd:restriction base="VPIOCommonInterface_InterfaceVersionType">
+									<xsd:enumeration value="1.0"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="SenderID" type="VPIOCommonInterface_SenderIDType" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="SendTime" type="VPIOCommonInterface_SendTimeType" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="CountryCode" type="CountryCodeType" minOccurs="0"/>
+			<xsd:element name="LangCode" type="LanguageCodeType" minOccurs="0"/>
+			<xsd:element name="Get" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Action" type="ActionType"/>
+						<xsd:element name="SelectionCriterionStrings" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionString" type="SelectionCriterionStringType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionStringName" type="SelectionCriterionStringNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="SelectionCriterionDates" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionDate" type="SelectionCriterionDateType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionDateName" type="SelectionCriterionDateNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="SelectionCriterionNumbers" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionNumber" type="SelectionCriterionNumberType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionNumberName" type="SelectionCriterionNumberNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Show" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Action" type="ActionType"/>
+						<xsd:element name="Result" type="ResultType"/>
+						<xsd:element name="Message" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="MessageSeverity" type="MessageSeverityType" minOccurs="0"/>
+									<xsd:element name="MessageCode" type="MessageCodeType" minOccurs="0"/>
+									<xsd:element name="MessageText" type="MessageTextType" minOccurs="0"/>
+									<xsd:element name="MessageParameters" minOccurs="0" maxOccurs="unbounded">
+										<xsd:complexType>
+											<xsd:sequence>
+												<xsd:element name="MessageParameter" type="MessageParameterType" minOccurs="0"/>
+												<xsd:element name="MessageParameterName" type="MessageParameterNameType" minOccurs="0"/>
+											</xsd:sequence>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Sync" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Action" type="ActionType"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Process" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Action" type="ActionType"/>
+						<xsd:element name="SelectionCriterionStrings" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionString" type="SelectionCriterionStringType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionStringName" type="SelectionCriterionStringNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="SelectionCriterionDates" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionDate" type="SelectionCriterionDateType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionDateName" type="SelectionCriterionDateNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="SelectionCriterionNumbers" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionNumber" type="SelectionCriterionNumberType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionNumberName" type="SelectionCriterionNumberNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Acknowledge" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Action" type="ActionType"/>
+						<xsd:element name="Result" type="ResultType"/>
+						<xsd:element name="Message" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="MessageSeverity" type="MessageSeverityType" minOccurs="0"/>
+									<xsd:element name="MessageCode" type="MessageCodeType" minOccurs="0"/>
+									<xsd:element name="MessageText" type="MessageTextType" minOccurs="0"/>
+									<xsd:element name="MessageParameters" minOccurs="0" maxOccurs="unbounded">
+										<xsd:complexType>
+											<xsd:sequence>
+												<xsd:element name="MessageParameter" type="MessageParameterType" minOccurs="0"/>
+												<xsd:element name="MessageParameterName" type="MessageParameterNameType" minOccurs="0"/>
+											</xsd:sequence>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Change" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Action" type="ActionType"/>
+						<xsd:element name="SelectionCriterionStrings" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionString" type="SelectionCriterionStringType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionStringName" type="SelectionCriterionStringNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="SelectionCriterionDates" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionDate" type="SelectionCriterionDateType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionDateName" type="SelectionCriterionDateNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="SelectionCriterionNumbers" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="SelectionCriterionNumber" type="SelectionCriterionNumberType" minOccurs="0"/>
+									<xsd:element name="SelectionCriterionNumberName" type="SelectionCriterionNumberNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Confirm" minOccurs="0">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="Action" type="ActionType"/>
+						<xsd:element name="Result" type="ResultType"/>
+						<xsd:element name="Message" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="MessageSeverity" type="MessageSeverityType" minOccurs="0"/>
+									<xsd:element name="MessageCode" type="MessageCodeType" minOccurs="0"/>
+									<xsd:element name="MessageText" type="MessageTextType" minOccurs="0"/>
+									<xsd:element name="MessageParameters" minOccurs="0" maxOccurs="unbounded">
+										<xsd:complexType>
+											<xsd:sequence>
+												<xsd:element name="MessageParameter" type="MessageParameterType" minOccurs="0"/>
+												<xsd:element name="MessageParameterName" type="MessageParameterNameType" minOccurs="0"/>
+											</xsd:sequence>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="UserOrganisationType">
+		<xsd:sequence>
+			<xsd:element name="GmfHeader" minOccurs="1" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="MsgVersion" minOccurs="1" maxOccurs="1">
+							<xsd:simpleType>
+								<xsd:restriction base="VPIOCommonInterface_InterfaceVersionType">
+									<xsd:enumeration value="1.0"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="SenderID" type="VPIOCommonInterface_SenderIDType" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="SendTime" type="VPIOCommonInterface_SendTimeType" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="CIAction" type="StorageFunctionCodeType" minOccurs="0"/>
+			<xsd:element name="UserID" type="UserIDType" minOccurs="0"/>
+			<xsd:element name="UserFirstName" type="UserFirstNameType" minOccurs="0"/>
+			<xsd:element name="UserLastName" type="UserLastNameType" minOccurs="0"/>
+			<xsd:element name="OrganisationID" type="OrganisationIDType" minOccurs="0"/>
+			<xsd:element name="OrganisationName" type="OrganisationNameType" minOccurs="0"/>
+			<xsd:element name="GmfDataArea" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="MessageSeverity" type="MessageSeverityType" minOccurs="0"/>
+						<xsd:element name="MessageCode" type="MessageCodeType" minOccurs="0"/>
+						<xsd:element name="MessageText" type="MessageTextType" minOccurs="0"/>
+						<xsd:element name="MessageParameters" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="MessageParameter" type="MessageParameterType" minOccurs="0"/>
+									<xsd:element name="MessageParameterName" type="MessageParameterNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="AliasOrganisation" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="AliasOrganisationSource" type="AliasOrganisationSourceType" minOccurs="0"/>
+						<xsd:element name="AliasOrganisationID" type="AliasOrganisationIDType" minOccurs="0"/>
+						<xsd:element name="MarketID" type="MarketIDType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Address" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="PartnerName" type="PartnerNameType" minOccurs="0"/>
+						<xsd:element name="PartnerName2" type="PartnerName2Type" minOccurs="0"/>
+						<xsd:element name="Department" type="DepartmentType" minOccurs="0"/>
+						<xsd:element name="Street1" type="Street1Type" minOccurs="0"/>
+						<xsd:element name="Street2" type="Street2Type" minOccurs="0"/>
+						<xsd:element name="Street3" type="Street3Type" minOccurs="0"/>
+						<xsd:element name="PostCode" type="PostCodeType" minOccurs="0"/>
+						<xsd:element name="City" type="CityType" minOccurs="0"/>
+						<xsd:element name="State" type="StateType" minOccurs="0"/>
+						<xsd:element name="RegionID" type="RegionIDType" minOccurs="0"/>
+						<xsd:element name="CountryCode" type="CountryCodeType" minOccurs="0"/>
+						<xsd:element name="CountryName" type="CountryNameType" minOccurs="0"/>
+						<xsd:element name="PhoneNo" type="PhoneNumberType" minOccurs="0"/>
+						<xsd:element name="MobilePhoneNumber" type="MobilePhoneNumberType" minOccurs="0"/>
+						<xsd:element name="FaxNumber" type="FaxNumberType" minOccurs="0"/>
+						<xsd:element name="ContactName" type="ContactNameType" minOccurs="0"/>
+						<xsd:element name="Email" type="EmailType" minOccurs="0"/>
+						<xsd:element name="DistrictNo" type="DistrictNumberType" minOccurs="0"/>
+						<xsd:element name="POBox" type="POBoxType" minOccurs="0"/>
+						<xsd:element name="PostCodePOBox" type="PostCodePOBoxType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UserLanguage" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="LangCode" type="LanguageCodeType" minOccurs="0"/>
+						<xsd:element name="CountryCode" type="CountryCodeType" minOccurs="0"/>
+						<xsd:element name="IsPreferredLanguageFlag" type="IsPreferredLanguageFlagType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OrganisationCompany" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="BrandReference" type="BrandReferenceType" minOccurs="0"/>
+						<xsd:element name="OrganisationID" type="OrganisationIDType" minOccurs="0"/>
+						<xsd:element name="CompName" type="CompanyNameType" minOccurs="0"/>
+						<xsd:element name="DistrictNo" type="DistrictNumberType" minOccurs="0"/>
+						<xsd:element name="CustID" type="CustomerIDType" minOccurs="0"/>
+						<xsd:element name="IsMainCompanyFlag" type="IsMainCompanyFlagType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OrganisationApplication" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ApplicationID" type="ApplicationIDType" minOccurs="0"/>
+						<xsd:element name="ApplicationDescription" type="ApplicationDescriptionType" minOccurs="0"/>
+						<xsd:element name="ApplicationSetting" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="ApplicationSettingID" type="ApplicationSettingIDType" minOccurs="0"/>
+									<xsd:element name="ApplicationSettingValue" type="ApplicationSettingValueType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="UserCategory" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="UserCategoryID" type="UserCategoryIDType" minOccurs="0"/>
+									<xsd:element name="UserCategoryDescription" type="UserCategoryDescriptionType" minOccurs="0"/>
+									<xsd:element name="EndTime" type="EndTimeType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="UserRoleDefType">
+		<xsd:sequence>
+			<xsd:element name="GmfHeader" minOccurs="1" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="MsgVersion" minOccurs="1" maxOccurs="1">
+							<xsd:simpleType>
+								<xsd:restriction base="VPIOCommonInterface_InterfaceVersionType">
+									<xsd:enumeration value="1.0"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="SenderID" type="VPIOCommonInterface_SenderIDType" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="SendTime" type="VPIOCommonInterface_SendTimeType" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UserRoleID" type="UserRoleIDType"/>
+			<xsd:element name="UsrRoleName" type="UserRoleNameType"/>
+			<xsd:element name="UsrRoleDescr" type="UserRoleDescriptionType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="OrganisationInfoType">
+		<xsd:sequence>
+			<xsd:element name="GmfHeader" minOccurs="1" maxOccurs="1">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="MsgVersion" minOccurs="1" maxOccurs="1">
+							<xsd:simpleType>
+								<xsd:restriction base="VPIOCommonInterface_InterfaceVersionType">
+									<xsd:enumeration value="1.0"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
+						<xsd:element name="SenderID" type="VPIOCommonInterface_SenderIDType" minOccurs="1" maxOccurs="1"/>
+						<xsd:element name="SendTime" type="VPIOCommonInterface_SendTimeType" minOccurs="1" maxOccurs="1"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="CIAction" type="StorageFunctionCodeType" minOccurs="0"/>
+			<xsd:element name="OrganisationID" type="OrganisationIDType" minOccurs="0"/>
+			<xsd:element name="OrganisationName" type="OrganisationNameType" minOccurs="0"/>
+			<xsd:element name="MainOrganisationID" type="MainOrganisationIDType" minOccurs="0"/>
+			<xsd:element name="GmfDataArea" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="MessageSeverity" type="MessageSeverityType" minOccurs="0"/>
+						<xsd:element name="MessageCode" type="MessageCodeType" minOccurs="0"/>
+						<xsd:element name="MessageText" type="MessageTextType" minOccurs="0"/>
+						<xsd:element name="MessageParameters" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="MessageParameter" type="MessageParameterType" minOccurs="0"/>
+									<xsd:element name="MessageParameterName" type="MessageParameterNameType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SubOrganisation" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="OrganisationID" type="OrganisationIDType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OrganisationCompany" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="BrandReference" type="BrandReferenceType" minOccurs="0"/>
+						<xsd:element name="OrganisationID" type="OrganisationIDType" minOccurs="0"/>
+						<xsd:element name="CompName" type="CompanyNameType" minOccurs="0"/>
+						<xsd:element name="DistrictNo" type="DistrictNumberType" minOccurs="0"/>
+						<xsd:element name="CustID" type="CustomerIDType" minOccurs="0"/>
+						<xsd:element name="IsMainCompanyFlag" type="IsMainCompanyFlagType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Address" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="PartnerName" type="PartnerNameType" minOccurs="0"/>
+						<xsd:element name="PartnerName2" type="PartnerName2Type" minOccurs="0"/>
+						<xsd:element name="Department" type="DepartmentType" minOccurs="0"/>
+						<xsd:element name="Street1" type="Street1Type" minOccurs="0"/>
+						<xsd:element name="Street2" type="Street2Type" minOccurs="0"/>
+						<xsd:element name="Street3" type="Street3Type" minOccurs="0"/>
+						<xsd:element name="PostCode" type="PostCodeType" minOccurs="0"/>
+						<xsd:element name="City" type="CityType" minOccurs="0"/>
+						<xsd:element name="State" type="StateType" minOccurs="0"/>
+						<xsd:element name="RegionID" type="RegionIDType" minOccurs="0"/>
+						<xsd:element name="CountryCode" type="CountryCodeType" minOccurs="0"/>
+						<xsd:element name="CountryName" type="CountryNameType" minOccurs="0"/>
+						<xsd:element name="PhoneNo" type="PhoneNumberType" minOccurs="0"/>
+						<xsd:element name="MobilePhoneNumber" type="MobilePhoneNumberType" minOccurs="0"/>
+						<xsd:element name="FaxNumber" type="FaxNumberType" minOccurs="0"/>
+						<xsd:element name="ContactName" type="ContactNameType" minOccurs="0"/>
+						<xsd:element name="Email" type="EmailType" minOccurs="0"/>
+						<xsd:element name="DistrictNo" type="DistrictNumberType" minOccurs="0"/>
+						<xsd:element name="POBox" type="POBoxType" minOccurs="0"/>
+						<xsd:element name="PostCodePOBox" type="PostCodePOBoxType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OrganisationApplication" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="ApplicationID" type="ApplicationIDType" minOccurs="0"/>
+						<xsd:element name="ApplicationDescription" type="ApplicationDescriptionType" minOccurs="0"/>
+						<xsd:element name="ApplicationSetting" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="ApplicationSettingID" type="ApplicationSettingIDType" minOccurs="0"/>
+									<xsd:element name="ApplicationSettingValue" type="ApplicationSettingValueType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+						<xsd:element name="UserCategory" minOccurs="0" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="UserCategoryID" type="UserCategoryIDType" minOccurs="0"/>
+									<xsd:element name="UserCategoryDescription" type="UserCategoryDescriptionType" minOccurs="0"/>
+									<xsd:element name="EndTime" type="EndTimeType" minOccurs="0"/>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="AliasOrganisation" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="AliasOrganisationSource" type="AliasOrganisationSourceType" minOccurs="0"/>
+						<xsd:element name="AliasOrganisationID" type="AliasOrganisationIDType" minOccurs="0"/>
+						<xsd:element name="MarketID" type="MarketIDType" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="CountryCodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="LanguageCodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="6"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ActionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SelectionCriterionStringType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SelectionCriterionStringNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="100"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SelectionCriterionDateType">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="SelectionCriterionDateNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SelectionCriterionNumberType">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:fractionDigits value="6"/>
+			<xsd:totalDigits value="16"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SelectionCriterionNumberNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ResultType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MessageSeverityType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MessageCodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="25"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MessageTextType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="250"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MessageParameterType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="200"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MessageParameterNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="StorageFunctionCodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserFirstNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserLastNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="OrganisationIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="OrganisationNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="AliasOrganisationSourceType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="AliasOrganisationIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MarketIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PartnerNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PartnerName2Type">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="35"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DepartmentType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Street1Type">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Street2Type">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Street3Type">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="60"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PostCodeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="25"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CityType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="StateType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="35"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="RegionIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="35"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CountryNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PhoneNumberType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MobilePhoneNumberType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="FaxNumberType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ContactNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="EmailType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="70"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DistrictNumberType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="35"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="POBoxType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="15"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PostCodePOBoxType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="15"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="IsPreferredLanguageFlagType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="BrandReferenceType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CompanyNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CustomerIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="17"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="IsMainCompanyFlagType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ApplicationIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ApplicationDescriptionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ApplicationSettingIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ApplicationSettingValueType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="250"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserCategoryIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserCategoryDescriptionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="40"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="EndTimeType">
+		<xsd:restriction base="xsd:dateTime"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserRoleIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserRoleNameType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UserRoleDescriptionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MainOrganisationIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="VPIOCommonInterface_SenderIDType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="VPIOCommonInterface_SendTimeType">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="VPIOCommonInterface_InterfaceVersionType">
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+</xsd:schema>

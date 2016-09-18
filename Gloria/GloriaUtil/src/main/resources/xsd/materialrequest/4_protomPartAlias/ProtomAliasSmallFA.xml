@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProcessMaterialProcureRequest serviceVersion="String" serviceID="String" xsi:schemaLocation="http://www.volvo.com/MaterialProcureRequest/1_0 MaterialProcureRequest.xsd" xmlns="http://www.volvo.com/MaterialProcureRequest/1_0" xmlns:volvo="http://www.volvo.com/CMF/common/1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<volvo:ApplicationArea>
+		<volvo:Sender>
+			<volvo:LogicalID>PROTOM</volvo:LogicalID>
+			<volvo:ComponentID>Subsystem</volvo:ComponentID>
+			<volvo:UserID>a026548</volvo:UserID>
+		</volvo:Sender>
+		<volvo:Receiver>
+			<volvo:LogicalID>String</volvo:LogicalID>
+			<volvo:ComponentID>text</volvo:ComponentID>
+		</volvo:Receiver>
+		<volvo:CreationDateTime>2014-11-11T09:30:47Z</volvo:CreationDateTime>
+		<volvo:BODID>fcc9f7bc-76a8-469d-a63a-12985e53f23d</volvo:BODID>
+	</volvo:ApplicationArea>
+	<DataArea>
+		<Process/>
+		<MaterialRequestChange>
+			<RequestType>TESTOBJECT</RequestType>
+			<MaterialRequestChangeAdd>
+				<Id>Gloria FA</Id>
+				<Type>FIRST_ASSEMBLY</Type>
+				<ChangeTechId>1556</ChangeTechId>
+				<ProcureMessageId>53392</ProcureMessageId>
+				<Title/>
+				<MaterialRequestMessage>
+					<Header>
+						<TestObjectHeader>
+							<TestObjectInfo>
+								<TestObject>
+									<Id>Comp-5013</Id>
+									<Type>V</Type>
+								</TestObject>
+							</TestObjectInfo>
+							<PhaseInfo>
+								<Phase>
+									<Id>5936</Id>
+									<Name>Gloria FA</Name>
+									<Type>FIRST_ASSEMBLY</Type>
+									<PlannedAssemblyStartDate>2015-11-30+01:00</PlannedAssemblyStartDate>
+								</Phase>
+							</PhaseInfo>
+						</TestObjectHeader>
+						<Requester>
+							<UserId>V075869</UserId>
+							<Name>Anki Jansson</Name>
+							<Notes/>
+						</Requester>
+						<ContactPerson>
+							<UserId>V075869</UserId>
+							<Name>Anki Jansson</Name>
+						</ContactPerson>
+					</Header>
+					<Component>
+						<BuildSiteType>
+							<Id>31967</Id>
+						</BuildSiteType>
+						<Line>
+							<LineAddType>
+								<BomLink>
+									<ProcureLinkId>12257787485813866</ProcureLinkId>
+									<PartAffiliation>V</PartAffiliation>
+									<PartNumber>990232</PartNumber>
+									<PartVersion>P03</PartVersion>
+									<Quantity>5</Quantity>
+									<ProductClassId>24</ProductClassId>
+									<FunctionGroup>2181</FunctionGroup>
+									<FunctionGroupSuffix>01</FunctionGroupSuffix>
+									<ProcureComment>ProcureComment1</ProcureComment>
+								</BomLink>
+								<ItemToVariantLink>
+									<Id>8544</Id>
+								</ItemToVariantLink>
+								<Part>
+									<Name>FLANGE SCREW</Name>
+									<UnitOfMeasure>PCE</UnitOfMeasure>
+									<DesignResponsible>CORSTD</DesignResponsible>
+									<Demarcation>M16*200</Demarcation>
+									<Characteristics>16*2.00*200 10-9 Y1000SIL</Characteristics>
+									<Alias>
+										<Id>11-2581124</Id>
+										<Domain>NDM</Domain>
+									</Alias>
+									<Alias>
+										<Id>7421810096</Id>
+										<Domain>RVI</Domain>
+									</Alias>
+								</Part>
+								<FinancialInfo>
+									<ProjectId>M22-P420</ProjectId>
+									<CompanyCode>FR46</CompanyCode>
+									<GlAccount>461003</GlAccount>
+									<CostCenter>0000000011</CostCenter>
+									<WbsCode>FLG10-00019</WbsCode>
+								</FinancialInfo>
+								<RequiredShipToArrive>2015-09-30+02:00</RequiredShipToArrive>
+							</LineAddType>
+						</Line>
+					</Component>
+				</MaterialRequestMessage>
+			</MaterialRequestChangeAdd>
+		</MaterialRequestChange>
+	</DataArea>
+</ProcessMaterialProcureRequest>

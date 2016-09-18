@@ -1,0 +1,113 @@
+<form novalidate="novalidate">
+	<div id="warehouseBasicInfo" class="panel"></div>
+	<div class="panel-group accordion">
+		<div id="storageInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#warehouseInfo" href="#storageInformation"><strong>{{t
+							"Gloria.i18n.warehouse.setup.text.storageInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="storageInformation" class="panel-collapse collapse in">
+				<div id="storageInfoContent" class="panel-body">
+					<p class="text-center">
+						<img src="app/img/spinner.gif"
+							alt='{{t "Gloria.i18n.general.loading"}}'>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="zoneInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#warehouseInfo" href="#zoneInformation"><strong>{{t
+							"Gloria.i18n.warehouse.setup.text.zoneInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="zoneInformation" class="panel-collapse collapse">
+				<div id="zoneInfoContent" class="panel-body">
+					<p class="text-center">
+						<img src="app/img/spinner.gif"
+							alt='{{t "Gloria.i18n.general.loading"}}'>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="aisleInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#warehouseInfo" href="#aisleInformation"><strong>{{t
+							"Gloria.i18n.warehouse.setup.text.aisleInfo_AISLE"}}</strong></a>
+				</h4>
+			</div>
+			<div id="aisleInformation" class="panel-collapse collapse">
+				<div id="aisleInfoContent" class="panel-body">
+					<p class="text-center">
+						<img src="app/img/spinner.gif"
+							alt='{{t "Gloria.i18n.general.loading"}}'>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="levelInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#warehouseInfo" href="#levelInformation"><strong>{{t
+							"Gloria.i18n.warehouse.setup.text.levelInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="levelInformation" class="panel-collapse collapse">
+				<div id="levelInfoContent" class="panel-body">
+					<p class="text-center">
+						<img src="app/img/spinner.gif"
+							alt='{{t "Gloria.i18n.general.loading"}}'>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="rackInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#warehouseInfo" href="#rackInformation"><strong>{{t
+							"Gloria.i18n.warehouse.setup.text.rackInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="rackInformation" class="panel-collapse collapse">
+				<div id="rackInfoContent" class="panel-body">
+					<p class="text-center">
+						<img src="app/img/spinner.gif"
+							alt='{{t "Gloria.i18n.general.loading"}}'>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{#hasPermission "edit" 0="WarehouseSetup"}} <br />
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="form-group">
+				<label class="control-label" for="printBarcodes"> <input
+					type="checkbox" id="printBarcodes" name="printBarcodes">
+					{{t "Gloria.i18n.warehouse.setup.text.printBarcodes"}}
+				</label>
+			</div>
+		</div>
+	</div>
+	{{/hasPermission}}
+	<div align="center" class="button-bar floatFooter">
+		<a
+			href="/GloriaUIServices/api/warehouse/v1/warehouses/{{warehouseId}}/export"
+			download class="btn btn-default"> {{t
+			"Gloria.i18n.buttons.exportXML"}} </a> {{#hasPermission "edit"
+		0="WarehouseSetup"}}
+		<button type="button" class="btn btn-default" id="save">{{t "Gloria.i18n.buttons.save"}}</button>
+		{{/hasPermission}}
+		<button type="button" class="btn btn-default" id="cancel">
+			{{t "Gloria.i18n.buttons.close"}}</button>
+	</div>
+</form>

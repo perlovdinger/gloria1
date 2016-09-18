@@ -1,0 +1,73 @@
+<br />
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<div class="controls">
+				<span class="glyphicon glyphicon-star"></span>&nbsp;{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.actionLogText"}}
+			</div>
+		</div>
+	</div>
+</div>
+{{#unless isDisabled}} {{#hasPermission "edit"
+0="DeliveryControlPartDetail"}}
+<div class="form-inline">
+	<div class="form-group">
+		<div class="input-group col-sm-8">
+			<textarea class="form-control" id="orderlog" maxlength="255" rows="1"
+				style="overflow: hidden; resize: none" cols="60"></textarea>
+			<span class="input-group-btn">
+				<button class="btn" id="addorderlog">
+					<span class="glyphicon glyphicon-plus"></span>
+				</button>
+			</span>
+		</div>
+	</div>
+</div>
+{{/hasPermission}}
+<br />
+{{/unless}}
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<div class="controls"><i class="fa fa-info" aria-hidden="true"></i>
+				&nbsp;{{t "Gloria.i18n.deliverycontrol.orderOverview.text.UTCText"}}
+			</div>
+		</div>
+	</div>
+</div>
+
+ {{#if data}} {{#each data}}
+
+<div id="{{data.id}}" class="row">
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">{{date this.eventTime}}</div>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">{{this.eventValue}}</div>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">{{this.eventOriginatorId}}</div>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">{{this.eventOriginatorName}}</div>
+		</div>
+	</div>
+</div>
+{{/each}} {{else}}
+<div class="row">
+	<div class="col-sm-2">
+		<div class="form-group">
+			<div class="controls">{{t "Gloria.i18n.noInfoAvailable"}}</div>
+		</div>
+	</div>
+</div>
+{{/if}}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ProcessMaterialProcureRequest xmlns:ns2="http://www.volvo.com/MaterialProcureRequest/1_0" xmlns:ns3="http://www.volvo.com/kola/part/1_0" xmlns:ns4="http://www.volvo.com/group/common/1_0">
+	<ns4:ApplicationArea>
+		<ns4:Sender>
+			<ns4:LogicalID>PROTOM</ns4:LogicalID>
+		</ns4:Sender>
+		<ns4:CreationDateTime>2016-03-01T19:18:14.660+01:00</ns4:CreationDateTime>
+		<ns4:BODID>a63a0abb-d125-48e5-9041-7397e49bc181</ns4:BODID>
+	</ns4:ApplicationArea>
+	<ns2:DataArea>
+		<ns2:Process/>
+		<ns2:MaterialRequestChange>
+			<ns2:RequestType>TESTOBJECT</ns2:RequestType>
+			<ns2:MaterialRequestChangeRemove>
+				<ns2:ChangeTechId>337</ns2:ChangeTechId>
+			</ns2:MaterialRequestChangeRemove>
+		</ns2:MaterialRequestChange>
+	</ns2:DataArea>
+</ns2:ProcessMaterialProcureRequest>

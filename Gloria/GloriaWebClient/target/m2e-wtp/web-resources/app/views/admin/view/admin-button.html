@@ -1,0 +1,13 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="noprint">
+				{{#hasPermission "edit" 0="TeamAdministration"}}<a
+					class="btn btn-default" id="edit-button" {{#unless
+					permittedActions.edit}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.buttons.edit"}}</a>{{/hasPermission}} <a id="clear-filter"
+					class="clear-filter">{{t "Gloria.i18n.gridpanel.clearFilter"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

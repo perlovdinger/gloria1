@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Release ID is used to identify the release of OAGIS that the BOD belongs to. 
+		For the BODs from OAGIS 9.3 the value of this attribute will be “9.3”. -->
+<!-- Version ID is used to identify the version of the Business Object Document.   
+		Each BOD has its own revision number to specifically identify the level of that BOD, not just the release ID of OAGIS. -->
+<ProcessRequisition 
+	releaseID="9.3" 
+	versionID="1.01"
+	xmlns="http://www.volvo.com/3P/Purchasing/2008/10"
+	xmlns:oa="http://www.openapplications.org/oagis/9" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.volvo.com/3P/Purchasing/2008/10 ProcessRequisition.xsd">
+	<!--2011-05-23T01:37:57.474648-->
+	<oa:ApplicationArea>
+		<oa:CreationDateTime>2011-05-23</oa:CreationDateTime>
+	</oa:ApplicationArea>
+	<SendingApplication>GLORIA</SendingApplication>
+	<DataArea>
+		<oa:Process>
+			<oa:ActionCriteria>
+				<oa:ActionExpression actionCode="Add" />
+			</oa:ActionCriteria>
+		</oa:Process>
+		<Requisition>
+			<RequisitionHeader>				
+				<oa:DocumentID>			
+					<oa:ID>161844</oa:ID>				
+					<oa:VariationID>1</oa:VariationID>		
+				</oa:DocumentID>			
+				<oa:DocumentReference>					
+					<oa:IssuingParty>		
+						<oa:PartyIDs>
+							<oa:ID>VTC</oa:ID>
+						</oa:PartyIDs>
+						<Contact>			
+							<ID>0312</ID>
+							<oa:Name>Abhinay Chakravarty</oa:Name>
+							<oa:DepartmentName>15113</oa:DepartmentName>
+							<oa:Communication>
+								<oa:DialNumber>3155334454</oa:DialNumber>								
+							</oa:Communication>
+							<SecurityId>TIN2011</SecurityId>
+						</Contact>
+					</oa:IssuingParty>					
+				</oa:DocumentReference>
+				<oa:SupplierParty>
+					<oa:PartyIDs>				
+						<ID>79</ID>
+					</oa:PartyIDs>
+				</oa:SupplierParty>
+				<oa:ShipToParty>
+					<oa:PartyIDs>		
+						<ID>14577</ID>
+					</oa:PartyIDs>
+				</oa:ShipToParty>							
+				<oa:BuyerParty>
+					<oa:PartyIDs>
+						<oa:ID>VTC</oa:ID>
+					</oa:PartyIDs>
+					<BuyerContact>
+						<ID>134</ID>			
+						<PlantBuyer>Yes</PlantBuyer>
+					</BuyerContact>
+				</oa:BuyerParty>						
+				<oa:RequesterParty>
+					<oa:PartyIDs>
+						<oa:ID>1001</oa:ID>
+					</oa:PartyIDs>					
+					<Contact>				
+						<oa:Name>Katarina Axelsson</oa:Name>
+					</Contact>
+					<Contact>
+						<oa:Name></oa:Name>						
+					</Contact>			
+					<Contact>
+						<oa:Name></oa:Name>					
+					</Contact>							
+				</oa:RequesterParty>
+				<oa:UserArea>	
+					<oa:Code>123</oa:Code>					
+				</oa:UserArea>
+				<OrderMode>Prototype</OrderMode>		
+			</RequisitionHeader>
+			<RequisitionLine>	
+				<oa:Quantity>4</oa:Quantity>						
+				<oa:UnitPrice>
+					<oa:Amount currencyID="SEK">12</oa:Amount>
+					<oa:PerQuantity unitCode="PCE">1</oa:PerQuantity>					
+					<oa:Code>est</oa:Code>								
+				</oa:UnitPrice>			
+				<oa:RequiredDeliveryDateTime>2000-12-31</oa:RequiredDeliveryDateTime>					
+				<oa:DrawingAttachment>
+					<oa:FileName>1590744</oa:FileName>				
+					<oa:Description>Axx</oa:Description>
+				</oa:DrawingAttachment>	
+				<oa:UserArea>
+					<oa:Note> note 1</oa:Note>
+					<oa:Note> note 2</oa:Note>								
+				</oa:UserArea>
+				<Item>
+					<ItemID>				
+						<ID qualifier="V">1590744</ID>
+						<oa:RevisionID>P12</oa:RevisionID>											
+					</ItemID>	
+					<oa:Description>Front Spring Anchorage</oa:Description>
+					<InspectionPart>Yes</InspectionPart>
+					<QualityCertRequisition>A</QualityCertRequisition>		
+					<FunctionGroup>1234</FunctionGroup>											
+					<SafetyPart>No</SafetyPart>					
+					<CheckPoint>1232</CheckPoint>	
+					<ApproveToPurchase>Yes</ApproveToPurchase>
+					<Internal>No</Internal>
+				</Item>				
+				<UOMCode>PCE</UOMCode>		
+				<FinancialInformation>		
+					<ObjectID>W60-2545</ObjectID>		
+					<CostCollector CostCollectorType="WBS">A4W10-00451-00-F6</CostCollector>				
+					<FinancialAccount>164101</FinancialAccount>				
+					<CostCenter>5634</CostCenter>					
+				</FinancialInformation>
+				<DeliverySchedule>								
+					<oa:PlanningScheduleLine>
+						<oa:Note>asdf</oa:Note>
+                        <oa:ShipmentDateTime>2014-03-03</oa:ShipmentDateTime>
+                        <oa:ItemQuantity>2</oa:ItemQuantity>
+					</oa:PlanningScheduleLine>
+                    <oa:PlanningScheduleLine>
+						<oa:Note>asdf2</oa:Note>
+                        <oa:ShipmentDateTime>2014-03-10</oa:ShipmentDateTime>                        
+                        <oa:ItemQuantity>1</oa:ItemQuantity>                        
+                    </oa:PlanningScheduleLine>
+                    <oa:PlanningScheduleLine>
+						<oa:Note>asdf3</oa:Note>
+                        <oa:ShipmentDateTime>2014-03-17</oa:ShipmentDateTime>
+                        <oa:ItemQuantity>1</oa:ItemQuantity>                                        
+                    </oa:PlanningScheduleLine>                                        
+                </DeliverySchedule>                
+				<RequisitionSubLine>
+					<oa:ShipToParty>
+						<oa:Location>
+							<oa:Address>					
+								<oa:BuildingName>XHALL</oa:BuildingName>					
+								<oa:DeliveryPointCode>793</oa:DeliveryPointCode>																	
+							</oa:Address>
+						</oa:Location>
+					</oa:ShipToParty>
+				</RequisitionSubLine>
+                <RequisitionSubLine>
+					<oa:ShipToParty>
+						<oa:Location>
+							<oa:Address>
+								<oa:BuildingName>XHALL</oa:BuildingName>	
+								<oa:DeliveryPointCode>793</oa:DeliveryPointCode>																	
+							</oa:Address>
+						</oa:Location>
+					</oa:ShipToParty>
+				</RequisitionSubLine>
+				<RequisitionSubLine>
+					<oa:ShipToParty>
+						<oa:Location>
+							<oa:Address>
+								<oa:BuildingName>GARE 54</oa:BuildingName>	
+								<oa:DeliveryPointCode>34347</oa:DeliveryPointCode>																	
+							</oa:Address>
+						</oa:Location>
+					</oa:ShipToParty>
+				</RequisitionSubLine>				
+			</RequisitionLine>			
+		</Requisition>
+	</DataArea>
+</ProcessRequisition>

@@ -1,0 +1,100 @@
+{
+	"modules":{
+		"materialrequest":{
+			"i18nkey" : "Gloria.i18n.startpage.pages.materialrequest.materialrequest",
+			"mapper" : ["MaterialRequest"],
+			"submodules" : {
+				"overview" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.materialrequest.materialrequest",
+					"mapper" : ["MaterialRequest"]
+				}
+			}
+		},
+		"procurement":{
+			"i18nkey" : "Gloria.i18n.startpage.pages.procurement.procurement",
+			"mapper" : ["Procurement"],
+			"submodules" : {
+				"overview" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.procurement.procurement",
+					"mapper" : ["Procurement"]
+				}
+			}
+		},
+		"deliverycontrol":{
+			"i18nkey" : "Gloria.i18n.startpage.pages.deliveryControl.deliveryControl",
+			"mapper" : ["DeliveryControl"],
+			"submodules" : {
+				"myOrderOverview" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.deliveryControl.overview",
+					"mapper" : ["DeliveryControlPartDetail"]
+				},
+				"assigndc" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.deliveryControl.assign",
+					"mapper" : ["AssignDeliveryControllertoSupplier"]
+				}
+			}
+		},
+		"warehouse":{
+			"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.warehouse",
+			"mapper" : ["WareHouse"],
+			"submodules" : {
+				"receive" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.receive",
+					"mapper" : ["GoodsReception"]
+				},
+				"store" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.store",
+					"mapper" : ["StorePart"]
+				},
+				"pick" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.pick",
+					"mapper" : ["Pick"]
+				},
+				"inpick" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.inpick",
+					"mapper" : ["InPick"]
+				},
+				"ship" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.ship",
+					"mapper" : ["Ship"]
+				},
+				"qualityinspection" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.qualityInspection",
+					"mapper" : ["QualityInspection"]
+				},
+				"qisettings" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.qiSettings",
+					"mapper" : ["QISettings"]
+				},
+				"inventory" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.warehouse.inventory",
+					"mapper" : ["InventoryOverview"]
+				}
+			}
+		},
+		"material":{
+			"i18nkey" : "Gloria.i18n.startpage.pages.material.material",
+			"mapper" : ["MaterialOverview"],
+			"submodules" : {
+				"linesoverview" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.material.overview",
+					"mapper" : ["MaterialOverview"]
+				}
+			}
+		},
+		"reports":{
+			"i18nkey" : "Gloria.i18n.startpage.pages.reports",
+			"mapper" : ["Reports"],
+			"submodules" : {
+				"report" : {
+					"i18nkey" : "Gloria.i18n.startpage.pages.reports",
+					"mapper" : ["Reports"]
+				}
+			}
+		},
+		"testingutility":{
+			"i18nkey" : "Gloria.i18n.startpage.pages.testutility.testutility",
+			"mapper" : ["TestingUtility"]
+		}
+	}
+}

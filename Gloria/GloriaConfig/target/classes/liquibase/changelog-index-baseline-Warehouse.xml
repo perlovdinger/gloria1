@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+  
+  <changeSet id="idx_Warehouse_Baseline" author="TIN2177">
+    <comment> Indexes on Warehouse</comment>
+    <createIndex tableName="WAREHOUSE" indexName="i_warehouse_siteid">
+      <column name="SITEID" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="WAREHOUSE" indexName="i_warehouse_siteid" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Storageroom_Baseline" author="TIN2177">
+    <comment> Indexes on Storage_Room</comment>
+    <createIndex tableName="STORAGE_ROOM" indexName="i_storageroom_code">
+      <column name="CODE" />
+    </createIndex>
+    <createIndex tableName="STORAGE_ROOM" indexName="i_storageroom_name">
+      <column name="NAME" />
+    </createIndex>
+    <createIndex tableName="STORAGE_ROOM" indexName="i_storageroom_description">
+      <column name="DESCRIPTION" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="STORAGE_ROOM" indexName="i_storageroom_code" />
+      <dropIndex tableName="STORAGE_ROOM" indexName="i_storageroom_name" />
+      <dropIndex tableName="STORAGE_ROOM" indexName="i_storageroom_description" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Zone_Baseline" author="TIN2177">
+    <comment> Indexes on Zone</comment>
+    <createIndex tableName="ZONE" indexName="i_zone_code">
+      <column name="CODE" />
+    </createIndex>
+    <createIndex tableName="ZONE" indexName="i_zone_name">
+      <column name="NAME" />
+    </createIndex>
+    <createIndex tableName="ZONE" indexName="i_zone_description">
+      <column name="DESCRIPTION" />
+    </createIndex>
+    <createIndex tableName="ZONE" indexName="i_zone_type">
+      <column name="TYPE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="ZONE" indexName="i_zone_code" />
+      <dropIndex tableName="ZONE" indexName="i_zone_name" />
+      <dropIndex tableName="ZONE" indexName="i_zone_description" />
+      <dropIndex tableName="ZONE" indexName="i_zone_type" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Binlocation_Baseline" author="TIN2177">
+    <comment> Indexes on Binlocation</comment>
+    <createIndex tableName="BIN_LOCATION" indexName="i_binlocation_code">
+      <column name="CODE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="BIN_LOCATION" indexName="i_binlocation_code" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Binlocationbalance_Baseline" author="TIN2177">
+    <comment> Indexes on Binlocationbalance</comment>
+    <createIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partnumber">
+      <column name="PARTNUMBER" />
+    </createIndex>
+    <createIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partversion">
+      <column name="PARTVERSION" />
+    </createIndex>
+    <createIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partaffiliation">
+      <column name="PARTAFFILIATION" />
+    </createIndex>
+    <createIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partmodification">
+      <column name="PARTMODIFICATION" />
+    </createIndex>
+    <createIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_deviation">
+      <column name="DEVIATION" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partnumber" />
+      <dropIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partversion" />
+      <dropIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partaffiliation" />
+      <dropIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_partmodification" />
+      <dropIndex tableName="BINLOCATION_BALANCE" indexName="i_binlocationbalance_deviation" />
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

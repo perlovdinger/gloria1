@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+  <persistence-unit name="WarehouseDomainPU">
+
+    <mapping-file>META-INF/WarehouseDomain_orm.xml</mapping-file>
+    <class>com.volvo.gloria.warehouse.d.entities.QualityInspectionSupplier</class>
+    <class>com.volvo.gloria.warehouse.d.entities.AisleRackRow</class>
+    <class>com.volvo.gloria.warehouse.d.entities.BaySetting</class>
+    <class>com.volvo.gloria.warehouse.d.entities.BinLocation</class>
+    <class>com.volvo.gloria.warehouse.d.entities.Placement</class>
+    <class>com.volvo.gloria.warehouse.d.entities.StorageRoom</class>
+    <class>com.volvo.gloria.warehouse.d.entities.Warehouse</class>
+    <class>com.volvo.gloria.warehouse.d.entities.Zone</class>
+    <class>com.volvo.gloria.warehouse.d.entities.QualityInspectionPart</class>
+    <class>com.volvo.gloria.warehouse.d.entities.QualityInspectionProject</class>
+    <class>com.volvo.gloria.warehouse.d.entities.Printer</class>
+    <class>com.volvo.gloria.warehouse.d.entities.BinlocationBalance</class>
+  </persistence-unit>
+
+</persistence>

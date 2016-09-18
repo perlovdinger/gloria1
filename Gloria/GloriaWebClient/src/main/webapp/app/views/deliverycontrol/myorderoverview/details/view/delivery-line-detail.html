@@ -1,0 +1,92 @@
+<div class="panel-heading">
+    <h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" js-id="{{data.id}}" href="#poDeliveryLineAccordion{{data.id}}">{{t "Gloria.i18n.deliverycontrol.orderOverview.header.expectedQuantity"}}: {{data.expectedQuantity}} &nbsp;&nbsp; 
+            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.expDate"}}: {{date data.expectedDate "Gloria.i18n.dateformat"}} </a></h4>
+</div>
+<div id="poDeliveryLineAccordion{{data.id}}" class="panel-collapse collapse" js-id="{{data.id}}">
+    <div id="panel{{data.id}}" class="panel-body">
+        <h4>
+            <strong>{{t "Gloria.i18n.deliverycontrol.orderOverview.text.generalInfo"}}</strong>
+        </h4>
+        <div class="well well-small">
+            <input type='hidden' name='deliveryschedules[{{data.id}}][id]' value='{{data.id}}'>
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.expectedQuantity"}}:
+                        </label>
+                        <div class="controls">
+                            {{data.expectedQuantity}}
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label" for='expectedDate{{data.id}}'>
+                            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.expectedDate"}}:
+                        </label>
+                        <div class="controls">
+                            {{#if data.expectedDate}}<input class="expectedDate js-date form-control" id='expectedDate{{data.id}}' name='deliveryschedules[{{data.id}}][expectedDate]' type="text" required="required" value='{{date data.expectedDate "Gloria.i18n.dateformat"}}'>{{else}}<input class="expectedDate js-date form-control" id='expectedDate{{data.id}}' name='deliveryschedules[{{data.id}}][expectedDate]' type="text">{{/if}} 
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group statusFlag'>
+                        <input class="form-control" name='deliveryschedules[{{data.id}}][statusFlag]' type="hidden" required="required" value='{{data.statusFlag}}'>
+                        <label class="control-group" for="statusFlag{{data.id}}">
+                            {{t "Gloria.i18n.deliverycontrol.orderOverview.header.statusFlag"}}:
+                        </label>
+                        <div class="dropdown" id='statusFlag{{data.id}}'>
+                            <a class="dropdown-toggle" id="drop" style="text-decoration: none" role="button" data-toggle="dropdown" href="#" onclick="return false">
+                            	{{#if_eq data.statusFlag null}}<i id="flagSelect"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "TODAY"}}<i id="flagSelect" class="fa fa-flag color-red"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.TODAY"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "TOMORROW"}}<i id="flagSelect" class="fa fa-flag color-orange"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.TOMORROW"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "THIS_WEEK"}}<i id="flagSelect" class="fa fa-flag color-yellow"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.THIS_WEEK"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "ON_TRACK"}}<i id="flagSelect" class="fa fa-check" style="color: blue;"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.ON_TRACK"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "CRITICAL"}}<i id="flagSelect" class="fa fa-exclamation-triangle"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.CRITICAL"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "WAITING"}}<i id="flagSelect" class="fa fa-clock-o"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.WAITING"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "ANSWERED"}}<i id="flagSelect" class="fa fa-phone" style="color: green;"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.ANSWERED"}}</span> {{/if_eq}}
+                                {{#if_eq data.statusFlag "CONFIRMED"}}<i id="flagSelect" class="fa fa-check" style="color: green;"></i>
+								<span id="flagSelectText">{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.CONFIRMED"}}</span> {{/if_eq}}
+								<b class="caret"></b></a>
+                            <ul class="dropdown-menu" id="flag" role="menu" aria-labelledby="drop">
+                                <li role="presentation" id="TODAY" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-flag color-red"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.TODAY"}}</a>
+                                </li>
+                                <li role="presentation" id="TOMORROW" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-flag color-orange"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.TOMORROW"}}</a>
+                                </li>
+                                <li role="presentation" id="THIS_WEEK" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-flag color-yellow"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.THIS_WEEK"}}</a>
+                                </li>
+                                <li role="presentation" id="ON_TRACK" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-check" style="color: blue;"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.ON_TRACK"}}</a>
+                                </li>
+                                <li role="presentation" id="CRITICAL" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-exclamation-triangle" style="color: red;"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.CRITICAL"}}</a>
+                                </li>
+                                <li role="presentation" id="WAITING" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-clock-o" style="color: yellow;"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.WAITING"}}</a>
+                                </li>
+                                <li role="presentation" id="ANSWERED" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-phone" style="color: green;"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.ANSWERED"}}</a>
+                                </li>
+                                <li role="presentation" id="CONFIRMED" class="flagClass">
+                                    <a role="menuitem" href="#" onclick="return false" style="text-align:left;"><i class="fa fa-check" style="color: green;"></i>{{t "Gloria.i18n.deliverycontrol.orderOverview.flags.CONFIRMED"}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <!-- Define conflicting data types as properties -->
+  <property name="AUTOGENTYPE" dbms="postgresql" value="BIGSERIAL" />
+  <property dbms="h2" name="AutoGenTYPE" value="BIGINT" />
+
+  <property name="INTTYPE" dbms="postgresql" value="int4" />
+  <property dbms="h2" name="INTTYPE" value="int" />
+
+  <property name="VERSIONCOLNAME" dbms="postgresql" value="version" />
+  <property dbms="h2" name="VERSIONCOLNAME" value="VERSION" />
+
+  <!-- change sets -->
+  <changeSet id="ProcureMaterial_1.0.3_01" author="TIN2177">
+    <!-- create supplier sequence -->
+    <createSequence sequenceName="supplier_supplier_oid_seq" />
+    <rollback>
+      <dropSequence sequenceName="supplier_supplier_oid_seq" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.0.3_02" author="TIN2177">
+    <!-- create supplier table -->
+    <createTable tableName="supplier">
+      <column autoIncrement="true" name="supplier_oid" type="BIGSERIAL">
+        <constraints primaryKey="true" primaryKeyName="supplier_pkey" />
+      </column>
+      <column name="suppliertype" type="SMALLINT" />
+      <column name="supplierid" type="VARCHAR(255)" />
+      <column name="suppliername" type="VARCHAR(255)" />
+      <column name="alias" type="BOOL" />
+      <column name="domain" type="SMALLINT" />
+      <column name="partaffiliation" type="VARCHAR(255)" />
+      <column name="partnumber" type="VARCHAR(255)" />
+      <column name="partversion" type="VARCHAR(255)" />
+      <column name="currency" type="VARCHAR(255)" />
+      <column name="priceunit" type="VARCHAR(255)" />
+      <column name="material_oid" type="BIGINT" />
+      <column name="procure_line_oid" type="BIGINT" />
+    </createTable>
+    <rollback>
+      <dropTable tableName="supplier" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.0.3_03" author="TIN2177">
+    <addColumn tableName="procure_line">
+      <column name="supplier_oid" type="BIGINT" />
+    </addColumn>
+    <rollback>
+      <dropColumn tableName="procure_line" columnName="supplier_oid" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.0.3_04" author="TIN2177">
+    <createIndex indexName="i_ntrnplr_procureline" tableName="supplier">
+      <column name="procure_line_oid" />
+    </createIndex>
+    <rollback>
+      <dropIndex tableName="supplier" indexName="i_ntrnplr_procureline" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.0.3_05" author="TIN2177">
+    <createIndex indexName="i_prcr_ln_selected" tableName="procure_line">
+      <column name="supplier_oid" />
+    </createIndex>
+    <rollback>
+      <dropIndex tableName="procure_line" indexName="i_prcr_ln_selected" />
+    </rollback>
+  </changeSet>
+
+</databaseChangeLog>

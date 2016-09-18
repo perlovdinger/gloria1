@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PurchaseOrganisations>
+  <PurchaseOrganisation organisationCode="GTT" organisationName="GTT Purchasing Europe">
+    <Buyer code="675" name="GTT Purchasing Europe" />
+  </PurchaseOrganisation>
+  <PurchaseOrganisation organisationCode="GTTS" organisationName="GTTS Purchasing Brazil">
+    <Buyer code="501" name="GTT Purchasing Brazil" />
+  </PurchaseOrganisation>
+  <PurchaseOrganisation organisationCode="GTTN" organisationName="GTTN Purchasing North America">
+    <Buyer code="405" name="GTT Purchasing North America" />
+  </PurchaseOrganisation>
+  <PurchaseOrganisation organisationCode="GTTA" organisationName="GTTA Purchasing Asia">
+    <Buyer code="456" name="GTT Purchasing Asia" />
+  </PurchaseOrganisation>
+
+  <PurchaseOrganisation organisationCode="VEPT" organisationName="VEPT VE Commercial Vehicled Ltd" />
+  <PurchaseOrganisation organisationCode="RTD" organisationName="RTD Renault Trucks Defense" />
+  <PurchaseOrganisation organisationCode="VBC" organisationName="VBC Volvo Bus Corporation" />
+  <PurchaseOrganisation organisationCode="VGP" organisationName="VGP Volvo Group Parts" />
+  <PurchaseOrganisation organisationCode="VTIN" organisationName="VTIN Volvo India (P) Ltd" />
+  <PurchaseOrganisation organisationCode="RT" organisationName="RT Renault Trucks" />
+  <PurchaseOrganisation organisationCode="NAPF" organisationName="NAPF Renault Trucks" />
+  <PurchaseOrganisation organisationCode="VBE" organisationName="VBE Volvo Bus Europe" />
+  <PurchaseOrganisation organisationCode="3PTH" organisationName="3PTH Thai-Swedish Assembly Co.Ltd" />
+  <PurchaseOrganisation organisationCode="VGPJ" organisationName="VGPJ UD Trucks Corporation" />
+  <PurchaseOrganisation organisationCode="VGPI" organisationName="VGPI Volvo India Private Limited" />
+  <PurchaseOrganisation organisationCode="THM" organisationName="THM Thai-Swedish Assembly Co.Ltd" />
+</PurchaseOrganisations>

@@ -1,0 +1,37 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="noprint">
+				{{#hasPermission "edit" 0="Pick"}}
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle"
+						data-toggle="dropdown" id="print-button">
+						{{t "Gloria.i18n.warehouse.buttons.print"}} <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" id="print-menu">
+						<li><a href="#" id="printPickList">{{t
+								"Gloria.i18n.warehouse.pick.button.printPickList"}}</a></li>
+						<li class="divider"></li>
+						<li><a href="#" id="printPullLabelList">{{t
+								"Gloria.i18n.warehouse.pick.button.printPullLabelList"}}</a></li>
+						<li class="disabled"><a href="#" id="printPullLabelPart">{{t
+								"Gloria.i18n.warehouse.pick.button.printPullLabelPart"}}</a></li>
+					</ul>
+				</div>
+				<a class="btn btn-default" id="pick-button" {{#if
+					isDisabled}}  disabled="true"{{/if}}>{{t
+					"Gloria.i18n.warehouse.pick.button.pick"}} </a> <a
+					class="btn btn-default" id="pickAndMarkAsShip-button" {{#unless
+					shipSkippable}}  disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.warehouse.pick.button.pickAndMarkAsShip"}} </a>
+				{{/hasPermission}} {{#if isEditable}} <a class="btn btn-default"
+					id="cancel-picklist-button">{{t
+					"Gloria.i18n.warehouse.pick.button.cancelPickList"}} </a> {{else}} <a
+					class="btn btn-default" id="cancel-picklist-button" disabled="true">{{t
+					"Gloria.i18n.warehouse.pick.button.cancelPickList"}} </a> {{/if}} <a
+					class="btn btn-default" id="cancel-button">{{t
+					"Gloria.i18n.warehouse.pick.button.cancel"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProcessMaterialProcureRequest xmlns:volvo="http://www.volvo.com/group/common/1_0" xmlns="http://www.volvo.com/MaterialProcureRequest/1_0">
+  <volvo:ApplicationArea>
+    <volvo:Sender>
+      <volvo:LogicalID>PROTOM</volvo:LogicalID>
+    </volvo:Sender>
+    <volvo:CreationDateTime>2015-05-21T10:26:14.117+02:00</volvo:CreationDateTime>
+    <volvo:BODID>2b3daee8-3a61-4689-8bba-b541027da855</volvo:BODID>
+  </volvo:ApplicationArea>
+	<DataArea>
+		<Process/>
+		<MaterialRequestChange>
+			<RequestType>TESTOBJECT</RequestType>
+			<MaterialRequestChangeAdd>
+				<Id>2000</Id>
+				<Type>FIRST_ASSEMBLY</Type>
+				<ChangeTechId>2000</ChangeTechId>
+				<ProcureMessageId>202</ProcureMessageId>
+				<Title/>
+				<MaterialRequestMessage>
+					<Header>					
+						<TestObjectHeader>
+            <TestObjectInfo>
+							<TestObject>
+								<Id>FH8732</Id>
+								<Type>V</Type>
+							</TestObject>
+				</TestObjectInfo>			
+              <PhaseInfo>								
+								<Phase>
+									<Id>3333</Id>
+									<Name>First build</Name>
+									<Type>FIRST_ASSEMBLY</Type>
+									<PlannedAssemblyStartDate>2015-04-01</PlannedAssemblyStartDate>
+								</Phase>
+							</PhaseInfo>
+							<BuildSeriesInfo>								
+								<BuildSeries>
+									<Id>1157</Id>
+									<Name>buildSerieA</Name>
+								</BuildSeries>
+							</BuildSeriesInfo>
+						</TestObjectHeader>
+						<Requester>
+							<UserId>V023232</UserId>
+							<Name>Ms Requester</Name>
+							<Notes/>
+						</Requester>
+						<ContactPerson>
+							<UserId>V035553</UserId>
+							<Name>Mr Contact</Name>
+						</ContactPerson>
+					</Header>
+					<Component>
+						<BuildSiteType>
+							<Id>8410</Id>
+						</BuildSiteType>
+					</Component>
+					<Component>
+						<BuildSiteType>
+							<Id>8411</Id>
+						</BuildSiteType>
+					</Component>
+				</MaterialRequestMessage>
+			</MaterialRequestChangeAdd>
+			<MaterialRequestChangeRemove>
+				<ChangeTechId>String</ChangeTechId>
+				<MtrlRequestVersion>String</MtrlRequestVersion>
+			</MaterialRequestChangeRemove>
+		</MaterialRequestChange>
+	</DataArea>
+</ProcessMaterialProcureRequest>

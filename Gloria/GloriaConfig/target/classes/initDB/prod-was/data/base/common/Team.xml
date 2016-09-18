@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Teams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Team name="LYS" type="DELIVERY_CONTROL" companyCodeGroup="FR" />
+  <Team name="LYS" type="INTERNAL_PROCURE" companyCodeGroup="FR" />
+  <Team name="LYS" type="MATERIAL_CONTROL" companyCodeGroup="FR" />  
+</Teams>

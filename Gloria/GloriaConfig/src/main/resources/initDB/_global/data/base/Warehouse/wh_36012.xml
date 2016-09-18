@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Warehouses>
+    <Warehouse siteName="Renault Trucks Gare X2" siteId="36012" siteCode="BL Gare X2" setUp="ROW" qiSupported="false" >
+        <StorageRoom name="1" description="" code="1">
+            <Zon type="STORAGE" name="S" description="" code="S">
+                <AisleRackRow setUp="ROW" numberOfBay="1" code="1">
+                    <BaySetting numberOfPositions="1" numberOfLevels="1" bayCode="A"/>
+                </AisleRackRow>
+                <BinLocation position="1" level="1" code="1-A-01-01" bayCode="A" allocation="FIXED"/>
+            </Zon>
+            <Zon type="SHIPPING" name="Shipping" description="" code="Shipping">
+                <BinLocation position="1" level="1" code="SH-01-01-01" bayCode="01" allocation="FIXED"/>
+            </Zon>
+            <Zon type="TO_STORE" name="To Store" description="" code="To Store">
+                <BinLocation position="1" level="1" code="TS-01-01-01" bayCode="01" allocation="FIXED"/>
+            </Zon>
+            <Zon type="QUARANTINE" name="Quarantine" description="" code="Quarantine">
+                <BinLocation position="1" level="1" code="BL-01-01-01" bayCode="01" allocation="FIXED"/>
+            </Zon>
+        </StorageRoom>
+    </Warehouse>
+</Warehouses>

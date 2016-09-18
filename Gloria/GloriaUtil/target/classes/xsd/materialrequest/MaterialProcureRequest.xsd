@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.volvo.com/MaterialProcureRequest/1_0" xmlns:volvo="http://www.volvo.com/group/common/1_0" targetNamespace="http://www.volvo.com/MaterialProcureRequest/1_0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+	<xsd:import namespace="http://www.volvo.com/group/common/1_0" schemaLocation="VolvoCommon_1_0.xsd"/>
+	<xsd:element name="ProcessMaterialProcureRequest" type="ProcessMaterialProcureRequestType"/>
+	<!-- Start of Complex Types -->
+	<xsd:complexType name="ProcessMaterialProcureRequestType">
+		<xsd:complexContent>
+			<xsd:extension base="volvo:BODType">
+				<xsd:sequence>
+					<xsd:element name="DataArea">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="Process" type="volvo:ProcessType"/>
+								<xsd:element name="MaterialRequestChange" type="MaterialRequestChangeType" maxOccurs="unbounded"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MaterialRequestChangeType">
+		<xsd:sequence>
+			<!--<xsd:element name="RequestType" type="RequestType" maxOccurs="1"/>-->
+			<xsd:element name="RequestType" type="xsd:string" maxOccurs="1"/>
+			<xsd:element name="MaterialRequestChangeAdd" type="MaterialRequestChangeTypeAdd" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="MaterialRequestChangeRemove" type="MaterialRequestChangeTypeRemove" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MaterialRequestChangeTypeAdd">
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Type" type="xsd:string" minOccurs="1"/>
+			<xsd:element name="ChangeTechId" type="xsd:string"/>
+			<xsd:element name="MtrlRequestVersion" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ProcureMessageId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Title" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ProcurePrioritity" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ApprovalInfo" type="ApprovalInfoType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="MaterialRequestMessage" type="MaterialRequestMessageType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MaterialRequestChangeTypeRemove">
+		<xsd:sequence>
+			<xsd:element name="ChangeTechId" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="MtrlRequestVersion" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ApprovalInfoType">
+		<xsd:sequence>
+			<xsd:element name="MailformId" type="xsd:string"/>
+			<xsd:element name="ApprovalAmount" type="xsd:double" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ApprovalCurrency" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MaterialRequestMessageType">
+		<xsd:sequence>
+			<xsd:element name="Header" type="HeaderType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Component" type="ComponentType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="HeaderType">
+		<xsd:sequence>
+			<xsd:element name="MaterialRequestHeader" type="MaterialRequestHeaderType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="TestObjectHeader" type="TestObjectHeaderType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="AdditonalUsageHeader" type="AdditonalUsageHeaderType" minOccurs="0" maxOccurs="1"/>						
+			<xsd:element name="Requester" type="RequesterType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ContactPerson" type="ContactPersonType" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="MaterialController" type="MaterialControllerType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="MaterialRequestHeaderType">
+		<xsd:sequence>
+			<xsd:element name="ReferenceId" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="ReferenceGroup" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="OutboundLocationId" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="OutboundStartDate" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="RequiredShipToArrive" type="xsd:date" minOccurs="0" maxOccurs="1"/>            
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TestObjectHeaderType">
+		<xsd:sequence>
+			<xsd:element name="TestObjectInfo" type="TestObjectInfoType" maxOccurs="1"/>
+			<xsd:element name="PhaseInfo" type="PhaseType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="BuildSeriesInfo" type="BuildSeriesType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AdditonalUsageHeaderType">
+		
+	</xsd:complexType>
+	<xsd:complexType name="TestObjectInfoType">
+		<xsd:sequence>
+			<xsd:element name="TestObjectRemove" type="TestObjectRemoveType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="TestObject" type="TestObjectType" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TestObjectRemoveType">
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TestObjectType">
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string"/>
+			<xsd:element name="Type" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PhaseType">
+		<xsd:sequence>
+			<xsd:element name="PhaseRemove" type="PhaseRemoveType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Phase" type="PhaseAddType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PhaseRemoveType">
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PhaseAddType">
+		<xsd:annotation>
+			<xsd:documentation>A Phase represents a Build of a TestObject at a specific buildlocation
+       Phase type can be REFERENCE/FIRST_ASSEMBLY/REBUILD</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:int"/>
+			<xsd:element name="Name" type="xsd:string"/>
+			<xsd:element name="Type" type="xsd:string"/>
+			<xsd:element name="PlannedAssemblyStartDate" type="xsd:date"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="BuildSiteType">
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="BuildSeriesType">
+		<xsd:sequence>
+			<xsd:element name="BuildSeriesRemove" type="BuildSeriesRemoveType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="BuildSeries" type="BuildSeriesAddType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="BuildSeriesRemoveType">
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="BuildSeriesAddType">
+		<xsd:annotation>
+			<xsd:documentation>Build Series of TestObject</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string"/>
+			<xsd:element name="Name" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FinancialInfoType">
+		<xsd:sequence>
+			<xsd:element name="ProjectId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CompanyCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GlAccount" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CostCenter" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="WbsCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="InternalOrderNoSAP" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="RequesterType">
+		<xsd:annotation>
+			<xsd:documentation>Requester of the MaterialRequestMessage</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="UserId" type="xsd:string"/>
+			<xsd:element name="Name" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Notes" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ContactPersonType">
+		<xsd:annotation>
+			<xsd:documentation>Contact person of the procure request</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="UserId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Name" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+    <xsd:complexType name="MaterialControllerType">
+      <xsd:annotation>
+        <xsd:documentation>Materia Controller assigned to procure request</xsd:documentation>
+      </xsd:annotation>
+      <xsd:sequence>
+        <xsd:element name="UserId" type="xsd:string" minOccurs="0"/>
+        <xsd:element name="Name" type="xsd:string" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+	<xsd:complexType name="ComponentType">
+		<xsd:sequence>
+			<xsd:element name="BuildSiteType" type="BuildSiteType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Line" type="LineType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AddtionalUsageType">
+		<xsd:sequence>
+			<xsd:element name="Line" type="LineType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="LineType">
+		<xsd:sequence>
+			<xsd:element name="LineRemoveType" type="LineRemoveType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="LineAddType" type="LineAddType" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="LineRemoveType">
+		<xsd:sequence>
+			<xsd:element name="ProcureLinkId" type="xsd:long" minOccurs="1" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="LineAddType">
+		<xsd:sequence>
+			<xsd:element name="BomLink" type="BomLinkType" maxOccurs="1"/>
+			<xsd:element name="ItemToVariantLink" type="ItemToVariantLinkType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="Part" type="PartType" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="FinancialInfo" type="FinancialInfoType" maxOccurs="1"/>
+			<xsd:element name="RequiredShipToArrive" type="xsd:date" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="BomLinkType">
+		<xsd:sequence>
+			<xsd:element name="ProcureLinkId" type="xsd:long"/>
+			<xsd:element name="PartAffiliation" type="xsd:string"/>
+			<xsd:element name="PartNumber" type="xsd:string"/>
+			<xsd:element name="PartVersion" type="xsd:string"/>
+			<xsd:element name="PartModification" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RefAssemblyPartNo" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RefAssemblyPartVersion" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Quantity" type="xsd:int"/>
+			<xsd:element name="ProductClassId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="FunctionGroup" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="FunctionGroupSuffix" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ProcureComment" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ItemToVariantLinkType">
+		<xsd:annotation>
+			<xsd:documentation>ItemToVariantLink attributes</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:long"/>
+			<xsd:element name="ModularHarness" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PartType">
+		<xsd:annotation>
+			<xsd:documentation>KOLA Part attributes</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string"/>
+			<xsd:element name="UnitOfMeasure" type="UnitOfMeasureType"/>
+			<xsd:element name="DesignResponsible" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="FunctionGroup" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ObjectNumber" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Demarcation" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Characteristics" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Alias" type="AliasType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AliasType">
+		<xsd:sequence>
+			<xsd:element name="Id" type="xsd:string"/>
+			<xsd:element name="Domain" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- End of Complex Types -->
+	<xsd:complexType name="SingelDemandHeaderType">
+		<xsd:sequence>
+			<xsd:element name="ReferenceId" type="xsd:string"/>
+			<xsd:element name="BuiIdId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="BuildStartDate" type="xsd:date" minOccurs="0"/>
+			<xsd:element name="RequiredShipToArrive" type="xsd:date" minOccurs="0"/>
+			<xsd:element name="ReferenceGroup" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OutboundDate" type="xsd:date" minOccurs="0"/>
+			<xsd:element name="OutboundLocationId" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="RequestType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="SINGLE"/>
+			<xsd:enumeration value="MULTIPLE"/>
+			<xsd:enumeration value="FOR_STOCK"/>
+			<xsd:enumeration value="ADDITIONAL_USAGE"/>
+			<xsd:enumeration value="TESTOBJECT"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="UnitOfMeasureType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="PCE"/>
+			<xsd:enumeration value="MMT"/>
+			<xsd:enumeration value="GRM"/>
+			<xsd:enumeration value="CM2"/>
+			<xsd:enumeration value="ML"/>
+			<xsd:enumeration value="MTR"/>
+			<xsd:enumeration value="KGM"/>
+			<xsd:enumeration value="MTK"/>
+			<xsd:enumeration value="MTQ"/>
+			<xsd:enumeration value="DMQ"/>
+			<xsd:enumeration value="FOT"/>
+			<xsd:enumeration value="INH"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

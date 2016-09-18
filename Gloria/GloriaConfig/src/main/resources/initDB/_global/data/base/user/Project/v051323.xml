@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-04-08T10:03:49.777+0200</SendTime>
+    </GmfHeader>
+    <CIAction>U</CIAction>
+    <UserID>V051323</UserID>
+    <UserFirstName>Romain</UserFirstName>
+    <UserLastName>Protti</UserLastName>
+    <OrganisationID>SE000093</OrganisationID>
+    <OrganisationName>931234</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>2</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>Göteborg Sweden</Street1>
+      <PostCode>99999</PostCode>
+      <City>Göteborg</City>
+      <CountryCode>SE</CountryCode>
+      <PhoneNo>+46 31 3229852</PhoneNo>
+      <MobilePhoneNumber>+46 73 9029852</MobilePhoneNumber>
+      <Email>romain.protti@volvo.com</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>SE000093</OrganisationID>
+      <CompName>3P</CompName>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationCompany>
+      <OrganisationID>SE000093</OrganisationID>
+      <CompName>VTC</CompName>
+      <IsMainCompanyFlag>N</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <UserCategory>
+        <UserCategoryID>Material_Controller</UserCategoryID>
+        <UserCategoryDescription>Material Controller</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-04-08T10:03:49.777+0200</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

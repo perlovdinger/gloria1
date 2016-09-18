@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  <bean id="appl.properties" class="com.volvo.gloria.config.b.beans.ApplicationProperties">
+    <property name="environment" value="gloria-dev-was" />
+   
+    <property name="sitesToMigrate" value="664,1620,1722,47670,2919,4042,8374,8418,34347,42102,45907" />
+    <property name="messageSend" value="true" />
+  </bean>
+
+</beans> 

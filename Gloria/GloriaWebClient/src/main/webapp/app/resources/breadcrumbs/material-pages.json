@@ -1,0 +1,7 @@
+{
+  	"material" : {"url" : "material", "i18nkey" : "Gloria.i18n.material.material"},
+  	"linesoverview" : {"url" : "material/linesoverview", "i18nkey" : "Gloria.i18n.material.overview.moverview"},
+  	"linedetails" : {"url" : "material/linedetails", "i18nkey" : "Gloria.i18n.material.details.linedetails"},
+  	"requests" : {"url" : "material/linesoverview/requests", "i18nkey" : "Gloria.i18n.material.requests.requests"},
+  	"requestlist" : {"url" : "material/linesoverview/requestlist", "i18nkey" : "Gloria.i18n.material.requests.requestlist"}
+}

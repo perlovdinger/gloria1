@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+  
+  <changeSet id="idx_Financematerial_Baseline" author="TIN2177">
+    <comment> Indexes on Finance_Material</comment>
+    <createIndex tableName="FINANCE_MATERIAL" indexName="i_financematerial_projectid">
+      <column name="PROJECTID" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="FINANCE_MATERIAL" indexName="i_financematerial_projectid" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Materialrequest_Baseline" author="TIN2177">
+    <comment> Indexes on Material_Request</comment>
+    <createIndex tableName="MATERIAL_REQUEST" indexName="i_materialrequest_contactpersonname">
+      <column name="CONTACTPERSONNAME" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQUEST" indexName="i_materialrequest_requesterid">
+      <column name="REQUESTERID" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="MATERIAL_REQUEST" indexName="i_materialrequest_contactpersonname" />
+      <dropIndex tableName="MATERIAL_REQUEST" indexName="i_materialrequest_requesterid" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Materialrequestversion_Baseline" author="TIN2177">
+    <comment> Indexes on Material_Req_Version</comment>
+    <createIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_title">
+      <column name="TITLE" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_mtrlrequestversion">
+      <column name="MTRLREQUESTVERSION" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_status">
+      <column name="STATUS" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_statusdate">
+      <column name="STATUSDATE" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_title" />
+      <dropIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_mtrlrequestversion" />
+      <dropIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_status" />
+      <dropIndex tableName="MATERIAL_REQ_VERSION" indexName="i_materialrequestversion_statusdate" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Materialrequestobject_Baseline" author="TIN2177">
+    <comment> Indexes on Material_Request_Object</comment>
+    <createIndex tableName="MATERIAL_REQUEST_OBJECT" indexName="i_materialrequestobject_name">
+      <column name="NAME" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="MATERIAL_REQUEST_OBJECT" indexName="i_materialrequestobject_name" />
+    </rollback>
+  </changeSet>
+
+  <changeSet id="idx_Materialrequestline_Baseline" author="TIN2177">
+    <comment> Indexes on Material_Request_Line</comment>
+    <createIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partnumber">
+      <column name="PARTNUMBER" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partversion">
+      <column name="PARTVERSION" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partname">
+      <column name="PARTNAME" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partaffiliation">
+      <column name="PARTAFFILIATION" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partmodification">
+      <column name="PARTMODIFICATION" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_unitofmeasure">
+      <column name="UNITOFMEASURE" />
+    </createIndex>
+    <createIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_functiongroup">
+      <column name="FUNCTIONGROUP" />
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partnumber" />
+      <dropIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partversion" />
+      <dropIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partname" />
+      <dropIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partaffiliation" />
+      <dropIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_partmodification" />
+      <dropIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_unitofmeasure" />
+      <dropIndex tableName="MATERIAL_REQUEST_LINE" indexName="i_materialrequestline_functiongroup" />
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

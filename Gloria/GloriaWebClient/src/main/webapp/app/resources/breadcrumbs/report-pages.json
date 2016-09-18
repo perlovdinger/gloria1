@@ -1,0 +1,13 @@
+{
+  "reports" : {"url" : "", "i18nkey" : "Gloria.i18n.reports.report"},
+  "report" : {"url" : "reports/report", "i18nkey" : "Gloria.i18n.reports.report"},
+  "order" : {"url" : "reports/order", "i18nkey" : "Gloria.i18n.reports.reportTypes.order"},
+  "material" : {"url" : "reports/material", "i18nkey" : "Gloria.i18n.reports.reportTypes.material"},
+  "performance" : {"url" : "reports/performance", "i18nkey" : "Gloria.i18n.reports.reportTypes.performance"},
+  "partDeliveryPrecision" : {"url" : "reports/partDeliveryPrecision", "i18nkey" : "Gloria.i18n.reports.reportTypes.partDeliveryPrecision"},
+  "warehouse" : {"url" : "reports/whReport", "i18nkey" : "Gloria.i18n.reports.reportTypes.warehouse"},
+  "warehouseAction" : {"url" : "reports/whActionReport", "i18nkey" : "Gloria.i18n.reports.reportTypes.warehouseAction"},
+  "warehouseCost" : {"url" : "reports/whCostReport", "i18nkey" : "Gloria.i18n.reports.reportTypes.warehouseCost"},
+  "partWithoutMovement" : {"url" : "reports/partWithoutMovement", "i18nkey" : "Gloria.i18n.reports.reportTypes.partWithoutMovement"},
+  "warehouseTransaction" : {"url" : "reports/whTransactionReport", "i18nkey" : "Gloria.i18n.reports.reportTypes.warehouseTransaction"}
+}

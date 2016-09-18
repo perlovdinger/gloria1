@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 3 sp1 (http://www.altova.com) by VOLVO INFORMATION TECH AB (VOLVO INFORMATION TECH AB) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.volvo.com/MaterialProcureResponse/1_0" xmlns:volvo="http://www.volvo.com/group/common/1_0" targetNamespace="http://www.volvo.com/MaterialProcureResponse/1_0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+	<xsd:import namespace="http://www.volvo.com/group/common/1_0" schemaLocation="VolvoCommon_1_0.xsd"/>  
+	<xsd:element name="ProcessMaterialProcureResponse" type="ProcessMaterialProcureResponseType"/>
+	<!-- Start of Complex Types -->
+	<xsd:complexType name="ProcessMaterialProcureResponseType">
+		<xsd:complexContent>
+			<xsd:extension base="volvo:BODType">
+				<xsd:sequence>
+					<xsd:element name="DataArea">
+						<xsd:complexType>
+							<xsd:sequence>								
+								<xsd:element name="MaterialProcureResponse" type="MaterialProcureResponseType" maxOccurs="unbounded"/>
+							</xsd:sequence>
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MaterialProcureResponseType">
+		<xsd:sequence>
+			<xsd:element name="ChangeTechId" type="xsd:string"/>
+			<xsd:element name="MtrlRequestId" type="xsd:string"/>
+			<xsd:element name="MtrlRequestVersion" type="xsd:string"/>
+			<xsd:element name="ChangeIdStatus" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

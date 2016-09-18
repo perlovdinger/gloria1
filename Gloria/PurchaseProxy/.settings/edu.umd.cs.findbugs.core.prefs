@@ -1,0 +1,9 @@
+#FindBugs User Preferences
+#Fri Sep 09 16:03:51 CEST 2016
+detector_threshold=2
+effort=min
+excludefilter0=.fbExcludeFilterFile|true
+filter_settings=Default|BAD_PRACTICE,CORRECTNESS,EXPERIMENTAL,I18N,MALICIOUS_CODE,MT_CORRECTNESS,PERFORMANCE,SECURITY,STYLE|false|15
+filter_settings_neg=NOISE|
+includefilter0=.fbIncludeFilterFile|true
+run_at_full_build=true

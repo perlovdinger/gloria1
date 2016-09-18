@@ -1,0 +1,20 @@
+{{#if metas}}
+{{#each metas}}
+<div class='row'>
+    <div class='col-sm-8'>
+        <div>
+            <i class="fa fa-file-text-o"></i>
+            <a href="{{this.url}}" download>{{this.name}}</a>
+        </div>
+    </div>
+</div>
+{{/each}}
+{{else}}
+<div class='row'>
+    <div class='col-sm-8'>
+        <div>
+            <span>{{t "Gloria.i18n.noAttachmentsAvailable"}}</span>
+        </div>
+    </div>
+</div>
+{{/if}}

@@ -1,0 +1,16 @@
+{
+  	"procurement" : {"url" : "procurement", "i18nkey" : "Gloria.i18n.procurement.procurement"},
+  	"unassignedRequests" : {"url" : "procurement/unassignedRequests", "i18nkey" : "Gloria.i18n.procurement.unassignedRequests"},
+  	"overview" : {"url" : "procurement/overview/toProcure", "i18nkey" : "Gloria.i18n.procurement.overview"},
+  	"toProcure" : {"url" : "procurement/overview/toProcure", "i18nkey" : "Gloria.i18n.procurement.overviewModule.tab.toProcure"},
+  	"modification" : {"url" : "procurement/overview/modification", "i18nkey" : "Gloria.i18n.procurement.overviewModule.tab.modification"},
+  	"onBuildSite" : {"url" : "", "i18nkey" : "Gloria.i18n.procurement.overviewModule.tab.onBuildSite"},
+  	"procured" : {"url" : "procurement/overview/procured", "i18nkey" : "Gloria.i18n.procurement.overviewModule.tab.procured"},
+  	"change" : {"url" : "procurement/overview/change", "i18nkey" : "Gloria.i18n.procurement.overviewModule.tab.change"},
+  	"inbox" : {"url" : "", "i18nkey" : "Gloria.i18n.procurement.overviewModule.tab.inbox"},
+  	"internalProcurement" : {"url" : "procurement/overview/internalProcurement", "i18nkey" : "Gloria.i18n.procurement.overviewModule.tab.internalProcurement"},
+  	"modifyDetails" : {"url" : "", "i18nkey" : "Gloria.i18n.procurement.modifyDetails"},
+  	"viewDetails" : {"url" : "", "i18nkey" : "Gloria.i18n.procurement.viewDetails"},
+  	"procureLineDetail" : {"url" : "", "i18nkey" : "Gloria.i18n.procurement.procureLineDetail"},
+  	"changeDetails": {"url" : "", "i18nkey" : "Gloria.i18n.procurement.changeDetails_breadcrumb"} 	
+}

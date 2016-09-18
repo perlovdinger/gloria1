@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+
+  <named-query name="UserRolesQuery">
+    <query>SELECT uc FROM  UserCategory uc WHERE 
+                  uc.userApplication.gloriaUser.gloriaUserOid=:userOrganisationTypeOid</query>
+  </named-query>
+  <named-query name="getApplicationSettingByUserIdAndSettingType">
+    <query>select appset from GloriaUser uot, UserApplication oa, ApplicationSetting appset where uot.userID=:userId and uot.gloriaUserOid = oa.gloriaUser.gloriaUserOid and oa.userApplicationOid = appset.userApplication.userApplicationOid and appset.applicationSettingID=:applicationSettingId</query>
+  </named-query>
+  <named-query name="getUsersByUserId">
+    <query>select uot from GloriaUser uot where uot.userID=:userId</query>
+  </named-query>
+  <named-query name="getUserByApplicationSettingValue">
+    <query>select uot from ApplicationSetting appset,UserApplication oa,GloriaUser uot where appset.applicationSettingValue=:applicationSettingValue and 
+    appset.userApplication.userApplicationOid = oa.userApplicationOid and oa.gloriaUser.gloriaUserOid = uot.gloriaUserOid and uot.inactive = false</query>
+  </named-query>
+</entity-mappings>

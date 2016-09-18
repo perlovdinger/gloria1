@@ -1,0 +1,39 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t
+				"Gloria.i18n.procurement.procureDetail.text.multipleUpdate"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div>
+				<div id="appModalMessage">
+					<span class="help-inline"></span>
+				</div>
+				<form id="multipleUpdateForm" name="multipleUpdateForm">
+					<fieldset>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label required"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.warehouseId"}}:
+									</label>
+									<div class="controls">{{warehouseSelector
+										idPrefix='warehouseId_' namePrefix='finalWhSiteId'}}</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="save">{{t
+				"Gloria.i18n.buttons.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

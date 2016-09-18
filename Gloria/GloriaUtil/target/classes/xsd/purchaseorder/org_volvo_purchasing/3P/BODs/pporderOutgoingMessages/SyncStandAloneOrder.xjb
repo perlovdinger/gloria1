@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jxb:bindings version="1.0" 
+      xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:annox="http://annox.dev.java.net"
+      xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+      jxb:extensionBindingPrefixes="inheritance">
+    <jxb:bindings namespace="http://www.openapplications.org/oagis/9/components" schemaLocation="../../../../org_openapplications_platform/1_0/Common/OAGi/Components/Components.xsd" node="/xsd:schema">
+		<jxb:schemaBindings>
+		  <jxb:package  name="com.volvo.group.prototypepurchaseorder.components._1_0"/>
+		</jxb:schemaBindings>
+        <jxb:bindings node="//xsd:complexType[@name='DocumentReferenceType']">
+            <jxb:bindings node=".//xsd:attribute[@name='type']">
+                <jxb:property name="typeAttr"/>
+            </jxb:bindings>
+        </jxb:bindings>
+    </jxb:bindings>    
+    <jxb:bindings namespace="http://www.openapplications.org/oagis/9/ordermanagement" schemaLocation="../../../../org_openapplications_platform/1_0/Common/OAGi/Components/OrderManagementComponents.xsd" node="/xsd:schema">
+       <jxb:bindings node="//xsd:complexType[@name='QualificationTermType']">
+            <jxb:bindings node=".//xsd:attribute[@name='type']">
+                <jxb:property name="typeAttr"/>
+            </jxb:bindings>
+        </jxb:bindings>
+    </jxb:bindings>
+    <jxb:bindings namespace="http://www.volvo.com/3P/Purchasing/2008/10" schemaLocation="SyncStandAloneOrder.xsd" node="/xsd:schema">
+	  <jxb:schemaBindings>
+	    <jxb:package  name="com.volvo.group.prototypepurchaseorder._1_0"/>
+	  </jxb:schemaBindings>
+    </jxb:bindings>
+</jxb:bindings> 

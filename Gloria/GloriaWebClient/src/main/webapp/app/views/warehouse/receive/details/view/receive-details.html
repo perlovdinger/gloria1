@@ -1,0 +1,115 @@
+<form novalidate="novalidate">
+	<div class="panel-group accordion">
+		<div id="PartInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#partInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.PartInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="partInformation" class="panel-collapse collapse in">
+				<div id="partInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="orderInfo" class="panel panel-default" style="display: none;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#orderInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.orderInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="orderInformation" class="panel-collapse collapse in">
+				<div id="orderInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="transferInfo" class="panel panel-default"
+			style="display: none;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#transferInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.transferInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="transferInformation" class="panel-collapse collapse">
+				<div id="transferInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="shipInfo" class="panel panel-default" style="display: none;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#shipInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.shipInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="shipInformation" class="panel-collapse collapse">
+				<div id="shipInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="returnInfo" class="panel panel-default"
+			style="display: none;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#returnInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.returnInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="returnInformation" class="panel-collapse collapse">
+				<div id="returnInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="receiveInfo" class="panel panel-default"
+			style="display: none;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#receiveInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.receiveInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="receiveInformation" class="panel-collapse collapse in">
+				<div id="receiveInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="documentsInfo" class="panel panel-default"
+			style="display: none;">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#documentsInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.documentsInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="documentsInformation" class="panel-collapse collapse">
+				<div id="documentsInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="problemInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#problemInformation"><strong>{{t
+							"Gloria.i18n.warehouse.receive.details.header.problemInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="problemInformation" class="panel-collapse collapse in">
+				<div id="problemInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div align="center" class="button-bar floatFooter">
+		<a class="btn btn-default" id="printLabel">{{t
+			"Gloria.i18n.buttons.printLabel"}}</a> {{#hasPermission "edit"
+		0="GoodsReception"}} <a class="btn btn-default" id="save">{{t
+			"Gloria.i18n.buttons.save"}}</a> {{/hasPermission}} <a
+			class="btn btn-default" id="cancel">{{t
+			"Gloria.i18n.buttons.cancel"}}</a>
+	</div>
+</form>

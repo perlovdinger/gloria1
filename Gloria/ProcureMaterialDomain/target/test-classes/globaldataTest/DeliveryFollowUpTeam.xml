@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeliveryFollowUpTeams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <DeliveryFollowUpTeam name="AGEO_PE" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="8374" shipToId="8374" transitAddressId="8374" domesticInvoiceId="2920" internationalInvoiceId="2920"
+      companyCode="JP40" ppSuffix="472" comment="Ageo" displayName="Ageo 472" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="AGEO_VE" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="8374" shipToId="8374" transitAddressId="8374" domesticInvoiceId="2920" internationalInvoiceId="2920"
+      companyCode="JP40" ppSuffix="472" comment="Ageo" displayName="Ageo 472" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="BLR" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="7901" shipToId="42102" transitAddressId="42102" domesticInvoiceId="7901" internationalInvoiceId="7901"
+      companyCode="IN01" ppSuffix="514" comment="Bangalore CV" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="HAG" followUpType="PROJECT">
+    <SupplierCounterPart materialUserId="4311" shipToId="45907" transitAddressId="45907" domesticInvoiceId="4295" internationalInvoiceId="4295"
+      companyCode="US45" ppSuffix="578" comment="PT HAG" displayName="HAG 578" />
+    <SupplierCounterPart materialUserId="4311" shipToId="45907" transitAddressId="45907" domesticInvoiceId="4295" internationalInvoiceId="4295"
+      companyCode="US45" ppSuffix="585" comment="PT HAG" displayName="HAG free parts 585" />
+    <SupplierCounterPart materialUserId="4311" shipToId="4042" transitAddressId="4042" domesticInvoiceId="4295" internationalInvoiceId="4295"
+      companyCode="US45" ppSuffix="587" comment="PT HAG ship to GSO" displayName="HAG ship to GSO 587" />
+    <SupplierCounterPart materialUserId="4311" shipToId="1620" transitAddressId="1620" domesticInvoiceId="4295" internationalInvoiceId="4295"
+      companyCode="US45" ppSuffix="661" comment="PT HAG ship to Skövde" displayName="HAG ship to SKO 661" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="GSO" followUpType="PROJECT">
+    <SupplierCounterPart materialUserId="4042" shipToId="4042" transitAddressId="4042" domesticInvoiceId="83010" internationalInvoiceId="83010"
+      companyCode="US10" ppSuffix="567" comment="GSO" displayName="GSO 567" />
+    <SupplierCounterPart materialUserId="4042" shipToId="45907" transitAddressId="45907" domesticInvoiceId="83010" internationalInvoiceId="83010"
+      companyCode="US10" ppSuffix="044" comment="Prototype material for Greensboro delivered Hagerstown" displayName="GSO ship to HAG 44" />
+    <SupplierCounterPart materialUserId="4042" shipToId="4388" transitAddressId="4388" domesticInvoiceId="83010" internationalInvoiceId="83010"
+      companyCode="US10" ppSuffix="013" comment="Prototype material for Greensboro delivered New River Valley" displayName="GSO ship to NRV 13" />
+    <SupplierCounterPart materialUserId="4042" shipToId="4285" transitAddressId="4285" domesticInvoiceId="83010" internationalInvoiceId="83010"
+      companyCode="US10" ppSuffix="081" comment="Prototype material for Greensboro delivered Macungie" displayName="GSO ship to MAC 81" />
+    <SupplierCounterPart materialUserId="4042" shipToId="47941" transitAddressId="47941" domesticInvoiceId="83010" internationalInvoiceId="83010"
+      companyCode="US10" ppSuffix="570" comment="Prototype material for Greensboro delivered Camrett" displayName="GSO ship to Camrett 570" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="CUR" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="2801" shipToId="47670" transitAddressId="47670" domesticInvoiceId="2800" internationalInvoiceId="2800"
+      companyCode="BR03" ppSuffix="519" comment="Curitiba Bus" displayName="Curitiba Bus 519" />
+    <SupplierCounterPart materialUserId="2800" shipToId="47670" transitAddressId="47670" domesticInvoiceId="2800" internationalInvoiceId="2800"
+      companyCode="BR03" ppSuffix="544" comment="Curitiba Truck" displayName="Curitiba Truck 544" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="GOT_PE" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="1722" shipToId="1722" transitAddressId="1722" domesticInvoiceId="1622" internationalInvoiceId="1622"
+      companyCode="SE27" ppSuffix="772" comment="GOT Engine" displayName="GOT Engine 772" />
+    <SupplierCounterPart materialUserId="1722" shipToId="1722" transitAddressId="1722" domesticInvoiceId="1622" internationalInvoiceId="1622"
+      companyCode="SE27" ppSuffix="621" comment="GOT Transmission" displayName="GOT Transmission 621" />
+    <SupplierCounterPart materialUserId="1722" shipToId="45907" transitAddressId="45907" domesticInvoiceId="1622" internationalInvoiceId="1622"
+      companyCode="SE27" ppSuffix="599" comment="PT HAG payed by GOT" displayName="HAG payed by GOT 599" />
+    <SupplierCounterPart materialUserId="4311" shipToId="45907" transitAddressId="45907" domesticInvoiceId="1622" internationalInvoiceId="1622"
+      companyCode="SE27" ppSuffix="158" comment="GOT PE" displayName="HAG payed by GOT 158" disabledProcure="true" />
+    <SupplierCounterPart materialUserId="1001" shipToId="1722" transitAddressId="1722" domesticInvoiceId="1622" internationalInvoiceId="1622"
+      companyCode="SE27" ppSuffix="191" comment="GOT PE" displayName="GOT Transmission 191" disabledProcure="true" />
+    <SupplierCounterPart materialUserId="1001" shipToId="1722" transitAddressId="1722" domesticInvoiceId="1622" internationalInvoiceId="1622"
+      companyCode="SE27" ppSuffix="196" comment="GOT PE" displayName="GOT Engine" disabledProcure="true" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="VECV" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="8418" shipToId="8418" transitAddressId="8418" domesticInvoiceId="8418" internationalInvoiceId="8418"
+      companyCode="IN08" ppSuffix="383" comment="VCEV" displayName="VECV 383" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="GOT_VE" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="1001" shipToId="664" transitAddressId="664" domesticInvoiceId="1020" internationalInvoiceId="1020"
+      companyCode="SE26" ppSuffix="187" comment="CV GOT" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="MAL_PE" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="2919" shipToId="2919" transitAddressId="2919" domesticInvoiceId="2856" internationalInvoiceId="2856"
+      companyCode="SE27" ppSuffix="166" comment="PT MAL" displayName="Malmö 166" />
+  </DeliveryFollowUpTeam>
+
+  <DeliveryFollowUpTeam name="LYS" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="8412" shipToId="34347" transitAddressId="34347" domesticInvoiceId="8412" internationalInvoiceId="8412"
+      companyCode="FR46" ppSuffix="576" comment="CV Lyon" />
+    <SupplierCounterPart materialUserId="8412" shipToId="36012" transitAddressId="36012" domesticInvoiceId="8412" internationalInvoiceId="8412"
+      companyCode="FR46" ppSuffix="068" comment="CV Lyon" />
+    <SupplierCounterPart materialUserId="8412" shipToId="34331" transitAddressId="34331" domesticInvoiceId="8412" internationalInvoiceId="8412"
+      companyCode="FR46" ppSuffix="071" comment="CV Lyon" />
+    <SupplierCounterPart materialUserId="8412" shipToId="40382" transitAddressId="40382" domesticInvoiceId="8412" internationalInvoiceId="8412"
+      companyCode="FR46" ppSuffix="076" comment="CV Lyon" />
+    <SupplierCounterPart materialUserId="8412" shipToId="34347" transitAddressId="34347" domesticInvoiceId="8412" internationalInvoiceId="8412"
+      companyCode="FR46" ppSuffix="780" comment="CV Lyon" />
+  </DeliveryFollowUpTeam>
+</DeliveryFollowUpTeams>

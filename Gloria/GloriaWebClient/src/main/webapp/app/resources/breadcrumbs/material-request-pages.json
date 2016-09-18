@@ -1,0 +1,6 @@
+{
+  	"materialrequest" : {"url" : "materialrequest/overview", "i18nkey" : "Gloria.i18n.materialrequest.materialrequest"},
+  	"overview" : {"url" : "materialrequest/overview", "i18nkey" : "Gloria.i18n.materialrequest.overview.overview"},
+  	"createrequest" : {"url" : "materialrequest/overview/createrequest", "i18nkey" : "Gloria.i18n.materialrequest.createrequest"},
+  	"openrequest" : {"url" : "materialrequest/overview/openrequest", "i18nkey" : "Gloria.i18n.materialrequest.openrequest"}
+}

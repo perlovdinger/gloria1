@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+
+
+
+   Schema agency: 	Open Applications Group 
+
+
+   OAGIS® Revision:    9.3  
+   Date:               11 August 2008 
+   Copyright 1997-2008, All Rights Reserved 
+
+  	
+   Copyright (C) Open Applications Group (1997-2008). All Rights Reserved.
+  
+  
+   This is an OAGIS® BOD XML Schema (XSD) Definition.
+
+   License information for this file is provided in the file **OAGi License Agreement.txt** that is provided with this download package.
+
+   For support, more information, or to report implementation bugs, please contact the Open Applications Group at oagis@openapplications.org.
+    
+   XML Schema 
+     
+    Name: /OAGi-BPI-Platform/org_openapplications_oagis/9_3/Developer/Nouns/PurchaseOrder.xsd
+-->
+		
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.openapplications.org/oagis/9" targetNamespace="http://www.openapplications.org/oagis/9" elementFormDefault="qualified" attributeFormDefault="unqualified">
+        <xsd:include schemaLocation="../../../../org_openapplications_platform/1_0/Common/OAGi/Components/OrderManagementComponents.xsd"/>
+        <xsd:element name="PurchaseOrder" type="PurchaseOrderType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">The purpose of the PurchaseOrder Business Object Document is to communicate an order to purchase goods from a buyer to a supplier. The PurchaseOrder carries information to and from the buyer and supplier. The PurchaseOrder is a legally binding document once both Parties agree to the contents and the specified terms and conditions of the order.  </xsd:documentation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">The Process PurchaseOrder sends the electronic form of a purchase order document from a customer to a supplier in order to purchase n-number of Lines each of which containes an Ordered Item. </xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PurchaseOrderHeader" type="PurchaseOrderHeaderType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">The Purchase Order Header contains information that applies to the entire purchase order.  This Component is required.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PurchaseOrderLine" type="PurchaseOrderLineType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">The Purchase Order Line indicates the ordered item or product ordered along with the quantity, price and other descriptive information. It is also possible to provide additional Parties, PaymentTerms, Charge, and Attachment information as needed at the line level.
+
+At least one occurrence of this Component is required for each occurrence of the Purchase Order.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PurchaseOrderSubLine" type="PurchaseOrderSubLineType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">The Component Subline represents any additional information concerning the product on the Line.  The Subline can be used to describe a specific configuration of the ordered item.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="PurchaseOrderSchedule" type="PurchaseOrderScheduleType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">The Component Schedule  represents the requested ship or delivery dates for goods ordered.  The Schedule is an optional Component.  The Schedule can not be associated with a Subline.  It is only associated with a Line.</xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:complexType name="PurchaseOrderType">
+                <xsd:annotation>
+                        <xsd:documentation source="http://www.openapplications.org/oagis/9">The schema type for PurchaseOrder. MAKE ALL CHANGES TO ORDER, NOT PO! PurchaseOrder's  base abstract type, Order, is shared between PurchaseOrder and SalesOrder. SalesOrder is essentially an extension of PurchaseOrder, but in order to use the local-global design pattern, each of PO and SO needs to instantiate its own Header and Line elements.To do this, we factored out the PO content models, instantiated both PO and SO from Order.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:sequence>
+                        <xsd:element ref="PurchaseOrderHeader" minOccurs="0"/>
+                        <xsd:element ref="PurchaseOrderLine" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:sequence>
+        </xsd:complexType>
+        <xsd:complexType name="PurchaseOrderHeaderType">
+                <xsd:complexContent>
+                        <xsd:extension base="OrderHeaderType">
+                                <xsd:sequence>
+                                        <xsd:element ref="TaxExemptCodes" minOccurs="0"/>
+                                        <xsd:element ref="Event" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="Classification" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="OrderDateTime" minOccurs="0"/>
+                                        <xsd:element ref="BuyerParty" minOccurs="0"/>
+                                        <xsd:element ref="AcceptByDateTime" minOccurs="0"/>
+                                        <xsd:element ref="ReleaseNumber" minOccurs="0"/>
+                                        <xsd:element ref="RequisitionReference" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="QuoteReference" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="SalesOrderReference" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="PurchaseOrderLineType">
+                <xsd:complexContent>
+                        <xsd:extension base="OrderLineType">
+                                <xsd:sequence>
+                                        <xsd:element ref="TaxExemptIndicator" minOccurs="0"/>
+                                        <xsd:element ref="TaxExemptCodes" minOccurs="0"/>
+                                        <xsd:element ref="Event" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="Party" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="BackOrderedQuantity" minOccurs="0"/>
+                                        <xsd:element ref="ReceivedQuantity" minOccurs="0"/>
+                                        <xsd:element ref="OpenQuantity" minOccurs="0"/>
+                                        <xsd:element ref="QuoteReference" minOccurs="0"/>
+                                        <xsd:element ref="SalesOrderReference" minOccurs="0"/>
+                                        <xsd:element ref="BuyerParty" minOccurs="0"/>
+                                        <xsd:element ref="PurchaseOrderSubLine" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="PurchaseOrderSchedule" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="PurchaseOrderSubLineType">
+                <xsd:complexContent>
+                        <xsd:extension base="RequestSubLineType">
+                                <xsd:sequence>
+                                        <xsd:element ref="OpenQuantity" minOccurs="0"/>
+                                        <xsd:element ref="TransportationTerm" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="Event" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="Party" minOccurs="0" maxOccurs="unbounded"/>
+                                        <xsd:element ref="ShippingInstructions" minOccurs="0"/>
+                                        <xsd:element ref="Status" minOccurs="0"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="PurchaseOrderScheduleType">
+                <xsd:complexContent>
+                        <xsd:extension base="ProcurementScheduleType">
+                                <xsd:sequence>
+                                        <xsd:element ref="Status" minOccurs="0"/>
+                                        <xsd:element ref="UserArea" minOccurs="0"/>
+                                </xsd:sequence>
+                        </xsd:extension>
+                </xsd:complexContent>
+        </xsd:complexType>
+</xsd:schema>

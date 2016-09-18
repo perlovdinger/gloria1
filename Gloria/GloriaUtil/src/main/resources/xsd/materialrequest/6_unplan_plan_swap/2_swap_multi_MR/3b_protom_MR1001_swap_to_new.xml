@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ProcessMaterialProcureRequest xmlns:ns2="http://www.volvo.com/MaterialProcureRequest/1_0" xmlns:ns3="http://www.volvo.com/kola/part/1_0" xmlns:ns4="http://www.volvo.com/group/common/1_0">
+	<ns4:ApplicationArea>
+		<ns4:Sender>
+			<ns4:LogicalID>PROTOM</ns4:LogicalID>
+		</ns4:Sender>
+		<ns4:CreationDateTime>2016-01-20T14:33:15.062+01:00</ns4:CreationDateTime>
+		<ns4:BODID>cb22109b-54b1-48d1-adfd-80667c2427ff</ns4:BODID>
+	</ns4:ApplicationArea>
+	<ns2:DataArea>
+		<ns2:Process/>
+		<ns2:MaterialRequestChange>
+			<ns2:RequestType>TESTOBJECT</ns2:RequestType>
+			<ns2:MaterialRequestChangeAdd>
+				<ns2:Id>1001</ns2:Id>
+				<ns2:Type>MR</ns2:Type>
+				<ns2:ChangeTechId>101</ns2:ChangeTechId>
+				<ns2:ProcureMessageId>188</ns2:ProcureMessageId>
+				<ns2:Title>Gloria Test</ns2:Title>
+				<ns2:MaterialRequestMessage>
+					<ns2:Header>
+						<ns2:TestObjectHeader>
+							<ns2:TestObjectInfo>
+								<ns2:TestObjectRemove>
+									<ns2:Id>TO1_SW</ns2:Id>
+								</ns2:TestObjectRemove>
+								<ns2:TestObject>
+									<ns2:Id>TO11_SW</ns2:Id>
+									<ns2:Type>VI</ns2:Type>
+								</ns2:TestObject>
+							</ns2:TestObjectInfo>							
+						</ns2:TestObjectHeader>
+						<ns2:Requester>
+							<ns2:UserId>V075869</ns2:UserId>
+							<ns2:Name>Anki Jansson</ns2:Name>
+							<ns2:Notes/>
+						</ns2:Requester>
+					</ns2:Header>
+					<ns2:Component>
+						<ns2:BuildSiteType>
+							<ns2:Id>31967</ns2:Id>
+						</ns2:BuildSiteType>
+					</ns2:Component>
+				</ns2:MaterialRequestMessage>
+			</ns2:MaterialRequestChangeAdd>
+		</ns2:MaterialRequestChange>
+	</ns2:DataArea>
+</ns2:ProcessMaterialProcureRequest>

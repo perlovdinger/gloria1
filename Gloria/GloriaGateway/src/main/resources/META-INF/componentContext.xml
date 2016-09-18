@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+  <!-- Base package to scan for @ContainerManaged annotations -->
+  <context:component-scan base-package="com.volvo.gloria.gateway" use-default-filters="false"
+    name-generator="com.volvo.jvs.runtime.springutils.ContainerManagedBeanNameGenerator">
+    <context:include-filter type="annotation" expression="com.volvo.jvs.runtime.platform.ContainerManaged" />
+  </context:component-scan>
+  <bean id="userGatewayMessageListener" parent="messageListener">
+    <property name="destination" ref="userGatewayQueue" />
+    <property name="messageListener" ref="userGatewayBean" />
+  </bean>
+  <bean id="purchaseOrderGatewayMessageListener" parent="messageListener">
+    <property name="destination" ref="purchaseOrderGatewayQueue" />
+    <property name="messageListener" ref="purchaseOrderGatewayBean" />
+  </bean>
+  <bean id="costCenterGatewayMessageListener" parent="messageListener">
+    <property name="destination" ref="costCenterGatewayQueue" />
+    <property name="messageListener" ref="costCenterGatewayBean" />
+  </bean>
+  <bean id="wbsElementGatewayMessageListener" parent="messageListener">
+    <property name="destination" ref="wbsElementGatewayQueue" />
+    <property name="messageListener" ref="wbsElementGatewayBean" />
+  </bean>
+  <bean id="carryOverGatewayMessageListener" parent="messageListener">
+    <property name="destination" ref="carryOverGatewayQueue" />
+    <property name="messageListener" ref="carryOverGatewayBean" />
+  </bean>
+  <bean id="requestGatewayMessageListener" parent="messageListener">
+    <property name="destination" ref="procureRequestTOGatewayQueue" />
+    <property name="messageListener" ref="requestGatewayBean" /> 
+  </bean>
+  <bean id="materialProcureResponseGatewayMessageListener" parent="messageListenerBus">
+    <property name="destination" ref="materialProcureResponseSenderQueue" />
+    <property name="messageListener" ref="materialProcureResponseGatewayBean" /> 
+  </bean>
+</beans>

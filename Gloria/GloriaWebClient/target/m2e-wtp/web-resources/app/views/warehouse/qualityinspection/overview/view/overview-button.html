@@ -1,0 +1,111 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="noprint">
+				{{#if_eq module "inStock"}} <a class="btn btn-default" {{#unless
+					permittedActions.addInformation}}disabled="true"
+					{{/unless}}" id="addInformation-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.addInformation"}}
+				</a> {{#hasPermission "edit" 0="QualityInspection"}}<a
+					class="btn btn-default" {{#unless
+					permittedActions.markForInspection}}disabled="true"
+					{{/unless}}" id="markForInspection-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.markForInspection"}}
+				</a> <a class="btn btn-default" {{#unless
+					permittedActions.unmark}}disabled="true"
+					{{/unless}}"  id="unmark-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.unmark"}}
+				</a>{{/hasPermission}} {{/if_eq}} {{#if_eq module "mandatory"}} <a
+					class="btn btn-default" {{#unless
+					permittedActions.addInformation}}disabled="true"
+					{{/unless}}" id="addInformation-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.addInformation"}}
+				</a> {{#hasPermission "edit" 0="QualityInspection"}} <a
+					class="btn btn-default" {{#unless
+					permittedActions.multipleUpdate}}disabled="true"
+					{{/unless}} id="edit-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.multipleUpdate"}}
+				</a> {{/hasPermission}} <span class="noprint divider-vertical"></span>
+				{{#hasPermission "edit" 0="QualityInspection"}} <a
+					class="btn btn-default" id="createTransportLabel-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.createTranLabel"}}
+				</a> {{/hasPermission}}
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle"
+						data-toggle="dropdown" id="print-button">
+						{{t
+						"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.print"}}
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" id="print-menu">
+						<li><a href="#" id="printTL">{{t
+								"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.printTL"}}</a>
+						</li>
+					</ul>
+				</div>
+				{{#hasPermission "edit" 0="QualityInspection"}} <a
+					class="btn btn-default" id="approve-button">{{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.approve"}}</a>{{/hasPermission}}
+				{{/if_eq}} {{#if_eq module "optional"}} <a class="btn btn-default"
+					{{#unless permittedActions.addInformation}}disabled="true"
+					{{/unless}}" id="addInformation-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.addInformation"}}
+				</a>{{#hasPermission "edit" 0="QualityInspection"}} <a
+					class="btn btn-default" {{#unless
+					permittedActions.markForInspection}}disabled="true"
+					{{/unless}}" id="markForInspection-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.markForInspection"}}
+				</a> <a class="btn btn-default" {{#unless
+					permittedActions.unmark}}disabled="true"
+					{{/unless}}" id="unmark-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.unmark"}}
+				</a>{{/hasPermission}} {{/if_eq}} {{#if_eq module "blockedPart"}} <a
+					class="btn btn-default" {{#unless
+					permittedActions.addInformation}}disabled="true"
+					{{/unless}}" id="addInformation-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.addInformation"}}
+				</a> {{#hasPermission "edit" 0="QualityInspection"}} <a
+					class="btn btn-default" {{#unless
+					permittedActions.multipleUpdate}}disabled="true"
+					{{/unless}} id="edit-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.multipleUpdate"}}
+				</a> {{/hasPermission}} <span class="noprint divider-vertical"></span>
+				{{#hasPermission "edit" 0="QualityInspection"}} <a
+					class="btn btn-default" id="createTransportLabel-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.createTranLabel"}}
+				</a> {{/hasPermission}}
+				<div class="btn-group">
+					<button type="button" class="btn btn-default dropdown-toggle"
+						data-toggle="dropdown" id="print-button">
+						{{t
+						"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.print"}}
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" id="print-menu">
+						<li><a href="#" id="printTL">{{t
+								"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.printTL"}}</a>
+						</li>
+					</ul>
+				</div>
+				{{#hasPermission "edit" 0="QualityInspection"}} <a
+					class="btn btn-default" id="approve-button">{{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.approve"}}</a>{{/hasPermission}}
+				{{/if_eq}} {{#if_eq module "setMarking"}} {{#hasPermission "edit"
+				0="QualityInspection"}} <a class="btn btn-default" {{#unless
+					permittedActions.markAsMandatory}}disabled="true"
+					{{/unless}}" id="markAsMandatory-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.markAsMandatory"}}
+				</a> <a class="btn btn-default" {{#unless
+					permittedActions.markAsOptional}}disabled="true"
+					{{/unless}}" id="markAsOptional-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.markAsOptional"}}
+				</a> <a class="btn btn-default" {{#unless
+					permittedActions.unmark}}disabled="true"
+					{{/unless}}" id="unmark-button"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.qioverview.buttons.unmark"}}
+				</a>{{/hasPermission}} {{/if_eq}} <a id="clear-filter"
+					class="clear-filter">{{t "Gloria.i18n.gridpanel.clearFilter"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

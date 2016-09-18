@@ -1,0 +1,6057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:SyncWBSElementShort xmlns:ns1="http://finance.group.volvo.com/WBSElement/1_0">
+	<Sync ReasonCode="InitialLoad">
+		<MessageHeader>
+			<MsgVersion>1.0.0</MsgVersion>
+			<Sender>
+				<LogicalId>VGMF</LogicalId>
+				<ComponentId>FA5_001</ComponentId>
+			</Sender>
+			<Receiver>
+				<LogicalId>TEST</LogicalId>
+			</Receiver>
+			<CreationDateTime>2014-06-27T07:49:45</CreationDateTime>
+		</MessageHeader>
+		<Sequence>
+			<SequenceIdentifier>001</SequenceIdentifier>
+			<PositionIdentifier>1 </PositionIdentifier>
+			<Size>1 </Size>
+		</Sequence>
+	</Sync>
+	<WBSRec>
+		<WBS>A2211-GM-00000001-01</WBS>
+		<CC>SE26</CC>
+		<Desc>P2497 Single red axle</Desc>
+		<ShortID>A2211-GM-0000000</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00027</WBS>
+		<CC>SE26</CC>
+		<Desc>TRAITEMENT PB QUALITE MASCOTT</Desc>
+		<ShortID>M23-F900</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00034</WBS>
+		<CC>SE26</CC>
+		<Desc>TRAITEMENT PB QUALITE MAGNUM</Desc>
+		<ShortID>M23-P900</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00034-02</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY MAGNUM GOT</Desc>
+		<ShortID>M23-00355</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00069-07</WBS>
+		<CC>SE26</CC>
+		<Desc>27064618, FEATURE MVDV50</Desc>
+		<ShortID>W60-1011</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00069-16-01</WBS>
+		<CC>SE26</CC>
+		<Desc>FA-LOW82 VERS-AUS</Desc>
+		<ShortID>W60-1011</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00070</WBS>
+		<CC>SE26</CC>
+		<Desc>DR50 (MD 7 EURO 3 INSTAL IN PREMIUM)</Desc>
+		<ShortID>W60-1012</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00070-01</WBS>
+		<CC>SE26</CC>
+		<Desc>INSTAL MOTEUR MD7 EURO4 PREMIUM DIST</Desc>
+		<ShortID>W60-DR50</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00070-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27064036, 1012 INST D7 EURO 3</Desc>
+		<ShortID>W60-1012</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00074</WBS>
+		<CC>SE26</CC>
+		<Desc>ENHANCED SAFETY</Desc>
+		<ShortID>W60-1017</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00074-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cab safety</Desc>
+		<ShortID>W60-MR89</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00074-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27060277-000 EJB Firetesting</Desc>
+		<ShortID>W60-1017</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00077</WBS>
+		<CC>SE26</CC>
+		<Desc>GLOBAL TELEMATICS FOR RT</Desc>
+		<ShortID>W60-1025</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00079</WBS>
+		<CC>SE26</CC>
+		<Desc>MDV FOR SAD STEP2 (EURO3)</Desc>
+		<ShortID>W60-1050</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00079-05-07</WBS>
+		<CC>SE26</CC>
+		<Desc>15600-P1050 CPM-121001050</Desc>
+		<ShortID>W60-1050</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00079-06</WBS>
+		<CC>SE26</CC>
+		<Desc>MDSA MIDLUM</Desc>
+		<ShortID>W60-MT09</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00082</WBS>
+		<CC>SE26</CC>
+		<Desc>EURO 5 MANDATORY RVMD</Desc>
+		<ShortID>W60-1631</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00082-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Gear Box shift cable routing update</Desc>
+		<ShortID>W60-1631</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00082-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Euclid to Catia V5 remodelling</Desc>
+		<ShortID>W60-1631</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00082-01-03</WBS>
+		<CC>SE26</CC>
+		<Desc>IND SUPP DMU STRUCTURE DR/DV</Desc>
+		<ShortID>W60-1631</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00083-01</WBS>
+		<CC>SE26</CC>
+		<Desc>DEV. SYSTEME POST TRAITEMENT EURO4</Desc>
+		<ShortID>W60-2423</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00083-08</WBS>
+		<CC>SE26</CC>
+		<Desc>27064080, P2423 GBG MTRL TO RVI</Desc>
+		<ShortID>W60-2423</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00083-13</WBS>
+		<CC>SE26</CC>
+		<Desc>27064376, 2423 EL BATT BOX</Desc>
+		<ShortID>W60-2423</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00083-15</WBS>
+		<CC>SE26</CC>
+		<Desc>27062745, 2423 CH  BATT BOX ALT 2</Desc>
+		<ShortID>W60-2423</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00083-18-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27064381-000, 2423 CV  BATTBOX</Desc>
+		<ShortID>W60-2423</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00089</WBS>
+		<CC>SE26</CC>
+		<Desc>NEW GLOBAL TELEMATICS HARDWARE</Desc>
+		<ShortID>W60-2485</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00089-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27064360, NEW TELEMATICS HARDWARE</Desc>
+		<ShortID>W60-2485</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00089-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>G10-00089-99</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090</WBS>
+		<CC>SE26</CC>
+		<Desc>GLOBAL AUDIO PLATFORM</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27066424, NEW GLOBAL AUDIO PLATFORM</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27066424AAA, VIBR+TEMPCYCLING AUD.PL.F</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-02-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27066424-.AAB väggar</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-02-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27066424-.AAC Fältprov</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-02-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27066424-.AAD sls Gunnarsson</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-02-05</WBS>
+		<CC>SE26</CC>
+		<Desc>27066424-.AAE Askkopp</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-02-06</WBS>
+		<CC>SE26</CC>
+		<Desc>27066424-.AAF fläkt</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GLOBAL NEW AUDIO PLATFORM</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-04-01</WBS>
+		<CC>SE26</CC>
+		<Desc>400359 PRESTUDY, NEW GLOBAL AUDIO PLTFRM</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-04-02</WBS>
+		<CC>SE26</CC>
+		<Desc>500417 GLOBAL AUDIO PROJECT P2489</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>1621 - Global Audio Platform</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-06</WBS>
+		<CC>SE26</CC>
+		<Desc>GLOBAL AUDIO PLATFORM - Component</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-06-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Global Audio Platform - Delphi penalty</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-06-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GLAD - Internal 3P Red Card</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-08</WBS>
+		<CC>SE26</CC>
+		<Desc>GBO GLOBAL AUDIO PLATFORM - Component</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-08-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GBO Global Audio - Delphi Penalty</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-08-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GLAD - Internal 3P Red Card</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-09</WBS>
+		<CC>SE26</CC>
+		<Desc>Allent GLOBAL AUDIO PLATFORM - Component</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-09-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Allent GLobal Audio - Delphi Penalty</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00090-09-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GLAD - Internal Red 3P Card</Desc>
+		<ShortID>W60-2489</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00093-01</WBS>
+		<CC>SE26</CC>
+		<Desc>NEW GLOBAL TRUCK PLATFORM</Desc>
+		<ShortID>W60-WK04</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00095</WBS>
+		<CC>SE26</CC>
+		<Desc>PNG CORE EU MAGNUM</Desc>
+		<ShortID>W60-2701</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00095-05</WBS>
+		<CC>SE26</CC>
+		<Desc>27063804 CV SUPPORT PNG 2701-1</Desc>
+		<ShortID>W60-2701</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00095-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>G10-00095-99</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00097-02</WBS>
+		<CC>SE26</CC>
+		<Desc>6X4 suspension pneumatique</Desc>
+		<ShortID>W60-HP46</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00097-03</WBS>
+		<CC>SE26</CC>
+		<Desc>8X2 et 8X4 LC</Desc>
+		<ShortID>W60-HP47</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00097-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>G10-00097-99</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00098-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27062711 PNG KERAX</Desc>
+		<ShortID>W60-27014</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00098-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27062711000 PNG KERAX</Desc>
+		<ShortID>W60-27014</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00099</WBS>
+		<CC>SE26</CC>
+		<Desc>PNG CORE EU KERAX AWD</Desc>
+		<ShortID>W60-27015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00101-04</WBS>
+		<CC>SE26</CC>
+		<Desc>Restyl int MIDLUM</Desc>
+		<ShortID>W60-WP04</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00101-05</WBS>
+		<CC>SE26</CC>
+		<Desc>SpeciFICITES CABINES pour RENAULT</Desc>
+		<ShortID>W60-WP8R</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00103</WBS>
+		<CC>SE26</CC>
+		<Desc>MAGNUM CAB UPDATE</Desc>
+		<ShortID>W60-2718</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00104</WBS>
+		<CC>SE26</CC>
+		<Desc>MD11 EURO 4 MAND. IN KERAX + AMT C</Desc>
+		<ShortID>W60-2721</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00105</WBS>
+		<CC>SE26</CC>
+		<Desc>MD11 EURO 4 MAND. IN PREMIUM</Desc>
+		<ShortID>W60-2722</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110</WBS>
+		<CC>SE26</CC>
+		<Desc>Loco 9 - Distribution Transport Solution</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Innovative Urban Freight System FIDEUS</Desc>
+		<ShortID>R11-1390</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-03</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA EE SUPPORT V2U</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-04</WBS>
+		<CC>SE26</CC>
+		<Desc>PLANNING for undecided AE Loco 9 proj</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-04-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cpt budget loco9</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-05</WBS>
+		<CC>SE26</CC>
+		<Desc>TRUE</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-05-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Cab Entry &amp; Exit</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-06</WBS>
+		<CC>SE26</CC>
+		<Desc>Cab Entry &amp;  Exit</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-07</WBS>
+		<CC>SE26</CC>
+		<Desc>LOCO 9 Management</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-07-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT LOCO 9 Management</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-07-03</WBS>
+		<CC>SE26</CC>
+		<Desc>AGEO LOCO 9 Management</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-08</WBS>
+		<CC>SE26</CC>
+		<Desc>Phase 2 investigations</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-09</WBS>
+		<CC>SE26</CC>
+		<Desc>Urban delivery Medium Duty</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-10</WBS>
+		<CC>SE26</CC>
+		<Desc>Freilot 3P</Desc>
+		<ShortID>R01-01123</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-10-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Freilot 3P</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-10-02</WBS>
+		<CC>SE26</CC>
+		<Desc>FREILOT</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-10-03</WBS>
+		<CC>SE26</CC>
+		<Desc>FREILOT</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-11</WBS>
+		<CC>SE26</CC>
+		<Desc>LY INNOVATIVE SOLUTIONS FOR LCOE</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-11-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT INNOVATIVE SOLUTIONS FOR LCOE</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-11-03</WBS>
+		<CC>SE26</CC>
+		<Desc>AGE INNOVATIVE SOLUTIONS FOR LCOE</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-12</WBS>
+		<CC>SE26</CC>
+		<Desc>LY LCOE construction</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-12-01</WBS>
+		<CC>SE26</CC>
+		<Desc>LY LCOE construction</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-13</WBS>
+		<CC>SE26</CC>
+		<Desc>LY Innovative Distribution Architecture</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-13-01</WBS>
+		<CC>SE26</CC>
+		<Desc>LY Innovative Distribution Architecture</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-14</WBS>
+		<CC>SE26</CC>
+		<Desc>Light weight BIW for LCOE</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-14-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Light weight BIW for LCOE</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-15</WBS>
+		<CC>SE26</CC>
+		<Desc>Efficient city MD 7.5-8t</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00110-15-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Efficient city MD 7.5-8t</Desc>
+		<ShortID>R11-00110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00169</WBS>
+		<CC>SE26</CC>
+		<Desc>ANALYSE DE LA CONCURRENCE</Desc>
+		<ShortID>R31-Z500</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00172</WBS>
+		<CC>SE26</CC>
+		<Desc>TVX POUR ASSISTANCE TECHNIQUE</Desc>
+		<ShortID>V01-3500</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00172-01</WBS>
+		<CC>SE26</CC>
+		<Desc>TVX POUR ASSISTANCE TECHNIQUE</Desc>
+		<ShortID>V01-3500</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00172-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT TVX POUR ASSISTANCE TECHNIQUE</Desc>
+		<ShortID>V01-3500</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00196</WBS>
+		<CC>SE26</CC>
+		<Desc>REDUCTION PRF MULTIGAMME</Desc>
+		<ShortID>M22-W420</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00238-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>G10-00238-99</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00239</WBS>
+		<CC>SE26</CC>
+		<Desc>EURO5 Mandatory</Desc>
+		<ShortID>W60-2631</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00239-03</WBS>
+		<CC>SE26</CC>
+		<Desc>W60-2631 Euro V Mandatory</Desc>
+		<ShortID>W60-2631</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00267</WBS>
+		<CC>SE26</CC>
+		<Desc>Travaux pour clients extérieurs ponct.</Desc>
+		<ShortID>V01-3002</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00267-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Travaux pour clients extérieurs ponct.</Desc>
+		<ShortID>V01-3002</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00300</WBS>
+		<CC>SE26</CC>
+		<Desc>PNG CORE NA - HIGHWAY</Desc>
+		<ShortID>W60-6000</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301</WBS>
+		<CC>SE26</CC>
+		<Desc>MD16 &amp; ISX in VXL (P2403 local)</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27064829, AIR FLOW ANALYSIS</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27064829-AAA, AIR FLOW ANALYSIS</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03</WBS>
+		<CC>SE26</CC>
+		<Desc>MUSCLE HOOD PROJECT</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>200286 DEPT.610 ONLY-PROJ MGT.MUSCLE H</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-02</WBS>
+		<CC>SE26</CC>
+		<Desc>200287 DEPT.630 ONLY-CAB-MUSCLE HOOD PRJ</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-03</WBS>
+		<CC>SE26</CC>
+		<Desc>200288 DPT.640 ONLY-CHASSIS MUSCLE HD P</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-04</WBS>
+		<CC>SE26</CC>
+		<Desc>200289 DPT.660 ONLY-ELECTRICAL MUSCLE HD</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-05</WBS>
+		<CC>SE26</CC>
+		<Desc>200291 DPT.680&apos;S ONLY-VEH.DYNMCS MUSLCE</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-06</WBS>
+		<CC>SE26</CC>
+		<Desc>200313 DRIVER&apos;S REWARDS (EMS-2) P14-1139</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-07</WBS>
+		<CC>SE26</CC>
+		<Desc>300307 DEPT.605 ONLY-QUALITY SUPPORT P</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-08</WBS>
+		<CC>SE26</CC>
+		<Desc>300312 D12 IDLE MANAGEMENT SYSTEM</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09</WBS>
+		<CC>SE26</CC>
+		<Desc>TEST PROJECTS</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-01</WBS>
+		<CC>SE26</CC>
+		<Desc>200360 P2403 CHASSIS DYNO DEV. US&apos;02 ISX</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-02</WBS>
+		<CC>SE26</CC>
+		<Desc>200361 P2403 CHASSIS DYNO - US&apos;04 ISX</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-03</WBS>
+		<CC>SE26</CC>
+		<Desc>200362 P2403 CHASSIS DYNO - US&apos;04 D16</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-04</WBS>
+		<CC>SE26</CC>
+		<Desc>300150 2403 FRONT TOWING TEST</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-05</WBS>
+		<CC>SE26</CC>
+		<Desc>300151 NVH: RIDE &amp; HANDLIG</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-06</WBS>
+		<CC>SE26</CC>
+		<Desc>300157 EXT &amp; INT NOISE VALID</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-07</WBS>
+		<CC>SE26</CC>
+		<Desc>300188 P2403 CAB/HOOD SHK TEST/L5/VNX/OP</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-08</WBS>
+		<CC>SE26</CC>
+		<Desc>300214 VXL EXPANSION TANK TESTING</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-09</WBS>
+		<CC>SE26</CC>
+		<Desc>300222 IVS TEST:D16 INSTALLATN FAN CLUTC</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-10</WBS>
+		<CC>SE26</CC>
+		<Desc>300223 STRAIN TEST-ISX HOT CAC PIPE</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-11</WBS>
+		<CC>SE26</CC>
+		<Desc>300238 EXT/INT. NOISE DEV.</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-12</WBS>
+		<CC>SE26</CC>
+		<Desc>300239 EXT/INT.NOISE DEV.</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-13</WBS>
+		<CC>SE26</CC>
+		<Desc>300262 DATA ACQUISITION VNX COOLING PKG</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-14</WBS>
+		<CC>SE26</CC>
+		<Desc>300278 WATER SYSTEM TEST-D16 SP2 PROTO</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-15</WBS>
+		<CC>SE26</CC>
+		<Desc>300280 WATER SYS.TEST D16 SP2-STAGEII P</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-16</WBS>
+		<CC>SE26</CC>
+		<Desc>300287 2403 FRONT TOW EYE MULTICASTING</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-17</WBS>
+		<CC>SE26</CC>
+		<Desc>300339 VXL CHASSIS DYNO DEV.TESTING US04</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-18</WBS>
+		<CC>SE26</CC>
+		<Desc>300341 VXL CHASSIS DYNO TEST ACTIVE PRES</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-19</WBS>
+		<CC>SE26</CC>
+		<Desc>300353 STRAIN TEST D16 FAN RING &amp; MNTING</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-20</WBS>
+		<CC>SE26</CC>
+		<Desc>300362 CONVERT FRAME ACELR. TO PS COOLER</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-21</WBS>
+		<CC>SE26</CC>
+		<Desc>300365 2403 FRAME MODAL ANALYSIS (FT1)</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-22</WBS>
+		<CC>SE26</CC>
+		<Desc>300392 VNX CHASSIS DYNO-US&apos;04 D16</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-23</WBS>
+		<CC>SE26</CC>
+		<Desc>300405 UNDERHOOD AIR FLOW MSUR-P2403 VX</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-24</WBS>
+		<CC>SE26</CC>
+		<Desc>400072 VNX D16 EMC TEST</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-25</WBS>
+		<CC>SE26</CC>
+		<Desc>400095 P2403 FCN2 CHASSIS VIBRTN CONFIR</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-26</WBS>
+		<CC>SE26</CC>
+		<Desc>400135 CONDUCT P2403 FIELD TEST UNIT #1</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-27</WBS>
+		<CC>SE26</CC>
+		<Desc>400145 D16 DISCHARGE LINE AIR TEMP. TEST</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-28</WBS>
+		<CC>SE26</CC>
+		<Desc>400149 VERIFY WIND SPEED FOR VXL HOOD TO</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-29</WBS>
+		<CC>SE26</CC>
+		<Desc>400169 P2403 POST SHAKE LOAD CASE IDNTFY</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-30</WBS>
+		<CC>SE26</CC>
+		<Desc>400188 COOLANT PRSURE SPIKES IN CAB HEAT</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-31</WBS>
+		<CC>SE26</CC>
+		<Desc>400194 P2403 CAB HOOD SHAKE TEST #2</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-32</WBS>
+		<CC>SE26</CC>
+		<Desc>400195 NVH:VIBRATN INVESTIGATION OF WABC</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-33</WBS>
+		<CC>SE26</CC>
+		<Desc>400201 MD16-VXL UNDER-HOOD ALT. TEMP.</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-34</WBS>
+		<CC>SE26</CC>
+		<Desc>400323 VT OUTBOARD EXHAUST VALIDATION</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-35</WBS>
+		<CC>SE26</CC>
+		<Desc>400386 TMPTURE READINGS,PNEUMATIC COMPON</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-36</WBS>
+		<CC>SE26</CC>
+		<Desc>500153 16L VOLVO BACK PRESSURE TESET</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-37</WBS>
+		<CC>SE26</CC>
+		<Desc>200363 DEPT.650 ONLY-PROJ.MGT &amp; MTL SUP</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-38</WBS>
+		<CC>SE26</CC>
+		<Desc>300143 AET:P2403 VNX64T780, MD16(AET 1)</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-39</WBS>
+		<CC>SE26</CC>
+		<Desc>300183 AET(ENV.VIB.TST)P2403 PRO TPE VEH</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-40</WBS>
+		<CC>SE26</CC>
+		<Desc>400094 UPDATE P2403 FIELD TEST UNIT #1</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-41</WBS>
+		<CC>SE26</CC>
+		<Desc>500204 E-VISCOUS FAN CLUTCH TESTING W/VO</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-42</WBS>
+		<CC>SE26</CC>
+		<Desc>500350  D16 FRONT STAY ROD MEASUREMENTS</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-09-43</WBS>
+		<CC>SE26</CC>
+		<Desc>500325 NVH: Int. Noise Inv. for D16 In V</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-10</WBS>
+		<CC>SE26</CC>
+		<Desc>200290 DEPT.678 ONLY-PROD.STYLING MUSCLE</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00301-03-11</WBS>
+		<CC>SE26</CC>
+		<Desc>300325 DESIGN/VALIDATE PRESSURIZED COOLI</Desc>
+		<ShortID>W60-6009</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302</WBS>
+		<CC>SE26</CC>
+		<Desc>US07 Common Root</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27065525, US07 VTNA PL MGMNT</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03</WBS>
+		<CC>SE26</CC>
+		<Desc>P6010, US07 VOLVO ENGINES IN VNL,VN</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>400106 US07 VOLVO ENGINES-DEPT 605 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-02</WBS>
+		<CC>SE26</CC>
+		<Desc>400107 US07 VOLVO ENGINES GENERAL DESIGN</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-03</WBS>
+		<CC>SE26</CC>
+		<Desc>400108 US07 VOLVO ENGINES - DPT 620 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-04</WBS>
+		<CC>SE26</CC>
+		<Desc>400109 US07 VOLVO ENGINES -DEPT 630 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-05</WBS>
+		<CC>SE26</CC>
+		<Desc>400110 US07 VOLVO ENGINES -DEPT 640 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-06</WBS>
+		<CC>SE26</CC>
+		<Desc>400111 US07 VOLVO ENGINES -DEPT 650 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-07</WBS>
+		<CC>SE26</CC>
+		<Desc>400112 US07 VOLVO ENGINES-DEPT 660 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-08</WBS>
+		<CC>SE26</CC>
+		<Desc>400113 US07 VOLVO ENGINES -DEPT 680 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-09</WBS>
+		<CC>SE26</CC>
+		<Desc>400114 US07 VOLVO ENGINES-DEPT 690 ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-10</WBS>
+		<CC>SE26</CC>
+		<Desc>400214 US07 VNL HOOD-PRODUCT DESIGN ONLY</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-12</WBS>
+		<CC>SE26</CC>
+		<Desc>400326 SUPPLY OF MATERIALS TO CUMMINS</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-13</WBS>
+		<CC>SE26</CC>
+		<Desc>400363 CAB DEPT SUPPORT FOR PRIMAAX</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-14</WBS>
+		<CC>SE26</CC>
+		<Desc>400364 VEHICLE DYNAMICS DEPT SUPPORT</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-15</WBS>
+		<CC>SE26</CC>
+		<Desc>400365 ELECTRICAL DEPT SUPPORT FOR P</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-16</WBS>
+		<CC>SE26</CC>
+		<Desc>400366 CI&amp;A CHANGE IMPLEMENTATION &amp; ADMN</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-17</WBS>
+		<CC>SE26</CC>
+		<Desc>400367 VEHICLE ARCHITECTURE DEPT SUP</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-18</WBS>
+		<CC>SE26</CC>
+		<Desc>400368 CHASSIS DEPT SUPPORT FOR PRIM</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-23</WBS>
+		<CC>SE26</CC>
+		<Desc>TEST PROJECTS US07 Common</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-03-24</WBS>
+		<CC>SE26</CC>
+		<Desc>US07 Q8 ACTIVITIES TO SUPPORT PRODUCTION</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-11</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT GOT P6010</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-11-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27062803-000, VINDTUNNELTEST US07</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-12</WBS>
+		<CC>SE26</CC>
+		<Desc>6010 - US07 (Common)</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-12-01</WBS>
+		<CC>SE26</CC>
+		<Desc>6010 - US07 (Common)</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-13</WBS>
+		<CC>SE26</CC>
+		<Desc>India SUPPORT FOR US07 Common 6010</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00302-14</WBS>
+		<CC>SE26</CC>
+		<Desc>PD-CUR- US07 Support from BR</Desc>
+		<ShortID>W60-6010</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304</WBS>
+		<CC>SE26</CC>
+		<Desc>US07 Mack Unique Root</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27065526, US07 MACK, PL MGMNT</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US07 Mack Unique</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>400322 GREENSBORO CAB WORK FOR US07 MACK</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-02-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US07 Mack General Design</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-02-03</WBS>
+		<CC>SE26</CC>
+		<Desc>Test Projects</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-02-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Support NRV for Float Reduction Mack</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-02-06</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Protus &amp; Minor Misc Corrections Mack</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-02-24</WBS>
+		<CC>SE26</CC>
+		<Desc>US07 Q8 Retrofit Mack Only</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-10</WBS>
+		<CC>SE26</CC>
+		<Desc>7060 - US07 (Mack Unique)</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-10-01</WBS>
+		<CC>SE26</CC>
+		<Desc>7060 - US07 (Mack Unique)</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-10-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Placeholder for 1508 material</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-10-03</WBS>
+		<CC>SE26</CC>
+		<Desc>ATW Support NRV for Float Reduction Mack</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-10-05</WBS>
+		<CC>SE26</CC>
+		<Desc>ATW Protus &amp; Minor Misc Corrections Mack</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-10-06</WBS>
+		<CC>SE26</CC>
+		<Desc>CV Testing of US07 Mack</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-11</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT US07 ISL in Mack</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-11-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27068218-000 US07 ISL in Mack Chassis</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-11-01-03</WBS>
+		<CC>SE26</CC>
+		<Desc>US07 VECU SW C.2.22</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00304-11-01-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>VECU3.no1.2008</Desc>
+		<ShortID>W60-7060</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00305-03-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Fusion Support Dept 630</Desc>
+		<ShortID>W60-7070</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00306</WBS>
+		<CC>SE26</CC>
+		<Desc>OSCAR</Desc>
+		<ShortID>W60-7050</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00306-04</WBS>
+		<CC>SE26</CC>
+		<Desc>1605 - OSCAR - MR with MP8 Engine</Desc>
+		<ShortID>W60-7050</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00306-04-01</WBS>
+		<CC>SE26</CC>
+		<Desc>1605 - OSCAR - MR with MP8 Engine</Desc>
+		<ShortID>W60-7050</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00306-05</WBS>
+		<CC>SE26</CC>
+		<Desc>Pojet OSCAR MACK</Desc>
+		<ShortID>W60-7050</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00307</WBS>
+		<CC>SE26</CC>
+		<Desc>Granite AB - AUXILLARY AXLE</Desc>
+		<ShortID>W60-7006</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00307-02</WBS>
+		<CC>SE26</CC>
+		<Desc>1588 - Aux Axles on Granite</Desc>
+		<ShortID>W60-7006</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00307-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>1588 - Aux Axles on Granite</Desc>
+		<ShortID>W60-7006</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308</WBS>
+		<CC>SE26</CC>
+		<Desc>MTA GL PLATFORM INTEG. AUSTRALIA</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>500410 MTA (MACK TRUCKS AUSTRALIA) P7303</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO MTA , Chassis cooling calculations</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-03</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Material support for MTA Project</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO MTA General Design</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05</WBS>
+		<CC>SE26</CC>
+		<Desc>Test Projects</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO EXPERIMENTAL STRESS ANALYSIS OF MACK</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO RADI-NL1 AUSTRALIA: DATA ACQUISITION</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-03</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO FRONT STR. AND FRT. SUSP. ANCHORAGES</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO CV shop support for build of MTA Sup</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-05</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO CV support for MTA Superliner projec</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-06</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO NVH:  RIDE AND HANDLING MTA</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-07</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Shop support to build Rig for Behr t</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-08</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO DATA ACQ. FOR CAB SUSPENSION ON SUPE</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-01-05-09</WBS>
+		<CC>SE26</CC>
+		<Desc>AET: P7303 MTA- SUPERLINER ( AET5) AT OP</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-03</WBS>
+		<CC>SE26</CC>
+		<Desc>1613 - MTA Global Platform w/Fusion RHD</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>1613 - MTA Global Platform w/Fusion RHD</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-04</WBS>
+		<CC>SE26</CC>
+		<Desc>P7303 AUSTRALIA ACTIVITIES</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-05</WBS>
+		<CC>SE26</CC>
+		<Desc>P8130 AUS FIELD TEST ACTIVITIES</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-06</WBS>
+		<CC>SE26</CC>
+		<Desc>P7303 Misc Kola Support - Sweden</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00308-07</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA SUPPORT AC PIPES DRAWINGS</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00313</WBS>
+		<CC>SE26</CC>
+		<Desc>Guided Diagnostics</Desc>
+		<ShortID>W60-2641</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332</WBS>
+		<CC>SE26</CC>
+		<Desc>Loco 7 - Fuel economy</Desc>
+		<ShortID>R11-1421</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Loco 7,  Management</Desc>
+		<ShortID>R11-1421</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Wheel Deflector/Underside</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Wheel Deflector/Underside</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-02-02</WBS>
+		<CC>SE26</CC>
+		<Desc>7061 - Wheel Deflector/Underside LOCO 7</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-03</WBS>
+		<CC>SE26</CC>
+		<Desc>CFD Calculations</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-03-05</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR9001 1/2 Scale CFD correlation</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-04</WBS>
+		<CC>SE26</CC>
+		<Desc>CFD For Conventional</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-07</WBS>
+		<CC>SE26</CC>
+		<Desc>Correlations Road Calculations</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-07-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Fuel Economy Ver. and Simulation</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-08</WBS>
+		<CC>SE26</CC>
+		<Desc>Fuel Economy Driving Assistance</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-09</WBS>
+		<CC>SE26</CC>
+		<Desc>Auxiliaries</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-09-04</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT6035, Optimised Alternator</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-10</WBS>
+		<CC>SE26</CC>
+		<Desc>Drive Line Losses</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-11</WBS>
+		<CC>SE26</CC>
+		<Desc>Rolling Resistance</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-12</WBS>
+		<CC>SE26</CC>
+		<Desc>Aerodynamic Improvements On FH/VN/Vision</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-12-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR6008 Aero Improvements On VN</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-13</WBS>
+		<CC>SE26</CC>
+		<Desc>Aero for fuel eco</Desc>
+		<ShortID>R11-1444</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-14</WBS>
+		<CC>SE26</CC>
+		<Desc>DSVI combine cycles</Desc>
+		<ShortID>R11-1443</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-15</WBS>
+		<CC>SE26</CC>
+		<Desc>L7 GEODE</Desc>
+		<ShortID>R11-1446</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-16</WBS>
+		<CC>SE26</CC>
+		<Desc>Ride Hight</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-17</WBS>
+		<CC>SE26</CC>
+		<Desc>Assisted economic drivring</Desc>
+		<ShortID>R11-1326</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-17-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Assisted economic drivring</Desc>
+		<ShortID>R11-1326</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-18</WBS>
+		<CC>SE26</CC>
+		<Desc>PLANNING for undecided AE Loco 7 proj</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-18-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cpt budget loco7</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-19</WBS>
+		<CC>SE26</CC>
+		<Desc>Fan Control Strategy</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-20</WBS>
+		<CC>SE26</CC>
+		<Desc>Corr of aero and fuel economy results</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-20-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO CVAN7012 Corr of aero and fuel eco</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-20-02</WBS>
+		<CC>SE26</CC>
+		<Desc>ATW CVAN7012 Corr of aero and fuel eco</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-21</WBS>
+		<CC>SE26</CC>
+		<Desc>LED Lighting</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-21-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN7007 LED Lighting</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-22</WBS>
+		<CC>SE26</CC>
+		<Desc>RENOTER</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-23</WBS>
+		<CC>SE26</CC>
+		<Desc>AERO CONCEPTS FOR NA</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-24</WBS>
+		<CC>SE26</CC>
+		<Desc>High efficient alternator</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-25</WBS>
+		<CC>SE26</CC>
+		<Desc>Nenpioh</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-25-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Auto eco driving system - Nenpi-Oh</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-25-03</WBS>
+		<CC>SE26</CC>
+		<Desc>Auto Eco-Driving System-NenpiOh with GPS</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-26</WBS>
+		<CC>SE26</CC>
+		<Desc>Underside phase 3</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-26-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR9002 Opt. of Underside Phase 4</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-27</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGT8002 Active Flow Control</Desc>
+		<ShortID>R01-07080</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-27-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGT8002 Active Flow Control</Desc>
+		<ShortID>R01-07080</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-29</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT8019 Aero controlled cooling curtain</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-29-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT8019 Aero controlled cooling curtain</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-29-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT8019 Aero controlled cooling curtain</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-30</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT9001 Declutcbale hydraulic pump PTO</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-30-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT9001 Declutcbale hydraulic pump PTO</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-31</WBS>
+		<CC>SE26</CC>
+		<Desc>Engine Compartment Optimization</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-31-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR9003 Engine Compt. Optimization</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-31-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGR9001 Under Hood Corr. Full, 1:2, CFD</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-32</WBS>
+		<CC>SE26</CC>
+		<Desc>Cab aerodynamic CFD method</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-32-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cab aerodynamic CFD method</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-33</WBS>
+		<CC>SE26</CC>
+		<Desc>3P fuel task force</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-33-01</WBS>
+		<CC>SE26</CC>
+		<Desc>3P fuel task force</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-33-02</WBS>
+		<CC>SE26</CC>
+		<Desc>3P Fuel Task force AGEO</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-34</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT9001 AE Rolling Road Testing</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-34-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT9001 AE Rolling Road Testing</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-35</WBS>
+		<CC>SE26</CC>
+		<Desc>Auto adjustable roof deflector</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-36</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT9004 Electrical architecture  &amp;</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-36-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT9004 Electrical architecture  &amp;</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-37</WBS>
+		<CC>SE26</CC>
+		<Desc>Fan engagement for fuel economy</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-39</WBS>
+		<CC>SE26</CC>
+		<Desc>Secondary Flow Driven Particle Trap Pre-</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-39-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Secondary Flow Driven Particle Trap Pre-</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-41</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1001 Fuel economy Drive - E</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-41-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1001 Fuel economy Drive - E</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-43</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGT1007 closed front</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-43-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGT1007 closed front</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-44</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGT1005 fuel efficient air conditioning</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-44-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGT1005 fuel efficient air conditioning</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-48</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1007 Low friction wheel end concept</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-48-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1007 Low friction wheel end concept</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-49</WBS>
+		<CC>SE26</CC>
+		<Desc>Electrification of 3P-auxillaries + El g</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-49-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Electrification of 3P-auxillaries + El g</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-50</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1006 MB Actros trucks, Fuel Consumpt</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-50-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1006 MB Actros trucks, Fuel Consumpt</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-51</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1007 LVD, Analysis, Project Manageme</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-51-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1007 LVD, Analysis, Project Manageme</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-52</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1008 EU V Fuel Economy Match race</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-52-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1008 EU V Fuel Economy Match race</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-53</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD correlation for NA/EU</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-53-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD correlation for GSO</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-53-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD correlation for GOT</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-54</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD benchmarking</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-54-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD benchmarking GSO</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-54-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD benchmarking GOT</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-55</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 Underhood correlation</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-55-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD correlation for GSO</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-55-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 CFD correlation for GOT</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-56</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 Rolling road conclusions</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-56-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 Rlng road conclusions GSO</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-56-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CAGR1001 2010 Rlng road conclusions GOT</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-57</WBS>
+		<CC>SE26</CC>
+		<Desc>Waste Heat Recovery by RANKINE (TIGRE) </Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-58</WBS>
+		<CC>SE26</CC>
+		<Desc>Ottawa wind tunnel test (feed P2683)</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-58-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Ottawa wind tunnel test (feed P2683)</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-59</WBS>
+		<CC>SE26</CC>
+		<Desc>Tigre</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-60</WBS>
+		<CC>SE26</CC>
+		<Desc>Adaptive pedal for ADAS (TIGRE)</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-61</WBS>
+		<CC>SE26</CC>
+		<Desc>Fuel Eco Demonstrator-Japan</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-61-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Fuel Eco Demonstrator-Japan</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-61-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>MTRL LX077 GV3E00 Fuel eco Demo JPN</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-62</WBS>
+		<CC>SE26</CC>
+		<Desc>Auto Eco Driving System - Step2</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-62-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Auto Eco Driving System - Step2</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-62-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>MTRL LX106 Auto Eco Driving System</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-63</WBS>
+		<CC>SE26</CC>
+		<Desc>EHPS-Electro hyd. Power Steering project</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00332-63-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EHPS-Electro hyd. Power Steering project</Desc>
+		<ShortID>R11-00332</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00336</WBS>
+		<CC>SE26</CC>
+		<Desc>MACK INTEGRATION AUSTRALIA</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00336-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27062714-000,MACK INTEGRATION AUSTRALI</Desc>
+		<ShortID>W60-7303</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00337</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS FM9 AGADIR2 RVI</Desc>
+		<ShortID>V01-00337</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS QUALITY 265XX</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-05</WBS>
+		<CC>SE26</CC>
+		<Desc>27047211-000, QJ891-45</Desc>
+		<ShortID>QJ 891-45</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-06</WBS>
+		<CC>SE26</CC>
+		<Desc>27047216-000, QJ831-16</Desc>
+		<ShortID>QJ 831-16</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-08</WBS>
+		<CC>SE26</CC>
+		<Desc>27047223-000, QJ871-11</Desc>
+		<ShortID>QJ 871-11</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-10</WBS>
+		<CC>SE26</CC>
+		<Desc>27047229-000, QJ352-43</Desc>
+		<ShortID>QJ 352-43</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-10-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27047229-AAA  sidoblinkers</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-14</WBS>
+		<CC>SE26</CC>
+		<Desc>27047233-000, QJ825-16</Desc>
+		<ShortID>QJ 825-16</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-16</WBS>
+		<CC>SE26</CC>
+		<Desc>27047235-000, QJ824-23</Desc>
+		<ShortID>QJ 824-23</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-16-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27047235-AAA  QJ 834-23 OVER SLAM OF DO</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-18</WBS>
+		<CC>SE26</CC>
+		<Desc>27047237-000, QJ852-20</Desc>
+		<ShortID>QJ 852-20</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-21</WBS>
+		<CC>SE26</CC>
+		<Desc>27047240-000, QJ271-12</Desc>
+		<ShortID>QJ 271-12</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-26</WBS>
+		<CC>SE26</CC>
+		<Desc>27047245-000, QJ891-53</Desc>
+		<ShortID>QJ 891-53</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-26-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27047245-AAA Baser</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-26-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27047245-AAB konsoler modifiering</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-26-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27047245-AAC solskydd Baser Konsoler</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-26-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27047245-AAD solskydd konsoler</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-30-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27047250-AAB</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-30-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27047250-AAc Klimatenhet</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-36</WBS>
+		<CC>SE26</CC>
+		<Desc>27047257-000, QJ 873-22</Desc>
+		<ShortID>QJ 873-22</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-38</WBS>
+		<CC>SE26</CC>
+		<Desc>27047259-000, QJ 875-22</Desc>
+		<ShortID>QJ 875-22</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-41</WBS>
+		<CC>SE26</CC>
+		<Desc>27047263-000, QJ 353-09</Desc>
+		<ShortID>QJ 353-09</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-42</WBS>
+		<CC>SE26</CC>
+		<Desc>27047264-000, QJ 353-10</Desc>
+		<ShortID>QJ 353-10</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-43</WBS>
+		<CC>SE26</CC>
+		<Desc>27047265-000, QJ 353-11</Desc>
+		<ShortID>QJ 353-11</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-44</WBS>
+		<CC>SE26</CC>
+		<Desc>27047266-000, QJ 352-52</Desc>
+		<ShortID>QJ 352-52</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-45</WBS>
+		<CC>SE26</CC>
+		<Desc>27047267-000,QJ 873-23</Desc>
+		<ShortID>QJ 873-23</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-47</WBS>
+		<CC>SE26</CC>
+		<Desc>27047273-000,QJ 353-12</Desc>
+		<ShortID>QJ 353-12</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-52</WBS>
+		<CC>SE26</CC>
+		<Desc>27047278-000,QJ 352-56</Desc>
+		<ShortID>QJ 352-56</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-53</WBS>
+		<CC>SE26</CC>
+		<Desc>27047279-000,QJ 891-59</Desc>
+		<ShortID>QJ 891-59</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-53-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27047279-AAA vindblog</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-53-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27047279-AAB TBF838 c bit</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-53-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27047279-AAC sls Qj-891-59</Desc>
+		<ShortID>M13-00338</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-60</WBS>
+		<CC>SE26</CC>
+		<Desc>27040293-000 CAB ID PLATE, WRONG INFO</Desc>
+		<ShortID>QJ 897-6</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-68</WBS>
+		<CC>SE26</CC>
+		<Desc>27044559-000, ID head lamps</Desc>
+		<ShortID>81-0038</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00338-68-01</WBS>
+		<CC>SE26</CC>
+		<Desc>PD-CUR- ID head lamps</Desc>
+		<ShortID>81-0038</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-01</WBS>
+		<CC>SE26</CC>
+		<Desc>(A) Administrative</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-01-06-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27086506AAA SLS ex-jobb Ratt</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Driver position</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-02-03</WBS>
+		<CC>SE26</CC>
+		<Desc>Adjustable pedals test</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-03-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CDF Calc. Wind tunnel test</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27086589-000, 2 coat paint system</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-05-03</WBS>
+		<CC>SE26</CC>
+		<Desc>New surface treatment</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-22</WBS>
+		<CC>SE26</CC>
+		<Desc>Investigation CAB (=pre-study)</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-24-02</WBS>
+		<CC>SE26</CC>
+		<Desc>POLARISOLERING</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-25</WBS>
+		<CC>SE26</CC>
+		<Desc>(F) Climate</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-26-01</WBS>
+		<CC>SE26</CC>
+		<Desc>ADV VEHICLE LIGHTING</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-27-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27086502, INTERIOR PHASE 5</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-27-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Clean Cab, mat. emission in truck cabs</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-29-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27088287, CHASSIE UNDERSIDE CALC.</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-31-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO 400179 HOOD MOUNTING</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-31-02</WBS>
+		<CC>SE26</CC>
+		<Desc>7072 - ATN HOOD MOUNTING</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-38</WBS>
+		<CC>SE26</CC>
+		<Desc>MIRROR MOUNTING RELOCATION</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-41-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27087282-000 Compatibility vehicles VIN.</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-42-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Simulation tools &amp; methodes, Noise &amp; Vib</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-46</WBS>
+		<CC>SE26</CC>
+		<Desc>(E) Surface material</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-51</WBS>
+		<CC>SE26</CC>
+		<Desc>Hood Mounting</Desc>
+		<ShortID>R01-07136</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-51-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Drivers activities</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00339-52-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cpt Budget non loco Cab Lyon</Desc>
+		<ShortID>R01-00339</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00345</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS 8X4 FOR FM12 RIGID</Desc>
+		<ShortID>16-0290</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00346</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT</Desc>
+		<ShortID>V01-00346</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00346-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27053998-000, P5517 - MS17X</Desc>
+		<ShortID>V01-00346</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00346-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27053998-AAA, 5517 TFT TEST AT HÄLLERED</Desc>
+		<ShortID>V01-00346</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00346-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27053998-AAB, 5517 TDL TEST</Desc>
+		<ShortID>V01-00346</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00346-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27053998-AAC, 5517 TEMPERATURE TEST</Desc>
+		<ShortID>V01-00346</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348</WBS>
+		<CC>SE26</CC>
+		<Desc>KRAM KOLA Release At Mack</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-01</WBS>
+		<CC>SE26</CC>
+		<Desc>KOLA conversion for CTP, CXP &amp; CHP model</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-01-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>500293 KOLA conversion for CTP CXP &amp; CHP</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>ATN KOLA conversion for CTP CXP &amp; CHP md</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-01-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>8014 - Atn KOLA conversion CTP CXP &amp; CHP</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-01-03</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA SUPPORT KOLA CONV FOR CTP CXP&amp;CHP</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-01-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA KOLA CONVERSION FOR CTP CXP &amp; CHP</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-02</WBS>
+		<CC>SE26</CC>
+		<Desc>KOLA conversion for MRP &amp; LEP models</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>500294 GSO KOLA conversion for MRP &amp; LEP</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-02-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>500294 KOLA conversion for MRP &amp; LEP mod</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-02-02</WBS>
+		<CC>SE26</CC>
+		<Desc>ATN KOLA conversion for MRP &amp; LEP models</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-02-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>8014 - Atn KOLA conversion MRP &amp; LEP mod</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-02-03</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA INDIA SUPP KOLA CONV FOR MRP &amp; LEP</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-02-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA INDIA KOLA CONVERSION FOR MRP&amp;LEP</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-03</WBS>
+		<CC>SE26</CC>
+		<Desc>KOLA Implementation</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>500222 Gso Kola implementation (Dev.)</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-03-02</WBS>
+		<CC>SE26</CC>
+		<Desc>500282 Gso Kola implementation (Tra.)</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-03-03</WBS>
+		<CC>SE26</CC>
+		<Desc>8014 - Atn Kola implementation (Dev.)</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-03-04</WBS>
+		<CC>SE26</CC>
+		<Desc>8014 - Atn Kola implementation (Tra.)</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-04</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA SUPPORT KOLA CONVERSION FOR MACK</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-04-01</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA SUPPORT KOLA CONVERSION FOR CT</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-04-02</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA INDIA KOLA CONVERSION FOR MRP&amp;</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-05</WBS>
+		<CC>SE26</CC>
+		<Desc>KRAM support</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00348-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27095030-000 KRAM support</Desc>
+		<ShortID>Z21-00348</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00349</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT</Desc>
+		<ShortID>Z90-0349</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350</WBS>
+		<CC>SE26</CC>
+		<Desc>Loco 3 -Powertrain Installation Concepts</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Project leader (Loco 3)</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27082773-000  Project leader (GOT)</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Project leader</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Exhaust gas</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27080180-000 Exhaust gas flex/hose</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-02-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT7019, -AAA Exhaust  flex-hose</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-02-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT7013, -AAB Exhaust gas temp</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-04</WBS>
+		<CC>SE26</CC>
+		<Desc>Under hood airflow and noise - CHGT5321</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-04-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Improved Under Hood Airflow US10</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-05</WBS>
+		<CC>SE26</CC>
+		<Desc>New Expansion Tank - CHGT5 319</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT5319, New Expansion Tank</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-06</WBS>
+		<CC>SE26</CC>
+		<Desc>Ext. Mounted HX - CHGT5 320</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-06-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27082722-000, Ext. Mounted HX</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-06-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27082722-AAA Takkylare</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-06-03</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Remote Radiator Mounting</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-06-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO VNL Front Grill And Bumper Optim</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-08</WBS>
+		<CC>SE26</CC>
+		<Desc>Exterior noise and Drive-by test methods</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-08-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27083754-000 In depth comp. analysis</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-10</WBS>
+		<CC>SE26</CC>
+		<Desc>Very High Temperature Cooling</Desc>
+		<ShortID>R11-1424</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-11</WBS>
+		<CC>SE26</CC>
+		<Desc>Increased TTT 110 degrees</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-11-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27084669-000 Increased TTT 110 degrees</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-11-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27084669-AAA Increased TTT 110 degrees</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-13</WBS>
+		<CC>SE26</CC>
+		<Desc>High efficiency fan</Desc>
+		<ShortID>R11-1433</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-13-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGR9001 High Efficiency Fan for MR/LE</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-13-03</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGR1002 HEF for NA Conventional Trucks</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-14</WBS>
+		<CC>SE26</CC>
+		<Desc>Platform Prestudy Eu5/Eu6/US10</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-15</WBS>
+		<CC>SE26</CC>
+		<Desc>In depth competitor analysis</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-15-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT6001, In depth competitor analysi</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-16</WBS>
+		<CC>SE26</CC>
+		<Desc>Ride comfort and vibration - CHGT1012</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-16-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1012, Ride comfort and vibration</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-17</WBS>
+		<CC>SE26</CC>
+		<Desc>Cooling During Partial Engine Load</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-17-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cooling During Partial Engine Load</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-18</WBS>
+		<CC>SE26</CC>
+		<Desc>PLANNING for undecided AE Loco 3 proj</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-18-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cpt budget loco3</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-18-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT PLANNING for undecided Loco 3 proj</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-19</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT7001 Minus 2 dB</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-19-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT7001 Minus 2 dB</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-19-03</WBS>
+		<CC>SE26</CC>
+		<Desc>Noise shield in (CVDE Age)</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-20</WBS>
+		<CC>SE26</CC>
+		<Desc>Air Flow, Underhood and Exit</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-20-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGR7003 Air Flow, Underhood and Exit</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-21</WBS>
+		<CC>SE26</CC>
+		<Desc>Cooling System Deaeration</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-21-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGR7002 Cooling System Deaeration</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-22</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT7003 Variable speed fan clutch.</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-22-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT7003 Variable speed fan clutch.</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-23</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT7018 Transient analysis of cooling p</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-23-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT7018 Transient analysis of cooling p</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-23-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Cooling simulation (CVDE Ageo)</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-24</WBS>
+		<CC>SE26</CC>
+		<Desc>AEGT7001 Flux free brazing</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-24-01</WBS>
+		<CC>SE26</CC>
+		<Desc>AEGT7001 Flux free brazing</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-25</WBS>
+		<CC>SE26</CC>
+		<Desc>AEGT6005, P3811 DME installation</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-25-01</WBS>
+		<CC>SE26</CC>
+		<Desc>AEGT6005, P3811 DME installation</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-26</WBS>
+		<CC>SE26</CC>
+		<Desc>AEGT8002 Alternative Fuels CAP</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-26-01</WBS>
+		<CC>SE26</CC>
+		<Desc>AEGT8002 Alternative Fuels CAP</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-27</WBS>
+		<CC>SE26</CC>
+		<Desc>Hot spot simulation in transient mode</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-29</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT8017 Multi Fan</Desc>
+		<ShortID>R01-07080</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-29-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT8017 Multi Fan</Desc>
+		<ShortID>R01-07080</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-30</WBS>
+		<CC>SE26</CC>
+		<Desc>Competitors Trucks analysis</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-31</WBS>
+		<CC>SE26</CC>
+		<Desc>AE taskforce to loco 3</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-31-01</WBS>
+		<CC>SE26</CC>
+		<Desc>AE taskforce to loco 3</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-32</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT8018 Multiple fans aero development</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-32-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT8018 Multiple fans aero development</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-33</WBS>
+		<CC>SE26</CC>
+		<Desc>AE optimization noise absorbers</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-34</WBS>
+		<CC>SE26</CC>
+		<Desc>Secondary Flow Driven Particle Trap Pre-</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-34-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Secondary Flow Driven Particle Trap Pre-</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-35</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1002 -5dB HD Truck</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-35-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CVGT1002 -5dB HD Truck</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-36</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1002 Tyre noise NNR</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-36-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1002 Tyre noise NNR</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-36-02</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLT1002 Tyre and surface noise - LY</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-37</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1003 Low noise vehicle MD/MHD</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-37-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1003 Low noise vehicle MD/MHD</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-38</WBS>
+		<CC>SE26</CC>
+		<Desc>Cooling Package</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-38-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGR1001 MELCP Common Cooling Package</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-39</WBS>
+		<CC>SE26</CC>
+		<Desc>CHAG1001 Cooling Simulation</Desc>
+		<ShortID>R11-0350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-39-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHAG1001 Cooling Simulation</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-40</WBS>
+		<CC>SE26</CC>
+		<Desc>CHAG1002 Noise Shield</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-40-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHAG1002 Noise Shield</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-41</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1008 Derating strategy</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-41-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1008 Derating strategy GOT</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-41-03</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1008 Derating strategy GOT US</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-41-04</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1008 Derating strategy GOT US</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-42</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1006 OBlix logging</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-42-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1006 OBlix logging GOT</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-43</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1109 Global Modular EATS system</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-43-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHGT1109 Global Modular EATS Ageo</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-44</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1108 Global Urea_DEF tanks</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00350-44-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CHLY1108 Global Urea_DEF tanks Ageo</Desc>
+		<ShortID>R11-00350</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00351</WBS>
+		<CC>SE26</CC>
+		<Desc> BRAKE CHAMBER BREATHING S</Desc>
+		<ShortID>85-2570</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00351-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27032402-000, BRAKE CHAMBER BREATHING S</Desc>
+		<ShortID>85-2570</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354</WBS>
+		<CC>SE26</CC>
+		<Desc>AE EL -Non Loco (Root)</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT, EEGT5003 Model based d</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27082556-000, EEGT5005 Dev. Std.conn</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - EEGT5006 hi power alte</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-06</WBS>
+		<CC>SE26</CC>
+		<Desc>Administration Non-Loco EL</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-06-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - Administration Non-Loco EL</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-06-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Handling TRM</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-06-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Technology Strategies for NA</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-06-05</WBS>
+		<CC>SE26</CC>
+		<Desc>ATW Technology Strategies for NA</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-07</WBS>
+		<CC>SE26</CC>
+		<Desc>Time Triggered protoc.: Flexray impl.</Desc>
+		<ShortID>R01-1457</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-09</WBS>
+		<CC>SE26</CC>
+		<Desc>Simulation / code generation</Desc>
+		<ShortID>R01-1458</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-10</WBS>
+		<CC>SE26</CC>
+		<Desc>Security Investigation</Desc>
+		<ShortID>R01-1459</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-11</WBS>
+		<CC>SE26</CC>
+		<Desc>No movement &quot;stalks&quot;/Soft touch buttons</Desc>
+		<ShortID>R01-1460</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-12</WBS>
+		<CC>SE26</CC>
+		<Desc>Security and Telematics</Desc>
+		<ShortID>R01-1461</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-13</WBS>
+		<CC>SE26</CC>
+		<Desc>Dual Battery</Desc>
+		<ShortID>R01-1462</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-14</WBS>
+		<CC>SE26</CC>
+		<Desc>Electrical Consumption Profile</Desc>
+		<ShortID>R01-1463</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-15</WBS>
+		<CC>SE26</CC>
+		<Desc>Supercapacity</Desc>
+		<ShortID>R01-1464</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-16</WBS>
+		<CC>SE26</CC>
+		<Desc>Systems verification &amp; simulation</Desc>
+		<ShortID>R01-1413</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-18</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT -  EEGT 6001 - BRAKE &amp; SPEED</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-19</WBS>
+		<CC>SE26</CC>
+		<Desc>AUTOSAR INVESTIGATION</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-20</WBS>
+		<CC>SE26</CC>
+		<Desc>SYSTEM SIM.VERIF.EEGT4023</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-20-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - SYSTEM SIM.VERIF.EEGT4023</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-21</WBS>
+		<CC>SE26</CC>
+		<Desc>SYSTEM SIM.VERIF.EEGT4023</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-21-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - SYSTEM SIM.VERIF.EEGT4023</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-22</WBS>
+		<CC>SE26</CC>
+		<Desc>SYSTEM SIM.VERIF.EEGT4023</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-22-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - SYSTEM SIM.VERIF.EEGT4023</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-24</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - EEGT 6009 - TEST METHODS</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-27</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - EEGT 6022 - TECHN. COMM. S</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-28</WBS>
+		<CC>SE26</CC>
+		<Desc>Smart Stalk Switch w/self cncl signals</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-28-01</WBS>
+		<CC>SE26</CC>
+		<Desc>7073 - ATN Smart Stalk Switch</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-29</WBS>
+		<CC>SE26</CC>
+		<Desc>Arc Fault Protection Circuitry</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-29-01</WBS>
+		<CC>SE26</CC>
+		<Desc>7074 - ATN Arc Fault Protectn Circuitry</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-29-02</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN8001 ARC Fault Protection</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-30</WBS>
+		<CC>SE26</CC>
+		<Desc>Flat Panel Speaker Technology</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-30-01</WBS>
+		<CC>SE26</CC>
+		<Desc>7075 - ATN Flat Panel Speaker Technology</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-31</WBS>
+		<CC>SE26</CC>
+		<Desc>Wireless Axle Weight Monitoring</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-31-01</WBS>
+		<CC>SE26</CC>
+		<Desc>7076 - ATN Wireless Axle Weight Monitor</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-32</WBS>
+		<CC>SE26</CC>
+		<Desc>ALUMINUM POWER CABLES</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-32-01</WBS>
+		<CC>SE26</CC>
+		<Desc>7076 - ATW ALUMINUM POWER CABLES</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-32-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27085134, ALUMINIUM POWER CABLES</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-33</WBS>
+		<CC>SE26</CC>
+		<Desc>INVESTIGATION OF NAVIGATIONAL NEEDS</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-33-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO INVESTIGATION OF NAVIGATIONAL NEEDS</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-34</WBS>
+		<CC>SE26</CC>
+		<Desc>DUAL MODE COMMUNICATIONS</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-35</WBS>
+		<CC>SE26</CC>
+		<Desc>TRACTOR/TRAILER INTEGRATION</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-35-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO TRACTOR/TRAILER INTEGRATION</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-36</WBS>
+		<CC>SE26</CC>
+		<Desc>SHORT RANGE WIRELESS TECHNOLOGY</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-37</WBS>
+		<CC>SE26</CC>
+		<Desc>STEALTH ANTENNA TECHNOLOGIES</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-37-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO STEALTH ANTENNA TECHNOLOGIES</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-39</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - EEGT 6007 - METHODS</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-46</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - EEGT 3001 Chassis enviorme</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-47</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - EEGT4018 Safe Comm Platfor</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-50</WBS>
+		<CC>SE26</CC>
+		<Desc> EEGT6034 Autosar demostrator</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-50-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND SUPP for AUTOSAR demonstrator</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-50-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT - Autosar demonstrator</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-51</WBS>
+		<CC>SE26</CC>
+		<Desc> EEGT5007 Wire &amp; Cable Durability Compat</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-52</WBS>
+		<CC>SE26</CC>
+		<Desc> EEGT6036 DICO VOICE CONTROL</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-53</WBS>
+		<CC>SE26</CC>
+		<Desc>PLANNING for undecided Non Loco EL proj</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-53-01</WBS>
+		<CC>SE26</CC>
+		<Desc>ATN  PLANNING for undecided EL AE-proj</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-53-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO  PLANNING for undecided EL AE-proj</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-53-03</WBS>
+		<CC>SE26</CC>
+		<Desc>GOT  PLANNING for undecided EL AE-proj</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-53-04</WBS>
+		<CC>SE26</CC>
+		<Desc>LYN  PLANNING for undecided EL AE-proj</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-55</WBS>
+		<CC>SE26</CC>
+		<Desc>Security - Goods protections</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-56-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7012 Key Technologies and view 2015</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-57</WBS>
+		<CC>SE26</CC>
+		<Desc>LYO Security - Goods protections</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-58</WBS>
+		<CC>SE26</CC>
+		<Desc>State of Function</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-59</WBS>
+		<CC>SE26</CC>
+		<Desc>CANOPEN, Secondary display for BBM</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-61</WBS>
+		<CC>SE26</CC>
+		<Desc>Friendly Body Builder Tools</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-62</WBS>
+		<CC>SE26</CC>
+		<Desc>Communication Technology</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-62-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7005 Communication Technologies</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-62-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>BLR Comm. Tech.</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-63</WBS>
+		<CC>SE26</CC>
+		<Desc>In Vehicle diagnostic concept</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-63-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7007 In vehicle diagnostic concept</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-64</WBS>
+		<CC>SE26</CC>
+		<Desc>Central diagnostic function</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-64-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7008 Central diagnostic function</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-65</WBS>
+		<CC>SE26</CC>
+		<Desc>Autosar Step II</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-65-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7010 Autosar Step II</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-66</WBS>
+		<CC>SE26</CC>
+		<Desc>Dynamic Cluster</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-66-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7001 Dynamic Cluster</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-67</WBS>
+		<CC>SE26</CC>
+		<Desc>Body Builder Needs</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-67-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN8003 Body Builder Needs</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-68</WBS>
+		<CC>SE26</CC>
+		<Desc>Battery Safety</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-68-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN8002 Rollover Detection Disconnect</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-73</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT 8011 Technical strategies</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-74</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT 8009 High Efficiency Energy Con</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-75</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7019 Test vehicle for NON LOCO EE</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-76</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7026 Satellite Radio</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-76-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7026 Satellite Radio</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-77</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7009 Dual electrical storage</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-77-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7009 Dual electrical storage</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-80</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7027/EEBK7001 Uniq. req for Asia Tr.</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-80-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7027/EEBK7001 Uniq. req for Asia Tr.</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-85</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT4021 Cedes</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-86</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT7016 Dyn. sim.of cable harness</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-87</WBS>
+		<CC>SE26</CC>
+		<Desc>EE Energy Storage Technologies</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-87-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN7001 EE Energy Storage Tech</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-88</WBS>
+		<CC>SE26</CC>
+		<Desc>Dual Electrical Energy Storage</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-88-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN7002 Dual Electrical Storage</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-89</WBS>
+		<CC>SE26</CC>
+		<Desc>Cable and Harness Projects</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-89-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN7003 Environmentally Friendly Cable</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-89-03</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGR9001 Improved Wiring Harness Quality</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-90</WBS>
+		<CC>SE26</CC>
+		<Desc>Enhanced Engine Brake Controls</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-90-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN7004 Enhanced Engine Brake Controls</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-91</WBS>
+		<CC>SE26</CC>
+		<Desc>Advanced Power Divider Lockout</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-91-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEAN7005 Advanced Power Divider Lockout</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-92</WBS>
+		<CC>SE26</CC>
+		<Desc>FPGA In vehicle Electronics</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-92-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT702X FPGA In vehicle Electronics</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-93</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT8005 Simulation model management</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-93-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Simulation model management</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-93-03</WBS>
+		<CC>SE26</CC>
+		<Desc>Simulation model management</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-93-04</WBS>
+		<CC>SE26</CC>
+		<Desc>Simulation model management GSO</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-94</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT8003 Error detection in simulink mod</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-94-01</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT8003 Error detection in simulink mod</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-95</WBS>
+		<CC>SE26</CC>
+		<Desc>12V Equalizer</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-96</WBS>
+		<CC>SE26</CC>
+		<Desc>Saber simulation</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-97</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT 8007 SWAP</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-98</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT 8006 Common wireless gateway</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-99</WBS>
+		<CC>SE26</CC>
+		<Desc>EEGT 8008 Flexray</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00354-99-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Flexray BLR</Desc>
+		<ShortID>R01-00354</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY ELECTRICAL ROOT</Desc>
+		<ShortID>M13-00355</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27042726, QJ371-83 termin.sp.part bo</Desc>
+		<ShortID>QJ 371-83</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-13</WBS>
+		<CC>SE26</CC>
+		<Desc>27042895, Red Card Electrical</Desc>
+		<ShortID>QJ 384-7</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-17</WBS>
+		<CC>SE26</CC>
+		<Desc>270422514, QJ311-14 Battery impr. handl.</Desc>
+		<ShortID>QJ 311-14</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-20</WBS>
+		<CC>SE26</CC>
+		<Desc>27042516 QJ371-92 Lamps on roof</Desc>
+		<ShortID>QJ 371-92</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-30</WBS>
+		<CC>SE26</CC>
+		<Desc>27043723-000 CONNECTION BOX</Desc>
+		<ShortID>QJ 371-95</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-35</WBS>
+		<CC>SE26</CC>
+		<Desc>27043735  QJ 364-72 CIGARR LIGHTER BULB</Desc>
+		<ShortID>QJ 354-72</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-41</WBS>
+		<CC>SE26</CC>
+		<Desc>27040279-000 CIGARR LIGHTER BULB FAIL.</Desc>
+		<ShortID>QJ 364-72</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-46</WBS>
+		<CC>SE26</CC>
+		<Desc>27040865-000 QJ 364-74 BUDGET TRANSFER</Desc>
+		<ShortID>QJ 354-74</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00355-50-01</WBS>
+		<CC>SE26</CC>
+		<Desc>LYON QJ 366-15 unable to start e</Desc>
+		<ShortID>QJ 366-15</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00357</WBS>
+		<CC>SE26</CC>
+		<Desc>Fan Problem</Desc>
+		<ShortID>QJ 263-81</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00360</WBS>
+		<CC>SE26</CC>
+		<Desc>mirror update root</Desc>
+		<ShortID>M12-1316</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362</WBS>
+		<CC>SE26</CC>
+		<Desc>Invoicing El GOT</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-58</WBS>
+		<CC>SE26</CC>
+		<Desc>LYON HIP Work Package 1 (Locked GOT)</Desc>
+		<ShortID>V01-3824</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-59</WBS>
+		<CC>SE26</CC>
+		<Desc>555373-000 PartsCap for dept 3142020077</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-60-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Ind supporDennis Eagle Euro4/Euro5i 2007</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-76</WBS>
+		<CC>SE26</CC>
+		<Desc>463980-000 CAD Construction work 26321</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-82-01</WBS>
+		<CC>SE26</CC>
+		<Desc>ind support for VECU3 no1 2008</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-86</WBS>
+		<CC>SE26</CC>
+		<Desc>500166-000 EEEG workshop activities 2008</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-89</WBS>
+		<CC>SE26</CC>
+		<Desc>515545-000 NSV test for P45405</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-91-02</WBS>
+		<CC>SE26</CC>
+		<Desc>551934-000 Hybrid Air Compressor Control</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-92</WBS>
+		<CC>SE26</CC>
+		<Desc>525881-000 Saber Training</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00362-93</WBS>
+		<CC>SE26</CC>
+		<Desc>527520-000 Saber Method support</Desc>
+		<ShortID>V01-00362</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363</WBS>
+		<CC>SE26</CC>
+		<Desc>Invoicing Cab  root</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27052778-000 ID-marknad B Brännberg</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27052778-AAA ID-marknad byte styrning</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27057246-AAA Disaplay</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-02-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27057246-AAB Radarsensor</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-36</WBS>
+		<CC>SE26</CC>
+		<Desc>Beställningar UMEÅ</Desc>
+		<ShortID>G10-00363-36</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-36-02</WBS>
+		<CC>SE26</CC>
+		<Desc>156010112155 Johan åström</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-36-03</WBS>
+		<CC>SE26</CC>
+		<Desc>156010500198 Armebil T. Karlsson</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-36-04</WBS>
+		<CC>SE26</CC>
+		<Desc>156010500201 P2540 PCA o s9 T. Karlsson</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-39</WBS>
+		<CC>SE26</CC>
+		<Desc>Beställningar VOLVO PWT</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-41</WBS>
+		<CC>SE26</CC>
+		<Desc>EBD 740440 Parts , Cab repair project</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-49</WBS>
+		<CC>SE26</CC>
+		<Desc>O- nr 795626 Likare VCEd</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00363-50</WBS>
+		<CC>SE26</CC>
+		<Desc>O- nr 842147 VCE Målningsjobb Kina Ä.S</Desc>
+		<ShortID>V01-00363</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00365-03</WBS>
+		<CC>SE26</CC>
+		<Desc>SUBSTRACK 2.1</Desc>
+		<ShortID>Z21-00365</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00365-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27092582000, SUBSTRACK 2.1</Desc>
+		<ShortID>Z21-00365</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00367-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27092585, Global IS/IT Maintenance</Desc>
+		<ShortID>Z21-00367</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368</WBS>
+		<CC>SE26</CC>
+		<Desc>Business Support Systems</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Product Planning Mgmt System - PPSM</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27092811 GOT PPMS</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-02</WBS>
+		<CC>SE26</CC>
+		<Desc>e-GDP/SPOT</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-02-03</WBS>
+		<CC>SE26</CC>
+		<Desc>500115 Gso e-GDP/SPOT (Dev)</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-02-04</WBS>
+		<CC>SE26</CC>
+		<Desc>500281 Gso e-GDP/SPOT (Tra)</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-02-05</WBS>
+		<CC>SE26</CC>
+		<Desc>8014 -  e-GDP/SPOT (Dev)</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-02-06</WBS>
+		<CC>SE26</CC>
+		<Desc>8014 - e-GDP/SPOT (Tra)</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-03</WBS>
+		<CC>SE26</CC>
+		<Desc>Project Numbering</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27090827, Project numbering (Dev.)</Desc>
+		<ShortID>Z21-0368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-03-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Project Numbering</Desc>
+		<ShortID>Z21-0368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-04</WBS>
+		<CC>SE26</CC>
+		<Desc>IPMR facelift</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-04-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IPMR facelift (Dev.)</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-05</WBS>
+		<CC>SE26</CC>
+		<Desc>Project management  support tool</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00368-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Project management  support tool (Dev.)</Desc>
+		<ShortID>Z21-00368</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00369</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT NEW CERT PROCEDURE M.EAST</Desc>
+		<ShortID>86-1263</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00369-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27072678-000, NEW CERT PROCEDURE M.EAST</Desc>
+		<ShortID>86-1263</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00370</WBS>
+		<CC>SE26</CC>
+		<Desc>27032682-000, D16C-EURO3 WITH I-SHIFT T</Desc>
+		<ShortID>23-0080</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00370-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27032682-000, D16C-EURO3 WITH I-SHIFT T</Desc>
+		<ShortID>23-0080</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00371</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>86-1275</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00371-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27072754-AAA, F347 HOMOLOGATION NOISE</Desc>
+		<ShortID>86-1275</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00371-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27072754-000, PASS BY NOISE INDIA</Desc>
+		<ShortID>86-1275</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00372</WBS>
+		<CC>SE26</CC>
+		<Desc>CKD, FMS-PK FOR SAUDI</Desc>
+		<ShortID>10-3013</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00372-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27032559-000, CKD, FMS-PK FOR SAUDI</Desc>
+		<ShortID>M15-3013</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00373</WBS>
+		<CC>SE26</CC>
+		<Desc> FMS-PK FOR MIDDLE EAST</Desc>
+		<ShortID>10-3012</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374</WBS>
+		<CC>SE26</CC>
+		<Desc>MARKET ADAPTAITION 26100 ROOT</Desc>
+		<ShortID>M15-3014</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27032561-000 FM12 62R REAR AIRSUSP.</Desc>
+		<ShortID>10-3014</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27032893-000 PHASE OUT VT1708B</Desc>
+		<ShortID>M15-02976</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-06</WBS>
+		<CC>SE26</CC>
+		<Desc>27034318-000 RELOCATE BWA TO RSA</Desc>
+		<ShortID>M15-03017</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-07</WBS>
+		<CC>SE26</CC>
+		<Desc>27038900-000 L2H2 FOR AUS/NZL</Desc>
+		<ShortID>10-3043</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-08</WBS>
+		<CC>SE26</CC>
+		<Desc>27038901-000 RHATCH FOR AUS/NZL</Desc>
+		<ShortID>85-2583</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-11</WBS>
+		<CC>SE26</CC>
+		<Desc>27030120-000 FH 64T FOR MOROCCO, CKD</Desc>
+		<ShortID>10-3066</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-13-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27030122-AAA Corner panel</Desc>
+		<ShortID>M15-03041</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-14</WBS>
+		<CC>SE26</CC>
+		<Desc>27030127-000 UP DATE TYRES FOR AUS</Desc>
+		<ShortID>M15-00081</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-16</WBS>
+		<CC>SE26</CC>
+		<Desc>27030131-000 FMS-PK FOR FM/FH TRACTORS</Desc>
+		<ShortID>10-3045</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-17</WBS>
+		<CC>SE26</CC>
+		<Desc>27030132-000 ACOUSTIC SEATBELT REMINDER</Desc>
+		<ShortID>10-3075</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-24</WBS>
+		<CC>SE26</CC>
+		<Desc>27033113-000 TITAN GREY D. LAMP BEZEL</Desc>
+		<ShortID>10-3065</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-26</WBS>
+		<CC>SE26</CC>
+		<Desc>27030243-000 HEAVY HAUL.5TH WHEEL INST</Desc>
+		<ShortID>10-2945</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-27</WBS>
+		<CC>SE26</CC>
+		<Desc>27030248-000 ALCO LOCK VARIANT INTR</Desc>
+		<ShortID>10-3116</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-33</WBS>
+		<CC>SE26</CC>
+		<Desc>27030132-000 ACOUSTIC SEATBELT REMINDER</Desc>
+		<ShortID>10-3075</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-34</WBS>
+		<CC>SE26</CC>
+		<Desc>27030188-000 Factory 01 MAR auth for AUS</Desc>
+		<ShortID>10-3105</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-35-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Certification of EBS/ECS aux ph 2</Desc>
+		<ShortID>10-3114</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-36</WBS>
+		<CC>SE26</CC>
+		<Desc>27030881-000 D16C I-shift on more market</Desc>
+		<ShortID>10-3140</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-37</WBS>
+		<CC>SE26</CC>
+		<Desc>der30898-000 FAL 75 on Tractors</Desc>
+		<ShortID>10-3179</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-38</WBS>
+		<CC>SE26</CC>
+		<Desc>27034445-000 FH16 540Hp</Desc>
+		<ShortID>10-3156</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-39</WBS>
+		<CC>SE26</CC>
+		<Desc>27034457-000 RADT-AR 3 Axle Chassis Afr</Desc>
+		<ShortID>10-3158</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-40-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND SUPRT FOT THERMOLINE FUNCTION</Desc>
+		<ShortID>10-3126</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-40-02</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA SUPP Thermoline function and insul</Desc>
+		<ShortID>10-3126</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-41</WBS>
+		<CC>SE26</CC>
+		<Desc>27034556-000 NH Phase out</Desc>
+		<ShortID>16-0309</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-42</WBS>
+		<CC>SE26</CC>
+		<Desc>27034560-000 Installation of RS1370HV in</Desc>
+		<ShortID>16-0307</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-43</WBS>
+		<CC>SE26</CC>
+		<Desc>27034561-000 Installation of RT2610HV/RT</Desc>
+		<ShortID>16-0308</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-44</WBS>
+		<CC>SE26</CC>
+		<Desc>27034565-000 FM9 disc brake for India</Desc>
+		<ShortID>10-3100</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-46</WBS>
+		<CC>SE26</CC>
+		<Desc>27034569-000 80-anniversary truck</Desc>
+		<ShortID>10-3176</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-47</WBS>
+		<CC>SE26</CC>
+		<Desc>FM Körskolebil &amp; 8x6+8x6 med RAL32 cert</Desc>
+		<ShortID>M15-00374</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-47-01</WBS>
+		<CC>SE26</CC>
+		<Desc>8x6 Up.dat broms, styrning, massed &amp; dim</Desc>
+		<ShortID>M15-00374</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-47-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>8x6 Up.dat broms, styrning, massed &amp; dim</Desc>
+		<ShortID>M15-00374</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00374-47-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Körskolebil. Up.dat. bälte, seat anch.</Desc>
+		<ShortID>M15-00374</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00375</WBS>
+		<CC>SE26</CC>
+		<Desc>27032509-000, INTROCOLOUR FOR MV/DV 50</Desc>
+		<ShortID>10-2977</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00376</WBS>
+		<CC>SE26</CC>
+		<Desc>fakturering 26200  root</Desc>
+		<ShortID>V01-00376</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00377</WBS>
+		<CC>SE26</CC>
+		<Desc>RATIO CAB ROOT</Desc>
+		<ShortID>M12-00377</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00377-08</WBS>
+		<CC>SE26</CC>
+		<Desc>27020250-000 CHANG.LAM. GLASS TO TEMP.</Desc>
+		<ShortID>85-2910</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00377-09-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27020294-AAA Sängnät ratio</Desc>
+		<ShortID>85-2914</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00377-12</WBS>
+		<CC>SE26</CC>
+		<Desc>27020852-000 PAINT PLAST.PARTS UMEÅ C1</Desc>
+		<ShortID>85-2918</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00377-12-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Ind support for Painting Umea</Desc>
+		<ShortID>85-2918</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00389</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>M13-00389</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00390</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>M13-00390</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00390-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27044143-000, QJ&lt;50H 015/036</Desc>
+		<ShortID>M13-00390</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00391</WBS>
+		<CC>SE26</CC>
+		<Desc>Regulation 26100 root</Desc>
+		<ShortID>M14-00391</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00391-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27072736-000 New ADR regulations</Desc>
+		<ShortID>86-1272</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00391-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27070100-000 Inst.of C9 axles in Lam, Ta</Desc>
+		<ShortID>M14-00296</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00391-06</WBS>
+		<CC>SE26</CC>
+		<Desc>27070287-000 HOMOLOGATION EURO 4</Desc>
+		<ShortID>86-1291</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00391-08</WBS>
+		<CC>SE26</CC>
+		<Desc>27070832-000 Taiwan safety test req.</Desc>
+		<ShortID>86-1287</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00393</WBS>
+		<CC>SE26</CC>
+		<Desc>Ratio 26700 root</Desc>
+		<ShortID>M12-00393</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00397</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS 26100</Desc>
+		<ShortID>V01-00397</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00397-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>21132858-AAA utställningshytt</Desc>
+		<ShortID>Z04-00397</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00397-03-02</WBS>
+		<CC>SE26</CC>
+		<Desc>21132858-AAB Speglar</Desc>
+		<ShortID>Z04-00397</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00398</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>M12-3212</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00399</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>M12-3227</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00407</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS C.V.</Desc>
+		<ShortID>V01-00407</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00407-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27053805-AAA, M623 FU</Desc>
+		<ShortID>V01-00407</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00408</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS 26747</Desc>
+		<ShortID>V01-00408</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00409</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS 26747</Desc>
+		<ShortID>V01-00409</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00409-02</WBS>
+		<CC>SE26</CC>
+		<Desc>29955783-AAC, F349</Desc>
+		<ShortID>V01-00409</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00414</WBS>
+		<CC>SE26</CC>
+		<Desc>ECS Diagnosis</Desc>
+		<ShortID>81-0014</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00415</WBS>
+		<CC>SE26</CC>
+		<Desc>root</Desc>
+		<ShortID>V01-00415</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00415-01</WBS>
+		<CC>SE26</CC>
+		<Desc>C: 29955027-000 Universeum</Desc>
+		<ShortID>V01-00415</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00419</WBS>
+		<CC>SE26</CC>
+		<Desc>PQ FG431 INCLUDING PTO</Desc>
+		<ShortID>M13-00419</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00420</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>M13-00420</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00423</WBS>
+		<CC>SE26</CC>
+		<Desc>OIL FILLER CAP</Desc>
+		<ShortID>QJ 221-46</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00423-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27044144-000, QJ221/46 OIL FILLER CAP</Desc>
+		<ShortID>M13-7003</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00424</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>M13-7006</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00425</WBS>
+		<CC>SE26</CC>
+		<Desc>CAC CLAMP</Desc>
+		<ShortID>QJ 265-79-81</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00426</WBS>
+		<CC>SE26</CC>
+		<Desc>QJ ESP-INTERFERENS</Desc>
+		<ShortID>M13-00426</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427</WBS>
+		<CC>SE26</CC>
+		<Desc>root Invoicing KAA  26100</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-03</WBS>
+		<CC>SE26</CC>
+		<Desc>29955850-000 mtrlanskaffning,</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-05</WBS>
+		<CC>SE26</CC>
+		<Desc>29958014-000 Demo förare 3P</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-11</WBS>
+		<CC>SE26</CC>
+		<Desc>28032495-000 DCN MA management</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-12</WBS>
+		<CC>SE26</CC>
+		<Desc>80 th anniversary truck</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-13</WBS>
+		<CC>SE26</CC>
+		<Desc>work for EUD dept 22455  (M Ekström)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-15</WBS>
+		<CC>SE26</CC>
+		<Desc>Powertrain</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-15-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Fuel line up</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-15-04</WBS>
+		<CC>SE26</CC>
+		<Desc>ram 2008 mtrl P3610 EBD 526677</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-15-05</WBS>
+		<CC>SE26</CC>
+		<Desc>FH-655 Byte av mtrl v 1035</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-15-06</WBS>
+		<CC>SE26</CC>
+		<Desc>FH-580 Byte av mtrl v 1035</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-15-08</WBS>
+		<CC>SE26</CC>
+		<Desc>FH-349 Installation av AMT-E</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-15-10</WBS>
+		<CC>SE26</CC>
+		<Desc>3P material for VPT rigs for Eu6</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-16</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 29170 (av 26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-16-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 29170 (av 26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-17</WBS>
+		<CC>SE26</CC>
+		<Desc>Cert.trucks for Japan (20660)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-17-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Cert.trucks for Japan (20660) no 1</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-17-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Cert.trucks for Japan (20660) no 2</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-18</WBS>
+		<CC>SE26</CC>
+		<Desc>owertrain</Desc>
+		<ShortID>G10-00427-18</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-18-01</WBS>
+		<CC>SE26</CC>
+		<Desc>FH-93 / FH-111 389693-000</Desc>
+		<ShortID>G10-00427-18-01</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-19</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 221xx  (av 26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-19-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 22129 (av 26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-19-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Intro 2007 för 22129 (26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-19-03</WBS>
+		<CC>SE26</CC>
+		<Desc>v-låda för J Hellberg 22110)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-20</WBS>
+		<CC>SE26</CC>
+		<Desc>Visningsmotor Skövde MD13 EGR</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-20-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Visningsmotor Skövde MD13 EGR</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-21</WBS>
+		<CC>SE26</CC>
+		<Desc>mtrl till VTC för Indien</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-21-01</WBS>
+		<CC>SE26</CC>
+		<Desc>mtrl till VTC för Indien</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-21-02</WBS>
+		<CC>SE26</CC>
+		<Desc>packning till styrväxel Indien</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-22</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 224xx  (av 26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-22-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 22481 (av 26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-23</WBS>
+		<CC>SE26</CC>
+		<Desc>VTC Fuel line up</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-24</WBS>
+		<CC>SE26</CC>
+		<Desc>Support TMA garanti</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-25</WBS>
+		<CC>SE26</CC>
+		<Desc>ram 2008 mtrl P3610 EBD 524677</Desc>
+		<ShortID>G10-00427-25</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-26</WBS>
+		<CC>SE26</CC>
+		<Desc>start up the pictures</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-27</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 25100 (av 26163))</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-27-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Inköp åt 25100 (av 26163)</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-28</WBS>
+		<CC>SE26</CC>
+		<Desc>inköp för 21210</Desc>
+		<ShortID>G10-00427-28</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-28-01</WBS>
+		<CC>SE26</CC>
+		<Desc>inköp för ID Market Split CAB</Desc>
+		<ShortID>G10-00427-28-01</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-28-02</WBS>
+		<CC>SE26</CC>
+		<Desc>inköp för ID Market Front Display</Desc>
+		<ShortID>G10-00427-28-02</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-28-03</WBS>
+		<CC>SE26</CC>
+		<Desc>inköp för ID Market Market Dashboard</Desc>
+		<ShortID>G10-00427-28-03</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-28-04</WBS>
+		<CC>SE26</CC>
+		<Desc>inköp för ID Market Roll over</Desc>
+		<ShortID>G10-00427-28-04</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-29</WBS>
+		<CC>SE26</CC>
+		<Desc>Ver sam deletion for Brazil</Desc>
+		<ShortID>G10-00427-29</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-30</WBS>
+		<CC>SE26</CC>
+		<Desc>VTC ID Safety Cabs</Desc>
+		<ShortID>G10-00427-30</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-31</WBS>
+		<CC>SE26</CC>
+		<Desc>Volvo Method Truck Belgium</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-32</WBS>
+		<CC>SE26</CC>
+		<Desc>Testing for Penta (Eagle)</Desc>
+		<ShortID>G10-00427-32</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-34</WBS>
+		<CC>SE26</CC>
+		<Desc>SW campaigns in Euro 5 projects</Desc>
+		<ShortID>G10-00427-34</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-36</WBS>
+		<CC>SE26</CC>
+		<Desc>Pipe 21013866 via Parts</Desc>
+		<ShortID>G10-00427-36</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-37</WBS>
+		<CC>SE26</CC>
+		<Desc>2802-2929 Henrik Berntsson prov.mat.</Desc>
+		<ShortID>G10-00427-37</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-38</WBS>
+		<CC>SE26</CC>
+		<Desc>Urea tank Maria Qwarfordt</Desc>
+		<ShortID>G10-00427-38</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-39</WBS>
+		<CC>SE26</CC>
+		<Desc>New production tool Driver handbook</Desc>
+		<ShortID>15-00382</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-40</WBS>
+		<CC>SE26</CC>
+		<Desc>Purchase for Volvo Parts by 26163</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-40-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Material for analysis/update of FH-337</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-42</WBS>
+		<CC>SE26</CC>
+		<Desc>156029952870  Assy Marking GM</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00427-43</WBS>
+		<CC>SE26</CC>
+		<Desc>798921-000 Rigs Engine test EU6</Desc>
+		<ShortID>V01-00427</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00429</WBS>
+		<CC>SE26</CC>
+		<Desc>D12F EGR in FH / FM</Desc>
+		<ShortID>W60-2650</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00429-08</WBS>
+		<CC>SE26</CC>
+		<Desc>27060160-000 P2650 Field Test</Desc>
+		<ShortID>W60-2650</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00429-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>G10-00429-99</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431</WBS>
+		<CC>SE26</CC>
+		<Desc>ROOT WBS</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-08-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27053810-AAA, VAGNLÅN FÖR 3169</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-08-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27053810-AAB, 3169 OMBYGGN AV VAGN</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-09</WBS>
+		<CC>SE26</CC>
+		<Desc>27053096-000, TPD MASKINVERKSTAD</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-11</WBS>
+		<CC>SE26</CC>
+		<Desc>27053812-000, EMS, ENGINE&amp;EATS US07</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-12-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27053813-AAA, VÄXELLÅDSBYTE GIVARMONT</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-12-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27053813-AAB, D123/TMF P 4206 TASK FORC</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-13</WBS>
+		<CC>SE26</CC>
+		<Desc>27053814-000,FIELD TEST D16C QUALITY</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-24</WBS>
+		<CC>SE26</CC>
+		<Desc>27053821-000 ,PATENT</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-26</WBS>
+		<CC>SE26</CC>
+		<Desc>27053822-000 ,FT PROTYP MTRL SERIE P</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-28</WBS>
+		<CC>SE26</CC>
+		<Desc>27053146-000, KALIBRERING BUSS</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-29</WBS>
+		<CC>SE26</CC>
+		<Desc>27053163-000, PROJECT SAFELANE 05</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-36</WBS>
+		<CC>SE26</CC>
+		<Desc>27053825-000,P4206 CAMPAIGN COST</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-38</WBS>
+		<CC>SE26</CC>
+		<Desc>27053830-000,P4516,AMTC IN NA, TESTING</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-39</WBS>
+		<CC>SE26</CC>
+		<Desc>27053831-000, P3132 P10-12 2005-2006</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-53</WBS>
+		<CC>SE26</CC>
+		<Desc>27053840-000,STRUCTURE OPTIMITATION</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-56</WBS>
+		<CC>SE26</CC>
+		<Desc>27053843-000,P4524 ID REV A</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-61</WBS>
+		<CC>SE26</CC>
+		<Desc>29955975-000,KONKURRENTBIL 23340</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-61-01</WBS>
+		<CC>SE26</CC>
+		<Desc>29955975-AAA klinik Holland</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-70</WBS>
+		<CC>SE26</CC>
+		<Desc>29955988-000,RT-TEST QUALITY</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-71</WBS>
+		<CC>SE26</CC>
+		<Desc>27053848-000,FT 3590 EU4ID</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-73</WBS>
+		<CC>SE26</CC>
+		<Desc>27053851-000,VT2412B WITH MD11, E3</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-75</WBS>
+		<CC>SE26</CC>
+		<Desc>27053853-000,COST REDUCTIONS 24451</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-76</WBS>
+		<CC>SE26</CC>
+		<Desc>27053854-000,CCT SPLIT CONE</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-84</WBS>
+		<CC>SE26</CC>
+		<Desc>27054516-000,FT MASCOTT EU4 RVI</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-92</WBS>
+		<CC>SE26</CC>
+		<Desc>27055027-000,P4505 Testing</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-93</WBS>
+		<CC>SE26</CC>
+		<Desc>27055028-000,P3512</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-98</WBS>
+		<CC>SE26</CC>
+		<Desc>27053864-000,P3250 NOX CTRL EMS 2,2</Desc>
+		<ShortID>V01-00346</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00431-99</WBS>
+		<CC>SE26</CC>
+		<Desc>27053866-000, P4206 SOFTWARE</Desc>
+		<ShortID>V01-00431</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00433</WBS>
+		<CC>SE26</CC>
+		<Desc>27022406 REDES. BRACKET/TOWING BRA</Desc>
+		<ShortID>85-3228</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00433-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27022406-000 REDES. BRACKET/TOWING BRA</Desc>
+		<ShortID>85-3228</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00433-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>G10-00433-99</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00435</WBS>
+		<CC>SE26</CC>
+		<Desc>MARKET ADAPTAION 26400 ROOT</Desc>
+		<ShortID>M15-00435</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00435-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27030215-000 (AUS) EBS5,0 HIGH &amp; 12 V</Desc>
+		<ShortID>10-3101</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00435-07</WBS>
+		<CC>SE26</CC>
+		<Desc>27030868-000 BODATTSF FAA20</Desc>
+		<ShortID>10-3127</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00435-07-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Ind Support for Drg on Bdy attch FAA20</Desc>
+		<ShortID>10-3127</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY KAA ROOT</Desc>
+		<ShortID>M13-00436</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27042873-AAA SLS  CAD</Desc>
+		<ShortID>81-0015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27042873-AAB Plastic clip</Desc>
+		<ShortID>81-0015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-01-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27042873-AAC sls 20912240</Desc>
+		<ShortID>81-0015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-01-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27042873-AAD Cabel Cover</Desc>
+		<ShortID>81-0015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-01-05</WBS>
+		<CC>SE26</CC>
+		<Desc>27042873-AAE Strålkastare</Desc>
+		<ShortID>81-0015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-01-06</WBS>
+		<CC>SE26</CC>
+		<Desc>PD-CUR- P81-0015 - QPMR</Desc>
+		<ShortID>81-0015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-01-07</WBS>
+		<CC>SE26</CC>
+		<Desc>IND Support for cable chafing work</Desc>
+		<ShortID>81-0015</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27042894-000 HEAT IN DASH</Desc>
+		<ShortID>81-0016</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27042894-AAA ventilation</Desc>
+		<ShortID>81-0016</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-02-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27042894-AAB 2091674 SLS</Desc>
+		<ShortID>81-0016</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-05</WBS>
+		<CC>SE26</CC>
+		<Desc>27040104-000 PREPARATION QUALITY</Desc>
+		<ShortID>M13-00104</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>CV Direct, Quality issues</Desc>
+		<ShortID>M13-00436</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-09</WBS>
+		<CC>SE26</CC>
+		<Desc>27040208-000 IMPROVED DURABILITY REAR</Desc>
+		<ShortID>81-0023</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-11</WBS>
+		<CC>SE26</CC>
+		<Desc>27040834-000 DIA Connector improvement</Desc>
+		<ShortID>81-0024</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-15</WBS>
+		<CC>SE26</CC>
+		<Desc>27040887-000 QJ 261-110 Hose clamp ass</Desc>
+		<ShortID>QJ 261-110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00436-15-01</WBS>
+		<CC>SE26</CC>
+		<Desc>INDIA SUPPORT DRAWING REAL &amp; MODULES</Desc>
+		<ShortID>QJ 261-110</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439</WBS>
+		<CC>SE26</CC>
+		<Desc>5-6034 US10</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 CV GROUP SUPPORT</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 Rig Test Material</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Spare Parts for US10</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-01-03</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO TALON FT VEH SUPPORT VNM 6-10</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-01-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 Field Test 2007</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 Trucks</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 VNX-9 FCN4/CFT13</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 VNM-4 FCN3</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-03</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 VNL-17 FCN2</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 Granite FCN1/CFT10</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-05</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 ***CFT1 6034/3573</Desc>
+		<ShortID>G10-00439-01-02-</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-06</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 ***CFT2 6034/3573</Desc>
+		<ShortID>G10-00439-01-02-</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-07</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 ***CFT3 6034/3573</Desc>
+		<ShortID>G10-00439-01-02-</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-08</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 ***CFT4 6034/3573</Desc>
+		<ShortID>G10-00439-01-02-</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-09</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO US10 ***CFT5 6034/3573</Desc>
+		<ShortID>G10-00439-01-02-</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-02-10</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO TALON FT VEH SUPPORT VNM 6-10</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-01-04</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Support Engine Reprogramming</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27063706-000, US10 (coordinated P2631 &amp;</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND SUPPORT FOR COMMON.2.20.0</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-03</WBS>
+		<CC>SE26</CC>
+		<Desc>6034 - US10 ATW</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-05</WBS>
+		<CC>SE26</CC>
+		<Desc>IND SUPPORT For US10</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00439-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND support for FEA of battery box</Desc>
+		<ShortID>W60-6034</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440</WBS>
+		<CC>SE26</CC>
+		<Desc>Pre-Study work</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Prestudy of std parts</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Prestudy of Std parts</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27063731-000 Interface Road Map</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-04</WBS>
+		<CC>SE26</CC>
+		<Desc>Vert Muff Alt solution</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-04-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27060189-000 Vert Muff Alt solution</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-05</WBS>
+		<CC>SE26</CC>
+		<Desc>Product structure methods</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27063752-000 Product offering</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-05-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27065001-000 Generic Variant Structure</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-06-03</WBS>
+		<CC>SE26</CC>
+		<Desc>Prestudy Global Standard part assortment</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-07</WBS>
+		<CC>SE26</CC>
+		<Desc>Module structure issue 14</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-07-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27065003-000 VMS prestudy</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-08</WBS>
+		<CC>SE26</CC>
+		<Desc>MD architecture strategy</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-09</WBS>
+		<CC>SE26</CC>
+		<Desc>Dynafleet online</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00440-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>W60-9991</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00452</WBS>
+		<CC>SE26</CC>
+		<Desc>29955836, FOTOHYTT UPPDATERING</Desc>
+		<ShortID>V01-00452</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00453</WBS>
+		<CC>SE26</CC>
+		<Desc>29955686, TEST DB VERIF</Desc>
+		<ShortID>V01-00453</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00453-02</WBS>
+		<CC>SE26</CC>
+		<Desc>29955686-000, TEST DB VERIF</Desc>
+		<ShortID>V01-00453</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00457</WBS>
+		<CC>SE26</CC>
+		<Desc>27052716, VFL PROV PV</Desc>
+		<ShortID>V01-00457</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00457-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27052716-000, VFL PROV PV</Desc>
+		<ShortID>V01-00457</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00457-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27052716-AAA, PV HYRA VIDTUNNEL FILMNIN</Desc>
+		<ShortID>V01-00457</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00460</WBS>
+		<CC>SE26</CC>
+		<Desc>27052491,PARAGRAS BUSS</Desc>
+		<ShortID>V01-00460</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00460-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27052491-000, PARAGRAS BUSS</Desc>
+		<ShortID>V01-00460</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00461</WBS>
+		<CC>SE26</CC>
+		<Desc>RATIO 26100 ROOT</Desc>
+		<ShortID>M12-00461</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00462</WBS>
+		<CC>SE26</CC>
+		<Desc>27032498-000, CKD FM 12 64R IRAN</Desc>
+		<ShortID>M15-00462</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00464</WBS>
+		<CC>SE26</CC>
+		<Desc>Legal 26500 root</Desc>
+		<ShortID>M12-00464</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00464-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27072730-000,TARRA AND SPEED STICKERS</Desc>
+		<ShortID>86-1271</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00465</WBS>
+		<CC>SE26</CC>
+		<Desc>P2453 FM/FH/NH13 2007 Brazil</Desc>
+		<ShortID>W60-2453</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00465-03</WBS>
+		<CC>SE26</CC>
+		<Desc>P2453 - FACE LIFT 2006 SAM</Desc>
+		<ShortID>W60-2453</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00465-03-08</WBS>
+		<CC>SE26</CC>
+		<Desc>PD-CUR-15540-P2453 F.Lift 2006 SAM</Desc>
+		<ShortID>W60-2453</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00465-04</WBS>
+		<CC>SE26</CC>
+		<Desc>P2453 FH / FM Update PPM&apos;s</Desc>
+		<ShortID>Z10-00465</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00467-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27063198-000, P2446 COMPLETE VEH</Desc>
+		<ShortID>W60-2446</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00467-99</WBS>
+		<CC>SE26</CC>
+		<Desc>Migration of actuals</Desc>
+		<ShortID>G10-00467-99</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00478</WBS>
+		<CC>SE26</CC>
+		<Desc>ECS SENSOR</Desc>
+		<ShortID>M52-WF64</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00480</WBS>
+		<CC>SE26</CC>
+		<Desc>RATIO KAA ROOT</Desc>
+		<ShortID>M12-2559</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00481</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY 26100 ROOT</Desc>
+		<ShortID>M12-00481</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY CHASSI ROOT</Desc>
+		<ShortID>M13-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27044136-000 QJ263/81&amp;82 Fan problem</Desc>
+		<ShortID>QJ 263-81-82</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-11</WBS>
+		<CC>SE26</CC>
+		<Desc>27044136-000 QJ263/81&amp;82 Fan problem</Desc>
+		<ShortID>QJ 263-81-82</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-14</WBS>
+		<CC>SE26</CC>
+		<Desc>27043709-000 QJ762-14 Prop. shaft</Desc>
+		<ShortID>QJ 762-17</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-20</WBS>
+		<CC>SE26</CC>
+		<Desc>27040117-000 V-stay RST-AIR2</Desc>
+		<ShortID>81-0017</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-22-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Steering arm P19530</Desc>
+		<ShortID>M13-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-22-02</WBS>
+		<CC>SE26</CC>
+		<Desc>Steering arm P19530 (for Brazil)</Desc>
+		<ShortID>M13-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-27</WBS>
+		<CC>SE26</CC>
+		<Desc>27040154-000 QJ565-36 air filter breakag</Desc>
+		<ShortID>QJ 565-36</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-28</WBS>
+		<CC>SE26</CC>
+		<Desc>27040172-000  Turned Air cab susp damper</Desc>
+		<ShortID>QJ 818-51</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-29</WBS>
+		<CC>SE26</CC>
+		<Desc>27040196-000 QJ643-57 Wheel alignment</Desc>
+		<ShortID>QJ 643-57</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-45</WBS>
+		<CC>SE26</CC>
+		<Desc>27040278-000 Frame gear box attach.</Desc>
+		<ShortID>QJ 212-19</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-50</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY RENAULT,   26400</Desc>
+		<ShortID>M23-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-53</WBS>
+		<CC>SE26</CC>
+		<Desc>27040866-000 QJ&lt;50 H 015/036</Desc>
+		<ShortID>M13-00860</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-58</WBS>
+		<CC>SE26</CC>
+		<Desc>27044151-000 QJ 865-09 Ljudis 7</Desc>
+		<ShortID>QJ 865-09</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-59-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND Support for HUB Maintance</Desc>
+		<ShortID>M23-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-60</WBS>
+		<CC>SE26</CC>
+		<Desc>27040882-000 Lack of instructions</Desc>
+		<ShortID>QJ 563-59</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-65</WBS>
+		<CC>SE26</CC>
+		<Desc>27044443-000 QJ451-30 Prop shaft wear pr</Desc>
+		<ShortID>QJ 451-30</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-66</WBS>
+		<CC>SE26</CC>
+		<Desc>27040897-000 QJ561-81 FH16, Air comp</Desc>
+		<ShortID>QJ 561-81</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-72</WBS>
+		<CC>SE26</CC>
+		<Desc>27044571-000 QJ 865-12 noise shield no f</Desc>
+		<ShortID>QJ 865-12</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-73</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY  VTNA, 26400</Desc>
+		<ShortID>M33-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-73-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Ledig</Desc>
+		<ShortID>M33-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-74</WBS>
+		<CC>SE26</CC>
+		<Desc>QUALITY  MACK, 26400</Desc>
+		<ShortID>M43-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00482-74-01</WBS>
+		<CC>SE26</CC>
+		<Desc>Ledig</Desc>
+		<ShortID>M43-00482</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-02-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27084321-000  CPM Loco. 6</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-03-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27084331 SWEP Project management</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-03-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27084331 EMB</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-03-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27084331 Intelligent hub</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-04-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27083732 RAS-EC (High speed)</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-04-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27085044-000 IVSS IBS Truck</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-05-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27086386 Control concept truck maintenan</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-06-02</WBS>
+		<CC>SE26</CC>
+		<Desc>GSO Electric RH Steering</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-08-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27083746-000 Pressure estimation for ECS</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-09-06</WBS>
+		<CC>SE26</CC>
+		<Desc>27083733 Coupling force control</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-10-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27085004-000 Drive-by-wirw cab sulotions</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-11-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27083787-000 FPAS-EC</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-13-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27083744-000 Safety of active steering</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-15-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27083756-000 Virtual Quality Assurance P</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00499-16-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27083792-000 Active steering</Desc>
+		<ShortID>R11-00499</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00502</WBS>
+		<CC>SE26</CC>
+		<Desc>27014092, Follow up Chassi</Desc>
+		<ShortID>M11-4092</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00502-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND  updation of CAD/Drg of Shock absr f</Desc>
+		<ShortID>M11-4092</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00503</WBS>
+		<CC>SE26</CC>
+		<Desc>27014387, COMMON FOLLOW UP</Desc>
+		<ShortID>M11-4387</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00503-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND support Weight update in KOLA</Desc>
+		<ShortID>M11-04387</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00503-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27014387-AAA, COMMON FOLLOW UP</Desc>
+		<ShortID>M11-04387</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00504</WBS>
+		<CC>SE26</CC>
+		<Desc>27014396, Follow up CAB</Desc>
+		<ShortID>M11-4396</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00504-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc>IND Support for GOT CAB follow up</Desc>
+		<ShortID>M11-4396</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00504-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27014396-AAK, Follow up CAB</Desc>
+		<ShortID>M11-4396</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00504-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27014396-ABZ, Follow up CAB</Desc>
+		<ShortID>M11-4396</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00504-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27014396-ABC, Follow up CAB</Desc>
+		<ShortID>M11-4396</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00506</WBS>
+		<CC>SE26</CC>
+		<Desc>27014853, Follow up El</Desc>
+		<ShortID>M11-4853</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00507</WBS>
+		<CC>SE26</CC>
+		<Desc>27015170, Late test reports</Desc>
+		<ShortID>M11-5170</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00507-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27015170, Late test reports</Desc>
+		<ShortID>M11-5170</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00509</WBS>
+		<CC>SE26</CC>
+		<Desc>27016324, Mtrl procurement</Desc>
+		<ShortID>M11-06324</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00509-01-01</WBS>
+		<CC>SE26</CC>
+		<Desc> Mtrl procurement inbox India</Desc>
+		<ShortID>M11-06324</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00514</WBS>
+		<CC>SE26</CC>
+		<Desc>27018223, Follow-up 2654X</Desc>
+		<ShortID>M11-8223</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00515</WBS>
+		<CC>SE26</CC>
+		<Desc>27018224, Follow-up 2655X</Desc>
+		<ShortID>M11-8224</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00515-02</WBS>
+		<CC>SE26</CC>
+		<Desc>27018224-AAA, INDIEN-VAGN</Desc>
+		<ShortID>M11-8224</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00515-03</WBS>
+		<CC>SE26</CC>
+		<Desc>27018224-AAB, Follow-up 2655X</Desc>
+		<ShortID>M11-8224</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00515-04</WBS>
+		<CC>SE26</CC>
+		<Desc>27018224-AEE, Follow-up 2655X</Desc>
+		<ShortID>M11-8224</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00516</WBS>
+		<CC>SE26</CC>
+		<Desc>27019069, Small Partsjob, no PMR/P</Desc>
+		<ShortID>M11-9069</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00520-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27023425, TO RETAIN CU-ACUMAN</Desc>
+		<ShortID>M12-1219</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00524-01</WBS>
+		<CC>SE26</CC>
+		<Desc>27024398, CKD I-SHIFT MALAYSIA</Desc>
+		<ShortID>M12-0040</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00530</WBS>
+		<CC>SE26</CC>
+		<Desc>27025837, NEW ALTERNATOR GENERARION</Desc>
+		<ShortID>M12-2078</ShortID>
+	</WBSRec>
+	<WBSRec>
+		<WBS>A2G10-00535</WBS>
+		<CC>SE26</CC>
+		<Desc>27023105, WHEEL BEARING RATIO</Desc>
+		<ShortID>M12-2197</ShortID>
+	</WBSRec>
+</ns1:SyncWBSElementShort>

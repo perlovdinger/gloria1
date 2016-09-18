@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-02-04T11:09:03.9+0100</SendTime>
+    </GmfHeader>
+    <CIAction>U</CIAction>
+    <UserID>A039911</UserID>
+    <UserFirstName>Ratikant</UserFirstName>
+    <UserLastName>Sahoo</UserLastName>
+    <OrganisationID>BD052890</OrganisationID>
+    <OrganisationName>E.C.M. Services Ltd</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>14</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>122 Tejgaon Industrial Area</Street1>
+      <PostCode>1208</PostCode>
+      <City>Dhaka</City>
+      <CountryCode>BD</CountryCode>
+      <PhoneNo>880 2 8822213 881</PhoneNo>
+      <FaxNumber>880 2 8826633</FaxNumber>
+      <Email>ratikant.sahoo@consultant.volvo.com</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>N</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>BD052890</OrganisationID>
+      <CompName>RTC</CompName>
+      <DistrictNo>6</DistrictNo>
+      <CustID>52890</CustID>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <UserCategory>
+        <UserCategoryID>Delivery_Controller</UserCategoryID>
+        <UserCategoryDescription>Delivery Controller</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Internal_Procurer</UserCategoryID>
+        <UserCategoryDescription>Internal Procurer</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>IT_support</UserCategoryID>
+        <UserCategoryDescription>IT support</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-02-04T11:09:03.9+0100</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>Gloria</artifactId>
+    <groupId>com.volvo.gloria</groupId>
+    <version>1.4.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.volvo.gloria.webclient</groupId>
+  <artifactId>GloriaWebClient</artifactId>
+  <name>GloriaWebClient</name>
+  <description>GloriaWebClient</description>
+  <packaging>war</packaging>
+  
+  <profiles>
+  <!-- ************************************************************************* -->
+    <!-- This profile is activated by passing a property to Maven in this case: -DgenerateApplicationVersionMetadata=true -->
+    <!-- This profile will add the build number (in POS this is the subversion revision number) to the MANIFEST.MF file -->
+    <!-- -->
+    <profile>
+      <id>generateApplicationVersionMetadata</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+        <property>
+          <name>generateApplicationVersionMetadata</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <!-- ************************************************************************* -->
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>buildnumber-maven-plugin</artifactId>
+            <version>1.2</version>
+            <executions>
+              <execution>
+                <phase>validate</phase>
+                <goals>
+                  <goal>create</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <doUpdate>false</doUpdate>
+              <doCheck>false</doCheck>
+            </configuration>
+          </plugin>          
+          <!-- ************************************************************************* -->
+          <plugin>
+            <groupId>com.github.eirslett</groupId>
+            <artifactId>frontend-maven-plugin</artifactId>
+            <!-- NB! Set <version> to the latest released version of frontend-maven-plugin, like in README.md -->
+            <version>0.0.22</version>
+
+            <executions>
+              <execution>
+                <id>install node and npm</id>
+                <phase>initialize</phase>
+                <goals>
+                  <goal>install-node-and-npm</goal>
+                </goals>
+                <configuration>
+                  <nodeVersion>v0.10.40</nodeVersion>
+                  <npmVersion>2.5.1</npmVersion>
+                </configuration>
+              </execution>
+              <execution>
+                <id>npm install</id>
+                <phase>initialize</phase>
+                <goals>
+                  <goal>npm</goal>
+                </goals>
+                <!-- Optional configuration which provides for running any npm command -->
+                <configuration>
+                  <arguments>install</arguments>
+                </configuration>
+              </execution>
+              <execution>
+                <id>grunt build</id>
+                <goals>
+                  <goal>grunt</goal>
+                </goals>
+                <configuration>
+                  <arguments>
+                    build --no-color                    
+                  </arguments>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <!-- ************************************************************************* -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.3</version>
+            <configuration>
+              <warSourceExcludes>${basedir}/src/main/webapp/app/,**/*.html</warSourceExcludes>
+              <archive>
+                <manifest>
+                  <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                </manifest>
+                <manifestEntries>
+                  <Implementation-Build>${buildNumber}</Implementation-Build>
+                  <Implementation-Time>${maven.build.timestamp}</Implementation-Time>
+                </manifestEntries>
+              </archive>
+              <webResources>
+                <resource>
+                  <directory>${basedir}/target/dist</directory>
+                  <filtering>true</filtering>
+                  <includes>
+                    <include>**</include>
+                  </includes>
+                  <excludes>
+                    <exclude>**/*.eot</exclude>
+                    <exclude>**/*.ttf</exclude>
+                    <exclude>**/*.woff</exclude>
+                    <exclude>**/*.otf</exclude>
+                  </excludes>
+                </resource>
+              </webResources>
+            </configuration>
+          </plugin>          
+          <!-- ************************************************************************* -->
+        </plugins>
+
+        <pluginManagement>
+          <plugins>
+          
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-war-plugin</artifactId>
+              <version>2.3</version>
+            </plugin>
+
+          </plugins>
+        </pluginManagement>
+
+      </build>
+
+      <properties>
+        <applicationBuildInfo>Build: ${project.version} [${buildNumber}] [${maven.build.timestamp}]</applicationBuildInfo>
+      </properties>
+    </profile>
+    <!-- ************************************************************************* -->
+    <!-- This profile is activated by default,filters the resources replacing the build info(eclipse/development build) -->
+    <profile>
+      <id>buildGloriaWebArchive</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+        <property>
+          <name>buildGloriaWebArchive</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.3</version>
+            <configuration>
+              <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+              <webResources>
+                <resource>
+                  <directory>${basedir}/src/main/webapp</directory>
+                  <filtering>true</filtering>
+                  <includes>
+                    <include>**</include>
+                  </includes>
+                  <excludes>
+                    <exclude>**/*.eot</exclude>
+                    <exclude>**/*.ttf</exclude>
+                    <exclude>**/*.woff</exclude>
+                    <exclude>**/*.otf</exclude>
+                  </excludes>
+                </resource>
+              </webResources>
+            </configuration>
+          </plugin>
+        </plugins> 
+        <pluginManagement>
+          <plugins>
+          
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-war-plugin</artifactId>
+              <version>2.3</version>
+            </plugin>
+
+          </plugins>
+        </pluginManagement>       
+      </build>
+      <properties>
+        <applicationBuildInfo>Build: ${project.version}</applicationBuildInfo>
+      </properties>
+    </profile>    
+  </profiles>
+  <url>gloria</url>
+</project>

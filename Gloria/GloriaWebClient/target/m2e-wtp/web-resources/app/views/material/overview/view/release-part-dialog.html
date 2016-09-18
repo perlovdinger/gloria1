@@ -1,0 +1,40 @@
+
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3 class="modal-title">{{t
+				"Gloria.i18n.material.overview.header.headerReleasePart"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div class='row'>
+				<div class='col-sm-4'>
+					<div class='form-group'>
+						<div class="controls">
+							<h4>{{t "Gloria.i18n.material.overview.header.releasePart"}}</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-8'>
+					<div class='form-group'>
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.confirmationText"}}: </label>
+						<div class="controls">
+							<textarea id="confirmationText" class='form-control col-sm-12'
+								rows="3" maxlength="120"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a class="btn btn-primary" id="release-button">{{t
+				"Gloria.i18n.material.overview.button.release"}}</a> <a
+				class="btn btn-default" id="cancel-button">{{t
+				"Gloria.i18n.material.overview.button.cancel"}}</a>
+		</div>
+	</div>
+</div>

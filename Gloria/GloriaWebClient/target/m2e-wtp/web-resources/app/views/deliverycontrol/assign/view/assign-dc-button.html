@@ -1,0 +1,45 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="noprint">
+				{{#if_eq module "supplier"}} {{#hasPermission "supplierEdit"
+				0="AssignDeliveryController"}} <a class="btn btn-default" {{#unless
+					permittedActions.edit}}disabled="true"
+					{{/unless}}  id="edit-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.edit"}}</a> <a
+					class="btn btn-default" {{#unless
+					permittedActions.delete}}disabled="true"
+					{{/unless}}  id="delete-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.delete"}}</a> <span
+					class="noprint divider-vertical"></span> <a class="btn btn-default"
+					id="change-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.change"}}</a> <a
+					class="btn btn-default" id="add-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.add"}}</a>
+				{{/hasPermission}} {{/if_eq}} {{#if_eq module "project"}}
+				{{#hasPermission "projectEdit" 0="AssignDeliveryController"}} <a
+					class="btn btn-default" {{#unless
+					permittedActions.edit}}disabled="true"
+					{{/unless}}  id="edit-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.edit"}}</a> <a
+					class="btn btn-default" {{#unless
+					permittedActions.delete}}disabled="true"
+					{{/unless}}  id="delete-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.delete"}}</a> <span
+					class="noprint divider-vertical"></span> <a class="btn btn-default"
+					id="change-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.change"}}</a> <a
+					class="btn btn-default" id="add-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.add"}}</a>
+				{{/hasPermission}} {{/if_eq}} {{#if_eq module "order"}}
+				{{#hasPermission "orderAssign" 0="AssignDeliveryController"}} <a
+					class="btn btn-default" {{#unless
+					permittedActions.reassign}}disabled="true"
+					{{/unless}}  id="reassign-button">{{t
+					"Gloria.i18n.deliverycontrol.assignOrReassign.button.assign"}}</a>
+				{{/hasPermission}} {{/if_eq}} <a id="clear-filter"
+					class="clear-filter">{{t "Gloria.i18n.gridpanel.clearFilter"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

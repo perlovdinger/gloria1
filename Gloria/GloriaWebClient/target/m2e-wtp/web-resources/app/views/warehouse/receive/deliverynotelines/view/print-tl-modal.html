@@ -1,0 +1,46 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t "Gloria.i18n.warehouse.receive.print.tl"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div style="padding-left: 15px; padding-right: 15px;">
+				<div id="appModalMessage"></div>
+				<div class='row'>
+					<div class="alert alert-info">
+						<h5>
+							<i class="fa fa-info-circle"></i><b>&nbsp;&nbsp;{{t
+								"Gloria.i18n.warehouse.receive.print.tlText"}}</b>
+						</h5>
+						<p>{{t "Gloria.i18n.warehouse.receive.print.tlTextBody"}}</p>
+					</div>
+				</div>
+				<br />
+				<form id="tl-form" name="tl-form">
+					<fieldset>
+						<div id="transportLabel" class='row'>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<div class="controls">
+										<select id="view-select" name="view-select"
+											class="form-control" required>
+											{{{renderPrintTLSelector items}}}
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="print">
+				{{t "Gloria.i18n.warehouse.buttons.print"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

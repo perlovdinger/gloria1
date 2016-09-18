@@ -1,0 +1,61 @@
+<form novalidate="novalidate">
+	<div class="panel-group accordion">
+		<div id="PartInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#partInformation"><strong>{{t
+							"Gloria.i18n.warehouse.qualityInspection.details.header.partInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="partInformation" class="panel-collapse collapse in">
+				<div id="partInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="documentsInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#documentsInformation"><strong>{{t
+							"Gloria.i18n.warehouse.qualityInspection.details.header.documentsInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="documentsInformation" class="panel-collapse collapse in">
+				<div id="documentsInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="problemDescAndAttachmentInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#problemDescAndAttachmentInformation"><strong>{{t
+							"Gloria.i18n.warehouse.qualityInspection.details.header.problemDescAndAttachmentInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="problemDescAndAttachmentInformation"
+				class="panel-collapse collapse in">
+				<div id="problemDescAndAttachmentInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+		<div id="inspectionInfo" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						href="#inspectionInformation"><strong>{{t
+							"Gloria.i18n.warehouse.qualityInspection.details.header.inspectionInfo"}}</strong></a>
+				</h4>
+			</div>
+			<div id="inspectionInformation" class="panel-collapse collapse in">
+				<div id="inspectionInfoContent" class="panel-body"></div>
+			</div>
+		</div>
+	</div>
+	<div align="center" class="button-bar floatFooter">
+		<!-- <a class="btn btn-default disabled" id="printLabel">{{t "Gloria.i18n.buttons.printLabel"}}</a> -->
+		{{#hasPermission "edit" 0="QualityInspection"}}<a
+			class="btn btn-default" id="save">{{t
+			"Gloria.i18n.buttons.save"}}</a>{{/hasPermission}} <a
+			class="btn btn-default" id="cancel">{{t
+			"Gloria.i18n.buttons.cancel"}}</a>
+	</div>
+</form>

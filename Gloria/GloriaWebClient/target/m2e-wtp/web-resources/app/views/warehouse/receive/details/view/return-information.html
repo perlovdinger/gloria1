@@ -1,0 +1,67 @@
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='receivedQuantity'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.returnInfo.receivedQuantity"}}:
+				</label>
+				<div class="controls">
+					<input type="number" min="0" step="1" max="99999" id="receivedQuantity"
+						name="deliveryNoteLine[receivedQuantity]" class="form-control"
+						value="{{data.receivedQuantity}}">
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='damagedQuantity'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.receiveInfo.damagedQuantity"}}:
+				</label>
+				<div class="controls">
+					<input type="number" min="0" step="1" max="99999" id="damagedQuantity"
+						name="deliveryNoteLine[damagedQuantity]" class="form-control"
+						value="{{data.damagedQuantity}}">
+                    <input type="hidden"  id="orderLineQuantityHidden"   value="{{data.orderLineQuantity}}">
+						
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='dangerousGoodsFlag'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.receiveInfo.dangerousGoodsFlag"}}:
+				</label>
+				<div class="controls">
+					<span id="dangerousGoodsFlag">{{dangerousGoodsFlag}}</span>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for='expirationDate'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.receiveInfo.expirationDate"}}:
+				</label>
+				<div class='input-group date'>
+					<input type="text" id='expirationDate'
+						name='deliveryNoteLine[expirationDate]'
+						class="expirationDate js-date form-control"
+						value='{{date data.expirationDate "Gloria.i18n.dateformat"}}'>
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-calendar"></span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-8'>
+			<div class='form-group'>
+				<label class="control-label" for='procureInfo'> {{t
+					"Gloria.i18n.warehouse.receive.details.text.receiveInfo.procureInfo"}}:
+				</label>
+				<div class="controls">
+					 <textarea id="procureInfo" class="form-control" rows="3" cols="75"maxlength="500" disabled="true">{{#if data.procureInfo}}{{t "Gloria.i18n.deliverycontrol.orderOverview.text.warehouseComment"}} : {{data.procureInfo}}&#13;&#10;{{/if}}{{#if data.qualityDocumentName}}{{t "Gloria.i18n.deliverycontrol.orderOverview.text.qualityDocumentName"}} : {{data.qualityDocumentName}}{{/if}}</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

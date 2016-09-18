@@ -1,0 +1,16 @@
+<div class="row">
+	{{#hasPermission "edit" 0="WarehouseSetup"}}
+	<div class="col-sm-4">
+		<div class="form-group">
+			<div class="controls">
+				<a class="btn btn-default" id="srAddNew">{{t
+					"Gloria.i18n.buttons.addNew"}}</a> <a class="btn btn-default"
+					id="srEdit" {{#unless permittedActions.edit}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.buttons.edit"}} </a> <a class="btn btn-default"
+					id="srDelete" {{#unless permittedActions.delete}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.buttons.delete"}} </a>
+			</div>
+		</div>
+	</div>
+	{{/hasPermission}}
+</div>

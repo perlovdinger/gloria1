@@ -1,0 +1,171 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			{{#if data.id}}
+			<h3>{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.text.editTitle"}}</h3>
+			{{else}}
+			<h3>{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.text.addTitle"}}</h3>
+			{{/if}}
+		</div>
+		<div class="modal-body">
+			<div>
+				<div id="appModalMessage"></div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						{{#if data.id}}
+						<h4>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.editRule"}}</h4>
+						{{else}}
+						<h4>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.addRule"}}</h4>
+						{{/if}}
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						{{#if_eq module 'supplier'}} {{#if_eq data.id null}}
+						<h5>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.addTextSupplier"}}</h5>
+						{{else}}
+						<h5>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.editTextSupplier"}}</h5>
+						{{/if_eq}} {{/if_eq}} {{#if_eq module 'project'}} {{#if_eq data.id
+						null}}
+						<h5>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.addTextProject"}}</h5>
+						{{else}}
+						<h5>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.editTextProject"}}</h5>
+						{{/if_eq}} {{/if_eq}}
+					</div>
+				</div>
+				{{#if_eq module 'supplier'}}
+				<form id="addEditSupplierForm" name="addEditSupplierForm"
+					role="form">
+					<fieldset>
+						<input name='delivery[id]' type="hidden" value='{{data.id}}'>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label has-info" for="supplierId"
+										data-toggle="tooltip" rel="tooltip" data-placement="top"
+										title='{{t "Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.supplierIdInfo"}}'>
+										{{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.supplierId"}}:
+									</label>
+									<div class="controls">
+										<input id="supplierId" name="delivery[supplierId]"
+											class="input-block-level form-control" type="text"
+											value="{{data.supplierId}}" maxlength="6">
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label has-info" for="ppSuffix"
+										data-toggle="tooltip" rel="tooltip" data-placement="top"
+										title='{{t "Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.suffixInfo"}}'>
+										{{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.suffix"}}:
+									</label>
+									<div class="controls">
+										<select id="ppSuffix" class='form-control'
+											name="delivery[suffix]">
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label" for="name"> {{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.name"}}:
+									</label>
+									<div class="controls">
+										<span id="name" name="delivery[name]">{{team.name}}</span>
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label required" for="dcUserId">
+										{{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.deliveryControllerUserId"}}:
+									</label>
+									<div class="controls">
+										<input id="dcUserId" name="delivery[deliveryControllerUserId]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				{{/if_eq}} {{#if_eq module 'project'}}
+				<form id="addEditProjectForm" name="addEditProjectForm">
+					<fieldset>
+						<input name='delivery[id]' type="hidden" value='{{data.id}}'>
+						<div class='row'>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required" for="projectId">
+										{{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.project.projectId"}}:
+									</label>
+									<div class="controls">
+										<div class="controls" id="projectSelectorContainer">
+											<input id="projectId" class='input-block-level form-control'
+												name="delivery[projectId]" required="required"
+												value='{{data.projectId}}' maxlength="20" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label" for="name"> {{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.project.name"}}:
+									</label>
+									<div class="controls">
+										<span id="name" name="delivery[name]">{{team.name}}</span>
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required" for="dcUserId">
+										{{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.project.deliveryControllerUserId"}}:
+									</label>
+									<div class="controls">
+										<input id="dcUserId" name="delivery[deliveryControllerUserId]">
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+				{{/if_eq}} <br />
+				<div class='row'>
+					<div class='col-sm-12'>
+						<div class="form-group">
+							<label class="control-label has-info" style="display: inline;"></label>
+							<span><b>{{t
+									"Gloria.i18n.deliverycontrol.assignOrReassign.text.conditionallyReq"}}</b></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="save">{{t
+				"Gloria.i18n.buttons.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

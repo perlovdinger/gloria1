@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Materials>
+  <Material materialType="USAGE" quantity="10" unitOfMeasure="PC" migrated="true" referenceId="1234" referenceGroup="Test-Ref" outboundLocationId="Loc-1"
+    outboundLocationName="Loc-1" outBoundStartDate="2014-01-11" requiredStaDate="2014-01-10" buildStartDate="2014-03-01" receiver="Test" changeRequestType="CRType"
+    changeRequestId="12311" phase="phase" phaseType="PhaseType" phasePlannedDeliveryStartDate="2013-08-14" phasePlannedAssemblyStartDate="2013-08-14"
+    phasePlannedAssemblyEndDate="2013-08-14" contactPersonId="T067814" contactPersonName="Hassan Omarain" contactDepartment="BF15320" requesterUserId="RUSERID"
+    requesterName="Mats Hagerman">
+    <MaterialProcure procureType="INTERNAL" procureDate="2013-08-14" requisitionId="1234567" pPartAffiliation="X" pPartNumber="1234"
+      pPartVersion="2" pPartName="Test" pPartModification="pPModification" dfuObjectNumber="1" referenceGroups="refGroups" inspectionLevel="2"
+      dangerousGoodsFlag="true" dangerousGoodsName="" scrappingAlert="No" warehouseComment="Need to" procureInfo="ProcureInfo" currency="SEK"
+      projectId="34234" wbsCode="3454" costCenter="546456" internalOrderNo="1235" mailFormId="mail" consignorId="" directSend="true" whSiteId="1622" shipToId=""
+      finalWarehouseId="" requiredStaDate="2014-01-10" />
+    <MaterialLine receivedDate="2013-08-13" quantity="40" status="PROCURED" />
+    <MaterialLine receivedDate="2013-08-14" quantity="50" status="PROCURED" />
+    <MaterialLine receivedDate="2013-08-13" quantity="2" status="READY_TO_STORE" />
+    <MaterialLine receivedDate="2013-08-13" quantity="3" status="STORED" />
+  </Material>
+  <Material materialType="ADDITIONAL" quantity="12" unitOfMeasure="PC" migrated="true" referenceGroup="Test-Ref1" referenceId="2345" outboundLocationId="Loc-2"
+    outboundLocationName="Loc-1" outBoundStartDate="2014-01-12" requiredStaDate="2014-01-10" buildStartDate="2014-03-01" receiver="Test1" changeRequestType="CRType2"
+    changeRequestId="12311" phase="phase" phaseType="PhaseType" phasePlannedDeliveryStartDate="2013-08-14" phasePlannedAssemblyStartDate="2013-08-14"
+    phasePlannedAssemblyEndDate="2013-08-14" contactPersonId="T067814" contactPersonName="Hassan Omarain" contactDepartment="BF15320" requesterUserId=""
+    requesterName="Mats Hagerman">
+    <MaterialProcure procureType="EXTERNAL" procureDate="2014-01-12" requisitionId="123456730" pPartAffiliation="X" pPartNumber="1234"
+      pPartVersion="2" pPartName="Test" pPartModification="" dfuObjectNumber="2" referenceGroups="" inspectionLevel="0" dangerousGoodsFlag="false"
+      dangerousGoodsName="" scrappingAlert="" warehouseComment="" procureInfo=""  currency="" projectId="34234" wbsCode="3454" costCenter="546456"
+      internalOrderNo="4567" mailFormId="" consignorId="" directSend="false" whSiteId="5678" shipToId="" finalWarehouseId="" requiredStaDate="2014-01-11" />
+    <MaterialLine receivedDate="2013-04-28" quantity="6" status="PROCURED" />
+    <MaterialLine receivedDate="2013-04-15" quantity="7" status="READY_TO_STORE" />
+    <MaterialLine receivedDate="2013-08-22" quantity="8" status="PROCURED" />
+  </Material>
+
+  <Material materialType="USAGE" quantity="14" unitOfMeasure="PC" migrated="true" referenceGroup="Test-Ref2" referenceId="2346" outboundLocationId="Loc-3"
+    outboundLocationName="Loc-1" outBoundStartDate="2014-01-13" requiredStaDate="2014-01-12" buildStartDate="2014-03-01" receiver="Test2" changeRequestType="CRType3"
+    changeRequestId="CRType3" phase="phase" phaseType="phaseType" phasePlannedDeliveryStartDate="2013-08-14" phasePlannedAssemblyStartDate="2013-08-14"
+    phasePlannedAssemblyEndDate="2013-08-14" contactPersonId="T067814" contactPersonName="Hassan Omarain" contactDepartment="BF15320" requesterUserId=" "
+    requesterName="Mats Hagerman">
+    <MaterialProcure procureType="INTERNAL" procureDate="2014-01-12" requisitionId="123456732" pPartAffiliation="K" pPartNumber="3454"
+      pPartVersion="4" pPartName="Test1" pPartModification="" dfuObjectNumber="3" referenceGroups="" inspectionLevel="" dangerousGoodsFlag="true"
+      dangerousGoodsName="" scrappingAlert="" warehouseComment="" procureInfo="" currency="" projectId="34234" wbsCode="3454" costCenter="546456"
+      internalOrderNo="4567" mailFormId="" consignorId="" directSend="true" whSiteId="1622" shipToId="" finalWarehouseId="" requiredStaDate="2014-01-11" />
+    <MaterialLine receivedDate="2013-04-15" quantity="7" status="STORED" />
+    <MaterialLine receivedDate="2013-08-22" quantity="9" status="PROCURED" />
+    <MaterialLine receivedDate="2013-08-22" quantity="10" status="REQUESTED" />    
+  </Material>
+  
+  <Material materialType="RELEASED" quantity="12" unitOfMeasure="PC" migrated="true" referenceGroup="Test-Ref1" referenceId="2345" outboundLocationId="Loc-2"
+    outboundLocationName="Loc-1" outBoundStartDate="2014-01-12" requiredStaDate="2014-01-10" buildStartDate="2014-03-01" receiver="Test1" changeRequestType="CRType2"
+    changeRequestId="12311" phase="phase" phaseType="PhaseType" phasePlannedDeliveryStartDate="2013-08-14" phasePlannedAssemblyStartDate="2013-08-14"
+    phasePlannedAssemblyEndDate="2013-08-14" contactPersonId="T067814" contactPersonName="Hassan Omarain" contactDepartment="BF15320" requesterUserId=""
+    requesterName="Mats Hagerman">
+    <MaterialProcure procureType="EXTERNAL" procureDate="2014-01-12" requisitionId="123456730" pPartAffiliation="X" pPartNumber="12345"
+      pPartVersion="2" pPartName="Test" pPartModification="" dfuObjectNumber="2" referenceGroups="" inspectionLevel="0" dangerousGoodsFlag="false"
+      dangerousGoodsName="" scrappingAlert="" warehouseComment="" procureInfo="" currency="" projectId="34234" wbsCode="3454" costCenter="546456"
+      internalOrderNo="4567" mailFormId="" consignorId="" directSend="false" whSiteId="1622" shipToId="" finalWarehouseId="" requiredStaDate="2014-01-11" />
+    <MaterialLine receivedDate="2013-04-28" quantity="6" status="READY_TO_STORE" />
+    <MaterialLine receivedDate="2013-04-15" quantity="7" status="READY_TO_STORE" />
+    <MaterialLine receivedDate="2013-08-22" quantity="8" status="PROCURED" />
+  </Material>
+</Materials>

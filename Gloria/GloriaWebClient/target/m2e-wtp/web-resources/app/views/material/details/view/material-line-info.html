@@ -1,0 +1,113 @@
+<div class="well well-small">
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="deliveryNoteNo"> {{t
+					"Gloria.i18n.material.details.text.deliveryNoteNo"}}: </label>
+				<div class="controls">
+					<span id="deliveryNoteNo">{{showNAIfNoValue data.deliveryNoteNo}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="deliveryNoteDate"> {{t
+					"Gloria.i18n.material.details.text.deliveryNoteDate"}}: </label>
+				<div class="controls">
+					<span id="deliveryNoteDate">{{date data.deliveryNoteDate
+						"Gloria.i18n.dateformat"}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="quantity"> {{t
+					"Gloria.i18n.material.details.text.quantity"}}: </label>
+				<div class="controls">
+					<span id="quantity">{{data.quantity}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="unitOfMeasure"> {{t
+					"Gloria.i18n.material.details.text.unitOfMeasure"}}: </label>
+				<div class="controls">
+					<span id="unitOfMeasure">{{data.unitOfMeasure}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="status"> {{t
+					"Gloria.i18n.material.details.text.status"}}: </label>
+				<div class="controls">
+					<span id="status">{{data.status}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="statusDate"> {{t
+					"Gloria.i18n.material.details.text.statusDate"}}: </label>
+				<div class="controls">
+					<span id="statusDate">{{date data.statusDate
+						"Gloria.i18n.dateformat"}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="binlocation"> {{t
+					"Gloria.i18n.material.details.text.binlocation"}}: </label>
+				<div class="controls">
+					<span id="binlocation">{{data.binLocationCode}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="dispatchNoteNo"> {{t
+					"Gloria.i18n.material.details.text.dispatchNoteNo"}}: </label>
+				<div class="controls">
+					<span id="dispatchNoteNo">{{showNAIfNoValue data.dispatchNoteNo}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="whSiteId"> {{t
+					"Gloria.i18n.material.details.text.whSiteId"}}: </label>
+				<div class="controls">
+					<span id="whSiteId">{{data.whSiteId}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="finalWhSiteId"> {{t
+					"Gloria.i18n.material.details.text.finalWhSiteId"}}: </label>
+				<div class="controls">
+					<span id="whSiteId">{{data.finalWhSiteId}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="expirationDate"> {{t
+					"Gloria.i18n.material.details.text.expirationDate"}}: </label>
+				<div class="controls">
+					<span id="expirationDateSpan">{{date data.expirationDate}}</span>
+					<div id="expirationDateDiv" class="input-group date hidden">
+						<input type="text" id="expirationDate" name="materialLine[expirationDate]"
+							value="{{date data.expirationDate}}" class="js-date form-control">
+						<span class="input-group-addon"><span
+							class="glyphicon glyphicon-calendar"></span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

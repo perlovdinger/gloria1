@@ -1,0 +1,9 @@
+<div class="noprint">
+	{{#hasPermission "edit" 0="QISettings"}} <a class="btn btn-default"
+		id="edit-button" {{#unless permittedActions.edit}}disabled="true"{{/unless}}>{{t
+		"Gloria.i18n.buttons.edit"}}</a> <a class="btn btn-default"
+		id="remove-button" {{#unless permittedActions.remove}}disabled="true"{{/unless}}>{{t
+		"Gloria.i18n.buttons.remove"}}</a> <span class="noprint divider-vertical"></span>
+	<a class="btn btn-default" id="add-button">{{t
+		"Gloria.i18n.buttons.addNew"}}</a>{{/hasPermission}}
+</div>

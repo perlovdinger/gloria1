@@ -1,0 +1,62 @@
+{
+	"Gloria" : {
+		"i18n" : {
+			"gloria" : "Gloria",
+			"about" : "Om",
+			"dateformat" : "YYYY-MM-DD",
+			"datetimeformat" : "YYYY-MM-DD HH:mm:ss",
+            "datepickerformat": "yyyy-mm-dd",
+            "weekStart" : "1",
+			"home" : "Start",
+			"selectBoxDefaultValue" : "Välj",
+			"general" : {
+				"loading" : "Laddar...",
+				"itemsPerPage" : "Rader per sida"
+			},
+			"header" : {
+				"warehouse" : {
+					"id" : "ID",
+					"partNo" : "Del nr",
+					"partAlias" : "Alias",
+					"partDesc" : "Beskrivning",
+					"partStage" : "Fas",
+					"partIssue" : "Utåva",
+					"partVersion" : "Version",
+					"directSend" : "Direktsänd",
+					"directSendValue" : "Direktsänd",
+					"orderNo" : "Ordernr",
+					"orderQty" : "Best antal",
+					"receivedQty" : "Mott antal",
+					"storedQty" : "Lagrat antal",
+					"binLocation" : "Pallplats",
+					"binLocSgtn" :"Föreslagen pallplats",
+					"supplId" : "Lev Parma-ID",
+					"supplName" : "Lev namn",
+					"assignTo" : "Tilldela",
+					"mtrlLineStatus" : "Status",
+					"orderCategory" : "Kategori",					
+					"ccd" : "CDD",
+					"qtyAndStatus" : "Antal & Status",
+					"suggestStorageRoom" : "Föreslagen pallplats",
+					"storage" : "Lagringsplats"			
+				}
+			},
+			"startpage" : {
+				"pages" : {
+					"warehouse" : "Lager",
+					"informationGathering" : "Informationsinsamling",
+					"deliveryControl" : "Leveranskontroll",
+					"myOrderOverview" : "Min orderöversikt",
+					"procurement" : "Anskaffning"
+				}
+			},
+			"login" : {
+				"login" : "Gloria inloggning",
+				"username" : "Användarnamn",
+				"password" : "Lösenord",
+				"signIn" : "Logga in",
+				"wrongCredentials" : "Fel användarnamn och/eller lösenord"
+			}
+		}
+	}
+}

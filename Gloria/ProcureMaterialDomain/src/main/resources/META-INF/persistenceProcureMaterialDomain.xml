@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+  <persistence-unit name="ProcureMaterialDomainPU">
+
+    <mapping-file>META-INF/ProcureMaterialDomain_orm.xml</mapping-file>
+
+    <!-- Fully qualified names of persistent classes -->
+    <class>com.volvo.gloria.procurematerial.d.entities.AttachedDoc</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.DeliveryLog</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.DeliveryNote</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.DeliveryNoteLine</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.DeliverySchedule</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.DispatchNote</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.EventLog</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.Material</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.MaterialPartAlias</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.MaterialLine</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.MaterialLineStatusTime</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.Order</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderLine</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderLineLog</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderLineVersion</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderLog</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.PickList</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.QiDoc</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.RequestGroup</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.RequestList</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.TransportLabel</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderSap</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderSapLine</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderSapAccounts</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.OrderSapSchedule</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.Buyer</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.ChangeId</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.FinanceHeader</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.ProcureLine</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.MaterialHeader</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.MaterialHeaderVersion</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.MaterialLineStatusCounter</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.Requisition</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.PartAlias</class>
+    <class>com.volvo.gloria.procurematerial.d.entities.PartNumber</class>
+
+  </persistence-unit>
+
+</persistence>

@@ -1,0 +1,8 @@
+{{#if isSortable}}
+<a href='#' tabIndex="-1">{{label}}<b class='sort-caret'></b></a>
+{{else}}
+<span>{{label}}</span>
+{{/if}}
+{{#if isSearchable}}
+	<input type='text' id='{{id}}' placeholder="               " style='width: 100%' class='form-control' {{#if defaultValue}} value='{{defaultValue}}' {{/if}} />
+{{/if}}

@@ -1,0 +1,41 @@
+<br />
+<div>
+	<input type="hidden" name="testObject{{#if notGrouped}}[notGrouped]{{else}}[grouped]{{/if}}[{{id}}][referenceId]"
+		value="{{referenceId}}">
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="checkbox-inline" {{#if
+					readOnly}} style="padding: 0px; margin: 0px;"{{/if}}>
+					{{#unless readOnly}} <input type="checkbox" id="testObject_{{id}}" data-models={{models}}
+					value="{{referenceId}}" />{{/unless}}<strong>{{referenceId}}</strong>
+				</label>
+			</div>
+		</div>
+		{{#unless isSamePartInfo}}
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label for="procurementQty_{{id}}"
+					class="col-sm-5 control-label {{#unless readOnly}}required{{/unless}}">{{t
+					"Gloria.i18n.procurement.modifyDetail.label.procQty"}}: </label>
+				<div class="col-sm-6">
+					{{#if readOnly}} <span id="procurementQty_{{id}}">{{procQty}}</span>
+					{{else}} <input type="number" class="form-control"
+						id="procurementQty_{{id}}" min="0" step="1" max="99999"
+						name="testObject{{#if notGrouped}}[notGrouped]{{else}}[grouped]{{/if}}[{{id}}][procurementQty]"
+						style="margin-bottom: 5px;" required="required"> {{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label"> <strong>{{t
+						"Gloria.i18n.procurement.modifyDetail.label.unitOfMeasure"}}: </strong>{{unitOfMeasure}}
+				</label>
+			</div>
+		</div>
+		{{/unless}}
+	</div>
+</div>
+<div class="panel-group accordion" id="partContainer" {{#unless
+	readOnly}}style="margin-left: 20px;"{{/unless}}></div>

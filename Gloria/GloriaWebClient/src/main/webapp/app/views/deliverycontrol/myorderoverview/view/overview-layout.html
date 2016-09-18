@@ -1,0 +1,39 @@
+<div id="moduleInfo"></div>
+<div class="controls pull-right col-xs-3">
+	<div id="userInfoContainer">
+		<input type="text" id="userInfo" class='form-control' />
+	</div>
+</div>
+<div class="tabbable" id="myOrderOverviewTab">
+	<ul class="nav nav-tabs">
+		<li {{#if_eq module 'external'}}  class="active"{{/if_eq}}><a
+			href="#external" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.tab.external"}}</a></li>
+		<li {{#if_eq module 'internal'}}  class="active"{{/if_eq}}><a
+			href="#internal" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.tab.internal"}}</a></li>
+		<li {{#if_eq module 'completed'}}  class="active"{{/if_eq}}><a
+			href="#completed" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.tab.completed"}}</a></li>
+	</ul>
+	<div class="tab-content">
+		<div
+			class="tab-pane col-xs-12 {{#if_eq  module 'external'}} active {{/if_eq}}"
+			id="external">
+			<div id="externalButton" class="button-bar"></div>
+			<div id="externalGrid"></div>
+		</div>
+		<div
+			class="tab-pane col-xs-12 {{#if_eq  module 'internal'}} active {{/if_eq}}"
+			id="internal">
+			<div id="internalButton" class="button-bar"></div>
+			<div id="internalGrid"></div>
+		</div>
+		<div
+			class="tab-pane col-xs-12 {{#if_eq  module 'completed'}} active {{/if_eq}}"
+			id="completed">
+			<div id="completedButton" class="button-bar"></div>
+			<div id="completedGrid"></div>
+		</div>
+	</div>
+</div>

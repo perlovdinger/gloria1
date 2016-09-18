@@ -1,0 +1,51 @@
+<h4>
+	<strong> {{#if isInternalOrder}}<strong>{{t
+			"Gloria.i18n.deliverycontrol.orderOverview.text.internalOrderDetailsInfoLog"}}</strong>{{else}}<strong>{{t
+			"Gloria.i18n.deliverycontrol.orderOverview.text.poInfoLog"}}</strong>{{/if}}
+	</strong>
+</h4>
+<div id="poInfoLogTabs">
+	<!-- Nav tabs -->
+	{{#if isInternalOrder}}
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#orderLineActionLog"
+			data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.orderLineActionLog"}}</a>
+		</li>
+		<li><a href="#poActionLog" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.internalOrderOverviewActionLog"}}</a>
+		</li>
+		<li><a href="#notesFromProcurement" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.notesFromProcurement"}}</a>
+		</li>
+	</ul>
+	{{else}}
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#orderLineActionLog"
+			data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.orderLineActionLog"}}</a>
+		</li>
+		<li><a href="#poActionLog" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.poActionLog"}}</a></li>
+		<li><a href="#notesFromPurchase" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.informationToPurchase"}}</a>
+		</li>
+		<li><a href="#notesFromProcurement" data-toggle="tab">{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.notesFromProcurement"}}</a>
+		</li>
+	</ul>
+	{{/if}}
+	<!-- Tab panes -->
+	<div class="tab-content">
+		{{#if isInternalOrder}}
+		<div class="tab-pane active" id="orderLineActionLog"></div>
+		<div class="tab-pane" id="poActionLog"></div>
+		<div class="tab-pane" id="notesFromProcurement"></div>
+		{{else}}
+		<div class="tab-pane active" id="orderLineActionLog"></div>
+		<div class="tab-pane" id="poActionLog"></div>
+		<div class="tab-pane" id="notesFromPurchase"></div>
+		<div class="tab-pane" id="notesFromProcurement"></div>
+		{{/if}}
+	</div>
+</div>

@@ -1,0 +1,51 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t "Gloria.i18n.warehouse.receive.print.pl"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<form id="printForm" name="printForm">
+				<div id="appModalMessage">
+					<span class="help-inline"></span>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<h4>{{t "Gloria.i18n.warehouse.receive.print.plText"}}</h4>
+					</div>
+				</div>
+				<br />
+				<div class='row'>
+					<div class='col-sm-6'>
+						<div class='form-group'>
+							<label class="radio-inline control-label"> <input
+								type="radio" id="printSelect" name="printSelect" value="1"
+								checked="checked"> <span>{{t
+									"Gloria.i18n.warehouse.receive.print.plOption"}}</span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label class="radio-inline control-label"><input
+								type="radio" id="printSelect" name="printSelect" value="2">
+								<label class="control-label"> <input type="number"
+									min="1" disabled="disabled" class="form-control" id="printQty"
+									name="printQty" required="required">
+							</label> </label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<a class="btn btn-default" id="print">{{t
+				"Gloria.i18n.buttons.print"}}</a> <a class="btn btn-default" id="cancel">{{t
+				"Gloria.i18n.buttons.cancel"}}</a>
+		</div>
+	</div>
+</div>

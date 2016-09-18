@@ -1,0 +1,46 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.text.reassignTitle"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div style="padding-left: 15px; padding-right: 15px;">
+				<div id="appModalMessage">
+					<span class="help-inline"></span>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<h5>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.reassignText"}}</h5>
+					</div>
+				</div>
+				<form id="reassignPOForm" name="reassignPOForm">
+					<fieldset>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<div class='form-group'>
+									<label class="control-label required" for="dcUserId">
+										{{t
+										"Gloria.i18n.deliverycontrol.assignOrReassign.header.order.deliveryControllerUserId"}}:
+									</label>
+									<div class="controls">
+										<input id="dcUserId" name="dcUserId">
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="save">{{t
+				"Gloria.i18n.buttons.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

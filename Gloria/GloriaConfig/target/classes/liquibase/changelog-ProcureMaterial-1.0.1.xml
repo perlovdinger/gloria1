@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+<!-- THIS CHANGE LOG IS ONLY CREATED FOR TEST PURPOSE  -->
+
+
+
+  <!-- Define conflicting data types as properties -->
+  <property name="AUTOGENTYPE" dbms="postgresql" value="BIGSERIAL" />
+  <property dbms="h2" name="AutoGenTYPE" value="BIGINT" />
+
+  <property name="INTTYPE" dbms="postgresql" value="int4" />
+  <property dbms="h2" name="INTTYPE" value="int" />
+
+  <property name="VERSIONCOLNAME" dbms="postgresql" value="version" />
+  <property dbms="h2" name="VERSIONCOLNAME" value="VERSION" />
+
+  <changeSet id="ProcureMaterial_1.0_01" author="Mr X">
+    <createTable tableName="XCOUNTRY">
+      <column autoIncrement="true" name="ID" type="${AUTOGENTYPE}">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="country_id_pk" />
+      </column>
+      <column name="NAME" type="VARCHAR(512)" />
+      <column name="COUNTRYCODE" type="VARCHAR(100)" />
+      <column name="${VERSIONCOLNAME}" type="${INTTYPE}" />
+    </createTable>
+    <comment>Comment table xcountry</comment>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.0_02" author="Mr X">
+    <createTable tableName="XSHIPPINGADDRESS">
+      <column autoIncrement="true" name="ID" type="${AUTOGENTYPE}">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="shippingaddress_id_pk" />
+      </column>
+      <column name="CITY" type="VARCHAR(512)" />
+      <column name="STREET" type="VARCHAR(100)" />
+      <column name="COUNTRYID" type="BIGINT" />
+      <column name="${VERSIONCOLNAME}" type="${INTTYPE}" />
+    </createTable>
+    <comment>Comment Table Xshippingaddress</comment>
+  </changeSet>
+ 
+</databaseChangeLog>

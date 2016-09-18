@@ -1,0 +1,37 @@
+<div class="well well-small">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label" for="problemDescription"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.inspectionInfo.comments"}}:
+				</label>
+				<div class="controls">
+					<textarea id="problemDescription"
+						name="deliveryNoteLine[qualityInspectionComment]"
+						class="form-control" rows="3" cols="75" maxlength="500">{{data.qualityInspectionComment}}</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.inspectionInfo.fileContent"}}:
+				</label>
+			</div>
+		</div>
+		{{#hasPermission "edit" 0="QualityInspection"}}
+		<div class="col-sm-8">
+			<input id="inspectiondocupload" type="file" name="docFile"> <br />
+		</div>
+		{{/hasPermission}}
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<div id="inspectionDocInfo"></div>
+			</div>
+		</div>
+	</div>
+</div>

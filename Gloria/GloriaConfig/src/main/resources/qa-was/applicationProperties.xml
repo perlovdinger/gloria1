@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+  <bean id="appl.properties" class="com.volvo.gloria.config.b.beans.ApplicationProperties">
+    <property name="environment" value="qa-was" />
+    <property name="loginProcess" value="USERID_ONLY" />
+    <property name="database" value="qa" />
+    <property name="messageSend" value="true" />
+    <property name="mailHost" value="mailgot.it.volvo.net" />
+    <property name="sitesToMigrate" value="34347,42102,47670,664,1620,1722,2919,4042,8374,45907" />
+    <property name="companyCodes" value="BR03,IN01,JP40,FR46,SE26,SE27,US10,US45" />
+  </bean>
+</beans>

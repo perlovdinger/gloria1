@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-11-25T15:14:43.44+0100</SendTime>
+    </GmfHeader>
+    <CIAction>C</CIAction>
+    <UserID>T0C9484</UserID>
+    <UserFirstName>Jenny</UserFirstName>
+    <UserLastName>Bengtsdotter</UserLastName>
+    <OrganisationID>XE000004</OrganisationID>
+    <OrganisationName>Volvo Trucks</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>2</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>Göteborg Sweden</Street1>
+      <PostCode>12345</PostCode>
+      <City>Göteborg</City>
+      <CountryCode>SE</CountryCode>
+      <PhoneNo>0123456789</PhoneNo>
+      <Email>jenny.bengtsdotter@consultant.volvo.com</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>XE000004</OrganisationID>
+      <CompName>VTC</CompName>
+      <DistrictNo>9999</DistrictNo>
+      <CustID>9999</CustID>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <UserCategory>
+        <UserCategoryID>Material_Controller</UserCategoryID>
+        <UserCategoryDescription>Material Controller</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-11-25T15:14:43.44+0100</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

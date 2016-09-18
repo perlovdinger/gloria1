@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QualityDocuments>
+  <QualityDocument code="MEAREP" name="Measurement Report" displaySeq="1"></QualityDocument>
+  <QualityDocument code="MEAREP_MATCERT" name="Measurement report + Material certificate" displaySeq="2"></QualityDocument>
+  <QualityDocument code="CERT" name="Certificate of Conformity" displaySeq="3"></QualityDocument>
+  <QualityDocument code="CERT_MATCERT" name="Certificate of conformity + Material certificate" displaySeq="4"></QualityDocument>
+  <QualityDocument code="MATCERT" name="Material Certificate" displaySeq="5"></QualityDocument>
+</QualityDocuments>

@@ -1,0 +1,36 @@
+<ul class="list-unstyled pull-right">
+	<li class="dropdown"><a href="#" class="dropdown-toggle"
+		data-toggle="dropdown"> <i class="fa fa-user fa-3x"></i>
+	</a>
+		<ul id="settings" class="dropdown-menu right" style="width: 230px;">
+			<li>
+				<label style="padding-left: 10px; padding-right: 10px;">{{user.id}}</label>
+			</li> 
+			{{#hasPermission "view" 0="MobileWarehouseSettings"}}
+			<li class="divider"></li>
+			<li>
+				<label style="padding-left: 10px; padding-right: 10px;">{{t
+					"Gloria.i18n.warehouse.warehouse"}}</label>
+				<ul class="dropdown-menu scroll-menu" style="border-top: 0px;">
+					{{#each warehouses}}
+					<li><a href="#" id="warehouse_{{this.siteId}}"
+						style="font-size: 18px;"> {{this.siteId}} {{#if_eq this.siteId
+							../defaultWarehouse}} <span
+							class="glyphicon glyphicon-ok pull-right"></span> {{/if_eq}}
+					</a></li> {{/each}}
+				</ul>
+			</li>
+			{{/hasPermission}}
+			<li class="divider"></li>
+			<li>
+				<div
+					style="padding-left: 10px; padding-right: 10px; padding-top: 10px;"
+					id="logout">
+					<i class="glyphicon glyphicon-log-out pull-right"
+						style="font-size: 18px;"></i> <label>{{t
+						"Gloria.i18n.logout"}}</label>
+				</div>
+			</li>
+		</ul>
+	</li>
+</ul>

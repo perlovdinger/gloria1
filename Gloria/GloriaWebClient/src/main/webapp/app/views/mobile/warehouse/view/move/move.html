@@ -1,0 +1,108 @@
+<form id="toMoveForm" name="toMoveForm">
+	<div class="row text-center">
+		<div class="col-xs-12">
+			<div class="form-group">
+				<label class="control-label"></label>
+			</div>
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.inventory.move.scanOrEnter"}}: </label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group newBinLocation">
+				<label class="control-label" for="newBinLocation"> {{t
+					"Gloria.i18n.warehouse.inventory.move.newBinLocation"}}: </label>
+				<div class="controls">
+					<input id="newBinLocation" class="form-control scannable"
+						name="newBinLocation" type="text" required="required" {{#unless
+						hasEditAccess}} disabled="disabled" {{/unless}}/>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group moveQuantity">
+				<label class="control-label" for="moveQuantity"> {{t
+					"Gloria.i18n.warehouse.inventory.move.moveQuantity"}}: </label>
+				<div class="controls">
+					<input id="moveQuantity" class="form-control" name="moveQuantity"
+						type="number" min="0" step="1" max="99999" required="required"
+						{{#unless hasEditAccess}} disabled="disabled" {{/unless}} />
+					<div>
+						<span class="help-inline"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label" for="currentBinLocation"> {{t
+					"Gloria.i18n.warehouse.inventory.move.currentBinLocation"}}: </label>
+				<div class="controls">
+					<span id="currentBinLocation" name="currentBinLocation">{{data.code}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label" for="balance"> {{t
+					"Gloria.i18n.warehouse.inventory.move.balance"}}: </label>
+				<div class="controls">
+					<span id="balance" name="balance">{{data.quantity}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="form-group">
+				<label class="control-label underline"> {{t
+					"Gloria.i18n.warehouse.inventory.move.partInformation"}}: </label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label" for="pPartNumber"> {{t
+					"Gloria.i18n.warehouse.inventory.move.partNumber"}}: </label>
+				<div class="controls">
+					<span id="pPartNumber" name="pPartNumber">{{data.partNumber}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label" for="pPartVersion"> {{t
+					"Gloria.i18n.warehouse.inventory.move.partVersion"}}: </label>
+				<div class="controls">
+					<span id="pPartVersion" name="pPartVersion">{{data.partVersion}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label" for="pPartName"> {{t
+					"Gloria.i18n.warehouse.inventory.move.partName"}}: </label>
+				<div class="controls">
+					<span id="pPartName" name="pPartName">{{data.partName}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label" for="pPartModification"> {{t
+					"Gloria.i18n.warehouse.inventory.move.partModification"}}: </label>
+				<div class="controls">
+					<span id="pPartModification" name="pPartModification">{{data.partModification}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

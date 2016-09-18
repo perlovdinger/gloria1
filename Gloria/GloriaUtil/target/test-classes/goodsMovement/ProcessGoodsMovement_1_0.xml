@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:ProcessGoodsMovement xsi:schemaLocation="http://finance.group.volvo.com/goodsmovement/1_0 GoodsMovement_1_0.xsd" xmlns:n1="http://finance.group.volvo.com/goodsmovement/1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Process>
+		<MessageHeader>
+			<MsgVersion>1.0.0</MsgVersion>
+			<Sender>
+				<LogicalId>DPPP</LogicalId>
+			</Sender>
+			<Receiver>
+				<LogicalId>VGMF</LogicalId>
+				<ComponentId>FD1</ComponentId>
+			</Receiver>
+			<CreationDateTime>2012-11-01T09:30:47Z</CreationDateTime>
+		</MessageHeader>
+		<Action>Create</Action>
+	</Process>
+	<GoodsMovement>
+		<GoodsMovementHeader>
+			<CompanyCode>GB03</CompanyCode>
+			<PostingDate>2012-10-30</PostingDate>
+			<DocumentDate>2012-11-01</DocumentDate>
+			<ReferenceDocument></ReferenceDocument>
+			<Headertext>MD1177</Headertext>
+			<AssignCodeGM>01</AssignCodeGM>
+		</GoodsMovementHeader>
+		<GoodsMovementItems>
+			<Plant>N003</Plant>
+			<StorageLocation>BAS5</StorageLocation>
+			<MovementType>101</MovementType>
+			<Vendor>0000110547</Vendor>
+			<Quantity>11.000</Quantity>
+			<ISOUnitOfMeasure>PCE</ISOUnitOfMeasure>
+			<PurchaseOrderItem>10</PurchaseOrderItem>
+			<UnloadingPoint></UnloadingPoint>
+			<MovementIndicator>B</MovementIndicator>
+			<ProposeQuantityIndicator>X</ProposeQuantityIndicator>
+			<VendorMaterialNumber>6666</VendorMaterialNumber>
+			<OrderReference>1234567</OrderReference>
+			<ShippedQuantity>11.000</ShippedQuantity>
+			<ShippedUnitOfMeasure>PCE</ShippedUnitOfMeasure>
+		</GoodsMovementItems>
+	</GoodsMovement>
+</n1:ProcessGoodsMovement>

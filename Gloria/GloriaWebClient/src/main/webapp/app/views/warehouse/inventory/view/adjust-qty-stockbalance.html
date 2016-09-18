@@ -1,0 +1,45 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t "Gloria.i18n.warehouse.inventory.adjustQty.adjustQty"}}
+				| {{t "Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<form id="adjustForm" name="adjustForm">
+				<div id="appModalMessage"></div>
+				<div class='row'>
+					<div class='col-sm-4'>
+						<div class='form-group'>
+							<label class="control-label required" for="quantity"> {{t
+								"Gloria.i18n.warehouse.inventory.adjustQty.newQty"}}: </label>
+							<div class="controls">
+								<input type="number" min="0" step="1" max="99999" id="quantity"
+									name="partbalance[quantity]" class="form-control" required>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-8'>
+						<div class='form-group'>
+							<label class="control-label required" for='comments'> {{t
+								"Gloria.i18n.warehouse.inventory.adjustQty.comments"}}: </label>
+							<div class="controls">
+								<textarea class="form-control" id='comments' name="comments"
+									rows="3" cols="100" maxlength="120" required></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="save">{{t
+				"Gloria.i18n.warehouse.inventory.button.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.warehouse.inventory.button.cancel"}}</button>
+		</div>
+	</div>
+</div>

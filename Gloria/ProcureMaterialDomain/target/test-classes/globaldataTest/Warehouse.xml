@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Warehouses>
+  <Warehouse qiSupported="true" setUp="ROW" siteCode="PE Lundby" siteId="1722" siteName="PowerTrain Lundby">
+    <StorageRoom code="U" description="" name="U">
+      <Zon code="To Store" description="" name="To Store" type="TO_STORE">
+        <BinLocation allocation="FIXED" bayCode="01" code="TS-01-01-01" level="1" position="1" />
+      </Zon>
+      <Zon code="Shipping" description="" name="Shipping" type="SHIPPING">
+        <BinLocation allocation="FIXED" bayCode="01" code="SH-01-01-01" level="1" position="1" />
+      </Zon>
+      <Zon code="QI" description="" name="QI" type="QI">
+        <BinLocation allocation="FIXED" bayCode="01" code="QI-01-01-01" level="1" position="1" />
+      </Zon>
+      <Zon type="QUARANTINE" name="Quarantine" description="" code="Quarantine">
+        <BinLocation position="1" level="1" code="QA-01-01-01" bayCode="01" allocation="FIXED" />
+      </Zon>
+      <Zon code="U" description="" name="U" type="STORAGE">
+      <BinLocation position="1" level="1" code="STO-01-01-01" bayCode="01" allocation="FIXED" />
+      </Zon>
+    </StorageRoom>
+  </Warehouse>
+  <Warehouse siteName="Skövde Prototype" siteId="1620" siteCode="SKO PP" setUp="ROW" qiSupported="false">
+    <StorageRoom code="U" description="" name="U">
+      <Zon code="To Store1" description="" name="To Store1" type="TO_STORE">
+        <BinLocation allocation="FIXED" bayCode="011" code="TS1-01-01-01" level="1" position="1" />
+      </Zon>
+      <Zon code="Shipping1" description="" name="Shipping1" type="SHIPPING">
+        <BinLocation allocation="FIXED" bayCode="011" code="SH1-01-01-01" level="1" position="1" />
+      </Zon>
+      <Zon code="QI1" description="" name="QI1" type="QI">
+        <BinLocation allocation="FIXED" bayCode="011" code="QI1-01-01-01" level="1" position="1" />
+      </Zon>
+      <Zon type="QUARANTINE" name="Quarantine1" description="" code="Quarantine1">
+        <BinLocation position="1" level="1" code="QA1-01-01-01" bayCode="011" allocation="FIXED" />
+      </Zon>
+      <Zon code="U1" description="" name="U1" type="STORAGE">
+      </Zon>
+    </StorageRoom>
+  </Warehouse>
+</Warehouses>     
+    

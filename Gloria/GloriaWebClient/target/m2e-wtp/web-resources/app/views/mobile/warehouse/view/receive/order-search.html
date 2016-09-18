@@ -1,0 +1,27 @@
+<form novalidate="novalidate" onsubmit="return false;">
+	<div class="row text-center">
+		<div class="col-sm-12">
+			<div class="form-group">
+				<label class="control-label"></label>
+			</div>
+			<div class="form-group">
+				{{#if_eq module "regular"}} <label class="control-label">
+					{{t "Gloria.i18n.warehouse.receive.orderSearch"}} </label> {{/if_eq}}
+				{{#if_eq module "transferreturn"}} <label class="control-label">
+					{{t "Gloria.i18n.warehouse.receive.transferreturnSearch"}} </label>
+				{{/if_eq}}
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="form-group partNumber">
+				<div class="controls">
+					<input id="partNumber" name="partNumber" class="form-control scannable"
+						type="text" required="required" />
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+  <persistence-unit name="UserAuthorizationDomainPU">
+
+    <mapping-file>META-INF/UserAuthorizationDomain_orm.xml</mapping-file>
+
+    <!-- Fully qualified names of persistent classes -->
+    <class>com.volvo.gloria.authorization.d.entities.Address</class>
+    <class>com.volvo.gloria.authorization.d.entities.ApplicationSetting</class>
+    <class>com.volvo.gloria.authorization.d.entities.UserApplication</class>
+    <class>com.volvo.gloria.authorization.d.entities.UserCategory</class>
+    <class>com.volvo.gloria.authorization.d.entities.GloriaUser</class>
+    <class>com.volvo.gloria.authorization.d.entities.Team</class>
+    <class>com.volvo.gloria.authorization.d.entities.UserCompanyCode</class>
+    <class>com.volvo.gloria.authorization.d.entities.ReportFilterOrder</class>
+    <class>com.volvo.gloria.authorization.d.entities.ReportFilterMaterial</class>    
+  </persistence-unit>
+
+</persistence>

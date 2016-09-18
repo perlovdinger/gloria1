@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="app/libs/bootstrap/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" href="app/styles/gloriaGeneral.css" media="all">
+<link rel="stylesheet" href="app/styles/gloriaDesktop.css" media="all">
+<link href="app/styles/print.css" rel="stylesheet" media="print">
+<style media="print">
+@page
+{
+size: landscape;
+margin: 2cm;
+}
+
+@media print {
+
+   /*thead {display: table-header-group;}*/
+}
+</style>
+<div id="printInfoContent">
+<div class="row">
+        <div class='col-sm-12'>
+            <div class='form-group'>
+<h1>{{t "Gloria.i18n.warehouse.store.storeList"}}</h1>
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+	<th></th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.pPartNumber"}}</th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.pPartVersion"}}</th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.pPartName"}}</th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.stockBalance"}}</th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.quantity"}}</th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.storedQuantity"}}</th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.suggestedBinLocation"}}</th>
+	<th>{{t "Gloria.i18n.warehouse.store.header.binlocation"}}</th>	
+</tr>
+</thead>
+<tbody>
+{{#each materiallines}}
+<tr>
+	<td></td>
+	<td>{{this.pPartNumber}}</td>
+	<td>{{this.pPartVersion}}</td>
+	<td>{{this.pPartName}}</td>
+	<td>{{this.stockBalance}}</td>
+	<td>{{this.quantity}}</td>
+	<td></td>
+	<td>{{this.suggestedBinLocation}}</td>
+	<td></td>	
+</tr>
+{{/each}}
+</tbody>
+</table>
+</div>
+</div>
+        </div>
+    </div>

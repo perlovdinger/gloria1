@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CurrencyRates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CurrencyRate" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CurrencyRate">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="baseCurrencyCode" use="required" type="xs:string">
+          </xs:attribute>
+          <xs:attribute name="currencyCode" use="required" type="xs:string">
+          </xs:attribute>
+          <xs:attribute name="rate" use="required" type="xs:double">
+          </xs:attribute>
+          <xs:attribute name="displaySeq" use="required" type="xs:long">
+          </xs:attribute>
+          <xs:attribute name="startDate" use="required" type="xs:date">
+          </xs:attribute>
+          <xs:attribute name="endDate" use="required" type="xs:date">
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Printers>
+  <Printer siteId="664" name="QSE09315" hostAddress="qse09315.got.vtc.volvo.se" />
+  <!-- <Printer siteId="664" name="X-Hallen" hostAddress="131.97.170.19:9100"/> -->
+
+  <Printer siteId="1722" name="QSE09316" hostAddress="qse09316.got.volvo.net" />
+ <!--  
+ production printer
+ <Printer siteId="34347" name="QFR10121" hostAddress="QFR10121.lyon.volvo.net:6101" /> 
+  -->
+ 
+  <Printer siteId="4042" name="QUST10AB" hostAddress="qust10ab.gso.volvo.net" />
+  <Printer siteId="45907" name="QUS8175" hostAddress="qus8175.hag.volvo.net" /> 
+
+</Printers>

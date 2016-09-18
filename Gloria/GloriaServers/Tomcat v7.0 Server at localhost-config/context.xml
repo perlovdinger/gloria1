@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!-- The contents of this file will be loaded for each web application -->
+<Context>
+
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+	
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />
+    -->
+
+    <!-- Uncomment this to enable Comet connection tacking (provides events
+         on session expiration as well as webapp lifecycle) -->
+    <!--
+    <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
+    -->
+
+  <!-- Atomikos Support for the Tomcat server - register Atomikos as java:comp/UserTransaction -->
+  <Transaction factory="com.atomikos.icatch.jta.UserTransactionFactory" />
+  <!-- Also register Atomikos TransactionManager as java:comp/env/TransactionManager -->
+  <Resource name="TransactionManager"
+            auth="Container"
+            type="com.atomikos.icatch.jta.UserTransactionManager"
+            factory="org.apache.naming.factory.BeanFactory" />
+
+  <!-- Spring LoadTimeWeaver Support for the Tomcat server. -->
+  <Loader loaderClass="org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader"
+          useSystemClassLoaderAsParent="false"/>
+
+  <!-- DataSources. 
+  
+  -->          
+  <!-- PostgreSQL resource: connecting local environment to PostgreSQL  -->
+   <Resource name="jdbc/Gloria_Db"   
+            uniqueResourceName="DataSource_Resource"
+            auth="Container"
+            type="com.atomikos.jdbc.AtomikosDataSourceBean"
+            factory="com.atomikos.tomcat.EnhancedTomcatAtomikosBeanFactory"
+            minPoolSize="2"
+            maxPoolSize="8"    
+            xaDataSourceClassName="org.postgresql.xa.PGXADataSource"
+            xaProperties.serverName="localhost" 
+            xaProperties.portNumber="5432"
+            xaProperties.databaseName="Gloria_Db"
+            xaProperties.user="postgres"
+            xaProperties.password="postgres"/>
+ 
+  <Resource name="jdbc/Gloria_Db_NoTx"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="postgres"
+            password="postgres"
+            driverClassName="org.postgresql.Driver"
+            url="jdbc:postgresql://localhost:5432/Gloria_Db"
+            maxActive="8"
+            maxIdle="4"/>
+ 
+  
+  <!-- DB2 resource: connecting local environment(tomcat) to DB2 
+ 
+  <Resource name="jdbc/Gloria_Db"   
+            uniqueResourceName="DataSource_Resource"
+            auth="Container"
+            type="com.atomikos.jdbc.AtomikosDataSourceBean"
+            factory="com.atomikos.tomcat.EnhancedTomcatAtomikosBeanFactory"
+            minPoolSize="2"
+            maxPoolSize="8"    
+            xaDataSourceClassName="com.ibm.db2.jcc.DB2XADataSource"
+            xaProperties.serverName="segotl0372.srv.volvo.com" 
+            xaProperties.portNumber="50102"
+            xaProperties.databaseName="DDGLOR01"
+            xaProperties.user="d2_glor2"
+            xaProperties.password="Gloria101"
+            xaProperties.driverType="4"
+            testQuery="SELECT 1 FROM sysibm.sysdummy1" />
+ 
+  <Resource name="jdbc/Gloria_Db_NoTx"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="d2_glor2"
+            password="Gloria101"
+            driverClassName="com.ibm.db2.jcc.DB2Driver"
+            url="jdbc:db2://segotl0372.srv.volvo.com:50102/DDGLOR01"
+            maxActive="8"
+            maxIdle="4"/>
+   -->
+               
+   <!-- ConnectionFactories.  -->
+  <Resource name="jms/GloriaCF"
+            auth="Container"
+            type="com.atomikos.jms.AtomikosConnectionFactoryBean"
+            factory="com.atomikos.tomcat.EnhancedTomcatAtomikosBeanFactory"
+            uniqueResourceName="ConnectionFactory_Resource"
+            xaConnectionFactoryClassName="org.apache.activemq.ActiveMQXAConnectionFactory"
+            xaProperties.brokerURL="tcp://localhost:61616?daemon=true"
+            maxPoolSize="40"
+            />
+  <Resource name="jms/GloriaBus" 
+            auth="Container"
+            type="com.atomikos.jms.AtomikosConnectionFactoryBean"
+            factory="com.atomikos.tomcat.EnhancedTomcatAtomikosBeanFactory"
+            uniqueResourceName="ConnectionFactoryBus_Resource"
+            xaConnectionFactoryClassName="org.apache.activemq.ActiveMQXAConnectionFactory"
+            xaProperties.brokerURL="tcp://localhost:61616?daemon=true"
+            maxPoolSize="40"
+            />
+
+  <!-- JMS Destinations -->
+  <Resource name="jms/UserGatewayQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="User Storage Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.UserGatewayQueue"/>
+  <Resource name="jms/PurchaseOrderGatewayQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="Purchase Order Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.PurchaseOrderGatewayQueue"/>
+  <Resource name="jms/CostCenterGatewayQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="Cost Center Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.CostCenterGatewayQueue"/>
+  <Resource name="jms/WBSElementGatewayQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="WBS Element Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.WBSElementGatewayQueue"/>
+  <Resource name="jms/CarryOverGatewayQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="CarryOver Parts Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.gateway.CarryOverGatewayQueue"/>
+  <Resource name="jms/ProcureRequestTOGatewayQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="Procure Request Test Object Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.gateway.ProcureRequestTOGatewayQueue"/>
+  <Resource name="jms/RequisitionSenderQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="Requisition sender Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.proxy.RequisitionSenderQueue"/>
+    <Resource name="jms/GoodsMovementSenderQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="Goods Receipt sender Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.proxy.GoodsReceiptSenderQueue"/>
+   <Resource name="jms/ProcessPurchaseOrderQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="Process Purchase Order sender Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.proxy.ProcessPurchaseOrderQueue"/>
+  <Resource name="jms/MaterialProcureResponseSenderQueue"
+            auth="Container"
+            type="org.apache.activemq.command.ActiveMQQueue"
+            description="Material Procure Response sender Queue"
+            factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+            physicalName="com.volvo.gloria.proxy.MaterialProcureResponseSenderQueue"/> 
+</Context>

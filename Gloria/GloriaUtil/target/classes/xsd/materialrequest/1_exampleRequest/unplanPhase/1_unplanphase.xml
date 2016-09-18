@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProcessMaterialProcureRequest serviceVersion="String" serviceID="String"
+  xsi:schemaLocation="http://www.volvo.com/MaterialProcureRequest/1_0 MaterialProcureRequest.xsd" xmlns="http://www.volvo.com/MaterialProcureRequest/1_0"
+  xmlns:volvo="http://www.volvo.com/CMF/common/1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <volvo:ApplicationArea>
+    <volvo:Sender>
+      <volvo:LogicalID>PROTOM</volvo:LogicalID>
+      <volvo:ComponentID>Subsystem</volvo:ComponentID>
+      <volvo:UserID>a026548</volvo:UserID>
+    </volvo:Sender>
+    <volvo:Receiver>
+      <volvo:LogicalID>String</volvo:LogicalID>
+      <volvo:ComponentID>text</volvo:ComponentID>
+    </volvo:Receiver>
+    <volvo:CreationDateTime>2014-11-11T09:30:47Z</volvo:CreationDateTime>
+    <volvo:BODID>fcc9f7bc-76a8-469d-a63a-12985e53f23d</volvo:BODID>
+  </volvo:ApplicationArea>
+  <DataArea>
+    <Process />
+    <MaterialRequestChange>
+      <RequestType>TESTOBJECT</RequestType>
+      <MaterialRequestChangeAdd>
+        <Id>6667</Id>
+        <Type>MR</Type>
+        <ChangeTechId>323</ChangeTechId>
+        <ProcureMessageId>51569</ProcureMessageId>
+        <Title>title1</Title>
+        <MaterialRequestMessage>
+          <Header>
+            <TestObjectHeader>
+             <TestObjectInfo>
+              <TestObject>
+                <Id>FM-5145</Id>
+                <Type>V</Type>
+              </TestObject>
+               </TestObjectInfo>
+              <PhaseInfo>
+                <PhaseRemove>
+                  <Id>3062</Id>
+                </PhaseRemove>
+              </PhaseInfo>
+              <BuildSeriesInfo>
+                <BuildSeries>
+                  <Id>121212</Id>
+                  <Name>T6VSDTTM</Name>
+                </BuildSeries>
+              </BuildSeriesInfo>
+            </TestObjectHeader>
+            <Requester>
+              <UserId>V042026</UserId>
+              <Name>Ludwik Wallin</Name>
+              <Notes />
+            </Requester>
+            <ContactPerson>
+              <UserId>A043837</UserId>
+              <Name>Santhosh Sandananad</Name>
+            </ContactPerson>
+          </Header>
+          <Component>
+            <BuildSiteType>
+              <Id>2800</Id>
+            </BuildSiteType>
+          </Component>
+        </MaterialRequestMessage>
+      </MaterialRequestChangeAdd>
+    </MaterialRequestChange>
+  </DataArea>
+</ProcessMaterialProcureRequest>

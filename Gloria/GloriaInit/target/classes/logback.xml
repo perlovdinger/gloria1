@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =================================================================== -->
+<!-- LogBack configuration file -->
+<!-- =================================================================== -->
+<configuration>
+  <property name="LOG_ROOT" value="gloria2_logs" />
+  <!-- Append messages to the console -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%-5p %c{1} - %m%n</Pattern>
+    </encoder>
+  </appender>
+
+ 
+  <appender name="GLORIA" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_ROOT}/gloria.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_ROOT}/gloria.%d.log</fileNamePattern>
+      <!-- keep 10 days' worth of history -->
+      <maxHistory>10</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd' 'HH:mm:ss.SSS} [%t] %-2p [%logger{20}] - %m %xThrowable{full} %n</pattern>
+    </encoder>
+  </appender>
+
+
+  <appender name="OPENJPA" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOG_ROOT}/gloria_openjpa.log</file>
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>${LOG_ROOT}/gloria_openjpa.%d.log</fileNamePattern>
+   <!-- keep 10 days' worth of history -->
+      <maxHistory>10</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd' 'HH:mm:ss.SSS} [%t] %-2p [%logger{20}] - %m %xThrowable{full} %n</pattern>
+    </encoder>
+  </appender>  
+  
+   <logger name="com.volvo.gloria" level="info">
+    <appender-ref ref="GLORIA" />
+  </logger>
+  
+    
+<!--   <logger name="com.volvo.gloria" level="info"> -->
+<!--     <appender-ref ref="STDOUT" /> -->
+<!--   </logger> -->
+  
+  
+   
+  <!-- Setup logging level for OpenJPA -->
+  <logger name="org.apache.openjpa" level="DEBUG">
+    <appender-ref ref="OPENJPA" />
+  </logger>
+  
+   <logger name="openjpa" level="DEBUG">
+    <appender-ref ref="OPENJPA" />
+  </logger>
+  
+  <logger name="openjpa.jdbc.SQL" level="DEBUG">
+    <appender-ref ref="OPENJPA" />
+  </logger>
+  
+  <logger name="com.atomikos" level="ERROR"/>
+  <logger name="org.apache" level="ERROR"/>
+   <logger name="com.volvo.gloria.util.b.beans.SecurityServicesBean" level="ERROR"/>
+ 
+ 
+   
+  <logger name="org.springframework.transaction.jta" level="info"/>
+   <logger name="com.volvo.jvs.runtime" level="warn"/>
+  
+  <!-- Set default log-level -->
+  <root level="info">
+    <appender-ref ref="STDOUT"/>
+  </root>
+  
+</configuration>

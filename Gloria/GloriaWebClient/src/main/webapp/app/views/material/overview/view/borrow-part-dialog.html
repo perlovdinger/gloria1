@@ -1,0 +1,142 @@
+<div class="modal-dialog modal-lg">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3 class="modal-title">{{t
+				"Gloria.i18n.material.overview.header.borrowPart"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-group">
+						<div class="controls">
+							<h4>{{t "Gloria.i18n.material.overview.header.borrowTo"}}:</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.projectId"}}: </label>
+						<div class="controls">
+							<span>{{data.projectId}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.referenceGroup"}}: </label>
+						<div class="controls">
+							<span>{{data.referenceGroup}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.referenceId"}}: </label>
+						<div class="controls">
+							<span>{{data.referenceId}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.requisitionReference"}}: </label>
+						<div class="controls">
+							<span>{{data.requisitionReference}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.materialMailFormId"}}: </label>
+						<div class="controls">
+							<span>{{data.materialMailFormId}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.changeRequestId"}}: </label>
+						<div class="controls">
+							<span>{{data.changeRequestIds}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.quantity"}}: </label>
+						<div class="controls">
+							<span>{{data.quantity}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label class="control-label lengthyText"> {{t
+							"Gloria.i18n.material.overview.header.status"}}: </label>
+						<div class="controls">
+							<span>{{status}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-group">
+						<div class="controls">
+							<h4>{{t "Gloria.i18n.material.overview.header.from"}}:</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="borrowWarning" class="row hidden">
+				<div class="col-sm-12">
+					<div class="alert alert-warning">
+						<h5>
+							<i class="fa fa-warning"></i> 
+							<b>{{t "Gloria.i18n.material.overview.header.borrowWarningTitle"}}</b>							
+						</h5>							
+						<p>
+							{{t "Gloria.i18n.material.overview.header.borrowWarning"}}
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12" id="gridInfo">
+					<span>{{t
+						"Gloria.i18n.material.overview.header.noPartsAvailable"}}</span>
+				</div>
+			</div>
+			<div class='col-sm-2'>
+				<div class='form-group floatleft'>
+					<label class="control-label"> <input id="noReturn"
+						type="checkbox"> {{t
+						"Gloria.i18n.material.overview.header.noReturn"}}
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<div class="row">
+				<a class="btn btn-primary" id="borrow-button" disabled="true">{{t
+					"Gloria.i18n.material.overview.button.borrow"}}</a> <a
+					class="btn btn-default" id="cancel-button">{{t
+					"Gloria.i18n.material.overview.button.cancel"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+<form novalidate="novalidate">
+	<div>
+		<h4>
+			<strong>{{t
+				"Gloria.i18n.warehouse.ship.header.generalInfo"}}</strong>
+		</h4>
+	</div>
+	<div id="generalInfo" class="panel"></div>
+	<div id="partInfo-module" class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a class="accordion-toggle collapsed" data-toggle="collapse"
+					data-parent="#fullPartInfo" href="#dispatchNotepartInfo"><strong>{{t
+						"Gloria.i18n.warehouse.ship.header.partInfo"}}</strong></a>
+			</h4>
+		</div>
+		<div id="dispatchNotepartInfo" class="panel-collapse collapse">
+			<div class="panel-body">
+				<div id="partInfo"></div>
+			</div>
+		</div>
+	</div>
+	{{#hasPermission "edit" 0="Ship"}}
+	<div id="notShipped">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label class="control-label lengthyText"> <input
+						id="printDispatchNote" type="checkbox"> {{t
+						"Gloria.i18n.warehouse.ship.header.print"}}
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label class="control-label"> <input id="markAsShipped"
+						type="checkbox"> {{t
+						"Gloria.i18n.warehouse.ship.header.markAsShipped"}}
+					</label>
+				</div>
+			</div>
+		</div>
+		{{/hasPermission}} <br> <br>
+		<div align="center" class="button-bar floatFooter">
+			{{#hasPermission "edit" 0="Ship"}}
+			<button type="button" class="btn btn-default" id="save">{{t
+				"Gloria.i18n.warehouse.ship.button.save"}}</button>
+			{{/hasPermission}}
+			<!-- 		<button type="button" class="btn btn-default" id="delete"> -->
+			<!-- 			{{t "Gloria.i18n.warehouse.ship.button.delete"}}</button> -->
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.warehouse.ship.button.cancel"}}</button>
+		</div>
+
+	</div>
+	<div align="center" id="shipped" class="button-bar floatFooter">
+		<button type="button" class="btn btn-default" id="close">{{t
+			"Gloria.i18n.warehouse.ship.button.close"}}</button>
+	</div>
+	<br />
+</form>

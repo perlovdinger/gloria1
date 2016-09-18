@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>Gloria</artifactId>
+    <groupId>com.volvo.gloria</groupId>
+    <version>1.4.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.volvo.gloria.materialrequest</groupId>
+  <artifactId>MaterialRequestDomain</artifactId>
+  <name>MaterialRequestDomain</name>
+  <packaging>jar</packaging>
+  <description>MaterialRequestDomain</description>
+
+  <build>
+  <!-- Comment out to disable OpenJPA Bytecode Enhancement--> 
+    <plugins>     
+      <plugin>
+		<groupId>org.apache.openjpa</groupId> 
+		<artifactId>openjpa-maven-plugin</artifactId> 
+		<version>2.2.0</version>
+        <configuration>
+          <includes>**/d/entities/*.class</includes>
+          <persistenceXmlFile>${project.build.outputDirectory}/META-INF/persistenceMaterialRequestDomain.xml</persistenceXmlFile>
+        </configuration>
+        <executions>
+          <execution>
+            <id>openjpa-enhancer</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>enhance</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.volvo.gloria.user</groupId>
+      <artifactId>CommonDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.volvo.gloria.authorization</groupId>
+      <artifactId>UserAuthorizationDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.volvo.gloria.materialRequestProxy</groupId>
+      <artifactId>MaterialRequestProxy</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

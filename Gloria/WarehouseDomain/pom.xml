@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>Gloria</artifactId>
+    <groupId>com.volvo.gloria</groupId>
+    <version>1.4.0-SNAPSHOT</version>
+  </parent>
+
+  <groupId>com.volvo.gloria.warehouse</groupId>
+  <artifactId>WarehouseDomain</artifactId>
+  <name>WarehouseDomain</name>
+  <packaging>jar</packaging>
+  <description>WarehouseDomain</description>
+
+
+  <dependencies>
+   
+    
+    <dependency>
+      <groupId>com.volvo.gloria</groupId>
+      <artifactId>GloriaConfig</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.volvo.gloria.user</groupId>
+      <artifactId>CommonDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+
+
+    <!-- <dependency> -->
+    <!-- <groupId>org.springframework.data</groupId> -->
+    <!-- <artifactId>spring-data-jpa</artifactId> -->
+    <!-- <version>1.0.3.RELEASE</version> -->
+    <!-- </dependency> -->
+    <!-- <dependency> -->
+    <!-- <groupId>com.atomikos</groupId> -->
+    <!-- <artifactId>transactions-hibernate3</artifactId> -->
+    <!-- <version>3.7.1</version> -->
+    <!-- </dependency> -->
+    <dependency>
+      <groupId>com.volvo.gloria.authorization</groupId>
+      <artifactId>UserAuthorizationDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <!-- OpenJPA Bytecode Enhancement -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>openjpa-maven-plugin</artifactId>
+        <configuration>
+          <includes>**/d/entities/*.class</includes>          
+          <persistenceXmlFile>${project.build.outputDirectory}/META-INF/persistenceWarehouseDomain.xml</persistenceXmlFile>
+        </configuration>
+        <executions>
+          <execution>
+            <id>openjpa-enhance</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>enhance</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

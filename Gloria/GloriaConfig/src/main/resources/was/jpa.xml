@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+  <!-- WebSphere JPA configuration -->
+
+  <bean id="entityManagerFactory" abstract="true" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+        p:dataSource-ref="dataSource">
+    <property name="jpaPropertyMap">
+      <map>
+        <entry key="openjpa.TransactionMode" value="managed" />       
+<!--         <entry key="openjpa.ManagedRuntime" value="com.volvo.jvs.runtime.openjpa.WebSphereExtendedJTAManagedRuntimeAdapter" /> -->
+<!--    <entry key="openjpa.Log" value="commons" /> -->
+<!--         <entry key="openjpa.Log" value="Runtime=TRACE,SQL=TRACE" /> -->
+        <entry key="openjpa.RuntimeUnenhancedClasses" value="unsupported" />
+        <entry key="openjpa.ConnectionFactoryMode" value="managed" />
+         <entry key="openjpa.jdbc.SynchronizeMappings" value="buildSchema(SchemaAction='add', ForeignKeys=true)" />
+<!--         <entry key="openjpa.jdbc.SynchronizeMappings" value="buildSchema(SchemaAction='drop,add,deleteTableContents', ForeignKeys=true)"/>      -->
+         
+<!-- 
+     <entry key="openjpa.jdbc.SynchronizeMappings" value="buildSchema(SchemaAction='refresh, DropTables')"/> 
+     <entry key="openjpa.jdbc.SynchronizeMappings" value="buildSchema(SchemaAction='add')"/>                   
+     <entry key="openjpa.jdbc.SynchronizeMappings" value="buildSchema(SchemaAction='add,deleteTableContents', ForeignKeys=true)"/>      
+     <entry key="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/> 
+    
+    -->
+    
+      </map>
+    </property>
+    <property name="jpaVendorAdapter">
+      <bean class="org.springframework.orm.jpa.vendor.OpenJpaVendorAdapter"
+            p:database="${dbDialect}"/>
+    </property>
+    <property name="persistenceUnitPostProcessors">
+      <list>
+        <bean class="com.volvo.jvs.runtime.springutils.JtaPersistenceUnitPostProcessor">
+          <property name="jtaMode" value="true"/> 
+          <property name="jtaDataSource" ref="dataSource"/>
+          <property name="nonJtaDataSource" ref="dataSource_NoTx"/>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+</beans>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildSeries>
+	<BuildSerie id="10110" description="Test Data for Build Serie" startWeek="12" endWeek="14" corrLev="Test" levPP="Testing" purpose="Testing">
+		 <TestObjectInfo>	
+      <TestObject version="1">
+				<BuildSpecification quantity="20" uom="Testing">
+					<ItemToVariantLinkPR variantString="Testing" linkId="123" productClass="Test" productType="Test" functionGroup="function" suffix="suffix">
+					</ItemToVariantLinkPR>
+					<PartItem version="1">
+					</PartItem>	
+					<PartItem version="1">
+					</PartItem>
+					<PartItem version="1">
+					</PartItem>									
+				</BuildSpecification>
+        
+			</TestObject>
+       </TestObjectInfo>
+			<Project code="Project Code">				
+			</Project>
+			<Project code="Project Code2">				
+			</Project>
+	</BuildSerie>
+	<BuildSerie id="10111" description="Test Data for Build Serie1" startWeek="13" endWeek="15" corrLev="Test1" levPP="Testing1" purpose="Testing1">
+			<TestObject version="1">
+				<BuildSpecification quantity="25" uom="Testing1">
+					<ItemToVariantLinkPR variantString="Testing2" linkId="234" productClass="Test2" productType="Test2" functionGroup="function2" suffix="suffix2">
+					</ItemToVariantLinkPR>
+					<PartItem version="2">
+					</PartItem>
+					<PartItem version="2">
+					</PartItem>
+					<PartItem version="2">
+					</PartItem>									
+				</BuildSpecification>
+			</TestObject>
+			<Project code="Project Code3">				
+			</Project>
+			<Project code="Project Code4">				
+			</Project>
+	</BuildSerie>
+</BuildSeries>

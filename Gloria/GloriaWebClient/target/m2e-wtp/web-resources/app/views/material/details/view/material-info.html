@@ -1,0 +1,228 @@
+<div class="well well-small">
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="partAffiliation"> {{t
+					"Gloria.i18n.material.details.text.partAffiliation"}}: </label>
+				<div class="controls">
+					<span id="partAffiliation">{{data.partAffiliation}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="partNumber"> {{t
+					"Gloria.i18n.material.details.text.partNumber"}}: </label>
+				<div class="controls">
+					<span id="partNumber">{{data.partNumber}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="partVersion"> {{t
+					"Gloria.i18n.material.details.text.partVersion"}}: </label>
+				<div class="controls">
+					<input id="partVersion" value="{{data.partVersion}}"
+						name="material[partVersion]" class="form-control hidden"
+						required="required" /> <span id="partVersion">{{data.partVersion}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="partName"> {{t
+					"Gloria.i18n.material.details.text.partName"}}: </label>
+				<div class="controls">
+					<span id="partName">{{data.partName}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="partModification"> {{t
+					"Gloria.i18n.material.details.text.partModification"}}: </label>
+				<div class="controls">
+					<span id="partModification">{{data.partModification}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="referenceId"> {{t
+					"Gloria.i18n.material.details.text.referenceId"}}: </label>
+				<div class="controls">
+					<span id="referenceId">{{showNAIfNoValue
+						data.referenceGroup}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="testObject"> {{t
+					"Gloria.i18n.material.details.text.testObject"}}: </label>
+				<div class="controls">
+					<input id="testObject" value="{{data.referenceId}}"
+						name="material[referenceId]" class="form-control hidden" /> <span
+						id="testObject">{{data.referenceId}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="phase"> {{t
+					"Gloria.i18n.material.details.text.phase"}}: </label>
+				<div class="controls">
+					<span id="phase">{{showNAIfNoValue data.buildName}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="mtrId"> {{t
+					"Gloria.i18n.material.details.text.mtrId"}}: </label>
+				<div class="controls">
+					<span id="mtrId">{{data.mtrlRequestVersion}}</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="outboundStartDate"> {{t
+					"Gloria.i18n.material.details.text.outboundStartDate"}}: </label> 
+				{{#if isEditable}}
+				<div class='input-group date'>
+					<input type="text" id='outboundStartDate'
+						class="outboundStartDate js-date form-control"
+						name='materialRequest[outboundStartDate]'
+						value='{{date data.outboundStartDate "Gloria.i18n.dateformat"}}'>
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-calendar"></span></span>
+				</div>
+				{{else}}
+				<div class="controls">
+					<span id="outboundStartDate">{{date data.outboundStartDate
+						"Gloria.i18n.dateformat"}}</span>
+				</div>
+				{{/if}}
+			</div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="outboundLocationId"> {{t
+					"Gloria.i18n.material.details.text.outboundLocationId"}}: </label>
+				<div class="controls" id="outboundLocationIdSelectorContainer">
+					<input id="outboundLocationId" class='form-control'
+						name="materialRequest[outboundLocationId]"
+						value='{{data.outboundLocationId}}'>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="companyCode"> {{t
+					"Gloria.i18n.material.details.text.companyCode"}}: </label>
+				<div class="controls" id="companyCodeSelectorContainer">
+					<input id="companyCode" class='form-control'
+						name="materialRequest[companyCode]" value='{{data.companyCode}}'>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="projectId"> {{t
+					"Gloria.i18n.material.details.text.projectId"}}: </label>
+				<div class="controls">
+					<span id="projectId">{{data.projectId}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="wbs"> {{t
+					"Gloria.i18n.material.details.text.wbs"}}: </label>
+				<div class="controls">
+					<span id="wbs">{{data.wbsCode}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="costCentre"> {{t
+					"Gloria.i18n.material.details.text.costCentre"}}: </label>
+				<div class="controls">
+					<span id="costCentre">{{data.costCenter}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="glAccount"> {{t
+					"Gloria.i18n.material.details.text.glAccount"}}: </label>
+				<div class="controls" id="glAccountSelectorContainer">
+					<input id="glAccount" class='form-control'
+						name="materialRequest[glAccount]" value='{{data.glAccount}}'>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="internalOrderNoSAP"> {{t
+					"Gloria.i18n.material.details.text.internalOrderNoSAP"}}: </label>
+				<div class="controls">
+					<span id="internalOrderNoSAP">{{data.internalOrderNoSAP}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="mailFormId"> {{t
+					"Gloria.i18n.material.details.text.mailFormId"}}: </label>
+				<div class="controls">
+					<span id="mailFormId">{{showNAIfNoValue data.mailFormId}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="quantityInclusiveCancelled">
+					{{t "Gloria.i18n.material.details.text.quantity"}}: </label>
+				<div class="controls">
+					<span id="quantityInclusiveCancelled">{{data.quantityInclusiveCancelled}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="unitOfMeasure"> {{t
+					"Gloria.i18n.material.details.text.unitOfMeasure"}}: </label>
+				<div class="controls">
+					<span id="unitOfMeasure">{{data.unitOfMeasure}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label" for="unitOfMeasure"> {{t
+					"Gloria.i18n.material.details.text.materialType"}}: </label>
+				<div class="controls">
+				{{#if_eq data.materialType 'ADDITIONAL_USAGE'}}
+					<span id="unitOfMeasure">ADDITIONAL</span>
+				{{else}}
+					<span id="unitOfMeasure">{{data.materialType}}</span>
+				{{/if_eq}}
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

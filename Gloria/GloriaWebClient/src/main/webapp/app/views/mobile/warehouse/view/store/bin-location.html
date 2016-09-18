@@ -1,0 +1,29 @@
+<form id="binlocation" name="binlocation">
+	<input type="hidden" name="id" value="{{data.id}}">
+	<div class="row text-center">
+		<div class="col-sm-12">
+			<div class="form-group">
+				<label class="control-label"></label>
+			</div>
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.binLocationHeader"}}: </label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="form-group suggestedBinLocation">
+				<label class="control-label" for="suggestedBinLocation"> {{t
+					"Gloria.i18n.warehouse.store.binLocation"}}: </label>
+				<div class="controls">
+					<input class="form-control scannable" id="suggestedBinLocation"
+						name="suggestedBinLocation" type="text" required>
+					<div>
+						<span class="help-inline"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

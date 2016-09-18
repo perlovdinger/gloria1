@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <!-- Define conflicting data types as properties -->
+  <property name="AUTOGENTYPE" dbms="postgresql" value="BIGSERIAL" />
+  <property dbms="h2" name="AutoGenTYPE" value="BIGINT" />
+
+  <property name="INTTYPE" dbms="postgresql" value="int4" />
+  <property dbms="h2" name="INTTYPE" value="int" />
+
+  <property name="VERSIONCOLNAME" dbms="postgresql" value="version" />
+  <property dbms="h2" name="VERSIONCOLNAME" value="VERSION" />
+
+
+  <changeSet id="ProcureMaterial_1.3.0_01" author="a028515 ">
+    <addColumn tableName="MATERIAL_REQUEST">
+      <column name="materialcontrolleruserid" type="varchar(255)" />
+    </addColumn>
+    <addColumn tableName="MATERIAL_REQUEST">
+      <column name="materialcontrollername" type="varchar(255)" />
+    </addColumn>
+    <comment>Added column for materialControllerUserId/materialControllerName</comment>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.3.0_02" author="tin3000">
+    <addColumn tableName="PROCURE_LINE">
+      <column name="statusflag" type="varchar(255)" />
+    </addColumn>
+    <addColumn tableName="PROCURE_LINE">
+      <column name="contentedited" type="BOOL" />
+    </addColumn>
+    <comment>Added column for statusFlag/contentEdited</comment>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.3.0_03" author="tin3000">
+    <createIndex tableName="DELIVERY_NOTE" indexName="i_deliverynote_deliverynotedate">
+      <column name="DELIVERYNOTEDATE"></column>
+    </createIndex>
+    <createIndex tableName="REQUEST_LIST" indexName="i_requestlist_requestlistoid">
+      <column name="REQUEST_LIST_OID"></column>
+    </createIndex>
+    <createIndex tableName="MATERIAL" indexName="i_material_materialtype">
+      <column name="MATERIALTYPE"></column>
+    </createIndex>
+    <createIndex tableName="ORDERS" indexName="i_orders_orderdatetime">
+      <column name="ORDERDATETIME"></column>
+    </createIndex>
+    <createIndex tableName="PROCURE_LINE" indexName="i_procureline_ppartmodification">
+      <column name="PPARTMODIFICATION"></column>
+    </createIndex>
+    <createIndex tableName="DELIVERY_SCHEDULE" indexName="i_deliveryschedule_planneddispatchdate">
+      <column name="PLANNEDDISPATCHDATE"></column>
+    </createIndex>
+    <createIndex tableName="EVENT_LOG" indexName="i_eventlog_eventtime">
+      <column name="EVENTTIME"></column>
+    </createIndex>
+    <createIndex tableName="SUPPLIER" indexName="i_supplier_supplierid">
+      <column name="SUPPLIERID"></column>
+    </createIndex>
+    <createIndex tableName="SUPPLIER" indexName="i_supplier_supplierName">
+      <column name="SUPPLIERNAME"></column>
+    </createIndex>
+    <createIndex tableName="ORDER_LINE" indexName="i_orderline_completetype">
+      <column name="COMPLETETYPE"></column>
+    </createIndex>
+    <createIndex tableName="BUYER" indexName="i_buyer_code">
+      <column name="CODE"></column>
+    </createIndex>
+    <createIndex tableName="BUYER" indexName="i_buyer_name">
+      <column name="NAME"></column>
+    </createIndex>
+    <comment> Indexes added for columns listed in Material Overview and My Order Overview, buyer code and buyer name</comment>
+  </changeSet>
+
+  <changeSet id="ProcureMaterial_1.3.0_04" author="TIN2177">
+    <addColumn tableName="ORDER_LINE">
+      <column name="contentedited" type="BOOL" />
+    </addColumn>
+    <comment>Added column contentEdited</comment>
+  </changeSet> 
+  
+  <changeSet id="ProcureMaterial_1.3.0_05" author="TIN2177">
+    <modifyDataType columnName="changerequestids" newDataType="varchar2(2048)" tableName="PROCURE_LINE" />
+    <modifyDataType columnName="changerequestids" newDataType="varchar2(2048)" tableName="REQUEST_GROUP" />
+    <comment>Increased column size to 2048 chars</comment>
+  </changeSet>
+  <changeSet id="ProcureMaterial_1.3.0_06" author="TIN3000">
+    <addColumn tableName="ORDER_LINE">
+      <column name="orderlinepaidonmigration" type="BOOL" defaultValueBoolean="false"/>
+    </addColumn>
+    <comment>Added column orderlinepaidonmigration</comment> 
+  </changeSet>
+</databaseChangeLog>

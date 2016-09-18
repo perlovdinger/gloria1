@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProcessMaterialProcureRequest xmlns:volvo="http://www.volvo.com/group/common/1_0" xmlns="http://www.volvo.com/MaterialProcureRequest/1_0">
+  <volvo:ApplicationArea>
+    <volvo:Sender>
+      <volvo:LogicalID>PROTOM</volvo:LogicalID>
+    </volvo:Sender>
+    <volvo:CreationDateTime>2015-05-21T10:26:14.117+02:00</volvo:CreationDateTime>
+    <volvo:BODID>2b3daee8-3a61-4689-8bba-b541027da855</volvo:BODID>
+  </volvo:ApplicationArea>
+  <DataArea>
+    <Process />
+    <MaterialRequestChange>
+      <RequestType>TESTOBJECT</RequestType>
+      <MaterialRequestChangeAdd>
+        <Id>6699</Id>
+        <Type>MR</Type>
+        <ChangeTechId>2232</ChangeTechId>
+        <ProcureMessageId>131568</ProcureMessageId>
+        <Title>title1</Title>
+        <MaterialRequestMessage>
+          <Header>
+            <TestObjectHeader>
+              <TestObjectInfo>
+                <TestObjectRemove>
+                  <Id>FM-8890</Id>
+                </TestObjectRemove>
+                <TestObject>
+                  <Id>FM-2222</Id>
+                  <Type>V</Type>
+                </TestObject>
+              </TestObjectInfo>
+              <PhaseInfo>
+                <PhaseRemove>
+                  <Id>3062</Id>
+                </PhaseRemove>
+              </PhaseInfo>
+            </TestObjectHeader>
+          </Header>
+        </MaterialRequestMessage>
+      </MaterialRequestChangeAdd>
+    </MaterialRequestChange>
+  </DataArea>
+</ProcessMaterialProcureRequest>

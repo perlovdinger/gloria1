@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-09-01T14:16:37.70+0200</SendTime>
+    </GmfHeader>
+    <CIAction>U</CIAction>
+    <UserID>UT1040O</UserID>
+    <UserFirstName>Michael</UserFirstName>
+    <UserLastName>Sheerer</UserLastName>
+    <OrganisationID>XT280004</OrganisationID>
+    <OrganisationName>GTT Internal Users</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>8</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>7900 National Service Road 27409 Greensboro North</Street1>
+      <Street2>Carolina United States</Street2>
+      <PostCode>27409</PostCode>
+      <City>Greensboro</City>
+      <State>North Carolina</State>
+      <CountryCode>US</CountryCode>
+      <PhoneNo>+1 336 3933389</PhoneNo>
+      <MobilePhoneNumber>+1 336 5545092</MobilePhoneNumber>
+      <FaxNumber>+1 336 3934186</FaxNumber>
+      <Email>michael.sheerer@volvo.com</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>US</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>US</CountryCode>
+      <IsPreferredLanguageFlag>N</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>VTC</CompName>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>EICHER</CompName>
+      <IsMainCompanyFlag>N</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>MACK</CompName>
+      <IsMainCompanyFlag>N</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>RTC</CompName>
+      <IsMainCompanyFlag>N</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>UD</CompName>
+      <IsMainCompanyFlag>N</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationCompany>
+      <OrganisationID>XT280004</OrganisationID>
+      <CompName>VBC</CompName>
+      <IsMainCompanyFlag>N</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>42102 - Volvo BLR, CV workshop</ApplicationSettingValue>
+      </ApplicationSetting>
+      <UserCategory>
+        <UserCategoryID>Warehouse_manager</UserCategoryID>
+        <UserCategoryDescription>Warehouse manager</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Warehouse_personell</UserCategoryID>
+        <UserCategoryDescription>Warehouse personell</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2015-09-01T14:16:37.70+0200</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

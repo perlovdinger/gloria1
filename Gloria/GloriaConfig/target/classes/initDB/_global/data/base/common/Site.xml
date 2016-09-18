@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sites xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Site siteId="664" siteCode="X-Hallen" siteName="GTT Lundby, Prototype warehouse (X-Hallen)" address="405 08  Lundby" phone="" countryCode="SE"
+    companyCode="SE26" joinVenture="false" shipToSite="true" shipToType="WH" buildSite="false" buildSiteType="" />
+
+  <Site siteId="887" siteCode="GOT GC" siteName="GTT Lundby GC CAB Proto WS" address="GC1 hytt, stn 792, avd 26776, 405 08  Lundby" phone="" countryCode="SE"
+    companyCode="SE26" joinVenture="false" shipToSite="false" buildSite="false" buildSiteType="WORKSHOP" />
+
+  <Site siteId="1001" siteCode="VTC /TUVE" siteName="GTO Tuve Truck Assy plant" address="Central Warehouse, Tuve (Stenebyvägen)" phone="" countryCode="SE"
+    companyCode="SE26" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="1165" siteCode="KOP" siteName="GTO Köping Transmission Assy plant" address="Betagatan 2, KÖPING" phone="" countryCode="SE" companyCode="SE27"
+    joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="1540" siteCode="UMEÅ" siteName="GTO Umeå Cab BIW Assy plant" address="Nipvägen 52, UMEÅ" phone="" countryCode="SE" companyCode="SE26"
+    joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="1620" siteCode="SKO PP" siteName="GTT Skövde Proto" address="Volvovägen 5 F-Port, 541 87 SKÖVDE" phone="" countryCode="SE" companyCode="SE27"
+    joinVenture="false" shipToSite="true" shipToType="WH" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="1622" siteCode="PT SKO" siteName="GTO Skövde Engine Assy plant" address="Volvovägen 5 F-Port, 541 87 SKÖVDE" phone="" countryCode="SE"
+    companyCode="SE27" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="1680" siteCode="Flen" siteName="GTT Flen Proto" address="Godsavsändning Port C, Variagatan 2, 642 37 FLEN" phone="" countryCode="SE"
+    companyCode="SE27" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="WORKSHOP" />
+
+  <Site siteId="1722" siteCode="PE Lundby" siteName="GTT Lundby (O, UV) Proto WS" address="Lundby " phone="" countryCode="SE" companyCode="SE27"
+    joinVenture="false" shipToSite="true" shipToType="WH" buildSite="true" buildSiteType="WORKSHOP" />
+
+  <Site siteId="2800" siteCode="CUR TRUCK" siteName="GTO Curitiba Truck Assy plant" address="Av. Juscelino K de Oliveira, 2600, CURITIBA" phone=""
+    countryCode="BR" companyCode="BR03" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="2801" siteCode="CUR BUS" siteName="Bus Curitiba" address="Av. Juscelino K de Oliveira, 2600, CURITIBA" phone="" countryCode="BR"
+    companyCode="BR03" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="2919" siteCode="MAL" siteName="GTT Malmö Prototype workshop" address="Jägershillgatan 22, MALMÖ" phone="" countryCode="SE" companyCode="SE27"
+    joinVenture="false" shipToSite="true" shipToType="WH" buildSite="false" buildSiteType="" />
+
+  <Site siteId="2920" siteCode="AGE VE" siteName="GTO Ageo Truck assembly plant GTO" address="Street 1-1 Postal Code 362-8523, AGEO-SHI" phone=""
+    countryCode="JP" companyCode="JP40" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="4042" siteCode="GSO" siteName="GTT Greensboro Proto WS" address="7900 National Service Road, GREENSBORO" phone="" countryCode="US"
+    companyCode="US10" joinVenture="false" shipToSite="true" shipToType="WH" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="4285" siteCode="MAC" siteName="GTO Macungie Truck Assy plant LVO" address="7000 Alburtis Road, MACUNGIE" phone="" countryCode="US"
+    companyCode="US45" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="4311" siteCode="HAG" siteName="GTO Hagerstown Engine Assy plant" address="13302 Pennsylvania Avenue, HAGERSTOWN" phone="" countryCode="US"
+    companyCode="US45" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="4388" siteCode="NRV" siteName="GTO NRV Truck Assy plant" address="4881 Cougar Trail Road, Postal Code 24084, DUBLIN" phone="+1 5406744181"
+    countryCode="US" companyCode="US10" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="4645" siteCode="VET /GENT" siteName="GTO Gent Truck Assy plant" address="Smalleheerweg 31, 9041, GENT-OOSTAKKER" phone="+32 92504211"
+    countryCode="BE" companyCode="BE06" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="7901" siteCode="BLR" siteName="GTO Volvo India PVT Ltd (VITN)" address="Yalachahally Village Dealers Bldg. BANGALORE" phone="" countryCode="IN"
+    companyCode="IN01" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="8374" siteCode="AGE PT" siteName="GTO Ageo Eng Assy plant/GTT Proto WS" address="Street 1-1 Postal Code 362-8523, AGEO-SHI" phone=""
+    countryCode="JP" companyCode="JP40" joinVenture="false" shipToSite="true" shipToType="WH" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="8410" siteCode="VIPL" siteName="GTO Hoskote Truck Assy plant" address="Yalachahally Village Dealers Bldg Tavarekere Post, Hoskote Taluq, BANGALORE"
+    phone="" countryCode="IN" companyCode="IN01" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="8412" siteCode="LYO" siteName="GTT Saint-Priest Proto WS" address="1 Av Henri Germain SAINT-PRIEST CEDEX" phone="" countryCode="FR"
+    companyCode="FR46" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="WORKSHOP" />
+
+
+  <Site siteId="8418" siteCode="VECV" siteName="GTO Pithampur VECV Engine Assy plant" address="PlotNo-102 AND 102A,Industrial Area no1, PITHAMPUR" phone=""
+    countryCode="IN" companyCode="IN08" joinVenture="true" shipToSite="true" shipToType="WH" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="8445" siteCode="VPT/AGEO" siteName="GTT Ageo Powertrain WS" address="1-1 Ageo-shi, 362-8523, Ageo" phone="" countryCode="JP" companyCode="JP40"
+    joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="WORKSHOP" />
+
+  <Site siteId="8462" siteCode="NDM/AGEO" siteName="GTT Ageo Trucks WS" address="1-1 Ageo-shi, 362-8523, Ageo" phone="" countryCode="JP" companyCode="JP40"
+    joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="WORKSHOP" />
+
+
+  <Site siteId="13427" siteCode="TNO" siteName="GTT TNO Wegtransportmiddelen" address="Schoenmakerstrat 97, 2628 VK DELFT" phone="+31 15696379"
+    countryCode="NL" companyCode="na" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="TEST" />
+
+  <Site siteId="31967" siteCode="BO Trucks" siteName="GTO Bourg Truck Assy plant" address="Avenue Amédée Mercier, 01002, Bourg-en-Bresse" phone=""
+    countryCode="FR" companyCode="FR46" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="31968" siteCode="BL Cabs" siteName="GTO Blainville Cab Assy plant" address="RUE DU CANAL, 14550, Blainville sur Orne" phone="" countryCode="FR"
+    companyCode="FR46" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="31972" siteCode="Ven VPT" siteName="GTO Venissieux engine Assy plant" address="402 Avenue Charles de Gaulle 69635 Venissieux" phone=""
+    countryCode="FR" companyCode="FR46" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="34331" siteCode="LY GARE 55" siteName="GTT Saint-Priest Gare 55" address="Renault trucks gare 55, 99 route de Lyon, 69806, SAINT PRIEST"
+    phone="" countryCode="FR" companyCode="FR46" joinVenture="false" shipToSite="true" shipToType="VIRTUAL" buildSite="false" buildSiteType="" />
+
+  <Site siteId="34347" siteCode="LY Gare 54" siteName="GTT Saint-Priest Gare 54 Prototype warehouse" address="1 Av Henri Germain Postal Code 69802 SAINT-PRIEST CEDEX"
+    phone="" countryCode="FR" companyCode="FR46" joinVenture="false" shipToSite="true" shipToType="WH" buildSite="false" buildSiteType="" />
+
+  <Site siteId="35884" siteCode="BL Trucks" siteName="GTO Blainville Truck Assy plant" address="RUE DU CANAL, 14550, Blainville sur Orne" phone=""
+    countryCode="FR" companyCode="FR46" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="PLANT" />
+
+  <Site siteId="36012" siteCode="BL Gare X2" siteName="GTT Blainville Gare X2" address="rue du Canal, 14550, BLAINVILLE-SUR-ORNE" phone="" countryCode="FR"
+    companyCode="FR46" joinVenture="false" shipToSite="true" shipToType="VIRTUAL" buildSite="false" buildSiteType="" />
+
+  <Site siteId="40382" siteCode="LY Gare C8" siteName="GTT Saint-Priest Gare C8" address="Renault Trucks gare C8, 99 route de Lyon, 69806, SAINT PRIEST"
+    phone="" countryCode="FR" companyCode="FR46" joinVenture="false" shipToSite="true" shipToType="VIRTUAL" buildSite="false" buildSiteType="" />
+
+  <Site siteId="42102" siteCode="GTT BLR" siteName="GTT Hoskote Proto WS" address="Yalachahally,Taverekere Post, Hosakote" phone="" countryCode="IN"
+    companyCode="IN01" joinVenture="false" shipToSite="true" shipToType="WH" buildSite="true" buildSiteType="WORKSHOP" />
+
+  <Site siteId="45907" siteCode="HAG PP" siteName="GTT Hagerstown Proto warehouse" address="Drop Area B11, 13302 Pennsylvania Avenue, 21740 HAGERSTOWN"
+    phone="" countryCode="US" companyCode="US45" joinVenture="false" shipToSite="true" shipToType="WH" buildSite="false" buildSiteType="" />
+
+  <Site siteId="47670" siteCode="CUR BLCW" siteName="GTT Curitiba Prototype Warehouse" address="Av. Juscelino K de Oliveira, 2600, CURITIBA" phone=""
+    countryCode="BR" companyCode="BR03" joinVenture="false" shipToSite="true" shipToType="WH" buildSite="false" buildSiteType="" />
+
+  <Site siteId="91828" siteCode="GOT GB" siteName="GTT Lundby (GB) Proto WS" address="Prototypverkstad  405 08  GÖTEBORG" phone="+46 313222902"
+    countryCode="SE" companyCode="SE26" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="WORKSHOP" />
+  <Site siteId="604297" siteCode="GOT YB" siteName="GTT Lundby YB Fieldtest Proto WS" address="Faltprov Avd 26735 Y2, 405 08  Lundby" phone="" countryCode="SE"
+    companyCode="SE26" joinVenture="false" shipToSite="false" buildSite="true" buildSiteType="WORKSHOP" />
+
+
+</Sites>

@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<style type="text/css">
+			.box-md {
+				width: 750px;
+				height: 500px;	
+			}
+		</style>
+		<title>Gloria SSO login test</title>
+		<script type="text/javascript" src="app/libs/jquery/jquery-2.1.1.js"></script>
+	</head>
+	<body>
+		<h1>Gloria SSO login test</h1>
+		<hr/>
+		<label>Request Type:</label>
+		<select id="requestType">
+			<option value="GET">GET</option>
+			<option value="POST" selected="selected">POST</option>
+			<option value="PUT">PUT</option>
+			<option value="DELETE">DELETE</option>			
+		</select>
+		<br/>
+		<label>URL:</label>
+		<input id="url" type="text" size="100" />
+		<button id="send" onclick="sendRequest()">Test</button>
+		<br/>
+		<br/>
+		<label>Reponse Headers:</label>
+		<br/>
+		<div id="responseHeader"></div>
+		<br/>
+		<label>Reponse:</label>
+		<br/>
+		<iframe id="responseBody" class="box-md"></iframe>		
+		<script type="text/javascript">
+		var sendRequest = function() {
+			var url = $('#url').val();
+			if(url) {
+				$.ajax({
+			    	url : url,
+			    	type: $('#requestType').val(),
+			    	//data : formData,
+			    	crossDomain: true,
+        			xhrFields: {
+            			withCredentials: true
+        			},
+			    	success: function(data, textStatus, jqXHR)
+			    	{				    	
+			        	//data - response from server
+			    		print(jqXHR.status, jqXHR.getAllResponseHeaders(), jqXHR.responseText);
+			    	},
+			    	error: function (jqXHR, textStatus, errorThrown)
+			    	{
+			    		print(jqXHR.status, jqXHR.getAllResponseHeaders(), jqXHR.responseText);
+			    	}
+				});
+			}
+		};
+		
+		var print = function(status, headers, body) {	
+			var headers = normalizeString(status + '\n' + headers);
+			$('#responseHeader').html(headers || '');			
+			$('#responseBody').contents().find('html').html(body || '');
+		};
+		
+		var normalizeString = function(val) {
+			if(val && typeof val == 'string') {
+				return val.replace(/(?:\r\n|\r|\n)/g, '<br/>');
+			}
+			return false;								
+		};
+		</script>
+	</body>
+</html>

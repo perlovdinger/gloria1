@@ -1,0 +1,77 @@
+<div class="well well-small">
+	<div class="row">
+		{{#if directSend}}
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.receive.toShip"}}: </label>
+				<div class="form-group toShipQuantity">
+					<input class="form-control js-number" id="toShipQuantity{{cid}}"
+						{{#unless hasEditAccess}} disabled="disabled"
+						{{/unless}}
+						name="toShipQuantity" type="number"
+						value="{{data.toReceiveQty}}" min="0" step="1" max="99999"
+						pattern="\d*">
+					<div>
+						<span class="help-inline"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{else}}
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label" for="receivedQuantity">
+					{{#if_eq module "regular"}} {{t
+					"Gloria.i18n.warehouse.receive.toReceive"}}: {{/if_eq}} {{#if_eq
+					module "transfer"}} {{t
+					"Gloria.i18n.warehouse.receive.toReceive"}}: {{/if_eq}} {{#if_eq
+					module "return"}} {{t "Gloria.i18n.warehouse.receive.toReturn"}}:
+					{{/if_eq}} {{#if_eq module "returntransfer"}} {{t
+					"Gloria.i18n.warehouse.receive.toReturn"}}: {{/if_eq}}</label>
+				<div class="form-group receivedQuantity">
+					<input class="form-control js-number" enabled="false" {{#unless
+						hasEditAccess}} disabled="disabled"
+						{{/unless}}
+						id="receivedQuantity{{cid}}"
+						name="toReceiveQty" type="number" value="{{data.toReceiveQty}}"
+						step="1" max="99999" pattern="\d*" required>
+					<div>
+						<span class="help-inline"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{/if}}
+		<div class="col-xs-6">
+			<label class="control-label"> {{t
+				"Gloria.i18n.warehouse.receive.nextLocation"}}: </label>
+			<div class="controls">
+				<span id="nextZoneCode{{cid}}"> {{data.nextZoneCode}}
+					{{#if_eq data.nextZoneCode "QI"}} ( {{#if directSend}} {{t
+					"Gloria.i18n.warehouse.storageRoomType.SHIP"}} {{else}} {{t
+					"Gloria.i18n.warehouse.storageRoomType.STORE"}} {{/if}} )
+					{{/if_eq}} </span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<label class="control-label"> {{t
+				"Gloria.i18n.warehouse.receive.transportLabel"}}: </label>
+			<div class="form-group transportLabelId">
+				{{transportLabelSelector selected=data.transportLabelId
+				idPrefix="transportLabelId" id=cid namePrefix="transportLabelId"
+				readOnly=readOnly}}</div>
+		</div>
+		<div class="col-xs-6">
+			<label class="control-label"> {{t
+				"Gloria.i18n.warehouse.receive.setBinLocation"}}: </label>
+			<div class="form-group binLocation">
+				<input class="form-control scannable" id="binLocation{{cid}}"
+					name="binLocation" type="text" value="{{data.binLocationCode}}"
+					{{#unless hasEditAccess}} disabled="disabled"{{/unless}}>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,3852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:SyncCostCenter xmlns:n1="http://finance.group.volvo.com/costcenter/1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://finance.group.volvo.com/costcenter/1_0 ../CostCenter_1_0.xsd">
+  <Sync ReasonCode="Updates">
+    <MessageHeader>
+      <MsgVersion>1.0.0</MsgVersion>
+      <Sender>
+        <LogicalId>VGMF</LogicalId>
+        <ComponentId>FIMCLNT100</ComponentId>
+      </Sender>
+      <CreationDateTime>2012-12-11T05:16:56Z</CreationDateTime>
+    </MessageHeader>
+  </Sync>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230000701</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="SE" defaultIndicator="true">
+        <ShortText>Swedish Desc Short</ShortText>
+        <LongText>Swedish Desc Looooong</LongText>
+      </CostCenterDescription>
+      <CostCenterDescription language="EN">
+        <ShortText>English Desc Short</ShortText>
+        <LongText>English Desc Looooong</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>L</CostCenterCategory>
+      <FunctionalArea>3190</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010260</ProfitCenter>
+      <StandardHierarchyNode>BC46116</StandardHierarchyNode>
+      <LockIndicators>
+        <PrimaryPostings>false</PrimaryPostings>
+        <Planning>false</Planning>
+        <ActualSecondaryCosts>false</ActualSecondaryCosts>
+        <ActualRevenuePostings>true</ActualRevenuePostings>
+        <CommitmentUpdate>false</CommitmentUpdate>
+        <PlanSecondaryCosts>false</PlanSecondaryCosts>
+        <PlanningRevenues>true</PlanningRevenues>
+      </LockIndicators>
+      <PersonResponsibleName>Kevin Smyth</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230000721</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Roadcrew General</ShortText>
+        <LongText>Roadcrew General &amp; Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>2013-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010006</ProfitCenter>
+      <StandardHierarchyNode>BC37435</StandardHierarchyNode>
+      <PersonResponsibleName>Trevor Smith</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230000905</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Customer Solutions</ShortText>
+        <LongText>Customer Solutions</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>7010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010051</ProfitCenter>
+      <StandardHierarchyNode>BC24160</StandardHierarchyNode>
+      <PersonResponsibleName>Paul Martin</PersonResponsibleName>
+      <Place>GBRUG01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230001110</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Legal</ShortText>
+        <LongText>Legal</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010050</ProfitCenter>
+      <StandardHierarchyNode>BC14400</StandardHierarchyNode>
+      <PersonResponsibleName>Villanueva, Simon</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230006110</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Dlr Bus. Directors</ShortText>
+        <LongText>Dealer Business Directors</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>BR03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010001</ProfitCenter>
+      <StandardHierarchyNode>BC37409</StandardHierarchyNode>
+      <PersonResponsibleName>Joe Roddy</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230006120</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Aftermarket Sales</ShortText>
+        <LongText>Aftermarket Sales</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010006</ProfitCenter>
+      <StandardHierarchyNode>BC37432</StandardHierarchyNode>
+      <PersonResponsibleName>Tony Bromley</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230006160</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Nat Fleet Sales</ShortText>
+        <LongText>National Fleet Sales</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010001</ProfitCenter>
+      <StandardHierarchyNode>BC37405</StandardHierarchyNode>
+      <PersonResponsibleName>Ian Mitchell</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230006170</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Asset Management</ShortText>
+        <LongText>Asset management</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010005</ProfitCenter>
+      <StandardHierarchyNode>BC37414</StandardHierarchyNode>
+      <PersonResponsibleName>Peter Groome</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230006191</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Demonstration</ShortText>
+        <LongText>Demonstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010001</ProfitCenter>
+      <StandardHierarchyNode>BC37407</StandardHierarchyNode>
+      <PersonResponsibleName>Russell, John</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230006192</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Truck C Sales Admin</ShortText>
+        <LongText>Truck Centre Sales Admin</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010001</ProfitCenter>
+      <StandardHierarchyNode>BC37410</StandardHierarchyNode>
+      <PersonResponsibleName>Hannah Burgess</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007010</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Reg Bus. Control</ShortText>
+        <LongText>Regional Business Control</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010001</ProfitCenter>
+      <StandardHierarchyNode>BC37401</StandardHierarchyNode>
+      <PersonResponsibleName>David Hunter</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007020</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Reg Dlr Devt</ShortText>
+        <LongText>Regional Dealer Development</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37420</StandardHierarchyNode>
+      <PersonResponsibleName>Gerardo Montoya</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007021</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Comm Training</ShortText>
+        <LongText>Commercial Training</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37421</StandardHierarchyNode>
+      <PersonResponsibleName>Andy Walker</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007022</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Tech Training</ShortText>
+        <LongText>Technical Training</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37422</StandardHierarchyNode>
+      <PersonResponsibleName>Andy Walker</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007023</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>SHEQ</ShortText>
+        <LongText>Safety</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37402</StandardHierarchyNode>
+      <PersonResponsibleName>Mike Draper</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007024</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Training Admin</ShortText>
+        <LongText>Training Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37421</StandardHierarchyNode>
+      <PersonResponsibleName>Walker, Andy</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Regional HR</ShortText>
+        <LongText>Regional Human Resources</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>H</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37404</StandardHierarchyNode>
+      <LockIndicators>
+        <PrimaryPostings>false</PrimaryPostings>
+        <Planning>false</Planning>
+        <ActualSecondaryCosts>false</ActualSecondaryCosts>
+        <ActualRevenuePostings>true</ActualRevenuePostings>
+        <CommitmentUpdate>false</CommitmentUpdate>
+        <PlanSecondaryCosts>false</PlanSecondaryCosts>
+        <PlanningRevenues>true</PlanningRevenues>
+      </LockIndicators>
+      <PersonResponsibleName>Dolan, Paula</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007050</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Reg Bus. Solutions</ShortText>
+        <LongText>Regional Business Solutions</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010006</ProfitCenter>
+      <StandardHierarchyNode>BC37407</StandardHierarchyNode>
+      <PersonResponsibleName>John Russell</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007060</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Reg Mkt Comms</ShortText>
+        <LongText>Regional Marketing Comms</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6010</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37433</StandardHierarchyNode>
+      <PersonResponsibleName>Amanda Hiatt</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007070</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Reg Amkt Parts</ShortText>
+        <LongText>Regional Aftermarket Services Parts</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010006</ProfitCenter>
+      <StandardHierarchyNode>BC37427</StandardHierarchyNode>
+      <PersonResponsibleName>Goran Nyberg</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007080</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Reg Amkt Service</ShortText>
+        <LongText>Regional Aftermarket Service</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010006</ProfitCenter>
+      <StandardHierarchyNode>BC37428</StandardHierarchyNode>
+      <PersonResponsibleName>John Conway</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007081</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Warranty</ShortText>
+        <LongText>Warranty</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010006</ProfitCenter>
+      <StandardHierarchyNode>BC37429</StandardHierarchyNode>
+      <PersonResponsibleName>Kevin Capes</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Reg Bus. Systems</ShortText>
+        <LongText>Regional Business Systems</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>I</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37426</StandardHierarchyNode>
+      <LockIndicators>
+        <PrimaryPostings>false</PrimaryPostings>
+        <Planning>false</Planning>
+        <ActualSecondaryCosts>false</ActualSecondaryCosts>
+        <ActualRevenuePostings>true</ActualRevenuePostings>
+        <CommitmentUpdate>false</CommitmentUpdate>
+        <PlanSecondaryCosts>false</PlanSecondaryCosts>
+        <PlanningRevenues>true</PlanningRevenues>
+      </LockIndicators>
+      <PersonResponsibleName>Joe Hannah</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230007092</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Systems Infrastructu</ShortText>
+        <LongText>Systems Infrastructure</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010008</ProfitCenter>
+      <StandardHierarchyNode>BC37426</StandardHierarchyNode>
+      <PersonResponsibleName>Hannah, Joe</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230008930</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Central HR</ShortText>
+        <LongText>Central Human Resources</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010026</ProfitCenter>
+      <StandardHierarchyNode>BC30180</StandardHierarchyNode>
+      <PersonResponsibleName>Mhairi Nardini</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230008950</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Central Bus. Solns</ShortText>
+        <LongText>Central Business Solutions</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010026</ProfitCenter>
+      <StandardHierarchyNode>BC32350</StandardHierarchyNode>
+      <PersonResponsibleName>Gonon, Richard</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300130</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Teeside Parts Volvo</ShortText>
+        <LongText>Teeside Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37473</StandardHierarchyNode>
+      <PersonResponsibleName>John Martin</PersonResponsibleName>
+      <Place>GBMME01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300140</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Teeside Workshop</ShortText>
+        <LongText>Teeside Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37474</StandardHierarchyNode>
+      <PersonResponsibleName>John Martin</PersonResponsibleName>
+      <Place>GBMME01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300190</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Teeside Admin</ShortText>
+        <LongText>Teeside Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37472</StandardHierarchyNode>
+      <PersonResponsibleName>John Martin</PersonResponsibleName>
+      <Place>GBMME01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300230</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Blyth Parts Volvo</ShortText>
+        <LongText>Blyth Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37446</StandardHierarchyNode>
+      <PersonResponsibleName>McMillen, Sean</PersonResponsibleName>
+      <Place>GBBLY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300240</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Blyth Workshop</ShortText>
+        <LongText>Blyth Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37446</StandardHierarchyNode>
+      <PersonResponsibleName>Sean McMillen</PersonResponsibleName>
+      <Place>GBBLY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300290</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Blyth Administration</ShortText>
+        <LongText>Blyth Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37446</StandardHierarchyNode>
+      <PersonResponsibleName>McMillen, Sean</PersonResponsibleName>
+      <Place>GBBLY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300330</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Wash&apos;ton Parts Volvo</ShortText>
+        <LongText>Washington Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37449</StandardHierarchyNode>
+      <PersonResponsibleName>Sean McMillen</PersonResponsibleName>
+      <Place>GBWHG01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300340</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Washington Workshop</ShortText>
+        <LongText>Washington Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37448</StandardHierarchyNode>
+      <PersonResponsibleName>McMillen, Sean</PersonResponsibleName>
+      <Place>GBWHG01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300390</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Washington Admin</ShortText>
+        <LongText>Washington Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37448</StandardHierarchyNode>
+      <PersonResponsibleName>Sean McMillen</PersonResponsibleName>
+      <Place>GBWHG01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300430</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Carlisle Parts Volvo</ShortText>
+        <LongText>Carlisle Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37452</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Hindmarsh</PersonResponsibleName>
+      <Place>GBCAX01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300440</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Carlisle Workshop</ShortText>
+        <LongText>Carlisle Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37453</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Hindmarsh</PersonResponsibleName>
+      <Place>GBCAX01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300490</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Carlisle Admin</ShortText>
+        <LongText>Carlisle Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37451</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Hindmarsh</PersonResponsibleName>
+      <Place>GBCAX01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300530</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Lancaster Parts Volv</ShortText>
+        <LongText>Lancaster Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37467</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Hindmarsh</PersonResponsibleName>
+      <Place>GBLAN01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300540</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Lancaster Workshop</ShortText>
+        <LongText>Lancaster Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37468</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Hindmarsh</PersonResponsibleName>
+      <Place>GBLAN01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230300590</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Lancaster Admin</ShortText>
+        <LongText>Lancaster Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37466</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Hindmarsh</PersonResponsibleName>
+      <Place>GBLAN01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400110</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Gl West New Trucks</ShortText>
+        <LongText>Glasgow West New Trucks</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010009</ProfitCenter>
+      <StandardHierarchyNode>BC37440</StandardHierarchyNode>
+      <PersonResponsibleName>Peter Fleming</PersonResponsibleName>
+      <Place>GBGLW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400130</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Gl West Parts Volvo</ShortText>
+        <LongText>Glasgow West Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37461</StandardHierarchyNode>
+      <PersonResponsibleName>Nigel Liverick</PersonResponsibleName>
+      <Place>GBGLW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400140</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Gl West Workshop</ShortText>
+        <LongText>Glasgow West Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37462</StandardHierarchyNode>
+      <PersonResponsibleName>Nigel Liverick</PersonResponsibleName>
+      <Place>GBGLW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400190</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Gl West Administrati</ShortText>
+        <LongText>Glasgow West Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37460</StandardHierarchyNode>
+      <PersonResponsibleName>Nigel Liverick</PersonResponsibleName>
+      <Place>GBGLW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400230</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Gl East Parts Volvo</ShortText>
+        <LongText>Glasgow East Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37458</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Henderson</PersonResponsibleName>
+      <Place>GBBYR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400240</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Gl East Workshop</ShortText>
+        <LongText>Glasgow East Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37459</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Henderson</PersonResponsibleName>
+      <Place>GBBYR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400290</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Gl East Administrati</ShortText>
+        <LongText>Glasgow East Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37457</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Henderson</PersonResponsibleName>
+      <Place>GBBYR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400430</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Edin&apos; Parts Volvo</ShortText>
+        <LongText>Edinburgh Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37455</StandardHierarchyNode>
+      <PersonResponsibleName>Stewart Lynes</PersonResponsibleName>
+      <Place>GBBXU01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400440</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Edin&apos; Workshop</ShortText>
+        <LongText>Edinburgh Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37456</StandardHierarchyNode>
+      <PersonResponsibleName>Stewart Lynes</PersonResponsibleName>
+      <Place>GBBXU01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400490</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Edin&apos; Administration</ShortText>
+        <LongText>Edinburgh Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37454</StandardHierarchyNode>
+      <PersonResponsibleName>Stewart Lynes</PersonResponsibleName>
+      <Place>GBBXU01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400530</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Perth Parts Volvo</ShortText>
+        <LongText>Perth Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37470</StandardHierarchyNode>
+      <PersonResponsibleName>Liam Neary</PersonResponsibleName>
+      <Place>GBPER01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400540</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Perth Workshop</ShortText>
+        <LongText>Perth Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37471</StandardHierarchyNode>
+      <PersonResponsibleName>Liam Neary</PersonResponsibleName>
+      <Place>GBPER01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400590</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Perth Administration</ShortText>
+        <LongText>Perth Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37469</StandardHierarchyNode>
+      <PersonResponsibleName>Liam Neary</PersonResponsibleName>
+      <Place>GBPER01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400630</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ab&apos;deen Parts Volvo</ShortText>
+        <LongText>Aberdeen Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37442</StandardHierarchyNode>
+      <PersonResponsibleName>Bruce, Jim</PersonResponsibleName>
+      <Place>GBABD01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400640</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Aberdeen Workshop</ShortText>
+        <LongText>Aberdeen Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37443</StandardHierarchyNode>
+      <PersonResponsibleName>Jim Bruce</PersonResponsibleName>
+      <Place>GBABD01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400690</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ab&apos;deen Admin</ShortText>
+        <LongText>Aberdeen Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37442</StandardHierarchyNode>
+      <PersonResponsibleName>Jim Bruce</PersonResponsibleName>
+      <Place>GBABD01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400730</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Inv&apos;ness Parts Volvo</ShortText>
+        <LongText>Inverness Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37465</StandardHierarchyNode>
+      <PersonResponsibleName>Campbell McNab</PersonResponsibleName>
+      <Place>GBINV01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400740</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Inv&apos;ness Workshop</ShortText>
+        <LongText>Inverness Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37464</StandardHierarchyNode>
+      <PersonResponsibleName>Campbell McNab</PersonResponsibleName>
+      <Place>GBINV01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400790</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Inv&apos;ness Administrat</ShortText>
+        <LongText>Inverness Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37464</StandardHierarchyNode>
+      <PersonResponsibleName>McNab, Campbell</PersonResponsibleName>
+      <Place>GBINV01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400990</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Scot Central Aftmkt</ShortText>
+        <LongText>Scotland Central Aftermarket</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37439</StandardHierarchyNode>
+      <PersonResponsibleName>Martin Merrick</PersonResponsibleName>
+      <Place>GBGLW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400991</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Scot Central Sales</ShortText>
+        <LongText>Scotland Central Sales</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37439</StandardHierarchyNode>
+      <PersonResponsibleName>Merrick, Martin</PersonResponsibleName>
+      <Place>GBGLW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230400995</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Scot Central Admin</ShortText>
+        <LongText>Scotland Central Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37439</StandardHierarchyNode>
+      <PersonResponsibleName>Merrick, Martin</PersonResponsibleName>
+      <Place>GBGLW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230401130</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ayr Parts Volvo</ShortText>
+        <LongText>Ayr Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37444</StandardHierarchyNode>
+      <PersonResponsibleName>Jim Drinnan</PersonResponsibleName>
+      <Place>GBAYR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230401140</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ayr Workshop</ShortText>
+        <LongText>Ayr Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37445</StandardHierarchyNode>
+      <PersonResponsibleName>Jim Drinnan</PersonResponsibleName>
+      <Place>GBAYR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230401190</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ayr Administration</ShortText>
+        <LongText>Ayr Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37444</StandardHierarchyNode>
+      <PersonResponsibleName>Jim Drinnan</PersonResponsibleName>
+      <Place>GBAYR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230500010</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>London New Trucks</ShortText>
+        <LongText>London New Trucks</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010009</ProfitCenter>
+      <StandardHierarchyNode>BC37516</StandardHierarchyNode>
+      <PersonResponsibleName>Simon Godley</PersonResponsibleName>
+      <Place>GBHMI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230500990</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>London Central Admin</ShortText>
+        <LongText>London Central Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37515</StandardHierarchyNode>
+      <PersonResponsibleName>Jim Collins</PersonResponsibleName>
+      <Place>GBHMI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230500995</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>London Central Sales</ShortText>
+        <LongText>London Central Sales</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37515</StandardHierarchyNode>
+      <PersonResponsibleName>Godley, Simon</PersonResponsibleName>
+      <Place>GBHMI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230502030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Hayes Parts Volvo</ShortText>
+        <LongText>Hayes Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37540</StandardHierarchyNode>
+      <PersonResponsibleName>Howard Grey</PersonResponsibleName>
+      <Place>GBHMI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230502040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Hayes Workshop</ShortText>
+        <LongText>Hayes Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37539</StandardHierarchyNode>
+      <PersonResponsibleName>Howard Grey</PersonResponsibleName>
+      <Place>GBHMI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230502090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Hayes Adminstration</ShortText>
+        <LongText>Hayes Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37541</StandardHierarchyNode>
+      <PersonResponsibleName>Howard Grey</PersonResponsibleName>
+      <Place>GBHMI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230503030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Radlett Parts Volvo</ShortText>
+        <LongText>Radlett Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37546</StandardHierarchyNode>
+      <PersonResponsibleName>Codd, John</PersonResponsibleName>
+      <Place>GBRDL01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230503040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Radlett Workshop</ShortText>
+        <LongText>Radlett Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37547</StandardHierarchyNode>
+      <PersonResponsibleName>John Codd</PersonResponsibleName>
+      <Place>GBRDL01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230503090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Radlett Adminstratio</ShortText>
+        <LongText>Radlett Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37546</StandardHierarchyNode>
+      <PersonResponsibleName>John Codd</PersonResponsibleName>
+      <Place>GBRDL01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230505030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Croydon Parts Volvo</ShortText>
+        <LongText>Croydon Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37527</StandardHierarchyNode>
+      <PersonResponsibleName>Harry Marsh</PersonResponsibleName>
+      <Place>GBCRO01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230505040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Croydon Workshop</ShortText>
+        <LongText>Croydon Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37528</StandardHierarchyNode>
+      <PersonResponsibleName>Harry Marsh</PersonResponsibleName>
+      <Place>GBCRO01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230505090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Croydon Adminstratio</ShortText>
+        <LongText>Croydon Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37526</StandardHierarchyNode>
+      <PersonResponsibleName>Harry Marsh</PersonResponsibleName>
+      <Place>GBCRO01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230506030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Basingstoke Parts Vo</ShortText>
+        <LongText>Basingstoke Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37522</StandardHierarchyNode>
+      <PersonResponsibleName>Craig Williams</PersonResponsibleName>
+      <Place>GBBGK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230506040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Basingstoke Workshop</ShortText>
+        <LongText>Basingstoke Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37523</StandardHierarchyNode>
+      <PersonResponsibleName>Craig Williams</PersonResponsibleName>
+      <Place>GBBGK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230506090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Basingstoke Adminstr</ShortText>
+        <LongText>Basingstoke Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37521</StandardHierarchyNode>
+      <PersonResponsibleName>Craig Williams</PersonResponsibleName>
+      <Place>GBBGK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230507030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Didcot Parts Volvo</ShortText>
+        <LongText>Didcot Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37531</StandardHierarchyNode>
+      <PersonResponsibleName>Craig Williams</PersonResponsibleName>
+      <Place>GBDID01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230507040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Didcot Workshop</ShortText>
+        <LongText>Didcot Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37530</StandardHierarchyNode>
+      <PersonResponsibleName>Craig Williams</PersonResponsibleName>
+      <Place>GBDID01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230507090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Didcot Adminstration</ShortText>
+        <LongText>Didcot Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37529</StandardHierarchyNode>
+      <PersonResponsibleName>Craig Williams</PersonResponsibleName>
+      <Place>GBDID01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230511030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Milton Keynes Depot</ShortText>
+        <LongText>Milton Keynes Depot Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37544</StandardHierarchyNode>
+      <PersonResponsibleName>Brian Mills</PersonResponsibleName>
+      <Place>GBMIK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230511040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Milton Keynes Depot</ShortText>
+        <LongText>Milton Keynes Depot Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37545</StandardHierarchyNode>
+      <PersonResponsibleName>Brian Mills</PersonResponsibleName>
+      <Place>GBMIK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230511090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Milton Keynes Depot</ShortText>
+        <LongText>Milton Keynes Depot Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37543</StandardHierarchyNode>
+      <PersonResponsibleName>Brian Mills</PersonResponsibleName>
+      <Place>GBMIK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230512030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Coventry Parts Volvo</ShortText>
+        <LongText>Coventry Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37489</StandardHierarchyNode>
+      <PersonResponsibleName>Brent Norton</PersonResponsibleName>
+      <Place>GBCVT01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230512040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Coventry Workshop</ShortText>
+        <LongText>Coventry Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37488</StandardHierarchyNode>
+      <PersonResponsibleName>Brent Norton</PersonResponsibleName>
+      <Place>GBCVT01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230512090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Coventry Adminstrati</ShortText>
+        <LongText>Coventry Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37487</StandardHierarchyNode>
+      <PersonResponsibleName>Brent Norton</PersonResponsibleName>
+      <Place>GBCVT01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230513030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Kettering Bodyshop P</ShortText>
+        <LongText>Kettering Bodyshop Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37490</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Leech</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230513040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Kettering Bodyshop W</ShortText>
+        <LongText>Kettering Bodyshop Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37490</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Leech</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230513090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Kettering Bodyshop A</ShortText>
+        <LongText>Kettering Bodyshop Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37490</StandardHierarchyNode>
+      <PersonResponsibleName>Leech, Derek</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230514030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Milton Keynes Bodysh</ShortText>
+        <LongText>Milton Keynes Bodyshop Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37543</StandardHierarchyNode>
+      <PersonResponsibleName>Brian Mills</PersonResponsibleName>
+      <Place>GBMIK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230514040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Milton Keynes Bodysh</ShortText>
+        <LongText>Milton Keynes Bodyshop Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37543</StandardHierarchyNode>
+      <PersonResponsibleName>Mills, Brian</PersonResponsibleName>
+      <Place>GBMIK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230515030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Wellingborough Parts</ShortText>
+        <LongText>Wellingborough Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC45531</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Leech</PersonResponsibleName>
+      <Place>GBWEL01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230516030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Kettering Depot Part</ShortText>
+        <LongText>Kettering Depot Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37504</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Leech</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230516040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Kettering Depot Work</ShortText>
+        <LongText>Kettering Depot Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37503</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Leech</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230516090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Kettering Depot Admi</ShortText>
+        <LongText>Kettering Depot Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37502</StandardHierarchyNode>
+      <PersonResponsibleName>Derek Leech</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230518030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Leicester Parts</ShortText>
+        <LongText>Leicester Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37485</StandardHierarchyNode>
+      <PersonResponsibleName>Darren Wymer</PersonResponsibleName>
+      <Place>GBBHI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230518040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Leicester Workshop</ShortText>
+        <LongText>Leicester Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37484</StandardHierarchyNode>
+      <PersonResponsibleName>Darren Wymer</PersonResponsibleName>
+      <Place>GBBHI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230518090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Leicester Admin</ShortText>
+        <LongText>Leicester Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37483</StandardHierarchyNode>
+      <PersonResponsibleName>Darren Wymer</PersonResponsibleName>
+      <Place>GBBHI01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230519030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Bedford Parts Volvo</ShortText>
+        <LongText>Bedford Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37525</StandardHierarchyNode>
+      <PersonResponsibleName>Mills, Brian</PersonResponsibleName>
+      <Place>GBBEF01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230519040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Bedford Workshop</ShortText>
+        <LongText>Bedford Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37525</StandardHierarchyNode>
+      <PersonResponsibleName>Mills, Brian</PersonResponsibleName>
+      <Place>GBBEF01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230519090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Bedford Adminstratio</ShortText>
+        <LongText>Bedford Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37525</StandardHierarchyNode>
+      <PersonResponsibleName>Brian Mills</PersonResponsibleName>
+      <Place>GBBEF01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230530010</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>East Anglia New Truc</ShortText>
+        <LongText>East Anglia New Trucks</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010009</ProfitCenter>
+      <StandardHierarchyNode>BC37478</StandardHierarchyNode>
+      <PersonResponsibleName>Stephen Blackmore</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230530990</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>East Anglia Central</ShortText>
+        <LongText>East Anglia Central Administration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37477</StandardHierarchyNode>
+      <PersonResponsibleName>David Sullivan</PersonResponsibleName>
+      <Place>GBKTR01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531230</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Norwich Parts Volvo</ShortText>
+        <LongText>Norwich Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37507</StandardHierarchyNode>
+      <PersonResponsibleName>Martin Collins</PersonResponsibleName>
+      <Place>GBNRW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531240</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Norwich Workshop</ShortText>
+        <LongText>Norwich Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37506</StandardHierarchyNode>
+      <PersonResponsibleName>Martin Collins</PersonResponsibleName>
+      <Place>GBNRW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531290</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Norwich Adminstratio</ShortText>
+        <LongText>Norwich Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37505</StandardHierarchyNode>
+      <PersonResponsibleName>Martin Collins</PersonResponsibleName>
+      <Place>GBNRW01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531430</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Thetford Parts Volvo</ShortText>
+        <LongText>Thetford Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37510</StandardHierarchyNode>
+      <PersonResponsibleName>David Wiiloughby</PersonResponsibleName>
+      <Place>GBTFD01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531440</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Thetford Workshop</ShortText>
+        <LongText>Thetford Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37511</StandardHierarchyNode>
+      <PersonResponsibleName>David Wiiloughby</PersonResponsibleName>
+      <Place>GBTFD01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531490</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Thetford Adminstrati</ShortText>
+        <LongText>Thetford Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37510</StandardHierarchyNode>
+      <PersonResponsibleName>David Wiiloughby</PersonResponsibleName>
+      <Place>GBTFD01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531530</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ely Parts Volvo</ShortText>
+        <LongText>Ely Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37497</StandardHierarchyNode>
+      <PersonResponsibleName>Dick Lines</PersonResponsibleName>
+      <Place>GBELY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531540</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ely Workshop</ShortText>
+        <LongText>Ely Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37495</StandardHierarchyNode>
+      <PersonResponsibleName>Dick Lines</PersonResponsibleName>
+      <Place>GBELY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531590</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ely Adminstration</ShortText>
+        <LongText>Ely Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37494</StandardHierarchyNode>
+      <PersonResponsibleName>Dick Lines</PersonResponsibleName>
+      <Place>GBELY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531730</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Bury St Edmunds Part</ShortText>
+        <LongText>Bury St Edmunds Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37486</StandardHierarchyNode>
+      <PersonResponsibleName>Clayden, Robert</PersonResponsibleName>
+      <Place>GBBSE01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531740</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Bury St Edmunds Work</ShortText>
+        <LongText>Bury St Edmunds Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37486</StandardHierarchyNode>
+      <PersonResponsibleName>Robert Clayden</PersonResponsibleName>
+      <Place>GBBSE01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531790</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Bury St Edmunds Admi</ShortText>
+        <LongText>Bury St Edmunds Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37486</StandardHierarchyNode>
+      <PersonResponsibleName>Clayden, Robert</PersonResponsibleName>
+      <Place>GBBSE01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531830</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ipswich Depot Parts</ShortText>
+        <LongText>Ipswich Depot Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37501</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Preston</PersonResponsibleName>
+      <Place>GBIPS01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531840</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ipswich Depot Worksh</ShortText>
+        <LongText>Ipswich Depot Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37500</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Preston</PersonResponsibleName>
+      <Place>GBIPS01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531890</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Ipswich Depot Admins</ShortText>
+        <LongText>Ipswich Depot Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37499</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Preston</PersonResponsibleName>
+      <Place>GBIPS01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531930</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Felixstowe Parts Vol</ShortText>
+        <LongText>Felixstowe Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37498</StandardHierarchyNode>
+      <PersonResponsibleName>Justin Burrows</PersonResponsibleName>
+      <Place>GBFXT01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230531940</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Felixstowe Workshop</ShortText>
+        <LongText>Felixstowe Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37498</StandardHierarchyNode>
+      <PersonResponsibleName>Justin Burrows</PersonResponsibleName>
+      <Place>GBFXT01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Enfield Parts Volvo</ShortText>
+        <LongText>Enfield Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37536</StandardHierarchyNode>
+      <PersonResponsibleName>Colin McIntosh</PersonResponsibleName>
+      <Place>GBENF01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532040</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Enfield Workshop</ShortText>
+        <LongText>Enfield Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37533</StandardHierarchyNode>
+      <PersonResponsibleName>Colin McIntosh</PersonResponsibleName>
+      <Place>GBENF01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532090</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Enfield Adminstratio</ShortText>
+        <LongText>Enfield Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37532</StandardHierarchyNode>
+      <PersonResponsibleName>Colin McIntosh</PersonResponsibleName>
+      <Place>GBENF01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532230</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Peterborough Parts V</ShortText>
+        <LongText>Peterborough Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37508</StandardHierarchyNode>
+      <PersonResponsibleName>Alan Didwell</PersonResponsibleName>
+      <Place>GBPET01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532240</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Peterborough Worksho</ShortText>
+        <LongText>Peterborough Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37509</StandardHierarchyNode>
+      <PersonResponsibleName>Alan Didwell</PersonResponsibleName>
+      <Place>GBPET01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532290</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Peterborough Adminst</ShortText>
+        <LongText>Peterborough Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37508</StandardHierarchyNode>
+      <PersonResponsibleName>Didwell, Alan</PersonResponsibleName>
+      <Place>GBPET01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532330</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Barking Parts Volvo</ShortText>
+        <LongText>Barking Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37519</StandardHierarchyNode>
+      <PersonResponsibleName>Doug Hawkins</PersonResponsibleName>
+      <Place>GBLBK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532340</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Barking Workshop</ShortText>
+        <LongText>Barking Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37520</StandardHierarchyNode>
+      <PersonResponsibleName>Doug Hawkins</PersonResponsibleName>
+      <Place>GBLBK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532390</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Barking Adminstratio</ShortText>
+        <LongText>Barking Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37519</StandardHierarchyNode>
+      <PersonResponsibleName>Doug Hawkins</PersonResponsibleName>
+      <Place>GBLBK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532530</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Waltham Point Parts</ShortText>
+        <LongText>Waltham Point Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37548</StandardHierarchyNode>
+      <PersonResponsibleName>Tony Selby</PersonResponsibleName>
+      <Place>GBHHA01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532540</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Waltham Point Worksh</ShortText>
+        <LongText>Waltham Point Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37548</StandardHierarchyNode>
+      <PersonResponsibleName>Tony Selby</PersonResponsibleName>
+      <Place>GBHHA01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532590</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Waltham Point Admins</ShortText>
+        <LongText>Waltham Point Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37548</StandardHierarchyNode>
+      <PersonResponsibleName>Selby, Tony</PersonResponsibleName>
+      <Place>GBHHA01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532630</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Daventry Parts Volvo</ShortText>
+        <LongText>Daventry Parts Volvo</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010014</ProfitCenter>
+      <StandardHierarchyNode>BC37491</StandardHierarchyNode>
+      <PersonResponsibleName>Brent Norton</PersonResponsibleName>
+      <Place>GBDVY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532640</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Daventry Workshop</ShortText>
+        <LongText>Daventry Workshop</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010015</ProfitCenter>
+      <StandardHierarchyNode>BC37491</StandardHierarchyNode>
+      <PersonResponsibleName>Norton, Brent</PersonResponsibleName>
+      <Place>GBDVY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230532690</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>Daventry Adminstrati</ShortText>
+        <LongText>Daventry Adminstration</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010019</ProfitCenter>
+      <StandardHierarchyNode>BC37491</StandardHierarchyNode>
+      <PersonResponsibleName>Norton, Brent</PersonResponsibleName>
+      <Place>GBDVY01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230590010</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>South Used Trucks</ShortText>
+        <LongText>South Used Trucks</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010013</ProfitCenter>
+      <StandardHierarchyNode>BC37415</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Bourne</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+  <CostCenter>
+    <BusinessObjectData>
+      <Action>Load</Action>
+    </BusinessObjectData>
+    <CostCenterItem>
+      <CostCenter>1230590030</CostCenter>
+      <ControllingArea>Z001</ControllingArea>
+      <BusinessAreaShort>BC</BusinessAreaShort>
+      <CostCenterDescription language="EN" defaultIndicator="true">
+        <ShortText>North Used Trucks</ShortText>
+        <LongText>North Used Trucks</LongText>
+      </CostCenterDescription>
+      <EffectiveDatePeriod>
+        <StartDate>2012-01-01</StartDate>
+        <EndDate>9999-12-31</EndDate>
+      </EffectiveDatePeriod>
+      <CompanyCode>GB03</CompanyCode>
+      <CostCenterCategory>Z</CostCenterCategory>
+      <FunctionalArea>6020</FunctionalArea>
+      <CurrencyCode>GBP</CurrencyCode>
+      <ProfitCenter>0000010013</ProfitCenter>
+      <StandardHierarchyNode>BC37416</StandardHierarchyNode>
+      <PersonResponsibleName>Steve Bourne</PersonResponsibleName>
+      <Place>GBWWK01</Place>
+      <Market>GB</Market>
+    </CostCenterItem>
+  </CostCenter>
+</n1:SyncCostCenter>

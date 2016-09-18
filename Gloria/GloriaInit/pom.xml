@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>Gloria</artifactId>
+    <groupId>com.volvo.gloria</groupId>
+    <version>1.4.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.volvo.gloria.init</groupId>
+  <artifactId>GloriaInit</artifactId>
+  <name>GloriaUtil</name>
+  <description>GloriaInit</description>
+  <dependencies>
+  
+    <dependency>
+      <groupId>com.volvo.gloria.user</groupId>
+      <artifactId>CommonDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.volvo.gloria</groupId>
+      <artifactId>GloriaConfig</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+     <dependency>
+      <groupId>com.volvo.gloria.authorization</groupId>
+      <artifactId>UserAuthorizationDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+      <dependency>
+      <groupId>com.volvo.gloria.materialrequest</groupId>
+      <artifactId>MaterialRequestDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+     <dependency>
+      <groupId>com.volvo.gloria.material</groupId>
+      <artifactId>ProcureMaterialDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+     <dependency>
+      <groupId>com.volvo.gloria.warehouse</groupId>
+      <artifactId>WarehouseDomain</artifactId>
+      <version>1.4.0-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.3-1100-jdbc4</version>
+    </dependency>
+    <!-- Test dependencies START -->
+    <dependency>
+        <groupId>com.volvo.jvs</groupId>
+        <artifactId>jvs-runtime-test</artifactId>
+        <version>${jvs.version}</version>
+        <scope>compile</scope>
+      </dependency>
+  </dependencies>
+
+
+</project>

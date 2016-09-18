@@ -1,0 +1,34 @@
+<div class="row">
+	<div class="col-sm-6">
+		<div class="noprint">
+			{{#if show}} {{#hasPermission "edit" 0="MaterialRequest"}}<a
+				class="btn btn-default" id="edit-button" {{#unless
+				permittedActions.edit}}disabled="true"{{/unless}}>{{t
+				"Gloria.i18n.materialrequest.button.edit"}}</a> <a
+				class="btn btn-default" id="remove-button" {{#unless
+				permittedActions.remove}}disabled="true"{{/unless}}>{{t
+				"Gloria.i18n.materialrequest.button.remove"}}</a> <a
+				class="btn btn-default {{#unless permittedActions.undoRemove}}hidden{{/unless}}"
+				id="undoRemove-button">{{t
+				"Gloria.i18n.materialrequest.button.undoRemove"}}</a> <span
+				class="noprint divider-vertical"></span> <input type="file"
+				id="docFile" name="docFile"
+				accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+				style="display: none" /> <a class="btn btn-default"
+				id="importExcel-button" {{#unless
+				permittedActions.importExcel}}disabled="true"{{/unless}}>{{t
+				"Gloria.i18n.materialrequest.button.importExcel"}}</a> <a
+				class="btn btn-default" id="addNew-button" {{#unless
+				permittedActions.addNew}}disabled="true"{{/unless}}>{{t
+				"Gloria.i18n.materialrequest.button.addNew"}}</a> {{/hasPermission}}
+			{{/if}} {{#unless show}} {{#hasPermission "exportToExcel"
+			0="MaterialRequest"}} <a class="btn btn-default"
+				id="exportExcel-button" {{#unless
+				permittedActions.exportExcel}}disabled="true"
+				{{/unless}} href="/GloriaUIServices/api/materialrequest/v1/materialrequests/{{materialRequestId}}/current/materialrequestlines/excel">{{t
+				"Gloria.i18n.materialrequest.button.exportExcel"}}</a>
+			{{/hasPermission}} {{/unless}} <a id="clear-filter"
+				class="clear-filter">{{t "Gloria.i18n.gridpanel.clearFilter"}}</a>
+		</div>
+	</div>
+</div>

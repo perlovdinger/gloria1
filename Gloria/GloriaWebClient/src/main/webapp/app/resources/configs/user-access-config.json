@@ -1,0 +1,442 @@
+{
+	"Gloria": {
+	    "WarehouseSettings": {
+	    	"actions": {
+	    		"view": {
+	    			"roles": ["WH_SETUP", "IT_SUPPORT"]
+	    		}
+	    	}
+	    },
+	    "MaterialRequestTemplate": {
+	    	"actions": {
+	    		"view": {
+	    			"roles": ["PROCURE", "IT_SUPPORT"]
+	    		}
+	    	}
+	    },
+	    "WarehouseSelection": {
+	    	"actions": {
+	    		"view": {
+	    			"roles": ["WH_SETUP", "WH_DEFAULT", "WH_QI","GR_ONLY", "IT_SUPPORT"]
+	    		}
+	    	}
+	    },
+		"MaterialRequest": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				},
+				"createNew": {					
+					"roles": ["PROCURE"]
+				},
+				"copyAndCreateNew": {					
+					"roles": ["PROCURE"]
+				},
+				"exportToExcel": {					
+					"roles": ["PROCURE"]
+				},
+				"cancelMaterialRequest": {					
+					"roles": ["PROCURE"]
+				},
+				"newVersion": {					
+					"roles": ["PROCURE"]
+				},
+				"save": {					
+					"roles": ["PROCURE"]
+				},
+				"send": {					
+					"roles": ["PROCURE"]
+				},
+				"delete": {					
+					"roles": ["PROCURE"]
+				},
+				"revert": {					
+					"roles": ["PROCURE"]
+				},
+				"edit": {					
+					"roles": ["PROCURE"]
+				}
+			}
+		},
+		"ProcurementInbox": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				},
+				"assign": {
+					"roles": ["PROCURE"]
+				},
+				"unAssign": {
+					"roles": ["PROCURE"]
+				}
+			}
+		},
+		"ProcurementToProcure": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL", "IT_SUPPORT"]
+				},
+				"open": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL", "IT_SUPPORT"]
+				},
+				"multipleUpdate": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL"]
+				},
+				"forwardProcurement": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL"]
+				},
+				"toModify": {
+					"roles": ["PROCURE"]
+				},
+				"onBuildSite": {
+					"roles": ["PROCURE"]
+				},
+				"procure": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL"]
+				}
+			}
+		},
+		"ProcurementModification": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["PROCURE"]
+				}
+			}
+		},
+		"ProcurementBuildSite": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				},
+				"toProcure": {
+					"roles": ["PROCURE"]
+				},
+				"delegateToBuildSite": {
+					"roles": ["PROCURE"]
+				}
+			}
+		},
+		"ProcuredOverview": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL", "IT_SUPPORT"]
+				},
+				"open": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL", "IT_SUPPORT"]
+				},
+				"toProcure": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL"]
+				},
+				"viewExternalSourceFilter": {
+					"roles": ["PROCURE"]
+				}
+			}
+		},
+		"ProcurementChange": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				},
+				"details": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				},
+				"accept": {
+					"roles": ["PROCURE"]
+				},
+				"reject": {
+					"roles": ["PROCURE"]
+				}
+			}
+		},
+		"InternalProcurement": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE-INTERNAL", "IT_SUPPORT"]
+				},
+				"mark": {
+					"roles": ["PROCURE-INTERNAL"]
+				}
+			}
+		},
+		"ProcureDetails": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL"]
+				}
+			}
+		},
+		"ProcurementOverviewProcureInternal": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE-INTERNAL", "IT_SUPPORT"]
+				}
+			}
+		},
+		"AssignDeliveryController": {
+			"actions": {
+				"view": {
+					"roles": ["DELIVERY", "IT_SUPPORT"]
+				},
+				"supplierEdit": {
+					"roles": ["DELIVERY"]
+				},
+				"projectEdit": {
+					"roles": ["DELIVERY"]
+				},
+				"orderAssign": {
+					"roles": ["DELIVERY"]
+				}
+			}
+		},
+		"DeliveryControlPartDetail": {
+			"actions": {
+				"view": {
+					"roles": ["DELIVERY", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["DELIVERY"]
+				}
+			}
+		},
+		"MaterialOverview": {
+			"actions": {
+				"borrowPart": {
+					"roles": ["BORROW"]
+				},
+				"scrapPart": {
+					"roles": ["WH_DEFAULT"]
+				},
+				"pullPart": {
+					"roles": ["WH_DEFAULT","GR_ONLY"]
+				},
+				"creatRequestList": {					
+					"roles": ["PROCURE", "REQUESTER_FOR_PULL"]
+				},
+				"edit": {
+					"roles": ["PROCURE"]
+				},
+				"showPrice": {
+					"roles": ["VIEW_PRICE"]
+				},
+				"filter": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				},
+				"view": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL", "VIEWER", "REQUESTER_FOR_PULL", "VIEWER_PRICE",  "DELIVERY", "WH_DEFAULT", "VIEW_PRICE", "WH_QI", "IT_SUPPORT", "BORROW","GR_ONLY"]
+				}
+			}
+		},
+		"MaterialDetails": {
+			"actions": {
+				"edit": {
+					"roles": ["PROCURE", "WH_DEFAULT", "PROCURE-INTERNAL"]
+				}
+			}
+		},
+		"GoodsReception": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT", "GR_ONLY", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT", "GR_ONLY"]
+				}
+			}
+		},
+		"StorePart": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"Pick": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"InPick": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"Ship": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"QualityInspection": {
+			"actions": {
+				"homepage": {
+					"roles": ["WH_QI", "WH_DEFAULT", "IT_SUPPORT"]
+				},
+				"view": {
+					"roles": ["WH_QI", "IT_SUPPORT"]
+				},
+				"blocked": {
+					"roles": ["WH_QI", "WH_DEFAULT", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_QI", "WH_DEFAULT"]
+				}
+			}
+		},
+		"QISettings": {
+			"actions": {
+				"view": {
+					"roles": ["WH_QI", "IT_SUPPORT"],
+					"warehouse": ["qiSupported"]
+				},
+				"edit": {
+					"roles": ["WH_QI"]
+				}
+			}
+		},
+		"InventoryOverview": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT", "WH_QI", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT", "WH_QI"]
+				}
+			}
+		},
+		"WarehouseSetup": {
+			"actions": {
+				"view": {
+					"roles": ["WH_SETUP", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["WH_SETUP"]
+				}
+			}
+		},
+		"TestingUtility": {
+			"actions": {
+				"view": {
+					"roles": ["IT_SUPPORT"]
+				}
+			}
+		},
+		"Procurement": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "PROCURE-INTERNAL", "IT_SUPPORT"]
+				}
+			}
+		},
+		"Procure": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE", "IT_SUPPORT"]
+				}
+			}
+		},
+		"ProcureIntern": {
+			"actions": {
+				"view": {
+					"roles": ["PROCURE-INTERNAL", "IT_SUPPORT"]
+				}
+			}
+		},
+		"WareHouse": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT", "WH_QI", "VIEWER","GR_ONLY", "IT_SUPPORT"]
+				}
+			}
+		},
+		"TeamAdministration": {
+			"actions": {
+				"view": {
+					"roles": ["KEY_USER", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["KEY_USER"]
+				}
+			}
+		},
+		"Reports": {
+			"actions": {
+				"view": {
+					"roles": ["KEY_USER", "WH_DEFAULT", "WH_QI", "WH_SETUP", "VIEWER", "PROCURE", "PROCURE-INTERNAL", "DELIVERY", "REQUESTER_FOR_PULL", "VIEW_PRICE", "VIEWER_PRICE", "IT_SUPPORT"]
+				},
+				"edit": {
+					"roles": ["KEY_USER", "WH_DEFAULT", "WH_QI", "WH_SETUP", "VIEWER", "PROCURE", "PROCURE-INTERNAL", "DELIVERY", "REQUESTER_FOR_PULL", "VIEW_PRICE", "VIEWER_PRICE"]
+				}
+			}
+		},
+		"MobileWarehouseSettings": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"MobileReceive": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"MobileStore": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"MobileMove": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		},
+		"MobilePick": {
+			"actions": {
+				"view": {
+					"roles": ["WH_DEFAULT"]
+				},
+				"edit": {
+					"roles": ["WH_DEFAULT"]
+				}
+			}
+		}
+	}
+}

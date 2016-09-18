@@ -1,0 +1,51 @@
+<div class="well well-small">
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.docOption"}}:
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label class="control-label"> <input type="checkbox"
+					id="hasMeasuringDoc" name="deliveryNoteLine[hasMeasuringDoc]"
+					disabled="true" {{#if data.hasMeasuringDoc}} checked="checked"
+					{{/if}} value="true"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.hasMeasuringDoc"}}
+				</label>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label class="control-label"> <input type="checkbox"
+					id="hasControlCertificateDoc"
+					name="deliveryNoteLine[hasControlCertificateDoc]" disabled="true"
+					{{#if data.hasControlCertificateDoc}} checked="checked"
+					{{/if}} value="true"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.hasControlCertificateDoc"}}
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.fileContent"}}:
+				</label>
+			</div>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<div id="qualityDocInfo"></div>
+			</div>
+		</div>
+	</div>
+</div>

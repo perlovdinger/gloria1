@@ -1,0 +1,15 @@
+{{#if metas}} {{#each metas}}
+<div class="row">
+	<div class="col-sm-6">
+		<div>
+			<i class="fa fa-file-text-o"></i> <a href="{{this.url}}" download>{{this.name}}</a>
+		</div>
+	</div>
+	<div class="col-sm-2">
+		<div>
+			<a id="{{this.id}}" class="btn btn-mini problem-docs remove_fields"><i
+				class="fa fa-trash-o"></i></a>
+		</div>
+	</div>
+</div>
+{{/each}} {{/if}}

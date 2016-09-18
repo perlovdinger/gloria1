@@ -1,0 +1,90 @@
+<form id="quantityForm" name="quantityForm">
+	<fieldset>
+		<div class="well well-small">
+			<input type='hidden' name='id' value='{{data.id}}'> {{#if
+			transferReturn}}
+			<div class='row'>
+				<div class='col-xs-6'>
+					<div class='form-group'>
+						<label class="control-label"> {{t
+							"Gloria.i18n.warehouse.receive.projectId"}}: </label>
+						<div class="controls">
+							<span>{{data.projectId}}</span>
+						</div>
+					</div>
+				</div>
+				<div class='col-xs-6'>
+					<div class='form-group'>
+						<label class="control-label"> {{t
+							"Gloria.i18n.warehouse.receive.referenceId"}}: </label>
+						<div class="controls">
+							<span>{{data.referenceId}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{/if}}
+			<div class='row'>
+				<div class='col-xs-6'>
+					<div class='form-group'>
+						{{#if_eq module "regular"}} <label class="control-label wordwrap">
+							{{t "Gloria.i18n.warehouse.receive.allowedQuantity"}}: </label>
+						{{/if_eq}} {{#if_eq module "transfer"}} <label
+							class="control-label wordwrap"> {{t
+							"Gloria.i18n.warehouse.receive.transferQuantity"}}: </label> {{/if_eq}}
+						{{#if_eq module "return"}} <label class="control-label wordwrap">
+							{{t "Gloria.i18n.warehouse.receive.shippedQty"}}: </label>
+						{{/if_eq}}{{#if_eq module "returntransfer"}} <label
+							class="control-label wordwrap"> {{t
+							"Gloria.i18n.warehouse.receive.shippedQty"}}: </label> {{/if_eq}}
+						<div class="controls">
+							<span id="possibleToReceiveQuantity{{cid}}">{{data.possibleToReceiveQuantity}}</span>
+						</div>
+					</div>
+				</div>
+				{{#if_eq module "regular"}}
+				<div class='col-xs-6'>
+					<div class='form-group'>
+						<label class="control-label"> {{t
+							"Gloria.i18n.warehouse.receive.receivedQty"}}: </label>
+						<div class="controls">
+							<span id="orderLineReceivedQuantity{{cid}}">{{data.orderLineReceivedQuantity}}</span>
+						</div>
+					</div>
+				</div>
+				{{/if_eq}}
+			</div>
+			{{#if_eq module "regular"}}
+			<div class='row'>
+				<div class='col-xs-6'>
+					<div class='form-group'>
+						<label class="control-label"> {{t
+							"Gloria.i18n.warehouse.receive.directSend"}}: </label>
+						<div class="controls">
+							<span id="directSend{{cid}}">{{data.directSendQuantity}}</span>
+						</div>
+					</div>
+				</div>
+
+				<div class='col-xs-6' id="damagedQuantityNonQI">
+					<div class='form-group'>
+						<label class="control-label" for="damagedQuantity"> {{t
+							"Gloria.i18n.warehouse.receive.damagedQty"}}: </label>
+						<div class="form-group damagedQuantity">
+							<input class="form-control js-number" id="damagedQuantity{{cid}}"
+								type="number" min="0" step="1" max="99999" pattern="\d*"
+								value="{{data.damagedQuantity}}" {{#unless
+								hasEditAccess}} disabled="disabled"{{/unless}}>
+							<div>
+								<span class="help-inline"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			{{/if_eq}}
+		</div>
+		<div id="qtyCollRegion"></div>
+	</fieldset>
+</form>

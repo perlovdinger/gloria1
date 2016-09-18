@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <!-- Define conflicting data types as properties -->
+  <property name="AUTOGENTYPE" dbms="postgresql" value="BIGSERIAL" />
+  <property dbms="h2" name="AutoGenTYPE" value="BIGINT" />
+
+  <property name="INTTYPE" dbms="postgresql" value="int4" />
+  <property dbms="h2" name="INTTYPE" value="int" />
+
+  <property name="VERSIONCOLNAME" dbms="postgresql" value="version" />
+  <property dbms="h2" name="VERSIONCOLNAME" value="VERSION" />
+
+  <changeSet id="UserAuthorization_1.2.1" author="tin2177">
+    <addColumn tableName="REPORT_FILTER">
+      <column name="deliverynotedate" type="BOOL" />
+    </addColumn>
+    <addColumn tableName="REPORT_FILTER">
+      <column name="flagorderline" type="BOOL" />
+    </addColumn>
+    <comment>Added deliveryNoteDate to Report Filter , flagorderline for Report filter for Fav </comment>
+  </changeSet>
+</databaseChangeLog>

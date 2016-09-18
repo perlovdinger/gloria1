@@ -1,0 +1,83 @@
+<div class="panel-heading">
+	<h4 class="panel-title">
+		<a class="accordion-toggle collapsed" data-toggle="collapse"
+			js-id="{{data.id}}" href="#ReqInfoAccordion{{data.id}}">{{t
+			"Gloria.i18n.deliverycontrol.orderOverview.header.testObject"}}:
+			{{data.referenceId}} &nbsp;&nbsp; {{t
+			"Gloria.i18n.deliverycontrol.orderOverview.header.outboundStartDate"}}:
+			{{date data.outboundStartDate}} &nbsp;&nbsp; {{t
+			"Gloria.i18n.deliverycontrol.orderOverview.header.reqQuantity"}}:
+			{{data.quantity}} &nbsp;&nbsp; {{t
+			"Gloria.i18n.deliverycontrol.orderOverview.header.mailFormId"}}:
+			{{data.mailFormId}}</a>
+	</h4>
+</div>
+<div id="ReqInfoAccordion{{data.id}}" class="panel-collapse collapse"
+	js-id="{{data.id}}">
+	<div id="panel{{data.id}}" class="panel-body">
+		<div class="well well-small">
+			<input type='hidden' name='procureRequest[{{data.id}}][id]'
+				value='{{data.id}}'>
+			<div class='row'>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label" for="unitOfMeasure"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.unitOfMeasure"}}:
+						</label>
+						<div class="controls">{{data.unitOfMeasure}}</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label" for="finalWhSiteId"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.whSiteId"}}: </label>
+						<div class="controls">
+							<span>{{warehouseSiteNames}}</span>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label" for="receiver"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.receiver"}}: </label>
+						<div class="controls">{{data.receiver}}</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label" for="contactPersonId"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.contactPersonId"}}:
+						</label>
+						<div class="controls">{{data.contactPersonId}}</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label" for="contactPersonName"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.contactPersonName"}}:
+						</label>
+						<div class="controls">{{data.contactPersonName}}</div>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label" for="requesterUserId"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.requesterUserId"}}:
+						</label>
+						<div class="controls">{{data.requesterUserId}}</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label class="control-label" for="requesterName"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.requesterName"}}:
+						</label>
+						<div class="controls">{{data.requesterName}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

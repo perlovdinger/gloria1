@@ -1,0 +1,11 @@
+{
+  	"deliverycontrol" : {"url" : "deliverycontrol", "i18nkey" : "Gloria.i18n.deliverycontrol.deliverycontrol"},
+  	"assigndc" : {"url" : "deliverycontrol/assigndc", "i18nkey" : "Gloria.i18n.deliverycontrol.assignDC"},
+  	"myOrderOverview" : {"url" : "deliverycontrol/myOrderOverview", "i18nkey" : "Gloria.i18n.deliverycontrol.myOrderOverview"},
+  	"external" : {"url" : "deliverycontrol/myOrderOverview/external", "i18nkey" : "Gloria.i18n.deliverycontrol.external"},
+  	"internal" : {"url" : "deliverycontrol/myOrderOverview/internal", "i18nkey" : "Gloria.i18n.deliverycontrol.internal"},
+  	"completed" : {"url" : "deliverycontrol/myOrderOverview/completed", "i18nkey" : "Gloria.i18n.deliverycontrol.completed"},
+  	"orderLineDetail" : {"url" : "", "i18nkey" : "Gloria.i18n.deliverycontrol.orderOverview.orderLineDetail"},
+  	"myOrderOverviewDetails": {"url" : "", "i18nkey" : "Gloria.i18n.deliverycontrol.orderOverview.orderLineDetail"},
+  	"myOrderOverviewAsMaterial": {"url" : "material/linesoverview", "i18nkey" : "Gloria.i18n.deliverycontrol.orderOverview.myOrderOverviewAsMaterial"}
+}

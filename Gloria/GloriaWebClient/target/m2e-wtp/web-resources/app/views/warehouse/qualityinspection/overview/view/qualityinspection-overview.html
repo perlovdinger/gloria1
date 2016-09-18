@@ -1,0 +1,59 @@
+<div id="moduleInfo"></div>
+<div class="tabbable">
+	<ul class="nav nav-tabs" id="qualityinspectionTab">
+
+		{{#hasPermission 'view' 0='QualityInspection'}} {{#if isWHQISupport}}
+		<li><a href="#inStock" data-toggle="tab">{{t
+				"Gloria.i18n.warehouse.qualityInspection.qioverview.tab.inStock"}}</a></li>
+		{{/if}} {{/hasPermission}} {{#hasPermission 'view'
+		0='QualityInspection'}} {{#if isWHQISupport}}
+		<li><a href="#mandatory" data-toggle="tab">{{t
+				"Gloria.i18n.warehouse.qualityInspection.qioverview.tab.mandatory"}}</a>
+		</li> {{/if}} {{/hasPermission}} {{#hasPermission 'view'
+		0='QualityInspection'}} {{#if isWHQISupport}}
+		<li><a href="#optional" data-toggle="tab">{{t
+				"Gloria.i18n.warehouse.qualityInspection.qioverview.tab.optional"}}</a>
+		</li> {{/if}} {{/hasPermission}} {{#hasPermission 'blocked'
+		0='QualityInspection'}}
+		<li><a href="#blockedPart" data-toggle="tab">{{t
+				"Gloria.i18n.warehouse.qualityInspection.qioverview.tab.blockedPart"}}</a>
+		</li> {{/hasPermission}} {{#hasPermission 'view' 0='QualityInspection'}}
+		{{#if isWHQISupport}}
+		<li><a href="#setMarking" data-toggle="tab">{{t
+				"Gloria.i18n.warehouse.qualityInspection.qioverview.tab.setMarking"}}</a>
+		</li> {{/if}} {{/hasPermission}}
+	</ul>
+	<div class="tab-content">
+
+		{{#hasPermission 'view' 0='QualityInspection'}} {{#if isWHQISupport}}
+		<div class="tab-pane" id="inStock">
+			<div id="inStockButton" class="button-bar"></div>
+			<div id="inStockGrid"></div>
+		</div>
+		{{/if}} {{/hasPermission}} {{#hasPermission 'view'
+		0='QualityInspection'}} {{#if isWHQISupport}}
+		<div class="tab-pane" id="mandatory">
+			<div id="mandatoryButton" class="button-bar"></div>
+			<div id="mandatoryGrid"></div>
+		</div>
+		{{/if}} {{/hasPermission}} {{#hasPermission 'view'
+		0='QualityInspection'}} {{#if isWHQISupport}}
+		<div class="tab-pane" id="optional">
+			<div id="optionalButton" class="button-bar"></div>
+			<div id="optionalGrid"></div>
+		</div>
+		{{/if}} {{/hasPermission}} {{#hasPermission 'blocked'
+		0='QualityInspection'}}
+		<div class="tab-pane" id="blockedPart">
+			<div id="blockedPartButton" class="button-bar"></div>
+			<div id="blockedPartGrid"></div>
+		</div>
+		{{/hasPermission}} {{#hasPermission 'view' 0='QualityInspection'}}
+		{{#if isWHQISupport}}
+		<div class="tab-pane" id="setMarking">
+			<div id="setMarkingButton" class="button-bar"></div>
+			<div id="setMarkingGrid"></div>
+		</div>
+		{{/if}} {{/hasPermission}}
+	</div>
+</div>

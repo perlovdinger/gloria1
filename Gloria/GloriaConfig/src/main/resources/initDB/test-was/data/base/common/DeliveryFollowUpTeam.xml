@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeliveryFollowUpTeams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+ 
+  <DeliveryFollowUpTeam name="LYS" followUpType="SUPPLIER">
+    <SupplierCounterPart materialUserId="8412" shipToId="34347" transitAddressId="34347" domesticInvoiceId="8412" internationalInvoiceId="8412" companyCode="FR46" ppSuffix="576" comment="CV Lyon"/>
+    <SupplierCounterPart materialUserId="8412" shipToId="36012" transitAddressId="36012" domesticInvoiceId="8412" internationalInvoiceId="8412" companyCode="FR46" ppSuffix="068" comment="CV Lyon"/>
+    <SupplierCounterPart materialUserId="8412" shipToId="34331" transitAddressId="34331" domesticInvoiceId="8412" internationalInvoiceId="8412" companyCode="FR46" ppSuffix="071" comment="CV Lyon"/>
+    <SupplierCounterPart materialUserId="8412" shipToId="40382" transitAddressId="40382" domesticInvoiceId="8412" internationalInvoiceId="8412" companyCode="FR46" ppSuffix="076" comment="CV Lyon"/>
+    <SupplierCounterPart materialUserId="8412" shipToId="34347" transitAddressId="34347" domesticInvoiceId="8412" internationalInvoiceId="8412" companyCode="FR46" ppSuffix="780" comment="CV Lyon"/>
+  </DeliveryFollowUpTeam>
+</DeliveryFollowUpTeams>

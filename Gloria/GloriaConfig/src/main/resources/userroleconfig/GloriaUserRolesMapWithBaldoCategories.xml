@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roleMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GloriaUserRolesMappingToBaldoCategory.xsd">
+
+  <baldoCategory category="Material_Controller">
+    <gloriaRole userRole="PROCURE" />
+    <gloriaRole userRole="REQUESTER_FOR_PULL" />
+    <gloriaRole userRole="VIEW_PRICE" />
+  </baldoCategory>
+  <baldoCategory category="Internal_Procurer">
+    <gloriaRole userRole="PROCURE-INTERNAL" />
+    <gloriaRole userRole="VIEW_PRICE" />
+  </baldoCategory>
+  <baldoCategory category="Delivery_Controller">
+    <gloriaRole userRole="DELIVERY" />
+    <gloriaRole userRole="VIEW_PRICE" />
+  </baldoCategory>
+  <baldoCategory category="Warehouse_personell">
+    <gloriaRole userRole="WH_DEFAULT" />
+    <gloriaRole userRole="VIEW_PRICE" />
+  </baldoCategory>
+  <baldoCategory category="Warehouse_manager">
+    <gloriaRole userRole="WH_SETUP" />
+    <gloriaRole userRole="VIEW_PRICE" />
+  </baldoCategory>
+  <baldoCategory category="PSQA">
+    <gloriaRole userRole="WH_QI" />
+    <gloriaRole userRole="VIEW_PRICE" />
+    <gloriaRole userRole="REQUESTER_FOR_PULL" />
+  </baldoCategory>
+
+  <baldoCategory category="GR_Only">
+    <gloriaRole userRole="GR_ONLY" />   
+     <gloriaRole userRole="VIEWER" />
+  </baldoCategory>
+
+  <baldoCategory category="Requester_for_Pull">
+    <gloriaRole userRole="REQUESTER_FOR_PULL" />
+  </baldoCategory>
+  <baldoCategory category="Viewer">
+    <gloriaRole userRole="VIEWER" />
+  </baldoCategory>
+  <baldoCategory category="Viewer_Price">
+    <gloriaRole userRole="VIEWER_PRICE" />
+    <gloriaRole userRole="VIEW_PRICE" />
+  </baldoCategory>
+  <baldoCategory category="Key_user">
+    <gloriaRole userRole="KEY_USER" />
+  </baldoCategory>
+  <baldoCategory category="IT_support">
+    <gloriaRole userRole="IT_SUPPORT" />
+  </baldoCategory>
+
+ <baldoCategory category="BORROW">
+    <gloriaRole userRole="BORROW" />
+  </baldoCategory>
+</roleMap>

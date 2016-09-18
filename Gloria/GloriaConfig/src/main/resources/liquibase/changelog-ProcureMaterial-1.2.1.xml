@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <!-- Define conflicting data types as properties -->
+  <property name="AUTOGENTYPE" dbms="postgresql" value="BIGSERIAL" />
+  <property dbms="h2" name="AutoGenTYPE" value="BIGINT" />
+
+  <property name="INTTYPE" dbms="postgresql" value="int4" />
+  <property dbms="h2" name="INTTYPE" value="int" />
+
+  <property name="VERSIONCOLNAME" dbms="postgresql" value="version" />
+  <property dbms="h2" name="VERSIONCOLNAME" value="VERSION" />
+
+  <changeSet id="ProcureMaterial_1.2.1_01" author="tin2177">
+    <modifyDataType columnName="procureinfo" newDataType="varchar2(2048)" tableName="PROCURE_LINE" />
+    <comment>Increased column size to 2048 chars</comment>
+  </changeSet>
+  <changeSet id="ProcureMaterial_1.2.1_02" author="tin2177">
+    <addColumn tableName="ORDER_LINE">
+      <column name="first_delivery_note_line_oid" type="BIGINT" />
+    </addColumn>
+    <createIndex tableName="ORDER_LINE" indexName="i_deliverynoteline_firstdeliverynotelineid">
+      <column name="first_delivery_note_line_oid" />
+    </createIndex>
+    <comment>Added column to identify the first delivery for an order line</comment>
+  </changeSet>
+  <changeSet id="ProcureMaterial_1.2.1_03" author="tin2177">
+    <addColumn tableName="DISPATCH_NOTE">
+      <column name="dispatchNoteNoSequence" type="BIGINT" />
+    </addColumn>
+    <comment>Added column for dispatchNoteNo Sequence</comment>
+  </changeSet>
+  <changeSet id="ProcureMaterial_1.2.1_04" author="tin2177">
+    <addColumn tableName="PICK_LIST">
+      <column name="pickListCodeSequence" type="BIGINT" />
+    </addColumn>
+    <comment>Added column for pickListCode Sequence</comment>
+  </changeSet>
+</databaseChangeLog>

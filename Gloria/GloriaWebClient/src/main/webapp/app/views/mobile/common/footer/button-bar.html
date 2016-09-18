@@ -1,0 +1,22 @@
+{{#each buttons}}
+	{{#if type}}
+		<div class="dropup">
+		<button type="button" class="btn mobileBtn dropdown-toggle {{className}}" id="{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			{{#if iconClass}}<i class="{{iconClass}}"></i>&nbsp;{{/if}}{{t label}}
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" id="{{id}}">
+		{{#each buttons}}									
+				<li><a href="#" id="{{id}}">{{#if iconClass}}<i class="{{iconClass}}"></i>&nbsp;{{/if}}{{t label}}</a></li>
+				<li class="divider"></li>		
+		{{/each}}
+		</ul>
+		</div>
+	{{else}}
+		{{#unless isHidden}}
+		<button type="button" class="btn mobileBtn {{className}}" id="{{id}}">
+			{{#if iconClass}}<i class="{{iconClass}}"></i>&nbsp;{{/if}}{{t label}}
+		</button>
+		{{/unless}}
+	{{/if}}
+{{/each}}

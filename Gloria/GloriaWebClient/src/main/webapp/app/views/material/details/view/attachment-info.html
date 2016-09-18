@@ -1,0 +1,177 @@
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<label class="control-label"> {{t
+				"Gloria.i18n.material.details.text.documents"}}: </label>
+		</div>
+	</div>
+</div>
+<div class="well well-small">
+	<div class="row">
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.docOption"}}:
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label class="control-label"> <input type="checkbox"
+					id="hasMeasuringDoc" disabled="true" {{#if
+					data.hasMeasuringDoc}} checked="checked" {{/if}} value="true">
+					{{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.hasMeasuringDoc"}}
+				</label>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label class="control-label"> <input type="checkbox"
+					id="hasControlCertificateDoc" disabled="true" {{#if
+					data.hasControlCertificateDoc}} checked="checked"
+					{{/if}} value="true"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.hasControlCertificateDoc"}}
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.qualityInspection.details.text.documentsInfo.fileContent"}}:
+				</label>
+			</div>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<div id="receiveDocInfo"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<label class="control-label"> {{t
+				"Gloria.i18n.material.details.text.problemDescription"}}: </label>
+		</div>
+	</div>
+</div>
+<div class="well well-small">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.receive.details.text.problemInfo.probAreas"}}:
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label class="control-label"> <input type="checkbox"
+					disabled="true" id="hasDamagedParts" {{#if
+					data.hasDamagedParts}} checked="checked" {{/if}} value="true">
+					{{t
+					"Gloria.i18n.warehouse.receive.details.text.problemInfo.hasDamagedParts"}}
+				</label>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label class="control-label"> <input type="checkbox"
+					disabled="true" id="hasMissingInfo" {{#if
+					data.hasMissingInfo}} checked="checked" {{/if}} value="true">
+					{{t
+					"Gloria.i18n.warehouse.receive.details.text.problemInfo.hasMissingInfo"}}
+				</label>
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label class="control-label"> <input type="checkbox"
+					disabled="true" id="hasOverDelivery" {{#if
+					data.hasOverDelivery}} checked="checked" {{/if}} value="true">
+					{{t
+					"Gloria.i18n.warehouse.receive.details.text.problemInfo.hasOverDelivery"}}
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label" for="problemDescription"> {{t
+					"Gloria.i18n.warehouse.receive.details.text.problemInfo.problemDescription"}}:
+				</label>
+				<div class="controls">
+					<textarea id="problemDescription"
+						name="deliveryNoteLine[problemDescription]" class="form-control"
+						rows="3" cols="75" maxlength="500" readonly="readonly">{{data.problemDescription}}</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.receive.details.text.problemInfo.fileContent"}}:
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<div id="problemDocInfo"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<label class="control-label"> {{t
+				"Gloria.i18n.material.details.text.qiResultsAndAttachments"}}: </label>
+		</div>
+	</div>
+</div>
+<div class="well well-small">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label" for="qiResults"> {{t
+					"Gloria.i18n.material.details.text.qiResults"}}: </label>
+				<div class="controls">
+					<textarea id="qiResults" class="form-control" rows="3" cols="75"
+						maxlength="500" readonly="readonly">{{data.qualityInspectionComment}}</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.receive.details.text.problemInfo.fileContent"}}:
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<div id="qualityDocInfo"></div>
+			</div>
+		</div>
+	</div>
+</div>

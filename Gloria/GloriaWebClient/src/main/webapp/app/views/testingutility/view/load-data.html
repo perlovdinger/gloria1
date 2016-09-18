@@ -1,0 +1,155 @@
+<fieldset>
+	<div style="padding: 15px; width: 100%; overflow: hidden;">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="form-group">
+					<span><b>Note:</b> This tool is used to migrate warehouse
+						and open order data to Gloria. </span>
+				</div>
+			</div>
+		</div>
+		<br> <br>
+		<div style="float: left; width: 48%;">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label class="control-label">Select Item: </label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="form-group">
+						<div class="controls">
+							<select id="dataType" name="dataType"
+								class="input-block-level form-control">
+								<option value="/testingutility/v1/migration">Warehouse
+									+ Open Order Migration</option>
+								<option
+									value="/testingutility/v1/warehousemigration">Warehouse
+									Migration</option>
+								<option
+									value="/testingutility/v1/openordermigration">Open
+									Order Migration</option>
+								<option
+									value="/testingutility/v1/sendfinancemsg">Send
+									Finance Messages</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label class="control-label">Select Sites/companyCodes: </label>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="form-group">
+						<div class="controls">
+							<select id="siteID" name="siteID"
+								class="input-block-level form-control" size="12"
+								multiple="multiple">
+								<option value="664">664 X-Hallen</option>
+								<option value="1620">1620 Skövde Prototype</option>
+								<option value="1722">1722 PowerTrain Lundby</option>
+								<option value="47670">47670 Curitiba Pre Production Warehouse BLCW</option>
+								<option value="2919">2919 Malmö</option>
+								<option value="4042">4042 Greensboro</option>
+								<option value="8374">8374 Ageo</option>
+								<option value="8418">8418 Pithampur (VECV)</option>
+								<option value="34347">34347 Renault Trucks Gare 54</option>
+								<option value="42102">42102 GTT Warehouse (Volvo, BLR)</option>
+								<option value="45907">45907 Volvo Powertrain North
+									America</option>
+							</select> <select id="companyCodeID" name="companyCodeID"
+								class="input-block-level form-control" size="12"
+								multiple="multiple" style="display: none;">
+								<option value="FR46">FR46 Renault Trucks</option>
+								<option value="SE26">SE26 Volvo Truck Corporation</option>
+								<option value="SE27">SE27 Volvo Powertrain Corporation</option>
+								<option value="US10">US10 Volvo Group North America Inc</option>
+								<option value="US45">US45 Mack Trucks Inc</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="float: right; width: 48%;">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="control-label">Status: </label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<div class="controls">
+							<textarea class="form-control" id="status" name="status"
+								rows="11" readonly="readonly"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label class="control-label">Site in progress: </label>
+					</div>
+				</div>
+				<div class="col-sm-10">
+					<div class="form-group">
+						<div class="controls">
+							<span class="control-label" id="siteInProgress"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label class="control-label">Site completed: </label>
+					</div>
+				</div>
+				<div class="col-sm-10">
+					<div class="form-group">
+						<div class="controls">
+							<span class="control-label" id="siteCompleted"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label class="control-label">Completed: </label>
+					</div>
+				</div>
+				<div class="col-sm-10">
+					<div class="form-group">
+						<span class="control-label" id="completed"></span><span
+							class="control-label">%</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="form-group">
+						<label class="control-label">Done: </label>
+					</div>
+				</div>
+				<div class="col-sm-10">
+					<div class="form-group">
+						<span class="control-label" id="isDone"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="buttonPane" align="center" class="button-bar">
+		<button type="button" class="btn btn-default" id="initiate"
+			disabled="disabled">Initiate</button>
+	</div>
+</fieldset>

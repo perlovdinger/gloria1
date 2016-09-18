@@ -1,0 +1,55 @@
+<input class="form-control" name='orderLine[id]' type="hidden" required="required" value='{{data.id}}'>
+<div class="well well-small">
+    <div id='{{data.id}}' class='row'>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for="glAccount">
+                    {{t "Gloria.i18n.deliverycontrol.orderOverview.header.glAccount"}}:
+                </label>
+                <div class="controls">
+                    {{data.glAccount}}
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for="wbsCode">
+                    {{t "Gloria.i18n.deliverycontrol.orderOverview.header.wbsCode"}}:
+                </label>
+                <div class="controls">
+                    {{data.wbsCode}}
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for="costCenter">
+                    {{t "Gloria.i18n.deliverycontrol.orderOverview.header.costCenter"}}:
+                </label>
+                <div class="controls">
+                    {{data.costCenter}}
+                </div>
+            </div>
+        </div>        
+        <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for="internalOrderNo">
+                    {{t "Gloria.i18n.deliverycontrol.orderOverview.header.internalOrderNo"}}:
+                </label>
+                <div class="controls">
+                    {{data.internalOrderNoSAP}}
+                </div>
+            </div>
+        </div>
+      <div class='col-sm-2'>
+            <div class='form-group'>
+                <label class="control-label" for="additionalQuantity">
+                    {{t "Gloria.i18n.deliverycontrol.orderOverview.header.additionalQuantity"}}:
+                </label>
+                <div class="controls">
+                    {{data.additionalQuantity}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

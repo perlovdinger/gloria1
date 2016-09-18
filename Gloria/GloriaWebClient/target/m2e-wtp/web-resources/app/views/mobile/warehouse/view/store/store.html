@@ -1,0 +1,123 @@
+<form id="storeForm" name="storeForm">
+	<div class="row text-center">
+		<div class="col-sm-12">
+			<div class="form-group">
+				<label class="control-label"></label>
+			</div>
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.scanOrEnter"}}: </label>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel-group accordion">
+				<div id="partInfo-module" class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse"
+								data-parent="#fullPartInfo" href="#partInfo"> <i
+								class="glyphicon glyphicon-chevron-right"></i> <strong>{{t
+									"Gloria.i18n.warehouse.store.enterPartInfo"}}</strong></a>
+						</h4>
+					</div>
+					<div id="partInfo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group partAffiliation">
+										<label class="control-label" for="partAffiliation"> {{t
+											"Gloria.i18n.warehouse.store.partAffiliation"}}: </label>
+										<div class="controls">
+											<input id="partAffiliation" class="form-control"
+												name="materialLine[partAffiliation]" type="text" />
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="form-group partNumber">
+										<label class="control-label" for="partNumber"> {{t
+											"Gloria.i18n.warehouse.store.partNo"}}: </label>
+										<div class="controls">
+											<input id="partNumber" class="form-control"
+												name="materialLine[partNumber]" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group partVersion">
+										<label class="control-label" for="partVersion"> {{t
+											"Gloria.i18n.warehouse.store.partVersion"}}: </label>
+										<div class="controls">
+											<input id="partVersion" class="form-control"
+												name="materialLine[partVersion]" type="text" />
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="form-group partName">
+										<label class="control-label" for="partName"> {{t
+											"Gloria.i18n.warehouse.store.partName"}}: </label>
+										<div class="controls">
+											<input id="partName" class="form-control"
+												name="materialLine[partName]" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group partModification">
+										<label class="control-label" for="partModification"> {{t
+											"Gloria.i18n.warehouse.store.partModification"}}: </label>
+										<div class="controls">
+											<input id="partModification" class="form-control"
+												name="materialLine[partModification]" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="panel-group accordion">
+				<div id="transportLabel-module" class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse"
+								data-parent="#fullPartInfo" href="#transportLabel"> <i
+								class="glyphicon glyphicon-chevron-right"></i> <strong>{{t
+									"Gloria.i18n.warehouse.store.enterTransportLabel"}}</strong></a>
+						</h4>
+					</div>
+					<div id="transportLabel" class="panel-collapse collapse">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group transportLabel">
+										<label class="control-label " for="transportLabel">
+											{{t "Gloria.i18n.warehouse.store.transportLabel"}}: </label>
+										<div class="controls">
+											<input id="transportLabel" class="form-control"
+												name="materialLine[transportLabel]" type="text" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

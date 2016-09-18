@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="PurchaseOrganisations">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PurchaseOrganisation" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PurchaseOrganisation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Buyer"   minOccurs="0"  maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="organisationCode" type="xs:string" use="required"/>
+			<xs:attribute name="organisationName" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Buyer">
+		<xs:complexType>
+			<xs:attribute name="code" type="xs:string" use="required"/>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

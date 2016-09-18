@@ -1,0 +1,11 @@
+<a href="#" class="sort-handle">
+	{{#if_eq action "hide"}}
+		<i class="fa fa-arrows-v">&nbsp;</i>
+	{{/if_eq}}
+	{{{ model.attributes.label }}}
+</a>
+{{#if hideable}}
+<a class="pull-right show-hide no-margin" data-action="{{ action }}" data-column-name="{{{ model.attributes.name }}}" href="#">
+	<i class="{{ icon }}"></i>
+</a>
+{{/if}}

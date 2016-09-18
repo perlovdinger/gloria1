@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompanyCodes>
+  <CompanyCode code="BR03" name="Volvo do Brasil Veiculos Ltda" receivingGoods="true" sendPOtoSAP="false" sendGRtoSAP="false" sapPurchaseOrg=""
+    sapQuantityBlockReceiverId="" defaultCurrency="BRL" companyCodeGroup="BR">
+  </CompanyCode>
+ 
+  <CompanyCode code="FR46" name="Renault Trucks" receivingGoods="true" sendPOtoSAP="true" sendGRtoSAP="true" sapPurchaseOrg="FL02"
+    sapQuantityBlockReceiverId="V072974" defaultCurrency="EUR" companyCodeGroup="FR">
+  </CompanyCode>
+  <CompanyCode code="IN01" name="Volvo India Private Ltd" receivingGoods="true" sendPOtoSAP="false" sendGRtoSAP="false" sapPurchaseOrg=""
+    sapQuantityBlockReceiverId="" defaultCurrency="INR" companyCodeGroup="IN">
+  </CompanyCode>
+ 
+  <CompanyCode code="JP40" name="UD Truck Corporation" receivingGoods="true" sendPOtoSAP="false" sendGRtoSAP="false" sapPurchaseOrg=""
+    sapQuantityBlockReceiverId="" defaultCurrency="JPY" companyCodeGroup="JP">
+  </CompanyCode>
+  <CompanyCode code="SE26" name="Volvo Truck Corporation" receivingGoods="true" sendPOtoSAP="true" sendGRtoSAP="true" sapPurchaseOrg="A202"
+    sapQuantityBlockReceiverId="V072974" defaultCurrency="SEK" companyCodeGroup="SE_VE">
+  </CompanyCode>
+  <CompanyCode code="SE27" name="Volvo Powertrain Corporation" receivingGoods="true" sendPOtoSAP="true" sendGRtoSAP="true" sapPurchaseOrg="A403"
+    sapQuantityBlockReceiverId="V072974" defaultCurrency="SEK" companyCodeGroup="SE_PE">
+  </CompanyCode>
+ 
+  <CompanyCode code="US10" name="Volvo Group North America Inc" receivingGoods="true" sendPOtoSAP="true" sendGRtoSAP="true" sapPurchaseOrg="BC02"
+    sapQuantityBlockReceiverId="V072974" defaultCurrency="USD" companyCodeGroup="US_VE">
+  </CompanyCode>
+  <CompanyCode code="US45" name="Mack Trucks Inc" receivingGoods="true" sendPOtoSAP="true" sendGRtoSAP="true" sapPurchaseOrg="G902"
+    sapQuantityBlockReceiverId="V072974" defaultCurrency="USD" companyCodeGroup="US_PE">
+  </CompanyCode>
+</CompanyCodes>

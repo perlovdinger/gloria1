@@ -1,0 +1,41 @@
+<div class="row noLeftRightmargin" id="applicationStatusHeader">
+	<div class="col-xs-4">
+		<div class="navbar-header">
+			<h1 class="fa-3x">{{t "Gloria.i18n.gloria"}}</h1>
+		</div>
+	</div>
+</div>
+
+<hr>
+<br>
+
+<div class="row h4">
+	<div class="col-xs-2">
+		<strong class="control-label"> {{t "Gloria.i18n.applicationStatus"}}:</strong> <input
+			name='applicationStatus' type="hidden">
+	</div>
+	<div class="col-xs-2">
+		<div class="pull-left">
+			<strong> {{appStatusObject}} </strong>
+		</div>
+	</div>
+</div>
+
+<form novalidate="novalidate">
+	<div class="panel-group accordion">
+		<div id="applicationStatus-module" class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a class="accordion-toggle" data-toggle="collapse"
+						data-parent="#fullPartInfo" href="#generalInfo"><strong>Check
+							Details</strong></a>
+				</h4>
+			</div>
+			<div id="generalInfo" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div id="procureGeneralPartInfo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

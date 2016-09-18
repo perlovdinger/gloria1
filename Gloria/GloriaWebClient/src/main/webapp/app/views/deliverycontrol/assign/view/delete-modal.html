@@ -1,0 +1,74 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.text.deleteTitle"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div style="padding-left: 15px; padding-right: 15px;">
+				<div class='row'>
+					<div class='col-sm-12'>
+						<div class="alert alert-success">
+							<h5>
+								<i class="fa fa-info-circle"></i><b>&nbsp;&nbsp;{{t
+									"Gloria.i18n.deliverycontrol.assignOrReassign.text.infoHeader"}}</b>
+							</h5>
+							<p>{{t
+								"Gloria.i18n.deliverycontrol.assignOrReassign.text.infoText1"}}
+								'{{team.name}}' {{t
+								"Gloria.i18n.deliverycontrol.assignOrReassign.text.infoText2"}}
+								{{dcIdName}}</p>
+						</div>
+					</div>
+				</div>
+				{{#if_eq module 'supplier'}}
+				<div class='row'>
+					<div class='col-sm-12'>
+						<span>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.deleteTextSupplier1"}}</span>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<span>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.deleteTextSupplier2"}}</span>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<span>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.deleteTextSupplier3"}}</span>
+					</div>
+				</div>
+				{{/if_eq}} {{#if_eq module 'project'}}
+				<div class='row'>
+					<div class='col-sm-12'>
+						<span>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.deleteTextProject1"}}</span>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<span>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.deleteTextProject2"}}</span>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='col-sm-12'>
+						<span>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.deleteTextProject3"}}</span>
+					</div>
+				</div>
+				{{/if_eq}}
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="yes">{{t
+				"Gloria.i18n.buttons.yes"}}</button>
+			<button type="button" class="btn btn-default" id="no">{{t
+				"Gloria.i18n.buttons.no"}}</button>
+		</div>
+	</div>
+</div>

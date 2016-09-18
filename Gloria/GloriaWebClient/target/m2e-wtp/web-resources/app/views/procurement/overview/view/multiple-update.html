@@ -1,0 +1,433 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t
+				"Gloria.i18n.procurement.overviewModule.text.multipleUpdate"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div id="appModalMessage">
+				<span class="help-inline"></span>
+			</div>
+			<div>
+				<form id="forwardForm" name="forwardForm" role="form">
+					<fieldset>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<span> {{t
+										"Gloria.i18n.procurement.overviewModule.text.multipleUpdateText"}}
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							{{#unless hasRolePI}}
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="procureType"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.source"}}: </label>
+									<div class="controls">
+										<select id="procureType"
+											class="input-block-level form-control"
+											name="procureLine[procureType]">
+											<option value="">{{t
+												"Gloria.i18n.selectBoxDefaultValue"}}</option> {{{renderDropDown
+											sourceOptions type true}}}
+										</select>
+									</div>
+								</div>
+							</div>
+							{{/unless}}
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="supplierCounterPartId">
+										{{t
+										"Gloria.i18n.procurement.procureDetail.header.supplierCounterPartId"}}:
+									</label>
+									<div class="controls">{{supplierCounterPartSelector
+										idPrefix="supplierCounterPartId"
+										namePrefix="supplierCounterPartID" modelName="procureLine"
+										companyCode=companyCode}}</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="requiredStaDate"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.requiredStaDate"}}:
+									</label>
+									<div class="input-group date requiredStaDateDiv">
+										<input type="text"
+											class="requiredStaDate js-date form-control"
+											id="requiredStaDate" name="procureLine[requiredStaDate]"
+											value="{{#isDateInThePast suggestedRequiredSTADate}}{{ else }}{{date suggestedRequiredSTADate}}{{/isDateInThePast}}">
+										<span class="input-group-addon"><span
+											class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4" id="consignorIdDiv">
+								<div class="form-group">
+									<label class="control-label" for="consignorId"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.consignor"}}: </label>
+									<div class="controls" id="consignorIdContainer">
+										<input id="consignorId" class="form-control"
+											name="procureLine[supplierName]" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4" id="orderNoDiv">
+								<div class="form-group">
+									<label class="control-label " for="orderNo"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.orderNo"}}: </label>
+									<div class="controls">
+										<input id="orderNo" class="form-control" maxlength="14"
+											type="text" name="procureLine[orderNo]">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4" id="orderStaDateDiv">
+								<div class="form-group">
+									<label class="control-label" for="orderStaDate"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.orderStaDate"}}:
+									</label>
+									<div class="input-group date">
+										<input type="text" class="orderStaDate js-date form-control"
+											id="orderStaDate" name="procureLine[orderStaDate]"> <span
+											class="input-group-addon"><span
+											class="glyphicon glyphicon-calendar"></span></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4" id="purchaseOrganisationCodeDiv">
+								<div class="form-group">
+									<label class="control-label" for="purchaseOrganisationCode">
+										{{t
+										"Gloria.i18n.procurement.procureDetail.header.purchasingOrg"}}:
+									</label>
+									<div class="controls" id="purchaseOrganisationCodeContainer">
+										<input id="purchaseOrganisationCode" class="form-control"
+											name="procureLine[purchaseOrganisationCode]">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4" id="buyerCodeDiv">
+								<div class="form-group">
+									<label class="control-label" for="buyerCode"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.buyerCode"}}: </label>
+									<div class="controls" id="buyerCodeContainer">
+										<input id="buyerCode" class="form-control"
+											name="procureLine[buyerCode]" type="hidden">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4" id="qualityDocumentDiv">
+								<div class="form-group">
+									<label class="control-label" for="qualityDocument"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.qualityDocument"}}:
+									</label>
+									<div class="controls">{{qualityDocumentSelector
+										idPrefix="qualityDocument" namePrefix="qualityDocumentId"
+										modelName="procureLine"}}</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="referenceGps"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.referenceGps"}}:
+									</label>
+									<div class="controls">
+										<input id="referenceGps" class="form-control" maxlength="10"
+											type="text" name="procureLine[referenceGps]">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="control-label" for="warehouseId"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.warehouseId"}}:
+									</label>
+									<div class="controls">{{warehouseSelector
+										namePrefix="finalWhSiteId" modelName="procureRequest"}}</div>
+								</div>
+							</div>
+						
+						
+					<div class="col-sm-4">
+					<div class='form-group statusFlag'>
+						<input class="form-control"
+							name='procureLine[statusFlag]' type="hidden"
+							required="required" value='{{procureLineData.statusFlag}}'> <label
+							class="control-group" for="statusFlag{{procureLineData.id}}"> {{t
+							"Gloria.i18n.deliverycontrol.orderOverview.header.statusFlag"}}:
+						</label>
+						<div
+							class="dropdown {{#unless isDisabled}} form-control {{/unless}}"
+							id='statusFlag{{procureLineData.id}}'>
+							<a class="dropdown-toggle" id="drop"
+								style="text-decoration: none" role="button" {{#unless
+								isDisabled}} data-toggle="dropdown" {{/unless}} href="#"
+								onclick="return false">
+								
+								{{#if_eq data.statusFlag null}}<i
+								id="flagSelect"></i><span id="flagSelectText">{{t
+									"Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</span>
+								{{/if_eq}} 
+								
+							{{#if hasRolePI}} {{else}} {{/if}}
+							
+						{{#if_eq procureLineData.statusFlag "PENDING_AGREEMENT"}}
+						<i id="flagSelect" class="fa fa-hourglass-start color-blue font-border"></i><span
+						id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.PENDING_AGREEMENT"}}</span>
+						{{/if_eq}} 
+														
+						{{#if_eq procureLineData.statusFlag "REVIEW_LATER"}}
+						<i id="flagSelect" class="fa fa-phone color-orange font-border"></i><span
+						id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.REVIEW_LATER"}}</span>
+						{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "IN_WORK"}}<i id="flagSelect"
+								class="fa fa-pause color-orange font-border"></i><span
+								id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.IN_WORK"}}</span>
+								{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "TO_BE_MODIFIED"}}<i
+								id="flagSelect" class="fa fa-pencil color-orange font-border"></i><span
+								id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.TO_BE_MODIFIED"}}</span>
+								{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "SLA"}}
+								<i
+								id="flagSelect" class="fa fa-sla color-orange "></i>
+								<span
+								id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.SLA"}}</span>
+								{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "DIRECT_SEND"}}
+								<i
+								id="flagSelect" class="fa fa-paper-plane-o color-grey"></i>
+								<span
+								id="flagSelectText"> {{t "Gloria.i18n.procurement.overviewModule.flags.DIRECT_SEND"}}</span>
+								{{/if_eq}} 
+								
+								
+								{{#if_eq procureLineData.statusFlag "TOOLING"}}
+								<i
+								id="flagSelect" class="fa fa-tooling color-grey "
+								></i><span id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.TOOLING"}}</span>
+								{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "MACHINING"}}<i
+								id="flagSelect" class="fa fa-machining color-grey"></i><span
+								id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.MACHINING"}}</span>
+								{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "SIPD"}}<i
+								id="flagSelect" class="fa fa-sipd color-grey"></i><span
+								id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.SIPD"}}</span>
+								{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "PRIORITY"}}<i
+								id="flagSelect" class="fa fa-flag color-red"
+								></i><span id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.PRIORITY"}}</span>
+								{{/if_eq}} 
+								
+								{{#if_eq procureLineData.statusFlag "STOPPED_IN_KOLA"}}<i
+								id="flagSelect" class="fa fa-ban color-red font-border"
+								></i><span id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.STOPPED_IN_KOLA"}}</span>
+								{{/if_eq}}
+								
+								{{#if_eq procureLineData.statusFlag "TO_BE_REMOVED"}}<i
+								id="flagSelect" class="fa fa-times color-red font-border">
+								</i><span id="flagSelectText"> {{t
+									"Gloria.i18n.procurement.overviewModule.flags.TO_BE_REMOVED"}}</span>
+								{{/if_eq}}
+								
+								{{#unless isDisabled}}<b class="caret"></b>{{/unless}}
+							</a>
+							<ul class="dropdown-menu" id="flag" role="menu"
+								aria-labelledby="drop">
+								<li role="presentation" id="DEFAULT" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i class="fa font-border"></i>
+										{{t
+										"Gloria.i18n.deliverycontrol.orderOverview.text.selectFlag"}}</a>
+								</li>
+								
+								{{#if hasRolePI}} 
+								
+								<li role="presentation" id="PENDING_AGREEMENT" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-hourglass-start color-blue font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.PENDING_AGREEMENT"}}</a></li>
+										
+								<li role="presentation" id="REVIEW_LATER" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-phone color-orange font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.REVIEW_LATER"}}</a></li>
+								
+								{{else}}
+								
+								<li role="presentation" id="IN_WORK" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-pause color-orange font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.IN_WORK"}}</a></li>
+										
+								<li role="presentation" id="TO_BE_MODIFIED" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-pencil color-orange font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.TO_BE_MODIFIED"}}</a></li>
+										
+								<li role="presentation" id="SLA" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-sla color-orange "></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.SLA"}}</a></li>
+										
+								<li role="presentation" id="DIRECT_SEND" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-paper-plane-o color-grey"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.DIRECT_SEND"}}</a></li>		
+										
+										
+								<li role="presentation" id="TOOLING" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-tooling color-grey"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.TOOLING"}}</a></li>
+										
+										
+								<li role="presentation" id="MACHINING" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-machining color-grey"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.MACHINING"}}</a></li>
+										
+										
+								<li role="presentation" id="SIPD" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-sipd color-grey"></i>
+										{{t	"Gloria.i18n.procurement.overviewModule.flags.SIPD"}}</a></li>
+										
+								<li role="presentation" id="PRIORITY" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-flag color-red font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.PRIORITY"}}</a></li>
+										
+								<li role="presentation" id="STOPPED_IN_KOLA" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-ban color-red font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.STOPPED_IN_KOLA"}}</a></li>		
+										
+								<li role="presentation" id="TO_BE_REMOVED" class="flagClass"><a
+									role="menuitem" href="#" onclick="return false"
+									style="text-align: left;"><i
+										class="fa fa-times color-red font-border"></i> {{t
+										"Gloria.i18n.procurement.overviewModule.flags.TO_BE_REMOVED"}}</a></li>
+										{{/if}}
+							</ul>
+						</div>
+					</div>
+				</div>
+						
+						
+						
+		</div>				
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<div class="row" id="procureInfoDiv">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="control-label" for="procureInfo"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.informationToPurchase"}}:
+									</label>
+									<div class="controls">
+										<textarea id="procureInfo" class="form-control"
+											name="procureLine[procureInfo]" rows="3" cols="75"
+											maxlength="120"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br> {{#if hasRolePI}} {{#if hasRoleDELIVERY}} {{#if
+						hasDeliveryTeam}}
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="checkbox-inline"> <input type="checkbox"
+										id="ipDeclaration" name="procureLine[forwardedForDC]" {{#if
+										procureLineData.forwardedForDC}} checked="checked"
+										{{/if}}  value="true"> {{t
+										"Gloria.i18n.procurement.procureDetail.text.ipDeclaration"}}
+									</label>
+								</div>
+							</div>
+						</div>
+						{{/if}} {{/if}} {{/if}}
+						
+							<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="control-label" for="warehouseComment"> {{t
+										"Gloria.i18n.procurement.procureDetail.header.warehouseComment"}}:
+									</label>
+									<div class="controls">
+										<textarea id="warehouseComment" class="form-control"
+											name="procureLine[warehouseComment]" rows="3" cols="75" 
+										 maxlength="120"></textarea> 
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">
+									<label class="checkbox-inline"><input type="checkbox"
+										id="alsoProcure" name="alsoProcure">{{t
+										"Gloria.i18n.procurement.procureDetail.header.alsoProcure"}}</label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" id="save">{{t
+				"Gloria.i18n.procurement.button.save"}}</button>
+			<button type="button" class="btn" id="cancel">{{t
+				"Gloria.i18n.procurement.button.cancel"}}</button>
+		</div>
+	</div>
+</div>

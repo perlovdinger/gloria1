@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Printers>  
+  <Printer siteId="1540" name="umea" hostAddress="131.97.170.19:9100"/>
+  <Printer siteId="664" name="X-Hallen" hostAddress="131.97.170.19:9100"/>
+  <!-- <Printer siteId="34347" name="Renault Trucks Gare 54" hostAddress="131.97.170.19:9100"/> -->
+</Printers>

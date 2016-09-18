@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+  <named-query name="getAllAssignedDeliveries">
+    <query>select d from Delivery d where :assignTo is null or d.assignTo = :assignTo</query>
+  </named-query>
+  <named-query name="getAllAssignedDeliveriesCount">
+    <query>select count(d) from Delivery d where :assignTo is null or d.assignTo = :assignTo</query>
+  </named-query>
+  <named-query name="getDeliveryLogs">
+    <query>select dl from DeliveryLog dl where (:deliveryId is null or dl.delivery.deliveryOID = :deliveryId) and (:eventType is null or dl.eventType = :eventType) order by dl.eventTime desc</query>
+  </named-query>
+  <named-query name="findAllDeliveries">
+    <query>select d from Delivery d</query>
+  </named-query>
+  <named-query name="getOrderLogs">
+    <query>select ol from OrderLog ol where (:orderId is null or ol.order.orderOID = :orderId) and (:eventType is null or ol.eventType = :eventType) order by ol.eventTime desc</query>
+  </named-query>
+  <named-query name="getOrderLinesByStatus">
+    <query>select ol from OrderLine ol where ol.status = :status and ol.deliveryNoteLine.deliveryNote.deliveryNoteNo = :deliveryNoteNo and ol.order.orderNo = :orderNo</query>
+  </named-query>
+  <named-query name="findDeliveryNoteLinesByDeliveryNoteId">
+    <query>select dnl from DeliveryNoteLine dnl where dnl.deliveryNote.deliveryNoteOID = :deliveryNoteOid and (:whSiteId is null or dnl.deliveryNote.whSiteId = :whSiteId) 
+    and (:status is null or dnl.status =:status) and (dnl.orderLine is null or dnl.orderLine.status not in (:orderLineStatus))
+    </query>
+  </named-query>
+  <named-query name="findDeliveryNotesByOrderNoAndDeliveryNoteNo">
+    <query>select dn from DeliveryNote dn where dn.orderNo = :orderNo and dn.deliveryNoteNo = :deliveryNoteNo</query>
+  </named-query>
+  <named-query name="getOrderWithOrderLinesByOrderNo">
+    <query>select o from Order o where o.orderNo = :orderNo</query>
+  </named-query>
+  <named-query name="getOrderLinesByOrder">
+    <query>select distinct ol from OrderLine ol where ol.order.orderOID = :orderOID</query>
+  </named-query>
+  <named-query name="findMaterialLinesByOrderIdAndStatus">
+    <query>select distinct ml from MaterialLine ml where ml.material.orderLine.orderLineOID = :orderLineOID and ml.status IN(:statuses) order by  ml.material.materialHeader.accepted.outboundStartDate, ml.material.materialType desc</query>
+  </named-query>
+  <named-query name="getAllOrderLines">
+    <query>select ol from OrderLine ol</query>
+  </named-query>
+  <named-query name="findMaterialWithMaterialLinesById">
+    <query>select distinct m from Material m where m.materialOID = :materialOID</query>
+  </named-query>
+    <named-query name="findMaterialByOrderNo">
+    <query>select distinct m from Material m LEFT JOIN FETCH m.materialLine where m.orderNo = :orderNo and m.partNumber = :partNumber and m.partVersion = :partVersion and m.partAffiliation = :partAffiliation </query>
+  </named-query>
+  <named-query name="getOrderBySuffix">
+    <query>select o from Order o where o.suffix=:suffix</query>
+  </named-query>
+  <named-query name="getOrderLineByRequisitionId">
+    <query>select ol from OrderLine ol where ol.requisitionId=:requisitionId</query>
+  </named-query>
+ <!--  <named-query name="getMaterialByRequisitionId">
+    <query>select mat from Material mat where mat.procureLine.requisitionId=:requisitionId and m.materialType != :materialType and m.status != :status</query>
+  </named-query>   --> 
+  <named-query name="findQiDocsByDeliveryNoteLineId">
+    <query>select qd from QiDoc qd where qd.deliveryNoteLine.deliveryNoteLineOID=:id order by qd.creationDate DESC</query>
+  </named-query>
+   <named-query name="findProblemDocsByDeliveryNoteLineId">
+    <query>select pd from ProblemDoc pd where pd.deliveryNoteLine.deliveryNoteLineOID=:id order by pd.creationDate DESC</query>
+  </named-query>
+  <named-query name="findMaterialLinesByPartInfoAndStatus">
+    <query>select distinct ml from MaterialLine ml where ml.material.partNumber = :pPartNumber AND ml.material.partVersion = :pPartVersion 
+                AND ml.status IN(:status) AND (:whSiteId is null or ml.whSiteId = :whSiteId AND ml.material.partModification = :pPartModification 
+                AND  ml.material.partAffiliation = : pPartAffiliation)</query>
+  </named-query>
+  <named-query name="findDeliverySchedulesByOrderLineAndDeliveryControllerId">
+    <query>select ds from DeliverySchedule ds where ds.orderLine.orderLineOID=:id and (:deliveryControllerId is null or ds.orderLine.deliveryControllerUserId = :deliveryControllerId) order by ds.expectedDate asc</query>
+  </named-query>
+  <named-query name="findDeliveryLogsByDeliveryScheduleId">
+    <query>select dl from DeliveryLog dl where dl.deliverySchedule.deliveryScheduleOID=:id and dl.eventType = :eventType</query>
+  </named-query>
+  <named-query name="findOrderLogsByOrderId">
+     <query>select ol from OrderLog ol where ol.orders.orderOID=:id order by ol.eventTime desc</query>
+  </named-query>
+  <named-query name="findAttachedDocsByDeliveryScheduleId">
+    <query>select ad from AttachedDoc ad where ad.deliverySchedule.deliveryScheduleOID=:id order by ad.creationDate DESC</query>
+  </named-query>
+  <named-query name="findMaterialByOrderLineId">
+    <query>select distinct m from Material m where m.orderLine.orderLineOID = :orderlineId and m.materialType not in (:materialTypes)</query>
+  </named-query>
+  <named-query name="findOrderLineLogsByOrderLineId">
+    <query>select ol from OrderLineLog ol where ol.orderLine.orderLineOID=:orderlineId order by ol.eventTime desc</query>
+  </named-query>
+  <named-query name="findDeliveryNoteLinesByOrderLineId">
+    <query>select dnl from DeliveryNoteLine dnl where dnl.orderLine.orderLineOID = :orderLineId and (:status is null or dnl.status = :status)</query>
+  </named-query>
+  <named-query name="findStockBalanceForMaterial">
+    <query>select SUM(ml.quantity) from MaterialLine ml where ml.material.materialOID = :materialOID and ml.status= :status</query>
+  </named-query>
+  <named-query name="findTransportLabelByWhSiteId">
+    <query>select DISTINCT tl from TransportLabel tl where tl.whSiteId = :whSiteId</query>
+  </named-query>
+   <named-query name="findAllRequestGroups">
+    <query>select rg from RequestGroup rg</query>
+  </named-query>
+  <named-query name="findRequestGroupByOId">
+    <query>select rg from RequestGroup rg where rg.requestGroupOid = :requestGroupOid</query>
+  </named-query>
+   <named-query name="findMaterialLinesByIds">
+    <query>select ml from MaterialLine ml  where ml.materialLineOID in (:materialLineOIds)</query>
+  </named-query>
+   <named-query name="findPickListById">
+  <query>select pl from PickList pl where pl.pickListOid = :pickListId</query>
+  </named-query>
+   <named-query name="findRequestListByUserId">
+    <query>select rl from RequestList rl where rl.requestUserId = :requesterUserId and rl.status = :status</query>
+  </named-query>   
+  <named-query name="findPickListByCode">
+   <query>select distinct pl from PickList pl where pl.code = :pickListCode</query>
+  </named-query>
+  <named-query name="findOrderLineById">
+   <query>select o from OrderLine o where o.orderLineOID = :orderLineOID</query>
+  </named-query>
+   <named-query name="findDeliveryNoteLineId">
+    <query>select dnl from DeliveryNoteLine dnl where dnl.deliveryNoteLineOID = :deliveryNoteLineOID</query>
+  </named-query>
+  <named-query name="findAllRequestGroupsByRequestListId">
+    <query>select rg from RequestGroup rg where rg.requestList.requestListOid = :requestListOID</query>
+  </named-query>
+   <named-query name="findMaterialLinesByPartNumberAndBinlocation">
+    <query>select distinct ml from MaterialLine ml where ml.material.procureLine.pPartNumber = :pPartNumber AND ml.binLocationCode = :binLocationCode AND ml.material.procureLine.whSiteId = :whSiteId</query>
+  </named-query>
+  <named-query name="findOrderLineWithMaterialById">
+    <query>select ol from OrderLine ol where ol.orderLineOID = :orderLineOID</query>
+  </named-query>
+  <named-query name="findAllRequestGroupsByDispatchNoteId">
+    <query>select distinct rg from RequestGroup rg where rg.requestList.dispatchNote.dispatchNoteOID = :dispatchNoteOID</query>
+  </named-query>
+    <named-query name="findMaterialLinesByRequestGroupId">
+    <query>select distinct ml from MaterialLine ml where ml.requestGroup.requestGroupOid = :requestGroupOid </query>
+  </named-query>
+    <named-query name="findMaterialLinesByPartNoAndVersionAndStatus">
+    <query>select distinct ml from MaterialLine ml where ml.material.procureLine.pPartNumber = :pPartNumber
+     AND ml.material.procureLine.pPartVersion = :pPartVersion AND ml.status in (:status) </query>
+  </named-query>
+  <named-query name="findOrderSapByUniqueExtOrder">
+    <query>select distinct os from OrderSap os where os.uniqueExtOrder = :uniqueExtOrder </query>
+  </named-query>
+  
+  <!-- from Procurement Domain -->
+  <named-query name="getMaterialsForHeaderIds">
+    <query>select m from Material m where m.materialHeader.materialHeaderOid in (:idList)</query>
+  </named-query>
+  <named-query name="findAllMaterials">
+    <query>select m from Material m</query>
+  </named-query>
+  <named-query name="findMaterialsByProcureLineId">
+    <query>select m from Material m where m.procureLine.procureLineOid = :procureLineOid</query>
+  </named-query>
+  <named-query name="findAllCostCenters">
+    <query>select ccs from CostCenter ccs</query>
+  </named-query>
+  <named-query name="findAllGlAccounts">
+    <query>select glas from GlAccount glas</query>
+  </named-query>
+  <named-query name="findAllWbsElements">
+    <query>select wes from WbsElement wes order by wes.code</query>
+  </named-query>
+  <named-query name="findAllProcureLines">
+    <query>select pl from ProcureLine pl</query>
+  </named-query>
+  <named-query name="findBuyerByCode">
+    <query>select DISTINCT b from Buyer b where b.code= :code</query>
+  </named-query>
+   <named-query name="findBuyerByCodeAndPurchaseOrganisation">
+    <query>select DISTINCT b from Buyer b INNER JOIN FETCH b.purchaseOrganisation where b.code= :code and b.purchaseOrganisation.organisationCode = :organisationCode</query>
+  </named-query>
+  <named-query name="findProcureLineByRequisitionId">
+    <query>select pl from ProcureLine pl where pl.requisitionId = :requisitionId</query>
+  </named-query>
+  <named-query name="findAllMaterialHeadersWithMaterialsById">
+    <query>select mh from MaterialHeader mh</query>
+  </named-query>
+  <named-query name="findAllGoodsMovementsForCompanyCode">
+    <query>select grh from GoodsReceiptHeader grh LEFT JOIN FETCH grh.goodsReceiptLines where grh.companyCode = :comapnyCode and grh.messageStatus = MessageStatus.WAIT_FOR_SEND</query>
+  </named-query>
+   <named-query name="findRequisitionByRequisitionId">
+    <query>select rq from Requisition rq where rq.requisitionId = :requisitionId</query>
+  </named-query>
+</entity-mappings>

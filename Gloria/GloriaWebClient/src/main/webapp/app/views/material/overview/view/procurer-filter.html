@@ -1,0 +1,9 @@
+<select id="procurerFilter_{{cid}}" class="form-control">
+	{{#hasPermission 'filter' 0='MaterialOverview'}}
+	<option data-filter="procureUserId" value="user">{{t
+		"Gloria.i18n.material.overview.procurerFilter.me"}}</option> {{#each teams}}
+	<option data-filter="procureTeam" value="{{this.name}}">{{this.name}}</option>
+	{{/each}} {{/hasPermission}} {{#if teams.length}}
+	<option data-filter="all" value="all">{{t
+		"Gloria.i18n.material.overview.procurerFilter.all"}}</option> {{/if}}
+</select>

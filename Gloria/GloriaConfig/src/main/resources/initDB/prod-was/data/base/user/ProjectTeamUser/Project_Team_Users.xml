@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<User userId="A029682">
+		<Team name="GOT_VE" type="MATERIAL_CONTROL"/>	
+	</User>
+	<User userId="A039911">
+		<Team name="GOT_VE" type="INTERNAL_PROCURE"/>
+		<Team name="GOT_VE" type="DELIVERY_CONTROL"/>
+	</User>
+	<User userId="A043104">
+		<Team name="GOT_VE" type="MATERIAL_CONTROL"/>		
+	</User>
+	<User userId="TIN2177">
+		<Team name="LYS" type="MATERIAL_CONTROL"/>
+		<Team name="LYS" type="DELIVERY_CONTROL"/>
+		<Team name="LYS" type="INTERNAL_PROCURE"/>
+	</User>
+	<User userId="TIN3000">
+		<Team name="LYS" type="MATERIAL_CONTROL"/>
+	</User>
+	<User userId="A028608">
+		<Team name="LYS" type="INTERNAL_PROCURE"/>
+	</User>	
+	<User userId="V016387">
+		<Team name="GOT_PE" type="MATERIAL_CONTROL"/>
+		<Team name="GOT_PE" type="DELIVERY_CONTROL"/>	
+        	<Team name="GOT_VE" type="MATERIAL_CONTROL"/>
+        	<Team name="GOT_VE" type="DELIVERY_CONTROL"/> 	
+	</User>
+	<User userId="V072974">
+		<Team name="LYS" type="INTERNAL_PROCURE"/>
+		<Team name="LYS" type="DELIVERY_CONTROL"/>
+	</User>
+	<User userId="V075345">
+		<Team name="LYS" type="DELIVERY_CONTROL"/>
+	</User>
+	<User userId="A022174">
+		<Team name="LYS" type="MATERIAL_CONTROL"/>
+		<Team name="GOT_VE" type="MATERIAL_CONTROL"/>
+		<Team name="GOT_PE" type="MATERIAL_CONTROL"/>
+	</User>
+</Users>
+
+ 
+
+
+
+

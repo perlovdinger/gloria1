@@ -1,0 +1,24 @@
+<h4>
+	<strong>{{t
+		"Gloria.i18n.deliverycontrol.orderOverview.text.poDelSchedule"}}</strong>
+</h4>
+<div id="poDelSchedule">{{t "Gloria.i18n.noInfoAvailable"}}</div>
+<h4>
+	<strong>{{t
+		"Gloria.i18n.deliverycontrol.orderOverview.text.poActualDel"}}</strong>
+</h4>
+<div id="poActualDel">{{t "Gloria.i18n.noInfoAvailable"}}</div>
+{{#unless isDisabled}} {{#if show}}
+<div class="row">
+	<div class="col-sm-3">
+		<div class="form-group">
+			<label class="control-label"> <input type="checkbox"
+				id="markedAsComplete" name="orderLine[markedAsComplete]" {{#if
+				data.markedAsComplete}} checked="checked" {{/if}}  value="true">
+				{{t
+				"Gloria.i18n.deliverycontrol.orderOverview.text.markedAsComplete"}}
+			</label>
+		</div>
+	</div>
+</div>
+{{/if}} {{/unless}}

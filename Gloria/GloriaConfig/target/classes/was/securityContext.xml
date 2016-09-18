@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:security="http://www.springframework.org/schema/security"
+  xsi:schemaLocation="
+	    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd   
+	    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd   
+	    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd   
+	    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd   
+	    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd
+	    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+  <context:component-scan base-package="com.volvo.gloria" />
+
+  <!-- automatic event logger for spring security -->
+  <bean id="loggerListener" class="org.springframework.security.authentication.event.LoggerListener" />
+
+  <!-- entry point for handling the secured resources by response HttpStatus.UNAUTHORIZED(401) -->
+  <!-- backbone handles the URL redirection differently than Spring, so 'loginFormUrl' is a dummy parameter here just for initializing the entry point -->
+  <bean id="authenticationEntryPoint" class="com.volvo.gloria.web.uiservices.GloriaAuthEntry">
+    <property name="loginFormUrl" value="/#login" />
+    <property name="forceHttps" value="false" />
+  </bean>
+
+  <bean id="exceptionTranslationFilter" class="org.springframework.security.web.access.ExceptionTranslationFilter">
+    <property name="authenticationEntryPoint" ref="authenticationEntryPoint" />
+  </bean>
+
+  <!-- stop redirecting on authentication failure,instead return HttpStatus.UNAUTHORIZED(401) -->
+  <bean id="simpleUrlAuthenticationFailureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler"/>
+  
+  <security:http pattern="/api/api-docs/**" security="none"/>
+  <security:http pattern="/api/common/v1/publicconfiguration" security="none"/>
+  <security:http pattern="/api/common/v1/app/status" security="none"/>
+  <security:http pattern="/api/user/v1/login" security="none"/>
+  <security:http pattern="/api/usertest/v1/login" security="none"/>    
+  <security:http auto-config="true" use-expressions="true" disable-url-rewriting="true" entry-point-ref="authenticationEntryPoint">
+    <security:remember-me key="gloria" use-secure-cookie="true" />
+    <security:form-login authentication-failure-handler-ref="simpleUrlAuthenticationFailureHandler" />
+    <security:logout logout-url="/j_spring_security_logout" invalidate-session="true" />
+    
+    <!-- all the resource calls starting with 'rs/' will need to pass authentication -->
+    <security:intercept-url pattern="/**" access="hasRole('USER')" />
+  </security:http>
+
+  <security:authentication-manager alias="authenticationManager">
+    <security:authentication-provider>
+      <security:user-service id="userService">
+      <security:user name="BPL3195" password="BPL3195" authorities="USER,ALL" />
+        <security:user name="all-swe" password="all-swe" authorities="USER,ALL" />
+        <security:user name="mc1" password="mc1" authorities="USER,PROCURE" />
+        <security:user name="dc1" password="dc1" authorities="USER,DELIVERY" />
+        <security:user name="dcm1" password="dcm1" authorities="USER,DELIVERY" />
+        <security:user name="wh1" password="wh1" authorities="USER,WH_DEFAULT" />
+        <security:user name="test" password="test" authorities="USER,TEST,ALL" />
+      </security:user-service>
+    </security:authentication-provider>
+  </security:authentication-manager>
+  <security:global-method-security pre-post-annotations="enabled"/>
+</beans>

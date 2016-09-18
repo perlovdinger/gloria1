@@ -1,0 +1,29 @@
+<div class="row noLeftRightmargin" id="header_module">
+	<div class="col-xs-4">
+		<div class="navbar-header">
+			<h1 class="fa-3x">{{t "Gloria.i18n.gloria"}}</h1>
+		</div>
+	</div>
+	<div class="col-xs-2"></div>
+	<div class="col-xs-6">
+		<div class="row">
+			<div class="col-xs-12 navbar-right">
+				<button id="about" class="btn btn-default pull-right">
+					{{t "Gloria.i18n.about"}}</button>				
+				<span id="header-settings" class="boxAppearance pull-right"></span>
+				<span id="warehouseSelectorRegion"
+					class="pull-right"></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="navbar-text navbar-right pull-right">{{showUserInfo 'firstName'}}
+					{{showUserInfo 'lastName'}} - {{date now 'Gloria.i18n.dateformat'}},
+					<a href="javascript:return false;" id="logoutButton">
+						{{t "Gloria.i18n.logout"}}
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

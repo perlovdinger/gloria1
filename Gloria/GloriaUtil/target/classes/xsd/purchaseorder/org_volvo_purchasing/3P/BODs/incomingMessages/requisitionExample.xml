@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ProcessRequisition releaseID="9.3" xmlns="http://www.openapplications.org/oagis/9" xmlns:ns2="http://www.volvo.com/3P/Purchasing/2008/10">
+    <ApplicationArea>
+        <CreationDateTime>2015-12-02</CreationDateTime>
+    </ApplicationArea>
+    <ns2:SendingApplication xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">GLORIA</ns2:SendingApplication>
+    <ns2:DataArea>
+        <Process>
+            <ActionCriteria>
+                <ActionExpression actionCode="Add"/>
+            </ActionCriteria>
+        </Process>
+        <ns2:Requisition>
+            <ns2:RequisitionHeader>
+                <DocumentID>
+                    <ID>1</ID>
+                    <VariationID></VariationID>
+                </DocumentID>
+                <DocumentReference>
+                    <IssuingParty>
+                        <PartyIDs>
+                            <ID></ID>
+                        </PartyIDs>
+                        <ns2:Contact>
+                            <ns2:ID></ns2:ID>
+                            <Name>TIN2177, TV Muralidharan</Name>
+                            <DepartmentName>VEHRD</DepartmentName>
+                            <Communication>
+                                <DialNumber>880 2 8822213 881</DialNumber>
+                            </Communication>
+                            <ns2:SecurityId>TIN2177</ns2:SecurityId>
+                        </ns2:Contact>
+                    </IssuingParty>
+                </DocumentReference>
+                <BuyerParty>
+                    <PartyIDs>
+                        <ID>GTT</ID>
+                    </PartyIDs>
+                    <ns2:BuyerContact>
+                        <ns2:ID>675</ns2:ID>
+                        <ns2:PlantBuyer>Yes</ns2:PlantBuyer>
+                    </ns2:BuyerContact>
+                </BuyerParty>
+                <RequesterParty>
+                    <PartyIDs>
+                        <ID>8412</ID>
+                    </PartyIDs>
+                    <ns2:Contact>
+                        <Name>TIN2177, TV Muralidharan</Name>
+                    </ns2:Contact>
+                    <ns2:Contact>
+                        <Name>TIN2177, TV Muralidharan</Name>
+                    </ns2:Contact>
+                </RequesterParty>
+                <UserArea>
+                    <Code>576</Code>
+                </UserArea>
+                <ns2:OrderMode>Prototype</ns2:OrderMode>
+            </ns2:RequisitionHeader>
+            <ns2:RequisitionLine>
+                <Quantity>70</Quantity>
+                <UnitPrice>
+                    <Amount currencyID="SEK">1000.0</Amount>
+                    <PerQuantity>1</PerQuantity>
+                    <Code>QUO</Code>
+                </UnitPrice>
+                <RequiredDeliveryDateTime>2016-01-10</RequiredDeliveryDateTime>
+                <UserArea>
+                    <Note>MOD1:Certificate of Conformity</Note>
+                </UserArea>
+                <ns2:Item>
+                    <ns2:ItemID>
+                        <ns2:ID qualifier="V">45456</ns2:ID>
+                        <RevisionID>B02</RevisionID>
+                    </ns2:ItemID>
+                    <Description>NAME1</Description>
+                    <ns2:InspectionPart>Yes</ns2:InspectionPart>
+                    <ns2:FunctionGroup>0</ns2:FunctionGroup>
+                    <ns2:ApproveToPurchase>Yes</ns2:ApproveToPurchase>
+                </ns2:Item>
+                <ns2:UOMCode>PCE</ns2:UOMCode>
+                <ns2:FinancialInformation>
+                    <ns2:ObjectID>01-05428</ns2:ObjectID>
+                    <ns2:CostCollector CostCollectorType="WBS">FLG10-04466-20</ns2:CostCollector>
+                    <ns2:FinancialAccount>461003</ns2:FinancialAccount>
+                    <ns2:CostCenter>VEHRD</ns2:CostCenter>
+                </ns2:FinancialInformation>
+                <ns2:DeliverySchedule>
+                    <PlanningScheduleLine>
+                        <ShipmentDateTime>2016-01-10</ShipmentDateTime>
+                        <ItemQuantity>70</ItemQuantity>
+                    </PlanningScheduleLine>
+                </ns2:DeliverySchedule>
+            </ns2:RequisitionLine>
+        </ns2:Requisition>
+    </ns2:DataArea>
+</ns2:ProcessRequisition>

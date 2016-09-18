@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+	<UserOrganisation>
+		<GmfHeader>
+			<MsgVersion>1.0</MsgVersion>
+			<SenderID>BALDO</SenderID>
+			<SendTime>2015-02-04T08:54:15.685+0100</SendTime>
+		</GmfHeader>
+		<CIAction>U</CIAction>
+		<UserID>UD05712</UserID>
+		<UserFirstName>Colette</UserFirstName>
+		<UserLastName>Patrick</UserLastName>
+		<OrganisationID>XI000004</OrganisationID>
+		<OrganisationName>Volvo Parts Lyon</OrganisationName>
+		<GmfDataArea>
+			<MessageParameters>
+				<MessageParameter>2</MessageParameter>
+				<MessageParameterName>PreferredPortal</MessageParameterName>
+			</MessageParameters>
+		</GmfDataArea>
+		<AliasOrganisation>
+			<AliasOrganisationSource>CDB</AliasOrganisationSource>
+			<AliasOrganisationID>BALDO_VTC</AliasOrganisationID>
+		</AliasOrganisation>
+		<Address>
+			<Street1>7900 National Service Road 27409 Greensboro North</Street1>
+			<Street2>Carolina United States</Street2>
+			<PostCode>27409</PostCode>
+			<City>Greensboro</City>
+			<State>North Carolina</State>
+			<CountryCode>US</CountryCode>
+			<PhoneNo>+1 336 3932198</PhoneNo>
+			<MobilePhoneNumber>12</MobilePhoneNumber>
+			<Email>colette.patrick@volvo.com</Email>
+		</Address>
+		<UserLanguage>
+			<LangCode>en</LangCode>
+			<CountryCode>GB</CountryCode>
+			<IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+		</UserLanguage>
+		<OrganisationCompany>
+			<OrganisationID>XI000004</OrganisationID>
+			<CompName>VTC</CompName>
+			<DistrictNo>0</DistrictNo>
+			<CustID>-</CustID>
+			<IsMainCompanyFlag>Y</IsMainCompanyFlag>
+		</OrganisationCompany>
+		<OrganisationApplication>
+			<ApplicationID>27440</ApplicationID>
+			<ApplicationDescription>GLORIA</ApplicationDescription>
+			<ApplicationSetting>
+				<ApplicationSettingID>WHSITE</ApplicationSettingID>
+				<ApplicationSettingValue>4042 - GSO - Greensboro</ApplicationSettingValue>
+			</ApplicationSetting>
+			<UserCategory>
+				<UserCategoryID>PSQA</UserCategoryID>
+				<UserCategoryDescription>PSQA</UserCategoryDescription>
+			</UserCategory>
+			<UserCategory>
+				<UserCategoryID>Warehouse_manager</UserCategoryID>
+				<UserCategoryDescription>Warehouse manager</UserCategoryDescription>
+			</UserCategory>
+			<UserCategory>
+				<UserCategoryID>Warehouse_personell</UserCategoryID>
+				<UserCategoryDescription>Warehouse personell</UserCategoryDescription>
+			</UserCategory>
+			<UserCategory>
+				<UserCategoryID>Delivery_Controller</UserCategoryID>
+				<UserCategoryDescription>Delivery Controller</UserCategoryDescription>
+			</UserCategory>
+			<UserCategory>
+				<UserCategoryID>Material_Controller</UserCategoryID>
+				<UserCategoryDescription>Material Controller</UserCategoryDescription>
+			</UserCategory>
+		</OrganisationApplication>
+	</UserOrganisation>
+	<GMFVerb>
+		<GmfHeader>
+			<MsgVersion>1.0</MsgVersion>
+			<SenderID>BALDO</SenderID>
+			<SendTime>2015-02-04T08:54:15.685+0100</SendTime>
+		</GmfHeader>
+		<CountryCode>US</CountryCode>
+		<LangCode>en</LangCode>
+		<Sync>
+			<Action>RetrieveUserOrganisation</Action>
+		</Sync>
+	</GMFVerb>
+</UserAndOrganisation>

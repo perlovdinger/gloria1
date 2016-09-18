@@ -1,0 +1,28 @@
+<div class="button-bar">
+	<div class="btn-group">
+		<button type="button" class="btn btn-default dropdown-toggle"
+			data-toggle="dropdown" id="view-button">
+			{{t "Gloria.i18n.procurement.button.view"}} <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu" id="view-menu">
+			<li><a href="#" id="selectAll">{{t
+					"Gloria.i18n.procurement.button.selectAll"}}</a></li>
+			<li><a href="#" id="deselectAll">{{t
+					"Gloria.i18n.procurement.button.deselectAll"}}</a></li>
+			<li class="divider"></li>
+			<li><a href="#" id="expandAll">{{t
+					"Gloria.i18n.procurement.button.expandAll"}}</a></li>
+			<li><a href="#" id="colapseAll">{{t
+					"Gloria.i18n.procurement.button.colapseAll"}}</a></li>
+		</ul>
+	</div>
+	{{#hasPermission "edit" 0="ProcureDetails"}}
+	<button type="button" class="btn btn-default" id="remove"
+		disabled="true">{{t
+		"Gloria.i18n.procurement.button.procureLater"}}</button>
+	<button type="button" class="btn btn-default" id="multipleUpdate"
+		disabled="true">{{t
+		"Gloria.i18n.procurement.button.multipleUpdate"}}</button>
+	{{/hasPermission}}
+</div>
+<div class="panel-group accordion" id="testObjectContainer"></div>

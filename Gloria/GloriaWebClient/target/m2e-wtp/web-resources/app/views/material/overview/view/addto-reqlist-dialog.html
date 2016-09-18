@@ -1,0 +1,53 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3 class="modal-title">{{t
+				"Gloria.i18n.material.overview.header.selectRequestList"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+
+		<div class="modal-body">
+			<div id="appModalMessage">
+			<div class = "row">
+					<div class="form-group">
+						<div class="controls">
+							<h4>{{t "Gloria.i18n.material.overview.header.requestListMessage"}}</h4>
+						</div>
+					</div>
+			</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class='form-group'>
+							<label class="control-label" for='requestList'> {{t
+								"Gloria.i18n.material.overview.header.requestListId"}}: </label>
+								<div class="controls">
+										<input id="requestList" name="requestList">
+									</div>
+						</div>
+					</div>
+
+					<!-- <div class="col-sm-1"></div> -->
+
+					<div class="col-sm-5">
+						<div class='form-group'>
+							<label class="control-label" for='requestList'> {{t
+								"Gloria.i18n.material.overview.header.requestListDeliveryAddress"}}:
+							</label>
+							<div class="controls" id="deliveryAddressDiv"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-footer">
+			<button type="button" class="btn btn-primary" id="save" name="add">{{t
+				"Gloria.i18n.deliverycontrol.button.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel" name="cancel">
+				{{t "Gloria.i18n.deliverycontrol.button.cancel"}}</button>
+		</div>
+	</div>
+</div>
+

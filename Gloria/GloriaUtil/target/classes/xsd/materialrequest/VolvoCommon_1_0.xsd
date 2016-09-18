@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by VOLVO INFORMATION TECH AB (VOLVO INFORMATION TECH AB) -->
+<xsd:schema xmlns="http://www.volvo.com/group/common/1_0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.volvo.com/group/common/1_0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+	<xsd:annotation>
+		<xsd:documentation>##### BOD #####</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="BODType">
+		<xsd:annotation>
+			<xsd:documentation>Base type for all Volvo BODs. Includes mandatory header structure</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="ApplicationArea" type="ApplicationAreaType">
+				<xsd:annotation>
+					<xsd:documentation>Generic header for message meta data</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="serviceID" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>Unique service identifier, prio:
+1. Service ID from VGIR
+2. Application defined service ID/Name, prefixed with YP short name</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="serviceVersion" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>Exact version of the service.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>##### APPLICATION AREA #####</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="ApplicationAreaType">
+		<xsd:annotation>
+			<xsd:documentation>Generic header for message meta data</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Sender" type="SenderType">
+				<xsd:annotation>
+					<xsd:documentation>Meta data regarding the sender of the message</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Receiver" type="ReceiverType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Meta data regarding the receiver of the message</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="CreationDateTime" type="xsd:dateTime">
+				<xsd:annotation>
+					<xsd:documentation>Date and time when this message was created (i.e. not when the business event occurred)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="BODID" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>Globally unique identifier (GUID) for this message</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UserArea" type="UserAreaType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SenderType">
+		<xsd:sequence>
+			<xsd:element name="LogicalID" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>Name of application sending the message, prio:
+1.	YP short name
+2.	Application name in VGIR
+3.	Other common short name for application
+</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ComponentID" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Component of the application, e.g. factory instance, subsystem, regional instance etc.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UserID" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>UserID of the person or system account of the application that initiated the message, could be used for authorization, logging etc.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TaskID" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Business event in sender that caused message to be sent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ReferenceID" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Identifier of the event that caused the message, e.g. for audit trails</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ReceiverType">
+		<xsd:sequence>
+			<xsd:element name="LogicalID" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>Name of application receiving the message, prio:
+1.	YP short name
+2.	Application name in VGIR
+3.	Other common short name for application</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ComponentID" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Component of the application, e.g. factory instance, subsystem, regional instance etc.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="UserAreaType">
+		<xsd:annotation>
+			<xsd:documentation>User extension to hold data not part of the schema</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="BooleanValue" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:boolean">
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DateTimeValue" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:dateTime">
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DateValue" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:date">
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DecimalValue" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:decimal">
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="IntegerValue" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:integer">
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="StringValue" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="name" type="xsd:string" use="required"/>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>##### VERBS #####</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="ActionVerbType">
+		<xsd:annotation>
+			<xsd:documentation>Base type for verbs </xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="ActionCriteria" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Describes in detail which action is expected in addition to the verb.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UserArea" type="UserAreaType" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="recordSetCompleteIndicator" type="xsd:boolean">
+			<xsd:annotation>
+				<xsd:documentation>false: Record set is divided into many messages.
+true (or omitting attribute): Full record set in this message</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="recordSetCount" type="xsd:positiveInteger">
+			<xsd:annotation>
+				<xsd:documentation>Number of records sent in this message</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="recordSetReferenceId" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>A unique id of the record set, to be able to distinguish it from other record sets</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="recordSetStartNumber" type="xsd:positiveInteger">
+			<xsd:annotation>
+				<xsd:documentation>Number of the first record in this message. First record in first message shall be numbered as 1.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="recordSetTotal" type="xsd:positiveInteger">
+			<xsd:annotation>
+				<xsd:documentation>Total number of records to be sent in this record set</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="CancelType">
+		<xsd:annotation>
+			<xsd:documentation>Special case of Process, explicitly cancelling a business operation. Only to be used when needed, otherwise use Process for cancelling as well.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ActionVerbType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ChangeType">
+		<xsd:annotation>
+			<xsd:documentation>Special case of Process, explicitly changing a business operation. Only to be used when needed, otherwise use Process for changes as well.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ActionVerbType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProcessType">
+		<xsd:annotation>
+			<xsd:documentation>Used to request processing of information (start business operation) from another application. Ownership of the information is transferred to the receiving application. Can be one-way or request reply.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ActionVerbType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SyncType">
+		<xsd:annotation>
+			<xsd:documentation>Used to send information to another system. Ownership of the information is not transferred. Can be one-way or request reply.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ActionVerbType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="GetType">
+		<xsd:annotation>
+			<xsd:documentation>Used to get information or request processing of information from another application. . Ownership of the information is not transferred. No state change in responding application. Always request reply.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="ActionCriteria" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Used to express more detailed intention if the verb Process is not enough</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UserArea" type="UserAreaType" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="maxItems" type="xsd:positiveInteger">
+			<xsd:annotation>
+				<xsd:documentation>Max number of records to return in one message</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="recordSetStartNumber" type="xsd:positiveInteger">
+			<xsd:annotation>
+				<xsd:documentation>Start number of the first record to return</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="recordSetReferenceId" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>A unique id of the record set, to be able to distinguish it from other record sets</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="ResponseVerbType">
+		<xsd:sequence>
+			<xsd:element name="OriginalApplicationArea" type="ApplicationAreaType" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>A copy of the ApplicationArea for the original BOD that was processed. Present either as additional reference information, or for use in identifying the BOD in situations where a BODReference is not known.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ResponseCriteria">
+				<xsd:annotation>
+					<xsd:documentation>Indicates the outcome of the processing of the sent message.
+Accepted - Processed OK
+Rejected - Not processed
+Modified - Partly processed</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="Accepted"/>
+						<xsd:enumeration value="Rejected"/>
+						<xsd:enumeration value="Modified"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="StatusCode" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates the status of the processing with a code defined by the sending application.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="StatusText" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates the status of the processing with a descriptive (English) text.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="UserArea" type="UserAreaType" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AcknowledgeType">
+		<xsd:complexContent>
+			<xsd:extension base="ResponseVerbType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ConfirmType">
+		<xsd:complexContent>
+			<xsd:extension base="ResponseVerbType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="RespondType">
+		<xsd:complexContent>
+			<xsd:extension base="ResponseVerbType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ShowType">
+		<xsd:complexContent>
+			<xsd:extension base="ResponseVerbType">
+				<xsd:attribute name="recordSetCompleteIndicator" type="xsd:boolean"/>
+				<xsd:attribute name="recordSetCount" type="xsd:positiveInteger"/>
+				<xsd:attribute name="recordSetReferenceId" type="xsd:string"/>
+				<xsd:attribute name="recordSetStartNumber" type="xsd:positiveInteger"/>
+				<xsd:attribute name="recordSetTotal" type="xsd:positiveInteger"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>##### NOUN COMPONENTS #####</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="ResponseStatusType">
+		<xsd:sequence>
+			<xsd:element name="StatusTypeCode">
+				<xsd:annotation>
+					<xsd:documentation>Indicates the outcome of the processing of the sent noun or part of noun.
+Error - Not processed
+Warning - Processed, but in some way altered
+Informational - Processed OK
+(Omitting ResponseStatusType - Processed OK)</xsd:documentation>
+				</xsd:annotation>
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="Error"/>
+						<xsd:enumeration value="Warning"/>
+						<xsd:enumeration value="Informational"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="StatusCode" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates the status of the processing with a code defined by the sending application.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="StatusText" type="xsd:string" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Indicates the status of the processing with a descriptive (English) text.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="StatusParameter" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Name-value pair to express details of the status. Could be used to hold an identifier to a noun, e.g. Part number. Could also be used for client translations of the status, when some of the text needs to be parameterized.</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:simpleContent>
+						<xsd:extension base="xsd:string">
+							<xsd:attribute name="name" type="xsd:string" use="required">
+								<xsd:annotation>
+									<xsd:documentation>Name of the status parameter</xsd:documentation>
+								</xsd:annotation>
+							</xsd:attribute>
+						</xsd:extension>
+					</xsd:simpleContent>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AlternativeIdType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="scheme" type="xsd:string"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>##### UNITS #####</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="Units">
+		<xsd:annotation>
+			<xsd:documentation>This element shall not be used, it is just showing the collection of unit types</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Capacity" type="CapacityType" minOccurs="0"/>
+				<xsd:element name="Dimension" type="DimensionType" minOccurs="0"/>
+				<xsd:element name="Packing" type="PackingType" minOccurs="0"/>
+				<xsd:element name="Volume" type="VolumeType" minOccurs="0"/>
+				<xsd:element name="Weight" type="WeightType" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="CapacityType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:string" use="required">
+					<xsd:annotation>
+						<xsd:documentation>l (Liter)
+gal (UK) (UK Gallon)
+pt (UK) (UK Pint)
+gal (US) (US Gallon)
+pt (US) (US Pint)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="DimensionType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:string" use="required">
+					<xsd:annotation>
+						<xsd:documentation>ft (Foot)
+yd (Yard)
+in (Inch)
+m (Meter)
+cm (Centimeter)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="PackingType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:string" use="required">
+					<xsd:annotation>
+						<xsd:documentation>ea (Each)
+bx (Box)
+case (Case)
+ctn (Carton)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="VolumeType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:string" use="required">
+					<xsd:annotation>
+						<xsd:documentation>in3 (Cubic Inches)
+ft3 (Cubic Feet)
+yd3 (Cubic Yard)
+cm3 (Cubic Centimeters)
+m3 (Cubic Meters)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="WeightType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="unitCode" type="xsd:string" use="required">
+					<xsd:annotation>
+						<xsd:documentation>g (Gram)
+kg (Kilogram)
+oz (Ounce)
+lb (Pound)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:annotation>
+		<xsd:documentation>##### CODES #####</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="Codes">
+		<xsd:annotation>
+			<xsd:documentation>This element shall not be used, it is just showing the collection of codes types</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Amount" type="AmountType"/>
+				<xsd:element name="Country" type="CountryType" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>ISO 3166-1
+2 character (all uppercase)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Currency" type="CurrencyType" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>ISO 4217
+3 character (all uppercase)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="DayOfWeek" type="DayOfWeekType" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>The DayOfWeek enumeration represents all days of the week in English</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Language" type="LanguageType" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>ISO 639-1
+2 character (all lowercase)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:element name="Locale" type="LocaleType" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>ISO 639-1 language (2 char lowercase) combined with ISO 3166-1 country (2 char uppercase) separated by an hyphen</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="CountryType">
+		<xsd:annotation>
+			<xsd:documentation>ISO 3166-1, 2 character (all uppercase)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="2"/>
+			<xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CurrencyType">
+		<xsd:annotation>
+			<xsd:documentation>ISO 4217, 3 character (all uppercase)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="3"/>
+			<xsd:maxLength value="3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DayOfWeekType">
+		<xsd:annotation>
+			<xsd:documentation>The DayOfWeek enumeration represents all days of the week in English</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Monday"/>
+			<xsd:enumeration value="Tuesday"/>
+			<xsd:enumeration value="Wednesday"/>
+			<xsd:enumeration value="Thursday"/>
+			<xsd:enumeration value="Friday"/>
+			<xsd:enumeration value="Saturday"/>
+			<xsd:enumeration value="Sunday"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="LanguageType">
+		<xsd:annotation>
+			<xsd:documentation>ISO 639-1, 2 character (all lowercase)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="2"/>
+			<xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="LocaleType">
+		<xsd:annotation>
+			<xsd:documentation>ISO 639-1 language (2 char lowercase) combined with ISO 3166-1 country (2 char uppercase) separated by an hyphen</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="5"/>
+			<xsd:maxLength value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation>##### Common elements #####</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="AmountType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:decimal">
+				<xsd:attribute name="currency" type="CurrencyType">
+					<xsd:annotation>
+						<xsd:documentation>ISO 4217
+3 character (all uppercase)</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+</xsd:schema>

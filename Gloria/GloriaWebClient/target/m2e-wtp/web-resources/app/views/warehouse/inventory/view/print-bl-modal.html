@@ -1,0 +1,85 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t "Gloria.i18n.warehouse.inventory.printBL.header"}} | {{t
+				"Gloria.i18n.gloriaHeader"}}</h3>
+		</div>
+		<div class="modal-body">
+			<form id="printForm" name="printForm">
+				<div id="appModalMessage">
+					<span class="help-inline"></span>
+				</div>
+				<div class='row'>
+					<div class='col-sm-5'>
+						<div class='form-group'>
+							<span class="radio-inline control-span"> <input
+								type="radio" id="printSelect" name="printSelect" value="1">
+								<span class="control-span"> {{t
+									"Gloria.i18n.warehouse.inventory.printBL.binLocation"}}: </span></span>
+						</div>
+					</div>
+					<div class='col-sm-4'>
+						<div class="controls" id="binLocationContainer">
+							<input type="text" id="binLocationCode" name="binLocationCode"
+								class='form-control' required>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class='row'>
+					<div class='col-sm-3'>
+						<div class='form-group'>
+							<span class="radio-inline control-span"> <input
+								type="radio" id="printSelect" name="printSelect" value="2">
+								<span class="control-span" for="zone"> {{t
+									"Gloria.i18n.warehouse.inventory.printInventory.zone"}}: </span>
+							</span>
+							<div class="controls" style="padding-left: 20px;">
+								<select id="zone" name="query[zone]" class="form-control">
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-3'>
+						<div class='form-group'>
+							<span class="control-span" for="aisle"> {{t
+								"Gloria.i18n.warehouse.inventory.printInventory.aisle"}} / {{t
+								"Gloria.i18n.warehouse.inventory.printInventory.rackRow"}}: </span>
+							<div class="controls">
+								<select id="aisle" name="query[aisle]" class="form-control">
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-3'>
+						<div class='form-group'>
+							<span class="control-span" for="level"> {{t
+								"Gloria.i18n.warehouse.inventory.printInventory.bay"}}: </span>
+							<div class="controls">
+								<select id="bay" name="query[bay]" class="form-control">
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-3'>
+						<div class='form-group'>
+							<span class="control-span" for="level"> {{t
+								"Gloria.i18n.warehouse.inventory.printInventory.level"}}: </span>
+							<div class="controls">
+								<select id="level" name="query[level]" class="form-control">
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<a class="btn btn-default" id="print" disabled="true">{{t
+				"Gloria.i18n.buttons.print"}}</a> <a class="btn btn-default" id="cancel">{{t
+				"Gloria.i18n.buttons.cancel"}}</a>
+		</div>
+	</div>
+</div>

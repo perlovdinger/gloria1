@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+  <persistence-unit name="CommonDomainPU">
+
+    <mapping-file>META-INF/CommonDomain_orm.xml</mapping-file>
+
+    <!-- Fully qualified names of persistent classes -->
+
+    <class>com.volvo.gloria.common.d.entities.CarryOver</class>
+    <class>com.volvo.gloria.common.d.entities.CompanyCode</class>
+    <class>com.volvo.gloria.common.d.entities.CostCenter</class>
+    <class>com.volvo.gloria.common.d.entities.Currency</class>
+    <class>com.volvo.gloria.common.d.entities.DangerousGoods</class>
+    <class>com.volvo.gloria.common.d.entities.DeliveryFollowUpTeam</class>
+    <class>com.volvo.gloria.common.d.entities.DeliveryFollowUpTeamFilter</class>
+    <class>com.volvo.gloria.common.d.entities.GlAccount</class>
+    <class>com.volvo.gloria.common.d.entities.InternalOrderSap</class>
+    <class>com.volvo.gloria.common.d.entities.PartAffiliation</class>
+    <class>com.volvo.gloria.common.d.entities.QualityDocument</class>
+    <class>com.volvo.gloria.common.d.entities.Site</class>
+    <class>com.volvo.gloria.common.d.entities.SupplierCounterPart</class>
+    <class>com.volvo.gloria.common.d.entities.UnitOfMeasure</class>
+    <class>com.volvo.gloria.common.d.entities.UserLog</class>
+    <class>com.volvo.gloria.common.d.entities.WbsElement</class>
+    <class>com.volvo.gloria.common.d.entities.XmlMessageLog</class>
+    <class>com.volvo.gloria.common.d.entities.CurrencyRate</class>
+    <class>com.volvo.gloria.common.d.entities.Traceability</class>
+    <class>com.volvo.gloria.common.d.entities.CompanyGroup</class>
+    <class>com.volvo.gloria.common.d.entities.PartAliasMapping</class>
+    
+  </persistence-unit>
+</persistence>

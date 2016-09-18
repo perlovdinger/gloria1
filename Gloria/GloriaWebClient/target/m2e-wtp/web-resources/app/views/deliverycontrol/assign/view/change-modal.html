@@ -1,0 +1,73 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			<h3>{{t
+				"Gloria.i18n.deliverycontrol.assignOrReassign.text.changeTitle"}}</h3>
+		</div>
+		<div class="modal-body">
+			<div id="appModalMessage"></div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="alert alert-success">
+						<h5>
+							<i class="fa fa-info-circle"></i> </i> <b>&nbsp;&nbsp;{{t
+								"Gloria.i18n.deliverycontrol.assignOrReassign.text.infoHeader"}}</b>
+						</h5>
+						<p>{{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.infoText1"}}
+							'{{team.name}}' {{t
+							"Gloria.i18n.deliverycontrol.assignOrReassign.text.infoText2"}}
+							{{dcIdName}}</p>
+					</div>
+				</div>
+			</div>
+			{{#if_eq module 'supplier'}}
+			<div class="row">
+				<div class="col-sm-12">
+					<span>{{t
+						"Gloria.i18n.deliverycontrol.assignOrReassign.text.changeTextSupplier"}}</span>
+				</div>
+			</div>
+			{{/if_eq}} {{#if_eq module 'project'}}
+			<div class="row">
+				<div class="col-sm-12">
+					<span>{{t
+						"Gloria.i18n.deliverycontrol.assignOrReassign.text.changeTextProject"}}</span>
+				</div>
+			</div>
+			{{/if_eq}} <br />
+			<form id="changeDCForm" name="changeDCForm" role="form">
+				<fieldset>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label class="control-label" for="name"> {{t
+									"Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.name"}}:
+								</label>
+								<div class="controls">
+									<span id="name" name="delivery[name]">{{team.name}}</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="form-group">
+								<label class="control-label" for="defaultDcUserid"> {{t
+									"Gloria.i18n.deliverycontrol.assignOrReassign.header.supplier.deliveryControllerUserId"}}:
+								</label>
+								<div class="controls" id="defaultDcUserid"></div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" id="save">{{t
+				"Gloria.i18n.buttons.save"}}</button>
+			<button type="button" class="btn btn-default" id="cancel">
+				{{t "Gloria.i18n.buttons.cancel"}}</button>
+		</div>
+	</div>
+</div>

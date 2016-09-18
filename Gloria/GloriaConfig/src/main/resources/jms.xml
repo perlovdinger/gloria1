@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:amq="http://activemq.apache.org/schema/core"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd http://activemq.apache.org/schema/core http://activemq.apache.org/schema/core/activemq-core.xsd">
+
+  <!-- Default, standalone jms configuration -->
+
+  <!-- Embedded ActiveMQ Broker -->
+  <amq:broker useJmx="false" persistent="false" start="true">
+    <amq:transportConnectors>
+      <amq:transportConnector uri="tcp://localhost:0" />
+    </amq:transportConnectors>
+  </amq:broker>
+
+
+  <!-- JMS ConnectionFactory -->
+  <bean id="connectionFactory" class="com.atomikos.jms.AtomikosConnectionFactoryBean" init-method="init" destroy-method="close">
+    <property name="uniqueResourceName" value="ConnectionFactory_Resource" />
+	<property name="poolSize" value="10"/>
+    <property name="xaConnectionFactory">
+      <bean class="org.apache.activemq.ActiveMQXAConnectionFactory">
+        <property name="brokerURL" value="vm://localhost" />
+      </bean>
+    </property>
+  </bean>
+  <bean id="connectionFactoryBus" class="com.atomikos.jms.AtomikosConnectionFactoryBean" init-method="init" destroy-method="close">
+    <property name="uniqueResourceName" value="ConnectionFactory_ResourceBus" />
+	<property name="poolSize" value="10"/>
+    <property name="xaConnectionFactory">
+      <bean class="org.apache.activemq.ActiveMQXAConnectionFactory">
+        <property name="brokerURL" value="vm://localhost" />
+      </bean>
+    </property>
+  </bean>
+
+  <!-- Non-transactional JMS ConnectionFactory -->
+  <amq:connectionFactory id="connectionFactory_NoTx" brokerURL="vm://localhost" />
+
+  <!-- JMS Destinations -->
+  <amq:queue id="userGatewayQueue" physicalName="com.volvo.gloria.gateway.UserGatewayQueue" />
+  <amq:queue id="purchaseOrderGatewayQueue" physicalName="com.volvo.gloria.gateway.PurchaseOrderGatewayQueue" />
+  <amq:queue id="costCenterGatewayQueue" physicalName="com.volvo.gloria.gateway.CostCenterGatewayQueue" />
+  <amq:queue id="wbsElementGatewayQueue" physicalName="com.volvo.gloria.gateway.WBSElementGatewayQueue" />
+  <amq:queue id="carryOverGatewayQueue" physicalName="com.volvo.gloria.gateway.CarryOverGatewayQueue" />
+  <amq:queue id="procureRequestTOGatewayQueue" physicalName="com.volvo.gloria.gateway.ProcureRequestTOGatewayQueue" />
+  <amq:queue id="requisitionSenderQueue" physicalName="com.volvo.gloria.proxy.RequisitionSenderQueue"/>
+  <amq:queue id="goodsReceiptSenderQueue" physicalName="com.volvo.gloria.proxy.GoodsReceiptSenderQueue" />
+  <amq:queue id="processPurchaseOrderQueue" physicalName="com.volvo.gloria.proxy.ProcessPurchaseOrderQueue" />
+  <amq:queue id="materialProcureResponseSenderQueue" physicalName="com.volvo.gloria.proxy.MaterialProcureResponseSenderQueue" /> 
+</beans>

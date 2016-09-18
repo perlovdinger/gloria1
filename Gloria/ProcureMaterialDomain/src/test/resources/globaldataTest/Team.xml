@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Teams xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Team name="AGEO_PE" type="DELIVERY_CONTROL" companyCodeGroup="JP" />
+  <Team name="AGEO_PE" type="INTERNAL_PROCURE" companyCodeGroup="JP" />
+  <Team name="AGEO_PE" type="MATERIAL_CONTROL" companyCodeGroup="JP" />
+  <Team name="AGEO_VE" type="DELIVERY_CONTROL" companyCodeGroup="JP" />
+  <Team name="AGEO_VE" type="INTERNAL_PROCURE" companyCodeGroup="JP" />
+  <Team name="AGEO VE" type="MATERIAL_CONTROL" companyCodeGroup="JP" />
+  <Team name="BLR" type="DELIVERY_CONTROL" companyCodeGroup="IN" />
+  <Team name="BLR" type="MATERIAL_CONTROL" companyCodeGroup="IN" />
+  <Team name="CUR" type="DELIVERY_CONTROL" companyCodeGroup="BR" />
+  <Team name="CUR" type="MATERIAL_CONTROL" companyCodeGroup="BR" />
+  <Team name="GOT_PE" type="DELIVERY_CONTROL" companyCodeGroup="SE_PE" />
+  <Team name="GOT_PE" type="INTERNAL_PROCURE" companyCodeGroup="SE_PE" />
+  <Team name="GOT_PE" type="MATERIAL_CONTROL" companyCodeGroup="SE_PE" />
+  <Team name="GOT_VE" type="DELIVERY_CONTROL" companyCodeGroup="SE_VE" />
+  <Team name="GOT_VE" type="INTERNAL_PROCURE" companyCodeGroup="SE_VE" />
+  <Team name="GOT_VE" type="MATERIAL_CONTROL" companyCodeGroup="SE_VE" />
+  <Team name="GSO" type="DELIVERY_CONTROL" companyCodeGroup="US_VE" />
+  <Team name="GSO" type="MATERIAL_CONTROL" companyCodeGroup="US_VE" />
+  <Team name="HAG" type="DELIVERY_CONTROL" companyCodeGroup="US_PE" />
+  <Team name="HAG" type="MATERIAL_CONTROL" companyCodeGroup="US_PE" />
+  <Team name="LYS" type="DELIVERY_CONTROL" companyCodeGroup="FR" />
+  <Team name="LYS" type="INTERNAL_PROCURE" companyCodeGroup="FR" />
+  <Team name="LYS" type="MATERIAL_CONTROL" companyCodeGroup="FR" />
+  <Team name="MAL_PE" type="DELIVERY_CONTROL" companyCodeGroup="SE_PE" />
+  <Team name="MAL_PE" type="MATERIAL_CONTROL" companyCodeGroup="SE_PE" />
+  <Team name="VECV" type="DELIVERY_CONTROL" companyCodeGroup="VECV" />
+  <Team name="VECV" type="MATERIAL_CONTROL" companyCodeGroup="VECV" />
+</Teams>

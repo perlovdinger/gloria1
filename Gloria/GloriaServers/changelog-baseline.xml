@@ -1,0 +1,2376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="v016387 (generated)" id="1457960873915-1">
+        <createSequence sequenceName="address_address_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-2">
+        <createSequence sequenceName="aislerackrow_aisle_rack_row_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-3">
+        <createSequence sequenceName="application_setting_application_setting_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-4">
+        <createSequence sequenceName="attached_doc_attached_doc_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-5">
+        <createSequence sequenceName="baysetting_bay_setting_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-6">
+        <createSequence sequenceName="bin_location_bin_location_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-7">
+        <createSequence sequenceName="binlocation_balance_binlocation_balance_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-8">
+        <createSequence sequenceName="buyer_buyer_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-9">
+        <createSequence sequenceName="carry_over_carry_over_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-10">
+        <createSequence sequenceName="change_id_change_id_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-11">
+        <createSequence sequenceName="company_code_company_code_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-12">
+        <createSequence sequenceName="company_group_company_group_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-13">
+        <createSequence sequenceName="conversion_unit_conversion_unit_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-14">
+        <createSequence sequenceName="cost_center_cost_center_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-15">
+        <createSequence sequenceName="currency_currency_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-16">
+        <createSequence sequenceName="currency_rate_currency_rate_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-17">
+        <createSequence sequenceName="dangerous_goods_dangerous_goods_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-18">
+        <createSequence sequenceName="delivery_follow_up_team_delivery_follow_up_team_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-19">
+        <createSequence sequenceName="delivery_follow_up_team_filte_delivery_follow_up_team_filte_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-20">
+        <createSequence sequenceName="delivery_note_delivery_note_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-21">
+        <createSequence sequenceName="delivery_note_line_delivery_note_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-22">
+        <createSequence sequenceName="delivery_note_sub_line_delivery_note_sub_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-23">
+        <createSequence sequenceName="delivery_schedule_delivery_schedule_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-24">
+        <createSequence sequenceName="dispatch_note_dispatch_note_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-25">
+        <createSequence sequenceName="event_log_event_log_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-26">
+        <createSequence sequenceName="finance_header_finance_header_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-27">
+        <createSequence sequenceName="finance_material_finance_material_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-28">
+        <createSequence sequenceName="glaccount_glaccount_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-29">
+        <createSequence sequenceName="gloria_user_gloria_user_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-30">
+        <createSequence sequenceName="goods_receipt_header_goods_receipt_header_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-31">
+        <createSequence sequenceName="goods_receipt_line_goods_receipt_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-32">
+        <createSequence sequenceName="internal_order_sap_internal_order_sap_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-33">
+        <createSequence sequenceName="material_header_material_header_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-34">
+        <createSequence sequenceName="material_header_version_material_header_version_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-35">
+        <createSequence sequenceName="material_last_modified_material_last_modified_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-36">
+        <createSequence sequenceName="material_line_material_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-37">
+        <createSequence sequenceName="material_line_status_counter_material_line_status_counter_o_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-38">
+        <createSequence sequenceName="material_line_status_time_material_line_status_time_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-39">
+        <createSequence sequenceName="material_material_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-40">
+        <createSequence sequenceName="material_part_alias_material_part_alias_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-41">
+        <createSequence sequenceName="material_req_version_material_req_version_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-42">
+        <createSequence sequenceName="material_request_line_material_request_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-43">
+        <createSequence sequenceName="material_request_material_request_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-44">
+        <createSequence sequenceName="material_request_object_material_request_object_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-45">
+        <createSequence sequenceName="order_line_last_modified_order_line_last_modified_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-46">
+        <createSequence sequenceName="order_line_order_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-47">
+        <createSequence sequenceName="order_line_version_order_line_version_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-48">
+        <createSequence sequenceName="order_sap_accounts_order_sap_accounts_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-49">
+        <createSequence sequenceName="order_sap_line_order_sap_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-50">
+        <createSequence sequenceName="order_sap_order_sap_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-51">
+        <createSequence sequenceName="order_sap_schedule_order_sap_schedule_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-52">
+        <createSequence sequenceName="orders_order_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-53">
+        <createSequence sequenceName="part_affiliation_part_affiliation_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-54">
+        <createSequence sequenceName="part_alias_mapping_part_alias_mapping_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-55">
+        <createSequence sequenceName="part_alias_part_alias_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-56">
+        <createSequence sequenceName="part_number_part_number_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-57">
+        <createSequence sequenceName="pick_list_pick_list_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-58">
+        <createSequence sequenceName="placement_placement_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-59">
+        <createSequence sequenceName="printer_printer_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-60">
+        <createSequence sequenceName="problem_doc_problem_doc_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-61">
+        <createSequence sequenceName="procure_line_procure_line_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-62">
+        <createSequence sequenceName="purchase_organisation_purchase_organisation_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-63">
+        <createSequence sequenceName="qi_doc_qi_doc_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-64">
+        <createSequence sequenceName="quality_document_quality_document_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-65">
+        <createSequence sequenceName="quality_inspection_part_quality_inspection_part_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-66">
+        <createSequence sequenceName="quality_inspection_project_quality_inspection_project_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-67">
+        <createSequence sequenceName="quality_inspection_supplier_quality_inspection_supplier_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-68">
+        <createSequence sequenceName="receive_doc_receive_doc_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-69">
+        <createSequence sequenceName="report_filter_report_filter_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-70">
+        <createSequence sequenceName="request_group_request_group_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-71">
+        <createSequence sequenceName="request_list_request_list_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-72">
+        <createSequence sequenceName="requisition_requisition_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-73">
+        <createSequence sequenceName="site_site_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-74">
+        <createSequence sequenceName="storage_room_storage_room_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-75">
+        <createSequence sequenceName="supplier_counter_part_supplier_counter_part_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-76">
+        <createSequence sequenceName="supplier_supplier_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-77">
+        <createSequence sequenceName="team_team_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-78">
+        <createSequence sequenceName="traceability_traceability_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-79">
+        <createSequence sequenceName="transport_label_transport_label_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-80">
+        <createSequence sequenceName="unit_of_measure_unit_of_measure_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-81">
+        <createSequence sequenceName="user_application_user_application_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-82">
+        <createSequence sequenceName="user_category_user_category_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-83">
+        <createSequence sequenceName="user_company_code_user_company_code_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-84">
+        <createSequence sequenceName="user_log_user_log_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-85">
+        <createSequence sequenceName="warehouse_warehouse_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-86">
+        <createSequence sequenceName="wbs_element_wbs_element_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-87">
+        <createSequence sequenceName="xml_message_log_xmlmessagelog_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-88">
+        <createSequence sequenceName="zone_zone_oid_seq"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-89">
+        <createTable tableName="address">
+            <column autoIncrement="true" name="address_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="address_pkey"/>
+            </column>
+            <column name="city" type="VARCHAR(255)"/>
+            <column name="contactname" type="VARCHAR(255)"/>
+            <column name="countrycode" type="VARCHAR(255)"/>
+            <column name="countryname" type="VARCHAR(255)"/>
+            <column name="department" type="VARCHAR(255)"/>
+            <column name="districtno" type="VARCHAR(255)"/>
+            <column name="email" type="VARCHAR(255)"/>
+            <column name="faxnumber" type="VARCHAR(255)"/>
+            <column name="mobilephonenumber" type="VARCHAR(255)"/>
+            <column name="phoneno" type="VARCHAR(255)"/>
+            <column name="pobox" type="VARCHAR(255)"/>
+            <column name="postcode" type="VARCHAR(255)"/>
+            <column name="postcodepobox" type="VARCHAR(255)"/>
+            <column name="regionid" type="VARCHAR(255)"/>
+            <column name="state" type="VARCHAR(255)"/>
+            <column name="street1" type="VARCHAR(255)"/>
+            <column name="street2" type="VARCHAR(255)"/>
+            <column name="street3" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="gloria_user_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-90">
+        <createTable tableName="aislerackrow">
+            <column autoIncrement="true" name="aisle_rack_row_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="aislerackrow_pkey"/>
+            </column>
+            <column name="baysides" type="VARCHAR(20)"/>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="numberofbay" type="BIGINT"/>
+            <column name="setup" type="SMALLINT"/>
+            <column name="version" type="INT"/>
+            <column name="zone_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-91">
+        <createTable tableName="application_setting">
+            <column autoIncrement="true" name="application_setting_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="application_setting_pkey"/>
+            </column>
+            <column name="applicationsettingid" type="VARCHAR(255)"/>
+            <column name="applicationsettingvalue" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="userapplication" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-92">
+        <createTable tableName="attached_doc">
+            <column autoIncrement="true" name="attached_doc_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="attached_doc_pkey"/>
+            </column>
+            <column name="creation_date" type="TIMESTAMP(6) WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="documentname" type="VARCHAR(255)"/>
+            <column name="filecontent" type="BYTEA"/>
+            <column name="delivery_schedule_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-93">
+        <createTable tableName="baysetting">
+            <column autoIncrement="true" name="bay_setting_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="baysetting_pkey"/>
+            </column>
+            <column name="baycode" type="VARCHAR(255)"/>
+            <column name="numberoflevels" type="BIGINT"/>
+            <column name="numberofpositions" type="BIGINT"/>
+            <column name="version" type="INT"/>
+            <column name="aisle_rack_row_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-94">
+        <createTable tableName="bin_location">
+            <column autoIncrement="true" name="bin_location_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="bin_location_pkey"/>
+            </column>
+            <column name="aislerackrowcode" type="VARCHAR(255)"/>
+            <column name="allocation" type="VARCHAR(20)"/>
+            <column name="baycode" type="VARCHAR(255)"/>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="level" type="BIGINT"/>
+            <column name="position" type="BIGINT"/>
+            <column name="version" type="INT"/>
+            <column name="zone_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-95">
+        <createTable tableName="binlocation_balance">
+            <column autoIncrement="true" name="binlocation_balance_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="binlocation_balance_pkey"/>
+            </column>
+            <column name="deviation" type="VARCHAR(20)"/>
+            <column name="partaffiliation" type="VARCHAR(255)"/>
+            <column name="partmodification" type="VARCHAR(255)"/>
+            <column name="partname" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="version" type="INT"/>
+            <column name="bin_location_oid" type="BIGINT"/>
+            <column name="warehouse_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-96">
+        <createTable tableName="buyer">
+            <column autoIncrement="true" name="buyer_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="buyer_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="purchase_organisation_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-97">
+        <createTable tableName="carry_over">
+            <column autoIncrement="true" name="carry_over_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="carry_over_pkey"/>
+            </column>
+            <column name="amount" type="FLOAT8"/>
+            <column name="currency" type="VARCHAR(255)"/>
+            <column name="customerid" type="VARCHAR(255)"/>
+            <column name="customername" type="VARCHAR(255)"/>
+            <column name="partaffiliation" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="priceunit" type="VARCHAR(255)"/>
+            <column name="startdate" type="date"/>
+            <column name="suppliercountrycode" type="VARCHAR(255)"/>
+            <column name="supplierid" type="VARCHAR(255)"/>
+            <column name="suppliername" type="VARCHAR(255)"/>
+            <column name="supplierpartnumber" type="VARCHAR(255)"/>
+            <column name="supplierpartversion" type="VARCHAR(255)"/>
+            <column name="unitcode" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-98">
+        <createTable tableName="change_id">
+            <column autoIncrement="true" name="change_id_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="change_id_pkey"/>
+            </column>
+            <column name="acceptrejectbyuserid" type="VARCHAR(255)"/>
+            <column name="changetechid" type="VARCHAR(255)"/>
+            <column name="crhasbeenmoved" type="BOOL"/>
+            <column name="crid" type="VARCHAR(255)"/>
+            <column name="mtrlrequestversion" type="VARCHAR(255)"/>
+            <column name="priority" type="VARCHAR(255)"/>
+            <column name="procuremessageid" type="VARCHAR(255)"/>
+            <column name="procurenotes" type="VARCHAR(255)"/>
+            <column name="procurerequestid" type="VARCHAR(255)"/>
+            <column name="receiveddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="title" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="visibleui" type="BOOL"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-99">
+        <createTable tableName="company_code">
+            <column autoIncrement="true" name="company_code_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="company_code_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="defaultcurrency" type="VARCHAR(255)"/>
+            <column name="jointventure" type="BOOL"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="receivinggoods" type="BOOL"/>
+            <column name="sappurchaseorg" type="VARCHAR(255)"/>
+            <column name="sapquantityblockreceiverid" type="VARCHAR(255)"/>
+            <column name="sendgrtosap" type="BOOL"/>
+            <column name="sendpotosap" type="BOOL"/>
+            <column name="version" type="INT"/>
+            <column name="company_group_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-100">
+        <createTable tableName="company_group">
+            <column autoIncrement="true" name="company_group_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="company_group_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-101">
+        <createTable tableName="conversion_unit">
+            <column autoIncrement="true" name="conversion_unit_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="conversion_unit_pkey"/>
+            </column>
+            <column name="applfrom" type="VARCHAR(255)"/>
+            <column name="applto" type="VARCHAR(255)"/>
+            <column name="codefrom" type="VARCHAR(255)"/>
+            <column name="codeto" type="VARCHAR(255)"/>
+            <column name="dividedby" type="BIGINT"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-102">
+        <createTable tableName="cost_center">
+            <column autoIncrement="true" name="cost_center_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="cost_center_pkey"/>
+            </column>
+            <column name="costcenter" type="VARCHAR(255)"/>
+            <column name="descriptionlong" type="VARCHAR(255)"/>
+            <column name="descriptionshort" type="VARCHAR(255)"/>
+            <column name="effectiveenddate" type="date"/>
+            <column name="effectivestartdate" type="date"/>
+            <column name="personresponisbleid" type="VARCHAR(255)"/>
+            <column name="personalresponsiblename" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="company_code_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-103">
+        <createTable tableName="currency">
+            <column autoIncrement="true" name="currency_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="currency_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="displayseq" type="INT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="suppressdecimal" type="BOOL"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-104">
+        <createTable tableName="currency_rate">
+            <column autoIncrement="true" name="currency_rate_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="currency_rate_pkey"/>
+            </column>
+            <column name="basecurrencycode" type="VARCHAR(255)"/>
+            <column name="displayseq" type="BIGINT"/>
+            <column name="enddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="rate" type="FLOAT8"/>
+            <column name="startdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="version" type="INT"/>
+            <column name="currency_currency_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-105">
+        <createTable tableName="dangerous_goods">
+            <column autoIncrement="true" name="dangerous_goods_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="dangerous_goods_pkey"/>
+            </column>
+            <column name="displayseq" type="INT"/>
+            <column name="flag" type="BOOL"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-106">
+        <createTable tableName="delivery_follow_up_team">
+            <column autoIncrement="true" name="delivery_follow_up_team_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="delivery_follow_up_team_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="defaultdcuserid" type="VARCHAR(255)"/>
+            <column name="followuptype" type="VARCHAR(20)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-107">
+        <createTable tableName="delivery_follow_up_team_filter">
+            <column autoIncrement="true" name="delivery_follow_up_team_filter_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="delivery_follow_up_team_filter_pkey"/>
+            </column>
+            <column name="deliverycontrolleruserid" type="VARCHAR(255)"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="suffix" type="VARCHAR(255)"/>
+            <column name="supplierid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="delivery_follow_up_team_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-108">
+        <createTable tableName="delivery_log">
+            <column name="event_log_oid" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="delivery_schedule_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-109">
+        <createTable tableName="delivery_note">
+            <column autoIncrement="true" name="delivery_note_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="delivery_note_pkey"/>
+            </column>
+            <column name="carrier" type="VARCHAR(255)"/>
+            <column name="deliverynotedate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="deliverynoteno" type="VARCHAR(255)"/>
+            <column name="materialuserid" type="VARCHAR(255)"/>
+            <column name="orderno" type="VARCHAR(255)"/>
+            <column name="receivetype" type="SMALLINT"/>
+            <column name="returndeliveryaddressid" type="VARCHAR(255)"/>
+            <column name="returndeliveryaddressname" type="VARCHAR(255)"/>
+            <column name="supplierid" type="VARCHAR(255)"/>
+            <column name="suppliername" type="VARCHAR(255)"/>
+            <column name="transportationno" type="VARCHAR(255)"/>
+            <column name="whsiteid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-110">
+        <createTable tableName="delivery_note_line">
+            <column autoIncrement="true" name="delivery_note_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="delivery_note_line_pkey"/>
+            </column>
+            <column name="damagedquantity" type="BIGINT"/>
+            <column name="dangerousgoodsflag" type="BOOL"/>
+            <column name="dangerousgoodsname" type="VARCHAR(255)"/>
+            <column name="deliverynotequantity" type="BIGINT"/>
+            <column name="directsendquantity" type="BIGINT"/>
+            <column name="expirationdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="hascontrolcertificatedoc" type="BOOL"/>
+            <column name="hasdamagedparts" type="BOOL"/>
+            <column name="hasmeasuringdoc" type="BOOL"/>
+            <column name="hasmissinginfo" type="BOOL"/>
+            <column name="hasoverdeliveries" type="BOOL"/>
+            <column name="materiallineoid" type="BIGINT"/>
+            <column name="partaffiliation" type="VARCHAR(255)"/>
+            <column name="partalias" type="VARCHAR(255)"/>
+            <column name="partmodification" type="VARCHAR(255)"/>
+            <column name="partname" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="possibletoreceiveqty" type="BIGINT"/>
+            <column name="problemdescription" type="VARCHAR(255)"/>
+            <column name="procureinfo" type="VARCHAR(255)"/>
+            <column name="procuretype" type="VARCHAR(20)"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="qidetailsupdated" type="BOOL"/>
+            <column name="qualityinspectioncomment" type="VARCHAR(255)"/>
+            <column name="receiveddatetime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="receiveddetailsupdated" type="BOOL"/>
+            <column name="receivedquantity" type="BIGINT"/>
+            <column name="referenceids" type="VARCHAR(1024)"/>
+            <column name="sendtoqi" type="BOOL"/>
+            <column name="status" type="SMALLINT"/>
+            <column name="version" type="INT"/>
+            <column name="order_line_oid" type="BIGINT"/>
+            <column name="delivery_note_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-111">
+        <createTable tableName="delivery_note_sub_line">
+            <column autoIncrement="true" name="delivery_note_sub_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="delivery_note_sub_line_pkey"/>
+            </column>
+            <column name="binlocation" type="BIGINT"/>
+            <column name="binlocationcode" type="VARCHAR(255)"/>
+            <column name="directsend" type="BOOL"/>
+            <column name="toapproveqty" type="BIGINT"/>
+            <column name="toreceiveqty" type="BIGINT"/>
+            <column name="version" type="INT"/>
+            <column name="delivery_note_line_oid" type="BIGINT"/>
+            <column name="transport_label" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-112">
+        <createTable tableName="delivery_schedule">
+            <column autoIncrement="true" name="delivery_schedule_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="delivery_schedule_pkey"/>
+            </column>
+            <column name="expecteddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="expectedquantity" type="BIGINT"/>
+            <column name="planneddispatchdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="statusflag" type="SMALLINT"/>
+            <column name="version" type="INT"/>
+            <column name="order_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-113">
+        <createTable tableName="dispatch_note">
+            <column autoIncrement="true" name="dispatch_note_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="dispatch_note_pkey"/>
+            </column>
+            <column name="carrier" type="VARCHAR(255)"/>
+            <column name="deliverydate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="dispatchnotedate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="dispatchnoteno" type="VARCHAR(255)"/>
+            <column name="height" type="VARCHAR(255)"/>
+            <column name="note" type="VARCHAR(255)"/>
+            <column name="trackingno" type="VARCHAR(255)"/>
+            <column name="transportmode" type="VARCHAR(255)"/>
+            <column name="weight" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="request_list_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-114">
+        <createTable tableName="event_log">
+            <column autoIncrement="true" name="event_log_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="event_log_pkey"/>
+            </column>
+            <column name="eventoriginatorid" type="VARCHAR(255)"/>
+            <column name="eventoriginatorname" type="VARCHAR(255)"/>
+            <column name="eventtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="eventtype" type="SMALLINT"/>
+            <column name="eventvalue" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-115">
+        <createTable tableName="finance_header">
+            <column autoIncrement="true" name="finance_header_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="finance_header_pkey"/>
+            </column>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="costcenter" type="VARCHAR(255)"/>
+            <column name="glaccount" type="VARCHAR(255)"/>
+            <column name="internalordernosap" type="VARCHAR(255)"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="wbscode" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-116">
+        <createTable tableName="finance_material">
+            <column autoIncrement="true" name="finance_material_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="finance_material_pkey"/>
+            </column>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="costcenter" type="VARCHAR(255)"/>
+            <column name="glaccount" type="VARCHAR(255)"/>
+            <column name="internalordernosap" type="VARCHAR(255)"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="wbscode" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-117">
+        <createTable tableName="glaccount">
+            <column autoIncrement="true" name="glaccount_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="glaccount_pkey"/>
+            </column>
+            <column name="accountdescription" type="VARCHAR(255)"/>
+            <column name="accountname" type="VARCHAR(255)"/>
+            <column name="accountnumber" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="company_code_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-118">
+        <createTable tableName="gloria_user">
+            <column autoIncrement="true" name="gloria_user_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="gloria_user_pkey"/>
+            </column>
+            <column name="countrycode" type="VARCHAR(255)"/>
+            <column name="department" type="VARCHAR(255)"/>
+            <column name="disabledlogin" type="BOOL"/>
+            <column name="inactive" type="BOOL"/>
+            <column name="internalprocureteamoid" type="BIGINT"/>
+            <column name="langcode" type="VARCHAR(255)"/>
+            <column name="organisationid" type="VARCHAR(255)"/>
+            <column name="organisationname" type="VARCHAR(255)"/>
+            <column name="userfirstname" type="VARCHAR(255)"/>
+            <column name="userid" type="VARCHAR(255)"/>
+            <column name="userlastname" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-119">
+        <createTable tableName="gloria_user_team">
+            <column name="team_oid" type="BIGINT"/>
+            <column name="gloria_user_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-120">
+        <createTable tableName="goods_receipt_header">
+            <column autoIncrement="true" name="goods_receipt_header_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="goods_receipt_header_pkey"/>
+            </column>
+            <column name="assigncodegm" type="VARCHAR(255)"/>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="documentdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="headertext" type="VARCHAR(255)"/>
+            <column name="messagestatus" type="VARCHAR(20)"/>
+            <column name="posteddatetime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="referencedocument" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="delivery_note_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-121">
+        <createTable tableName="goods_receipt_line">
+            <column autoIncrement="true" name="goods_receipt_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="goods_receipt_line_pkey"/>
+            </column>
+            <column name="isounitofmeasure" type="VARCHAR(255)"/>
+            <column name="movementindicator" type="VARCHAR(255)"/>
+            <column name="movementtype" type="VARCHAR(255)"/>
+            <column name="orderreference" type="VARCHAR(255)"/>
+            <column name="plant" type="VARCHAR(255)"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="quantitycancelled" type="BIGINT"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="vendor" type="VARCHAR(255)"/>
+            <column name="vendormaterialnumber" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="delivery_note_line_oid" type="BIGINT"/>
+            <column name="goods_receipt_header_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-122">
+        <createTable tableName="internal_order_sap">
+            <column autoIncrement="true" name="internal_order_sap_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="internal_order_sap_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-123">
+        <createTable tableName="material">
+            <column autoIncrement="true" name="material_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_pkey"/>
+            </column>
+            <column name="addedafter" type="BOOL"/>
+            <column name="carryoverexist" type="BOOL"/>
+            <column name="carryoverexistandmatched" type="BOOL"/>
+            <column name="characteristics" type="VARCHAR(255)"/>
+            <column name="createddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="demarcation" type="VARCHAR(255)"/>
+            <column name="designresponsible" type="VARCHAR(255)"/>
+            <column name="functiongroup" type="VARCHAR(255)"/>
+            <column name="itemtovariantlinkid" type="BIGINT"/>
+            <column name="linkfunctiongroupsuffix" type="VARCHAR(255)"/>
+            <column name="linkfunctiongroup" type="VARCHAR(255)"/>
+            <column name="mailformid" type="VARCHAR(255)"/>
+            <column name="matchedcarryoveroid" type="BIGINT"/>
+            <column name="materialtype" type="VARCHAR(20)"/>
+            <column name="migrated" type="BOOL"/>
+            <column name="modificationid" type="BIGINT"/>
+            <column name="modificationtype" type="VARCHAR(20)"/>
+            <column name="modularharness" type="VARCHAR(255)"/>
+            <column name="mtrlrequestversionaccepted" type="VARCHAR(255)"/>
+            <column name="objectnumber" type="VARCHAR(255)"/>
+            <column name="orderno" type="VARCHAR(255)"/>
+            <column name="partaffiliation" type="VARCHAR(255)"/>
+            <column name="partmodification" type="VARCHAR(255)"/>
+            <column name="partname" type="VARCHAR(255)"/>
+            <column name="partnameupdated" type="BOOL"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="partversionoriginal" type="VARCHAR(255)"/>
+            <column name="procurecomment" type="VARCHAR(255)"/>
+            <column name="procurelinkid" type="BIGINT"/>
+            <column name="productclass" type="VARCHAR(255)"/>
+            <column name="receiver" type="VARCHAR(255)"/>
+            <column name="refassemblypartno" type="VARCHAR(255)"/>
+            <column name="refassemblypartversion" type="VARCHAR(255)"/>
+            <column name="rejectchangestatus" type="VARCHAR(20)"/>
+            <column name="replacedbyoid" type="BIGINT"/>
+            <column name="requiredstadate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="unitofmeasure" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="order_line_oid" type="BIGINT"/>
+            <column name="add_change_id_oid" type="BIGINT"/>
+            <column name="finance_header_oid" type="BIGINT"/>
+            <column name="material_header_oid" type="BIGINT"/>
+            <column name="material_last_modified_oid" type="BIGINT"/>
+            <column name="procure_line_oid" type="BIGINT"/>
+            <column name="remove_change_id_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-124">
+        <createTable tableName="material_header">
+            <column autoIncrement="true" name="material_header_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_header_pkey"/>
+            </column>
+            <column name="active" type="BOOL"/>
+            <column name="buildid" type="VARCHAR(255)"/>
+            <column name="buildname" type="VARCHAR(255)"/>
+            <column name="buildtype" type="VARCHAR(20)"/>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="firstassemblyidsequence" type="BIGINT"/>
+            <column name="materialcontrollername" type="VARCHAR(255)"/>
+            <column name="materialcontrollerteam" type="VARCHAR(255)"/>
+            <column name="materialcontrolleruserid" type="VARCHAR(255)"/>
+            <column name="mtrlrequestid" type="VARCHAR(255)"/>
+            <column name="referenceid" type="VARCHAR(255)"/>
+            <column name="requesttype" type="VARCHAR(22)"/>
+            <column name="version" type="INT"/>
+            <column name="accepted_material_header_version_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-125">
+        <createTable tableName="material_header_version">
+            <column autoIncrement="true" name="material_header_version_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_header_version_pkey"/>
+            </column>
+            <column name="contactpersonemail" type="VARCHAR(255)"/>
+            <column name="contactpersonid" type="VARCHAR(255)"/>
+            <column name="contactpersonname" type="VARCHAR(255)"/>
+            <column name="headerversion" type="BIGINT"/>
+            <column name="outboundlocationid" type="VARCHAR(255)"/>
+            <column name="outboundlocationname" type="VARCHAR(255)"/>
+            <column name="outboundlocationtype" type="VARCHAR(255)"/>
+            <column name="outboundstartdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="receiveddatetime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="referencegroup" type="VARCHAR(255)"/>
+            <column name="requestername" type="VARCHAR(255)"/>
+            <column name="requesternotes" type="VARCHAR(255)"/>
+            <column name="requesteruserid" type="VARCHAR(255)"/>
+            <column name="swapped" type="BOOL"/>
+            <column name="version" type="INT"/>
+            <column name="change_id_oid" type="BIGINT"/>
+            <column name="material_header_oid" type="BIGINT"/>
+            <column name="previous_accepted_version" type="BIGINT"/>
+            <column name="previous_change_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-126">
+        <createTable tableName="material_last_modified">
+            <column autoIncrement="true" name="material_last_modified_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_last_modified_pkey"/>
+            </column>
+            <column name="alertpartversion" type="BOOL"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-127">
+        <createTable tableName="material_line">
+            <column autoIncrement="true" name="material_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_line_pkey"/>
+            </column>
+            <column name="barcode" type="VARCHAR(255)"/>
+            <column name="binlocationcode" type="VARCHAR(255)"/>
+            <column name="borrowed" type="BOOL"/>
+            <column name="directsend" type="VARCHAR(20)"/>
+            <column name="expirationdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="finalwhsiteid" type="VARCHAR(255)"/>
+            <column name="inspectionstatus" type="VARCHAR(20)"/>
+            <column name="isordercancelled" type="BOOL"/>
+            <column name="orderno" type="VARCHAR(255)"/>
+            <column name="placementoid" type="BIGINT"/>
+            <column name="previousstatus" type="VARCHAR(21)"/>
+            <column name="procuretype" type="SMALLINT"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="receiveddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="released" type="BOOL"/>
+            <column name="requestedexcluded" type="BOOL"/>
+            <column name="reservedtimestamp" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="reserveduserid" type="VARCHAR(255)"/>
+            <column name="status" type="VARCHAR(21)"/>
+            <column name="statusdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="statususerid" type="VARCHAR(255)"/>
+            <column name="statususername" type="VARCHAR(255)"/>
+            <column name="storageroomcode" type="VARCHAR(255)"/>
+            <column name="storageroomname" type="VARCHAR(255)"/>
+            <column name="transportlabelcode" type="VARCHAR(255)"/>
+            <column name="whsiteid" type="VARCHAR(255)"/>
+            <column name="zonecode" type="VARCHAR(255)"/>
+            <column name="zonename" type="VARCHAR(255)"/>
+            <column name="zonetype" type="SMALLINT"/>
+            <column name="version" type="INT"/>
+            <column name="delivery_note_line_oid" type="BIGINT"/>
+            <column name="material_oid" type="BIGINT"/>
+            <column name="material_line_status_time_oid" type="BIGINT"/>
+            <column name="material_owner_oid" type="BIGINT"/>
+            <column name="pick_list_oid" type="BIGINT"/>
+            <column name="request_group_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-128">
+        <createTable tableName="material_line_status_counter">
+            <column autoIncrement="true" name="material_line_status_counter_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_line_status_counter_pkey"/>
+            </column>
+            <column name="date" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="whsite" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-129">
+        <createTable tableName="material_line_status_time">
+            <column autoIncrement="true" name="material_line_status_time_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_line_status_time_pkey"/>
+            </column>
+            <column name="pickedbinlocation" type="VARCHAR(255)"/>
+            <column name="pickedqty" type="BIGINT"/>
+            <column name="pickedstorageroom" type="VARCHAR(255)"/>
+            <column name="pickedtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="receivedtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="requesttime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="requestedqty" type="BIGINT"/>
+            <column name="shippedtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="storedbinlocation" type="VARCHAR(255)"/>
+            <column name="storedqty" type="BIGINT"/>
+            <column name="storedstorageroom" type="VARCHAR(255)"/>
+            <column name="storedtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-130">
+        <createTable tableName="material_part_alias">
+            <column autoIncrement="true" name="material_part_alias_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_part_alias_pkey"/>
+            </column>
+            <column name="koladomain" type="VARCHAR(20)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="material_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-131">
+        <createTable tableName="material_req_sequence">
+            <column name="material_req_sequence_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="material_req_sequence_count" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-132">
+        <createTable tableName="material_req_version">
+            <column autoIncrement="true" name="material_req_version_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_req_version_pkey"/>
+            </column>
+            <column name="approvalamount" type="FLOAT8"/>
+            <column name="approvalcurrency" type="VARCHAR(255)"/>
+            <column name="changetechid" type="VARCHAR(255)"/>
+            <column name="changeversion" type="BIGINT"/>
+            <column name="mailformid" type="VARCHAR(255)"/>
+            <column name="mtrlrequestversion" type="VARCHAR(255)"/>
+            <column name="outboundlocationid" type="VARCHAR(255)"/>
+            <column name="outboundstartdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="requiredstadate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="statusdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="title" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="material_request_oid" type="BIGINT"/>
+            <column name="materialrequestobject_material_request_object_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-133">
+        <createTable tableName="material_request">
+            <column autoIncrement="true" name="material_request_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_request_pkey"/>
+            </column>
+            <column name="contactpersonname" type="VARCHAR(255)"/>
+            <column name="contactpersonuserid" type="VARCHAR(255)"/>
+            <column name="materialrequestid" type="VARCHAR(255)"/>
+            <column name="materialrequestidsequence" type="BIGINT"/>
+            <column name="requesterid" type="VARCHAR(255)"/>
+            <column name="requestername" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="version" type="INT"/>
+            <column name="current_material_req_version_oid" type="BIGINT"/>
+            <column name="finance_material_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-134">
+        <createTable tableName="material_request_line">
+            <column autoIncrement="true" name="material_request_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_request_line_pkey"/>
+            </column>
+            <column name="changetechid" type="VARCHAR(255)"/>
+            <column name="functiongroup" type="VARCHAR(255)"/>
+            <column name="operation" type="VARCHAR(255)"/>
+            <column name="partaffiliation" type="VARCHAR(255)"/>
+            <column name="partmodification" type="VARCHAR(255)"/>
+            <column name="partname" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="productclass" type="VARCHAR(255)"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="removemarked" type="BOOL"/>
+            <column name="requestlinkid" type="BIGINT"/>
+            <column name="unitofmeasure" type="VARCHAR(255)"/>
+            <column name="updatedmaterialrequestlineoid" type="BIGINT"/>
+            <column name="version" type="INT"/>
+            <column name="material_request_object_oid" type="BIGINT"/>
+            <column name="material_request_version_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-135">
+        <createTable tableName="material_request_object">
+            <column autoIncrement="true" name="material_request_object_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="material_request_object_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-136">
+        <createTable tableName="order_line">
+            <column autoIncrement="true" name="order_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="order_line_pkey"/>
+            </column>
+            <column name="buyerpartyid" type="VARCHAR(255)"/>
+            <column name="completetype" type="VARCHAR(20)"/>
+            <column name="countryoforigin" type="VARCHAR(255)"/>
+            <column name="currency" type="VARCHAR(255)"/>
+            <column name="deliverycontrolleruserid" type="VARCHAR(255)"/>
+            <column name="deliverycontrollerusername" type="VARCHAR(255)"/>
+            <column name="deliverydeviation" type="BOOL"/>
+            <column name="domesticinvoicesto" type="VARCHAR(255)"/>
+            <column name="earliestexpecteddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="freetext" type="VARCHAR(255)"/>
+            <column name="freighttermcode" type="VARCHAR(255)"/>
+            <column name="internationalinvoicesto" type="VARCHAR(255)"/>
+            <column name="paidquantity" type="BIGINT"/>
+            <column name="partaffiliation" type="VARCHAR(255)"/>
+            <column name="partname" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="paymentterm" type="VARCHAR(255)"/>
+            <column name="possibletoreceivequantity" type="BIGINT"/>
+            <column name="pricestartdatetime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="qimarking" type="VARCHAR(20)"/>
+            <column name="receivedquantity" type="BIGINT"/>
+            <column name="requisitionid" type="VARCHAR(255)"/>
+            <column name="shiptopartyid" type="VARCHAR(255)"/>
+            <column name="shiptopartyname" type="VARCHAR(255)"/>
+            <column name="staagreeddateupdated" type="BOOL"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="supplierpartno" type="VARCHAR(255)"/>
+            <column name="unitofmeasure" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="current_order_line_version_oid" type="BIGINT"/>
+            <column name="order_oid" type="BIGINT"/>
+            <column name="order_line_last_modified_oid" type="BIGINT"/>
+            <column name="procure_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-137">
+        <createTable tableName="order_line_last_modified">
+            <column autoIncrement="true" name="order_line_last_modified_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="order_line_last_modified_pkey"/>
+            </column>
+            <column name="alertorderstadate" type="BOOL"/>
+            <column name="alertpartversion" type="BOOL"/>
+            <column name="alertquantity" type="BOOL"/>
+            <column name="modifiedbyuserid" type="VARCHAR(255)"/>
+            <column name="modifiedtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-138">
+        <createTable tableName="order_line_log">
+            <column name="event_log_oid" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="order_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-139">
+        <createTable tableName="order_line_version">
+            <column autoIncrement="true" name="order_line_version_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="order_line_version_pkey"/>
+            </column>
+            <column name="buyeremail" type="VARCHAR(255)"/>
+            <column name="buyerid" type="VARCHAR(255)"/>
+            <column name="buyername" type="VARCHAR(255)"/>
+            <column name="buyersecurityid" type="VARCHAR(255)"/>
+            <column name="currency" type="VARCHAR(255)"/>
+            <column name="orderstadate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="orderstadateontime" type="BOOL"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="perquantity" type="BIGINT"/>
+            <column name="pricetype" type="SMALLINT"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="revisionid" type="VARCHAR(255)"/>
+            <column name="staaccepteddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="staagreeddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="staagreeddateontime" type="BOOL"/>
+            <column name="staagreedlastupdated" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="unitprice" type="FLOAT8"/>
+            <column name="unitpriceineuro" type="FLOAT8"/>
+            <column name="versiondate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="versionno" type="BIGINT"/>
+            <column name="version" type="INT"/>
+            <column name="order_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-140">
+        <createTable tableName="order_log">
+            <column name="event_log_oid" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="order_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-141">
+        <createTable tableName="order_sap">
+            <column autoIncrement="true" name="order_sap_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="order_sap_pkey"/>
+            </column>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="currency" type="VARCHAR(255)"/>
+            <column name="documentdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="messagestatus" type="VARCHAR(20)"/>
+            <column name="ordertype" type="VARCHAR(255)"/>
+            <column name="purchasegroup" type="VARCHAR(255)"/>
+            <column name="purchaseorganization" type="VARCHAR(255)"/>
+            <column name="purchasetype" type="VARCHAR(255)"/>
+            <column name="suppressdecimal" type="BOOL"/>
+            <column name="uniqueextorder" type="VARCHAR(255)"/>
+            <column name="vendor" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-142">
+        <createTable tableName="order_sap_accounts">
+            <column autoIncrement="true" name="order_sap_accounts_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="order_sap_accounts_pkey"/>
+            </column>
+            <column name="costcenter" type="VARCHAR(255)"/>
+            <column name="generalledgeraccount" type="VARCHAR(255)"/>
+            <column name="sequence" type="BIGINT"/>
+            <column name="wbselement" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="order_sap_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-143">
+        <createTable tableName="order_sap_line">
+            <column autoIncrement="true" name="order_sap_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="order_sap_line_pkey"/>
+            </column>
+            <column name="accountassignmentcategory" type="VARCHAR(255)"/>
+            <column name="acknowledgementnumber" type="VARCHAR(255)"/>
+            <column name="action" type="VARCHAR(255)"/>
+            <column name="canceldate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="currentbuyer" type="VARCHAR(255)"/>
+            <column name="estimatedpriceindicator" type="BOOL"/>
+            <column name="grindicator" type="VARCHAR(255)"/>
+            <column name="irindicator" type="VARCHAR(255)"/>
+            <column name="isoorderpriceunit" type="VARCHAR(255)"/>
+            <column name="isopurchaseorderunit" type="VARCHAR(255)"/>
+            <column name="materialgroup" type="VARCHAR(255)"/>
+            <column name="netprice" type="FLOAT8"/>
+            <column name="nonvaluedgrindicator" type="VARCHAR(255)"/>
+            <column name="orderreference" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="plant" type="VARCHAR(255)"/>
+            <column name="priceunit" type="VARCHAR(255)"/>
+            <column name="purchaseorderitem" type="BIGINT"/>
+            <column name="purchaserequisitionnumber" type="VARCHAR(255)"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="requisitionid" type="BIGINT"/>
+            <column name="shorttext" type="VARCHAR(255)"/>
+            <column name="taxcode" type="VARCHAR(255)"/>
+            <column name="unlimiteddeliveryindicator" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="order_line_version_oid" type="BIGINT"/>
+            <column name="order_sap_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-144">
+        <createTable tableName="order_sap_schedule">
+            <column autoIncrement="true" name="order_sap_schedule_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="order_sap_schedule_pkey"/>
+            </column>
+            <column name="categoryofdeliverydate" type="VARCHAR(255)"/>
+            <column name="deliverydate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="version" type="INT"/>
+            <column name="order_sap_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-145">
+        <createTable tableName="orders">
+            <column autoIncrement="true" name="order_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="orders_pkey"/>
+            </column>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="deliverycontrollerteam" type="VARCHAR(255)"/>
+            <column name="internalexternal" type="VARCHAR(20)"/>
+            <column name="materialusercategory" type="VARCHAR(255)"/>
+            <column name="materialuserid" type="VARCHAR(255)"/>
+            <column name="materialusername" type="VARCHAR(255)"/>
+            <column name="migrated" type="BOOL"/>
+            <column name="orderdatetime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="orderidgps" type="VARCHAR(255)"/>
+            <column name="ordermode" type="VARCHAR(255)"/>
+            <column name="orderno" type="VARCHAR(255)"/>
+            <column name="shiptoid" type="VARCHAR(255)"/>
+            <column name="suffix" type="VARCHAR(255)"/>
+            <column name="suppliercategory" type="VARCHAR(255)"/>
+            <column name="supplierid" type="VARCHAR(255)"/>
+            <column name="suppliername" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-146">
+        <createTable tableName="part_affiliation">
+            <column autoIncrement="true" name="part_affiliation_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="part_affiliation_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(1)"/>
+            <column name="displayseq" type="INT"/>
+            <column name="name" type="VARCHAR(60)"/>
+            <column name="requestable" type="BOOL"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-147">
+        <createTable tableName="part_alias">
+            <column autoIncrement="true" name="part_alias_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="part_alias_pkey"/>
+            </column>
+            <column name="aliaspartnumber" type="VARCHAR(255)"/>
+            <column name="domain" type="VARCHAR(20)"/>
+            <column name="version" type="INT"/>
+            <column name="part_number_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-148">
+        <createTable tableName="part_alias_mapping">
+            <column autoIncrement="true" name="part_alias_mapping_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="part_alias_mapping_pkey"/>
+            </column>
+            <column name="gpsqualifier" type="VARCHAR(255)"/>
+            <column name="koladomain" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-149">
+        <createTable tableName="part_number">
+            <column autoIncrement="true" name="part_number_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="part_number_pkey"/>
+            </column>
+            <column name="volvopartaffiliation" type="VARCHAR(255)"/>
+            <column name="volvopartnumber" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-150">
+        <createTable tableName="pick_list">
+            <column autoIncrement="true" name="pick_list_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="pick_list_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="pulledbyuserid" type="VARCHAR(255)"/>
+            <column name="reservedtimestamp" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="reserveduserid" type="VARCHAR(255)"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-151">
+        <createTable tableName="placement">
+            <column autoIncrement="true" name="placement_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="placement_pkey"/>
+            </column>
+            <column name="materiallineoid" type="BIGINT"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="version" type="INT"/>
+            <column name="bin_location_oid" type="BIGINT"/>
+            <column name="binlocation_balance_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-152">
+        <createTable tableName="printer">
+            <column autoIncrement="true" name="printer_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="printer_pkey"/>
+            </column>
+            <column name="hostaddress" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="warehouse_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-153">
+        <createTable tableName="problem_doc">
+            <column autoIncrement="true" name="problem_doc_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="problem_doc_pkey"/>
+            </column>
+            <column name="creation_date" type="TIMESTAMP(6) WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="documentname" type="VARCHAR(255)"/>
+            <column name="filecontent" type="BYTEA"/>
+            <column name="delivery_note_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-154">
+        <createTable tableName="procure_line">
+            <column autoIncrement="true" name="procure_line_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="procure_line_pkey"/>
+            </column>
+            <column name="additionalquantity" type="BIGINT"/>
+            <column name="buyercode" type="VARCHAR(255)"/>
+            <column name="buyername" type="VARCHAR(255)"/>
+            <column name="changerequestids" type="VARCHAR(255)"/>
+            <column name="crhasbeenmoved" type="BOOL"/>
+            <column name="currency" type="VARCHAR(255)"/>
+            <column name="dangerousgoodsoid" type="BIGINT"/>
+            <column name="dfuobjectnumber" type="VARCHAR(255)"/>
+            <column name="forwardedfordc" type="BOOL"/>
+            <column name="forwardedteam" type="VARCHAR(255)"/>
+            <column name="forwardeduserid" type="VARCHAR(255)"/>
+            <column name="forwardedusername" type="VARCHAR(255)"/>
+            <column name="fromstockallowed" type="BOOL"/>
+            <column name="fromstockqty" type="BIGINT"/>
+            <column name="functiongroupid" type="VARCHAR(255)"/>
+            <column name="groupingkeycompress" type="BYTEA"/>
+            <column name="groupingkeymd5" type="VARCHAR(255)"/>
+            <column name="materialcontrollerid" type="VARCHAR(255)"/>
+            <column name="materialcontrollername" type="VARCHAR(255)"/>
+            <column name="materialcontrollerteam" type="VARCHAR(255)"/>
+            <column name="maxprice" type="FLOAT8"/>
+            <column name="needischanged" type="BOOL"/>
+            <column name="orderno" type="VARCHAR(255)"/>
+            <column name="orderstadate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="ppartaffiliation" type="VARCHAR(255)"/>
+            <column name="ppartmodification" type="VARCHAR(255)"/>
+            <column name="ppartname" type="VARCHAR(255)"/>
+            <column name="ppartnameupdated" type="BOOL"/>
+            <column name="ppartnumber" type="VARCHAR(255)"/>
+            <column name="ppartversion" type="VARCHAR(255)"/>
+            <column name="perquantity" type="BIGINT"/>
+            <column name="pricetype" type="VARCHAR(255)"/>
+            <column name="procuredate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="procurefailuredate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="procureinfo" type="VARCHAR(255)"/>
+            <column name="procureteam" type="VARCHAR(255)"/>
+            <column name="procuretype" type="VARCHAR(20)"/>
+            <column name="procureuserid" type="VARCHAR(255)"/>
+            <column name="purchaseorgcode" type="VARCHAR(255)"/>
+            <column name="purchaseorgname" type="VARCHAR(255)"/>
+            <column name="qualitydocumentoid" type="BIGINT"/>
+            <column name="referencegps" type="VARCHAR(255)"/>
+            <column name="referencegroups" type="VARCHAR(255)"/>
+            <column name="referenceids" type="VARCHAR(255)"/>
+            <column name="requiredstadate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="requisitionid" type="VARCHAR(255)"/>
+            <column name="responsibility" type="VARCHAR(20)"/>
+            <column name="shiptoid" type="VARCHAR(255)"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="suppliercounterpartoid" type="BIGINT"/>
+            <column name="suppliercountrycode" type="VARCHAR(255)"/>
+            <column name="unitprice" type="FLOAT8"/>
+            <column name="usagequantity" type="BIGINT"/>
+            <column name="warehousecomment" type="VARCHAR(255)"/>
+            <column name="whsiteid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="finance_header_oid" type="BIGINT"/>
+            <column name="part_alias_oid" type="BIGINT"/>
+            <column name="requisition_oid" type="BIGINT"/>
+            <column name="supplier_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-155">
+        <createTable tableName="purchase_organisation">
+            <column autoIncrement="true" name="purchase_organisation_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="purchase_organisation_pkey"/>
+            </column>
+            <column name="organisationcode" type="VARCHAR(255)"/>
+            <column name="organisationname" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-156">
+        <createTable tableName="qi_doc">
+            <column autoIncrement="true" name="qi_doc_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="qi_doc_pkey"/>
+            </column>
+            <column name="creation_date" type="TIMESTAMP(6) WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="documentname" type="VARCHAR(255)"/>
+            <column name="filecontent" type="BYTEA"/>
+            <column name="delivery_note_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-157">
+        <createTable tableName="quality_document">
+            <column autoIncrement="true" name="quality_document_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="quality_document_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="displayseq" type="BIGINT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-158">
+        <createTable tableName="quality_inspection_part">
+            <column autoIncrement="true" name="quality_inspection_part_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="quality_inspection_part_pkey"/>
+            </column>
+            <column name="mandatory" type="BOOL"/>
+            <column name="partname" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="version" type="BIGINT"/>
+            <column name="warehouse_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-159">
+        <createTable tableName="quality_inspection_project">
+            <column autoIncrement="true" name="quality_inspection_project_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="quality_inspection_project_pkey"/>
+            </column>
+            <column name="mandatory" type="BOOL"/>
+            <column name="project" type="VARCHAR(255)"/>
+            <column name="version" type="BIGINT"/>
+            <column name="warehouse_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-160">
+        <createTable tableName="quality_inspection_supplier">
+            <column autoIncrement="true" name="quality_inspection_supplier_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="quality_inspection_supplier_pkey"/>
+            </column>
+            <column name="mandatory" type="BOOL"/>
+            <column name="supplier" type="VARCHAR(255)"/>
+            <column name="version" type="BIGINT"/>
+            <column name="warehouse_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-161">
+        <createTable tableName="receive_doc">
+            <column autoIncrement="true" name="receive_doc_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="receive_doc_pkey"/>
+            </column>
+            <column name="creation_date" type="TIMESTAMP(6) WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="documentname" type="VARCHAR(255)"/>
+            <column name="filecontent" type="BYTEA"/>
+            <column name="delivery_note_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-162">
+        <createTable tableName="report_filter">
+            <column autoIncrement="true" name="report_filter_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="report_filter_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="gloria_user_oid" type="BIGINT"/>
+            <column name="agreedsta" type="BOOL"/>
+            <column name="binlocation" type="BOOL"/>
+            <column name="blockedqty" type="BOOL"/>
+            <column name="buildlocationid" type="BOOL"/>
+            <column name="buildlocationname" type="BOOL"/>
+            <column name="buildstart" type="BOOL"/>
+            <column name="buyerid" type="BOOL"/>
+            <column name="buyername" type="BOOL"/>
+            <column name="contactpersonid" type="BOOL"/>
+            <column name="contactpersonname" type="BOOL"/>
+            <column name="costcenter" type="BOOL"/>
+            <column name="currency" type="BOOL"/>
+            <column name="deliveryaddressid" type="BOOL"/>
+            <column name="deliveryaddressname" type="BOOL"/>
+            <column name="deliverycontrollerid" type="BOOL"/>
+            <column name="deliverycontrollername" type="BOOL"/>
+            <column name="deliverynoteno" type="BOOL"/>
+            <column name="designgroup" type="BOOL"/>
+            <column name="dispatchnoteno" type="BOOL"/>
+            <column name="expecteddate" type="BOOL"/>
+            <column name="expectedqty" type="BOOL"/>
+            <column name="functiongroup" type="BOOL"/>
+            <column name="glaccount" type="BOOL"/>
+            <column name="inspectionstatus" type="BOOL"/>
+            <column name="internalordersap" type="BOOL"/>
+            <column name="internalprocurerid" type="BOOL"/>
+            <column name="mailformid" type="BOOL"/>
+            <column name="materialcontrollerid" type="BOOL"/>
+            <column name="materialcontrollername" type="BOOL"/>
+            <column name="modularharness" type="BOOL"/>
+            <column name="orderdate" type="BOOL"/>
+            <column name="orderlinelogeventvalue" type="BOOL"/>
+            <column name="orderlogeventvalue" type="BOOL"/>
+            <column name="orderno" type="BOOL"/>
+            <column name="orderqty" type="BOOL"/>
+            <column name="ordersta" type="BOOL"/>
+            <column name="orderstatus" type="BOOL"/>
+            <column name="planneddispatchdate" type="BOOL"/>
+            <column name="possibletoreceiveqty" type="BOOL"/>
+            <column name="price" type="BOOL"/>
+            <column name="problemdescription" type="BOOL"/>
+            <column name="procureinfo" type="BOOL"/>
+            <column name="purchasingorganisation" type="BOOL"/>
+            <column name="qty" type="BOOL"/>
+            <column name="qualityinspectioncomment" type="BOOL"/>
+            <column name="receiveddate" type="BOOL"/>
+            <column name="receivedqty" type="BOOL"/>
+            <column name="reference" type="BOOL"/>
+            <column name="requesterid" type="BOOL"/>
+            <column name="requestername" type="BOOL"/>
+            <column name="requiredsta" type="BOOL"/>
+            <column name="requisitiondate" type="BOOL"/>
+            <column name="requisitionid" type="BOOL"/>
+            <column name="source" type="BOOL"/>
+            <column name="staaccepted" type="BOOL"/>
+            <column name="staagreedlastupdated" type="BOOL"/>
+            <column name="statususerid" type="BOOL"/>
+            <column name="statususername" type="BOOL"/>
+            <column name="storageroom" type="BOOL"/>
+            <column name="suppliername" type="BOOL"/>
+            <column name="supplierparmaid" type="BOOL"/>
+            <column name="unitofmeasure" type="BOOL"/>
+            <column name="unitofprice" type="BOOL"/>
+            <column name="unitprice" type="BOOL"/>
+            <column name="warehouse" type="BOOL"/>
+            <column name="additionalqty" type="BOOL"/>
+            <column name="damagedqty" type="BOOL"/>
+            <column name="expectedarrival" type="BOOL"/>
+            <column name="lastmodifieddate" type="BOOL"/>
+            <column name="orderlinelog" type="BOOL"/>
+            <column name="orderlog" type="BOOL"/>
+            <column name="ordertype" type="BOOL"/>
+            <column name="procureteam" type="BOOL"/>
+            <column name="purchasingorg" type="BOOL"/>
+            <column name="qtytestobject" type="BOOL"/>
+            <column name="receiveddatetime" type="BOOL"/>
+            <column name="requisitionsite" type="BOOL"/>
+            <column name="wbs" type="BOOL"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-163">
+        <createTable tableName="request_group">
+            <column autoIncrement="true" name="request_group_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="request_group_pkey"/>
+            </column>
+            <column name="changerequestids" type="VARCHAR(255)"/>
+            <column name="phase" type="VARCHAR(255)"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="referencegroup" type="VARCHAR(255)"/>
+            <column name="referenceid" type="VARCHAR(255)"/>
+            <column name="zoneid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="pick_list_oid" type="BIGINT"/>
+            <column name="request_list_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-164">
+        <createTable tableName="request_list">
+            <column autoIncrement="true" name="request_list_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="request_list_pkey"/>
+            </column>
+            <column name="createddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="deliveryaddressid" type="VARCHAR(255)"/>
+            <column name="deliveryaddressname" type="VARCHAR(255)"/>
+            <column name="deliveryaddresstype" type="VARCHAR(20)"/>
+            <column name="priority" type="BIGINT"/>
+            <column name="requestuserid" type="VARCHAR(255)"/>
+            <column name="requestername" type="VARCHAR(255)"/>
+            <column name="requireddeliverydate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="shipvia" type="VARCHAR(255)"/>
+            <column name="shipmenttype" type="VARCHAR(20)"/>
+            <column name="status" type="VARCHAR(20)"/>
+            <column name="whsiteid" type="VARCHAR(255)"/>
+            <column name="whsitename" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="dispatch_note_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-165">
+        <createTable tableName="requisition">
+            <column autoIncrement="true" name="requisition_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="requisition_pkey"/>
+            </column>
+            <column name="buyerid" type="VARCHAR(255)"/>
+            <column name="cancelled" type="BOOL"/>
+            <column name="contactpersonname" type="VARCHAR(255)"/>
+            <column name="costcenter" type="VARCHAR(255)"/>
+            <column name="glaccount" type="VARCHAR(255)"/>
+            <column name="inspection" type="VARCHAR(255)"/>
+            <column name="issuerdepartment" type="VARCHAR(255)"/>
+            <column name="issuerhandleid" type="VARCHAR(255)"/>
+            <column name="issuername" type="VARCHAR(255)"/>
+            <column name="issuerorganisation" type="VARCHAR(255)"/>
+            <column name="issuerphoneno" type="VARCHAR(255)"/>
+            <column name="issueruserid" type="VARCHAR(255)"/>
+            <column name="materialuserid" type="VARCHAR(255)"/>
+            <column name="maximumprice" type="FLOAT8"/>
+            <column name="maximumcurrency" type="VARCHAR(255)"/>
+            <column name="originatorname" type="VARCHAR(255)"/>
+            <column name="originatoruserid" type="VARCHAR(255)"/>
+            <column name="partfunctiongroup" type="VARCHAR(255)"/>
+            <column name="partname" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="partqualifier" type="VARCHAR(255)"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="ppsuffix" type="VARCHAR(255)"/>
+            <column name="pricetype" type="VARCHAR(255)"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="purchaseinfo1" type="VARCHAR(255)"/>
+            <column name="purchaseinfo2" type="VARCHAR(255)"/>
+            <column name="purchaseorganizationcode" type="VARCHAR(255)"/>
+            <column name="quantity" type="BIGINT"/>
+            <column name="reference" type="VARCHAR(255)"/>
+            <column name="requiredstadate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="requiredstaweek" type="VARCHAR(255)"/>
+            <column name="requisitionid" type="VARCHAR(255)"/>
+            <column name="requisitionidsequence" type="BIGINT"/>
+            <column name="unitofmeasure" type="VARCHAR(255)"/>
+            <column name="wbscode" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-166">
+        <createTable tableName="sequence">
+            <column name="seq_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="seq_count" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-167">
+        <createTable tableName="site">
+            <column autoIncrement="true" name="site_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="site_pkey"/>
+            </column>
+            <column name="address" type="VARCHAR(255)"/>
+            <column name="buildsite" type="BOOL"/>
+            <column name="buildsitetype" type="VARCHAR(255)"/>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="countrycode" type="VARCHAR(255)"/>
+            <column name="jointventure" type="BOOL"/>
+            <column name="phone" type="VARCHAR(255)"/>
+            <column name="shiptosite" type="BOOL"/>
+            <column name="shiptotype" type="VARCHAR(255)"/>
+            <column name="sitecode" type="VARCHAR(255)"/>
+            <column name="siteid" type="VARCHAR(255)"/>
+            <column name="sitename" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-168">
+        <createTable tableName="storage_room">
+            <column autoIncrement="true" name="storage_room_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="storage_room_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="warehouse_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-169">
+        <createTable tableName="supplier">
+            <column autoIncrement="true" name="supplier_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="supplier_pkey"/>
+            </column>
+            <column name="alias" type="BOOL"/>
+            <column name="currency" type="VARCHAR(255)"/>
+            <column name="domain" type="VARCHAR(20)"/>
+            <column name="partaffiliation" type="VARCHAR(255)"/>
+            <column name="partnumber" type="VARCHAR(255)"/>
+            <column name="partversion" type="VARCHAR(255)"/>
+            <column name="priceunit" type="VARCHAR(255)"/>
+            <column name="supplierid" type="VARCHAR(255)"/>
+            <column name="suppliername" type="VARCHAR(255)"/>
+            <column name="suppliertype" type="VARCHAR(25)"/>
+            <column name="unitprice" type="FLOAT8"/>
+            <column name="version" type="INT"/>
+            <column name="procure_line_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-170">
+        <createTable tableName="supplier_counter_part">
+            <column autoIncrement="true" name="supplier_counter_part_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="supplier_counter_part_pkey"/>
+            </column>
+            <column name="comment" type="VARCHAR(255)"/>
+            <column name="companycode" type="VARCHAR(255)"/>
+            <column name="disabledprocure" type="BOOL"/>
+            <column name="domesticinvoiceid" type="VARCHAR(255)"/>
+            <column name="internationalinvoiceid" type="VARCHAR(255)"/>
+            <column name="materialuserid" type="VARCHAR(255)"/>
+            <column name="ppsuffix" type="VARCHAR(255)"/>
+            <column name="shiptoid" type="VARCHAR(255)"/>
+            <column name="transitaddressid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="delivery_follow_up_team_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-171">
+        <createTable tableName="team">
+            <column autoIncrement="true" name="team_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="team_pkey"/>
+            </column>
+            <column name="companycodegroup" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-172">
+        <createTable tableName="traceability">
+            <column autoIncrement="true" name="traceability_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="traceability_pkey"/>
+            </column>
+            <column name="action" type="VARCHAR(255)"/>
+            <column name="actiondetail" type="VARCHAR(255)"/>
+            <column name="allowedquantity" type="BIGINT"/>
+            <column name="binlocationcode" type="VARCHAR(255)"/>
+            <column name="deliveryscheduleoid" type="BIGINT"/>
+            <column name="expecteddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="expectedqty" type="BIGINT"/>
+            <column name="i18messagecode" type="VARCHAR(255)"/>
+            <column name="internalexternal" type="VARCHAR(255)"/>
+            <column name="link" type="VARCHAR(255)"/>
+            <column name="linktype" type="VARCHAR(255)"/>
+            <column name="loggedtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="materiallineoid" type="BIGINT"/>
+            <column name="materialoid" type="BIGINT"/>
+            <column name="mlquantity" type="BIGINT"/>
+            <column name="mlstatus" type="VARCHAR(255)"/>
+            <column name="olquantity" type="BIGINT"/>
+            <column name="olstatus" type="VARCHAR(255)"/>
+            <column name="orderdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="orderlineoid" type="BIGINT"/>
+            <column name="orderno" type="VARCHAR(255)"/>
+            <column name="planneddispatchdate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="staaccepteddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="staagreeddate" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="traceabilitytype" type="VARCHAR(20)"/>
+            <column name="userid" type="VARCHAR(255)"/>
+            <column name="username" type="VARCHAR(255)"/>
+            <column name="usertext" type="VARCHAR(255)"/>
+            <column name="whsiteid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-173">
+        <createTable tableName="transport_label">
+            <column autoIncrement="true" name="transport_label_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="transport_label_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="createtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="whsiteid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-174">
+        <createTable tableName="unit_of_measure">
+            <column autoIncrement="true" name="unit_of_measure_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="unit_of_measure_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="displayseq" type="INT"/>
+            <column name="gloriacode" type="BOOL"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-175">
+        <createTable tableName="user_application">
+            <column autoIncrement="true" name="user_application_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="user_application_pkey"/>
+            </column>
+            <column name="applicationdescription" type="VARCHAR(255)"/>
+            <column name="applicationid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="gloria_user_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-176">
+        <createTable tableName="user_category">
+            <column autoIncrement="true" name="user_category_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="user_category_pkey"/>
+            </column>
+            <column name="endtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="usercategorydescription" type="VARCHAR(255)"/>
+            <column name="usercategoryid" type="VARCHAR(255)"/>
+            <column name="userapplication" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-177">
+        <createTable tableName="user_company_code">
+            <column autoIncrement="true" name="user_company_code_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="user_company_code_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="gloria_user_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-178">
+        <createTable tableName="user_log">
+            <column autoIncrement="true" name="user_log_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="user_log_pkey"/>
+            </column>
+            <column name="action" type="VARCHAR(255)"/>
+            <column name="actiondetail" type="VARCHAR(255)"/>
+            <column name="loggedtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="userid" type="VARCHAR(255)"/>
+            <column name="username" type="VARCHAR(255)"/>
+            <column name="usertext" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-179">
+        <createTable tableName="warehouse">
+            <column autoIncrement="true" name="warehouse_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="warehouse_pkey"/>
+            </column>
+            <column name="qisupported" type="BOOL"/>
+            <column name="setup" type="VARCHAR(20)"/>
+            <column name="siteid" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-180">
+        <createTable tableName="wbs_element">
+            <column autoIncrement="true" name="wbs_element_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="wbs_element_pkey"/>
+            </column>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="projectid" type="VARCHAR(255)"/>
+            <column name="wbs" type="VARCHAR(255)"/>
+            <column name="version" type="INT"/>
+            <column name="company_code_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-181">
+        <createTable tableName="xml_message_log">
+            <column autoIncrement="true" name="xmlmessagelog_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="xml_message_log_pkey"/>
+            </column>
+            <column name="application" type="VARCHAR(255)"/>
+            <column name="eventtime" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="integration" type="VARCHAR(255)"/>
+            <column name="jmsmessageid" type="VARCHAR(255)"/>
+            <column name="sentreceived" type="VARCHAR(255)"/>
+            <column name="xmlmessage" type="BYTEA"/>
+            <column name="version" type="INT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-182">
+        <createTable tableName="zone">
+            <column autoIncrement="true" name="zone_oid" type="BIGSERIAL">
+                <constraints primaryKey="true" primaryKeyName="zone_pkey"/>
+            </column>
+            <column name="code" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(20)"/>
+            <column name="version" type="INT"/>
+            <column name="storage_room_oid" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-183">
+        <addPrimaryKey columnNames="event_log_oid" constraintName="delivery_log_pkey" tableName="delivery_log"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-184">
+        <addPrimaryKey columnNames="material_req_sequence_name" constraintName="material_req_sequence_pkey" tableName="material_req_sequence"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-185">
+        <addPrimaryKey columnNames="event_log_oid" constraintName="order_line_log_pkey" tableName="order_line_log"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-186">
+        <addPrimaryKey columnNames="event_log_oid" constraintName="order_log_pkey" tableName="order_log"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-187">
+        <addPrimaryKey columnNames="seq_name" constraintName="sequence_pkey" tableName="sequence"/>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-188">
+        <createIndex indexName="i_address_gloriauser" tableName="address">
+            <column name="gloria_user_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-189">
+        <createIndex indexName="i_bn_lctn_zone" tableName="bin_location">
+            <column name="zone_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-190">
+        <createIndex indexName="i_bnlclnc_binlocation" tableName="binlocation_balance">
+            <column name="bin_location_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-191">
+        <createIndex indexName="i_bnlclnc_warehouse" tableName="binlocation_balance">
+            <column name="warehouse_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-192">
+        <createIndex indexName="i_buyer_purchaseorganisation" tableName="buyer">
+            <column name="purchase_organisation_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-193">
+        <createIndex indexName="i_bysttng_aislerackrow" tableName="baysetting">
+            <column name="aisle_rack_row_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-194">
+        <createIndex indexName="i_cmpn_cd_companygroup" tableName="company_code">
+            <column name="company_group_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-195">
+        <createIndex indexName="i_crrn_rt_currency" tableName="currency_rate">
+            <column name="currency_currency_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-196">
+        <createIndex indexName="i_cst_ntr_companycode" tableName="cost_center">
+            <column name="company_code_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-197">
+        <createIndex indexName="i_dlvr_lg_deliveryschedule" tableName="delivery_log">
+            <column name="delivery_schedule_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-198">
+        <createIndex indexName="i_dlvr_ln_deliverynote" tableName="delivery_note_line">
+            <column name="delivery_note_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-199">
+        <createIndex indexName="i_dlvr_ln_deliverynoteline" tableName="delivery_note_sub_line">
+            <column name="delivery_note_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-200">
+        <createIndex indexName="i_dlvr_ln_orderline" tableName="delivery_note_line">
+            <column name="order_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-201">
+        <createIndex indexName="i_dlvr_ln_transportlabel" tableName="delivery_note_sub_line">
+            <column name="transport_label"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-202">
+        <createIndex indexName="i_dlvrhdl_orderline" tableName="delivery_schedule">
+            <column name="order_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-203">
+        <createIndex indexName="i_dlvrltr_deliveryfollowupteam" tableName="delivery_follow_up_team_filter">
+            <column name="delivery_follow_up_team_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-204">
+        <createIndex indexName="i_dspt_nt_requestlist" tableName="dispatch_note">
+            <column name="request_list_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-205">
+        <createIndex indexName="i_gds__ln_deliverynoteline" tableName="goods_receipt_line">
+            <column name="delivery_note_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-206">
+        <createIndex indexName="i_gds__ln_goodsreceiptheader" tableName="goods_receipt_line">
+            <column name="goods_receipt_header_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-207">
+        <createIndex indexName="i_gds_hdr_deliverynote" tableName="goods_receipt_header">
+            <column name="delivery_note_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-208">
+        <createIndex indexName="i_glccunt_companycode" tableName="glaccount">
+            <column name="company_code_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-209">
+        <createIndex indexName="i_glr__tm_element" tableName="gloria_user_team">
+            <column name="gloria_user_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-210">
+        <createIndex indexName="i_glr__tm_team_oid" tableName="gloria_user_team">
+            <column name="team_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-211">
+        <createIndex indexName="i_mterial_add" tableName="material">
+            <column name="add_change_id_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-212">
+        <createIndex indexName="i_mterial_financeheader" tableName="material">
+            <column name="finance_header_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-213">
+        <createIndex indexName="i_mterial_materialheader" tableName="material">
+            <column name="material_header_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-214">
+        <createIndex indexName="i_mterial_materiallastmodified" tableName="material">
+            <column name="material_last_modified_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-215">
+        <createIndex indexName="i_mterial_orderline" tableName="material">
+            <column name="order_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-216">
+        <createIndex indexName="i_mterial_procureline" tableName="material">
+            <column name="procure_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-217">
+        <createIndex indexName="i_mterial_remove" tableName="material">
+            <column name="remove_change_id_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-218">
+        <createIndex indexName="i_mtrl_ln_deliverynoteline" tableName="material_line">
+            <column name="delivery_note_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-219">
+        <createIndex indexName="i_mtrl_ln_material" tableName="material_line">
+            <column name="material_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-220">
+        <createIndex indexName="i_mtrl_ln_materiallinestatustime" tableName="material_line">
+            <column name="material_line_status_time_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-221">
+        <createIndex indexName="i_mtrl_ln_materialowner" tableName="material_line">
+            <column name="material_owner_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-222">
+        <createIndex indexName="i_mtrl_ln_materialrequestobject" tableName="material_request_line">
+            <column name="material_request_object_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-223">
+        <createIndex indexName="i_mtrl_ln_materialrequestversion" tableName="material_request_line">
+            <column name="material_request_version_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-224">
+        <createIndex indexName="i_mtrl_ln_picklist" tableName="material_line">
+            <column name="pick_list_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-225">
+        <createIndex indexName="i_mtrl_ln_requestgroup" tableName="material_line">
+            <column name="request_group_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-226">
+        <createIndex indexName="i_mtrl_ls_material" tableName="material_part_alias">
+            <column name="material_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-227">
+        <createIndex indexName="i_mtrlhdr_accepted" tableName="material_header">
+            <column name="accepted_material_header_version_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-228">
+        <createIndex indexName="i_mtrlqst_current" tableName="material_request">
+            <column name="current_material_req_version_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-229">
+        <createIndex indexName="i_mtrlqst_financematerial" tableName="material_request">
+            <column name="finance_material_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-230">
+        <createIndex indexName="i_mtrlrsn_changeid" tableName="material_header_version">
+            <column name="change_id_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-231">
+        <createIndex indexName="i_mtrlrsn_materialheader" tableName="material_header_version">
+            <column name="material_header_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-232">
+        <createIndex indexName="i_mtrlrsn_materialrequest" tableName="material_req_version">
+            <column name="material_request_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-233">
+        <createIndex indexName="i_mtrlrsn_materialrequestobject" tableName="material_req_version">
+            <column name="materialrequestobject_material_request_object_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-234">
+        <createIndex indexName="i_mtrlrsn_previousacceptedversion" tableName="material_header_version">
+            <column name="previous_accepted_version"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-235">
+        <createIndex indexName="i_mtrlrsn_previouschangeid" tableName="material_header_version">
+            <column name="previous_change_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-236">
+        <createIndex indexName="i_ordr_ln_current" tableName="order_line">
+            <column name="current_order_line_version_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-237">
+        <createIndex indexName="i_ordr_ln_order" tableName="order_line">
+            <column name="order_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-238">
+        <createIndex indexName="i_ordr_ln_orderlinelastmodified" tableName="order_line">
+            <column name="order_line_last_modified_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-239">
+        <createIndex indexName="i_ordr_ln_procureline" tableName="order_line">
+            <column name="procure_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-240">
+        <createIndex indexName="i_plcment_binlocation" tableName="placement">
+            <column name="bin_location_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-241">
+        <createIndex indexName="i_plcment_binlocationbalance" tableName="placement">
+            <column name="binlocation_balance_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-242">
+        <createIndex indexName="i_pplctng_userapplication" tableName="application_setting">
+            <column name="userapplication"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-243">
+        <createIndex indexName="i_prbl_dc_deliverynoteline" tableName="problem_doc">
+            <column name="delivery_note_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-244">
+        <createIndex indexName="i_prcr_ln_financeheader" tableName="procure_line">
+            <column name="finance_header_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-245">
+        <createIndex indexName="i_prcr_ln_partalias" tableName="procure_line">
+            <column name="part_alias_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-246">
+        <createIndex indexName="i_prcr_ln_requisition" tableName="procure_line">
+            <column name="requisition_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-247">
+        <createIndex indexName="i_prcr_ln_supplier" tableName="procure_line">
+            <column name="supplier_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-248">
+        <createIndex indexName="i_printer_warehouse" tableName="printer">
+            <column name="warehouse_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-249">
+        <createIndex indexName="i_prt_lis_partnumber" tableName="part_alias">
+            <column name="part_number_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-250">
+        <createIndex indexName="i_qi_doc_deliverynoteline" tableName="qi_doc">
+            <column name="delivery_note_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-251">
+        <createIndex indexName="i_qltyjct_warehouse" tableName="quality_inspection_project">
+            <column name="warehouse_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-252">
+        <createIndex indexName="i_qltyplr_warehouse" tableName="quality_inspection_supplier">
+            <column name="warehouse_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-253">
+        <createIndex indexName="i_qltyprt_warehouse" tableName="quality_inspection_part">
+            <column name="warehouse_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-254">
+        <createIndex indexName="i_rcv_doc_deliverynoteline" tableName="receive_doc">
+            <column name="delivery_note_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-255">
+        <createIndex indexName="i_rdr__lg_orderline" tableName="order_line_log">
+            <column name="order_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-256">
+        <createIndex indexName="i_rdr__ln_orderlineversion" tableName="order_sap_line">
+            <column name="order_line_version_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-257">
+        <createIndex indexName="i_rdr__ln_ordersap" tableName="order_sap_line">
+            <column name="order_sap_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-258">
+        <createIndex indexName="i_rdr_hdl_ordersapline" tableName="order_sap_schedule">
+            <column name="order_sap_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-259">
+        <createIndex indexName="i_rdr_log_orders" tableName="order_log">
+            <column name="order_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-260">
+        <createIndex indexName="i_rdr_nts_ordersapline" tableName="order_sap_accounts">
+            <column name="order_sap_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-261">
+        <createIndex indexName="i_rdr_rsn_orderline" tableName="order_line_version">
+            <column name="order_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-262">
+        <createIndex indexName="i_rprtltr_dtype" tableName="report_filter">
+            <column name="type"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-263">
+        <createIndex indexName="i_rprtltr_gloriauser" tableName="report_filter">
+            <column name="gloria_user_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-264">
+        <createIndex indexName="i_rqstgrp_picklist" tableName="request_group">
+            <column name="pick_list_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-265">
+        <createIndex indexName="i_rqstgrp_requestlist" tableName="request_group">
+            <column name="request_list_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-266">
+        <createIndex indexName="i_rqstlst_dispatchnote" tableName="request_list">
+            <column name="dispatch_note_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-267">
+        <createIndex indexName="i_slrckrw_zone" tableName="aislerackrow">
+            <column name="zone_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-268">
+        <createIndex indexName="i_spplprt_deliveryfollowupteam" tableName="supplier_counter_part">
+            <column name="delivery_follow_up_team_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-269">
+        <createIndex indexName="i_sr_c_cd_gloriauser" tableName="user_company_code">
+            <column name="gloria_user_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-270">
+        <createIndex indexName="i_sr_cgry_userapplication" tableName="user_category">
+            <column name="userapplication"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-271">
+        <createIndex indexName="i_sr_pctn_gloriauser" tableName="user_application">
+            <column name="gloria_user_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-272">
+        <createIndex indexName="i_strg_rm_warehouse" tableName="storage_room">
+            <column name="warehouse_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-273">
+        <createIndex indexName="i_supplir_procureline" tableName="supplier">
+            <column name="procure_line_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-274">
+        <createIndex indexName="i_ttch_dc_deliveryschedule" tableName="attached_doc">
+            <column name="delivery_schedule_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-275">
+        <createIndex indexName="i_wbs_mnt_companycode" tableName="wbs_element">
+            <column name="company_code_oid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="v016387 (generated)" id="1457960873915-276">
+        <createIndex indexName="i_zone_storageroom" tableName="zone">
+            <column name="storage_room_oid"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

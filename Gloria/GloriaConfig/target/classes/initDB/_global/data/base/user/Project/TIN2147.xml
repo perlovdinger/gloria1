@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<UserAndOrganisation xmlns="http://userandorganisation.parts.volvo.com/1_0">
+  <UserOrganisation>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2016-05-03T13:12:03.648+0200</SendTime>
+    </GmfHeader>
+    <CIAction>C</CIAction>
+    <UserID>TIN2147</UserID>
+    <UserFirstName>Mohammed</UserFirstName>
+    <UserLastName>Azeem</UserLastName>
+    <OrganisationID>SE000093</OrganisationID>
+    <OrganisationName>931234</OrganisationName>
+    <GmfDataArea>
+      <MessageParameters>
+        <MessageParameter>2</MessageParameter>
+        <MessageParameterName>PreferredPortal</MessageParameterName>
+      </MessageParameters>
+    </GmfDataArea>
+    <AliasOrganisation>
+      <AliasOrganisationSource>CDB</AliasOrganisationSource>
+    </AliasOrganisation>
+    <Address>
+      <Street1>Box 9148</Street1>
+      <PostCode>SE-400 93</PostCode>
+      <City>Gothenburg</City>
+      <CountryCode>SE</CountryCode>
+      <PhoneNo>+46 31 734 5962</PhoneNo>
+      <Email>mohammed.azeem@volvo.com</Email>
+    </Address>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>Y</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <UserLanguage>
+      <LangCode>en</LangCode>
+      <CountryCode>GB</CountryCode>
+      <IsPreferredLanguageFlag>N</IsPreferredLanguageFlag>
+    </UserLanguage>
+    <OrganisationCompany>
+      <OrganisationID>SE000093</OrganisationID>
+      <CompName>3P</CompName>
+      <IsMainCompanyFlag>Y</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationCompany>
+      <OrganisationID>SE000093</OrganisationID>
+      <CompName>VTC</CompName>
+      <IsMainCompanyFlag>N</IsMainCompanyFlag>
+    </OrganisationCompany>
+    <OrganisationApplication>
+      <ApplicationID>27440</ApplicationID>
+      <ApplicationDescription>GLORIA</ApplicationDescription>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>34347 - LYO VE Renault Trucks</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>42102 - Volvo BLR, CV workshop</ApplicationSettingValue>
+      </ApplicationSetting>
+      <ApplicationSetting>
+        <ApplicationSettingID>WHSITE</ApplicationSettingID>
+        <ApplicationSettingValue>47670 - Curitiba Pre Production Warehouse BLCW</ApplicationSettingValue>
+      </ApplicationSetting>
+      <UserCategory>
+        <UserCategoryID>Warehouse_personell</UserCategoryID>
+        <UserCategoryDescription>Warehouse personell</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Delivery_Controller</UserCategoryID>
+        <UserCategoryDescription>Delivery Controller</UserCategoryDescription>
+      </UserCategory>
+      <UserCategory>
+        <UserCategoryID>Material_Controller</UserCategoryID>
+        <UserCategoryDescription>Material Controller</UserCategoryDescription>
+      </UserCategory>
+    </OrganisationApplication>
+  </UserOrganisation>
+  <GMFVerb>
+    <GmfHeader>
+      <MsgVersion>1.0</MsgVersion>
+      <SenderID>BALDO</SenderID>
+      <SendTime>2016-05-03T13:12:03.648+0200</SendTime>
+    </GmfHeader>
+    <CountryCode>US</CountryCode>
+    <LangCode>en</LangCode>
+    <Sync>
+      <Action>RetrieveUserOrganisation</Action>
+    </Sync>
+  </GMFVerb>
+</UserAndOrganisation>

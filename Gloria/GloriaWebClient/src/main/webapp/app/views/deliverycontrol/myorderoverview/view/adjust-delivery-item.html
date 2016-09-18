@@ -1,0 +1,37 @@
+<div class='row'>
+    <div class='col-sm-4'>
+        <div class='form-group'>            
+            <div class="controls">
+                <input type="number" min="0" step="1" max="99999" id="expectedQuantity{{cid}}" name="expectedQuantity{{cid}}" class="form-control" value="{{data.expectedQuantity}}"/>
+            </div>
+        </div>
+    </div>
+    <div class='col-sm-4'>
+        <div class='form-group'>            
+            <div class="input-group date">
+                <input type="text" class="expectedDate js-date form-control" id="expectedDate{{cid}}"  name="expectedDate{{cid}}" value="{{date data.expectedDate "Gloria.i18n.dateformat"}}"/>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+            </div>
+        </div>
+    </div>
+    <div class='col-sm-4'>
+        <div class='form-group'>            
+            <div class="controls">
+            	{{#if first}}
+                <a class="btn btn-default" id="adjust{{cid}}"><i class="fa fa-code-fork fa-rotate-90"></i></a>
+                {{else}}
+                <a class="btn btn-default" id="remove{{cid}}"><i class="glyphicon glyphicon-remove"></i></a>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
+<div id="subQty{{cid}}" class='row' style="display: none;">
+    <div class='col-sm-4'>
+        <div class='form-group'>
+            <label class="control-label">
+                {{t "Gloria.i18n.deliverycontrol.orderOverview.adjust.subQty"}}: {{data.expectedQuantity}}
+            </label>
+        </div>
+    </div>
+</div>

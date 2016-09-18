@@ -1,0 +1,145 @@
+  <div class="well well-small">
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.dispatchNoteNo"}}: 
+                        </label>
+                        <div class="controls">
+                            {{data.dispatchNoteNo}}
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.dispatchNoteDate"}}: 
+                        </label>
+                        <div class="controls">
+                            {{date data.dispatchNoteDate "Gloria.i18n.dateformat"}}
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.requiredDeliveryDate"}}:
+                        </label>
+                        <div class="controls">
+                            {{date requestListModel.requiredDeliveryDate "Gloria.i18n.dateformat"}}
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.actualDelivery"}}:
+                        </label>
+                        {{#if isShipped}}
+                        {{date data.deliveryDate "Gloria.i18n.dateformat"}}
+                        {{else}}
+                        <div class='input-group date'>
+                            <input type="text" class="deliveryDate js-date form-control" id='deliveryDate' name='deliveryDate' value='{{date data.deliveryDate "Gloria.i18n.dateformat"}}'>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.transportMode"}}: 
+                        </label>
+                        <div class="controls">
+                            <input id="transportMode" name="transportMode" class='form-control' type='text' value='{{data.transportMode}}'{{#if  isShipped}}disabled="true"{{/if}}>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.weight"}}: 
+                        </label>
+                        <div class="controls">
+                            <input id="weight" class='form-control' name="weight" type='text' value='{{data.weight}}'{{#if  isShipped}}disabled="true"{{/if}}>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.height"}}:
+                        </label>
+                        <div class="controls">
+                            <input id="height" class='form-control' value='{{data.height}}' name="height" type='text' {{#if  isShipped}}disabled="true"{{/if}}>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.carrier"}}: 
+                        </label>
+                        <div class="controls">
+                            <input id="carrier" class='form-control' value='{{data.carrier}}' name='carrier' type='text' {{#if  isShipped}}disabled="true"{{/if}}>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-2'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.trackingNo"}}: 
+                        </label>
+                        <div class="controls">
+                            <input id="trackingNo" class='form-control' value="{{data.trackingNo}}" name="trackingNo" type='text' {{#if  isShipped}}disabled="true"{{/if}}>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.shipFrom"}}: 
+                        </label>
+                        <div class="controls">
+                            <textarea id="shipFrom" class="form-control unresizable"  rows="3" maxlength="120" disabled="true">{{requestListModel.whSiteAddress}}</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-6'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.deliveryAddress"}}: 
+                        </label>
+                        <div class="controls">
+                            <textarea id="deliveryAddress" class="form-control  unresizable" rows="3" maxlength="120" disabled="true">{{#if requestListModel.deliveryAddress}}{{requestListModel.deliveryAddress}}{{else}}{{requestListModel.deliveryAddressName}} {{/if}}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-6'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.shipVia"}}: 
+                        </label>
+                        <div class="controls">
+                            <textarea id="shipVia" class="form-control" name='shipVia' rows="3" maxlength="120" {{#if  isShipped}}disabled="true"{{/if}}>{{data.shipVia}}</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-sm-6'>
+                    <div class='form-group'>
+                        <label class="control-label">
+                            {{t "Gloria.i18n.warehouse.ship.header.note"}}: 
+                        </label>
+                        <div class="controls">
+                            <textarea id="note" class="form-control" name='note' rows="3" maxlength="120"{{#if  isShipped}}disabled="true"{{/if}}>{{data.note}}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>

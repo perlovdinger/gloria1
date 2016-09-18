@@ -1,0 +1,11 @@
+CACHE MANIFEST
+
+CACHE:
+# Exception handler - the reason for this cache file
+app/views/common/exception/exception-handler.html
+app/views/common/exception/ExceptionHandlerView.js
+# All files that are included directly in index.html must also be included
+app/libs/require/require.min.js
+        
+NETWORK:
+*

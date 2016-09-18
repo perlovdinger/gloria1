@@ -1,0 +1,898 @@
+@CHARSET "UTF-8";
+
+/**
+ * This is the CSS with changes exclusive for the desktop version.
+ */
+div .print-header {
+	display: none;
+}
+
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+@media ( max-width : 980px) { /* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.help-inline {
+	color: rgb(185, 74, 72);
+}
+
+.dontshow {
+	display: none;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.floatleft {
+	float: left;
+}
+
+.noLeftRightmargin {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+#expDate {
+	z-index: 100;
+}
+
+/* Make sure we have no line breaks in select box */
+.select2-offscreen {
+	position: fixed !important;
+}
+
+.select2-container .select2-choice .select2-arrow,.select2-container .select2-choice div
+	{
+	border-left: none;
+}
+
+.select2-container,.select2-drop,.select2-result-label:hover,.select2-result-label:focus
+	{
+	cursor: default !important;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+	cursor: default;
+}
+
+.select2-container .select2-choice {
+	cursor: default;
+}
+
+.select2-container .select2-choice abbr {
+	cursor: default !important;
+}
+
+.select2-container .select2-choice abbr:hover {
+	cursor: default !important;
+}
+
+li.select2-result-selectable,.select2-result-selectable .select2-highlighted
+	{
+	cursor: default !important;
+}
+
+.select2-container .select2-choice>.select2-chosen {
+	color: #555;
+	cursor: default;
+}
+
+.select2-container .select2-choice {
+	height: 31px;
+}
+/*
+.page-header h1 {
+	display: inline;
+}
+*/
+.subAccordion {
+	padding: 30px 30px 30px 30px;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+}
+
+/* Styling flags in UI */
+.centered {
+	position: relative;
+	left: 30%;
+}
+
+.centerAlignPrintHeader {
+	position: relative;
+	left: 20%;
+}
+
+table.smallerTextPrintGrid th,table.smallerTextPrintGrid td {
+	font-size: 12px;
+}
+
+.boxAppearance {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.halfBoxAppearance {
+	padding-right: 10px;
+}
+
+.relative {
+	position: relative;
+}
+
+.datepicker {
+	z-index: 9999 !important;
+}
+
+.loading-spinner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+}
+
+.loading-spinner .loading-spinner-center {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	z-index: 10000;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 10em;
+	margin-top: -5em;
+}
+
+.loading-spinner .loading-spinner-center .progress {
+	width: 100%;
+	background-color: transparent;
+}
+
+.loading-spinner .loading-spinner-center .progress .progress-bar {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	float: none;
+}
+
+/* Show ellipses if header is too wide */
+label {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+}
+
+/* Show lengthy Text in a row */
+.lengthyText {
+	overflow: inherit;
+}
+
+/* Show an asterisk for mandatory fields */
+label.has-info:after {
+	content: ' (*)';
+	color: red;
+}
+
+/* Show an asterisk for conditional mandatory fields */
+.required-con:after {
+	content: ' (*)';
+	color: red;
+}
+
+/* Makes the modal body scrollable vertical */
+.modal .modal-tall {
+	overflow-y: auto;
+}
+
+/* Remove padding from element */
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-border {
+	border: 0 !important;
+}
+
+.no-background {
+	background-color: transparent;
+	background-image: none;
+}
+
+.label-look {
+	background-color: transparent !important;
+	background-image: none !important;
+	cursor: default !important;
+	outline: none !important;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+/**
+ * Startpage
+ */
+.thumbnail>img,.thumbnail a>img {
+	width: 75%;
+}
+
+.thumbnail h2 {
+	text-align: center;
+}
+
+/**
+ * 	Backgrid styling
+ */
+div.gridpane {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+table.backgrid th {
+	text-align: left;
+	vertical-align: top;
+}
+
+table.backgrid th a:first-child,table.backgrid th label:first-child,table.backgrid th span:first-child,table.backgrid th div:first-child,table.backgrid td a:first-child,table.backgrid td label:first-child,table.backgrid td span:first-child,table.backgrid td div:first-child
+	{
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+}
+
+table.backgrid th>span:first-child {
+	display: block;
+	cursor: default;
+}
+
+table.backgrid td>span {
+	display: block;
+}
+
+table.backgrid th .open-filter i {
+	cursor: pointer;
+}
+
+table.backgrid tr:nth-child(even) {
+	background-color: #f0f0f0; /* Pyjama stripes */
+}
+
+/*
+Grid row groups 
+*/
+table.backgrid tr.groupedRow-group-1 {
+	background-color: #f0f0f0;
+}
+
+table.backgrid tr.groupedRow-group-2 {
+	background-color: transparent;
+}
+
+table.backgrid tr.groupedRow-group-3 {
+	background-color: #88C68D;
+}
+
+table.backgrid tbody td {
+	border-top: none;
+	border-bottom: none;
+}
+
+.backgrid th.renderable {
+	border: solid 1px #cccccc !important;
+}
+
+.backgrid td.renderable {
+	border: solid 1px #e7e7e7;
+}
+
+table.backgrid tbody td a {
+	cursor: pointer;
+}
+
+/* Show that a grid cell is editable */
+.backgrid td.editor input[type=number] {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 5px;
+	margin: 0;
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.backgrid td.editor input[type=number]::-ms-clear {
+	display: none;
+}
+
+/* .backgrid thead th span{ */
+/*   display: block; */
+/* } */
+table.backgrid td.select2-cell {
+	cursor: pointer;
+}
+
+table.backgrid tbody tr:hover {
+	background-color: #cccccc; /* Selected line */
+}
+
+table.backgrid tbody tr.selected {
+	background-color: #fcf8e3; /* Selected line */
+}
+
+table.backgrid tbody tr.selected:hover {
+	background-color: #ebde9a; /* Selected line */
+}
+
+table.backgrid .date-cell,.backgrid .datetime-cell {
+	text-align: left;
+}
+
+table.nested-table {
+	height: 100%;
+}
+
+table.nested-table tr {
+	height: 32px;
+}
+
+table.nested-table tr {
+	background-color: transparent;
+}
+
+table.nested-table tbody tr td {
+	padding: 0px;
+	vertical-align: inherit;
+}
+
+table.nested-table th,table.nested-table td {
+	min-width: 0px;
+	max-width: none !important;
+}
+
+.backgrid td.error {
+	outline: 1px solid #a94442 !important;
+}
+
+.backgrid th {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.backgrid th,.backgrid td {
+	max-width: 60px;
+}
+
+/* Paging part */
+table.backgrid>caption {
+	caption-side: bottom;
+}
+
+.gloria-paginator {
+	
+}
+
+.additionalQty {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.releasedQty {
+	font-size: 12px
+}
+
+table.backgrid .select-all-header-cell {
+	width: 20px;
+}
+
+/**
+ * 	End of Backgrid styling
+ */
+
+/**
+*	Colors
+*/
+.color-red {
+	color: red;
+}
+
+.color-blue {
+	color: blue;
+}
+
+.color-green {
+	color: green;
+}
+
+.color-yellow {
+	color: yellow;
+}
+
+.color-orange {
+	color: orange;
+}
+
+.color-black {
+	color: black;
+}
+
+.color-grey {
+	color: blue;
+}
+
+.chip-comment-icon {
+	background-image: url("../img/icons/note.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.attachment-icon {
+	position: relative;
+}
+
+.attachment-icon:before {
+	content: "\f0c6";
+	font-family: FontAwesome;
+	font-size: medium;
+	position: absolute;
+	color: rgb(111, 150, 192);
+	top: 0px;
+	right: 0px;
+	width: 15px;
+	text-align: center;
+}
+
+.info-icon {
+	position: relative;
+}
+
+.info-icon:before {
+	content: "\f129";
+	font-family: FontAwesome;
+	position: absolute;
+	color: darkorange;
+	top: 0px;
+	right: 0px;
+	width: 15px;
+	text-align: center;
+}
+
+.arrow-up-icon {
+	position: relative;
+}
+
+.arrow-up-icon:before {
+	content: "\f062";
+	font-family: FontAwesome;
+	position: absolute;
+	color: darkorange;
+	top: 0px;
+	right: 0px;
+	width: 15px;
+	text-align: center;
+}
+
+.envelope-icon {
+	position: relative;
+}
+
+.envelope-icon:before {
+	content: "\f0e0";
+	font-family: FontAwesome;
+}
+
+.color-blue-envelope-icon.envelope-icon:before {
+	color: rgb(111, 150, 192);
+}
+
+.top-right.envelope-icon:before {
+	position: absolute;
+	top: -5px;
+	right: 0px;
+}
+
+/* Defining fixed widths */
+.l-fixedWidth {
+	min-width: 400px;
+	width: 400px;
+	max-width: 400px;
+}
+
+.xs-fixedWidth {
+	min-width: 110px;
+	width: 120px;
+	max-width: 125px;
+}
+
+.xs-fixedWidth-Date {
+	min-width: 80px;
+	width: 85px;
+	max-width: 125px;
+}
+
+.xxs-fixedWidth {
+	min-width: 25px;
+	max-width: 40px;
+}
+
+.date-filter.left-popover .popover {
+	margin-left: -260px;
+	min-width: 600px;
+	width: 600px;
+	max-width: 600px;
+}
+
+.date-filter.left-popover .popover>.arrow {
+	margin-left: 251px;
+}
+
+.divider-vertical {
+	height: auto;
+	margin: 0 9px;
+	border-left: 1px dashed #AFAFAF;
+	border-right: 1px dashed #EBEBEB;
+}
+
+/* centered columns styles */
+.row-centered {
+	text-align: center;
+}
+
+.col-centered {
+	display: inline-block;
+	float: none;
+	text-align: left;
+	margin-right: -4px;
+}
+
+/*
+ Override bootstrap attributes according to the style guide of Gloria.
+ These attributes are not avaiable from bootstrap website customization.
+ So we should override them or add less to the build process of the Gloria. 
+*/
+.breadcrumb {
+	margin-bottom: 6px;
+}
+
+.panel-heading {
+	padding: 10px;
+}
+
+.page-header {
+	padding: 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.page-footer {
+	padding: 25px;
+}
+
+.nav>li>a {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.well {
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+.panel {
+	margin-bottom: 5px;
+}
+
+.panel-body {
+	padding: 5px;
+}
+
+.panel-group {
+	margin-bottom: 0px;
+}
+
+@media ( min-width : 768px) {
+	.form-inline .form-control {
+		display: inline-block;
+		width: auto;
+		vertical-align: top;
+	}
+}
+
+.radio-inline,.checkbox-inline {
+	display: inline-block;
+	padding-left: 20px;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*
+ End Override.
+*/
+.row-medium-height .row {
+	height: 40px;
+}
+
+.vertical-space {
+	margin-top: 15px;
+}
+
+.button-bar {
+	margin: 5px 0px;
+}
+
+.breadcrumb .breadcrumb {
+	margin-bottom: 0px !important;
+}
+
+.unresizable {
+	resize: none;
+}
+
+.loadBar {
+	left: 0px;
+	right: 0px;
+	width: 100px;
+	position: fixed;
+	background-color: #f0f0f0;
+	margin: auto;
+	border: 1px #DDD solid;
+	border-top: none;
+}
+
+.bootstrap-tagsinput {
+	display: list-item;
+	overflow: inherit;
+	margin-bottom: 2px;
+}
+
+.bootstrap-tagsinput input:focus {
+	float: left;
+}
+
+.tagspan {
+	display: inline !important;
+	padding: .4em .8em .5em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap !important;
+	vertical-align: baseline;
+	border-radius: .25em;
+	background-color: #5bc0de;
+}
+
+.bootstrap-tagsinput .tag {
+	float: left;
+	border: 1px solid white;
+	margin: 3px;
+}
+
+.background-white {
+	background-color: #fff !important; /*!important avoid override*/;
+}
+
+.background-gray {
+	background-color: gray;
+}
+
+.background-orange {
+	background-color: #ffd280 !important; /*!important avoid override*/
+}
+
+.border-yellow {
+	border: 2px solid yellow;
+}
+
+.border-BurlyWood    {
+	border: 2px solid BurlyWood   ;
+}
+
+.floatFooter {
+	background: lightgray;
+	text-align: center;
+	bottom: 0;
+	width: 99.3%;
+	position: fixed;
+	margin: 0px;
+	padding: 4px;
+	border-radius: 4px;
+	z-index: 1000;
+}
+
+.bootstrap-tagsinput .tag {
+	float: left;
+	border: 1px solid white;
+	margin: 0px;
+}
+/*
+.nestedGrid>table {
+	border-collapse: separate;
+}
+*/
+.nestedGridCell .nestedGrid {
+	height: 100%;
+}
+
+.nestedGridCell {
+	height: 100%;
+}
+
+.markPassedDate {
+	color: red !important;
+}
+
+.shortHeaderFooter {
+	padding: 7px;
+}
+
+.shortBody {
+	padding: 10px;
+}
+
+.tooltip-inner {
+	word-wrap: break-word;
+}
+
+.row .nav.nav-tabs {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.show-full-text {
+	max-width: inherit !important;
+}
+
+/*****Select styling*******/
+select {
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+}
+
+select::-ms-expand {
+	display: none !important;
+}
+
+select {
+	background-image: url("../libs/select2/select2.png") !important;
+	background-repeat: no-repeat !important;
+	background-position: right -42px top 3px !important;
+}
+/*****End select styling*******/
+.clear-filter {
+	text-decoration: none !important;
+	font-weight: bold;
+	color: #638acb;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.clear-filter:hover {
+	cursor: pointer;
+}
+
+.search-result {
+	text-align: center;
+	border-top: none;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.search-result ul {
+	display: inline-block;
+	*display: inline;
+	margin: 5px 0;
+	*zoom: 1;
+}
+
+.search-result ul>li {
+	display: inline;
+}
+
+.search-result ul>li>span {
+	float: left;
+	width: 100%;
+	height: 30px;
+	padding-right: 50px;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+.search-result ul>.disabled>span {
+	color: #999999;
+	cursor: default;
+}
+
+.expectedqty {
+	text-align: center !important;
+}
+
+.fa-sla:before {
+    font-family: arial; 
+    content: 'SLA';
+    outline: none;
+     font-weight: bold;
+}
+
+.fa-tooling:before {
+    font-family: arial; 
+    content: 'T';
+    font-weight: bold;
+}
+
+.fa-machining:before {
+    font-family: arial; 
+    content: 'M';
+    font-weight: bold;
+}
+
+.fa-sipd:before {
+    font-family: arial; 
+    content: 'SIPD';
+    font-weight: bold;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}

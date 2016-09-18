@@ -1,0 +1,71 @@
+<h4>
+	<strong class="control-label"> {{#if allAreSame}} {{t
+		"Gloria.i18n.procurement.modifyDetail.text.definePartNo"}} {{else}}
+		{{t "Gloria.i18n.procurement.modifyDetail.text.groupingPart"}} {{/if}}
+	</strong>
+</h4>
+<div class="well well-small">
+	<div class='row'>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="pPartAffiliation"> {{t
+					"Gloria.i18n.procurement.modifyDetail.label.pPartAffiliation"}}: </label>
+				<div class="controls">
+					<span>X</span>
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless readOnly}} required {{/unless}}"
+					for="pPartNo"> {{t
+					"Gloria.i18n.procurement.modifyDetail.label.pPartNumber"}}: </label>
+				<div class="controls">
+					{{#if readOnly}} <span id="pPartNo">{{data.pPartNumber}}</span>{{else}}
+					<input type="text" id="pPartNo" name='procureLine[pPartNo]'
+						class="form-control" required="required" maxlength="20">
+					{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless readOnly}} required {{/unless}}"
+					for="pVersion"> {{t
+					"Gloria.i18n.procurement.modifyDetail.label.pPartVersion"}}: </label>
+				<div class="controls">
+					{{#if readOnly}} <span id="pVersion">{{data.pPartVersion}}</span>{{else}}
+					<input type="text" id="pVersion" name='procureLine[pVersion]'
+						class="form-control" required="required" maxlength="10">{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label
+					class="control-label {{#unless readOnly}} required {{/unless}}"
+					for="pPartName"> {{t
+					"Gloria.i18n.procurement.modifyDetail.label.pPartName"}}: </label>
+				<div class="controls">
+					{{#if readOnly}} <span id="pPartName">{{data.pPartName}}</span>{{else}}<input
+						type="text" id="pPartName" name='procureLine[pPartName]'
+						class="form-control" maxlength="255" required="required">{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-2'>
+			<div class='form-group'>
+				<label class="control-label" for="pPartModification"> {{t
+					"Gloria.i18n.procurement.modifyDetail.label.pPartModification"}}: </label>
+				<div class="controls">
+					{{#if readOnly}} <span id="pPartModification">{{data.pPartModification}}</span>{{else}}
+					<input type='text' id="pPartModification"
+						name="procureLine[pPartModification]"
+						class="pPartModification form-control" maxlength="60" />{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

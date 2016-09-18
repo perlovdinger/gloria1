@@ -1,0 +1,116 @@
+<form id="binLocationForm" name="binLocationForm">
+	<input type="hidden" name="id" value="{{data.id}}">
+	<div class="row text-center">
+		<div class="col-sm-12">
+			<div class="form-group">
+				<label class="control-label"></label>
+			</div>
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.binLocationHeader"}}: </label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group suggestedBinLocation">
+				<label class="control-label" for="suggestedBinLocation"> {{t
+					"Gloria.i18n.warehouse.store.binLocation"}}: </label>
+				<div class="controls">
+					<input class="form-control scannable" id="suggestedBinLocation"
+						name="suggestedBinLocation" type="text"
+						value="{{data.suggestedBinLocation}}" required {{#unless
+						hasEditAccess}} disabled="disabled"{{/unless}}>
+					<div>
+						<span class="help-inline"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group quantity">
+				<label class="control-label" for="quantity"> {{t
+					"Gloria.i18n.warehouse.store.storedQuantity"}}: </label>
+				<div class="controls">
+					<input id="quantity" name="quantity" class="form-control"
+						type="number" min="0" step="1" max="99999"
+						value="{{data.quantity}}" required {{#unless
+						hasEditAccess}} disabled="disabled"{{/unless}}>
+					<div>
+						<span class="help-inline"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.stockBalance"}}: </label>
+				<div class="controls">
+					<span id="stockBalance">{{data.stockBalance}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label underlineText"> {{t
+					"Gloria.i18n.warehouse.store.partInformation"}}</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.partNo"}}</label>
+				<div class="controls">
+					<span id="pPartNumber">{{data.pPartNumber}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.version"}}</label>
+				<div class="controls">
+					<span id="pPartVersion">{{data.pPartVersion}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.partName"}}</label>
+				<div class="controls">
+					<span id="pPartName">{{data.pPartName}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.partModification"}}</label>
+				<div class="controls">
+					<span id="pPartModification">{{data.pPartModification}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group">
+				<label class="control-label"> {{t
+					"Gloria.i18n.warehouse.store.totalQty"}}</label>
+				<div class="controls">
+					<span id="totalQty">{{data.quantity}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

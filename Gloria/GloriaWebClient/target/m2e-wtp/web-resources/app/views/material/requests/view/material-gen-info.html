@@ -1,0 +1,94 @@
+<div class="well well-small">
+	<form id="requestForm" name="requestForm" role="form">
+		<fieldset>
+			<div class='row'>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label for="deliveryAddressId" class="control-label"> {{t
+							"Gloria.i18n.material.overview.header.outBoundLocationId"}}: </label>
+						<div class="controls" id="buildLocation">{{data.outBoundLocationId}}{{t
+							"Gloria.i18n.placeholder"}}{{data.outBoundLocationName}}</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label for="whSiteId" class="control-label"> {{t
+							"Gloria.i18n.material.overview.header.whSiteId"}}: </label>
+						<div class="controls">{{data.whSiteId}}</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label for="requiredDeliveryDate" class="control-label required">
+							{{t
+							"Gloria.i18n.material.requests.header.requiredDeliveryDate"}}: </label>
+						<div class='input-group date'>
+							<input type="text" id='requiredDeliveryDate'
+								name='request[requiredDeliveryDate]'
+								class="requiredDeliveryDate js-date form-control"
+								required="required" value='{{date data.requiredDeliveryDate "Gloria.i18n.dateformat"}}'> <span class="input-group-addon"><span
+								class="glyphicon glyphicon-calendar"></span></span>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<label for="priority" class="control-label"> {{t
+							"Gloria.i18n.material.requests.header.priority"}}: </label>
+						<div class="controls">
+							<select id="priority" name="request[priority]"
+								class="input-block-level form-control">
+								<option value="">{{t
+									"Gloria.i18n.selectBoxDefaultValue"}}</option> {{{renderDropDown
+								priorityOptions data.priority false}}}
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="hidden" id="deliveryAddressType"
+				name="request[deliveryAddressType]" value="">
+			<div class='row'>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<div class="checkbox-inline control-label">
+							<input type="checkbox" id="newDeliveryAddress"
+								name="deliveryAddressType" value="NEW_DELIVERY_ADDRESS">
+							<label class="control-label" for="newDeliveryAddress">{{t
+								"Gloria.i18n.material.requests.header.newDeliveryAddress"}}</label>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<div class="checkbox-inline control-label">
+							<input type="checkbox" id="transferToWarehouse"
+								name="deliveryAddressType" value="WH_SITE"> <label
+								class="control-label" for="transferToWarehouse">{{t
+								"Gloria.i18n.material.requests.header.transferToWarehouse"}}</label>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-2'>
+					<div class='form-group'>
+						<div class="controls" id="warehouseId" style="display: none;">
+							<input type="text" id="tranferToWarehouseDropDown"
+								name="request[deliveryAddressId]" value='{{data.deliveryAddressId}}' placeholder="{{t "Gloria.i18n.material.requests.header.selectWarehouseId"}}">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class="col-md-4">
+					<div class='form-group'>
+						<div class="controls">
+							<textarea class="form-control" rows="2" cols="100"
+								name="request[deliveryAddressName]" id="deliveryAddressTextArea"
+								maxlength="255" style="display: none;">{{data.deliveryAddressName}}</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>

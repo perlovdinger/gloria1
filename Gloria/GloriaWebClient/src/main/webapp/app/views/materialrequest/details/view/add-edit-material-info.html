@@ -1,0 +1,183 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"
+				aria-hidden="true">&times;</button>
+			{{#if addAnother}}
+			<h3>{{t
+				"Gloria.i18n.materialrequest.details.materialInformationForm.addheader"}}</h3>
+			{{else}}
+			<h3>{{t
+				"Gloria.i18n.materialrequest.details.materialInformationForm.editheader"}}</h3>
+			{{/if}}
+		</div>
+		<div class="modal-body">
+			<div>
+				<div id="appModalMessage"></div>
+				<form id="procureRequestLinesForm" name="procureRequestLinesForm"
+					role="form">
+					<fieldset>
+						<input name='procurerequestlines[id]' type="hidden"
+							value='{{data.id}}'>
+						<div class='row'>
+							{{#if isMultiple}}
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									{{#if isFirstVersion}} <label class="control-label required">
+										{{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.testObject"}}:
+									</label>
+									<div class="controls">
+										<input id="name" class='form-control'
+											name="procurerequestlines[name]" type='text'
+											value='{{data.name}}' maxlength="20" /> <span
+											class="help-inline"></span>
+									</div>
+									{{else}} {{#if addAnother}} <label
+										class="control-label required"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.testObject"}}:
+									</label>
+									<div class="controls">
+										<select id="name" name="procurerequestlines[name]"
+											class="form-control">
+											<option value="">Please Select</option> {{#if toOptions}}
+											{{#select data.name}} {{#each toOptions}}
+											<option value="{{this}}">{{this}}</option> {{/each}}
+											{{/select}} {{/if}}
+										</select>
+									</div>
+									{{else}} <label class="control-label"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.testObject"}}:
+									</label>
+									<div class="controls">
+										<span id="name">{{data.name}}</span>
+									</div>
+									{{/if}} {{/if}}
+								</div>
+							</div>
+							{{/if}}
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.partAffiliation"}}:
+									</label>
+									<div class="controls">
+										{{partAffiliationSelector selected=data.partAffiliation
+										id=data.id idPrefix='partAffiliation_'
+										namePrefix='partAffiliation' modelName='procurerequestlines'
+										multiple=false}} <span class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.partNumber"}}:
+									</label>
+									<div class="controls">
+										<input id="partNumber" class='form-control'
+											name="procurerequestlines[partNumber]" type='text'
+											required="required" value='{{data.partNumber}}'
+											maxlength="20" /> <span class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.partVersion"}}:
+									</label>
+									<div class="controls">
+										<input id="partVersion" class='form-control'
+											name="procurerequestlines[partVersion]" type='text'
+											required="required" value='{{data.partVersion}}'
+											maxlength="10" /> <span class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.partName"}}:
+									</label>
+									<div class="controls">
+										<input id="partName" class='form-control'
+											name="procurerequestlines[partName]" type='text'
+											required="required" value='{{data.partName}}' maxlength="254" />
+										<span class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+							{{#unless isMultiple}}
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.partModification"}}:
+									</label>
+									<div class="controls">
+										<input id="partModification" class='form-control'
+											name="procurerequestlines[partModification]" type='text'
+											value='{{data.partModification}}' maxlength="60" /> <span
+											class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+							{{/unless}}
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.quantity"}}:
+									</label>
+									<div class="controls">
+										<input id="quantity" class='form-control'
+											name="procurerequestlines[quantity]" type="number" min="0"
+											max="99999" step="1" required="required"
+											value='{{data.quantity}}' /> <span class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label required"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.unitOfMeasure"}}:
+									</label>
+									<div class="controls">
+										{{unitsOfMeasureSelector selected=unitOfMeasure id=data.id
+										idPrefix='unitOfMeasure_' namePrefix='unitOfMeasure'
+										modelName='procurerequestlines' multiple=false}} <span
+											class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+							{{#unless isMultiple}}
+							<div class='col-sm-4'>
+								<div class='form-group'>
+									<label class="control-label"> {{t
+										"Gloria.i18n.materialrequest.details.materialInformationForm.functionGroup"}}:
+									</label>
+									<div class="controls">
+										<input id="functionGroup" class='form-control'
+											name="procurerequestlines[functionGroup]" type='text'
+											value='{{data.functionGroup}}' maxlength="8" /> <span
+											class="help-inline"></span>
+									</div>
+								</div>
+							</div>
+							{{/unless}}
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="modal-footer">
+			{{#if addAnother}} <label class="control-label" for="addAnother">
+				<input id="addAnother" type='checkbox' /> {{t
+				"Gloria.i18n.materialrequest.details.materialInformationForm.addAnother"}}
+			</label> {{/if}} <a class="btn btn-primary" id="save-button">{{t
+				"Gloria.i18n.materialrequest.button.save"}}</a> <a
+				class="btn btn-default" id="cancel-button">{{t
+				"Gloria.i18n.materialrequest.button.cancel"}}</a>
+		</div>
+	</div>
+</div>

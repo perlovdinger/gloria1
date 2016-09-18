@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="32"
+   height="32"
+   id="svg6109">
+  <defs
+     id="defs6111" />
+  <metadata
+     id="metadata6114">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-16)"
+     id="layer1">
+    <g
+       transform="matrix(1,0,0,-1,0,63.125)"
+       id="g6863">
+      <path
+         d="M 9.75,23.75 7.375,26.09375 14.3125,33.0625 7.375,40 9.75,42.375 16.6875,35.4375 23.625,42.375 26,40 19.0625,33.0625 26,26.09375 23.625,23.75 16.6875,30.6875 9.75,23.75 z"
+         id="path6865"
+         style="fill:#f3dcdc;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         d="M 9.75,20.75 7.375,23.09375 14.3125,30.0625 7.375,37 9.75,39.375 16.6875,32.4375 23.625,39.375 26,37 19.0625,30.0625 26,23.09375 23.625,20.75 16.6875,27.6875 9.75,20.75 z"
+         id="path6867"
+         style="fill:#d22112;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         d="M 9.75,21.75 7.375,24.09375 14.3125,31.0625 7.375,38 9.75,40.375 16.6875,33.4375 23.625,40.375 26,38 19.0625,31.0625 26,24.09375 23.625,21.75 16.6875,28.6875 9.75,21.75 z"
+         id="path6869"
+         style="fill:#990c0c;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <path
+         d="M 9.75,6.75 7.375,9.09375 14.3125,16.0625 7.375,23 9.75,25.375 16.6875,18.4375 23.625,25.375 26,23 19.0625,16.0625 26,9.09375 23.625,6.75 16.6875,13.6875 9.75,6.75 z"
+         transform="translate(0,16)"
+         id="path6871"
+         style="fill:#e93e1a;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+  </g>
+</svg>

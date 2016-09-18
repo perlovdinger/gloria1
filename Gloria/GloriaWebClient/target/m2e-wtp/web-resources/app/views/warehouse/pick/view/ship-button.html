@@ -1,0 +1,26 @@
+<div data-role="content" id="module-info">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="noprint">
+				{{#hasPermission "edit" 0="Ship"}} <a class="btn btn-default"
+					id="open-button" {{#unless
+					permittedActions.openDispatchNote}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.warehouse.ship.button.openDispatchNote"}}</a> <a
+					class="btn btn-default" id="create-button" {{#unless
+					permittedActions.createDispatchNote}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.warehouse.ship.button.createDispatchNote"}}</a> <a
+					class="btn btn-default" id="mark-button" {{#unless
+					permittedActions.markAsShipped}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.warehouse.ship.button.markAsShipped"}}</a>
+				{{/hasPermission}} <a class="btn btn-default" id="print-button"
+					{{#unless permittedActions.printdispatchNote}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.warehouse.ship.button.printdispatchNote"}}</a> <a
+					class="btn btn-default" id="export-button" {{#unless
+					permittedActions.exportProForma}}disabled="true"{{/unless}}>{{t
+					"Gloria.i18n.warehouse.ship.button.exportProForma"}}</a> <a
+					id="clear-filter" class="clear-filter">{{t
+					"Gloria.i18n.gridpanel.clearFilter"}}</a>
+			</div>
+		</div>
+	</div>
+</div>

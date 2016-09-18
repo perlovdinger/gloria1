@@ -1,0 +1,16 @@
+<div id="titlePane">
+	<h4>
+		<strong class="control-label"> {{t
+			"Gloria.i18n.warehouse.receive.partInfo"}} </strong>
+	</h4>
+</div>
+<div id="buttonPane" class="button-bar"></div>
+<div id="gridPane"></div>
+<div id="actionButtonPane" class="text-center button-bar floatFooter">
+	{{#hasPermission "edit" 0="GoodsReception"}}
+	<button type="button" class="btn btn-default" disabled="true"
+		id="receive">{{t "Gloria.i18n.warehouse.buttons.receive"}}</button>
+	{{/hasPermission}}
+	<button type="button" class="btn btn-default" id="cancel">{{t
+		"Gloria.i18n.warehouse.buttons.cancel"}}</button>
+</div>

@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="col-xs-9">
+		<ul class="breadcrumb">
+			<li><a href="#">{{t "Gloria.i18n.home"}}</a></li>
+			{{#if breadcrumbs}}
+				{{#each breadcrumbs}}
+					{{#if this}}
+						{{#if this.url}}
+							<li><a href="#{{this.url}}">
+							{{#if "{{this.i18nOptions}}"}}
+								{{t this.i18nkey this.i18nOptions}}
+							{{else}}
+								{{t this.i18nkey}}
+							{{/if}}
+							</a></li>
+						{{else}}
+							<li class="active">
+							{{#if "{{this.i18nOptions}}"}}
+								{{t	this.i18nkey this.i18nOptions}}
+							{{else}}
+								{{t this.i18nkey}}
+							{{/if}}
+							</li>
+						{{/if}}
+					{{/if}}
+				{{/each}}
+			{{/if}}
+		</ul>
+	</div>
+	<div id="breadCrumbModuleSelector" class="col-xs-3"></div>
+</div>

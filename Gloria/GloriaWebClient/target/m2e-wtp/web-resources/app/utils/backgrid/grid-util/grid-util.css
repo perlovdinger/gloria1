@@ -1,0 +1,15 @@
+.rc-handle-container {
+	position: relative;
+}
+
+.rc-handle {
+	position: absolute;
+	width: 7px;
+	cursor: col-resize;
+	margin-left: -3px;
+	z-index: 2;
+}
+
+.resize-start * {
+	cursor: col-resize;
+}

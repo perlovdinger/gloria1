@@ -1,0 +1,118 @@
+<form id="receiveForm" name="receiveForm">
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group deliveryNoteNo">
+				{{#if_eq module "regular"}}<label class="control-label required"
+					for="deliveryNote"> {{t
+					"Gloria.i18n.warehouse.receive.deliveryNoteNo"}}: </label>
+				<div class="controls">
+					<input id="deliveryNoteNo" class="form-control scannable"
+						name="deliveryNote[deliveryNoteNo]" type="text"
+						required="required" />
+				</div>
+				{{else}}<label class="control-label required" for="deliveryNoteNo">
+					{{t "Gloria.i18n.warehouse.receive.deliveryNoteNo"}}: </label>
+				<div class="controls input-group">
+					<input id="deliveryNoteNo" class="form-control scannable"
+						name="deliveryNote[deliveryNoteNo]" type="text"
+						required="required" />
+					<div class="input-group-btn">
+						<button class="btn btn-default" type="button"
+							id="deliveryNoteTransferReturnLookup">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</div>
+				</div>
+				{{/if_eq}}
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group deliveryNoteDate">
+				<label class="control-label required" for="deliveryNoteDate">
+					{{t "Gloria.i18n.warehouse.receive.deliveryNoteDate"}}: </label>
+				<div class="controls">
+					<input id="deliveryNoteDate" class="form-control js-date"
+						name="deliveryNote[deliveryNoteDate]" type="text"
+						readonly="readonly" required="required"
+						value="{{#if deliveryNoteModel.deliveryNoteDate}} {{date deliveryNoteModel.deliveryNoteDate}} {{else}} {{now}} {{/if}}" />
+				</div>
+			</div>
+		</div>
+	</div>
+	{{#if_eq module "regular"}}
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group orderNo">
+				<label class="control-label required" for="orderNo"> {{t
+					"Gloria.i18n.warehouse.receive.orderNo"}}: </label>
+				<div class="controls  input-group">
+					<input id="orderNo" class="form-control scannable"
+						name="deliveryNote[orderNo]" type="text" required="required" />
+					<div class="input-group-btn">
+						<button class="btn btn-default" type="button" id="orderLookup">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group projectId">
+				<label class="control-label" for="projectId"> {{t
+					"Gloria.i18n.warehouse.receive.projectId"}}: </label>
+				<div class="controls">
+					<span id="projectId" name="deliveryNote[projectId]">&nbsp;</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{/if_eq}}
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group supplierId">
+				<label class="control-label" for="supplierId"> {{t
+					"Gloria.i18n.warehouse.receive.supplierParmaID"}}: </label>
+				<div class="controls">
+					{{#if isRegular}} <span id="supplierId"
+						name="deliveryNote[supplierId]">&nbsp;</span> {{else}} <span
+						id="supplierId" name="deliveryNote[supplierId]">&nbsp;</span>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group supplierName">
+				<label class="control-label" for="supplierName"> {{t
+					"Gloria.i18n.warehouse.receive.supplierName"}}: </label>
+				<div class="controls">
+					{{#if isRegular}} <span id="supplierName"
+						name="deliveryNote[supplierName]">&nbsp;</span> {{else}} <span
+						id="supplierName" name="deliveryNote[supplierName]">&nbsp;</span>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="form-group transportationNo">
+				<label class="control-label" for="transportationNo"> {{t
+					"Gloria.i18n.warehouse.receive.transportationNo"}}: </label>
+				<div class="controls">
+					<input id="transportationNo" class="form-control scannable"
+						name="deliveryNote[transportationNo]" type="text" />
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="form-group carrier">
+				<label class="control-label" for="carrier"> {{t
+					"Gloria.i18n.warehouse.receive.carrier"}}: </label>
+				<div class="controls">
+					<input id="carrier" class="form-control"
+						name="deliveryNote[carrier]" type="text" />
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

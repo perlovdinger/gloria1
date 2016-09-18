@@ -1,0 +1,97 @@
+<div class="row">
+	<div class="col-sm-12">
+		<label> {{t "Gloria.i18n.reports.text.possibelInfo"}}: </label>
+	</div>
+</div>
+<div class="well well-small">
+	<div style="float: left; width: 95%;">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label" for="warehouse"> {{t
+						"Gloria.i18n.reports.text.warehouse"}}: </label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div id="warehouseSelectorContainer" class="form-group">
+					<input id="warehouse" class="form-control js-list"
+						name="dropdown[warehouse]">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label" for="action"> {{t
+						"Gloria.i18n.reports.text.action"}}: </label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div id="actionSelectorContainer" class="form-group">
+					<select id="action" name="dropdown[action]"
+						class="input-block-level form-control"> {{{renderDropDown
+						actions "ALL_RECEIVALS" true}}}
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row storage" hidden="hidden">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label" for="storageRoom"> {{t
+						"Gloria.i18n.reports.text.storageRoom"}}: </label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div id="storageRoomSelectorContainer" class="form-group">
+					<input id="storageRoom" class="form-control js-list"
+						name="dropdown[storageRoom]">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label" for="fromDate"> {{t
+						"Gloria.i18n.reports.text.fromDate"}}: </label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<div class="input-group date">
+						<input type="text" id="fromDate" name="basicInfo[fromDate]"
+							class="fromDate js-date form-control"> <span
+							class="input-group-addon"><span
+							class="glyphicon glyphicon-calendar"></span></span>
+					</div>
+					<span id="fromDateHints">{{t
+						"Gloria.i18n.reports.text.ALL_RECEIVALS_FromDateText"}}</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="form-group">
+					<label class="control-label" for="toDate"> {{t
+						"Gloria.i18n.reports.text.toDate"}}: </label>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="form-group">
+					<div class="input-group date">
+						<input type="text" id="toDate" name="basicInfo[toDate]"
+							class="toDate js-date form-control"> <span
+							class="input-group-addon"><span
+							class="glyphicon glyphicon-calendar"></span></span>
+					</div>
+					<span id="toDateHints">{{t
+						"Gloria.i18n.reports.text.ALL_RECEIVALS_ToDateText"}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="float: right; width: 5%">
+		<div style="float: right"></div>
+	</div>
+	<div class="row"></div>
+</div>
